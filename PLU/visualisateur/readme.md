@@ -13,7 +13,8 @@ Peupler ce schéma (table, données, fonctions) en exécutant les commandes cont
 * visualisateur_qgis_creation_grille_data.sql ;
 * visualisateur_qgis_creation_grille.sql ;
 * retrotraduction_qml_data.sql ;
-* retrotraduction_qml.sql.
+* retrotraduction_qml.sql ;
+* outils_generiques.sql.
 
 Les données du visualisateur se trouvent dans les tables `plu_prescription` et `plu_information`. Tous les autres objets créés sont des utilitaires servant à accélérer les mises à jour.
 
