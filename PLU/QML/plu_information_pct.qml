@@ -1,16 +1,16 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="3.10.3-A Coruña" styleCategories="Symbology">
-  <renderer-v2 enableorderby="0" forceraster="0" symbollevels="0" type="RuleRenderer">
+<qgis styleCategories="Symbology" version="3.10.3-A Coruña">
+  <renderer-v2 forceraster="0" enableorderby="0" type="RuleRenderer" symbollevels="0">
     <rules key="{af923991-cd38-44a1-ba09-c9f9ce4aec2b}">
-      <rule filter="TYPEINF = '16'" key="{736c2f9b-1223-43a1-90aa-7864c7ab1014}" label="16 - Site archéologique" symbol="0"/>
-      <rule filter="TYPEINF = '19'" key="{07566196-9334-4a00-8e7b-c92869ea7451}" label="19 - Assainissement et déchets" symbol="1" scalemaxdenom="100000" scalemindenom="1000"/>
-      <rule filter="TYPEINF = '27'" key="{7056c94c-8fc7-4448-8f64-67654dba72db}" label="27 - Plan d'exposition au bruit des aérodromes" symbol="2"/>
-      <rule filter="TYPEINF = '99'" key="{9aef672a-fe5a-4dff-8335-56de2c4044a1}" label="99 - Autre" symbol="3"/>
-      <rule filter="ELSE" key="{d1420df9-5a46-448d-8f85-09cadd78ee83}" symbol="4"/>
+      <rule symbol="0" label="16 - Site archéologique" key="{736c2f9b-1223-43a1-90aa-7864c7ab1014}" filter="TYPEINF = '16'"/>
+      <rule symbol="1" label="19 - Assainissement et déchets" key="{07566196-9334-4a00-8e7b-c92869ea7451}" scalemindenom="1000" filter="TYPEINF = '19'" scalemaxdenom="100000"/>
+      <rule symbol="2" label="27 - Plan d'exposition au bruit des aérodromes" key="{7056c94c-8fc7-4448-8f64-67654dba72db}" filter="TYPEINF = '27'"/>
+      <rule symbol="3" label="99 - Autre" key="{9aef672a-fe5a-4dff-8335-56de2c4044a1}" filter="TYPEINF = '99'"/>
+      <rule symbol="4" key="{d1420df9-5a46-448d-8f85-09cadd78ee83}" filter="ELSE"/>
     </rules>
     <symbols>
-      <symbol name="0" alpha="1" force_rhr="0" type="marker" clip_to_extent="1">
-        <layer pass="0" class="FontMarker" enabled="1" locked="0">
+      <symbol type="marker" name="0" clip_to_extent="1" force_rhr="0" alpha="1">
+        <layer pass="0" locked="0" class="FontMarker" enabled="1">
           <prop k="angle" v="0"/>
           <prop k="chr" v="µ"/>
           <prop k="color" v="215,176,158,255"/>
@@ -30,15 +30,15 @@
           <prop k="vertical_anchor_point" v="1"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
+              <Option value="" type="QString" name="name"/>
               <Option name="properties"/>
-              <Option name="type" type="QString" value="collection"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="1" alpha="1" force_rhr="0" type="marker" clip_to_extent="1">
-        <layer pass="0" class="FontMarker" enabled="1" locked="0">
+      <symbol type="marker" name="1" clip_to_extent="1" force_rhr="0" alpha="1">
+        <layer pass="0" locked="0" class="FontMarker" enabled="1">
           <prop k="angle" v="0"/>
           <prop k="chr" v="~"/>
           <prop k="color" v="0,115,76,255"/>
@@ -58,15 +58,15 @@
           <prop k="vertical_anchor_point" v="1"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
+              <Option value="" type="QString" name="name"/>
               <Option name="properties"/>
-              <Option name="type" type="QString" value="collection"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="2" alpha="1" force_rhr="0" type="marker" clip_to_extent="1">
-        <layer pass="0" class="FontMarker" enabled="1" locked="0">
+      <symbol type="marker" name="2" clip_to_extent="1" force_rhr="0" alpha="1">
+        <layer pass="0" locked="0" class="FontMarker" enabled="1">
           <prop k="angle" v="0"/>
           <prop k="chr" v="j"/>
           <prop k="color" v="0,0,0,255"/>
@@ -86,15 +86,15 @@
           <prop k="vertical_anchor_point" v="1"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
+              <Option value="" type="QString" name="name"/>
               <Option name="properties"/>
-              <Option name="type" type="QString" value="collection"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="3" alpha="1" force_rhr="0" type="marker" clip_to_extent="1">
-        <layer pass="0" class="SimpleMarker" enabled="1" locked="0">
+      <symbol type="marker" name="3" clip_to_extent="1" force_rhr="0" alpha="1">
+        <layer pass="0" locked="0" class="SimpleMarker" enabled="1">
           <prop k="angle" v="0"/>
           <prop k="color" v="156,156,156,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
@@ -115,15 +115,15 @@
           <prop k="vertical_anchor_point" v="1"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
+              <Option value="" type="QString" name="name"/>
               <Option name="properties"/>
-              <Option name="type" type="QString" value="collection"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="4" alpha="1" force_rhr="0" type="marker" clip_to_extent="1">
-        <layer pass="0" class="SimpleMarker" enabled="1" locked="0">
+      <symbol type="marker" name="4" clip_to_extent="1" force_rhr="0" alpha="1">
+        <layer pass="0" locked="0" class="SimpleMarker" enabled="1">
           <prop k="angle" v="0"/>
           <prop k="color" v="255,255,255,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
@@ -144,9 +144,9 @@
           <prop k="vertical_anchor_point" v="1"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
+              <Option value="" type="QString" name="name"/>
               <Option name="properties"/>
-              <Option name="type" type="QString" value="collection"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
