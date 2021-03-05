@@ -119,7 +119,7 @@ SELECT s_cnig_docurba.util_genere_commande_insert(
     ) ;
 ```
 
-Pour `qml_traduction_prop` :
+Pour `qml_traduction_value` :
 
 ```sql 
 SELECT s_cnig_docurba.util_genere_commande_insert(
