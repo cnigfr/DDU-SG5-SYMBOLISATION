@@ -493,7 +493,7 @@ Contour du remplissage :
 Contour :
 >> RVB : 0 / 0 / 0
 >> Largeur : 0.50'),
-    ('15', '00', 'Règles d’implantation des constructions', NULL, NULL, 'Symbole ponctuel ligne 
+    ('15', '00', 'Règles d''implantation des constructions', NULL, NULL, 'Symbole ponctuel ligne 
 
 >> Symbole ponctuel de caractère : v (Arial - unicode 86)
 >> Taille : 6.00
@@ -569,6 +569,8 @@ Symbole ponctuel caractère :
 Contour du remplissage :
 >> Taille : 0.5
 >> RVB :  245 / 122 /122'),
+    ('16', '04', 'Constructions et installations nécessaires à l''activité agricole en zone A ou N', '00', NULL, NULL, NULL),
+    ('16', '05', 'Diversification de l''activité agricole : transformation, conditionnement et ventes de produits agricoles (activités liées au tourisme exclues)', '00', NULL, NULL, NULL),
     ('17', '00', 'Secteur à programme de logements mixité sociale en Zone U et AU', NULL, NULL, NULL, 'Symbole ponctuel de remplissage :
 
 Symbole ponctuel caractère :
@@ -610,7 +612,7 @@ Symbole ponctuel caractère :
 >> Décalage Y : 12.00
 >> Séparation X : 24.00
 >> Séparation Y : 24.00'),
-    ('18', '00', 'Secteur comportant des orientations d’aménagement et de programmation (OAP)', NULL, NULL, NULL, 'Symbole ligne de remplissage :
+    ('18', '00', 'Secteur comportant des orientations d''aménagement et de programmation (OAP)', NULL, NULL, NULL, 'Symbole ligne de remplissage :
 
 Ligne cartographique :
 >> Taille : 0.5
@@ -627,6 +629,9 @@ Ligne cartographique :
     ('18', '06', 'OAP relatives à l''habitat', '00', NULL, NULL, NULL),
     ('18', '07', 'OAP comprenant des dispositions relatives à l''équipement commercial et artisanal', '00', NULL, NULL, NULL),
     ('18', '08', 'OAP relatives aux transports et aux déplacements', '00', NULL, NULL, NULL),
+    ('18', '09', 'OAP relatives aux espaces publics en zone d''aménagement concerté', '00', NULL, NULL, NULL),
+    ('18', '10', 'OAP relatives aux ouvrages publics, installations d''intérêt général et espaces verts en zone d''aménagement concerté', '00', NULL, NULL, NULL),
+    ('18', '11', 'OAP valant création de zone d''aménagement concerté', '00', NULL, NULL, NULL),
     ('19', '00', 'Secteur protégé en raison de la richesse du sol et du sous-sol', NULL, NULL, NULL, 'Symbole ponctuel de remplissage :
 
 Symbole ponctuel caractère :
@@ -790,7 +795,7 @@ Contour
 >> Solide
 >> Largeur : 0.5'),
     ('26', '01', 'Secteur de performance énergétique renforcé', '00', NULL, NULL, NULL),
-    ('27', '00', 'Secteur d’aménagement numérique', NULL, NULL, NULL, 'Symbole de remplissage simple :
+    ('27', '00', 'Secteur d''aménagement numérique', NULL, NULL, NULL, 'Symbole de remplissage simple :
 >> RVB fond : aucune
 >> RVB contour : 137 / 90 / 68
 >> Largeur contour : 2.00'),
@@ -1153,6 +1158,7 @@ Contour
     ('44', '02', 'Stationnement maximal', '00', NULL, NULL, NULL),
     ('44', '03', 'Caractéristiques et type de stationnement', '00', NULL, NULL, NULL),
     ('44', '04', 'Minoration des règles de stationnement', '00', NULL, NULL, NULL),
+    ('44', '05', 'Réalisation d''aires de livraisons imposée', '00', NULL, NULL, NULL),
     ('44', '98', 'Stationnement règles alternatives', '00', NULL, NULL, NULL),
     ('45', '00', 'Zone d''aménagement concerté 
 (surface de plancher, destination)', NULL, NULL, NULL, 'Symbole de remplissage simple :
@@ -1300,6 +1306,9 @@ Contour :
 >> RVB : 148 / 10 / 189
 >> Largeur : 0.5
 >> Ligne continue'),
+    ('52', '00', 'Infrastructures et équipements logistiques à préserver ou à développer en zones U et AU', NULL, 'à créer', 'à créer', 'à créer'),
+    ('97', '00', 'Périmètre d''application d''une pièce écrite territorialisée (rapport de présentation, PADD, règlement, règlement graphique, POA)', NULL, NULL, NULL, NULL),
+    ('97', '01', 'Périmètre couvert par un plan de secteur', '00', NULL, NULL, NULL),
     ('99', '00', 'Autre', NULL, 'Symbole ponctuel simple :
 >> RVB : 0 / 0 / 0
 >> Style : cercle
@@ -1386,7 +1395,7 @@ SELECT s_cnig_docurba.qml_plu_information_maj_symb_qgis() ;
 */
 
 INSERT INTO s_cnig_docurba.plu_information (typeinf, stypeinf, libelle, stype_ref, symb_pct, symb_lin, symb_surf) VALUES
-    ('02', '00', 'Zone d’aménagement concerté (R123-13 2)', NULL, NULL, NULL, 'Symbole de remplissage simple :
+    ('02', '00', 'Zone d''aménagement concerté (R123-13 2)', NULL, NULL, NULL, 'Symbole de remplissage simple :
 >> Couleur  : 255/127/127
 >> Couleur contour : 255/0/0
 >> Largeur contour : 1.00'),
@@ -1446,7 +1455,7 @@ Propriétés de remplissage :
 
 Contour :
 >> Aucun'),
-    ('05', '00', 'Zone d’aménagement différé (R123-13 4)', NULL, NULL, NULL, 'Symbole ponctuel de remplissage :
+    ('05', '00', 'Zone d''aménagement différé (R123-13 4)', NULL, NULL, NULL, 'Symbole ponctuel de remplissage :
 >> Symbole de caractère : Cercle plein (Webdings - Unicode 61)
 >> Couleur : 90 / 112 / 255
 >> Taille : 2.00
@@ -1458,7 +1467,7 @@ Symbole de remplissage simple :
 >> Couleur de contour : 90 / 112 / 255
 >> Largeur : 1.50
 >> Style : Tiret – Point'),
-    ('07', '00', 'Périmètre de développement prioritaire économie d’énergie (R123-13 6)', NULL, NULL, NULL, 'Symbole ponctuel de remplissage :
+    ('07', '00', 'Périmètre de développement prioritaire économie d''énergie (R123-13 6)', NULL, NULL, NULL, 'Symbole ponctuel de remplissage :
 >> Pylone (Webdings - Unicode 113)
 >> Taille : 12
 >> Couleur : 132 / 0 / 168
@@ -1492,7 +1501,7 @@ Contour :
 >> Décalage Y : -12.00
 >> Séparation X : 25.00
 >> Séparation Y : 25.00'),
-    ('09', '00', 'Périmètre minier de concession pour l’exploitation ou le stockage (R123-13 8)', NULL, NULL, NULL, 'Symbole ponctuel de remplissage :
+    ('09', '00', 'Périmètre minier de concession pour l''exploitation ou le stockage (R123-13 8)', NULL, NULL, NULL, 'Symbole ponctuel de remplissage :
 >> Block Elements Points rectangle (Arial - Unicode 9618)
 >> Couleur : 205/170/102
 >> Taille  : 22
@@ -1502,7 +1511,7 @@ Contour :
 Contour : 
 >> Couleur : 205/170/102
 >> Taille : 0.5'),
-    ('10', '00', 'Zone de recherche et d’exploitation de carrière (R123-13 9)', NULL, NULL, NULL, 'Symbole ligne de remplissage :
+    ('10', '00', 'Zone de recherche et d''exploitation de carrière (R123-13 9)', NULL, NULL, NULL, 'Symbole ligne de remplissage :
 >> Couleur : 168/112/0
 >> Angle : 45 (de la ligne verticale)
 >> Décalage : 153
@@ -1531,7 +1540,7 @@ Contour :
 >> Fond : aucun
 >> Couleur contour : 0/77/168
 >> Largeur : 2.5'),
-    ('13', '00', 'Secteur de programme d’aménagement d’ensemble (R123-13 12)', NULL, NULL, NULL, 'Symbole ligne de remplissage :
+    ('13', '00', 'Secteur de programme d''aménagement d''ensemble (R123-13 12)', NULL, NULL, NULL, 'Symbole ligne de remplissage :
 
 Ligne cartographique :
 >> Largeur : 0.5
@@ -1543,7 +1552,7 @@ Ligne cartographique :
 Contour :
 >>Largeur : 0.50
 >> RVB : 255 / 211 / 127'),
-    ('14', '00', 'Périmètre de voisinage d’infrastructure de transport terrestre (R123-13 12)', NULL, NULL, 'Symbole ponctuel de ligne :
+    ('14', '00', 'Périmètre de voisinage d''infrastructure de transport terrestre (R123-13 12)', NULL, NULL, 'Symbole ponctuel de ligne :
 >> Symbole de caractère : Cercle plein (Wingdings - Unicode 108)
 >> Couleur : 255 / 190 / 232
 >> Taille : 4.00
@@ -1576,13 +1585,13 @@ Contour :
 Symbole de ligne cartographique :
 >> Couleur : 215/176/158
 >> Largeur : 1.00
->> Intervalle : 6.00
->> Longueur tiret : 10.00', 'Symbole de remplissage simple :
+>> Intervalle : 10.00
+>> Longueur tiret : 6.00', 'Symbole de remplissage simple :
 >> Couleur fond : 215/176/158
 >> Couleur contour : 137/90/68
 >> Style contour : tirets
 >> Epaisseur contour : 2'),
-    ('17', '00', 'Zone à risque d’exposition au plomb (R123-13 14)', NULL, NULL, NULL, 'Symbole ponctuel de remplissage 1 :
+    ('17', '00', 'Zone à risque d''exposition au plomb (R123-13 14)', NULL, NULL, NULL, 'Symbole ponctuel de remplissage 1 :
 >> P (Arial - Unicode 80)
 >> Taille : 6
 >> Couleur : 52/52/52
@@ -1672,7 +1681,7 @@ Contour :
 >> RVB : 132 / 0 / 168
 >> Largeur : 1.0
 >> Intervalle : 1.00'),
-    ('22', '00', 'Protection des rives des  plans d’eau en zone de montagne (L145-5 et R145-3)', NULL, NULL, NULL, 'Symbole de remplissage 
+    ('22', '00', 'Protection des rives des  plans d''eau en zone de montagne (L145-5 et R145-3)', NULL, NULL, NULL, 'Symbole de remplissage 
 
 Ligne
 >> RVB : 0 / 77 / 168
@@ -1716,7 +1725,7 @@ Contour :
 >> RVB : 230 / 230 / 0
 >> Largeur : 1.0
 >> Intervalle : 1.00'),
-    ('27', '00', 'Plan d’exposition au bruit des aérodromes (L147-1 à L147-6 et R123-13 4)', NULL, 'Symbole ponctuel de caractère
+    ('27', '00', 'Plan d''exposition au bruit des aérodromes (L147-1 à L147-6 et R123-13 4)', NULL, 'Symbole ponctuel de caractère
 
 >> Avion (Police Webdings - Unicode 106)
 >> RVB : 0 / 0 / 0
@@ -1764,7 +1773,7 @@ Contour
 >> RVB fond : 225 / 255 / 255
 >> RVB contour : 0 / 0 /0
 >> Largeur contour : 2.0'),
-    ('32', '00', 'Secteur à fiscalité particulière en application du L331-14 (taxe d’aménagement) R123-13 19', NULL, NULL, NULL, 'Symbole ponctuel de remplissage
+    ('32', '00', 'Secteur à fiscalité particulière en application du L331-14 (taxe d''aménagement) R123-13 19', NULL, NULL, NULL, 'Symbole ponctuel de remplissage
 
 Symbole ponctuel
 >> Losange ( Police Wingdings 2 - Unicode 176)
@@ -1783,7 +1792,7 @@ Symbole contour :
 >> Largeur contour : 6.00
 >> Décalage Y : 2.00
 >> Intervalle : 5.00'),
-    ('34', '00', 'Périmètre d’opération d’intérêt national (L121-2 et L121-9-1, R121-4-1)', NULL, NULL, NULL, 'Symbole ponctuel de remplissage
+    ('34', '00', 'Périmètre d''opération d''intérêt national (L121-2 et L121-9-1, R121-4-1)', NULL, NULL, NULL, 'Symbole ponctuel de remplissage
 
 Remplissage
 >> Carré vide (Police Wingdings 2 - Unicode 164)
