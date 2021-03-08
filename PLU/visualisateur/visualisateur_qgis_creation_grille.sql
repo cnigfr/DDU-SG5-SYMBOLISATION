@@ -50,22 +50,26 @@ DECLARE
     k int := 1 ;
     l int := 0 ;
     m int := largeur ;
-    reft text ;
-    refst text ;
+    b boolean ;
+    refet text ;
 BEGIN
     x := x0 ;
     FOR r IN (SELECT * FROM s_cnig_docurba.plu_prescription ORDER BY typepsc, stypepsc)
     LOOP
+    
         IF r.stype_ref IS NULL
         THEN
+        
+            SELECT bool_or(NOT stypepsc = r.stypepsc AND (stype_ref IS NULL OR NOT stype_ref = r.stypepsc)) INTO b
+                FROM s_cnig_docurba.plu_prescription
+                WHERE typepsc = r.typepsc ;
+        
             UPDATE s_cnig_docurba.plu_prescription
                SET carreau = (SELECT ST_SetSRID(ST_MakePolygon(format('LINESTRING(%s %s, %s %s, %s %s, %s %s, %1$s %2$s)',
                                                                       x - 10, y - 10, x - 10, y + 80, x + 80, y + 80, x + 80, y - 10)), 2154)),
                    blanc = NOT (k % 2 = l),
-                   etiquette = format('%1$s-%2$s', r.typepsc, r.stypepsc)
+                   etiquette = CASE WHEN b THEN r.stypepsc END
                WHERE typepsc = r.typepsc AND stypepsc = r.stypepsc ;
-            reft := r.typepsc ;
-            refst := r.stypepsc ;
                
             IF r.symb_surf IS NOT NULL
             THEN
@@ -79,6 +83,10 @@ BEGIN
                               )
                         ), 2154))
                     WHERE typepsc = r.typepsc AND stypepsc = r.stypepsc ;
+            ELSE
+                UPDATE s_cnig_docurba.plu_prescription
+                    SET geom_surf = NULL
+                    WHERE typepsc = r.typepsc AND stypepsc = r.stypepsc ;
             END IF ;
             
             IF r.symb_lin IS NOT NULL
@@ -91,6 +99,10 @@ BEGIN
                               )
                         ), 2154))
                     WHERE typepsc = r.typepsc AND stypepsc = r.stypepsc ;
+            ELSE
+                UPDATE s_cnig_docurba.plu_prescription
+                    SET geom_lin = NULL
+                    WHERE typepsc = r.typepsc AND stypepsc = r.stypepsc ;
             END IF ;
             
             IF r.symb_pct IS NOT NULL
@@ -98,21 +110,49 @@ BEGIN
                 UPDATE s_cnig_docurba.plu_prescription
                     SET geom_pct = (SELECT ST_SetSRID(ST_MakePoint(x + 55, y + 60), 2154))
                     WHERE typepsc = r.typepsc AND stypepsc = r.stypepsc ;
-            END IF ;    
+            ELSE
+                UPDATE s_cnig_docurba.plu_prescription
+                    SET geom_pct = NULL
+                    WHERE typepsc = r.typepsc AND stypepsc = r.stypepsc ;
+            END IF ;
+            
             x := x0 + 90 * (k % m)::numeric ;
             y := y - 90 * (k % m = 0)::int ;
             l := (l + (k % m = 0)::int) % 2 ;
             k := (k + 1) % m ;
         ELSE
-            IF reft = r.typepsc AND refst = r.stype_ref
+
+            SELECT etiquette INTO refet
+                FROM s_cnig_docurba.plu_prescription
+                WHERE typepsc = r.typepsc AND stypepsc = r.stype_ref ;
+            
+            IF substring(refet, '^([0-9]{2})$') IS NOT NULL
+            THEN 
+                refet := format('%1$s à %2$s', substring(refet, '^([0-9]{2})$'), r.stypepsc) ;
+            ELSIF substring(refet, '[,][[:space:]]([0-9]{2})$')::int + 1 = r.stypepsc::int
             THEN
-               UPDATE s_cnig_docurba.plu_prescription
-                    SET etiquette = format('%1$s-%2$s à %3$s', reft, refst, r.stypepsc)
-                    WHERE typepsc = reft AND stypepsc = refst ;
-            ELSE
-                reft := r.typepsc ;
-                refst := r.stype_ref ;
-            END IF ;
+                refet := format('%1$s à %2$s', refet, r.stypepsc) ;
+            ELSIF substring(refet, 'à[[:space:]]([0-9]{2})$')::int + 1 = r.stypepsc::int
+            THEN
+                refet := substring(refet, '^(.*[[:space:]])[0-9]{2}$') || r.stypepsc ;
+            ELSIF refet IS NOT NULL
+            THEN
+                refet := format('%1$s, %2$s', refet, r.stypepsc) ;
+            END IF ;                
+                
+            UPDATE s_cnig_docurba.plu_prescription
+                SET etiquette = refet
+                WHERE typepsc = r.typepsc AND stypepsc = r.stype_ref ;
+                
+            UPDATE s_cnig_docurba.plu_prescription
+                SET etiquette = NULL,
+                    carreau = NULL,
+                    blanc = NULL,
+                    geom_surf = NULL,
+                    geom_lin = NULL,
+                    geom_pct = NULL
+                WHERE typepsc = r.typepsc AND stypepsc = r.stypepsc ;
+
         END IF ;
     END LOOP ;
     RETURN 'FIN' ;
@@ -152,22 +192,26 @@ DECLARE
     k int := 1 ;
     l int := 0 ;
     m int := largeur ;
-    reft text ;
-    refst text ;
+    b boolean ;
+    refet text ;
 BEGIN
     x := x0 ;
     FOR r IN (SELECT * FROM s_cnig_docurba.plu_information ORDER BY typeinf, stypeinf)
     LOOP
+    
         IF r.stype_ref IS NULL
         THEN
+        
+            SELECT bool_or(NOT stypeinf = r.stypeinf AND (stype_ref IS NULL OR NOT stype_ref = r.stypeinf)) INTO b
+                FROM s_cnig_docurba.plu_information
+                WHERE typeinf = r.typeinf ;
+        
             UPDATE s_cnig_docurba.plu_information
                SET carreau = (SELECT ST_SetSRID(ST_MakePolygon(format('LINESTRING(%s %s, %s %s, %s %s, %s %s, %1$s %2$s)',
                                                                       x - 10, y - 10, x - 10, y + 80, x + 80, y + 80, x + 80, y - 10)), 2154)),
                    blanc = NOT (k % 2 = l),
-                   etiquette = format('%1$s-%2$s', r.typeinf, r.stypeinf)
+                   etiquette = CASE WHEN b THEN r.stypeinf END
                WHERE typeinf = r.typeinf AND stypeinf = r.stypeinf ;
-            reft := r.typeinf ;
-            refst := r.stypeinf ;
                
             IF r.symb_surf IS NOT NULL
             THEN
@@ -181,6 +225,10 @@ BEGIN
                               )
                         ), 2154))
                     WHERE typeinf = r.typeinf AND stypeinf = r.stypeinf ;
+            ELSE
+                UPDATE s_cnig_docurba.plu_information
+                    SET geom_surf = NULL
+                    WHERE typeinf = r.typeinf AND stypeinf = r.stypeinf ;
             END IF ;
             
             IF r.symb_lin IS NOT NULL
@@ -193,6 +241,10 @@ BEGIN
                               )
                         ), 2154))
                     WHERE typeinf = r.typeinf AND stypeinf = r.stypeinf ;
+            ELSE
+                UPDATE s_cnig_docurba.plu_information
+                    SET geom_lin = NULL
+                    WHERE typeinf = r.typeinf AND stypeinf = r.stypeinf ;
             END IF ;
             
             IF r.symb_pct IS NOT NULL
@@ -200,21 +252,49 @@ BEGIN
                 UPDATE s_cnig_docurba.plu_information
                     SET geom_pct = (SELECT ST_SetSRID(ST_MakePoint(x + 55, y + 60), 2154))
                     WHERE typeinf = r.typeinf AND stypeinf = r.stypeinf ;
-            END IF ;    
+            ELSE
+                UPDATE s_cnig_docurba.plu_information
+                    SET geom_pct = NULL
+                    WHERE typeinf = r.typeinf AND stypeinf = r.stypeinf ;
+            END IF ;
+            
             x := x0 + 90 * (k % m)::numeric ;
             y := y - 90 * (k % m = 0)::int ;
             l := (l + (k % m = 0)::int) % 2 ;
             k := (k + 1) % m ;
         ELSE
-            IF reft = r.typeinf AND refst = r.stype_ref
+
+            SELECT etiquette INTO refet
+                FROM s_cnig_docurba.plu_information
+                WHERE typeinf = r.typeinf AND stypeinf = r.stype_ref ;
+            
+            IF substring(refet, '^([0-9]{2})$') IS NOT NULL
+            THEN 
+                refet := format('%1$s à %2$s', substring(refet, '^([0-9]{2})$'), r.stypeinf) ;
+            ELSIF substring(refet, '[,][[:space:]]([0-9]{2})$')::int + 1 = r.stypeinf::int
             THEN
-               UPDATE s_cnig_docurba.plu_information
-                    SET etiquette = format('%1$s-%2$s à %3$s', reft, refst, r.stypeinf)
-                    WHERE typeinf = reft AND stypeinf = refst ;
-            ELSE
-                reft := r.typeinf ;
-                refst := r.stype_ref ;
-            END IF ;
+                refet := format('%1$s à %2$s', refet, r.stypeinf) ;
+            ELSIF substring(refet, 'à[[:space:]]([0-9]{2})$')::int + 1 = r.stypeinf::int
+            THEN
+                refet := substring(refet, '^(.*[[:space:]])[0-9]{2}$') || r.stypeinf ;
+            ELSIF refet IS NOT NULL
+            THEN
+                refet := format('%1$s, %2$s', refet, r.stypeinf) ;
+            END IF ;                
+                
+            UPDATE s_cnig_docurba.plu_information
+                SET etiquette = refet
+                WHERE typeinf = r.typeinf AND stypeinf = r.stype_ref ;
+                
+            UPDATE s_cnig_docurba.plu_information
+                SET etiquette = NULL,
+                    carreau = NULL,
+                    blanc = NULL,
+                    geom_surf = NULL,
+                    geom_lin = NULL,
+                    geom_pct = NULL
+                WHERE typeinf = r.typeinf AND stypeinf = r.stypeinf ;
+
         END IF ;
     END LOOP ;
     RETURN 'FIN' ;
