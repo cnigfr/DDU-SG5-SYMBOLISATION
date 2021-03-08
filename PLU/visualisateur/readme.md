@@ -137,12 +137,22 @@ Pour faciliter les mises à jour suivantes, il est important de reverser la list
 Pour les prescriptions :
 
 ```sql
-SELECT s_cnig_docurba.visual_plu_prescription_creation_grille() ;
+SELECT s_cnig_docurba.util_genere_commande_insert(
+    's_cnig_docurba',
+    'plu_prescription',
+    ARRAY['typepsc', 'stypepsc', 'libelle', 'stype_ref', 'symb_pct', 'symb_lin', 'symb_surf']
+    ) ;
 ```
 
 Pour les informations :
 
 ```sql
-SELECT s_cnig_docurba.visual_plu_information_creation_grille() ;
+SELECT s_cnig_docurba.util_genere_commande_insert(
+    's_cnig_docurba',
+    'plu_information',
+    ARRAY['typeinf', 'stypeinf', 'libelle', 'stype_ref', 'symb_pct', 'symb_lin', 'symb_surf']
+    ) ;
 ```
+
+Les données des autres champs ne sont pas conservées, dans la mesure où elles peuvent être régénérées par des fonctions.
 
