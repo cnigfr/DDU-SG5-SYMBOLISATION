@@ -54,6 +54,7 @@
       <rule symbol="49" label="49 - Opération d'ensemble imposée en zone AU" key="{d00a7ff9-85f7-4e32-ab67-d4293eef7e43}" filter="TYPEPSC = '49'"/>
       <rule symbol="50" label="50 - Interdiction types d'activités, destinations, sous-destinations" key="{735ab633-e798-46ef-a393-48d8a52b54c1}" filter="TYPEPSC = '50'"/>
       <rule symbol="51" label="51 - Autorisation sous conditions types d'activités, destinations, sous-destinations" key="{bf9343ba-9b3c-4c74-af9b-2c27e69e2ac1}" filter="TYPEPSC = '51'"/>
+      <rule label="97 - Périmètre d'application d'une pièce écrite territorialisée" key="{d0316d51-41e3-417b-9645-83950b1d8f7e}" filter="TYPEPSC = '97'"/>
       <rule symbol="52" label="99 - Autre" key="{1f1b3701-ebdc-4fbf-98e3-94cdde3e19e6}" filter="TYPEPSC = '99'"/>
       <rule symbol="53" key="{4523364d-e4ae-44b5-bceb-48633c5390a8}" filter="ELSE"/>
     </rules>
