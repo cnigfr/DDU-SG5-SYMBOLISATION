@@ -353,13 +353,15 @@ BEGIN
         END IF ;
         
         -- suppression des informations relatives au contour
-        -- quand il n'y en a pas
+        -- quand il n'y en a pas (sauf pour l'information d'absence de
+        -- contour sur les remplissages simples)
         IF prop.symbol_prop = 'outline_style' AND prop.symbol_value = 'no'
         THEN
             DELETE FROM s_cnig_docurba.qml_detail
                 WHERE ref_table = prop.ref_table
                     AND symbol_id = prop.symbol_id
-                    AND symbol_prop ~ '^outline_' ;      
+                    AND symbol_prop ~ '^outline_'
+                    AND NOT (symbol_prop = 'outline_style' AND symbol_class = 'SimpleFill') ;      
         END IF ;
         
     END LOOP ;
@@ -390,7 +392,7 @@ CREATE OR REPLACE FUNCTION s_cnig_docurba.qml_plu_prescription_maj_symb_qgis(reg
     LANGUAGE plpgsql
     AS $_$
 /*
-OBJET : Met à jour les descriptifs des symboles QGIS la table plu_prescription
+OBJET : Met à jour les descriptifs des symboles de la table plu_prescription
 à partir des QML stockés dans layer_styles pour les styles nommés
 plu_prescription_surf, plu_prescription_lin et plu_prescription_pct.
 
@@ -413,7 +415,7 @@ BEGIN
     END IF ;
 
     UPDATE s_cnig_docurba.plu_prescription
-        SET symb_surf_qgis = (
+        SET symb_surf = (
             WITH trad AS (
                 SELECT
                     symbol_id,
@@ -454,7 +456,7 @@ BEGIN
         
         
     UPDATE s_cnig_docurba.plu_prescription
-        SET symb_pct_qgis = (
+        SET symb_pct = (
             WITH trad AS (
                 SELECT
                     symbol_id,
@@ -495,7 +497,7 @@ BEGIN
         
      
      UPDATE s_cnig_docurba.plu_prescription
-        SET symb_lin_qgis = (
+        SET symb_lin = (
             WITH trad AS (
                 SELECT
                     symbol_id,
@@ -548,7 +550,7 @@ CREATE OR REPLACE FUNCTION s_cnig_docurba.qml_plu_information_maj_symb_qgis(rege
     LANGUAGE plpgsql
     AS $_$
 /*
-OBJET : Met à jour les descriptifs des symboles QGIS la table plu_information
+OBJET : Met à jour les descriptifs des symboles de la table plu_information
 à partir des QML stockés dans layer_styles pour les styles nommés
 plu_information_surf, plu_information_lin et plu_information_pct.
 
@@ -571,7 +573,7 @@ BEGIN
     END IF ;
 
     UPDATE s_cnig_docurba.plu_information
-        SET symb_surf_qgis = (
+        SET symb_surf = (
             WITH trad AS (
                 SELECT
                     symbol_id,
@@ -612,7 +614,7 @@ BEGIN
         
         
     UPDATE s_cnig_docurba.plu_information
-        SET symb_pct_qgis = (
+        SET symb_pct = (
             WITH trad AS (
                 SELECT
                     symbol_id,
@@ -653,7 +655,7 @@ BEGIN
         
      
      UPDATE s_cnig_docurba.plu_information
-        SET symb_lin_qgis = (
+        SET symb_lin = (
             WITH trad AS (
                 SELECT
                     symbol_id,
