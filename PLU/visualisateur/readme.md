@@ -23,7 +23,7 @@ Les données du visualisateur se trouvent dans les tables `plu_prescription` et 
 
 Si la modification fait suite à l'ajout ou la suppression de codes ou sous-codes, ajouter/enlever les enregistrements en question dans les tables `plu_prescription` et `plu_information`.
 
-*Attention à bien remplir les champs, sans quoi les traitements automatisés risquent de ne pas fonctionner correctement !* Si le sous-code n'a pas de symbologie spécifique, il conviendra d'indiquer dans `stype_ref` le sous-code de référence (souvent `'00'`). Les valeurs saisies dans les champs `symb_surf`, `symb_lin` et `symb_pct` - descriptifs textuels des symboles à utiliser pour les géométries surfaciques, linéaires et ponctuelles - n'importent pas directement pour les traitements, mais il est essentiel que ces champs soient vides s'il n'existe pas de symbologie pour le sous-codes (y compris s'il utilise celle d'un autre sous-code) et non vides dans le cas contraire.
+*Attention à bien remplir le champ `stype_ref`, sans quoi les traitements automatisés risquent de ne pas fonctionner correctement !* Si le sous-code n'a pas de symbologie spécifique, et seulement dans ce cas, il conviendra d'indiquer dans `stype_ref` le sous-code de référence (souvent `'00'`).
 
 
 ## Régénération des géométries
@@ -63,7 +63,7 @@ Exporter les styles au format QML (Propriétés de la couche > onglet Symbologie
 
 ## Rétro-traduction des QML
 
-Pour vérifier que les styles revus sont conformes aux spécifications, ou pour faciliter la rédaction desdites spécifications, il est possible de déduire des QML des descriptions littérales des symboles.
+Les descriptions littérales des symboles sont générées automatiquement à partir des QML.
 
 Enregistrer les styles modifiés dans la base de données (Propriétés de la couche > onglet Symbologie > bouton Style > Enregistrer le style... > Dans la base de données postgres), en prenant garde à utiliser les mêmes noms que pour les fichiers QML.
 
@@ -81,9 +81,9 @@ Pour les informations :
 SELECT s_cnig_docurba.qml_plu_information_maj_symb_qgis() ;
 ```
 
-Les descriptifs déduits des QML apparaîtront dans les champs `symb_surf_qgis`, `symb_lin_qgis` et `symb_pct_qgis` des tables `plu_prescription` et `plu_information`.
+Les descriptifs déduits des QML apparaîtront dans les champs `symb_surf`, `symb_lin` et `symb_pct` des tables `plu_prescription` et `plu_information`.
 
-NB : si certains paramètres sont écrits en anglais, c'est parce que leur traduction française n'a pas encore été répertoriée. Pour y remédier, il faudra lancer la commande de recherche des termes non traduits :
+NB1 : si certains paramètres ou valeurs apparaissent en anglais, c'est parce que leur traduction française n'a pas encore été répertoriée. Pour y remédier, il faudra lancer la commande de recherche des termes non traduits :
 
 ```sql
 SELECT s_cnig_docurba.qml_maj_traduction() ;
@@ -97,7 +97,9 @@ SELECT * FROM s_cnig_docurba.qml_traduction_prop WHERE traduction IS NULL ;
 SELECT * FROM s_cnig_docurba.qml_traduction_value WHERE traduction IS NULL ;
 ```
 
-Si l'une de ces trois tables a été modifiée, il faudra reverser la nouvelle version dans *retrotraduction_qml_data.sql*.
+On pourra alors relancer les commandes qui calculent les descriptifs à partir des QML.
+
+Si l'une des trois tables `qml_traduction_class`, `qml_traduction_prop` ou `qml_traduction_value` a été modifiée, il faudra reverser la nouvelle version dans *retrotraduction_qml_data.sql*.
 
 Pour `qml_traduction_class`, il s'agira du résultat de la commande ci-après :
 
@@ -129,6 +131,7 @@ SELECT s_cnig_docurba.util_genere_commande_insert(
     ) ;
 ```
 
+NB2 : Les noms des symboles ponctuels simples (circle, etc.) n'ont volontairement pas été traduits en français, car c'est anglais qu'ils apparaissent dans les infobulles de l'interface QGIS.
 
 ## Sauvegarde de la liste des sous-codes et descriptifs mis à jour
 
@@ -140,7 +143,7 @@ Pour les prescriptions :
 SELECT s_cnig_docurba.util_genere_commande_insert(
     's_cnig_docurba',
     'plu_prescription',
-    ARRAY['typepsc', 'stypepsc', 'libelle', 'stype_ref', 'symb_pct', 'symb_lin', 'symb_surf']
+    ARRAY['typepsc', 'stypepsc', 'libelle', 'stype_ref']
     ) ;
 ```
 
@@ -150,7 +153,7 @@ Pour les informations :
 SELECT s_cnig_docurba.util_genere_commande_insert(
     's_cnig_docurba',
     'plu_information',
-    ARRAY['typeinf', 'stypeinf', 'libelle', 'stype_ref', 'symb_pct', 'symb_lin', 'symb_surf']
+    ARRAY['typeinf', 'stypeinf', 'libelle', 'stype_ref']
     ) ;
 ```
 
