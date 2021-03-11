@@ -71,50 +71,29 @@ BEGIN
                    etiquette = CASE WHEN b THEN r.stypepsc END
                WHERE typepsc = r.typepsc AND stypepsc = r.stypepsc ;
                
-            IF r.symb_surf IS NOT NULL
-            THEN
-                UPDATE s_cnig_docurba.plu_prescription
-                    SET geom_surf = (SELECT ST_SetSRID(ST_MakePolygon(
-                        format('LINESTRING(%s %s, %s %s, %s %s, %s %s, %1$s %2$s)',
-                               x, y,
-                               x, y + 40,
-                               x + 40, y + 40,
-                               x + 40, y
-                              )
-                        ), 2154))
-                    WHERE typepsc = r.typepsc AND stypepsc = r.stypepsc ;
-            ELSE
-                UPDATE s_cnig_docurba.plu_prescription
-                    SET geom_surf = NULL
-                    WHERE typepsc = r.typepsc AND stypepsc = r.stypepsc ;
-            END IF ;
+            UPDATE s_cnig_docurba.plu_prescription
+                SET geom_surf = (SELECT ST_SetSRID(ST_MakePolygon(
+                    format('LINESTRING(%s %s, %s %s, %s %s, %s %s, %1$s %2$s)',
+                           x, y,
+                           x, y + 40,
+                           x + 40, y + 40,
+                           x + 40, y
+                          )
+                    ), 2154))
+                WHERE typepsc = r.typepsc AND stypepsc = r.stypepsc ;
             
-            IF r.symb_lin IS NOT NULL
-            THEN
-                UPDATE s_cnig_docurba.plu_prescription
-                    SET geom_lin = (SELECT ST_SetSRID(ST_MakeLine(
-                        format('LINESTRING(%s %s, %s %s)',
-                               x + 50, y + 40,
-                               x + 70, y
-                              )
-                        ), 2154))
-                    WHERE typepsc = r.typepsc AND stypepsc = r.stypepsc ;
-            ELSE
-                UPDATE s_cnig_docurba.plu_prescription
-                    SET geom_lin = NULL
-                    WHERE typepsc = r.typepsc AND stypepsc = r.stypepsc ;
-            END IF ;
+            UPDATE s_cnig_docurba.plu_prescription
+                SET geom_lin = (SELECT ST_SetSRID(ST_MakeLine(
+                    format('LINESTRING(%s %s, %s %s)',
+                           x + 50, y + 40,
+                           x + 70, y
+                          )
+                    ), 2154))
+                WHERE typepsc = r.typepsc AND stypepsc = r.stypepsc ;
             
-            IF r.symb_pct IS NOT NULL
-            THEN
-                UPDATE s_cnig_docurba.plu_prescription
-                    SET geom_pct = (SELECT ST_SetSRID(ST_MakePoint(x + 55, y + 60), 2154))
-                    WHERE typepsc = r.typepsc AND stypepsc = r.stypepsc ;
-            ELSE
-                UPDATE s_cnig_docurba.plu_prescription
-                    SET geom_pct = NULL
-                    WHERE typepsc = r.typepsc AND stypepsc = r.stypepsc ;
-            END IF ;
+            UPDATE s_cnig_docurba.plu_prescription
+                SET geom_pct = (SELECT ST_SetSRID(ST_MakePoint(x + 55, y + 60), 2154))
+                WHERE typepsc = r.typepsc AND stypepsc = r.stypepsc ;
             
             x := x0 + 90 * (k % m)::numeric ;
             y := y - 90 * (k % m = 0)::int ;
@@ -213,51 +192,30 @@ BEGIN
                    etiquette = CASE WHEN b THEN r.stypeinf END
                WHERE typeinf = r.typeinf AND stypeinf = r.stypeinf ;
                
-            IF r.symb_surf IS NOT NULL
-            THEN
-                UPDATE s_cnig_docurba.plu_information
-                    SET geom_surf = (SELECT ST_SetSRID(ST_MakePolygon(
-                        format('LINESTRING(%s %s, %s %s, %s %s, %s %s, %1$s %2$s)',
-                               x, y,
-                               x, y + 40,
-                               x + 40, y + 40,
-                               x + 40, y
-                              )
-                        ), 2154))
-                    WHERE typeinf = r.typeinf AND stypeinf = r.stypeinf ;
-            ELSE
-                UPDATE s_cnig_docurba.plu_information
-                    SET geom_surf = NULL
-                    WHERE typeinf = r.typeinf AND stypeinf = r.stypeinf ;
-            END IF ;
+            UPDATE s_cnig_docurba.plu_information
+                SET geom_surf = (SELECT ST_SetSRID(ST_MakePolygon(
+                    format('LINESTRING(%s %s, %s %s, %s %s, %s %s, %1$s %2$s)',
+                           x, y,
+                           x, y + 40,
+                           x + 40, y + 40,
+                           x + 40, y
+                          )
+                    ), 2154))
+                WHERE typeinf = r.typeinf AND stypeinf = r.stypeinf ;
             
-            IF r.symb_lin IS NOT NULL
-            THEN
-                UPDATE s_cnig_docurba.plu_information
-                    SET geom_lin = (SELECT ST_SetSRID(ST_MakeLine(
-                        format('LINESTRING(%s %s, %s %s)',
-                               x + 50, y + 40,
-                               x + 70, y
-                              )
-                        ), 2154))
-                    WHERE typeinf = r.typeinf AND stypeinf = r.stypeinf ;
-            ELSE
-                UPDATE s_cnig_docurba.plu_information
-                    SET geom_lin = NULL
-                    WHERE typeinf = r.typeinf AND stypeinf = r.stypeinf ;
-            END IF ;
+            UPDATE s_cnig_docurba.plu_information
+                SET geom_lin = (SELECT ST_SetSRID(ST_MakeLine(
+                    format('LINESTRING(%s %s, %s %s)',
+                           x + 50, y + 40,
+                           x + 70, y
+                          )
+                    ), 2154))
+                WHERE typeinf = r.typeinf AND stypeinf = r.stypeinf ;
             
-            IF r.symb_pct IS NOT NULL
-            THEN
-                UPDATE s_cnig_docurba.plu_information
-                    SET geom_pct = (SELECT ST_SetSRID(ST_MakePoint(x + 55, y + 60), 2154))
-                    WHERE typeinf = r.typeinf AND stypeinf = r.stypeinf ;
-            ELSE
-                UPDATE s_cnig_docurba.plu_information
-                    SET geom_pct = NULL
-                    WHERE typeinf = r.typeinf AND stypeinf = r.stypeinf ;
-            END IF ;
-            
+            UPDATE s_cnig_docurba.plu_information
+                SET geom_pct = (SELECT ST_SetSRID(ST_MakePoint(x + 55, y + 60), 2154))
+                WHERE typeinf = r.typeinf AND stypeinf = r.stypeinf ;
+        
             x := x0 + 90 * (k % m)::numeric ;
             y := y - 90 * (k % m = 0)::int ;
             l := (l + (k % m = 0)::int) % 2 ;
