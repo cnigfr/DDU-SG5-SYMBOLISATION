@@ -333,9 +333,17 @@ BEGIN
                                         ELSE symbol_value || ' (unicode ' || ascii(symbol_value) || ')'
                                         END
                 WHERE id = prop.id ;       
-        END IF ;        
+        END IF ;     
+
+        -- remplissage transparent
+        IF prop.symbol_prop ~ 'color$' AND prop.symbol_value ~ '[,]0$'
+        THEN
+            UPDATE s_cnig_docurba.qml_detail
+                SET symbol_value = 'transparent'
+                WHERE id = prop.id ;        
+        END IF ;
                 
-        -- suppression des transparences dans les RVB
+        -- suppression des transparences dans les RVB si opacité à 100%
         IF prop.symbol_prop ~ 'color$'
         THEN
             UPDATE s_cnig_docurba.qml_detail
