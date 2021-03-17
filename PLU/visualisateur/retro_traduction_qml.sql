@@ -15,6 +15,7 @@
 -- schéma cible : s_cnig_docurba
 --
 -- liste des objets créés ou remplacés :
+-- FUNCTION: s_cnig_docurba.qml_data_defined(xml, text)
 -- FUNCTION: s_cnig_docurba.qml_exploration(text, xml, text, text, int)
 -- FUNCTION: s_cnig_docurba.qml_execute_exploration(text, xml, text)
 -- FUNCTION: s_cnig_docurba.qml_plu_retro_traduction_qml(text)
@@ -23,6 +24,83 @@
 -- FUNCTION: s_cnig_docurba.qml_maj_traduction()
 --
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+-- FUNCTION: s_cnig_docurba.qml_data_defined(xml, text)
+
+CREATE OR REPLACE FUNCTION s_cnig_docurba.qml_data_defined(
+            extrait_qml xml,
+            parametre text
+            )
+    RETURNS text
+    LANGUAGE plpgsql
+    AS $_$
+/*
+OBJET : Récupère l''expression qui, le cas échéant, définit la valeur
+du paramètre donné en argument.
+
+Pour appel par la fonction qml_exploration.
+
+ARGUMENTS :
+- extrait_qml est un extrait de XML correspondant à un "layer" ;
+- parametre est une chaîne de caractères correspondant au nom du
+paramètre potentiellement défini par une expression dans extrait_qml.
+
+SORTIE : l'expression en question.
+*/
+DECLARE
+    racine text := '//dir/data_defined_properties/Option/Option' ;
+    valeur text ;
+BEGIN
+
+    WITH a1 AS (
+        SELECT xmltable.*
+            FROM XMLTABLE(
+                racine
+                PASSING (extrait_qml)
+                COLUMNS
+                    o_type text PATH '@type',
+                    o_name text PATH '@name',
+                    o_value text PATH '@value',
+                    o_xml xml PATH 'Option'
+                    )
+            WHERE o_type = 'Map' AND o_name = 'properties'
+        ),
+    a2 AS (
+        SELECT xmltable.*
+            FROM a1, XMLTABLE(
+                '//Option'
+                PASSING (a1.o_xml)
+                COLUMNS
+                    o_type text PATH '@type',
+                    o_name text PATH '@name',
+                    o_value text PATH '@value',
+                    o_xml xml PATH 'Option'
+                    )
+            WHERE xmltable.o_type = 'Map' AND xmltable.o_name = parametre
+        ),
+    a3 AS (
+        SELECT xmltable.*
+            FROM a2, XMLTABLE(
+                '//dir/Option'
+                PASSING (xmlelement(name dir, a2.o_xml))
+                COLUMNS
+                    o_type text PATH '@type',
+                    o_name text PATH '@name',
+                    o_value text PATH '@value'
+                    )
+        )
+    SELECT
+        trim(both '''' from string_agg(o_value, ', ') FILTER (WHERE o_name = 'expression'))
+        INTO valeur
+        FROM a3
+        HAVING bool_or(o_type='bool' AND o_name='active' AND o_value='true') ;
+
+    RETURN valeur ;
+END
+$_$ ;
+
+COMMENT ON FUNCTION s_cnig_docurba.qml_data_defined(xml, text) IS '[Rétro-traduction des QML] Récupère l''expression qui, le cas échéant, définit la valeur du paramètre donné en argument.' ;
 
 
 
@@ -61,6 +139,7 @@ DECLARE
     layer record ;
     symbol record ;
     racine_0 text := '//' || racine || 'symbol' ;
+    expr text ;
 BEGIN
     
     FOR symbol IN (
@@ -89,7 +168,8 @@ BEGIN
                     COLUMNS
                         symbol_class text PATH '@class',
                         prop xml,
-                        symbol xml
+                        symbol xml,
+                        data_defined_properties xml
                         )
             )
         LOOP
@@ -110,6 +190,21 @@ BEGIN
                             symbol_value text PATH '@v'
                             )                    
                 ) ;
+                
+            -- tirets personnalisés définis par une expression
+            SELECT s_cnig_docurba.qml_data_defined(xmlelement(name dir, layer.data_defined_properties), 'customDash')
+                INTO expr ;
+                
+            IF expr IS NOT NULL
+            THEN
+            UPDATE s_cnig_docurba.qml_detail
+                SET symbol_value = expr
+                WHERE qml_detail.ref_table = $1
+                    AND qml_detail.regle_id = symbol.regle_id
+                    AND qml_detail.symbol_id = layer.symbol_id
+                    AND qml_detail.symbol_class = layer.symbol_class
+                    AND qml_detail.symbol_prop = 'customdash' ;
+            END IF ;
                 
             IF layer.symbol IS NOT NULL
             THEN
