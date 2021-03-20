@@ -61,7 +61,7 @@ BEGIN
 
 ### Prescription %2$s-%3$s
 
-**%4$s** [↑](#préconisations-de-symbologie)',
+**%4$s**',
             descr_psc, psc.typepsc, psc.stypepsc, psc.libelle) ;
             
         IF psc.stype_ref IS NOT NULL
@@ -70,6 +70,8 @@ BEGIN
             descr_psc := format('%1$s
 
 *Mêmes figurés que le sous-code [%2$s-%3$s](#prescription-%2$s-%3$s).*
+
+[↑ haut de page](#préconisations-de-symbologie)
 
 ---',
             descr_psc, psc.typepsc, psc.stype_ref) ;
@@ -88,6 +90,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 %7$s
+
+[↑ haut de page](#préconisations-de-symbologie)
 
 ---',
             descr_psc, psc.typepsc, psc.stypepsc, chemin,
@@ -108,7 +112,7 @@ Géométrie ponctuelle :
 
 ### Information %2$s-%3$s
 
-**%4$s** [↑](#préconisations-de-symbologie)',
+**%4$s**',
             descr_info, info.typeinf, info.stypeinf, info.libelle) ;
             
         IF info.stype_ref IS NOT NULL
@@ -117,6 +121,8 @@ Géométrie ponctuelle :
             descr_info := format('%1$s
 
 *Mêmes figurés que le sous-code [%2$s-%3$s](#information-%2$s-%3$s).*
+
+[↑ haut de page](#préconisations-de-symbologie)
 
 ---',
             descr_info, info.typeinf, info.stype_ref) ;
@@ -135,6 +141,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 %7$s
+
+[↑ haut de page](#préconisations-de-symbologie)
 
 ---',
             descr_info, info.typeinf, info.stypeinf, chemin,
