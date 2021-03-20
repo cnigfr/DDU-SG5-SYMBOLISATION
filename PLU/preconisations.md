@@ -2,7 +2,9 @@ Standard CNIG PLU
 
 # Préconisations de symbologie
 
-[01-00](#01-00) • [02-00](#02-00)
+[Prescriptions](#prescriptions) • [01-00](#01-00) • [02-00](#02-00)
+
+[Informations](#informations) •
 
 ## Prescriptions
 
