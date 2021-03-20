@@ -1,6 +1,6 @@
 
-# Visualisateur QGIS des préconisations de symbolisation
-Mode d'emploi pour la mise à jour.
+# Visualisation des préconisations de symbolisation
+Mode d'emploi pour la mise à jour des fichiers QML, du projet QGIS de visualisation et du récapitulatif Markdown des préconisations.
 
 *Les utilitaires automatisant la mise à jour ont été écrits pour un usage sous PostgreSQL et ne fonctionneront pas nécessairement avec d'autres systèmes de gestion de données.*
 
@@ -14,21 +14,22 @@ Peupler ce schéma (table, données, fonctions) en exécutant les commandes cont
 * visualisateur_qgis_creation_grille.sql ;
 * retrotraduction_qml_data.sql ;
 * retrotraduction_qml.sql ;
-* outils_generiques.sql.
+* outils_generiques.sql ;
+* recapitulatif_markdown.sql.
 
-Les données du visualisateur se trouvent dans les tables `plu_prescription` et `plu_information`. Tous les autres objets créés sont des utilitaires servant à accélérer les mises à jour.
+Les données portant sur la symbologie se trouvent dans les tables `plu_prescription` et `plu_information`. Tous les autres objets créés sont des utilitaires servant à accélérer les mises à jour.
 
 
 ## Ajout, modification ou suppression de codes/sous-codes
 
 Si la modification fait suite à l'ajout ou la suppression de codes ou sous-codes, ajouter/enlever les enregistrements en question dans les tables `plu_prescription` et `plu_information`.
 
-*Attention à bien remplir le champ `stype_ref`, sans quoi les traitements automatisés risquent de ne pas fonctionner correctement !* Si le sous-code n'a pas de symbologie spécifique, et seulement dans ce cas, il conviendra d'indiquer dans `stype_ref` le sous-code de référence (souvent `'00'`).
+*Attention à bien remplir le champ `stype_ref`, sans quoi les traitements automatisés ne fonctionneront pas correctement !* Si le sous-code n'a pas de symbologie spécifique, et seulement dans ce cas, il conviendra d'indiquer dans `stype_ref` le sous-code de référence (souvent `'00'`).
 
 
 ## Régénération des géométries
 
-Les carreaux et les géométries type du visualisateur doivent être regénérés en exécutant les commandes ci-après.
+Les carreaux et les géométries type utilisées par le projet QGIS de visualisation doivent être regénérés en exécutant les commandes ci-après.
 
 Pour les prescriptions :
 
@@ -89,7 +90,7 @@ NB1 : si certains paramètres ou valeurs apparaissent en anglais, c'est parce qu
 SELECT s_cnig_docurba.qml_maj_traduction() ;
 ```
 
-Il faudra alors renseigner les valeurs manquantes dans les champs traductions des tables `qml_traduction_class`, `qml_traduction_prop` et `qml_traduction_value` :
+Les valeurs manquantes doivent être renseignées dans les champs traductions des tables `qml_traduction_class`, `qml_traduction_prop` et `qml_traduction_value` :
 
 ```sql
 SELECT * FROM s_cnig_docurba.qml_traduction_class WHERE traduction IS NULL ;
@@ -97,7 +98,7 @@ SELECT * FROM s_cnig_docurba.qml_traduction_prop WHERE traduction IS NULL ;
 SELECT * FROM s_cnig_docurba.qml_traduction_value WHERE traduction IS NULL ;
 ```
 
-On pourra alors relancer les commandes qui calculent les descriptifs à partir des QML.
+On devra ensuite relancer les commandes qui calculent les descriptifs à partir des QML.
 
 Si l'une des trois tables `qml_traduction_class`, `qml_traduction_prop` ou `qml_traduction_value` a été modifiée, il faudra reverser la nouvelle version dans *retrotraduction_qml_data.sql*.
 
@@ -157,7 +158,7 @@ SELECT s_cnig_docurba.util_genere_commande_insert(
     ) ;
 ```
 
-Les données des autres champs ne sont pas conservées, dans la mesure où elles peuvent être régénérées par des fonctions.
+Les données des autres champs ne sont pas conservées, dans la mesure où elles peuvent (et doivent) être régénérées par des fonctions.
 
 
 ## Mise à jour du projet QGIS de visualisation
@@ -166,3 +167,13 @@ Pour actualiser les tables du géopackage *data.gpkg* qui contiennent les donné
 
 Les modifications apportées aux symboles devront être répercutées dans le projet de visualisation pour chacune des couches concernées, en rechargeant les QML préalablement exportés (Propriétés de la couche > onglet Symbologie > bouton Style > Charger le style... > Depuis un fichier).
 
+
+## Mise à jour du récapitulatif des préconisations
+
+Le contenu du récapitulatif Markdown (fichier [preconisation.md](/PLU/preconisation.md)) doit être régénéré avec la commande suivante :
+
+```sql
+SELECT s_cnig_docurba.md_generateur_plu('/PLU/vignettes') ;
+```
+
+Il sera également nécessaire d'ajouter des vignettes pour les sous-codes dont les spécifications ont été créées ou de remplacer les vignettes en cas de modification des spécifications (répertoire [vignettes](/PLU/vignettes)).
