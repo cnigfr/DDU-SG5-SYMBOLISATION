@@ -1,6 +1,6 @@
 # Préconisations de symbologie
 
-[01-00](#01-00-espace-boise-classe)
+[01-00](#01-00-espace-boisé-classé)
 
 ## Prescriptions
 
