@@ -6,11 +6,11 @@
 
 ### 01-00
 
-Espace boisé classé
+**Espace boisé classé**
 
 ![PSC-01-00](/PLU/vignettes/PSC-01-00.png)
 
-- symbole surfacique :  
+Symbole surfacique :  
 ```
 Motif de points
 • distance horizontale : 5 pt
