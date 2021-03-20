@@ -170,7 +170,7 @@ Les modifications apportées aux symboles devront être répercutées dans le pr
 
 ## Mise à jour du récapitulatif des préconisations
 
-Le contenu du récapitulatif Markdown (fichier [preconisation.md](/PLU/preconisation.md)) doit être régénéré avec la commande suivante :
+Le contenu du récapitulatif Markdown (fichier [preconisations.md](/PLU/preconisations.md)) doit être régénéré avec la commande suivante :
 
 ```sql
 SELECT s_cnig_docurba.md_generateur_plu('/PLU/vignettes') ;
