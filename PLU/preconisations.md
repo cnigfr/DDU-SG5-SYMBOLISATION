@@ -6,4 +6,6 @@
 
 ### 01-00 Espace boisé classé
 
+![PSC-01-01](/vignettes/PSC-01-01.png)
+
 ## Informations
