@@ -65,11 +65,15 @@ Symbole simple
 • taille : 7 pt
 ```
 
+---
+
 ### Prescription 01-01
 
 **Espace boisé classé à protéger ou conserver** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [01-00](#prescription-01-00).*
+
+---
 
 ### Prescription 01-02
 
@@ -77,11 +81,15 @@ Symbole simple
 
 *Mêmes figurés que le sous-code [01-00](#prescription-01-00).*
 
+---
+
 ### Prescription 01-03
 
 **Espace boisé classé significatif au titre de la loi littoral** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [01-00](#prescription-01-00).*
+
+---
 
 ### Prescription 02-00
 
@@ -140,6 +148,8 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 02-01
 
 **Secteur avec interdiction de constructibilité pour des raisons environnementales, de risques, d'intérêt général** [↑](#préconisations-de-symbologie)
@@ -196,6 +206,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Prescription 02-02
 
@@ -254,6 +266,8 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 03-00
 
 **Secteur avec disposition de reconstruction / démolition** [↑](#préconisations-de-symbologie)
@@ -295,17 +309,23 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 03-01
 
 **[réservé aux cartes communales] Secteur dans lequel la reconstruction à l'indentique d'un bâtiment détruit par un sinistre n'est pas autorisée** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [03-00](#prescription-03-00).*
 
+---
+
 ### Prescription 03-02
 
 **Secteur dans lequel la reconstruction à l'indentique d'un bâtiment détruit par un sinistre n'est pas autorisée** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [03-00](#prescription-03-00).*
+
+---
 
 ### Prescription 04-00
 
@@ -327,6 +347,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Prescription 05-00
 
@@ -391,11 +413,15 @@ Symbole simple
 • taille : 5 pt
 ```
 
+---
+
 ### Prescription 05-01
 
 **Emplacement réservé aux voies publiques** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [05-00](#prescription-05-00).*
+
+---
 
 ### Prescription 05-02
 
@@ -403,17 +429,23 @@ Symbole simple
 
 *Mêmes figurés que le sous-code [05-00](#prescription-05-00).*
 
+---
+
 ### Prescription 05-03
 
 **Emplacement réservé aux installations d'intérêt général** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [05-00](#prescription-05-00).*
 
+---
+
 ### Prescription 05-04
 
 **Emplacement réservé aux espaces verts / continuités écologiques** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [05-00](#prescription-05-00).*
+
+---
 
 ### Prescription 05-05
 
@@ -478,6 +510,8 @@ Symbole simple
 • taille : 5 pt
 ```
 
+---
+
 ### Prescription 05-06
 
 **Servitude de localisation des voies, ouvrages publics, installations d'intérêt général et espaces verts en zone U ou AU** [↑](#préconisations-de-symbologie)
@@ -541,6 +575,8 @@ Symbole simple
 • taille : 5 pt
 ```
 
+---
+
 ### Prescription 05-07
 
 **Secteur de projet en attente d'un projet d'aménagement global** [↑](#préconisations-de-symbologie)
@@ -571,6 +607,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Prescription 07-00
 
@@ -641,11 +679,15 @@ Symbole de police
 • taille : 12 pt
 ```
 
+---
+
 ### Prescription 07-01
 
 **Patrimoine bâti à protéger pour des motifs d'ordre culturel, historique, architectural** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [07-00](#prescription-07-00).*
+
+---
 
 ### Prescription 07-02
 
@@ -653,11 +695,15 @@ Symbole de police
 
 *Mêmes figurés que le sous-code [07-00](#prescription-07-00).*
 
+---
+
 ### Prescription 07-03
 
 **Patrimoine paysager correspondant à un espace boisé à protéger pour des motifs d'ordre culturel, historique, architectural** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [07-00](#prescription-07-00).*
+
+---
 
 ### Prescription 07-04
 
@@ -728,11 +774,15 @@ Symbole de police
 • taille : 12 pt
 ```
 
+---
+
 ### Prescription 07-05
 
 **Éléments de paysage correspondant à un espace boisé, (sites et secteurs) à préserver pour des motifs d'ordre écologique** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [07-04](#prescription-07-04).*
+
+---
 
 ### Prescription 08-00
 
@@ -764,6 +814,8 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 13-00
 
 **Zone à aménager en vue de la pratique du ski** [↑](#préconisations-de-symbologie)
@@ -793,6 +845,8 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 14-00
 
 **Secteur de plan de masse** [↑](#préconisations-de-symbologie)
@@ -820,6 +874,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Prescription 15-00
 
@@ -878,11 +934,15 @@ Ligne simple
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 15-01
 
 **Implantation des constructions par rapport aux voies et aux emprises publiques** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [15-00](#prescription-15-00).*
+
+---
 
 ### Prescription 15-02
 
@@ -890,17 +950,23 @@ Géométrie ponctuelle :
 
 *Mêmes figurés que le sous-code [15-00](#prescription-15-00).*
 
+---
+
 ### Prescription 15-03
 
 **Implantation des constructions par rapport aux limites des fonds de parcelles** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [15-00](#prescription-15-00).*
 
+---
+
 ### Prescription 15-98
 
 **Implantation alternative des constructions** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [15-00](#prescription-15-00).*
+
+---
 
 ### Prescription 16-00
 
@@ -938,17 +1004,23 @@ Symbole de police
 • taille : 10 pt
 ```
 
+---
+
 ### Prescription 16-01
 
 **Bâtiment susceptible de changer de destination** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [16-00](#prescription-16-00).*
 
+---
+
 ### Prescription 16-02
 
 **Bâtiments d'habitation existants pouvant faire l'objet d'extensions ou d'annexes** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [16-00](#prescription-16-00).*
+
+---
 
 ### Prescription 16-03
 
@@ -986,17 +1058,23 @@ Symbole de police
 • taille : 10 pt
 ```
 
+---
+
 ### Prescription 16-04
 
 **Constructions et installations nécessaires à l'activité agricole en zone A ou N** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [16-00](#prescription-16-00).*
 
+---
+
 ### Prescription 16-05
 
 **Diversification de l'activité agricole : transformation, conditionnement et ventes de produits agricoles (activités liées au tourisme exclues)** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [16-00](#prescription-16-00).*
+
+---
 
 ### Prescription 17-00
 
@@ -1052,6 +1130,8 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 18-00
 
 **Secteur comportant des orientations d'aménagement et de programmation (OAP)** [↑](#préconisations-de-symbologie)
@@ -1081,11 +1161,15 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 18-01
 
 **OAP de projet (sans règlement)** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
+
+---
 
 ### Prescription 18-02
 
@@ -1093,11 +1177,15 @@ Géométrie ponctuelle :
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
 
+---
+
 ### Prescription 18-03
 
 **OAP relatives à la réhabilitation, la restructuration, la mise en valeur ou l'aménagement** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
+
+---
 
 ### Prescription 18-04
 
@@ -1105,11 +1193,15 @@ Géométrie ponctuelle :
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
 
+---
+
 ### Prescription 18-05
 
 **OAP patrimoniales, architecturales et écologiques** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
+
+---
 
 ### Prescription 18-06
 
@@ -1117,11 +1209,15 @@ Géométrie ponctuelle :
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
 
+---
+
 ### Prescription 18-07
 
 **OAP comprenant des dispositions relatives à l'équipement commercial et artisanal** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
+
+---
 
 ### Prescription 18-08
 
@@ -1129,11 +1225,15 @@ Géométrie ponctuelle :
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
 
+---
+
 ### Prescription 18-09
 
 **OAP relatives aux espaces publics en zone d'aménagement concerté** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
+
+---
 
 ### Prescription 18-10
 
@@ -1141,11 +1241,15 @@ Géométrie ponctuelle :
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
 
+---
+
 ### Prescription 18-11
 
 **OAP valant création de zone d'aménagement concerté** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
+
+---
 
 ### Prescription 19-00
 
@@ -1176,6 +1280,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Prescription 20-00
 
@@ -1208,6 +1314,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Prescription 22-00
 
@@ -1258,11 +1366,15 @@ Symbole simple
 • taille : 6 pt
 ```
 
+---
+
 ### Prescription 22-01
 
 **Diversité commerciale à protéger** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [22-00](#prescription-22-00).*
+
+---
 
 ### Prescription 22-02
 
@@ -1270,17 +1382,23 @@ Symbole simple
 
 *Mêmes figurés que le sous-code [22-00](#prescription-22-00).*
 
+---
+
 ### Prescription 22-03
 
 **Linéaire commercial protégé** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [22-00](#prescription-22-00).*
 
+---
+
 ### Prescription 22-04
 
 **Linéaire commercial protégé renforcé** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [22-00](#prescription-22-00).*
+
+---
 
 ### Prescription 23-00
 
@@ -1310,6 +1428,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Prescription 24-00
 
@@ -1348,11 +1468,15 @@ Ligne hachurée
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 24-01
 
 **Voies de circulation à créer, modifier ou conserver** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [24-00](#prescription-24-00).*
+
+---
 
 ### Prescription 24-02
 
@@ -1360,17 +1484,23 @@ Géométrie ponctuelle :
 
 *Mêmes figurés que le sous-code [24-00](#prescription-24-00).*
 
+---
+
 ### Prescription 24-03
 
 **Voies de circulation à créer** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [24-00](#prescription-24-00).*
 
+---
+
 ### Prescription 24-04
 
 **Voies de circulation à conserver** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [24-00](#prescription-24-00).*
+
+---
 
 ### Prescription 25-00
 
@@ -1428,6 +1558,8 @@ Symbole de police
 • taille : 18 pt
 ```
 
+---
+
 ### Prescription 26-00
 
 **Secteur de performance énergétique** [↑](#préconisations-de-symbologie)
@@ -1459,11 +1591,15 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 26-01
 
 **Secteur de performance énergétique renforcé** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [26-00](#prescription-26-00).*
+
+---
 
 ### Prescription 27-00
 
@@ -1484,6 +1620,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Prescription 28-00
 
@@ -1533,11 +1671,15 @@ Symbole simple
 • taille : 5 pt
 ```
 
+---
+
 ### Prescription 28-01
 
 **Conditions permettant une bonne desserte des terrains par les services publics de collecte des déchets** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [28-00](#prescription-28-00).*
+
+---
 
 ### Prescription 29-00
 
@@ -1568,11 +1710,15 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 29-01
 
 **Secteur avec densité minimale de construction à proximité des tranxsports collectifs** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [29-00](#prescription-29-00).*
+
+---
 
 ### Prescription 30-00
 
@@ -1605,11 +1751,15 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 30-01
 
 **Majoration des volumes constructibles pour l'habitation** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [30-00](#prescription-30-00).*
+
+---
 
 ### Prescription 30-02
 
@@ -1617,17 +1767,23 @@ Géométrie ponctuelle :
 
 *Mêmes figurés que le sous-code [30-00](#prescription-30-00).*
 
+---
+
 ### Prescription 30-03
 
 **Majoration des volumes constructibles pour exemplarité énergétique ou environnementale** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [30-00](#prescription-30-00).*
 
+---
+
 ### Prescription 30-04
 
 **Majoration des volumes constructibles pour les programmes comportant des logements intermédiaires** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [30-00](#prescription-30-00).*
+
+---
 
 ### Prescription 31-00
 
@@ -1680,11 +1836,15 @@ Symbole de police
 • taille : 9 pt
 ```
 
+---
+
 ### Prescription 31-01
 
 **Dunes, landes côtières, plages et lidos, estrans, falaises et abords** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [31-00](#prescription-31-00).*
+
+---
 
 ### Prescription 31-02
 
@@ -1692,11 +1852,15 @@ Symbole de police
 
 *Mêmes figurés que le sous-code [31-00](#prescription-31-00).*
 
+---
+
 ### Prescription 31-03
 
 **Ilots inhabités** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [31-00](#prescription-31-00).*
+
+---
 
 ### Prescription 31-04
 
@@ -1704,11 +1868,15 @@ Symbole de police
 
 *Mêmes figurés que le sous-code [31-00](#prescription-31-00).*
 
+---
+
 ### Prescription 31-05
 
 **Marais, vasières, tourbières, plans d'eau, les zones humides et milieux temporairement immergés** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [31-00](#prescription-31-00).*
+
+---
 
 ### Prescription 31-06
 
@@ -1716,17 +1884,23 @@ Symbole de police
 
 *Mêmes figurés que le sous-code [31-00](#prescription-31-00).*
 
+---
+
 ### Prescription 31-07
 
 **Parties naturelles des sites inscrits ou classés** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [31-00](#prescription-31-00).*
 
+---
+
 ### Prescription 31-08
 
 **Formations géologiques** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [31-00](#prescription-31-00).*
+
+---
 
 ### Prescription 32-00
 
@@ -1765,6 +1939,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Prescription 33-00
 
@@ -1810,6 +1986,8 @@ Ligne simple
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Prescription 34-00
 
@@ -1863,6 +2041,8 @@ Symbole de police
 • taille : 16 pt
 ```
 
+---
+
 ### Prescription 35-00
 
 **Terres nécessaires au maintien et au développement des activités agricoles, pastorales et forestières à préserver** [↑](#préconisations-de-symbologie)
@@ -1911,6 +2091,8 @@ Ligne simple
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 36-00
 
 **Mixité des destinations ou sous-destinations** [↑](#préconisations-de-symbologie)
@@ -1939,6 +2121,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Prescription 37-00
 
@@ -1970,17 +2154,23 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 37-01
 
 **Règles différenciées pour le rez-de-chaussée en raison des risques inondations** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [37-00](#prescription-37-00).*
 
+---
+
 ### Prescription 37-02
 
 **Règles différenciées pour mixité sociale et fonctionnelle** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [37-00](#prescription-37-00).*
+
+---
 
 ### Prescription 38-00
 
@@ -2012,11 +2202,15 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 38-01
 
 **Emprise au sol minimale** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [38-00](#prescription-38-00).*
+
+---
 
 ### Prescription 38-02
 
@@ -2024,17 +2218,23 @@ Géométrie ponctuelle :
 
 *Mêmes figurés que le sous-code [38-00](#prescription-38-00).*
 
+---
+
 ### Prescription 38-97
 
 **Emprise au sol règles qualitatives** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [38-00](#prescription-38-00).*
 
+---
+
 ### Prescription 38-98
 
 **Emprise au sol règles alternatives** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [38-00](#prescription-38-00).*
+
+---
 
 ### Prescription 39-00
 
@@ -2067,11 +2267,15 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 39-01
 
 **Hauteur minimale** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [39-00](#prescription-39-00).*
+
+---
 
 ### Prescription 39-02
 
@@ -2079,17 +2283,23 @@ Géométrie ponctuelle :
 
 *Mêmes figurés que le sous-code [39-00](#prescription-39-00).*
 
+---
+
 ### Prescription 39-97
 
 **Hauteur règles qualitatives** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [39-00](#prescription-39-00).*
 
+---
+
 ### Prescription 39-98
 
 **Hauteur règles alternatives** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [39-00](#prescription-39-00).*
+
+---
 
 ### Prescription 40-00
 
@@ -2121,11 +2331,15 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 40-01
 
 **Volumétrie minimale** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [40-00](#prescription-40-00).*
+
+---
 
 ### Prescription 40-02
 
@@ -2133,17 +2347,23 @@ Géométrie ponctuelle :
 
 *Mêmes figurés que le sous-code [40-00](#prescription-40-00).*
 
+---
+
 ### Prescription 40-97
 
 **Règles volumétriques qualitatives** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [40-00](#prescription-40-00).*
 
+---
+
 ### Prescription 40-98
 
 **Règles volumétriques alternatives** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [40-00](#prescription-40-00).*
+
+---
 
 ### Prescription 41-00
 
@@ -2192,11 +2412,15 @@ Ligne simple
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 41-01
 
 **Aspect extérieur façades** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [41-00](#prescription-41-00).*
+
+---
 
 ### Prescription 41-02
 
@@ -2204,17 +2428,23 @@ Géométrie ponctuelle :
 
 *Mêmes figurés que le sous-code [41-00](#prescription-41-00).*
 
+---
+
 ### Prescription 41-03
 
 **Aspect extérieur clôtures** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [41-00](#prescription-41-00).*
 
+---
+
 ### Prescription 41-98
 
 **Aspect extérieur règles alternatives** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [41-00](#prescription-41-00).*
+
+---
 
 ### Prescription 42-00
 
@@ -2245,6 +2475,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Prescription 43-00
 
@@ -2295,11 +2527,15 @@ Ligne de symboles
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 43-01
 
 **Réalisation d'espaces libres** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [43-00](#prescription-43-00).*
+
+---
 
 ### Prescription 43-02
 
@@ -2307,11 +2543,15 @@ Géométrie ponctuelle :
 
 *Mêmes figurés que le sous-code [43-00](#prescription-43-00).*
 
+---
+
 ### Prescription 43-03
 
 **Règlementation des plantations** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [43-00](#prescription-43-00).*
+
+---
 
 ### Prescription 44-00
 
@@ -2342,11 +2582,15 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 44-01
 
 **Stationnement minimal** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [44-00](#prescription-44-00).*
+
+---
 
 ### Prescription 44-02
 
@@ -2354,11 +2598,15 @@ Géométrie ponctuelle :
 
 *Mêmes figurés que le sous-code [44-00](#prescription-44-00).*
 
+---
+
 ### Prescription 44-03
 
 **Caractéristiques et type de stationnement** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [44-00](#prescription-44-00).*
+
+---
 
 ### Prescription 44-04
 
@@ -2366,17 +2614,23 @@ Géométrie ponctuelle :
 
 *Mêmes figurés que le sous-code [44-00](#prescription-44-00).*
 
+---
+
 ### Prescription 44-05
 
 **Réalisation d'aires de livraisons imposée** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [44-00](#prescription-44-00).*
 
+---
+
 ### Prescription 44-98
 
 **Stationnement règles alternatives** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [44-00](#prescription-44-00).*
+
+---
 
 ### Prescription 45-00
 
@@ -2398,6 +2652,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Prescription 46-00
 
@@ -2430,6 +2686,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Prescription 47-00
 
@@ -2483,11 +2741,15 @@ Symbole de police
 • taille : 14 pt
 ```
 
+---
+
 ### Prescription 47-01
 
 **Réseaux publics d'eau** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [47-00](#prescription-47-00).*
+
+---
 
 ### Prescription 47-02
 
@@ -2495,11 +2757,15 @@ Symbole de police
 
 *Mêmes figurés que le sous-code [47-00](#prescription-47-00).*
 
+---
+
 ### Prescription 47-03
 
 **Réseaux publics d'assainissement** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [47-00](#prescription-47-00).*
+
+---
 
 ### Prescription 47-04
 
@@ -2507,11 +2773,15 @@ Symbole de police
 
 *Mêmes figurés que le sous-code [47-00](#prescription-47-00).*
 
+---
+
 ### Prescription 47-05
 
 **Infrastructures et réseaux de communication électroniques** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [47-00](#prescription-47-00).*
+
+---
 
 ### Prescription 48-00
 
@@ -2565,11 +2835,15 @@ Symbole de police
 • taille : 14 pt
 ```
 
+---
+
 ### Prescription 48-01
 
 **Installations nécessaires à la gestion des eaux pluviales et du ruissellement** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [48-00](#prescription-48-00).*
+
+---
 
 ### Prescription 49-00
 
@@ -2601,17 +2875,23 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Prescription 49-01
 
 **Urbanisation par opération d'ensemble** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [49-00](#prescription-49-00).*
 
+---
+
 ### Prescription 49-02
 
 **Urbanisation conditionnée à la réalisation des équipements internes à la zone** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [49-00](#prescription-49-00).*
+
+---
 
 ### Prescription 50-00
 
@@ -2664,6 +2944,8 @@ Symbole de police
 • taille : 14 pt
 ```
 
+---
+
 ### Prescription 51-00
 
 **Autorisation sous conditions types d'activités, destinations, sous-destinations** [↑](#préconisations-de-symbologie)
@@ -2715,6 +2997,8 @@ Symbole de police
 • taille : 14 pt
 ```
 
+---
+
 ### Prescription 52-00
 
 **Infrastructures et équipements logistiques à préserver ou à développer en zones U et AU** [↑](#préconisations-de-symbologie)
@@ -2744,6 +3028,8 @@ Symbole simple
 • taille : 6 pt
 ```
 
+---
+
 ### Prescription 97-00
 
 **Périmètre d'application d'une pièce écrite territorialisée (rapport de présentation, PADD, règlement, règlement graphique, POA)** [↑](#préconisations-de-symbologie)
@@ -2762,6 +3048,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Prescription 97-01
 
@@ -2782,6 +3070,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Prescription 99-00
 
@@ -2814,11 +3104,15 @@ Symbole simple
 • taille : 6 pt
 ```
 
+---
+
 ### Prescription 99-01
 
 **Autre : affectation des sols et destination des constructions** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [99-00](#prescription-99-00).*
+
+---
 
 ### Prescription 99-02
 
@@ -2826,11 +3120,15 @@ Symbole simple
 
 *Mêmes figurés que le sous-code [99-00](#prescription-99-00).*
 
+---
+
 ### Prescription 99-03
 
 **Autre : mixité sociale et fonctionnelle en zones urbaines ou à urbaniser** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [99-00](#prescription-99-00).*
+
+---
 
 ### Prescription 99-04
 
@@ -2838,11 +3136,15 @@ Symbole simple
 
 *Mêmes figurés que le sous-code [99-00](#prescription-99-00).*
 
+---
+
 ### Prescription 99-05
 
 **Autre : qualité urbaine, architecturale, environnementale et paysagère** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [99-00](#prescription-99-00).*
+
+---
 
 ### Prescription 99-06
 
@@ -2850,11 +3152,15 @@ Symbole simple
 
 *Mêmes figurés que le sous-code [99-00](#prescription-99-00).*
 
+---
+
 ### Prescription 99-07
 
 **Autre : densité** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [99-00](#prescription-99-00).*
+
+---
 
 ### Prescription 99-08
 
@@ -2862,17 +3168,23 @@ Symbole simple
 
 *Mêmes figurés que le sous-code [99-00](#prescription-99-00).*
 
+---
+
 ### Prescription 99-09
 
 **Autre : plan local d'urbanisme tenant lieu de programme local de l'habitat et de plan de déplacements urbains** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [99-00](#prescription-99-00).*
 
+---
+
 ### Prescription 99-10
 
 **Autre : plan local d'urbanisme tenant lieu de programme de déplacements urbains** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [99-00](#prescription-99-00).*
+
+---
 
 ## Informations
 
@@ -2898,6 +3210,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Information 03-00
 
@@ -2927,6 +3241,8 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Information 04-00
 
 **Périmètre de droit de préemption urbain (R123-13 4)** [↑](#préconisations-de-symbologie)
@@ -2954,6 +3270,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Information 04-01
 
@@ -3021,6 +3339,8 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Information 05-00
 
 **Zone d'aménagement différé (R123-13 4)** [↑](#préconisations-de-symbologie)
@@ -3051,6 +3371,8 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Information 07-00
 
 **Périmètre de développement prioritaire économie d'énergie (R123-13 6)** [↑](#préconisations-de-symbologie)
@@ -3080,6 +3402,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Information 08-00
 
@@ -3128,6 +3452,8 @@ Ligne simple
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Information 09-00
 
 **Périmètre minier de concession pour l'exploitation ou le stockage (R123-13 8)** [↑](#préconisations-de-symbologie)
@@ -3157,6 +3483,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Information 10-00
 
@@ -3198,6 +3526,8 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Information 11-00
 
 **Périmètre des zones délimitées – divisions foncières soumises à déclaration préalable (R123-13 10)** [↑](#préconisations-de-symbologie)
@@ -3228,6 +3558,8 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Information 12-00
 
 **Périmètre de sursis à statuer (R123-13 11)** [↑](#préconisations-de-symbologie)
@@ -3248,6 +3580,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Information 13-00
 
@@ -3277,6 +3611,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Information 14-00
 
@@ -3316,6 +3652,8 @@ Ligne de symboles
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Information 16-00
 
@@ -3361,6 +3699,8 @@ Symbole de police
 • famille de police : Wingdings
 • taille : 10 pt
 ```
+
+---
 
 ### Information 17-00
 
@@ -3432,6 +3772,8 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Information 19-01
 
 **Zones d'assainissement collectif/non collectif / eaux usées/eaux pluviales, schéma de réseaux eau et assainissement, systèmes d'élimination des déchets (R 123-14 3)** [↑](#préconisations-de-symbologie)
@@ -3480,11 +3822,15 @@ Symbole de police
 • taille : 22 pt
 ```
 
+---
+
 ### Information 19-02
 
 **Emplacements traitement eaux et déchets** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [19-01](#information-19-01).*
+
+---
 
 ### Information 20-00
 
@@ -3506,6 +3852,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Information 21-00
 
@@ -3536,6 +3884,8 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Information 22-00
 
 **Protection des rives des  plans d'eau en zone de montagne (L145-5 et R145-3)** [↑](#préconisations-de-symbologie)
@@ -3564,6 +3914,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Information 23-00
 
@@ -3594,6 +3946,8 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Information 25-00
 
 **Périmètre de protection des espaces agricoles et naturels péri-urbains (L143-1 et R123-13 15)** [↑](#préconisations-de-symbologie)
@@ -3622,6 +3976,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Information 27-00
 
@@ -3678,6 +4034,8 @@ Symbole de police
 • taille : 23 pt
 ```
 
+---
+
 ### Information 30-00
 
 **Périmètre PUP (L332-11-3 et R123-13 17)** [↑](#préconisations-de-symbologie)
@@ -3707,6 +4065,8 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Information 31-00
 
 **Périmètre patrimonial d'exclusion des matériaux et énergies renouvelables pris par délibération** [↑](#préconisations-de-symbologie)
@@ -3727,6 +4087,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Information 32-00
 
@@ -3758,6 +4120,8 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Information 33-00
 
 **Droit de préemption commercial (L214-1, R214-1 et 2)** [↑](#préconisations-de-symbologie)
@@ -3786,6 +4150,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Information 34-00
 
@@ -3819,6 +4185,8 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Information 35-00
 
 **Périmètre de secteur affecté par un seuil minimal de densité (L331-36, R123-13 20)** [↑](#préconisations-de-symbologie)
@@ -3850,6 +4218,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Information 36-00
 
@@ -3883,6 +4253,8 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Information 37-00
 
 **Bois ou forêts relevant du régime forestier** [↑](#préconisations-de-symbologie)
@@ -3911,6 +4283,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Information 38-00
 
@@ -3944,6 +4318,8 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Information 39-00
 
 **Périmètres de projets AFUP (dans lesquels les propriétaires fonciers sont incités à se regrouper en AFU de projet et les AFU de projet à mener leurs opérations de façon concertée)** [↑](#préconisations-de-symbologie)
@@ -3973,6 +4349,8 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 *Pas de spécification.*
 
+---
+
 ### Information 97-00
 
 **Périmètre d'application d'une pièce écrite territorialisée relative aux annexes (liste des annexes, liste des SUP, plan des SUP)** [↑](#préconisations-de-symbologie)
@@ -3991,6 +4369,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Information 98-00
 
@@ -4012,6 +4392,8 @@ Géométrie linéaire :
 
 Géométrie ponctuelle :  
 *Pas de spécification.*
+
+---
 
 ### Information 99-00
 
@@ -4044,14 +4426,20 @@ Symbole simple
 • taille : 6 pt
 ```
 
+---
+
 ### Information 99-01
 
 **Autre relevant de la loi littoral** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [99-00](#information-99-00).*
 
+---
+
 ### Information 99-02
 
 **Autre relevant de la loi montagne** [↑](#préconisations-de-symbologie)
 
 *Mêmes figurés que le sous-code [99-00](#information-99-00).*
+
+---
