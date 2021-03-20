@@ -374,7 +374,7 @@ Géométrie ponctuelle :
 
 ### Prescription 05-00
 
-**Emplacement réservé (Remarque : sauf lot de données antérieurs au standard v2017, utiliser impérativement les sous-codes suivants)**
+**Emplacement réservé (remarque : sauf lot de données antérieur au standard v2017, utiliser impérativement les sous-codes suivants)**
         
 ![PSC-05-00](/PLU/vignettes/PSC-05-00.png)
 
