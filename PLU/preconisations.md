@@ -12,9 +12,7 @@ Standard CNIG PLU
 
 ### Prescription 01-00
 
-[↑](#préconisations-de-symbologie)
-
-**Espace boisé classé**
+[↑](#préconisations-de-symbologie) **Espace boisé classé**
         
 ![PSC-01-00](/PLU/vignettes/PSC-01-00.png)
 
@@ -69,33 +67,25 @@ Symbole simple
 
 ### Prescription 01-01
 
-[↑](#préconisations-de-symbologie)
-
-**Espace boisé classé à protéger ou conserver**
+[↑](#préconisations-de-symbologie) **Espace boisé classé à protéger ou conserver**
 
 *Mêmes figurés que le sous-code [01-00](#prescription-01-00).*
 
 ### Prescription 01-02
 
-[↑](#préconisations-de-symbologie)
-
-**Espace boisé classé à créer**
+[↑](#préconisations-de-symbologie) **Espace boisé classé à créer**
 
 *Mêmes figurés que le sous-code [01-00](#prescription-01-00).*
 
 ### Prescription 01-03
 
-[↑](#préconisations-de-symbologie)
-
-**Espace boisé classé significatif au titre de la loi littoral**
+[↑](#préconisations-de-symbologie) **Espace boisé classé significatif au titre de la loi littoral**
 
 *Mêmes figurés que le sous-code [01-00](#prescription-01-00).*
 
 ### Prescription 02-00
 
-[↑](#préconisations-de-symbologie)
-
-**Limitation de la constructibilité pour des raisons environnementales**
+[↑](#préconisations-de-symbologie) **Limitation de la constructibilité pour des raisons environnementales**
         
 ![PSC-02-00](/PLU/vignettes/PSC-02-00.png)
 
@@ -152,9 +142,7 @@ Géométrie ponctuelle :
 
 ### Prescription 02-01
 
-[↑](#préconisations-de-symbologie)
-
-**Secteur avec interdiction de constructibilité pour des raisons environnementales, de risques, d'intérêt général**
+[↑](#préconisations-de-symbologie) **Secteur avec interdiction de constructibilité pour des raisons environnementales, de risques, d'intérêt général**
         
 ![PSC-02-01](/PLU/vignettes/PSC-02-01.png)
 
@@ -211,9 +199,7 @@ Géométrie ponctuelle :
 
 ### Prescription 02-02
 
-[↑](#préconisations-de-symbologie)
-
-**Secteur avec conditions spéciales de constructibilité pour des raisons environnementales, de risques, d'intérêt général**
+[↑](#préconisations-de-symbologie) **Secteur avec conditions spéciales de constructibilité pour des raisons environnementales, de risques, d'intérêt général**
         
 ![PSC-02-02](/PLU/vignettes/PSC-02-02.png)
 
@@ -270,9 +256,7 @@ Géométrie ponctuelle :
 
 ### Prescription 03-00
 
-[↑](#préconisations-de-symbologie)
-
-**Secteur avec disposition de reconstruction / démolition**
+[↑](#préconisations-de-symbologie) **Secteur avec disposition de reconstruction / démolition**
         
 ![PSC-03-00](/PLU/vignettes/PSC-03-00.png)
 
@@ -313,25 +297,19 @@ Géométrie ponctuelle :
 
 ### Prescription 03-01
 
-[↑](#préconisations-de-symbologie)
-
-**[réservé aux cartes communales] Secteur dans lequel la reconstruction à l'indentique d'un bâtiment détruit par un sinistre n'est pas autorisée**
+[↑](#préconisations-de-symbologie) **[réservé aux cartes communales] Secteur dans lequel la reconstruction à l'indentique d'un bâtiment détruit par un sinistre n'est pas autorisée**
 
 *Mêmes figurés que le sous-code [03-00](#prescription-03-00).*
 
 ### Prescription 03-02
 
-[↑](#préconisations-de-symbologie)
-
-**Secteur dans lequel la reconstruction à l'indentique d'un bâtiment détruit par un sinistre n'est pas autorisée**
+[↑](#préconisations-de-symbologie) **Secteur dans lequel la reconstruction à l'indentique d'un bâtiment détruit par un sinistre n'est pas autorisée**
 
 *Mêmes figurés que le sous-code [03-00](#prescription-03-00).*
 
 ### Prescription 04-00
 
-[↑](#préconisations-de-symbologie)
-
-**Périmètre issu des PDU sur obligation de stationnement**
+[↑](#préconisations-de-symbologie) **Périmètre issu des PDU sur obligation de stationnement**
         
 ![PSC-04-00](/PLU/vignettes/PSC-04-00.png)
 
@@ -352,9 +330,7 @@ Géométrie ponctuelle :
 
 ### Prescription 05-00
 
-[↑](#préconisations-de-symbologie)
-
-**Emplacement réservé (Remarque : sauf lot de données antérieurs au standard v2017, utiliser impérativement les sous-codes suivants)**
+[↑](#préconisations-de-symbologie) **Emplacement réservé (Remarque : sauf lot de données antérieurs au standard v2017, utiliser impérativement les sous-codes suivants)**
         
 ![PSC-05-00](/PLU/vignettes/PSC-05-00.png)
 
@@ -417,41 +393,31 @@ Symbole simple
 
 ### Prescription 05-01
 
-[↑](#préconisations-de-symbologie)
-
-**Emplacement réservé aux voies publiques**
+[↑](#préconisations-de-symbologie) **Emplacement réservé aux voies publiques**
 
 *Mêmes figurés que le sous-code [05-00](#prescription-05-00).*
 
 ### Prescription 05-02
 
-[↑](#préconisations-de-symbologie)
-
-**Emplacement réservé aux ouvrages publics**
+[↑](#préconisations-de-symbologie) **Emplacement réservé aux ouvrages publics**
 
 *Mêmes figurés que le sous-code [05-00](#prescription-05-00).*
 
 ### Prescription 05-03
 
-[↑](#préconisations-de-symbologie)
-
-**Emplacement réservé aux installations d'intérêt général**
+[↑](#préconisations-de-symbologie) **Emplacement réservé aux installations d'intérêt général**
 
 *Mêmes figurés que le sous-code [05-00](#prescription-05-00).*
 
 ### Prescription 05-04
 
-[↑](#préconisations-de-symbologie)
-
-**Emplacement réservé aux espaces verts / continuités écologiques**
+[↑](#préconisations-de-symbologie) **Emplacement réservé aux espaces verts / continuités écologiques**
 
 *Mêmes figurés que le sous-code [05-00](#prescription-05-00).*
 
 ### Prescription 05-05
 
-[↑](#préconisations-de-symbologie)
-
-**Emplacement réservé logement social / mixité sociale**
+[↑](#préconisations-de-symbologie) **Emplacement réservé logement social / mixité sociale**
         
 ![PSC-05-05](/PLU/vignettes/PSC-05-05.png)
 
@@ -514,9 +480,7 @@ Symbole simple
 
 ### Prescription 05-06
 
-[↑](#préconisations-de-symbologie)
-
-**Servitude de localisation des voies, ouvrages publics, installations d'intérêt général et espaces verts en zone U ou AU**
+[↑](#préconisations-de-symbologie) **Servitude de localisation des voies, ouvrages publics, installations d'intérêt général et espaces verts en zone U ou AU**
         
 ![PSC-05-06](/PLU/vignettes/PSC-05-06.png)
 
@@ -579,9 +543,7 @@ Symbole simple
 
 ### Prescription 05-07
 
-[↑](#préconisations-de-symbologie)
-
-**Secteur de projet en attente d'un projet d'aménagement global**
+[↑](#préconisations-de-symbologie) **Secteur de projet en attente d'un projet d'aménagement global**
         
 ![PSC-05-07](/PLU/vignettes/PSC-05-07.png)
 
@@ -612,9 +574,7 @@ Géométrie ponctuelle :
 
 ### Prescription 07-00
 
-[↑](#préconisations-de-symbologie)
-
-**Patrimoine bâti, paysager ou éléments de paysage à protéger pour des motifs d'ordre culturel, historique, architectural ou écologique**
+[↑](#préconisations-de-symbologie) **Patrimoine bâti, paysager ou éléments de paysage à protéger pour des motifs d'ordre culturel, historique, architectural ou écologique**
         
 ![PSC-07-00](/PLU/vignettes/PSC-07-00.png)
 
@@ -683,33 +643,25 @@ Symbole de police
 
 ### Prescription 07-01
 
-[↑](#préconisations-de-symbologie)
-
-**Patrimoine bâti à protéger pour des motifs d'ordre culturel, historique, architectural**
+[↑](#préconisations-de-symbologie) **Patrimoine bâti à protéger pour des motifs d'ordre culturel, historique, architectural**
 
 *Mêmes figurés que le sous-code [07-00](#prescription-07-00).*
 
 ### Prescription 07-02
 
-[↑](#préconisations-de-symbologie)
-
-**Patrimoine paysager à protéger pour des motifs d'ordre culturel, historique, architectural**
+[↑](#préconisations-de-symbologie) **Patrimoine paysager à protéger pour des motifs d'ordre culturel, historique, architectural**
 
 *Mêmes figurés que le sous-code [07-00](#prescription-07-00).*
 
 ### Prescription 07-03
 
-[↑](#préconisations-de-symbologie)
-
-**Patrimoine paysager correspondant à un espace boisé à protéger pour des motifs d'ordre culturel, historique, architectural**
+[↑](#préconisations-de-symbologie) **Patrimoine paysager correspondant à un espace boisé à protéger pour des motifs d'ordre culturel, historique, architectural**
 
 *Mêmes figurés que le sous-code [07-00](#prescription-07-00).*
 
 ### Prescription 07-04
 
-[↑](#préconisations-de-symbologie)
-
-**Éléments de paysage, (sites et secteurs) à préserver pour des motifs d'ordre écologique**
+[↑](#préconisations-de-symbologie) **Éléments de paysage, (sites et secteurs) à préserver pour des motifs d'ordre écologique**
         
 ![PSC-07-04](/PLU/vignettes/PSC-07-04.png)
 
@@ -778,17 +730,13 @@ Symbole de police
 
 ### Prescription 07-05
 
-[↑](#préconisations-de-symbologie)
-
-**Éléments de paysage correspondant à un espace boisé, (sites et secteurs) à préserver pour des motifs d'ordre écologique**
+[↑](#préconisations-de-symbologie) **Éléments de paysage correspondant à un espace boisé, (sites et secteurs) à préserver pour des motifs d'ordre écologique**
 
 *Mêmes figurés que le sous-code [07-04](#prescription-07-04).*
 
 ### Prescription 08-00
 
-[↑](#préconisations-de-symbologie)
-
-**Terrain cultivé ou non bâti à protéger en zone urbaine**
+[↑](#préconisations-de-symbologie) **Terrain cultivé ou non bâti à protéger en zone urbaine**
         
 ![PSC-08-00](/PLU/vignettes/PSC-08-00.png)
 
@@ -818,9 +766,7 @@ Géométrie ponctuelle :
 
 ### Prescription 13-00
 
-[↑](#préconisations-de-symbologie)
-
-**Zone à aménager en vue de la pratique du ski**
+[↑](#préconisations-de-symbologie) **Zone à aménager en vue de la pratique du ski**
         
 ![PSC-13-00](/PLU/vignettes/PSC-13-00.png)
 
@@ -849,9 +795,7 @@ Géométrie ponctuelle :
 
 ### Prescription 14-00
 
-[↑](#préconisations-de-symbologie)
-
-**Secteur de plan de masse**
+[↑](#préconisations-de-symbologie) **Secteur de plan de masse**
         
 ![PSC-14-00](/PLU/vignettes/PSC-14-00.png)
 
@@ -879,9 +823,7 @@ Géométrie ponctuelle :
 
 ### Prescription 15-00
 
-[↑](#préconisations-de-symbologie)
-
-**Règles d'implantation des constructions**
+[↑](#préconisations-de-symbologie) **Règles d'implantation des constructions**
         
 ![PSC-15-00](/PLU/vignettes/PSC-15-00.png)
 
@@ -938,41 +880,31 @@ Géométrie ponctuelle :
 
 ### Prescription 15-01
 
-[↑](#préconisations-de-symbologie)
-
-**Implantation des constructions par rapport aux voies et aux emprises publiques**
+[↑](#préconisations-de-symbologie) **Implantation des constructions par rapport aux voies et aux emprises publiques**
 
 *Mêmes figurés que le sous-code [15-00](#prescription-15-00).*
 
 ### Prescription 15-02
 
-[↑](#préconisations-de-symbologie)
-
-**Implantation des constructions par rapport aux limites séparatives latérales**
+[↑](#préconisations-de-symbologie) **Implantation des constructions par rapport aux limites séparatives latérales**
 
 *Mêmes figurés que le sous-code [15-00](#prescription-15-00).*
 
 ### Prescription 15-03
 
-[↑](#préconisations-de-symbologie)
-
-**Implantation des constructions par rapport aux limites des fonds de parcelles**
+[↑](#préconisations-de-symbologie) **Implantation des constructions par rapport aux limites des fonds de parcelles**
 
 *Mêmes figurés que le sous-code [15-00](#prescription-15-00).*
 
 ### Prescription 15-98
 
-[↑](#préconisations-de-symbologie)
-
-**Implantation alternative des constructions**
+[↑](#préconisations-de-symbologie) **Implantation alternative des constructions**
 
 *Mêmes figurés que le sous-code [15-00](#prescription-15-00).*
 
 ### Prescription 16-00
 
-[↑](#préconisations-de-symbologie)
-
-**Constructions et installations nécessaires à des équipements collectifs**
+[↑](#préconisations-de-symbologie) **Constructions et installations nécessaires à des équipements collectifs**
         
 ![PSC-16-00](/PLU/vignettes/PSC-16-00.png)
 
@@ -1008,25 +940,19 @@ Symbole de police
 
 ### Prescription 16-01
 
-[↑](#préconisations-de-symbologie)
-
-**Bâtiment susceptible de changer de destination**
+[↑](#préconisations-de-symbologie) **Bâtiment susceptible de changer de destination**
 
 *Mêmes figurés que le sous-code [16-00](#prescription-16-00).*
 
 ### Prescription 16-02
 
-[↑](#préconisations-de-symbologie)
-
-**Bâtiments d'habitation existants pouvant faire l'objet d'extensions ou d'annexes**
+[↑](#préconisations-de-symbologie) **Bâtiments d'habitation existants pouvant faire l'objet d'extensions ou d'annexes**
 
 *Mêmes figurés que le sous-code [16-00](#prescription-16-00).*
 
 ### Prescription 16-03
 
-[↑](#préconisations-de-symbologie)
-
-**Secteur de taille et de capacité d'accueil limitées (STECAL)**
+[↑](#préconisations-de-symbologie) **Secteur de taille et de capacité d'accueil limitées (STECAL)**
         
 ![PSC-16-03](/PLU/vignettes/PSC-16-03.png)
 
@@ -1062,25 +988,19 @@ Symbole de police
 
 ### Prescription 16-04
 
-[↑](#préconisations-de-symbologie)
-
-**Constructions et installations nécessaires à l'activité agricole en zone A ou N**
+[↑](#préconisations-de-symbologie) **Constructions et installations nécessaires à l'activité agricole en zone A ou N**
 
 *Mêmes figurés que le sous-code [16-00](#prescription-16-00).*
 
 ### Prescription 16-05
 
-[↑](#préconisations-de-symbologie)
-
-**Diversification de l'activité agricole : transformation, conditionnement et ventes de produits agricoles (activités liées au tourisme exclues)**
+[↑](#préconisations-de-symbologie) **Diversification de l'activité agricole : transformation, conditionnement et ventes de produits agricoles (activités liées au tourisme exclues)**
 
 *Mêmes figurés que le sous-code [16-00](#prescription-16-00).*
 
 ### Prescription 17-00
 
-[↑](#préconisations-de-symbologie)
-
-**Secteur à programme de logements mixité sociale en Zone U et AU**
+[↑](#préconisations-de-symbologie) **Secteur à programme de logements mixité sociale en Zone U et AU**
         
 ![PSC-17-00](/PLU/vignettes/PSC-17-00.png)
 
@@ -1134,9 +1054,7 @@ Géométrie ponctuelle :
 
 ### Prescription 18-00
 
-[↑](#préconisations-de-symbologie)
-
-**Secteur comportant des orientations d'aménagement et de programmation (OAP)**
+[↑](#préconisations-de-symbologie) **Secteur comportant des orientations d'aménagement et de programmation (OAP)**
         
 ![PSC-18-00](/PLU/vignettes/PSC-18-00.png)
 
@@ -1165,97 +1083,73 @@ Géométrie ponctuelle :
 
 ### Prescription 18-01
 
-[↑](#préconisations-de-symbologie)
-
-**OAP de projet (sans règlement)**
+[↑](#préconisations-de-symbologie) **OAP de projet (sans règlement)**
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
 
 ### Prescription 18-02
 
-[↑](#préconisations-de-symbologie)
-
-**OAP entrées de ville**
+[↑](#préconisations-de-symbologie) **OAP entrées de ville**
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
 
 ### Prescription 18-03
 
-[↑](#préconisations-de-symbologie)
-
-**OAP relatives à la réhabilitation, la restructuration, la mise en valeur ou l'aménagement**
+[↑](#préconisations-de-symbologie) **OAP relatives à la réhabilitation, la restructuration, la mise en valeur ou l'aménagement**
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
 
 ### Prescription 18-04
 
-[↑](#préconisations-de-symbologie)
-
-**OAP d'adaptation des périmètres de transports collectifs**
+[↑](#préconisations-de-symbologie) **OAP d'adaptation des périmètres de transports collectifs**
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
 
 ### Prescription 18-05
 
-[↑](#préconisations-de-symbologie)
-
-**OAP patrimoniales, architecturales et écologiques**
+[↑](#préconisations-de-symbologie) **OAP patrimoniales, architecturales et écologiques**
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
 
 ### Prescription 18-06
 
-[↑](#préconisations-de-symbologie)
-
-**OAP relatives à l'habitat**
+[↑](#préconisations-de-symbologie) **OAP relatives à l'habitat**
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
 
 ### Prescription 18-07
 
-[↑](#préconisations-de-symbologie)
-
-**OAP comprenant des dispositions relatives à l'équipement commercial et artisanal**
+[↑](#préconisations-de-symbologie) **OAP comprenant des dispositions relatives à l'équipement commercial et artisanal**
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
 
 ### Prescription 18-08
 
-[↑](#préconisations-de-symbologie)
-
-**OAP relatives aux transports et aux déplacements**
+[↑](#préconisations-de-symbologie) **OAP relatives aux transports et aux déplacements**
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
 
 ### Prescription 18-09
 
-[↑](#préconisations-de-symbologie)
-
-**OAP relatives aux espaces publics en zone d'aménagement concerté**
+[↑](#préconisations-de-symbologie) **OAP relatives aux espaces publics en zone d'aménagement concerté**
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
 
 ### Prescription 18-10
 
-[↑](#préconisations-de-symbologie)
-
-**OAP relatives aux ouvrages publics, installations d'intérêt général et espaces verts en zone d'aménagement concerté**
+[↑](#préconisations-de-symbologie) **OAP relatives aux ouvrages publics, installations d'intérêt général et espaces verts en zone d'aménagement concerté**
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
 
 ### Prescription 18-11
 
-[↑](#préconisations-de-symbologie)
-
-**OAP valant création de zone d'aménagement concerté**
+[↑](#préconisations-de-symbologie) **OAP valant création de zone d'aménagement concerté**
 
 *Mêmes figurés que le sous-code [18-00](#prescription-18-00).*
 
 ### Prescription 19-00
 
-[↑](#préconisations-de-symbologie)
-
-**Secteur protégé en raison de la richesse du sol et du sous-sol**
+[↑](#préconisations-de-symbologie) **Secteur protégé en raison de la richesse du sol et du sous-sol**
         
 ![PSC-19-00](/PLU/vignettes/PSC-19-00.png)
 
@@ -1285,9 +1179,7 @@ Géométrie ponctuelle :
 
 ### Prescription 20-00
 
-[↑](#préconisations-de-symbologie)
-
-**Secteur à transfert de constructibilité en zone N**
+[↑](#préconisations-de-symbologie) **Secteur à transfert de constructibilité en zone N**
         
 ![PSC-20-00](/PLU/vignettes/PSC-20-00.png)
 
@@ -1319,9 +1211,7 @@ Géométrie ponctuelle :
 
 ### Prescription 22-00
 
-[↑](#préconisations-de-symbologie)
-
-**Diversité commerciale à protéger ou à développer**
+[↑](#préconisations-de-symbologie) **Diversité commerciale à protéger ou à développer**
         
 ![PSC-22-00](/PLU/vignettes/PSC-22-00.png)
 
@@ -1370,41 +1260,31 @@ Symbole simple
 
 ### Prescription 22-01
 
-[↑](#préconisations-de-symbologie)
-
-**Diversité commerciale à protéger**
+[↑](#préconisations-de-symbologie) **Diversité commerciale à protéger**
 
 *Mêmes figurés que le sous-code [22-00](#prescription-22-00).*
 
 ### Prescription 22-02
 
-[↑](#préconisations-de-symbologie)
-
-**Diversité commerciale à développer**
+[↑](#préconisations-de-symbologie) **Diversité commerciale à développer**
 
 *Mêmes figurés que le sous-code [22-00](#prescription-22-00).*
 
 ### Prescription 22-03
 
-[↑](#préconisations-de-symbologie)
-
-**Linéaire commercial protégé**
+[↑](#préconisations-de-symbologie) **Linéaire commercial protégé**
 
 *Mêmes figurés que le sous-code [22-00](#prescription-22-00).*
 
 ### Prescription 22-04
 
-[↑](#préconisations-de-symbologie)
-
-**Linéaire commercial protégé renforcé**
+[↑](#préconisations-de-symbologie) **Linéaire commercial protégé renforcé**
 
 *Mêmes figurés que le sous-code [22-00](#prescription-22-00).*
 
 ### Prescription 23-00
 
-[↑](#préconisations-de-symbologie)
-
-**Secteur avec taille minimale des logements en zone U et AU**
+[↑](#préconisations-de-symbologie) **Secteur avec taille minimale des logements en zone U et AU**
         
 ![PSC-23-00](/PLU/vignettes/PSC-23-00.png)
 
@@ -1433,9 +1313,7 @@ Géométrie ponctuelle :
 
 ### Prescription 24-00
 
-[↑](#préconisations-de-symbologie)
-
-**Voies, chemins, transport public à conserver et à créer**
+[↑](#préconisations-de-symbologie) **Voies, chemins, transport public à conserver et à créer**
         
 ![PSC-24-00](/PLU/vignettes/PSC-24-00.png)
 
@@ -1472,41 +1350,31 @@ Géométrie ponctuelle :
 
 ### Prescription 24-01
 
-[↑](#préconisations-de-symbologie)
-
-**Voies de circulation à créer, modifier ou conserver**
+[↑](#préconisations-de-symbologie) **Voies de circulation à créer, modifier ou conserver**
 
 *Mêmes figurés que le sous-code [24-00](#prescription-24-00).*
 
 ### Prescription 24-02
 
-[↑](#préconisations-de-symbologie)
-
-**Voies de circulation à modifier**
+[↑](#préconisations-de-symbologie) **Voies de circulation à modifier**
 
 *Mêmes figurés que le sous-code [24-00](#prescription-24-00).*
 
 ### Prescription 24-03
 
-[↑](#préconisations-de-symbologie)
-
-**Voies de circulation à créer**
+[↑](#préconisations-de-symbologie) **Voies de circulation à créer**
 
 *Mêmes figurés que le sous-code [24-00](#prescription-24-00).*
 
 ### Prescription 24-04
 
-[↑](#préconisations-de-symbologie)
-
-**Voies de circulation à conserver**
+[↑](#préconisations-de-symbologie) **Voies de circulation à conserver**
 
 *Mêmes figurés que le sous-code [24-00](#prescription-24-00).*
 
 ### Prescription 25-00
 
-[↑](#préconisations-de-symbologie)
-
-**Éléments de continuité écologique et trame verte et bleue**
+[↑](#préconisations-de-symbologie) **Éléments de continuité écologique et trame verte et bleue**
         
 ![PSC-25-00](/PLU/vignettes/PSC-25-00.png)
 
@@ -1562,9 +1430,7 @@ Symbole de police
 
 ### Prescription 26-00
 
-[↑](#préconisations-de-symbologie)
-
-**Secteur de performance énergétique**
+[↑](#préconisations-de-symbologie) **Secteur de performance énergétique**
         
 ![PSC-26-00](/PLU/vignettes/PSC-26-00.png)
 
@@ -1595,17 +1461,13 @@ Géométrie ponctuelle :
 
 ### Prescription 26-01
 
-[↑](#préconisations-de-symbologie)
-
-**Secteur de performance énergétique renforcé**
+[↑](#préconisations-de-symbologie) **Secteur de performance énergétique renforcé**
 
 *Mêmes figurés que le sous-code [26-00](#prescription-26-00).*
 
 ### Prescription 27-00
 
-[↑](#préconisations-de-symbologie)
-
-**Secteur d'aménagement numérique**
+[↑](#préconisations-de-symbologie) **Secteur d'aménagement numérique**
         
 ![PSC-27-00](/PLU/vignettes/PSC-27-00.png)
 
@@ -1625,9 +1487,7 @@ Géométrie ponctuelle :
 
 ### Prescription 28-00
 
-[↑](#préconisations-de-symbologie)
-
-**Conditions de desserte**
+[↑](#préconisations-de-symbologie) **Conditions de desserte**
         
 ![PSC-28-00](/PLU/vignettes/PSC-28-00.png)
 
@@ -1675,17 +1535,13 @@ Symbole simple
 
 ### Prescription 28-01
 
-[↑](#préconisations-de-symbologie)
-
-**Conditions permettant une bonne desserte des terrains par les services publics de collecte des déchets**
+[↑](#préconisations-de-symbologie) **Conditions permettant une bonne desserte des terrains par les services publics de collecte des déchets**
 
 *Mêmes figurés que le sous-code [28-00](#prescription-28-00).*
 
 ### Prescription 29-00
 
-[↑](#préconisations-de-symbologie)
-
-**Secteur avec densité minimale de construction**
+[↑](#préconisations-de-symbologie) **Secteur avec densité minimale de construction**
         
 ![PSC-29-00](/PLU/vignettes/PSC-29-00.png)
 
@@ -1714,17 +1570,13 @@ Géométrie ponctuelle :
 
 ### Prescription 29-01
 
-[↑](#préconisations-de-symbologie)
-
-**Secteur avec densité minimale de construction à proximité des tranxsports collectifs**
+[↑](#préconisations-de-symbologie) **Secteur avec densité minimale de construction à proximité des tranxsports collectifs**
 
 *Mêmes figurés que le sous-code [29-00](#prescription-29-00).*
 
 ### Prescription 30-00
 
-[↑](#préconisations-de-symbologie)
-
-**Majoration des volumes constructibles**
+[↑](#préconisations-de-symbologie) **Majoration des volumes constructibles**
         
 ![PSC-30-00](/PLU/vignettes/PSC-30-00.png)
 
@@ -1755,41 +1607,31 @@ Géométrie ponctuelle :
 
 ### Prescription 30-01
 
-[↑](#préconisations-de-symbologie)
-
-**Majoration des volumes constructibles pour l'habitation**
+[↑](#préconisations-de-symbologie) **Majoration des volumes constructibles pour l'habitation**
 
 *Mêmes figurés que le sous-code [30-00](#prescription-30-00).*
 
 ### Prescription 30-02
 
-[↑](#préconisations-de-symbologie)
-
-**Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux**
+[↑](#préconisations-de-symbologie) **Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux**
 
 *Mêmes figurés que le sous-code [30-00](#prescription-30-00).*
 
 ### Prescription 30-03
 
-[↑](#préconisations-de-symbologie)
-
-**Majoration des volumes constructibles pour exemplarité énergétique ou environnementale**
+[↑](#préconisations-de-symbologie) **Majoration des volumes constructibles pour exemplarité énergétique ou environnementale**
 
 *Mêmes figurés que le sous-code [30-00](#prescription-30-00).*
 
 ### Prescription 30-04
 
-[↑](#préconisations-de-symbologie)
-
-**Majoration des volumes constructibles pour les programmes comportant des logements intermédiaires**
+[↑](#préconisations-de-symbologie) **Majoration des volumes constructibles pour les programmes comportant des logements intermédiaires**
 
 *Mêmes figurés que le sous-code [30-00](#prescription-30-00).*
 
 ### Prescription 31-00
 
-[↑](#préconisations-de-symbologie)
-
-**Espaces remarquables du littoral**
+[↑](#préconisations-de-symbologie) **Espaces remarquables du littoral**
         
 ![PSC-31-00](/PLU/vignettes/PSC-31-00.png)
 
@@ -1840,73 +1682,55 @@ Symbole de police
 
 ### Prescription 31-01
 
-[↑](#préconisations-de-symbologie)
-
-**Dunes, landes côtières, plages et lidos, estrans, falaises et abords**
+[↑](#préconisations-de-symbologie) **Dunes, landes côtières, plages et lidos, estrans, falaises et abords**
 
 *Mêmes figurés que le sous-code [31-00](#prescription-31-00).*
 
 ### Prescription 31-02
 
-[↑](#préconisations-de-symbologie)
-
-**Forêts et zones boisées proches du rivage de la mer et des plans d'eau intérieurs d'une superficie supérieure à 1000 hectares**
+[↑](#préconisations-de-symbologie) **Forêts et zones boisées proches du rivage de la mer et des plans d'eau intérieurs d'une superficie supérieure à 1000 hectares**
 
 *Mêmes figurés que le sous-code [31-00](#prescription-31-00).*
 
 ### Prescription 31-03
 
-[↑](#préconisations-de-symbologie)
-
-**Ilots inhabités**
+[↑](#préconisations-de-symbologie) **Ilots inhabités**
 
 *Mêmes figurés que le sous-code [31-00](#prescription-31-00).*
 
 ### Prescription 31-04
 
-[↑](#préconisations-de-symbologie)
-
-**Parties naturelles des estuaires, des rias ou abers et des caps**
+[↑](#préconisations-de-symbologie) **Parties naturelles des estuaires, des rias ou abers et des caps**
 
 *Mêmes figurés que le sous-code [31-00](#prescription-31-00).*
 
 ### Prescription 31-05
 
-[↑](#préconisations-de-symbologie)
-
-**Marais, vasières, tourbières, plans d'eau, les zones humides et milieux temporairement immergés**
+[↑](#préconisations-de-symbologie) **Marais, vasières, tourbières, plans d'eau, les zones humides et milieux temporairement immergés**
 
 *Mêmes figurés que le sous-code [31-00](#prescription-31-00).*
 
 ### Prescription 31-06
 
-[↑](#préconisations-de-symbologie)
-
-**Milieux abritant des concentrations naturelles d'espèces animales ou végétales**
+[↑](#préconisations-de-symbologie) **Milieux abritant des concentrations naturelles d'espèces animales ou végétales**
 
 *Mêmes figurés que le sous-code [31-00](#prescription-31-00).*
 
 ### Prescription 31-07
 
-[↑](#préconisations-de-symbologie)
-
-**Parties naturelles des sites inscrits ou classés**
+[↑](#préconisations-de-symbologie) **Parties naturelles des sites inscrits ou classés**
 
 *Mêmes figurés que le sous-code [31-00](#prescription-31-00).*
 
 ### Prescription 31-08
 
-[↑](#préconisations-de-symbologie)
-
-**Formations géologiques**
+[↑](#préconisations-de-symbologie) **Formations géologiques**
 
 *Mêmes figurés que le sous-code [31-00](#prescription-31-00).*
 
 ### Prescription 32-00
 
-[↑](#préconisations-de-symbologie)
-
-**Exclusion protection de plans d'eau de faible importance**
+[↑](#préconisations-de-symbologie) **Exclusion protection de plans d'eau de faible importance**
         
 ![PSC-32-00](/PLU/vignettes/PSC-32-00.png)
 
@@ -1944,9 +1768,7 @@ Géométrie ponctuelle :
 
 ### Prescription 33-00
 
-[↑](#préconisations-de-symbologie)
-
-**Secteur de dérogation aux protections des rives des plans d'eau en zone de montagne**
+[↑](#préconisations-de-symbologie) **Secteur de dérogation aux protections des rives des plans d'eau en zone de montagne**
         
 ![PSC-33-00](/PLU/vignettes/PSC-33-00.png)
 
@@ -1991,9 +1813,7 @@ Géométrie ponctuelle :
 
 ### Prescription 34-00
 
-[↑](#préconisations-de-symbologie)
-
-**Espaces, paysages et milieux caractéristiques du patrimoine naturel et culturel montagnard à préserver**
+[↑](#préconisations-de-symbologie) **Espaces, paysages et milieux caractéristiques du patrimoine naturel et culturel montagnard à préserver**
         
 ![PSC-34-00](/PLU/vignettes/PSC-34-00.png)
 
@@ -2045,9 +1865,7 @@ Symbole de police
 
 ### Prescription 35-00
 
-[↑](#préconisations-de-symbologie)
-
-**Terres nécessaires au maintien et au développement des activités agricoles, pastorales et forestières à préserver**
+[↑](#préconisations-de-symbologie) **Terres nécessaires au maintien et au développement des activités agricoles, pastorales et forestières à préserver**
         
 ![PSC-35-00](/PLU/vignettes/PSC-35-00.png)
 
@@ -2095,9 +1913,7 @@ Géométrie ponctuelle :
 
 ### Prescription 36-00
 
-[↑](#préconisations-de-symbologie)
-
-**Mixité des destinations ou sous-destinations**
+[↑](#préconisations-de-symbologie) **Mixité des destinations ou sous-destinations**
         
 ![PSC-36-00](/PLU/vignettes/PSC-36-00.png)
 
@@ -2126,9 +1942,7 @@ Géométrie ponctuelle :
 
 ### Prescription 37-00
 
-[↑](#préconisations-de-symbologie)
-
-**Règles différenciées entre le rez-de-chaussée et les étages supérieurs des constructions**
+[↑](#préconisations-de-symbologie) **Règles différenciées entre le rez-de-chaussée et les étages supérieurs des constructions**
         
 ![PSC-37-00](/PLU/vignettes/PSC-37-00.png)
 
@@ -2158,25 +1972,19 @@ Géométrie ponctuelle :
 
 ### Prescription 37-01
 
-[↑](#préconisations-de-symbologie)
-
-**Règles différenciées pour le rez-de-chaussée en raison des risques inondations**
+[↑](#préconisations-de-symbologie) **Règles différenciées pour le rez-de-chaussée en raison des risques inondations**
 
 *Mêmes figurés que le sous-code [37-00](#prescription-37-00).*
 
 ### Prescription 37-02
 
-[↑](#préconisations-de-symbologie)
-
-**Règles différenciées pour mixité sociale et fonctionnelle**
+[↑](#préconisations-de-symbologie) **Règles différenciées pour mixité sociale et fonctionnelle**
 
 *Mêmes figurés que le sous-code [37-00](#prescription-37-00).*
 
 ### Prescription 38-00
 
-[↑](#préconisations-de-symbologie)
-
-**Emprise au sol**
+[↑](#préconisations-de-symbologie) **Emprise au sol**
         
 ![PSC-38-00](/PLU/vignettes/PSC-38-00.png)
 
@@ -2206,41 +2014,31 @@ Géométrie ponctuelle :
 
 ### Prescription 38-01
 
-[↑](#préconisations-de-symbologie)
-
-**Emprise au sol minimale**
+[↑](#préconisations-de-symbologie) **Emprise au sol minimale**
 
 *Mêmes figurés que le sous-code [38-00](#prescription-38-00).*
 
 ### Prescription 38-02
 
-[↑](#préconisations-de-symbologie)
-
-**Emprise au sol maximale**
+[↑](#préconisations-de-symbologie) **Emprise au sol maximale**
 
 *Mêmes figurés que le sous-code [38-00](#prescription-38-00).*
 
 ### Prescription 38-97
 
-[↑](#préconisations-de-symbologie)
-
-**Emprise au sol règles qualitatives**
+[↑](#préconisations-de-symbologie) **Emprise au sol règles qualitatives**
 
 *Mêmes figurés que le sous-code [38-00](#prescription-38-00).*
 
 ### Prescription 38-98
 
-[↑](#préconisations-de-symbologie)
-
-**Emprise au sol règles alternatives**
+[↑](#préconisations-de-symbologie) **Emprise au sol règles alternatives**
 
 *Mêmes figurés que le sous-code [38-00](#prescription-38-00).*
 
 ### Prescription 39-00
 
-[↑](#préconisations-de-symbologie)
-
-**Hauteur**
+[↑](#préconisations-de-symbologie) **Hauteur**
         
 ![PSC-39-00](/PLU/vignettes/PSC-39-00.png)
 
@@ -2271,41 +2069,31 @@ Géométrie ponctuelle :
 
 ### Prescription 39-01
 
-[↑](#préconisations-de-symbologie)
-
-**Hauteur minimale**
+[↑](#préconisations-de-symbologie) **Hauteur minimale**
 
 *Mêmes figurés que le sous-code [39-00](#prescription-39-00).*
 
 ### Prescription 39-02
 
-[↑](#préconisations-de-symbologie)
-
-**Hauteur maximale**
+[↑](#préconisations-de-symbologie) **Hauteur maximale**
 
 *Mêmes figurés que le sous-code [39-00](#prescription-39-00).*
 
 ### Prescription 39-97
 
-[↑](#préconisations-de-symbologie)
-
-**Hauteur règles qualitatives**
+[↑](#préconisations-de-symbologie) **Hauteur règles qualitatives**
 
 *Mêmes figurés que le sous-code [39-00](#prescription-39-00).*
 
 ### Prescription 39-98
 
-[↑](#préconisations-de-symbologie)
-
-**Hauteur règles alternatives**
+[↑](#préconisations-de-symbologie) **Hauteur règles alternatives**
 
 *Mêmes figurés que le sous-code [39-00](#prescription-39-00).*
 
 ### Prescription 40-00
 
-[↑](#préconisations-de-symbologie)
-
-**Volumétrie**
+[↑](#préconisations-de-symbologie) **Volumétrie**
         
 ![PSC-40-00](/PLU/vignettes/PSC-40-00.png)
 
@@ -2335,41 +2123,31 @@ Géométrie ponctuelle :
 
 ### Prescription 40-01
 
-[↑](#préconisations-de-symbologie)
-
-**Volumétrie minimale**
+[↑](#préconisations-de-symbologie) **Volumétrie minimale**
 
 *Mêmes figurés que le sous-code [40-00](#prescription-40-00).*
 
 ### Prescription 40-02
 
-[↑](#préconisations-de-symbologie)
-
-**Volumétrie maximale**
+[↑](#préconisations-de-symbologie) **Volumétrie maximale**
 
 *Mêmes figurés que le sous-code [40-00](#prescription-40-00).*
 
 ### Prescription 40-97
 
-[↑](#préconisations-de-symbologie)
-
-**Règles volumétriques qualitatives**
+[↑](#préconisations-de-symbologie) **Règles volumétriques qualitatives**
 
 *Mêmes figurés que le sous-code [40-00](#prescription-40-00).*
 
 ### Prescription 40-98
 
-[↑](#préconisations-de-symbologie)
-
-**Règles volumétriques alternatives**
+[↑](#préconisations-de-symbologie) **Règles volumétriques alternatives**
 
 *Mêmes figurés que le sous-code [40-00](#prescription-40-00).*
 
 ### Prescription 41-00
 
-[↑](#préconisations-de-symbologie)
-
-**Aspect extérieur**
+[↑](#préconisations-de-symbologie) **Aspect extérieur**
         
 ![PSC-41-00](/PLU/vignettes/PSC-41-00.png)
 
@@ -2416,41 +2194,31 @@ Géométrie ponctuelle :
 
 ### Prescription 41-01
 
-[↑](#préconisations-de-symbologie)
-
-**Aspect extérieur façades**
+[↑](#préconisations-de-symbologie) **Aspect extérieur façades**
 
 *Mêmes figurés que le sous-code [41-00](#prescription-41-00).*
 
 ### Prescription 41-02
 
-[↑](#préconisations-de-symbologie)
-
-**Aspect extérieur toitures**
+[↑](#préconisations-de-symbologie) **Aspect extérieur toitures**
 
 *Mêmes figurés que le sous-code [41-00](#prescription-41-00).*
 
 ### Prescription 41-03
 
-[↑](#préconisations-de-symbologie)
-
-**Aspect extérieur clôtures**
+[↑](#préconisations-de-symbologie) **Aspect extérieur clôtures**
 
 *Mêmes figurés que le sous-code [41-00](#prescription-41-00).*
 
 ### Prescription 41-98
 
-[↑](#préconisations-de-symbologie)
-
-**Aspect extérieur règles alternatives**
+[↑](#préconisations-de-symbologie) **Aspect extérieur règles alternatives**
 
 *Mêmes figurés que le sous-code [41-00](#prescription-41-00).*
 
 ### Prescription 42-00
 
-[↑](#préconisations-de-symbologie)
-
-**Coefficient de biotope par surface**
+[↑](#préconisations-de-symbologie) **Coefficient de biotope par surface**
         
 ![PSC-42-00](/PLU/vignettes/PSC-42-00.png)
 
@@ -2480,9 +2248,7 @@ Géométrie ponctuelle :
 
 ### Prescription 43-00
 
-[↑](#préconisations-de-symbologie)
-
-**Réalisation d'espaces libres, plantations, aires de jeux et de loisirs**
+[↑](#préconisations-de-symbologie) **Réalisation d'espaces libres, plantations, aires de jeux et de loisirs**
         
 ![PSC-43-00](/PLU/vignettes/PSC-43-00.png)
 
@@ -2531,33 +2297,25 @@ Géométrie ponctuelle :
 
 ### Prescription 43-01
 
-[↑](#préconisations-de-symbologie)
-
-**Réalisation d'espaces libres**
+[↑](#préconisations-de-symbologie) **Réalisation d'espaces libres**
 
 *Mêmes figurés que le sous-code [43-00](#prescription-43-00).*
 
 ### Prescription 43-02
 
-[↑](#préconisations-de-symbologie)
-
-**Réalisation d'aires de jeux et de loisirs**
+[↑](#préconisations-de-symbologie) **Réalisation d'aires de jeux et de loisirs**
 
 *Mêmes figurés que le sous-code [43-00](#prescription-43-00).*
 
 ### Prescription 43-03
 
-[↑](#préconisations-de-symbologie)
-
-**Règlementation des plantations**
+[↑](#préconisations-de-symbologie) **Règlementation des plantations**
 
 *Mêmes figurés que le sous-code [43-00](#prescription-43-00).*
 
 ### Prescription 44-00
 
-[↑](#préconisations-de-symbologie)
-
-**Stationnement**
+[↑](#préconisations-de-symbologie) **Stationnement**
         
 ![PSC-44-00](/PLU/vignettes/PSC-44-00.png)
 
@@ -2586,57 +2344,43 @@ Géométrie ponctuelle :
 
 ### Prescription 44-01
 
-[↑](#préconisations-de-symbologie)
-
-**Stationnement minimal**
+[↑](#préconisations-de-symbologie) **Stationnement minimal**
 
 *Mêmes figurés que le sous-code [44-00](#prescription-44-00).*
 
 ### Prescription 44-02
 
-[↑](#préconisations-de-symbologie)
-
-**Stationnement maximal**
+[↑](#préconisations-de-symbologie) **Stationnement maximal**
 
 *Mêmes figurés que le sous-code [44-00](#prescription-44-00).*
 
 ### Prescription 44-03
 
-[↑](#préconisations-de-symbologie)
-
-**Caractéristiques et type de stationnement**
+[↑](#préconisations-de-symbologie) **Caractéristiques et type de stationnement**
 
 *Mêmes figurés que le sous-code [44-00](#prescription-44-00).*
 
 ### Prescription 44-04
 
-[↑](#préconisations-de-symbologie)
-
-**Minoration des règles de stationnement**
+[↑](#préconisations-de-symbologie) **Minoration des règles de stationnement**
 
 *Mêmes figurés que le sous-code [44-00](#prescription-44-00).*
 
 ### Prescription 44-05
 
-[↑](#préconisations-de-symbologie)
-
-**Réalisation d'aires de livraisons imposée**
+[↑](#préconisations-de-symbologie) **Réalisation d'aires de livraisons imposée**
 
 *Mêmes figurés que le sous-code [44-00](#prescription-44-00).*
 
 ### Prescription 44-98
 
-[↑](#préconisations-de-symbologie)
-
-**Stationnement règles alternatives**
+[↑](#préconisations-de-symbologie) **Stationnement règles alternatives**
 
 *Mêmes figurés que le sous-code [44-00](#prescription-44-00).*
 
 ### Prescription 45-00
 
-[↑](#préconisations-de-symbologie)
-
-**Zone d'aménagement concerté (surface de plancher, destination)**
+[↑](#préconisations-de-symbologie) **Zone d'aménagement concerté (surface de plancher, destination)**
         
 ![PSC-45-00](/PLU/vignettes/PSC-45-00.png)
 
@@ -2657,9 +2401,7 @@ Géométrie ponctuelle :
 
 ### Prescription 46-00
 
-[↑](#préconisations-de-symbologie)
-
-**Constructibilité espace boisé antérieur au 20ème siècle**
+[↑](#préconisations-de-symbologie) **Constructibilité espace boisé antérieur au 20ème siècle**
         
 ![PSC-46-00](/PLU/vignettes/PSC-46-00.png)
 
@@ -2691,9 +2433,7 @@ Géométrie ponctuelle :
 
 ### Prescription 47-00
 
-[↑](#préconisations-de-symbologie)
-
-**Desserte par les réseaux**
+[↑](#préconisations-de-symbologie) **Desserte par les réseaux**
         
 ![PSC-47-00](/PLU/vignettes/PSC-47-00.png)
 
@@ -2745,49 +2485,37 @@ Symbole de police
 
 ### Prescription 47-01
 
-[↑](#préconisations-de-symbologie)
-
-**Réseaux publics d'eau**
+[↑](#préconisations-de-symbologie) **Réseaux publics d'eau**
 
 *Mêmes figurés que le sous-code [47-00](#prescription-47-00).*
 
 ### Prescription 47-02
 
-[↑](#préconisations-de-symbologie)
-
-**Réseaux publics d'électricité**
+[↑](#préconisations-de-symbologie) **Réseaux publics d'électricité**
 
 *Mêmes figurés que le sous-code [47-00](#prescription-47-00).*
 
 ### Prescription 47-03
 
-[↑](#préconisations-de-symbologie)
-
-**Réseaux publics d'assainissement**
+[↑](#préconisations-de-symbologie) **Réseaux publics d'assainissement**
 
 *Mêmes figurés que le sous-code [47-00](#prescription-47-00).*
 
 ### Prescription 47-04
 
-[↑](#préconisations-de-symbologie)
-
-**Conditions de réalisation d'un assainissement non collectif**
+[↑](#préconisations-de-symbologie) **Conditions de réalisation d'un assainissement non collectif**
 
 *Mêmes figurés que le sous-code [47-00](#prescription-47-00).*
 
 ### Prescription 47-05
 
-[↑](#préconisations-de-symbologie)
-
-**Infrastructures et réseaux de communication électroniques**
+[↑](#préconisations-de-symbologie) **Infrastructures et réseaux de communication électroniques**
 
 *Mêmes figurés que le sous-code [47-00](#prescription-47-00).*
 
 ### Prescription 48-00
 
-[↑](#préconisations-de-symbologie)
-
-**Mesures pour limiter l'imperméabilité des sols**
+[↑](#préconisations-de-symbologie) **Mesures pour limiter l'imperméabilité des sols**
         
 ![PSC-48-00](/PLU/vignettes/PSC-48-00.png)
 
@@ -2839,17 +2567,13 @@ Symbole de police
 
 ### Prescription 48-01
 
-[↑](#préconisations-de-symbologie)
-
-**Installations nécessaires à la gestion des eaux pluviales et du ruissellement**
+[↑](#préconisations-de-symbologie) **Installations nécessaires à la gestion des eaux pluviales et du ruissellement**
 
 *Mêmes figurés que le sous-code [48-00](#prescription-48-00).*
 
 ### Prescription 49-00
 
-[↑](#préconisations-de-symbologie)
-
-**Opération d'ensemble imposée en zone AU**
+[↑](#préconisations-de-symbologie) **Opération d'ensemble imposée en zone AU**
         
 ![PSC-49-00](/PLU/vignettes/PSC-49-00.png)
 
@@ -2879,25 +2603,19 @@ Géométrie ponctuelle :
 
 ### Prescription 49-01
 
-[↑](#préconisations-de-symbologie)
-
-**Urbanisation par opération d'ensemble**
+[↑](#préconisations-de-symbologie) **Urbanisation par opération d'ensemble**
 
 *Mêmes figurés que le sous-code [49-00](#prescription-49-00).*
 
 ### Prescription 49-02
 
-[↑](#préconisations-de-symbologie)
-
-**Urbanisation conditionnée à la réalisation des équipements internes à la zone**
+[↑](#préconisations-de-symbologie) **Urbanisation conditionnée à la réalisation des équipements internes à la zone**
 
 *Mêmes figurés que le sous-code [49-00](#prescription-49-00).*
 
 ### Prescription 50-00
 
-[↑](#préconisations-de-symbologie)
-
-**Interdiction types d'activités, destinations, sous-destinations**
+[↑](#préconisations-de-symbologie) **Interdiction types d'activités, destinations, sous-destinations**
         
 ![PSC-50-00](/PLU/vignettes/PSC-50-00.png)
 
@@ -2948,9 +2666,7 @@ Symbole de police
 
 ### Prescription 51-00
 
-[↑](#préconisations-de-symbologie)
-
-**Autorisation sous conditions types d'activités, destinations, sous-destinations**
+[↑](#préconisations-de-symbologie) **Autorisation sous conditions types d'activités, destinations, sous-destinations**
         
 ![PSC-51-00](/PLU/vignettes/PSC-51-00.png)
 
@@ -3001,9 +2717,7 @@ Symbole de police
 
 ### Prescription 52-00
 
-[↑](#préconisations-de-symbologie)
-
-**Infrastructures et équipements logistiques à préserver ou à développer en zones U et AU**
+[↑](#préconisations-de-symbologie) **Infrastructures et équipements logistiques à préserver ou à développer en zones U et AU**
         
 ![PSC-52-00](/PLU/vignettes/PSC-52-00.png)
 
@@ -3032,9 +2746,7 @@ Symbole simple
 
 ### Prescription 97-00
 
-[↑](#préconisations-de-symbologie)
-
-**Périmètre d'application d'une pièce écrite territorialisée (rapport de présentation, PADD, règlement, règlement graphique, POA)**
+[↑](#préconisations-de-symbologie) **Périmètre d'application d'une pièce écrite territorialisée (rapport de présentation, PADD, règlement, règlement graphique, POA)**
         
 ![PSC-97-00](/PLU/vignettes/PSC-97-00.png)
 
@@ -3053,9 +2765,7 @@ Géométrie ponctuelle :
 
 ### Prescription 97-01
 
-[↑](#préconisations-de-symbologie)
-
-**Périmètre couvert par un plan de secteur**
+[↑](#préconisations-de-symbologie) **Périmètre couvert par un plan de secteur**
         
 ![PSC-97-01](/PLU/vignettes/PSC-97-01.png)
 
@@ -3075,9 +2785,7 @@ Géométrie ponctuelle :
 
 ### Prescription 99-00
 
-[↑](#préconisations-de-symbologie)
-
-**Autre**
+[↑](#préconisations-de-symbologie) **Autre**
         
 ![PSC-99-00](/PLU/vignettes/PSC-99-00.png)
 
@@ -3108,81 +2816,61 @@ Symbole simple
 
 ### Prescription 99-01
 
-[↑](#préconisations-de-symbologie)
-
-**Autre : affectation des sols et destination des constructions**
+[↑](#préconisations-de-symbologie) **Autre : affectation des sols et destination des constructions**
 
 *Mêmes figurés que le sous-code [99-00](#prescription-99-00).*
 
 ### Prescription 99-02
 
-[↑](#préconisations-de-symbologie)
-
-**Autre : zones naturelles, agricoles ou forestières**
+[↑](#préconisations-de-symbologie) **Autre : zones naturelles, agricoles ou forestières**
 
 *Mêmes figurés que le sous-code [99-00](#prescription-99-00).*
 
 ### Prescription 99-03
 
-[↑](#préconisations-de-symbologie)
-
-**Autre : mixité sociale et fonctionnelle en zones urbaines ou à urbaniser**
+[↑](#préconisations-de-symbologie) **Autre : mixité sociale et fonctionnelle en zones urbaines ou à urbaniser**
 
 *Mêmes figurés que le sous-code [99-00](#prescription-99-00).*
 
 ### Prescription 99-04
 
-[↑](#préconisations-de-symbologie)
-
-**Autre : qualité du cadre de vie**
+[↑](#préconisations-de-symbologie) **Autre : qualité du cadre de vie**
 
 *Mêmes figurés que le sous-code [99-00](#prescription-99-00).*
 
 ### Prescription 99-05
 
-[↑](#préconisations-de-symbologie)
-
-**Autre : qualité urbaine, architecturale, environnementale et paysagère**
+[↑](#préconisations-de-symbologie) **Autre : qualité urbaine, architecturale, environnementale et paysagère**
 
 *Mêmes figurés que le sous-code [99-00](#prescription-99-00).*
 
 ### Prescription 99-06
 
-[↑](#préconisations-de-symbologie)
-
-**Autre : traitement environnemental et paysager des esapces non bâtis et abords des constructions**
+[↑](#préconisations-de-symbologie) **Autre : traitement environnemental et paysager des esapces non bâtis et abords des constructions**
 
 *Mêmes figurés que le sous-code [99-00](#prescription-99-00).*
 
 ### Prescription 99-07
 
-[↑](#préconisations-de-symbologie)
-
-**Autre : densité**
+[↑](#préconisations-de-symbologie) **Autre : densité**
 
 *Mêmes figurés que le sous-code [99-00](#prescription-99-00).*
 
 ### Prescription 99-08
 
-[↑](#préconisations-de-symbologie)
-
-**Autre : équipements, réseaux et emplacement réservés**
+[↑](#préconisations-de-symbologie) **Autre : équipements, réseaux et emplacement réservés**
 
 *Mêmes figurés que le sous-code [99-00](#prescription-99-00).*
 
 ### Prescription 99-09
 
-[↑](#préconisations-de-symbologie)
-
-**Autre : plan local d'urbanisme tenant lieu de programme local de l'habitat et de plan de déplacements urbains**
+[↑](#préconisations-de-symbologie) **Autre : plan local d'urbanisme tenant lieu de programme local de l'habitat et de plan de déplacements urbains**
 
 *Mêmes figurés que le sous-code [99-00](#prescription-99-00).*
 
 ### Prescription 99-10
 
-[↑](#préconisations-de-symbologie)
-
-**Autre : plan local d'urbanisme tenant lieu de programme de déplacements urbains**
+[↑](#préconisations-de-symbologie) **Autre : plan local d'urbanisme tenant lieu de programme de déplacements urbains**
 
 *Mêmes figurés que le sous-code [99-00](#prescription-99-00).*
 
@@ -3192,9 +2880,7 @@ Symbole simple
 
 ### Information 02-00
 
-[↑](#préconisations-de-symbologie)
-
-**Zone d'aménagement concerté (R123-13 2)**
+[↑](#préconisations-de-symbologie) **Zone d'aménagement concerté (R123-13 2)**
         
 ![INFO-02-00](/PLU/vignettes/INFO-02-00.png)
 
@@ -3215,9 +2901,7 @@ Géométrie ponctuelle :
 
 ### Information 03-00
 
-[↑](#préconisations-de-symbologie)
-
-**Zone de préemption dans un espace naturel et sensible (R123-13 3)**
+[↑](#préconisations-de-symbologie) **Zone de préemption dans un espace naturel et sensible (R123-13 3)**
         
 ![INFO-03-00](/PLU/vignettes/INFO-03-00.png)
 
@@ -3245,9 +2929,7 @@ Géométrie ponctuelle :
 
 ### Information 04-00
 
-[↑](#préconisations-de-symbologie)
-
-**Périmètre de droit de préemption urbain (R123-13 4)**
+[↑](#préconisations-de-symbologie) **Périmètre de droit de préemption urbain (R123-13 4)**
         
 ![INFO-04-00](/PLU/vignettes/INFO-04-00.png)
 
@@ -3275,9 +2957,7 @@ Géométrie ponctuelle :
 
 ### Information 04-01
 
-[↑](#préconisations-de-symbologie)
-
-**Périmètre de droit de préemption urbain renforcé**
+[↑](#préconisations-de-symbologie) **Périmètre de droit de préemption urbain renforcé**
         
 ![INFO-04-01](/PLU/vignettes/INFO-04-01.png)
 
@@ -3343,9 +3023,7 @@ Géométrie ponctuelle :
 
 ### Information 05-00
 
-[↑](#préconisations-de-symbologie)
-
-**Zone d'aménagement différé (R123-13 4)**
+[↑](#préconisations-de-symbologie) **Zone d'aménagement différé (R123-13 4)**
         
 ![INFO-05-00](/PLU/vignettes/INFO-05-00.png)
 
@@ -3375,9 +3053,7 @@ Géométrie ponctuelle :
 
 ### Information 07-00
 
-[↑](#préconisations-de-symbologie)
-
-**Périmètre de développement prioritaire économie d'énergie (R123-13 6)**
+[↑](#préconisations-de-symbologie) **Périmètre de développement prioritaire économie d'énergie (R123-13 6)**
         
 ![INFO-07-00](/PLU/vignettes/INFO-07-00.png)
 
@@ -3407,9 +3083,7 @@ Géométrie ponctuelle :
 
 ### Information 08-00
 
-[↑](#préconisations-de-symbologie)
-
-**Périmètre forestier: Interdiction ou réglementation des plantations (code rural et de la pêche maritime), plantations à réaliser (R123-13 7)**
+[↑](#préconisations-de-symbologie) **Périmètre forestier: Interdiction ou réglementation des plantations (code rural et de la pêche maritime), plantations à réaliser (R123-13 7)**
         
 ![INFO-08-00](/PLU/vignettes/INFO-08-00.png)
 
@@ -3456,9 +3130,7 @@ Géométrie ponctuelle :
 
 ### Information 09-00
 
-[↑](#préconisations-de-symbologie)
-
-**Périmètre minier de concession pour l'exploitation ou le stockage (R123-13 8)**
+[↑](#préconisations-de-symbologie) **Périmètre minier de concession pour l'exploitation ou le stockage (R123-13 8)**
         
 ![INFO-09-00](/PLU/vignettes/INFO-09-00.png)
 
@@ -3488,9 +3160,7 @@ Géométrie ponctuelle :
 
 ### Information 10-00
 
-[↑](#préconisations-de-symbologie)
-
-**Zone de recherche et d'exploitation de carrière (R123-13 9)**
+[↑](#préconisations-de-symbologie) **Zone de recherche et d'exploitation de carrière (R123-13 9)**
         
 ![INFO-10-00](/PLU/vignettes/INFO-10-00.png)
 
@@ -3530,9 +3200,7 @@ Géométrie ponctuelle :
 
 ### Information 11-00
 
-[↑](#préconisations-de-symbologie)
-
-**Périmètre des zones délimitées – divisions foncières soumises à déclaration préalable (R123-13 10)**
+[↑](#préconisations-de-symbologie) **Périmètre des zones délimitées – divisions foncières soumises à déclaration préalable (R123-13 10)**
         
 ![INFO-11-00](/PLU/vignettes/INFO-11-00.png)
 
@@ -3562,9 +3230,7 @@ Géométrie ponctuelle :
 
 ### Information 12-00
 
-[↑](#préconisations-de-symbologie)
-
-**Périmètre de sursis à statuer (R123-13 11)**
+[↑](#préconisations-de-symbologie) **Périmètre de sursis à statuer (R123-13 11)**
         
 ![INFO-12-00](/PLU/vignettes/INFO-12-00.png)
 
@@ -3585,9 +3251,7 @@ Géométrie ponctuelle :
 
 ### Information 13-00
 
-[↑](#préconisations-de-symbologie)
-
-**Secteur de programme d'aménagement d'ensemble (R123-13 12)**
+[↑](#préconisations-de-symbologie) **Secteur de programme d'aménagement d'ensemble (R123-13 12)**
         
 ![INFO-13-00](/PLU/vignettes/INFO-13-00.png)
 
@@ -3616,9 +3280,7 @@ Géométrie ponctuelle :
 
 ### Information 14-00
 
-[↑](#préconisations-de-symbologie)
-
-**Périmètre de voisinage d'infrastructure de transport terrestre (R123-13 12)**
+[↑](#préconisations-de-symbologie) **Périmètre de voisinage d'infrastructure de transport terrestre (R123-13 12)**
         
 ![INFO-14-00](/PLU/vignettes/INFO-14-00.png)
 
@@ -3657,9 +3319,7 @@ Géométrie ponctuelle :
 
 ### Information 16-00
 
-[↑](#préconisations-de-symbologie)
-
-**Site archéologique**
+[↑](#préconisations-de-symbologie) **Site archéologique**
         
 ![INFO-16-00](/PLU/vignettes/INFO-16-00.png)
 
@@ -3704,9 +3364,7 @@ Symbole de police
 
 ### Information 17-00
 
-[↑](#préconisations-de-symbologie)
-
-**Zone à risque d'exposition au plomb (R123-13 14)**
+[↑](#préconisations-de-symbologie) **Zone à risque d'exposition au plomb (R123-13 14)**
         
 ![INFO-17-00](/PLU/vignettes/INFO-17-00.png)
 
@@ -3776,9 +3434,7 @@ Géométrie ponctuelle :
 
 ### Information 19-01
 
-[↑](#préconisations-de-symbologie)
-
-**Zones d'assainissement collectif/non collectif / eaux usées/eaux pluviales, schéma de réseaux eau et assainissement, systèmes d'élimination des déchets (R 123-14 3)**
+[↑](#préconisations-de-symbologie) **Zones d'assainissement collectif/non collectif / eaux usées/eaux pluviales, schéma de réseaux eau et assainissement, systèmes d'élimination des déchets (R 123-14 3)**
         
 ![INFO-19-01](/PLU/vignettes/INFO-19-01.png)
 
@@ -3826,17 +3482,13 @@ Symbole de police
 
 ### Information 19-02
 
-[↑](#préconisations-de-symbologie)
-
-**Emplacements traitement eaux et déchets**
+[↑](#préconisations-de-symbologie) **Emplacements traitement eaux et déchets**
 
 *Mêmes figurés que le sous-code [19-01](#information-19-01).*
 
 ### Information 20-00
 
-[↑](#préconisations-de-symbologie)
-
-**Règlement local de publicité**
+[↑](#préconisations-de-symbologie) **Règlement local de publicité**
         
 ![INFO-20-00](/PLU/vignettes/INFO-20-00.png)
 
@@ -3857,9 +3509,7 @@ Géométrie ponctuelle :
 
 ### Information 21-00
 
-[↑](#préconisations-de-symbologie)
-
-**Projet PPRN et PPRM (R123-14 7)**
+[↑](#préconisations-de-symbologie) **Projet PPRN et PPRM (R123-14 7)**
         
 ![INFO-21-00](/PLU/vignettes/INFO-21-00.png)
 
@@ -3888,9 +3538,7 @@ Géométrie ponctuelle :
 
 ### Information 22-00
 
-[↑](#préconisations-de-symbologie)
-
-**Protection des rives des  plans d'eau en zone de montagne (L145-5 et R145-3)**
+[↑](#préconisations-de-symbologie) **Protection des rives des  plans d'eau en zone de montagne (L145-5 et R145-3)**
         
 ![INFO-22-00](/PLU/vignettes/INFO-22-00.png)
 
@@ -3919,9 +3567,7 @@ Géométrie ponctuelle :
 
 ### Information 23-00
 
-[↑](#préconisations-de-symbologie)
-
-**Arrêté du préfet coordonnateur de massif (L145-5)**
+[↑](#préconisations-de-symbologie) **Arrêté du préfet coordonnateur de massif (L145-5)**
         
 ![INFO-23-00](/PLU/vignettes/INFO-23-00.png)
 
@@ -3950,9 +3596,7 @@ Géométrie ponctuelle :
 
 ### Information 25-00
 
-[↑](#préconisations-de-symbologie)
-
-**Périmètre de protection des espaces agricoles et naturels péri-urbains (L143-1 et R123-13 15)**
+[↑](#préconisations-de-symbologie) **Périmètre de protection des espaces agricoles et naturels péri-urbains (L143-1 et R123-13 15)**
         
 ![INFO-25-00](/PLU/vignettes/INFO-25-00.png)
 
@@ -3981,9 +3625,7 @@ Géométrie ponctuelle :
 
 ### Information 27-00
 
-[↑](#préconisations-de-symbologie)
-
-**Plan d'exposition au bruit des aérodromes (L147-1 à L147-6 et R123-13 4)**
+[↑](#préconisations-de-symbologie) **Plan d'exposition au bruit des aérodromes (L147-1 à L147-6 et R123-13 4)**
         
 ![INFO-27-00](/PLU/vignettes/INFO-27-00.png)
 
@@ -4038,9 +3680,7 @@ Symbole de police
 
 ### Information 30-00
 
-[↑](#préconisations-de-symbologie)
-
-**Périmètre PUP (L332-11-3 et R123-13 17)**
+[↑](#préconisations-de-symbologie) **Périmètre PUP (L332-11-3 et R123-13 17)**
         
 ![INFO-30-00](/PLU/vignettes/INFO-30-00.png)
 
@@ -4069,9 +3709,7 @@ Géométrie ponctuelle :
 
 ### Information 31-00
 
-[↑](#préconisations-de-symbologie)
-
-**Périmètre patrimonial d'exclusion des matériaux et énergies renouvelables pris par délibération**
+[↑](#préconisations-de-symbologie) **Périmètre patrimonial d'exclusion des matériaux et énergies renouvelables pris par délibération**
         
 ![INFO-31-00](/PLU/vignettes/INFO-31-00.png)
 
@@ -4092,9 +3730,7 @@ Géométrie ponctuelle :
 
 ### Information 32-00
 
-[↑](#préconisations-de-symbologie)
-
-**Secteur à fiscalité particulière en application du L331-14 (taxe d'aménagement) R123-13 19**
+[↑](#préconisations-de-symbologie) **Secteur à fiscalité particulière en application du L331-14 (taxe d'aménagement) R123-13 19**
         
 ![INFO-32-00](/PLU/vignettes/INFO-32-00.png)
 
@@ -4124,9 +3760,7 @@ Géométrie ponctuelle :
 
 ### Information 33-00
 
-[↑](#préconisations-de-symbologie)
-
-**Droit de préemption commercial (L214-1, R214-1 et 2)**
+[↑](#préconisations-de-symbologie) **Droit de préemption commercial (L214-1, R214-1 et 2)**
         
 ![INFO-33-00](/PLU/vignettes/INFO-33-00.png)
 
@@ -4155,9 +3789,7 @@ Géométrie ponctuelle :
 
 ### Information 34-00
 
-[↑](#préconisations-de-symbologie)
-
-**Périmètre d'opération d'intérêt national (L121-2 et L121-9-1, R121-4-1)**
+[↑](#préconisations-de-symbologie) **Périmètre d'opération d'intérêt national (L121-2 et L121-9-1, R121-4-1)**
         
 ![INFO-34-00](/PLU/vignettes/INFO-34-00.png)
 
@@ -4189,9 +3821,7 @@ Géométrie ponctuelle :
 
 ### Information 35-00
 
-[↑](#préconisations-de-symbologie)
-
-**Périmètre de secteur affecté par un seuil minimal de densité (L331-36, R123-13 20)**
+[↑](#préconisations-de-symbologie) **Périmètre de secteur affecté par un seuil minimal de densité (L331-36, R123-13 20)**
         
 ![INFO-35-00](/PLU/vignettes/INFO-35-00.png)
 
@@ -4223,9 +3853,7 @@ Géométrie ponctuelle :
 
 ### Information 36-00
 
-[↑](#préconisations-de-symbologie)
-
-**Schémas d'aménagement de plage**
+[↑](#préconisations-de-symbologie) **Schémas d'aménagement de plage**
         
 ![INFO-36-00](/PLU/vignettes/INFO-36-00.png)
 
@@ -4257,9 +3885,7 @@ Géométrie ponctuelle :
 
 ### Information 37-00
 
-[↑](#préconisations-de-symbologie)
-
-**Bois ou forêts relevant du régime forestier**
+[↑](#préconisations-de-symbologie) **Bois ou forêts relevant du régime forestier**
         
 ![INFO-37-00](/PLU/vignettes/INFO-37-00.png)
 
@@ -4288,9 +3914,7 @@ Géométrie ponctuelle :
 
 ### Information 38-00
 
-[↑](#préconisations-de-symbologie)
-
-**Secteurs d'informations sur les sols**
+[↑](#préconisations-de-symbologie) **Secteurs d'informations sur les sols**
         
 ![INFO-38-00](/PLU/vignettes/INFO-38-00.png)
 
@@ -4322,9 +3946,7 @@ Géométrie ponctuelle :
 
 ### Information 39-00
 
-[↑](#préconisations-de-symbologie)
-
-**Périmètres de projets AFUP (dans lesquels les propriétaires fonciers sont incités à se regrouper en AFU de projet et les AFU de projet à mener leurs opérations de façon concertée)**
+[↑](#préconisations-de-symbologie) **Périmètres de projets AFUP (dans lesquels les propriétaires fonciers sont incités à se regrouper en AFU de projet et les AFU de projet à mener leurs opérations de façon concertée)**
         
 ![INFO-39-00](/PLU/vignettes/INFO-39-00.png)
 
@@ -4353,9 +3975,7 @@ Géométrie ponctuelle :
 
 ### Information 97-00
 
-[↑](#préconisations-de-symbologie)
-
-**Périmètre d'application d'une pièce écrite territorialisée relative aux annexes (liste des annexes, liste des SUP, plan des SUP)**
+[↑](#préconisations-de-symbologie) **Périmètre d'application d'une pièce écrite territorialisée relative aux annexes (liste des annexes, liste des SUP, plan des SUP)**
         
 ![INFO-97-00](/PLU/vignettes/INFO-97-00.png)
 
@@ -4374,9 +3994,7 @@ Géométrie ponctuelle :
 
 ### Information 98-00
 
-[↑](#préconisations-de-symbologie)
-
-**Périmètre d'annulation partielle du document d'urbanisme (lorsqu'elle impacte le règlement graphique)**
+[↑](#préconisations-de-symbologie) **Périmètre d'annulation partielle du document d'urbanisme (lorsqu'elle impacte le règlement graphique)**
         
 ![INFO-98-00](/PLU/vignettes/INFO-98-00.png)
 
@@ -4397,9 +4015,7 @@ Géométrie ponctuelle :
 
 ### Information 99-00
 
-[↑](#préconisations-de-symbologie)
-
-**Autre périmètre, secteur, plan, document, site, projet, espace.**
+[↑](#préconisations-de-symbologie) **Autre périmètre, secteur, plan, document, site, projet, espace.**
         
 ![INFO-99-00](/PLU/vignettes/INFO-99-00.png)
 
@@ -4430,16 +4046,12 @@ Symbole simple
 
 ### Information 99-01
 
-[↑](#préconisations-de-symbologie)
-
-**Autre relevant de la loi littoral**
+[↑](#préconisations-de-symbologie) **Autre relevant de la loi littoral**
 
 *Mêmes figurés que le sous-code [99-00](#information-99-00).*
 
 ### Information 99-02
 
-[↑](#préconisations-de-symbologie)
-
-**Autre relevant de la loi montagne**
+[↑](#préconisations-de-symbologie) **Autre relevant de la loi montagne**
 
 *Mêmes figurés que le sous-code [99-00](#information-99-00).*
