@@ -86,7 +86,7 @@ INSERT INTO s_cnig_docurba.plu_prescription (typepsc, stypepsc, libelle, stype_r
     ('03', '01', '[réservé aux cartes communales] Secteur dans lequel la reconstruction à l''indentique d''un bâtiment détruit par un sinistre n''est pas autorisée', '00'),
     ('03', '02', 'Secteur dans lequel la reconstruction à l''indentique d''un bâtiment détruit par un sinistre n''est pas autorisée', '00'),
     ('04', '00', 'Périmètre issu des PDU sur obligation de stationnement', NULL),
-    ('05', '00', 'Emplacement réservé (Remarque : sauf lot de données antérieurs au standard v2017, utiliser impérativement les sous-codes suivants)', NULL),
+    ('05', '00', 'Emplacement réservé (remarque : sauf lot de données antérieur au standard v2017, utiliser impérativement les sous-codes suivants)', NULL),
     ('05', '01', 'Emplacement réservé aux voies publiques', '00'),
     ('05', '02', 'Emplacement réservé aux ouvrages publics', '00'),
     ('05', '03', 'Emplacement réservé aux installations d''intérêt général', '00'),
