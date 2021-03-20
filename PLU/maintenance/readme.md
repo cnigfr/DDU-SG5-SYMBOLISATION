@@ -10,12 +10,12 @@ Créer un schéma `s_cnig_docurba`.
 
 Peupler ce schéma (table, données, fonctions) en exécutant les commandes contenues dans les fichiers :
 
-* visualisateur_qgis_creation_grille_data.sql ;
-* visualisateur_qgis_creation_grille.sql ;
-* retrotraduction_qml_data.sql ;
-* retrotraduction_qml.sql ;
-* outils_generiques.sql ;
-* recapitulatif_markdown.sql.
+* [visualisateur_qgis_creation_grille_data.sql](/PLU/maintenance/visualisateur_qgis_creation_grille_data.sql) ;
+* [visualisateur_qgis_creation_grille.sql](/PLU/maintenance/visualisateur_qgis_creation_grille.sql) ;
+* [retrotraduction_qml_data.sql](/PLU/maintenance/retrotraduction_qml_data.sql) ;
+* [retrotraduction_qml.sql](/PLU/maintenance/retrotraduction_qml.sql) ;
+* [outils_generiques.sql](/PLU/maintenance/outils_generiques.sql) ;
+* [recapitulatif_markdown.sql](/PLU/maintenance/recapitulatif_markdown.sql).
 
 Les données portant sur la symbologie se trouvent dans les tables `plu_prescription` et `plu_information`. Tous les autres objets créés sont des utilitaires servant à accélérer les mises à jour.
 
@@ -163,7 +163,7 @@ Les données des autres champs ne sont pas conservées, dans la mesure où elles
 
 ## Mise à jour du projet QGIS de visualisation
 
-Pour actualiser les tables du géopackage *data.gpkg* qui contiennent les données du projet QGIS de visualisation à partir des tables PostgreSQL `plu_prescription` et `plu_information`, on pourra exécuter le batch *maj_data_gpkg.bat*.
+Pour actualiser les tables du géopackage *data.gpkg* qui contiennent les données du projet QGIS de visualisation à partir des tables PostgreSQL `plu_prescription` et `plu_information`, on pourra exécuter le batch [maj_data_gpkg.bat](/PLU/maintenance/maj_data_gpkg.bat).
 
 Les modifications apportées aux symboles devront être répercutées dans le projet de visualisation pour chacune des couches concernées, en rechargeant les QML préalablement exportés (Propriétés de la couche > onglet Symbologie > bouton Style > Charger le style... > Depuis un fichier).
 
