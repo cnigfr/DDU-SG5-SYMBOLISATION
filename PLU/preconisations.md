@@ -14,7 +14,7 @@ Standard CNIG PLU
 
 ![PSC-01-00](/PLU/vignettes/PSC-01-00.png)
 
-Symbole surfacique :  
+Géométrie surfacique :  
 ```
 Motif de points
 • distance horizontale : 5 pt
@@ -43,6 +43,9 @@ Ligne simple
 • style de trait : ligne continue
 ```
 
+Géométrie linéaire :  
+
+Géométrie ponctuelle : 
 
 ### 02-00
 
