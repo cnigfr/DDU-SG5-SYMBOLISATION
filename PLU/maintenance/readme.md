@@ -10,12 +10,12 @@ Créer un schéma `s_cnig_docurba`.
 
 Peupler ce schéma (table, données, fonctions) en exécutant les commandes contenues dans les fichiers :
 
-* [visualisateur_qgis_creation_grille_data.sql](/PLU/maintenance/visualisateur_qgis_creation_grille_data.sql) ;
-* [visualisateur_qgis_creation_grille.sql](/PLU/maintenance/visualisateur_qgis_creation_grille.sql) ;
-* [retrotraduction_qml_data.sql](/PLU/maintenance/retrotraduction_qml_data.sql) ;
-* [retrotraduction_qml.sql](/PLU/maintenance/retrotraduction_qml.sql) ;
-* [outils_generiques.sql](/PLU/maintenance/outils_generiques.sql) ;
-* [recapitulatif_markdown.sql](/PLU/maintenance/recapitulatif_markdown.sql).
+- *[visualisateur_qgis_creation_grille_data.sql](/PLU/maintenance/visualisateur_qgis_creation_grille_data.sql)* ;
+- *[visualisateur_qgis_creation_grille.sql](/PLU/maintenance/visualisateur_qgis_creation_grille.sql)* ;
+- *[retrotraduction_qml_data.sql](/PLU/maintenance/retrotraduction_qml_data.sql)* ;
+- *[retrotraduction_qml.sql](/PLU/maintenance/retrotraduction_qml.sql)* ;
+- *[outils_generiques.sql](/PLU/maintenance/outils_generiques.sql)* ;
+- *[recapitulatif_markdown.sql](/PLU/maintenance/recapitulatif_markdown.sql)*.
 
 Les données portant sur la symbologie se trouvent dans les tables `plu_zone_urba`, `plu_prescription` et `plu_information`. Tous les autres objets créés sont des utilitaires servant à accélérer les mises à jour.
 
@@ -205,7 +205,7 @@ Les données des autres champs ne sont pas conservées, dans la mesure où elles
 
 ## Mise à jour du projet QGIS de visualisation
 
-Pour actualiser le projet QGIS de visualisation et les QML, on pourra exécuter le batch [maj_data_gpkg.bat](/PLU/maintenance/maj_data_gpkg.bat).
+Pour actualiser le projet QGIS de visualisation et les QML, on pourra exécuter le batch *[maj_data_gpkg.bat](/PLU/maintenance/maj_data_gpkg.bat)*.
 
 Celui-ci :
 - régénère les tables du GeoPackage *data.gpkg* qui contient les données du projet QGIS de visualisation à partir des tables PostgreSQL `plu_zone_urba`,  `plu_prescription` et `plu_information` ;
@@ -219,7 +219,7 @@ Le projet QGIS et les QML mis à jour sont à reverser sur le GitHub après mise
 
 ## Mise à jour du récapitulatif des préconisations
 
-Le contenu du récapitulatif Markdown (fichier [preconisations.md](/PLU/preconisations.md)) doit être régénéré avec la commande suivante :
+Le contenu du récapitulatif Markdown - fichier *[preconisations.md](/PLU/preconisations.md)* - doit être régénéré avec la commande suivante (résultat à recopier en enlevant les éventuels guillemets au début et à la fin du texte) :
 
 ```sql
 SELECT s_cnig_docurba.md_generateur_plu('/PLU/vignettes') ;
