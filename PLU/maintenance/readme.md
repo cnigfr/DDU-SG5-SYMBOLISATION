@@ -176,7 +176,7 @@ SELECT s_cnig_docurba.util_genere_commande_insert(
 
 ## Sauvegarde de la liste des sous-codes et descriptifs mise à jour
 
-Pour faciliter les mises à jour suivantes, il est important de reverser la liste à jour dans *[visualisateur_qgis_creation_grille_data.sql](/PLU/maintenance/visualisateur_qgis_creation_grille_data.sql)*, et plus précisément de remplacer les commandes `INSERT` de chaque table modifiée par le résultat des commandes suivantes.
+Pour faciliter les mises à jour ultérieures, il est important de reverser la liste à jour dans *[visualisateur_qgis_creation_grille_data.sql](/PLU/maintenance/visualisateur_qgis_creation_grille_data.sql)*, et plus précisément de remplacer les commandes `INSERT` de chaque table modifiée par le résultat des commandes suivantes.
 
 Pour les zones :
 
@@ -219,7 +219,7 @@ Pour actualiser le projet QGIS de visualisation et les QML, on pourra exécuter 
 Celui-ci :
 - régénère les tables du GeoPackage *data.gpkg* qui contient les données du projet QGIS de visualisation à partir des tables PostgreSQL `plu_zone_urba`,  `plu_prescription` et `plu_information` ;
 - met à jour les styles par défaut des tables du GeoPackage à partir des styles sauvegardés dans `layer_styles` ;
-- régénère les fichiers QML (qui seront à mettre à jour dans le répertoire [QML](/PLU/QML) à partir des styles sauvegardés dans `layer_styles`.
+- régénère les fichiers QML à partir des styles sauvegardés dans `layer_styles`.
 
 Les styles intégrés au projet QGIS ne sont à ce stade pas mis à jour par le batch. Il est donc nécessaire d'ouvrir le projet (sous QGIS 3.10 !) et, pour chaque couche pour laquelle des symboles ont été modifiés (y compris les carreaux, le cas échéant) de recharger le style par défaut depuis le GeoPackage, puisque lui a bien été actualisé : *Propriétés de la couche > onglet Symbologie > bouton Style > Restaurer le style par défaut > Base de données source*.
 
