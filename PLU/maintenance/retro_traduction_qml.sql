@@ -886,8 +886,17 @@ dans qml_detail qui ne seraient pas encore répertoriées.
 
 ARGUMENTS : néant.
 
-SORTIE : 'FIN'.
+SORTIE :
+- 'aucune traduction manquante' si les champs traduction des tables
+qml_traduction_class, qml_traduction_prop et qml_traduction_value ne
+contiennent aucune valeur NULL ;
+- sinon, le nombre de traductions manquantes par table.
 */
+DECLARE
+    mc int ;
+    mp int ;
+    mv int ;
+    message text ;
 BEGIN
 
     -- -> toutes les valeurs distinctes de symbol_class
@@ -922,10 +931,23 @@ BEGIN
                     )
             ORDER BY symbol_class, symbol_prop, symbol_value
         ) ;
+        
+    -- traductions manquantes ?
+    SELECT count(*) INTO mc FROM s_cnig_docurba.qml_traduction_class WHERE traduction IS NULL ;
+    SELECT count(*) INTO mp FROM s_cnig_docurba.qml_traduction_prop WHERE traduction IS NULL ;
+    SELECT count(*) INTO mv FROM s_cnig_docurba.qml_traduction_value WHERE traduction IS NULL ;
+    
+    IF mc + mp + mv = 0
+    THEN
+        message := 'aucune traduction manquante' ;
+    ELSE
+        message := format('%s classe(s) non traduite(s) dans qml_traduction_class ;
+%s propriété(s) non traduite(s) dans qml_traduction_prop ;
+%s valeur(s) non traduite(s) dans qml_traduction_value.', mc, mp, pv) ;
+    END IF ;
 
-    RETURN 'FIN' ;
+    RETURN message ;
 END
 $_$ ;
 
 COMMENT ON FUNCTION s_cnig_docurba.qml_maj_traduction() IS '[Rétro-traduction des QML] Complète les tables de traduction qml_traduction_class, qml_traduction_prop et qml_traduction_value avec les valeurs enregistrées dans qml_detail qui ne seraient pas encore répertoriées.' ;
-                                                                                
