@@ -332,7 +332,7 @@ Pour la suite, il est nécessaire de connaître le numéro de la règle pour laq
 Il est également possible de voir les numéros des règles du style et les filtres correspondants avec la requête suivante, en remplaçant *nom_du_style* par le nom du style :
 
 ```sql
-SELECT regle_id, regle FROM s_cnig_docurba.qml_detail WHERE ref_table = 'nom_du_style' ORDER BY regle_id ;
+SELECT DISTINCT regle_id, regle FROM s_cnig_docurba.qml_detail WHERE ref_table = 'nom_du_style' ORDER BY regle_id ;
 ```
 
 Les spécifications littérales sont renvoyées par la commande ci-après, en remplaçant *nom_du_style* par le nom du style et *r* par le numéro de la règle :
