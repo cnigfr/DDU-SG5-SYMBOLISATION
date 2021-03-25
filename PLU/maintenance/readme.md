@@ -4,6 +4,8 @@ Mode d'emploi pour la mise à jour des fichiers QML, du projet QGIS de visualisa
 
 *Les utilitaires automatisant la mise à jour ont été écrits pour un usage sous PostgreSQL et ne fonctionneront pas nécessairement avec d'autres systèmes de gestion de données.*
 
+[Import des données](#import-des-données) • [Ajout, modification ou suppression de codes/sous-codes](#ajout-modification-ou-suppression-de-codessous-codes) • [Régénération des géométries](#régénération-des-géométries) • [Création, modification, suppression de symboles](#création-modification-suppression-de-symboles) • [Rétro-traduction des QML](#rétro-traduction-des-qml) • [Sauvegarde de la liste des sous-codes et descriptifs mise à jour](#sauvegarde-de-la-liste-des-sous-codes-et-descriptifs-mise-à-jour) • [Mise à jour du projet QGIS de visualisation](#mise-à-jour-du-projet-qgis-de-visualisation) • [Mise à jour du récapitulatif des préconisations](#mise-à-jour-du-récapitulatif-des-préconisations) • [Aide-mémoire des commandes](#aide-mémoire-des-commandes) • [Test d'un symbole](test-dun-symbole)
+
 ## Import des données
 
 Sur le serveur PostgreSQL, créer un schéma `s_cnig_docurba`.
@@ -21,6 +23,7 @@ Les données portant sur la symbologie se trouvent dans les tables `plu_zone_urb
 
 Les scripts peuvent être exécutés sans difficulté si le schéma `s_cnig_docurba` contient d'anciennes versions des tables et/ou des fonctions. Leur contenu sera remplacé.
 
+[↑ haut de page](#maintenance-des-outils)
 
 ## Ajout, modification ou suppression de codes/sous-codes
 
@@ -28,6 +31,7 @@ Si la modification fait suite à l'ajout ou la suppression de codes ou sous-code
 
 *Attention à bien remplir le champ `stype_ref`, sans quoi les traitements automatisés ne fonctionneront pas correctement !* Si le sous-code n'a pas de symbologie spécifique, et seulement dans ce cas, il conviendra d'indiquer dans `stype_ref` le sous-code de référence (souvent `'00'`).
 
+[↑ haut de page](#maintenance-des-outils)
 
 ## Régénération des géométries
 
@@ -51,12 +55,13 @@ Pour les informations :
 SELECT s_cnig_docurba.visual_plu_information_creation_grille() ;
 ```
 
+[↑ haut de page](#maintenance-des-outils)
 
 ## Création, modification, suppression de symboles
 
 Charger dans QGIS les données des tables `plu_zone_urba`, `plu_prescription` et/ou `plu_information` avec les types de géométries concernés par les évolutions.
 
-Si un style par défaut avait antérieurement était sauvegardé, il sera appliqué automatiquement au chargement de la couche. Sinon, il faudra importer les [dernières versions des fichiers QML](/PLU/QML) contenant les styles.
+Si un style par défaut avait été sauvegardé antérieurement (cf. deux paragraphes plus loin), il sera appliqué automatiquement au chargement de la couche. Sinon, il faudra importer les [dernières versions des fichiers QML](/PLU/QML) contenant les styles.
 
 Faire les modifications nécessaires sur les symboles.
 
@@ -74,6 +79,7 @@ Enregistrer les styles modifiés dans la base de données (*Propriétés de la c
 
 Concrètement, les styles sont stockées dans la table `layer_styles` du schéma `public` (QGIS la crée si elle n'existe pas encore).
 
+[↑ haut de page](#maintenance-des-outils)
 
 ## Rétro-traduction des QML
 
@@ -166,7 +172,9 @@ SELECT s_cnig_docurba.util_genere_commande_insert(
     ) ;
 ```
 
-## Sauvegarde de la liste des sous-codes et descriptifs mis à jour
+[↑ haut de page](#maintenance-des-outils)
+
+## Sauvegarde de la liste des sous-codes et descriptifs mise à jour
 
 Pour faciliter les mises à jour suivantes, il est important de reverser la liste à jour dans *[visualisateur_qgis_creation_grille_data.sql](/PLU/maintenance/visualisateur_qgis_creation_grille_data.sql)*, et plus précisément de remplacer les commandes `INSERT` de chaque table modifiée par le résultat des commandes suivantes.
 
@@ -202,6 +210,7 @@ SELECT s_cnig_docurba.util_genere_commande_insert(
 
 Les données des autres champs ne sont pas conservées, dans la mesure où elles peuvent (et doivent) être régénérées par des fonctions.
 
+[↑ haut de page](#maintenance-des-outils)
 
 ## Mise à jour du projet QGIS de visualisation
 
@@ -216,6 +225,7 @@ Les styles intégrés au projet QGIS ne sont à ce stade pas mis à jour par le 
 
 Le projet QGIS et les QML mis à jour sont à reverser sur le GitHub après mise à jour, à la racine de [PLU](/PLU) pour le projet et dans le répertoire [QML](/PLU/QML) pour les QML.
 
+[↑ haut de page](#maintenance-des-outils)
 
 ## Mise à jour du récapitulatif des préconisations
 
@@ -226,3 +236,127 @@ SELECT s_cnig_docurba.md_generateur_plu('/PLU/vignettes') ;
 ```
 
 Il sera également nécessaire d'ajouter des vignettes pour les sous-codes dont les spécifications ont été créées ou de remplacer les vignettes en cas de modification des spécifications (répertoire [vignettes](/PLU/vignettes)). Pour ce faire, on utilisera les composeurs du projet QGIS, **à ouvrir sous QGIS 3.16 ou supérieur** pour un meilleur rendu.
+
+[↑ haut de page](#maintenance-des-outils)
+
+## Aide-mémoire des commandes
+
+```sql
+-- génération de la grille de visualisation :
+-- > zones
+SELECT s_cnig_docurba.visual_plu_zone_urba_creation_grille() ;
+-- > prescriptions
+SELECT s_cnig_docurba.visual_plu_prescription_creation_grille() ;
+-- > informations
+SELECT s_cnig_docurba.visual_plu_information_creation_grille() ;
+
+-- rétro-traduction des symboles :
+-- > zones
+SELECT s_cnig_docurba.qml_plu_zone_urba_maj_symb_qgis() ;
+-- > prescriptions
+SELECT s_cnig_docurba.qml_plu_prescription_maj_symb_qgis() ;
+-- > informations
+SELECT s_cnig_docurba.qml_plu_information_maj_symb_qgis() ;
+
+-- recherche des traductions manquantes :
+SELECT s_cnig_docurba.qml_maj_traduction() ;
+
+-- pour compléter les traductions :
+-- > classes
+SELECT * FROM s_cnig_docurba.qml_traduction_class WHERE traduction IS NULL ;
+-- > propriétés
+SELECT * FROM s_cnig_docurba.qml_traduction_prop WHERE traduction IS NULL ;
+-- > valeurs
+SELECT * FROM s_cnig_docurba.qml_traduction_value WHERE traduction IS NULL ;
+
+-- nouvelles commandes INSERT pour les tables de traductions complétées :
+-- > classes
+SELECT s_cnig_docurba.util_genere_commande_insert(
+    's_cnig_docurba',
+    'qml_traduction_class',
+    ARRAY['symbol_class', 'traduction']
+    ) ;
+-- > propriétés
+SELECT s_cnig_docurba.util_genere_commande_insert(
+    's_cnig_docurba',
+    'qml_traduction_prop',
+    ARRAY['symbol_class', 'symbol_prop', 'traduction', 'unite_implicite', 'b_trad_value']
+    ) ;
+-- > valeurs
+SELECT s_cnig_docurba.util_genere_commande_insert(
+    's_cnig_docurba',
+    'qml_traduction_value',
+    ARRAY['symbol_class', 'symbol_prop', 'symbol_value', 'traduction']
+    ) ;
+
+-- nouvelles commandes INSERT pour les listes de codes mises à jour :
+-- > zones
+SELECT s_cnig_docurba.util_genere_commande_insert(
+    's_cnig_docurba',
+    'plu_zone_urba',
+    ARRAY['typezone', 'lib_type']
+    ) ;
+-- > prescriptions
+SELECT s_cnig_docurba.util_genere_commande_insert(
+    's_cnig_docurba',
+    'plu_prescription',
+    ARRAY['typepsc', 'stypepsc', 'lib_stype', 'stype_ref']
+    ) ;
+-- > informations
+SELECT s_cnig_docurba.util_genere_commande_insert(
+    's_cnig_docurba',
+    'plu_information',
+    ARRAY['typeinf', 'stypeinf', 'lib_stype', 'stype_ref']
+    ) ;
+
+-- nouveau récapitulatif des préconisations Markdown :
+SELECT s_cnig_docurba.md_generateur_plu('/PLU/vignettes') ;
+```
+
+[↑ haut de page](#maintenance-des-outils)
+
+## Test d'un symbole
+
+Pour obtenir les spécifications littérales d'un nouveau symbole encore non validé par le SG5, on commencera par sauvegarder le style qui implémente ce symbole dans la base, **sous n'importe quel nom autre que ceux à utiliser pour les styles validés** (cf. [tableau ci-avant](#création-modification-suppression-de-symboles)).
+
+Puis lancer la commande suivante, en remplaçant *nom_du_style* par le nom du style :
+
+```sql
+SELECT s_cnig_docurba.qml_retro_traduction_qml('^nom_du_style$') ;
+```
+
+Ceci ajoute à la table `qml_detail` les composants de tous les symboles du style.
+
+Pour la suite, il est nécessaire de connaître le numéro de la règle pour laquelle on veut éditer les spécifications. Une méthode consiste à compter les règles - uniquement celles avec des symboles associés - dans QGIS (*Propriétés de la couche > Symbologie*), depuis le haut et en commençant par zéro.
+
+Il est également possible de voir les numéros des règles du style et les filtres correspondants avec la requête suivante, en remplaçant *nom_du_style* par le nom du style :
+
+```sql
+SELECT regle_id, regle FROM s_cnig_docurba.qml_detail WHERE ref_table = 'nom_du_style' ORDER BY regle_id ;
+```
+
+Les spécifications littérales sont renvoyées par la commande ci-après, en remplaçant *nom_du_style* par le nom du style et *r* par le numéro de la règle :
+
+```sql
+SELECT s_cnig_docurba.qml_jolie_transcription('nom_du_style', r) ;
+```
+
+Il pourra être nécessaire d'ajouter des traductions pour certains termes, comme détaillé dans la partie [Rétro-traduction des QML](#rétro-traduction-des-qml).
+
+Une fois les tests terminés, il pourra être préférable de nettoyer `qml_detail` :
+
+```sql
+DELETE FROM s_cnig_docurba.qml_detail WHERE ref_table = 'nom_du_style' ;
+```
+
+Voire de supprimer le style sauvegardé :
+
+```sql
+DELETE FROM layer_styles WHERE stylename = 'nom_du_style' ;
+```
+
+[↑ haut de page](#maintenance-des-outils)
+
+
+
+
