@@ -6,7 +6,7 @@ Mode d'emploi pour la mise à jour des fichiers QML, du projet QGIS de visualisa
 
 ## Import des données
 
-Créer un schéma `s_cnig_docurba`.
+Sur le serveur PostgreSQL, créer un schéma `s_cnig_docurba`.
 
 Peupler ce schéma (table, données, fonctions) en exécutant les commandes contenues dans les fichiers :
 
