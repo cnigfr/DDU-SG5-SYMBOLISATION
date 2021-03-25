@@ -14,8 +14,8 @@ Peupler ce schéma (table, données, fonctions) en exécutant les commandes cont
 
 - *[visualisateur_qgis_creation_grille_data.sql](/PLU/maintenance/visualisateur_qgis_creation_grille_data.sql)* ;
 - *[visualisateur_qgis_creation_grille.sql](/PLU/maintenance/visualisateur_qgis_creation_grille.sql)* ;
-- *[retrotraduction_qml_data.sql](/PLU/maintenance/retrotraduction_qml_data.sql)* ;
-- *[retrotraduction_qml.sql](/PLU/maintenance/retrotraduction_qml.sql)* ;
+- *[retro_traduction_qml_data.sql](/PLU/maintenance/retro_traduction_qml_data.sql)* ;
+- *[retro_traduction_qml.sql](/PLU/maintenance/retro_traduction_qml.sql)* ;
 - *[outils_generiques.sql](/PLU/maintenance/outils_generiques.sql)* ;
 - *[recapitulatif_markdown.sql](/PLU/maintenance/recapitulatif_markdown.sql)*.
 
@@ -140,7 +140,7 @@ SELECT * FROM s_cnig_docurba.qml_traduction_value WHERE traduction IS NULL ;
 
 On devra ensuite relancer les commandes qui calculent les descriptifs à partir des QML pour que les nouvelles traductions soient prises en compte.
 
-Si l'une des trois tables `qml_traduction_class`, `qml_traduction_prop` ou `qml_traduction_value` a été modifiée, il faudra reverser la nouvelle version dans *[retrotraduction_qml_data.sql](/PLU/maintenance/retrotraduction_qml_data.sql)*.
+Si l'une des trois tables `qml_traduction_class`, `qml_traduction_prop` ou `qml_traduction_value` a été modifiée, il faudra reverser la nouvelle version dans *[retro_traduction_qml_data.sql](/PLU/maintenance/retro_traduction_qml_data.sql)*.
 
 Pour `qml_traduction_class`, il s'agira de remplacer la commande `INSERT` par le résultat de la commande ci-après :
 
