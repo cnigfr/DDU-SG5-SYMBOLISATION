@@ -35,7 +35,7 @@ Si la modification fait suite à l'ajout ou la suppression de codes ou sous-code
 
 ## Régénération des géométries
 
-Les carreaux et les géométries type utilisées par le projet QGIS de visualisation doivent être regénérés en exécutant les commandes ci-après.
+Les carreaux et les géométries type utilisées par le projet QGIS de visualisation doivent être régénérés en exécutant les commandes ci-après.
 
 Pour les zones :
 
@@ -223,7 +223,7 @@ Celui-ci :
 
 Les styles intégrés au projet QGIS ne sont à ce stade pas mis à jour par le batch. Il est donc nécessaire d'ouvrir le projet (sous QGIS 3.10 !) et, pour chaque couche pour laquelle des symboles ont été modifiés (y compris les carreaux, le cas échéant) de recharger le style par défaut depuis le GeoPackage, puisque lui a bien été actualisé : *Propriétés de la couche > onglet Symbologie > bouton Style > Restaurer le style par défaut > Base de données source*.
 
-Le projet QGIS et les QML mis à jour sont à reverser sur le GitHub après mise à jour, à la racine de [PLU](/PLU) pour le projet et dans le répertoire [QML](/PLU/QML) pour les QML.
+Le projet QGIS et les QML sont à reverser sur le GitHub après mise à jour, à la racine de [PLU](/PLU) pour le projet et dans le répertoire [QML](/PLU/QML) pour les QML.
 
 [↑ haut de page](#maintenance-des-outils)
 
