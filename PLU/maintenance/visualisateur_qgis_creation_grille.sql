@@ -14,10 +14,77 @@
 -- schéma cible : s_cnig_docurba
 --
 -- liste des objets créés ou remplacés :
+-- FUNCTION: s_cnig_docurba.visual_plu_zone_urba_creation_grille(int)
 -- FUNCTION: s_cnig_docurba.visual_plu_prescription_creation_grille(int)
 -- FUNCTION: s_cnig_docurba.visual_plu_information_creation_grille(int)
 --
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+-- FUNCTION: s_cnig_docurba.visual_plu_zone_urba_creation_grille(int)
+
+CREATE OR REPLACE FUNCTION s_cnig_docurba.visual_plu_zone_urba_creation_grille(
+            largeur int DEFAULT 10
+            )
+    RETURNS text
+    LANGUAGE plpgsql
+    AS $_$
+/*
+OBJET : Création des carreaux et géométries type utilisées par le
+visualisateur QGIS pour les zonages du standard PLU.
+
+Concrètement, la fonction régénère les champs de géométrie et de mise en forme
+de la table plu_zone_urba (carreau, geom et blanc).
+
+ARGUMENT :
+largeur est un entier correspondant à la largeur de la grille (en nombre de
+carreaux). 10 par défaut.
+
+SORTIE : 'FIN'.
+*/
+DECLARE
+    r record ;
+    x0 numeric := 620000 ;
+    x numeric ;
+    y numeric := 6600000 ;
+    k int := 1 ;
+    l int := 0 ;
+    m int := largeur ;    
+BEGIN
+    x := x0 ;
+    FOR r IN (SELECT * FROM s_cnig_docurba.plu_zone_urba ORDER BY typezone)
+    LOOP
+    
+        UPDATE s_cnig_docurba.plu_zone_urba
+           SET carreau = (SELECT ST_SetSRID(ST_MakePolygon(format('LINESTRING(%s %s, %s %s, %s %s, %s %s, %1$s %2$s)',
+                                                                  x - 10, y - 10, x - 10, y + 80, x + 80, y + 80, x + 80, y - 10)), 2154)),
+               blanc = NOT (k % 2 = l),
+               libelle = typezone
+           WHERE typezone = r.typezone ;
+           
+        UPDATE s_cnig_docurba.plu_zone_urba
+            SET geom = (SELECT ST_SetSRID(ST_MakePolygon(
+                format('LINESTRING(%s %s, %s %s, %s %s, %s %s, %1$s %2$s)',
+                       x, y,
+                       x, y + 40,
+                       x + 40, y + 40,
+                       x + 40, y
+                      )
+                ), 2154))
+            WHERE typezone = r.typezone ;
+        
+        x := x0 + 90 * (k % m)::numeric ;
+        y := y - 90 * (k % m = 0)::int ;
+        l := (l + (k % m = 0)::int) % 2 ;
+        k := (k + 1) % m ;
+        IF k = 0 THEN k := m ; END IF ;
+
+    END LOOP ;
+    RETURN 'FIN' ;
+END    
+$_$ ;
+
+COMMENT ON FUNCTION s_cnig_docurba.visual_plu_zone_urba_creation_grille(int) IS '[Visualisateur QGIS] Création des carreaux et géométries types utilisées par le visualisateur QGIS pour les zonages du standard PLU.' ;
 
 
 -- FUNCTION: s_cnig_docurba.visual_plu_prescription_creation_grille(int)
@@ -34,7 +101,7 @@ visualisateur QGIS pour les prescriptions du standard PLU.
 
 Concrètement, la fonction régénère les champs de géométrie et d'étiquettes
 de la table plu_prescription (carreau, geom_..., blanc et etiquette)
-en fonction des champs symb_... et stype_ref.
+en fonction du champ stype_ref.
 
 ARGUMENT :
 largeur est un entier correspondant à la largeur de la grille (en nombre de
@@ -99,6 +166,7 @@ BEGIN
             y := y - 90 * (k % m = 0)::int ;
             l := (l + (k % m = 0)::int) % 2 ;
             k := (k + 1) % m ;
+            IF k = 0 THEN k := m ; END IF ;
         ELSE
 
             SELECT etiquette INTO refet
@@ -155,7 +223,7 @@ visualisateur QGIS pour les informations du standard PLU.
 
 Concrètement, la fonction régénère les champs de géométrie et d'étiquettes
 de la table plu_information (carreau, geom_..., blanc et etiquette)
-en fonction des champs symb_... et stype_ref.
+en fonction du champ stype_ref.
 
 ARGUMENT :
 largeur est un entier correspondant à la largeur de la grille (en nombre de
@@ -220,6 +288,7 @@ BEGIN
             y := y - 90 * (k % m = 0)::int ;
             l := (l + (k % m = 0)::int) % 2 ;
             k := (k + 1) % m ;
+            IF k = 0 THEN k := m ; END IF ;
         ELSE
 
             SELECT etiquette INTO refet

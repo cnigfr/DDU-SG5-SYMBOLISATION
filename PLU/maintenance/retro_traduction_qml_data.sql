@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS s_cnig_docurba.qml_detail (
     ref_table text,
     regle_id int,
     regle text,
+    echelle text,
     symbol_id text,
     symbol_type text,
     symbol_class text,
@@ -42,6 +43,7 @@ COMMENT ON COLUMN s_cnig_docurba.qml_detail.id IS 'Identifiant.' ;
 COMMENT ON COLUMN s_cnig_docurba.qml_detail.ref_table IS 'Nom du style (champ stylename de layer_styles), présumé correspondre à celui d''une table d''un standard.' ;
 COMMENT ON COLUMN s_cnig_docurba.qml_detail.regle_id IS 'Identifiant de la règle, tel qu''il apparaît dans le QML (entier).' ;
 COMMENT ON COLUMN s_cnig_docurba.qml_detail.regle IS 'Expression conditionnelle de la règle, tel qu''elle apparaît dans le QML.' ;
+COMMENT ON COLUMN s_cnig_docurba.qml_detail.echelle IS 'Expression littérale décrivant les échelles d''affichage du symbole.' ;
 COMMENT ON COLUMN s_cnig_docurba.qml_detail.symbol_id IS 'Identifiant du symbole. Pour le premier niveau de symbole, le premier chiffre est le numéro qui apparaît dans le QML pour le "symbol", il est séparé par un tiret d''un numéro d''ordre arbitrairement attribué au "layer". Si le symbole est un composant d''un autre symbole, son identifiant commence par l''identifiant du parent, séparé par un point de son suffixe propre (numéro d''ordre arbitrairement attribué au "symbol" - numéro d''ordre arbitrairement attribué au "layer").' ;
 COMMENT ON COLUMN s_cnig_docurba.qml_detail.symbol_type IS 'Type de symbole.' ;
 COMMENT ON COLUMN s_cnig_docurba.qml_detail.symbol_class IS 'Classe de symbole.' ;
@@ -53,6 +55,7 @@ pas de données sauvegardées pour cette table, elles sont déduites
 des QML par les fonctions de rétro-traduction.
 */
 
+DELETE FROM s_cnig_docurba.qml_detail ;
 
 
 -- TABLE: s_cnig_docurba.qml_traduction_class
@@ -84,7 +87,10 @@ bien entendu être saisies manuellement) :
 SELECT s_cnig_docurba.qml_maj_traduction() ;
 */
 
+DELETE FROM s_cnig_docurba.qml_traduction_class ;
+
 INSERT INTO s_cnig_docurba.qml_traduction_class (symbol_class, traduction) VALUES
+    ('CentroidFill', 'remplissage de centroïde'),
     ('FontMarker', 'Symbole de police'),
     ('HashLine', 'Ligne hachurée'),
     ('LinePatternFill', 'Motif de lignes'),
@@ -103,6 +109,7 @@ CREATE TABLE IF NOT EXISTS s_cnig_docurba.qml_traduction_prop (
     symbol_prop text,
     traduction text,
     unite_implicite text,
+    b_trad_value boolean DEFAULT False,
     CONSTRAINT symbol_uni UNIQUE (symbol_class, symbol_prop)
     ) ;
 
@@ -112,13 +119,14 @@ COMMENT ON COLUMN s_cnig_docurba.qml_traduction_prop.symbol_class IS 'Libellé d
 COMMENT ON COLUMN s_cnig_docurba.qml_traduction_prop.symbol_prop IS 'Libellé de propriété (correspond au champ de même nom dans qml_detail).' ;
 COMMENT ON COLUMN s_cnig_docurba.qml_traduction_prop.traduction IS 'Traduction du libellé de propriété.' ;
 COMMENT ON COLUMN s_cnig_docurba.qml_traduction_prop.unite_implicite IS 'Unité à faire apparaître à droite de la valeur (uniquement lorsque l''unité n''est pas paramétrable dans QGIS).' ;
+COMMENT ON COLUMN s_cnig_docurba.qml_traduction_prop.b_trad_value IS 'Booléen. Les valeurs associées à cette propriété doivent-elles faire l''objet d''une traduction ?' ;
 
 /*
 pour régénérer la commande INSERT ci-après à partir de la base :
 SELECT s_cnig_docurba.util_genere_commande_insert(
     's_cnig_docurba',
     'qml_traduction_prop',
-    ARRAY['symbol_class', 'symbol_prop', 'traduction', 'unite_implicite']
+    ARRAY['symbol_class', 'symbol_prop', 'traduction', 'unite_implicite', 'b_trad_value']
     ) ;
     
 si, suite à une modification des QML, de nouveaux termes
@@ -128,52 +136,56 @@ bien entendu être saisies manuellement) :
 SELECT s_cnig_docurba.qml_maj_traduction() ;
 */
 
-INSERT INTO s_cnig_docurba.qml_traduction_prop (symbol_class, symbol_prop, traduction, unite_implicite) VALUES
-    ('FontMarker', 'angle', 'rotation', '°'),
-    ('FontMarker', 'chr', 'caractère(s)', NULL),
-    ('FontMarker', 'color', 'couleur de remplissage (RVB)', NULL),
-    ('FontMarker', 'font', 'famille de police', NULL),
-    ('FontMarker', 'joinstyle', 'style de jointure', NULL),
-    ('FontMarker', 'offset', 'décalage (en x, en y)', NULL),
-    ('FontMarker', 'outline_color', 'couleur de trait (RVB)', NULL),
-    ('FontMarker', 'outline_width', 'largeur de trait', NULL),
-    ('FontMarker', 'size', 'taille', NULL),
-    ('FontMarker', 'vertical_anchor_point', 'point d''ancrage vertical', NULL),
-    ('HashLine', 'hash_length', 'longueur de hachure', NULL),
-    ('HashLine', 'interval', 'intervalle', NULL),
-    ('HashLine', 'offset', 'décalage de la ligne', NULL),
-    ('HashLine', 'offset_along_line', 'décalage le long de la ligne', NULL),
-    ('LinePatternFill', 'angle', 'rotation', '°'),
-    ('LinePatternFill', 'distance', 'espacement', NULL),
-    ('LinePatternFill', 'offset', 'décalage', NULL),
-    ('MarkerLine', 'interval', 'intervalle', NULL),
-    ('MarkerLine', 'offset', 'décalage de la ligne', NULL),
-    ('MarkerLine', 'offset_along_line', 'décalage le long de la ligne', NULL),
-    ('PointPatternFill', 'displacement_x', 'déplacement horizontal', NULL),
-    ('PointPatternFill', 'displacement_y', 'déplacement vertical', NULL),
-    ('PointPatternFill', 'distance_x', 'distance horizontale', NULL),
-    ('PointPatternFill', 'distance_y', 'distance verticale', NULL),
-    ('PointPatternFill', 'offset_x', 'décalage horizontal', NULL),
-    ('PointPatternFill', 'offset_y', 'décalage vertical', NULL),
-    ('SimpleFill', 'color', 'couleur de remplissage (RVB)', NULL),
-    ('SimpleFill', 'outline_color', 'couleur de trait (RVB)', NULL),
-    ('SimpleFill', 'outline_style', 'style de trait', NULL),
-    ('SimpleFill', 'outline_width', 'largeur de trait', NULL),
-    ('SimpleFill', 'style', 'style de remplissage', NULL),
-    ('SimpleLine', 'capstyle', 'style de cap', NULL),
-    ('SimpleLine', 'customdash', 'modèle de tiret personnalisé (tiret ; espace)', NULL),
-    ('SimpleLine', 'joinstyle', 'style de jointure', NULL),
-    ('SimpleLine', 'line_color', 'couleur (RVB)', NULL),
-    ('SimpleLine', 'line_style', 'style de trait', NULL),
-    ('SimpleLine', 'line_width', 'largeur de trait', NULL),
-    ('SimpleMarker', 'angle', 'rotation', '°'),
-    ('SimpleMarker', 'color', 'couleur de remplissage (RVB)', NULL),
-    ('SimpleMarker', 'joinstyle', 'style de jointure', NULL),
-    ('SimpleMarker', 'name', 'nom du symbole', NULL),
-    ('SimpleMarker', 'outline_color', 'couleur de trait (RVB)', NULL),
-    ('SimpleMarker', 'outline_style', 'style de trait', NULL),
-    ('SimpleMarker', 'outline_width', 'largeur de trait', NULL),
-    ('SimpleMarker', 'size', 'taille', NULL) ;
+DELETE FROM s_cnig_docurba.qml_traduction_prop ;
+
+INSERT INTO s_cnig_docurba.qml_traduction_prop (symbol_class, symbol_prop, traduction, unite_implicite, b_trad_value) VALUES
+    ('CentroidFill', 'point_on_all_parts', 'dessiner le point sur toutes les parties d''une entité multi-parties', NULL, true),
+    ('FontMarker', 'angle', 'rotation', '°', false),
+    ('FontMarker', 'chr', 'caractère(s)', NULL, false),
+    ('FontMarker', 'color', 'couleur de remplissage (RVB)', NULL, false),
+    ('FontMarker', 'font', 'famille de police', NULL, false),
+    ('FontMarker', 'joinstyle', 'style de jointure', NULL, true),
+    ('FontMarker', 'offset', 'décalage (en x, en y)', NULL, false),
+    ('FontMarker', 'outline_color', 'couleur de trait (RVB)', NULL, false),
+    ('FontMarker', 'outline_width', 'largeur de trait', NULL, false),
+    ('FontMarker', 'size', 'taille', NULL, false),
+    ('FontMarker', 'vertical_anchor_point', 'point d''ancrage vertical', NULL, true),
+    ('HashLine', 'hash_length', 'longueur de hachure', NULL, false),
+    ('HashLine', 'interval', 'intervalle', NULL, false),
+    ('HashLine', 'offset', 'décalage de la ligne', NULL, false),
+    ('HashLine', 'offset_along_line', 'décalage le long de la ligne', NULL, false),
+    ('LinePatternFill', 'angle', 'rotation', '°', false),
+    ('LinePatternFill', 'distance', 'espacement', NULL, false),
+    ('LinePatternFill', 'offset', 'décalage', NULL, false),
+    ('MarkerLine', 'interval', 'intervalle', NULL, false),
+    ('MarkerLine', 'offset', 'décalage de la ligne', NULL, false),
+    ('MarkerLine', 'offset_along_line', 'décalage le long de la ligne', NULL, false),
+    ('PointPatternFill', 'displacement_x', 'déplacement horizontal', NULL, false),
+    ('PointPatternFill', 'displacement_y', 'déplacement vertical', NULL, false),
+    ('PointPatternFill', 'distance_x', 'distance horizontale', NULL, false),
+    ('PointPatternFill', 'distance_y', 'distance verticale', NULL, false),
+    ('PointPatternFill', 'offset_x', 'décalage horizontal', NULL, false),
+    ('PointPatternFill', 'offset_y', 'décalage vertical', NULL, false),
+    ('SimpleFill', 'color', 'couleur de remplissage (RVB)', NULL, false),
+    ('SimpleFill', 'outline_color', 'couleur de trait (RVB)', NULL, false),
+    ('SimpleFill', 'outline_style', 'style de trait', NULL, true),
+    ('SimpleFill', 'outline_width', 'largeur de trait', NULL, false),
+    ('SimpleFill', 'style', 'style de remplissage', NULL, true),
+    ('SimpleLine', 'capstyle', 'style de cap', NULL, true),
+    ('SimpleLine', 'customdash', 'modèle de tiret personnalisé (tiret ; espace)', NULL, false),
+    ('SimpleLine', 'joinstyle', 'style de jointure', NULL, true),
+    ('SimpleLine', 'line_color', 'couleur (RVB)', NULL, false),
+    ('SimpleLine', 'line_style', 'style de trait', NULL, true),
+    ('SimpleLine', 'line_width', 'largeur de trait', NULL, false),
+    ('SimpleMarker', 'angle', 'rotation', '°', false),
+    ('SimpleMarker', 'color', 'couleur de remplissage (RVB)', NULL, false),
+    ('SimpleMarker', 'joinstyle', 'style de jointure', NULL, true),
+    ('SimpleMarker', 'name', 'nom du symbole', NULL, false),
+    ('SimpleMarker', 'offset', 'décalage (en x, en y)', NULL, false),
+    ('SimpleMarker', 'outline_color', 'couleur de trait (RVB)', NULL, false),
+    ('SimpleMarker', 'outline_style', 'style de trait', NULL, true),
+    ('SimpleMarker', 'outline_width', 'largeur de trait', NULL, false),
+    ('SimpleMarker', 'size', 'taille', NULL, false) ;
 
 
 -- TABLE: s_cnig_docurba.qml_traduction_value
@@ -209,20 +221,26 @@ bien entendu être saisies manuellement) :
 SELECT s_cnig_docurba.qml_maj_traduction() ;
 */
 
+DELETE FROM s_cnig_docurba.qml_traduction_value ;
+
 INSERT INTO s_cnig_docurba.qml_traduction_value (symbol_class, symbol_prop, symbol_value, traduction) VALUES
+    ('CentroidFill', 'point_on_all_parts', '0', 'non'),
+    ('CentroidFill', 'point_on_all_parts', '1', 'oui'),
     ('FontMarker', 'joinstyle', 'miter', 'angle droit'),
-    ('FontMarker', 'joinstyle', 'round', 'arrondi'),
+    ('FontMarker', 'joinstyle', 'round', 'rond'),
     ('FontMarker', 'vertical_anchor_point', '2', 'en dessous'),
     ('SimpleFill', 'outline_style', 'no', 'pas de ligne'),
     ('SimpleFill', 'outline_style', 'solid', 'ligne continue'),
     ('SimpleFill', 'style', 'no', 'pas de remplissage'),
     ('SimpleLine', 'capstyle', 'flat', 'plat'),
+    ('SimpleLine', 'capstyle', 'round', 'rond'),
     ('SimpleLine', 'joinstyle', 'miter', 'angle droit'),
+    ('SimpleLine', 'joinstyle', 'round', 'rond'),
     ('SimpleLine', 'line_style', 'dash', 'ligne en tiret'),
     ('SimpleLine', 'line_style', 'dash dot', 'ligne tiret-point'),
     ('SimpleLine', 'line_style', 'dash dot dot', 'ligne tiret-point-point'),
     ('SimpleLine', 'line_style', 'solid', 'ligne continue'),
     ('SimpleMarker', 'joinstyle', 'miter', 'angle droit'),
-    ('SimpleMarker', 'joinstyle', 'round', 'arrondi'),
+    ('SimpleMarker', 'joinstyle', 'round', 'rond'),
     ('SimpleMarker', 'outline_style', 'solid', 'ligne continue') ;
 

@@ -18,9 +18,12 @@
 -- FUNCTION: s_cnig_docurba.qml_data_defined(xml, text)
 -- FUNCTION: s_cnig_docurba.qml_exploration(text, xml, text, text, int)
 -- FUNCTION: s_cnig_docurba.qml_execute_exploration(text, xml, text)
--- FUNCTION: s_cnig_docurba.qml_plu_retro_traduction_qml(text)
+-- FUNCTION: s_cnig_docurba.qml_regles(text, xml, text, int, int, text)
+-- FUNCTION: s_cnig_docurba.qml_retro_traduction_qml(text)
+-- FUNCTION: s_cnig_docurba.qml_jolie_transcription(text, int)
 -- FUNCTION: s_cnig_docurba.qml_plu_prescription_maj_symb_qgis(boolean)
 -- FUNCTION: s_cnig_docurba.qml_plu_information_maj_symb_qgis(boolean)
+-- FUNCTION: s_cnig_docurba.qml_plu_zone_urba_maj_symb_qgis(boolean)
 -- FUNCTION: s_cnig_docurba.qml_maj_traduction()
 --
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -221,6 +224,107 @@ $_$ ;
 COMMENT ON FUNCTION s_cnig_docurba.qml_exploration(text, xml, text, text, int) IS '[Rétro-traduction des QML] Extrait les informations contenues dans les balises "symbol" d''un XML donné en argument et les copie dans la table qml_detail.' ;
 
 
+
+-- FUNCTION: s_cnig_docurba.qml_regles(text, xml, text, int, int, text)
+
+CREATE OR REPLACE FUNCTION s_cnig_docurba.qml_regles(
+            ref_table_0 text,
+            extrait_qml xml,
+            racine text DEFAULT '',
+            parent_scalemax int DEFAULT NULL,
+            parent_scalemin int DEFAULT NULL,
+            parent_filter text DEFAULT NULL
+            )
+    RETURNS text
+    LANGUAGE plpgsql
+    AS $_$
+/*
+OBJET : Extrait les informations contenues dans les balises "rules"
+d'un XML donné en argument et les copie dans la table qml_detail.
+
+Pour appel par la fonction qml_execute_exploration ou par qml_regles
+(récursive pour les règles imbriquées).
+
+ARGUMENTS :
+- ref_table_0 est le nom de la table du standard considérée (chaîne de caractères) ;
+- extrait_qml est un XML présumés contenir des règles ;
+- racine est le chemin des balises "rule" dans le XML, sans "rule" et doit
+finir par "/" (chaîne de caractères) ;
+- parent_scalemax et parent_scalemin sont les plus grands et plus petits
+  dénominateurs des échelles de validité de la règle parente (entiers) ;
+- parent_filter est la filtre de la règle parente.
+
+SORTIE : 'FIN'.
+*/
+DECLARE
+    regle record ;
+    racine_0 text := '//' || racine || 'rule' ;
+    expr text ;
+    e1 int ;
+    e2 int ;
+    e text ;
+    r text ;
+BEGIN
+    
+    FOR regle IN (
+        SELECT xmltable.*
+            FROM XMLTABLE(
+                racine_0
+                PASSING extrait_qml
+                COLUMNS
+                    regle_id int PATH '@symbol',
+                    filter text PATH '@filter',
+                    scalemindenom int PATH '@scalemindenom',
+                    scalemaxdenom int PATH '@scalemaxdenom',
+                    rule xml
+                    )
+        )
+    LOOP
+    
+        e := NULL ;
+        e1 := coalesce(GREATEST(parent_scalemin, regle.scalemindenom), parent_scalemin, regle.scalemindenom) ;
+        e2 := coalesce(LEAST(parent_scalemax, regle.scalemaxdenom), parent_scalemax, regle.scalemaxdenom) ;
+        
+        IF e2 <= e1
+        THEN
+            e := 'plages d''échelles incompatibles' ;
+        ELSIF e2 > e1
+        THEN
+            e := format('1:%s > échelle ≥ 1:%s', e1, e2) ;
+        ELSIF e1 IS NOT NULL
+        THEN
+            e := format('échelle < 1:%s', e1) ;
+        ELSIF e2 IS NOT NULL
+        THEN
+            e :=  format('échelle ≥ 1:%s', e2) ;
+        END IF ;
+        
+        r := coalesce('(' || parent_filter || ') AND (' || regle.filter || ')', parent_filter, regle.filter) ;
+        
+        IF regle.regle_id IS NOT NULL
+        THEN
+            UPDATE s_cnig_docurba.qml_detail
+                SET regle = r,
+                    echelle = e
+                WHERE ref_table = ref_table_0 AND regle_id = regle.regle_id ;
+        END IF ;
+        
+        
+        IF regle.rule IS NOT NULL
+        THEN
+            PERFORM s_cnig_docurba.qml_regles(ref_table_0, xmlelement(name dir, regle.rule), 'dir/', e2, e1, r) ;
+        END IF ;
+            
+    END LOOP ;
+    
+    RETURN 'FIN' ;
+END
+$_$ ;
+
+COMMENT ON FUNCTION s_cnig_docurba.qml_regles(text, xml, text, int, int, text) IS '[Rétro-traduction des QML] Extrait les informations contenues dans les balises "rules" d''un XML donné en argument et les copie dans la table qml_detail.' ;
+
+
+
 -- FUNCTION: s_cnig_docurba.qml_execute_exploration(text, xml, text)
 
 CREATE OR REPLACE FUNCTION s_cnig_docurba.qml_execute_exploration(
@@ -247,7 +351,7 @@ SORTIE : '> TRADUIT : %stylename'.
 DECLARE
     regle record ;
     racine_s text := '//' || racine || 'symbols/' ;
-    racine_r text := '//' || racine || 'rules/rule' ;
+    racine_r text := '//' || racine || 'rules/' ;
 BEGIN
 
     PERFORM s_cnig_docurba.qml_exploration(
@@ -255,37 +359,25 @@ BEGIN
         qml,
         racine_s
         ) ;
-    
-    FOR regle IN (
-        SELECT xmltable.*
-            FROM XMLTABLE(
-                racine_r
-                PASSING qml
-                COLUMNS
-                    regle_id int PATH '@symbol',
-                    filter text PATH '@filter'
-                    )
-        )
-    LOOP
         
-        UPDATE s_cnig_docurba.qml_detail
-            SET regle = regle.filter
-            WHERE ref_table = stylename AND regle_id = regle.regle_id ;
-            
-    END LOOP ;
+    PERFORM s_cnig_docurba.qml_regles(
+        stylename,
+        qml,
+        racine_r
+        ) ;
     
     RAISE NOTICE '> TRADUIT : %', stylename ;  
     RETURN '> TRADUIT : ' || stylename ;    
 END
 $_$ ;
 
-COMMENT ON FUNCTION s_cnig_docurba.qml_execute_exploration(text, xml, text) IS '[Rétro-traduction des QML] Lance la fonction qml_exploration sur le XML donné en argument, extrait dudit XML Les informations relatives aux règles (balises "rules") et les copies dans la table qml_detail.' ;
+COMMENT ON FUNCTION s_cnig_docurba.qml_execute_exploration(text, xml, text) IS '[Rétro-traduction des QML] Lance les fonctions qml_exploration et qml_regles sur le XML donné en argument.' ;
 
 
 
--- FUNCTION: s_cnig_docurba.qml_plu_retro_traduction_qml(text)
+-- FUNCTION: s_cnig_docurba.qml_retro_traduction_qml(text)
 
-CREATE OR REPLACE FUNCTION s_cnig_docurba.qml_plu_retro_traduction_qml(style_regexp text)
+CREATE OR REPLACE FUNCTION s_cnig_docurba.qml_retro_traduction_qml(style_regexp text)
     RETURNS text
     LANGUAGE plpgsql
     AS $_$
@@ -485,7 +577,76 @@ BEGIN
 END
 $_$ ;
 
-COMMENT ON FUNCTION s_cnig_docurba.qml_plu_retro_traduction_qml(text) IS '[Rétro-traduction des QML] Crée une table qml_detail et y stocke les caractéristiques des symboles décrits par les QML enregistrés dans la table layer_styles tels que le nom du style commence par "plu_information_" ou "plu_prescription_".' ;
+COMMENT ON FUNCTION s_cnig_docurba.qml_retro_traduction_qml(text) IS '[Rétro-traduction des QML] Stocke dans la table qml_detail les caractéristiques des symboles décrits par les QML enregistrés dans la table layer_styles (table de stockage des styles QGIS) tels que le nom du style correspond à l''expression rationelle donnée en argument.' ;
+
+
+-- FUNCTION: s_cnig_docurba.qml_jolie_transcription(text, int)
+
+CREATE OR REPLACE FUNCTION s_cnig_docurba.qml_jolie_transcription(
+        ref_table_0 text,
+        regle_id_0 int
+        )
+    RETURNS text
+    LANGUAGE plpgsql
+    AS $_$
+/*
+OBJET : Exploite qml_detail et les tables de traduction (qml_traduction_class,
+qml_traduction_prop et qml_traduction_value) pour générer un joli descriptif
+pour le symbole associé à la table et la règle données en arguments.
+
+ARGUMENTS :
+- ref_table_0 est une chaîne de caractères correspondant au nom du style/nom de
+la table du standard considérée (champ ref_table de qml_detail) ;
+- regle_id_0 est un entier correspondant à l'identifiant de la règle (champ
+regle_id de qml_detail) ;
+
+SORTIE : transcription.
+*/
+DECLARE
+    descriptif text ;
+BEGIN
+
+    WITH trad AS (
+        SELECT
+            symbol_id,
+            coalesce(c.traduction, qml_detail.symbol_class) AS symbol_class,
+            coalesce(p.traduction, qml_detail.symbol_prop) AS symbol_prop,
+            coalesce(v.traduction, qml_detail.symbol_value) AS symbol_value,
+            p.unite_implicite
+            FROM s_cnig_docurba.qml_detail
+                LEFT JOIN s_cnig_docurba.qml_traduction_value AS v
+                    ON v.symbol_class = qml_detail.symbol_class AND v.symbol_prop = qml_detail.symbol_prop AND v.symbol_value = qml_detail.symbol_value
+                LEFT JOIN s_cnig_docurba.qml_traduction_prop AS p
+                    ON p.symbol_class = qml_detail.symbol_class AND p.symbol_prop = qml_detail.symbol_prop
+                LEFT JOIN s_cnig_docurba.qml_traduction_class AS c
+                    ON c.symbol_class = qml_detail.symbol_class
+            WHERE ref_table = ref_table_0
+                AND regle_id = regle_id_0
+        ),
+    layer AS (
+        SELECT
+            symbol_id,
+            lpad('', (((length(symbol_id) + 1) / 4) - 1) * 4, ' ') ||
+                symbol_class || chr(10) ||
+                string_agg(
+                    lpad('', (((length(symbol_id) + 1) / 4) - 1) * 4, ' ') || chr(8226)
+                        || chr(160) || symbol_prop || ' : ' || symbol_value || coalesce(unite_implicite, ''),                            
+                    chr(10)
+                    ORDER BY symbol_prop
+                    ) AS element
+            FROM trad
+            GROUP BY symbol_id, symbol_class
+        )
+    SELECT
+        string_agg(element, lpad('', 2, chr(10)) ORDER BY symbol_id)
+        INTO descriptif
+        FROM layer ;
+
+    RETURN descriptif ;
+END
+$_$ ;
+
+COMMENT ON FUNCTION s_cnig_docurba.qml_jolie_transcription(text, int) IS '[Rétro-traduction des QML] Exploite qml_detail et les tables de traduction (qml_traduction_class, qml_traduction_prop et qml_traduction_value) pour générer un joli descriptif pour le symbole associé à la table et la règle données en arguments.' ;
 
 
 -- FUNCTION: s_cnig_docurba.qml_plu_prescription_maj_symb_qgis(boolean)
@@ -499,10 +660,8 @@ OBJET : Met à jour les descriptifs des symboles de la table plu_prescription
 à partir des QML stockés dans layer_styles pour les styles nommés
 plu_prescription_surf, plu_prescription_lin et plu_prescription_pct.
 
-Appelle la fonction qml_plu_retro_traduction_qml, qui génère la table
-qml_detail, puis exploite cette dernière et les tables de traduction 
-(qml_traduction_class, qml_traduction_prop et qml_traduction_value) pour
-mettre à jour plu_prescription.
+Appelle les fonctions qml_retro_traduction_qml et qml_jolie_transcription
+pour mettre à jour plu_prescription.
 
 ARGUMENTS : [optionnel] regenere est un booléen, qui indique si qml_detail
 doit être régénérée avant mise à jour de plu_prescription ou utilisée telle quelle.
@@ -510,134 +669,59 @@ Valeur par défaut True.
 
 SORTIE : 'FIN'.
 */
+DECLARE
+    regle_id_surf int ;
+    regle_id_lin int ;
+    regle_id_pct int ;
+    r record ;
 BEGIN
 
     IF regenere
     THEN
-        PERFORM s_cnig_docurba.qml_plu_retro_traduction_qml('^plu_prescription_') ;
+        PERFORM s_cnig_docurba.qml_retro_traduction_qml('^plu_prescription_(surf|lin|pct)$') ;
     END IF ;
-
-    UPDATE s_cnig_docurba.plu_prescription
-        SET symb_surf = (
-            WITH trad AS (
-                SELECT
-                    symbol_id,
-                    coalesce(c.traduction, qml_detail.symbol_class) AS symbol_class,
-                    coalesce(p.traduction, qml_detail.symbol_prop) AS symbol_prop,
-                    coalesce(v.traduction, qml_detail.symbol_value) AS symbol_value,
-                    p.unite_implicite
-                    FROM s_cnig_docurba.qml_detail
-                        LEFT JOIN s_cnig_docurba.qml_traduction_value AS v
-                            ON v.symbol_class = qml_detail.symbol_class AND v.symbol_prop = qml_detail.symbol_prop AND v.symbol_value = qml_detail.symbol_value
-                        LEFT JOIN s_cnig_docurba.qml_traduction_prop AS p
-                            ON p.symbol_class = qml_detail.symbol_class AND p.symbol_prop = qml_detail.symbol_prop
-                        LEFT JOIN s_cnig_docurba.qml_traduction_class AS c
-                            ON c.symbol_class = qml_detail.symbol_class
-                    WHERE ref_table = 'plu_prescription_surf'
-                        AND typepsc = substring(regle, 'TYPEPSC[^0-9]+([0-9]{2})')
-                        AND (NOT regle ~ 'STYPEPSC' OR stypepsc = substring(regle, 'STYPEPSC[^0-9]+([0-9]{2})'))
-                ),
-            layer AS (
-                SELECT
-                    symbol_id,
-                    lpad('', (((length(symbol_id) + 1) / 4) - 1) * 4, ' ') ||
-                        symbol_class || chr(10) ||
-                        string_agg(
-                            lpad('', (((length(symbol_id) + 1) / 4) - 1) * 4, ' ') || chr(8226)
-                                || chr(160) || symbol_prop || ' : ' || symbol_value || coalesce(unite_implicite, ''),                            
-                            chr(10)
-                            ORDER BY symbol_prop
-                            ) AS element
-                    FROM trad
-                    GROUP BY symbol_id, symbol_class
-                )
-            SELECT
-                string_agg(element, lpad('', 2, chr(10)) ORDER BY symbol_id)
-                FROM layer
-            )
-        WHERE stype_ref IS NULL ;
+    
+    FOR r IN (SELECT * FROM s_cnig_docurba.plu_prescription)
+    LOOP
+        IF r.stype_ref IS NOT NULL
+        THEN
         
+            UPDATE s_cnig_docurba.plu_prescription
+                SET symb_surf = NULL,
+                    symb_lin = NULL,
+                    symb_pct = NULL
+                WHERE plu_prescription.typepsc = r.typepsc
+                    AND plu_prescription.stypepsc = r.stypepsc ;
+                    
+        ELSE
         
-    UPDATE s_cnig_docurba.plu_prescription
-        SET symb_pct = (
-            WITH trad AS (
-                SELECT
-                    symbol_id,
-                    coalesce(c.traduction, qml_detail.symbol_class) AS symbol_class,
-                    coalesce(p.traduction, qml_detail.symbol_prop) AS symbol_prop,
-                    coalesce(v.traduction, qml_detail.symbol_value) AS symbol_value,
-                    p.unite_implicite
-                    FROM s_cnig_docurba.qml_detail
-                        LEFT JOIN s_cnig_docurba.qml_traduction_value AS v
-                            ON v.symbol_class = qml_detail.symbol_class AND v.symbol_prop = qml_detail.symbol_prop AND v.symbol_value = qml_detail.symbol_value
-                        LEFT JOIN s_cnig_docurba.qml_traduction_prop AS p
-                            ON p.symbol_class = qml_detail.symbol_class AND p.symbol_prop = qml_detail.symbol_prop
-                        LEFT JOIN s_cnig_docurba.qml_traduction_class AS c
-                            ON c.symbol_class = qml_detail.symbol_class
-                    WHERE ref_table = 'plu_prescription_pct'
-                        AND typepsc = substring(regle, 'TYPEPSC[^0-9]+([0-9]{2})')
-                        AND (NOT regle ~ 'STYPEPSC' OR stypepsc = substring(regle, 'STYPEPSC[^0-9]+([0-9]{2})'))
-                ),
-            layer AS (
-                SELECT
-                    symbol_id,
-                    lpad('', (((length(symbol_id) + 1) / 4) - 1) * 4, ' ') ||
-                        symbol_class || chr(10) ||
-                        string_agg(
-                            lpad('', (((length(symbol_id) + 1) / 4) - 1) * 4, ' ') || chr(8226) 
-                                || chr(160) || symbol_prop || ' : ' || symbol_value || coalesce(unite_implicite, ''),                            
-                            chr(10)
-                            ORDER BY symbol_prop
-                            ) AS element
-                    FROM trad                    
-                    GROUP BY symbol_id, symbol_class
-                )
-            SELECT
-                string_agg(element, lpad('', 2, chr(10)) ORDER BY symbol_id)
-                FROM layer
-            )
-        WHERE stype_ref IS NULL ;
+            SELECT regle_id INTO regle_id_surf
+                FROM s_cnig_docurba.qml_detail
+                WHERE ref_table = 'plu_prescription_surf'
+                    AND r.typepsc = substring(lower(regle), 'typepsc[^0-9]+([0-9]{2})')
+                    AND (NOT lower(regle) ~ 'stypepsc' OR r.stypepsc = substring(lower(regle), 'stypepsc[^0-9]+([0-9]{2})')) ;
+                    
+            SELECT regle_id INTO regle_id_lin
+                FROM s_cnig_docurba.qml_detail
+                WHERE ref_table = 'plu_prescription_lin'
+                    AND r.typepsc = substring(lower(regle), 'typepsc[^0-9]+([0-9]{2})')
+                    AND (NOT lower(regle) ~ 'stypepsc' OR r.stypepsc = substring(lower(regle), 'stypepsc[^0-9]+([0-9]{2})')) ;
+                    
+            SELECT regle_id INTO regle_id_pct
+                FROM s_cnig_docurba.qml_detail
+                WHERE ref_table = 'plu_prescription_pct'
+                    AND r.typepsc = substring(lower(regle), 'typepsc[^0-9]+([0-9]{2})')
+                    AND (NOT lower(regle) ~ 'stypepsc' OR r.stypepsc = substring(lower(regle), 'stypepsc[^0-9]+([0-9]{2})')) ;
+                    
+            UPDATE s_cnig_docurba.plu_prescription
+                SET symb_surf = s_cnig_docurba.qml_jolie_transcription('plu_prescription_surf', regle_id_surf),
+                    symb_lin = s_cnig_docurba.qml_jolie_transcription('plu_prescription_lin', regle_id_lin),
+                    symb_pct = s_cnig_docurba.qml_jolie_transcription('plu_prescription_pct', regle_id_pct)
+                WHERE plu_prescription.typepsc = r.typepsc
+                    AND plu_prescription.stypepsc = r.stypepsc ;
         
-     
-     UPDATE s_cnig_docurba.plu_prescription
-        SET symb_lin = (
-            WITH trad AS (
-                SELECT
-                    symbol_id,
-                    coalesce(c.traduction, qml_detail.symbol_class) AS symbol_class,
-                    coalesce(p.traduction, qml_detail.symbol_prop) AS symbol_prop,
-                    coalesce(v.traduction, qml_detail.symbol_value) AS symbol_value,
-                    p.unite_implicite
-                    FROM s_cnig_docurba.qml_detail
-                        LEFT JOIN s_cnig_docurba.qml_traduction_value AS v
-                            ON v.symbol_class = qml_detail.symbol_class AND v.symbol_prop = qml_detail.symbol_prop AND v.symbol_value = qml_detail.symbol_value
-                        LEFT JOIN s_cnig_docurba.qml_traduction_prop AS p
-                            ON p.symbol_class = qml_detail.symbol_class AND p.symbol_prop = qml_detail.symbol_prop
-                        LEFT JOIN s_cnig_docurba.qml_traduction_class AS c
-                            ON c.symbol_class = qml_detail.symbol_class
-                    WHERE ref_table = 'plu_prescription_lin'
-                        AND typepsc = substring(regle, 'TYPEPSC[^0-9]+([0-9]{2})')
-                        AND (NOT regle ~ 'STYPEPSC' OR stypepsc = substring(regle, 'STYPEPSC[^0-9]+([0-9]{2})'))
-                ),
-            layer AS (
-                SELECT
-                    symbol_id,
-                    lpad('', (((length(symbol_id) + 1) / 4) - 1) * 4, ' ') ||
-                        symbol_class || chr(10) ||
-                        string_agg(
-                            lpad('', (((length(symbol_id) + 1) / 4) - 1) * 4, ' ') || chr(8226)
-                                || chr(160) || symbol_prop || ' : ' || symbol_value || coalesce(unite_implicite, ''),                            
-                            chr(10)
-                            ORDER BY symbol_prop
-                            ) AS element
-                    FROM trad
-                    GROUP BY symbol_id, symbol_class
-                )
-            SELECT
-                string_agg(element, lpad('', 2, chr(10)) ORDER BY symbol_id)
-                FROM layer
-            )
-        WHERE stype_ref IS NULL ;
+        END IF ;
+    END LOOP ;
 
     RETURN 'FIN' ;
 END
@@ -657,151 +741,136 @@ OBJET : Met à jour les descriptifs des symboles de la table plu_information
 à partir des QML stockés dans layer_styles pour les styles nommés
 plu_information_surf, plu_information_lin et plu_information_pct.
 
-Appelle la fonction qml_plu_retro_traduction_qml, qui génère la table
-qml_detail, puis exploite cette dernière et les tables de traduction 
-(qml_traduction_class, qml_traduction_prop et qml_traduction_value) pour
-mettre à jour plu_information.
+Appelle les fonctions qml_retro_traduction_qml et qml_jolie_transcription
+pour mettre à jour plu_information.
 
 ARGUMENTS : [optionnel] regenere est un booléen, qui indique si qml_detail
-doit être régénérée avant mise à jour de plu_prescription ou utilisée telle quelle.
+doit être régénérée avant mise à jour de plu_information ou utilisée telle quelle.
 Valeur par défaut True.
 
 SORTIE : 'FIN'.
 */
+DECLARE
+    regle_id_surf int ;
+    regle_id_lin int ;
+    regle_id_pct int ;
+    r record ;
 BEGIN
 
     IF regenere
     THEN
-        PERFORM s_cnig_docurba.qml_plu_retro_traduction_qml('^plu_information_') ;
+        PERFORM s_cnig_docurba.qml_retro_traduction_qml('^plu_information_(surf|lin|pct)$') ;
     END IF ;
-
-    UPDATE s_cnig_docurba.plu_information
-        SET symb_surf = (
-            WITH trad AS (
-                SELECT
-                    symbol_id,
-                    coalesce(c.traduction, qml_detail.symbol_class) AS symbol_class,
-                    coalesce(p.traduction, qml_detail.symbol_prop) AS symbol_prop,
-                    coalesce(v.traduction, qml_detail.symbol_value) AS symbol_value,
-                    p.unite_implicite
-                    FROM s_cnig_docurba.qml_detail
-                        LEFT JOIN s_cnig_docurba.qml_traduction_value AS v
-                            ON v.symbol_class = qml_detail.symbol_class AND v.symbol_prop = qml_detail.symbol_prop AND v.symbol_value = qml_detail.symbol_value
-                        LEFT JOIN s_cnig_docurba.qml_traduction_prop AS p
-                            ON p.symbol_class = qml_detail.symbol_class AND p.symbol_prop = qml_detail.symbol_prop
-                        LEFT JOIN s_cnig_docurba.qml_traduction_class AS c
-                            ON c.symbol_class = qml_detail.symbol_class
-                    WHERE ref_table = 'plu_information_surf'
-                        AND TYPEINF = substring(regle, 'TYPEINF[^0-9]+([0-9]{2})')
-                        AND (NOT regle ~ 'STYPEINF' OR sTYPEINF = substring(regle, 'STYPEINF[^0-9]+([0-9]{2})'))
-                ),
-            layer AS (
-                SELECT
-                    symbol_id,
-                    lpad('', (((length(symbol_id) + 1) / 4) - 1) * 4, ' ') ||
-                        symbol_class || chr(10) ||
-                        string_agg(
-                            lpad('', (((length(symbol_id) + 1) / 4) - 1) * 4, ' ') || chr(8226)
-                                || chr(160) || symbol_prop || ' : ' || symbol_value || coalesce(unite_implicite, ''),                            
-                            chr(10)
-                            ORDER BY symbol_prop
-                            ) AS element
-                    FROM trad
-                    GROUP BY symbol_id, symbol_class
-                )
-            SELECT
-                string_agg(element, lpad('', 2, chr(10)) ORDER BY symbol_id)
-                FROM layer
-            )
-        WHERE stype_ref IS NULL ;
+    
+    FOR r IN (SELECT * FROM s_cnig_docurba.plu_information)
+    LOOP
+        IF r.stype_ref IS NOT NULL
+        THEN
         
+            UPDATE s_cnig_docurba.plu_information
+                SET symb_surf = NULL,
+                    symb_lin = NULL,
+                    symb_pct = NULL
+                WHERE plu_information.typeinf = r.typeinf
+                    AND plu_information.stypeinf = r.stypeinf ;
+                    
+        ELSE
         
-    UPDATE s_cnig_docurba.plu_information
-        SET symb_pct = (
-            WITH trad AS (
-                SELECT
-                    symbol_id,
-                    coalesce(c.traduction, qml_detail.symbol_class) AS symbol_class,
-                    coalesce(p.traduction, qml_detail.symbol_prop) AS symbol_prop,
-                    coalesce(v.traduction, qml_detail.symbol_value) AS symbol_value,
-                    p.unite_implicite
-                    FROM s_cnig_docurba.qml_detail
-                        LEFT JOIN s_cnig_docurba.qml_traduction_value AS v
-                            ON v.symbol_class = qml_detail.symbol_class AND v.symbol_prop = qml_detail.symbol_prop AND v.symbol_value = qml_detail.symbol_value
-                        LEFT JOIN s_cnig_docurba.qml_traduction_prop AS p
-                            ON p.symbol_class = qml_detail.symbol_class AND p.symbol_prop = qml_detail.symbol_prop
-                        LEFT JOIN s_cnig_docurba.qml_traduction_class AS c
-                            ON c.symbol_class = qml_detail.symbol_class
-                    WHERE ref_table = 'plu_information_pct'
-                        AND TYPEINF = substring(regle, 'TYPEINF[^0-9]+([0-9]{2})')
-                        AND (NOT regle ~ 'STYPEINF' OR sTYPEINF = substring(regle, 'STYPEINF[^0-9]+([0-9]{2})'))
-                ),
-            layer AS (
-                SELECT
-                    symbol_id,
-                    lpad('', (((length(symbol_id) + 1) / 4) - 1) * 4, ' ') ||
-                        symbol_class || chr(10) ||
-                        string_agg(
-                            lpad('', (((length(symbol_id) + 1) / 4) - 1) * 4, ' ') || chr(8226) 
-                                || chr(160) || symbol_prop || ' : ' || symbol_value || coalesce(unite_implicite, ''),                            
-                            chr(10)
-                            ORDER BY symbol_prop
-                            ) AS element
-                    FROM trad                    
-                    GROUP BY symbol_id, symbol_class
-                )
-            SELECT
-                string_agg(element, lpad('', 2, chr(10)) ORDER BY symbol_id)
-                FROM layer
-            )
-        WHERE stype_ref IS NULL ;
+            SELECT regle_id INTO regle_id_surf
+                FROM s_cnig_docurba.qml_detail
+                WHERE ref_table = 'plu_information_surf'
+                    AND r.typeinf = substring(lower(regle), 'typeinf[^0-9]+([0-9]{2})')
+                    AND (NOT lower(regle) ~ 'stypeinf' OR r.stypeinf = substring(lower(regle), 'stypeinf[^0-9]+([0-9]{2})')) ;
+                    
+            SELECT regle_id INTO regle_id_lin
+                FROM s_cnig_docurba.qml_detail
+                WHERE ref_table = 'plu_information_lin'
+                    AND r.typeinf = substring(lower(regle), 'typeinf[^0-9]+([0-9]{2})')
+                    AND (NOT lower(regle) ~ 'stypeinf' OR r.stypeinf = substring(lower(regle), 'stypeinf[^0-9]+([0-9]{2})')) ;
+                    
+            SELECT regle_id INTO regle_id_pct
+                FROM s_cnig_docurba.qml_detail
+                WHERE ref_table = 'plu_information_pct'
+                    AND r.typeinf = substring(lower(regle), 'typeinf[^0-9]+([0-9]{2})')
+                    AND (NOT lower(regle) ~ 'stypeinf' OR r.stypeinf = substring(lower(regle), 'stypeinf[^0-9]+([0-9]{2})')) ;
+                    
+            UPDATE s_cnig_docurba.plu_information
+                SET symb_surf = s_cnig_docurba.qml_jolie_transcription('plu_information_surf', regle_id_surf),
+                    symb_lin = s_cnig_docurba.qml_jolie_transcription('plu_information_lin', regle_id_lin),
+                    symb_pct = s_cnig_docurba.qml_jolie_transcription('plu_information_pct', regle_id_pct)
+                WHERE plu_information.typeinf = r.typeinf
+                    AND plu_information.stypeinf = r.stypeinf ;
         
-     
-     UPDATE s_cnig_docurba.plu_information
-        SET symb_lin = (
-            WITH trad AS (
-                SELECT
-                    symbol_id,
-                    coalesce(c.traduction, qml_detail.symbol_class) AS symbol_class,
-                    coalesce(p.traduction, qml_detail.symbol_prop) AS symbol_prop,
-                    coalesce(v.traduction, qml_detail.symbol_value) AS symbol_value,
-                    p.unite_implicite
-                    FROM s_cnig_docurba.qml_detail
-                        LEFT JOIN s_cnig_docurba.qml_traduction_value AS v
-                            ON v.symbol_class = qml_detail.symbol_class AND v.symbol_prop = qml_detail.symbol_prop AND v.symbol_value = qml_detail.symbol_value
-                        LEFT JOIN s_cnig_docurba.qml_traduction_prop AS p
-                            ON p.symbol_class = qml_detail.symbol_class AND p.symbol_prop = qml_detail.symbol_prop
-                        LEFT JOIN s_cnig_docurba.qml_traduction_class AS c
-                            ON c.symbol_class = qml_detail.symbol_class
-                    WHERE ref_table = 'plu_information_lin'
-                        AND TYPEINF = substring(regle, 'TYPEINF[^0-9]+([0-9]{2})')
-                        AND (NOT regle ~ 'STYPEINF' OR sTYPEINF = substring(regle, 'STYPEINF[^0-9]+([0-9]{2})'))
-                ),
-            layer AS (
-                SELECT
-                    symbol_id,
-                    lpad('', (((length(symbol_id) + 1) / 4) - 1) * 4, ' ') ||
-                        symbol_class || chr(10) ||
-                        string_agg(
-                            lpad('', (((length(symbol_id) + 1) / 4) - 1) * 4, ' ') || chr(8226)
-                                || chr(160) || symbol_prop || ' : ' || symbol_value || coalesce(unite_implicite, ''),                            
-                            chr(10)
-                            ORDER BY symbol_prop
-                            ) AS element
-                    FROM trad
-                    GROUP BY symbol_id, symbol_class
-                )
-            SELECT
-                string_agg(element, lpad('', 2, chr(10)) ORDER BY symbol_id)
-                FROM layer
-            )
-        WHERE stype_ref IS NULL ;
+        END IF ;
+    END LOOP ;
 
     RETURN 'FIN' ;
 END
 $_$ ;
 
 COMMENT ON FUNCTION s_cnig_docurba.qml_plu_information_maj_symb_qgis(boolean) IS '[Rétro-traduction des QML] Met à jour les descriptifs des symboles QGIS la table plu_information à partir des QML stockés dans layer_styles pour les styles nommés plu_information_surf, plu_information_lin et plu_information_pct.' ;
+
+
+
+-- FUNCTION: s_cnig_docurba.qml_plu_zone_urba_maj_symb_qgis(boolean)
+
+CREATE OR REPLACE FUNCTION s_cnig_docurba.qml_plu_zone_urba_maj_symb_qgis(regenere boolean DEFAULT True)
+    RETURNS text
+    LANGUAGE plpgsql
+    AS $_$
+/*
+OBJET : Met à jour les descriptifs des symboles de la table plu_zone_urba
+à partir des QML stockés dans layer_styles pour les styles nommés
+plu_zone_urba_surf, plu_zone_urba_lin et plu_zone_urba_pct.
+
+Appelle les fonctions qml_retro_traduction_qml et qml_jolie_transcription
+pour mettre à jour plu_zone_urba.
+
+ARGUMENTS : [optionnel] regenere est un booléen, qui indique si qml_detail
+doit être régénérée avant mise à jour de plu_zone_urba ou utilisée telle quelle.
+Valeur par défaut True.
+
+SORTIE : 'FIN'.
+*/
+DECLARE
+    regle_id_sup2500 int ;
+    regle_id_inf2500 int ;
+    r record ;
+BEGIN
+
+    IF regenere
+    THEN
+        PERFORM s_cnig_docurba.qml_retro_traduction_qml('^plu_zone_urba$') ;
+    END IF ;
+    
+    FOR r IN (SELECT * FROM s_cnig_docurba.plu_zone_urba)
+    LOOP
+        
+        SELECT regle_id INTO regle_id_sup2500
+            FROM s_cnig_docurba.qml_detail
+            WHERE ref_table = 'plu_zone_urba'
+                AND lower(r.typezone) = substring(lower(regle), 'typezone[^a-z0-9]+([a-z0-9]+)[^a-z0-9]')
+                AND echelle = 'échelle ≥ 1:2500' ;
+                
+        SELECT regle_id INTO regle_id_inf2500
+            FROM s_cnig_docurba.qml_detail
+            WHERE ref_table = 'plu_zone_urba'
+                AND lower(r.typezone) = substring(lower(regle), 'typezone[^a-z0-9]+([a-z0-9]+)[^a-z0-9]')
+                AND echelle = 'échelle < 1:2500' ;
+                
+        UPDATE s_cnig_docurba.plu_zone_urba
+            SET symb_sup2500 = s_cnig_docurba.qml_jolie_transcription('plu_zone_urba', regle_id_sup2500),
+                symb_inf2500 = s_cnig_docurba.qml_jolie_transcription('plu_zone_urba', regle_id_inf2500)
+            WHERE plu_zone_urba.typezone = r.typezone ;
+        
+    END LOOP ;
+
+    RETURN 'FIN' ;
+END
+$_$ ;
+
+COMMENT ON FUNCTION s_cnig_docurba.qml_plu_zone_urba_maj_symb_qgis(boolean) IS '[Rétro-traduction des QML] Met à jour les descriptifs des symboles QGIS la table plu_zone_urba à partir des QML stockés dans layer_styles pour les styles nommés plu_zone_urba_surf, plu_zone_urba_lin et plu_zone_urba_pct.' ;
+
 
 
 -- FUNCTION: s_cnig_docurba.qml_maj_traduction()
@@ -817,8 +886,17 @@ dans qml_detail qui ne seraient pas encore répertoriées.
 
 ARGUMENTS : néant.
 
-SORTIE : 'FIN'.
+SORTIE :
+- 'aucune traduction manquante' si les champs traduction des tables
+qml_traduction_class, qml_traduction_prop et qml_traduction_value ne
+contiennent aucune valeur NULL ;
+- sinon, le nombre de traductions manquantes par table.
 */
+DECLARE
+    mc int ;
+    mp int ;
+    mv int ;
+    message text ;
 BEGIN
 
     -- -> toutes les valeurs distinctes de symbol_class
@@ -830,8 +908,8 @@ BEGIN
         ) ;
     
     -- -> toutes les valeurs distinctes de symbol_class/symbol_prop
-    INSERT INTO s_cnig_docurba.qml_traduction_prop (symbol_class, symbol_prop) (
-        SELECT DISTINCT symbol_class, symbol_prop
+    INSERT INTO s_cnig_docurba.qml_traduction_prop (symbol_class, symbol_prop, b_trad_value) (
+        SELECT DISTINCT symbol_class, symbol_prop, symbol_prop ~ 'style'
             FROM s_cnig_docurba.qml_detail
             WHERE NOT (symbol_class, symbol_prop) IN (SELECT r.symbol_class, r.symbol_prop FROM s_cnig_docurba.qml_traduction_prop AS r)
             ORDER BY symbol_class, symbol_prop
@@ -841,17 +919,34 @@ BEGIN
     -- pour les propriétés de type style ou point d'ancrage, les autres valeurs n'ayant
     -- a priori pas lieu d'être traduites
     INSERT INTO s_cnig_docurba.qml_traduction_value (symbol_class, symbol_prop, symbol_value) (
-        SELECT DISTINCT symbol_class, symbol_prop, symbol_value
+        SELECT DISTINCT qml_detail.symbol_class, qml_detail.symbol_prop, qml_detail.symbol_value
             FROM s_cnig_docurba.qml_detail
-            WHERE symbol_prop ~ ANY (ARRAY['style', '(horizontal|vertical)_anchor_point'])
-                AND NOT (symbol_class, symbol_prop, symbol_value) IN (
+                LEFT JOIN s_cnig_docurba.qml_traduction_prop
+                    ON qml_detail.symbol_class = qml_traduction_prop.symbol_class
+                        AND qml_detail.symbol_prop = qml_traduction_prop.symbol_prop
+            WHERE qml_traduction_prop.b_trad_value
+                AND NOT (qml_detail.symbol_class, qml_detail.symbol_prop, qml_detail.symbol_value) IN (
                     SELECT r.symbol_class, r.symbol_prop, r.symbol_value
                         FROM s_cnig_docurba.qml_traduction_value AS r
                     )
             ORDER BY symbol_class, symbol_prop, symbol_value
         ) ;
+        
+    -- traductions manquantes ?
+    SELECT count(*) INTO mc FROM s_cnig_docurba.qml_traduction_class WHERE traduction IS NULL ;
+    SELECT count(*) INTO mp FROM s_cnig_docurba.qml_traduction_prop WHERE traduction IS NULL ;
+    SELECT count(*) INTO mv FROM s_cnig_docurba.qml_traduction_value WHERE traduction IS NULL ;
+    
+    IF mc + mp + mv = 0
+    THEN
+        message := 'aucune traduction manquante' ;
+    ELSE
+        message := format('%s classe(s) non traduite(s) dans qml_traduction_class ;
+%s propriété(s) non traduite(s) dans qml_traduction_prop ;
+%s valeur(s) non traduite(s) dans qml_traduction_value.', mc, mp, pv) ;
+    END IF ;
 
-    RETURN 'FIN' ;
+    RETURN message ;
 END
 $_$ ;
 

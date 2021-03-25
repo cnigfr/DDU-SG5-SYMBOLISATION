@@ -14,10 +14,63 @@
 -- schéma cible : s_cnig_docurba
 --
 -- liste des objets créés ou remplacés :
+-- TABLE: s_cnig_docurba.plu_zone_urba
 -- TABLE: s_cnig_docurba.plu_prescription
 -- TABLE: s_cnig_docurba.plu_information
 --
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+-- TABLE: s_cnig_docurba.plu_zone_urba
+
+CREATE TABLE IF NOT EXISTS s_cnig_docurba.plu_zone_urba (
+    typezone varchar(3) NOT NULL PRIMARY KEY,
+    lib_type text,
+    symb_sup2500 text,
+    symb_inf2500 text,
+    geom geometry(Polygon,2154),
+    carreau geometry(Polygon,2154),
+    blanc boolean,
+    libelle varchar(12)
+    ) ;
+
+COMMENT ON TABLE s_cnig_docurba.plu_zone_urba IS '[Visualisateur QGIS] Liste des types de zones du standard CNIG PLU, descriptifs des préconisations de symbolisation associées, géométries et informations de mise en forme servant à leur représentation par le visualisateur QGIS.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_zone_urba.typezone IS 'Code du type de zone.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_zone_urba.lib_type IS 'Libellé du type de zone.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_zone_urba.symb_sup2500 IS 'Description littérale du symbole préconisé pour les échelles supérieures ou égales à 1/2500.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_zone_urba.symb_inf2500 IS 'Description littérale du symbole préconisé pour les échelles inférieures à 1/2500.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_zone_urba.geom IS '[Visualisateur QGIS] Géométrie.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_zone_urba.carreau IS '[Visualisateur QGIS] Géométrie du carreau de la grille.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_zone_urba.blanc IS '[Visualisateur QGIS] Booléen. True pour un carreau de teinte claire, False pour un carreau foncé.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_zone_urba.libelle IS '[Visualisateur QGIS] Etiquettes des zones. Duplication de typezone pour les besoins de la visualisation.' ;
+
+/*
+pour régénérer la commande INSERT ci-après à partir de la base :
+SELECT s_cnig_docurba.util_genere_commande_insert(
+    's_cnig_docurba',
+    'plu_zone_urba',
+    ARRAY['typezone', 'lib_type']
+    ) ;
+
+Les données des autres champs ne sont pas sauvegardées, car elles ont vocation à être générées
+par des fonctions.
+
+> pour les champs utilisés par le visualisateur QGIS (geom, carreau, blanc, libelle) :
+SELECT s_cnig_docurba.visual_plu_zone_urba_creation_grille() ;
+
+> pour les champs symb_sup2500 et symb_inf2500, déduits par rétro-traduction depuis les
+QML stockés dans layer_styles :
+SELECT s_cnig_docurba.qml_plu_zone_urba_maj_symb_qgis() ;
+*/
+
+DELETE FROM s_cnig_docurba.plu_zone_urba ;
+
+INSERT INTO s_cnig_docurba.plu_zone_urba (typezone, lib_type) VALUES
+    ('U', 'Zone urbaine'),
+    ('AUc', 'Zone à urbaniser'),
+    ('AUs', 'Zone à urbaniser bloquée'),
+    ('A', 'Zone agricole'),
+    ('N', 'Zone naturelle et forestière') ;
 
 
 -- TABLE: s_cnig_docurba.plu_prescription
@@ -25,7 +78,7 @@
 CREATE TABLE IF NOT EXISTS s_cnig_docurba.plu_prescription (
     typepsc character(2) NOT NULL,
     stypepsc character(2) NOT NULL,
-    libelle text,
+    lib_stype text,
     stype_ref character(2),
     symb_pct text,
     symb_lin text,
@@ -42,7 +95,7 @@ CREATE TABLE IF NOT EXISTS s_cnig_docurba.plu_prescription (
 COMMENT ON TABLE s_cnig_docurba.plu_prescription IS '[Visualisateur QGIS] Liste des codes et sous-codes de prescription du standard CNIG PLU, descriptifs des préconisations de symbolisation associées, géométries et informations de mise en forme servant à leur représentation par le visualisateur QGIS.' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_prescription.typepsc IS 'Code.' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_prescription.stypepsc IS 'Sous-code.' ;
-COMMENT ON COLUMN s_cnig_docurba.plu_prescription.libelle IS 'Libellé du sous-code.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_prescription.lib_stype IS 'Libellé du sous-code.' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_prescription.stype_ref IS 'Sous-code porteur des informations de représentation à utiliser pour la prescription, s''il ne s''agit pas de celui de l''enregistrement courant (le code étant supposé être le même).' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_prescription.symb_pct IS 'Description littérale du symbole préconisé pour les géométries ponctuelles.' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_prescription.symb_lin IS 'Description littérale du symbole préconisé pour les géométries linéaires.' ;
@@ -59,7 +112,7 @@ pour régénérer la commande INSERT ci-après à partir de la base :
 SELECT s_cnig_docurba.util_genere_commande_insert(
     's_cnig_docurba',
     'plu_prescription',
-    ARRAY['typepsc', 'stypepsc', 'libelle', 'stype_ref']
+    ARRAY['typepsc', 'stypepsc', 'lib_stype', 'stype_ref']
     ) ;
 
 Les données des autres champs ne sont pas sauvegardées, car elles ont vocation à être générées
@@ -74,7 +127,9 @@ QML stockés dans layer_styles :
 SELECT s_cnig_docurba.qml_plu_prescription_maj_symb_qgis() ;
 */
 
-INSERT INTO s_cnig_docurba.plu_prescription (typepsc, stypepsc, libelle, stype_ref) VALUES
+DELETE FROM s_cnig_docurba.plu_prescription ;
+
+INSERT INTO s_cnig_docurba.plu_prescription (typepsc, stypepsc, lib_stype, stype_ref) VALUES
     ('01', '00', 'Espace boisé classé', NULL),
     ('01', '01', 'Espace boisé classé à protéger ou conserver', '00'),
     ('01', '02', 'Espace boisé classé à créer', '00'),
@@ -238,7 +293,7 @@ INSERT INTO s_cnig_docurba.plu_prescription (typepsc, stypepsc, libelle, stype_r
 CREATE TABLE IF NOT EXISTS s_cnig_docurba.plu_information (
     typeinf character(2) NOT NULL,
     stypeinf character(2) NOT NULL,
-    libelle text,
+    lib_stype text,
     stype_ref character(2),
     symb_pct text,
     symb_lin text,
@@ -255,7 +310,7 @@ CREATE TABLE IF NOT EXISTS s_cnig_docurba.plu_information (
 COMMENT ON TABLE s_cnig_docurba.plu_information IS '[Visualisateur QGIS] Liste des codes et sous-codes de information du standard CNIG PLU, descriptifs des préconisations de symbolisation associées, géométries et informations de mise en forme servant à leur représentation par le visualisateur QGIS.' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_information.typeinf IS 'Code.' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_information.stypeinf IS 'Sous-code.' ;
-COMMENT ON COLUMN s_cnig_docurba.plu_information.libelle IS 'Libellé du sous-code.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_information.lib_stype IS 'Libellé du sous-code.' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_information.stype_ref IS 'Sous-code porteur des informations de représentation à utiliser pour la information, s''il ne s''agit pas de celui de l''enregistrement courant (le code étant supposé être le même).' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_information.symb_pct IS 'Description littérale du symbole préconisé pour les géométries ponctuelles.' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_information.symb_lin IS 'Description littérale du symbole préconisé pour les géométries linéaires.' ;
@@ -272,7 +327,7 @@ pour régénérer la commande INSERT ci-après à partir de la base :
 SELECT s_cnig_docurba.util_genere_commande_insert(
     's_cnig_docurba',
     'plu_information',
-    ARRAY['typeinf', 'stypeinf', 'libelle', 'stype_ref']
+    ARRAY['typeinf', 'stypeinf', 'lib_stype', 'stype_ref']
     ) ;
 
 Les données des autres champs ne sont pas sauvegardées, car elles ont vocation à être générées
@@ -287,7 +342,9 @@ QML stockés dans layer_styles :
 SELECT s_cnig_docurba.qml_plu_information_maj_symb_qgis() ;
 */
 
-INSERT INTO s_cnig_docurba.plu_information (typeinf, stypeinf, libelle, stype_ref) VALUES
+DELETE FROM s_cnig_docurba.plu_information ;
+
+INSERT INTO s_cnig_docurba.plu_information (typeinf, stypeinf, lib_stype, stype_ref) VALUES
     ('02', '00', 'Zone d''aménagement concerté (R123-13 2)', NULL),
     ('03', '00', 'Zone de préemption dans un espace naturel et sensible (R123-13 3)', NULL),
     ('04', '00', 'Périmètre de droit de préemption urbain (R123-13 4)', NULL),

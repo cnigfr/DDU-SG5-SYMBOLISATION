@@ -44,14 +44,54 @@ SORTIE : le récapitulatif.
 */
 DECLARE
     md text ;
+    liste_zone text := '' ;
     liste_psc text := '' ;
     liste_info text := '' ;
+    descr_zone text := '' ;
     descr_psc text := '' ;
     descr_info text := '' ;
+    zonage record ;
     info record ;
     psc record ;
 BEGIN
 
+    ------ ZONAGES ------
+
+    FOR zonage IN (SELECT * FROM s_cnig_docurba.plu_zone_urba ORDER BY typezone)
+    LOOP
+    
+        liste_zone := format('%1$s • [%2$s](#zone-%3$s)', liste_zone, zonage.typezone, lower(zonage.typezone)) ;
+        
+        descr_zone := format('%1$s
+
+### Zone %2$s
+
+**%3$s**
+        
+Grande échelle (≥ 1:2500) :
+
+![ZONE-%2$s](%4$s/ZONE-%2$s_sup2500.png)
+
+%5$s
+
+Petite échelle (< 1:2500) :
+
+![ZONE-%2$s](%4$s/ZONE-%2$s_inf2500.png)
+
+%6$s
+
+[↑ haut de page](#préconisations-de-symbologie)
+
+---',
+            descr_zone, zonage.typezone, zonage.lib_type, chemin,
+            coalesce('```' || chr(10) || zonage.symb_sup2500 || chr(10) || '```', '*Pas de spécification.*'),
+            coalesce('```' || chr(10) || zonage.symb_inf2500 || chr(10) || '```', '*Pas de spécification.*')
+            ) ;
+           
+    END LOOP ;
+
+    ------ PRESCRIPTIONS ------
+    
     FOR psc IN (SELECT * FROM s_cnig_docurba.plu_prescription ORDER BY typepsc, stypepsc)
     LOOP
     
@@ -62,7 +102,7 @@ BEGIN
 ### Prescription %2$s-%3$s
 
 **%4$s**',
-            descr_psc, psc.typepsc, psc.stypepsc, psc.libelle) ;
+            descr_psc, psc.typepsc, psc.stypepsc, psc.lib_stype) ;
             
         IF psc.stype_ref IS NOT NULL
         THEN
@@ -103,6 +143,8 @@ Géométrie ponctuelle :
         END IF ;    
     END LOOP ;
     
+    ------ INFORMATIONS ------
+    
     FOR info IN (SELECT * FROM s_cnig_docurba.plu_information ORDER BY typeinf, stypeinf)
     LOOP
     
@@ -113,7 +155,7 @@ Géométrie ponctuelle :
 ### Information %2$s-%3$s
 
 **%4$s**',
-            descr_info, info.typeinf, info.stypeinf, info.libelle) ;
+            descr_info, info.typeinf, info.stypeinf, info.lib_stype) ;
             
         IF info.stype_ref IS NOT NULL
         THEN
@@ -154,14 +196,22 @@ Géométrie ponctuelle :
         END IF ;    
     END LOOP ;
     
+    ------ ASSEMBLAGE ------
+    
     md := format(
         'Standard CNIG PLU
 
 # Préconisations de symbologie
 
+[Zones](#zones)%s
+
 [Prescriptions](#prescriptions)%s
 
 [Informations](#informations)%s
+
+## Zones
+
+%s
 
 ## Prescriptions
 
@@ -171,7 +221,7 @@ Géométrie ponctuelle :
 
 %s
 ',
-        liste_psc, liste_info, descr_psc, descr_info
+        liste_zone, liste_psc, liste_info, descr_zone, descr_psc, descr_info
         ) ;
 
     RETURN md ;
