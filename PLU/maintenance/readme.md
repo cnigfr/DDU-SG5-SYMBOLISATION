@@ -77,7 +77,7 @@ Enregistrer les styles modifiés dans la base de données (*Propriétés de la c
 | plu_information  | ponctuelle | plu_information_pct   |
 | plu_zone_urba    | surfacique | plu_zone_urba         |
 
-Concrètement, les styles sont stockées dans la table `layer_styles` du schéma `public` (QGIS la crée si elle n'existe pas encore).
+Concrètement, les styles sont stockés dans la table `layer_styles` du schéma `public` (QGIS crée cette table si elle n'existe pas encore).
 
 [↑ haut de page](#maintenance-des-outils)
 
