@@ -138,7 +138,7 @@ SELECT * FROM s_cnig_docurba.qml_traduction_value WHERE traduction IS NULL ;
 
 **Attention, les "traductions" ne sont pas libres !** Il s'agira de reprendre la terminologie utilisée dans l'interface française de QGIS pour la classe, la propriété ou la valeur dont il est question. Une même propriété peut être désignée par des expressions différentes selon la classe de symbole, et idem pour les valeurs.
 
-On devra ensuite relancer les commandes qui calculent les descriptifs à partir des QML pour que les nouvelles traductions soient prise en compte.
+On devra ensuite relancer les commandes qui calculent les descriptifs à partir des QML pour que les nouvelles traductions soient prises en compte.
 
 Si l'une des trois tables `qml_traduction_class`, `qml_traduction_prop` ou `qml_traduction_value` a été modifiée, il faudra reverser la nouvelle version dans *[retrotraduction_qml_data.sql](/PLU/maintenance/retrotraduction_qml_data.sql)*.
 
