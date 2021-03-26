@@ -8,5 +8,5 @@
 
 ## Outils internes pour la gestion des ressources
 
-- le répertoire [maintenance](/PLU/maintenance) contient les scripts qui permettent la mise à jour des outils susmentionnés lorsque le sous-groupe _Symbolisation_ valide de nouveaux symboles ;
+- le répertoire [scripts](/PLU/scripts) contient les scripts qui permettent la mise à jour des outils susmentionnés lorsque le sous-groupe _Symbolisation_ valide de nouveaux symboles ;
 - le répertoire [vignettes](/PLU/vignettes) contient les images qui illustrent _preconisations.md_.
