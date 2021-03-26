@@ -12,8 +12,8 @@ Sur le serveur PostgreSQL, créer un schéma `s_cnig_docurba`.
 
 Peupler ce schéma (table, données, fonctions) en exécutant les commandes contenues dans les fichiers :
 
-- *[visualisateur_qgis_creation_grille_data.sql](/PLU/maintenance/visualisateur_qgis_creation_grille_data.sql)* ;
-- *[visualisateur_qgis_creation_grille.sql](/PLU/maintenance/visualisateur_qgis_creation_grille.sql)* ;
+- *[creation_grille_data.sql](/PLU/maintenance/creation_grille_data.sql)* ;
+- *[creation_grille.sql](/PLU/maintenance/creation_grille.sql)* ;
 - *[retro_traduction_qml_data.sql](/PLU/maintenance/retro_traduction_qml_data.sql)* ;
 - *[retro_traduction_qml.sql](/PLU/maintenance/retro_traduction_qml.sql)* ;
 - *[outils_generiques.sql](/PLU/maintenance/outils_generiques.sql)* ;
@@ -176,7 +176,7 @@ SELECT s_cnig_docurba.util_genere_commande_insert(
 
 ## Sauvegarde de la liste des sous-codes et descriptifs mise à jour
 
-Pour faciliter les mises à jour ultérieures, il est important de reverser la liste à jour dans *[visualisateur_qgis_creation_grille_data.sql](/PLU/maintenance/visualisateur_qgis_creation_grille_data.sql)*, et plus précisément de remplacer les commandes `INSERT` de chaque table modifiée par le résultat des commandes suivantes.
+Pour faciliter les mises à jour ultérieures, il est important de reverser la liste à jour dans *[creation_grille_data.sql](/PLU/maintenance/creation_grille_data.sql)*, et plus précisément de remplacer les commandes `INSERT` de chaque table modifiée par le résultat des commandes suivantes.
 
 Pour les zones :
 
