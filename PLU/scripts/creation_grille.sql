@@ -2,7 +2,7 @@
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 --
 -- GT CNIG DDU - Préconisations de symbologie
--- > Génération des grilles du visualisateur QGIS.
+-- > Génération de la grille utilisée par le projet QGIS de visualisation.
 -- >> Fonctions.
 --
 -- Copyright CNIG, 2021.
@@ -31,7 +31,7 @@ CREATE OR REPLACE FUNCTION s_cnig_docurba.visual_plu_zone_urba_creation_grille(
     AS $_$
 /*
 OBJET : Création des carreaux et géométries type utilisées par le
-visualisateur QGIS pour les zonages du standard PLU.
+projet QGIS de visualisation pour les zonages du standard PLU.
 
 Concrètement, la fonction régénère les champs de géométrie et de mise en forme
 de la table plu_zone_urba (carreau, geom et blanc).
@@ -84,7 +84,7 @@ BEGIN
 END    
 $_$ ;
 
-COMMENT ON FUNCTION s_cnig_docurba.visual_plu_zone_urba_creation_grille(int) IS '[Visualisateur QGIS] Création des carreaux et géométries types utilisées par le visualisateur QGIS pour les zonages du standard PLU.' ;
+COMMENT ON FUNCTION s_cnig_docurba.visual_plu_zone_urba_creation_grille(int) IS '[Visualisation QGIS] Création des carreaux et géométries types utilisées par le projet QGIS de visualisation pour les zonages du standard PLU.' ;
 
 
 -- FUNCTION: s_cnig_docurba.visual_plu_prescription_creation_grille(int)
@@ -97,7 +97,7 @@ CREATE OR REPLACE FUNCTION s_cnig_docurba.visual_plu_prescription_creation_grill
     AS $_$
 /*
 OBJET : Création des carreaux et géométries type utilisées par le
-visualisateur QGIS pour les prescriptions du standard PLU.
+projet QGIS de visualisation pour les prescriptions du standard PLU.
 
 Concrètement, la fonction régénère les champs de géométrie et d'étiquettes
 de la table plu_prescription (carreau, geom_..., blanc et etiquette)
@@ -206,7 +206,7 @@ BEGIN
 END    
 $_$ ;
 
-COMMENT ON FUNCTION s_cnig_docurba.visual_plu_prescription_creation_grille(int) IS '[Visualisateur QGIS] Création des carreaux et géométries types utilisées par le visualisateur QGIS pour les prescriptions du standard PLU.' ;
+COMMENT ON FUNCTION s_cnig_docurba.visual_plu_prescription_creation_grille(int) IS '[Visualisation QGIS] Création des carreaux et géométries types utilisées par le projet QGIS de visualisation pour les prescriptions du standard PLU.' ;
 
 
 -- FUNCTION: s_cnig_docurba.visual_plu_information_creation_grille(int)
@@ -219,7 +219,7 @@ CREATE OR REPLACE FUNCTION s_cnig_docurba.visual_plu_information_creation_grille
     AS $_$
 /*
 OBJET : Création des carreaux et géométries type utilisées par le
-visualisateur QGIS pour les informations du standard PLU.
+projet QGIS de visualisation pour les informations du standard PLU.
 
 Concrètement, la fonction régénère les champs de géométrie et d'étiquettes
 de la table plu_information (carreau, geom_..., blanc et etiquette)
@@ -328,4 +328,5 @@ BEGIN
 END    
 $_$ ;
 
-COMMENT ON FUNCTION s_cnig_docurba.visual_plu_information_creation_grille(int) IS '[Visualisateur QGIS] Création des carreaux et géométries types utilisées par le visualisateur QGIS pour les informations du standard PLU.' ;
+COMMENT ON FUNCTION s_cnig_docurba.visual_plu_information_creation_grille(int) IS '[Visualisation QGIS] Création des carreaux et géométries types utilisées par le projet QGIS de visualisation pour les informations du standard PLU.' ;
+
