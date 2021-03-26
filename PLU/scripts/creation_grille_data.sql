@@ -39,10 +39,10 @@ COMMENT ON COLUMN s_cnig_docurba.plu_zone_urba.typezone IS 'Code du type de zone
 COMMENT ON COLUMN s_cnig_docurba.plu_zone_urba.lib_type IS 'Libellé du type de zone.' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_zone_urba.symb_sup2500 IS 'Description littérale du symbole préconisé pour les échelles supérieures ou égales à 1/2500.' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_zone_urba.symb_inf2500 IS 'Description littérale du symbole préconisé pour les échelles inférieures à 1/2500.' ;
-COMMENT ON COLUMN s_cnig_docurba.plu_zone_urba.geom IS '[QGIS] Géométrie.' ;
-COMMENT ON COLUMN s_cnig_docurba.plu_zone_urba.carreau IS '[QGIS] Géométrie du carreau de la grille.' ;
-COMMENT ON COLUMN s_cnig_docurba.plu_zone_urba.blanc IS '[QGIS] Booléen. True pour un carreau de teinte claire, False pour un carreau foncé.' ;
-COMMENT ON COLUMN s_cnig_docurba.plu_zone_urba.libelle IS '[QGIS] Etiquettes des zones. Duplication de typezone pour les besoins de la visualisation.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_zone_urba.geom IS '[Visualisation QGIS] Géométrie.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_zone_urba.carreau IS '[Visualisation QGIS] Géométrie du carreau de la grille.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_zone_urba.blanc IS '[Visualisation QGIS] Booléen. True pour un carreau de teinte claire, False pour un carreau foncé.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_zone_urba.libelle IS '[Visualisation QGIS] Etiquettes des zones. Duplication de typezone pour les besoins de la visualisation.' ;
 
 /*
 pour régénérer la commande INSERT ci-après à partir de la base :
@@ -92,7 +92,7 @@ CREATE TABLE IF NOT EXISTS s_cnig_docurba.plu_prescription (
     CONSTRAINT plu_prescription_pkey PRIMARY KEY (typepsc, stypepsc)
     ) ;
     
-COMMENT ON TABLE s_cnig_docurba.plu_prescription IS '[QGIS] Liste des codes et sous-codes de prescription du standard CNIG PLU, descriptifs des préconisations de symbolisation associées, géométries et informations de mise en forme servant à leur représentation par le projet QGIS de visualisation et à l''édition du récapitulatif Markdown.' ;
+COMMENT ON TABLE s_cnig_docurba.plu_prescription IS 'Liste des codes et sous-codes de prescription du standard CNIG PLU, descriptifs des préconisations de symbolisation associées, géométries et informations de mise en forme servant à leur représentation par le projet QGIS de visualisation et à l''édition du récapitulatif Markdown.' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_prescription.typepsc IS 'Code.' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_prescription.stypepsc IS 'Sous-code.' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_prescription.lib_stype IS 'Libellé du sous-code.' ;
@@ -100,12 +100,12 @@ COMMENT ON COLUMN s_cnig_docurba.plu_prescription.stype_ref IS 'Sous-code porteu
 COMMENT ON COLUMN s_cnig_docurba.plu_prescription.symb_pct IS 'Description littérale du symbole préconisé pour les géométries ponctuelles.' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_prescription.symb_lin IS 'Description littérale du symbole préconisé pour les géométries linéaires.' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_prescription.symb_surf IS 'Description littérale du symbole préconisé pour les géométries surfaciques.' ;
-COMMENT ON COLUMN s_cnig_docurba.plu_prescription.geom_pct IS '[QGIS] Géométrie ponctuelle.' ;
-COMMENT ON COLUMN s_cnig_docurba.plu_prescription.geom_lin IS '[QGIS] Géométrie linéaire.' ;
-COMMENT ON COLUMN s_cnig_docurba.plu_prescription.geom_surf IS '[QGIS] Géométrie surfacique.' ;
-COMMENT ON COLUMN s_cnig_docurba.plu_prescription.carreau IS '[QGIS] Géométrie du carreau de la grille.' ;
-COMMENT ON COLUMN s_cnig_docurba.plu_prescription.blanc IS '[QGIS] Booléen. True pour un carreau de teinte claire, False pour un carreau foncé.' ;
-COMMENT ON COLUMN s_cnig_docurba.plu_prescription.etiquette IS '[QGIS] Etiquette du carreau.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_prescription.geom_pct IS '[Visualisation QGIS] Géométrie ponctuelle.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_prescription.geom_lin IS '[Visualisation QGIS] Géométrie linéaire.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_prescription.geom_surf IS '[Visualisation QGIS] Géométrie surfacique.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_prescription.carreau IS '[Visualisation QGIS] Géométrie du carreau de la grille.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_prescription.blanc IS '[Visualisation QGIS] Booléen. True pour un carreau de teinte claire, False pour un carreau foncé.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_prescription.etiquette IS '[Visualisation QGIS] Etiquette du carreau.' ;
 
 /*
 pour régénérer la commande INSERT ci-après à partir de la base :
@@ -307,7 +307,7 @@ CREATE TABLE IF NOT EXISTS s_cnig_docurba.plu_information (
     CONSTRAINT plu_information_pkey PRIMARY KEY (typeinf, stypeinf)
     ) ;
     
-COMMENT ON TABLE s_cnig_docurba.plu_information IS '[QGIS] Liste des codes et sous-codes de information du standard CNIG PLU, descriptifs des préconisations de symbolisation associées, géométries et informations de mise en forme servant à leur représentation par le projet QGIS de visualisation et à l''édition du récapitulatif Markdown.' ;
+COMMENT ON TABLE s_cnig_docurba.plu_information IS 'Liste des codes et sous-codes de information du standard CNIG PLU, descriptifs des préconisations de symbolisation associées, géométries et informations de mise en forme servant à leur représentation par le projet QGIS de visualisation et à l''édition du récapitulatif Markdown.' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_information.typeinf IS 'Code.' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_information.stypeinf IS 'Sous-code.' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_information.lib_stype IS 'Libellé du sous-code.' ;
@@ -315,12 +315,12 @@ COMMENT ON COLUMN s_cnig_docurba.plu_information.stype_ref IS 'Sous-code porteur
 COMMENT ON COLUMN s_cnig_docurba.plu_information.symb_pct IS 'Description littérale du symbole préconisé pour les géométries ponctuelles.' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_information.symb_lin IS 'Description littérale du symbole préconisé pour les géométries linéaires.' ;
 COMMENT ON COLUMN s_cnig_docurba.plu_information.symb_surf IS 'Description littérale du symbole préconisé pour les géométries surfaciques.' ;
-COMMENT ON COLUMN s_cnig_docurba.plu_information.geom_pct IS '[QGIS] Géométrie ponctuelle.' ;
-COMMENT ON COLUMN s_cnig_docurba.plu_information.geom_lin IS '[QGIS] Géométrie linéaire.' ;
-COMMENT ON COLUMN s_cnig_docurba.plu_information.geom_surf IS '[QGIS] Géométrie surfacique.' ;
-COMMENT ON COLUMN s_cnig_docurba.plu_information.carreau IS '[QGIS] Géométrie du carreau de la grille.' ;
-COMMENT ON COLUMN s_cnig_docurba.plu_information.blanc IS '[QGIS] Booléen. True pour un carreau de teinte claire, False pour un carreau foncé.' ;
-COMMENT ON COLUMN s_cnig_docurba.plu_information.etiquette IS '[QGIS] Etiquette du carreau.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_information.geom_pct IS '[Visualisation QGIS] Géométrie ponctuelle.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_information.geom_lin IS '[Visualisation QGIS] Géométrie linéaire.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_information.geom_surf IS '[Visualisation QGIS] Géométrie surfacique.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_information.carreau IS '[Visualisation QGIS] Géométrie du carreau de la grille.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_information.blanc IS '[Visualisation QGIS] Booléen. True pour un carreau de teinte claire, False pour un carreau foncé.' ;
+COMMENT ON COLUMN s_cnig_docurba.plu_information.etiquette IS '[Visualisation QGIS] Etiquette du carreau.' ;
 
 /*
 pour régénérer la commande INSERT ci-après à partir de la base :
@@ -383,3 +383,4 @@ INSERT INTO s_cnig_docurba.plu_information (typeinf, stypeinf, lib_stype, stype_
     ('99', '00', 'Autre périmètre, secteur, plan, document, site, projet, espace.', NULL),
     ('99', '01', 'Autre relevant de la loi littoral', '00'),
     ('99', '02', 'Autre relevant de la loi montagne', '00') ;
+
