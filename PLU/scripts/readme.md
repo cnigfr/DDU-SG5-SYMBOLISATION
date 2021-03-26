@@ -12,12 +12,12 @@ Sur le serveur PostgreSQL, créer un schéma `s_cnig_docurba`.
 
 Peupler ce schéma (table, données, fonctions) en exécutant les commandes contenues dans les fichiers :
 
-- *[creation_grille_data.sql](/PLU/maintenance/creation_grille_data.sql)* ;
-- *[creation_grille.sql](/PLU/maintenance/creation_grille.sql)* ;
-- *[retro_traduction_qml_data.sql](/PLU/maintenance/retro_traduction_qml_data.sql)* ;
-- *[retro_traduction_qml.sql](/PLU/maintenance/retro_traduction_qml.sql)* ;
-- *[outils_generiques.sql](/PLU/maintenance/outils_generiques.sql)* ;
-- *[recapitulatif_markdown.sql](/PLU/maintenance/recapitulatif_markdown.sql)*.
+- *[creation_grille_data.sql](/PLU/scripts/creation_grille_data.sql)* ;
+- *[creation_grille.sql](/PLU/scripts/creation_grille.sql)* ;
+- *[retro_traduction_qml_data.sql](/PLU/scripts/retro_traduction_qml_data.sql)* ;
+- *[retro_traduction_qml.sql](/PLU/scripts/retro_traduction_qml.sql)* ;
+- *[outils_generiques.sql](/PLU/scripts/outils_generiques.sql)* ;
+- *[recapitulatif_markdown.sql](/PLU/scripts/recapitulatif_markdown.sql)*.
 
 Les données portant sur la symbologie se trouvent dans les tables `plu_zone_urba`, `plu_prescription` et `plu_information`. Tous les autres objets créés sont des utilitaires servant à accélérer les mises à jour.
 
@@ -140,7 +140,7 @@ SELECT * FROM s_cnig_docurba.qml_traduction_value WHERE traduction IS NULL ;
 
 On devra ensuite relancer les commandes qui calculent les descriptifs à partir des QML pour que les nouvelles traductions soient prises en compte.
 
-Si l'une des trois tables `qml_traduction_class`, `qml_traduction_prop` ou `qml_traduction_value` a été modifiée, il faudra reverser la nouvelle version dans *[retro_traduction_qml_data.sql](/PLU/maintenance/retro_traduction_qml_data.sql)*.
+Si l'une des trois tables `qml_traduction_class`, `qml_traduction_prop` ou `qml_traduction_value` a été modifiée, il faudra reverser la nouvelle version dans *[retro_traduction_qml_data.sql](/PLU/scripts/retro_traduction_qml_data.sql)*.
 
 Pour `qml_traduction_class`, il s'agira de remplacer la commande `INSERT` par le résultat de la commande ci-après :
 
@@ -176,7 +176,7 @@ SELECT s_cnig_docurba.util_genere_commande_insert(
 
 ## Sauvegarde de la liste des sous-codes et descriptifs mise à jour
 
-Pour faciliter les mises à jour ultérieures, il est important de reverser la liste à jour dans *[creation_grille_data.sql](/PLU/maintenance/creation_grille_data.sql)*, et plus précisément de remplacer les commandes `INSERT` de chaque table modifiée par le résultat des commandes suivantes.
+Pour faciliter les mises à jour ultérieures, il est important de reverser la liste à jour dans *[creation_grille_data.sql](/PLU/scripts/creation_grille_data.sql)*, et plus précisément de remplacer les commandes `INSERT` de chaque table modifiée par le résultat des commandes suivantes.
 
 Pour les zones :
 
@@ -214,7 +214,7 @@ Les données des autres champs ne sont pas conservées, dans la mesure où elles
 
 ## Mise à jour du projet QGIS de visualisation
 
-Pour actualiser le projet QGIS de visualisation et les QML, on pourra exécuter le batch *[maj_data_gpkg.bat](/PLU/maintenance/maj_data_gpkg.bat)*.
+Pour actualiser le projet QGIS de visualisation et les QML, on pourra exécuter le batch *[maj_data_gpkg.bat](/PLU/scripts/maj_data_gpkg.bat)*.
 
 Celui-ci :
 - régénère les tables du GeoPackage *data.gpkg* qui contient les données du projet QGIS de visualisation à partir des tables PostgreSQL `plu_zone_urba`,  `plu_prescription` et `plu_information` ;
