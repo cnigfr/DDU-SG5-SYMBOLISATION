@@ -392,7 +392,8 @@ S'il y avait déjà des valeurs pour le style dans qml_detail, elles sont écras
 Cette fonction appelle qml_execute_exploration puis retire de la table les
 informations inutiles (paramètres nuls, prenant des valeurs par défaut...).
 
-ARGUMENTS : néant.
+ARGUMENTS : style_regexp est une expression rationnelle à comparer avec
+les noms des styles.
 
 SORTIE : 'FIN'.
 */
@@ -943,7 +944,7 @@ BEGIN
     ELSE
         message := format('%s classe(s) non traduite(s) dans qml_traduction_class ;
 %s propriété(s) non traduite(s) dans qml_traduction_prop ;
-%s valeur(s) non traduite(s) dans qml_traduction_value.', mc, mp, pv) ;
+%s valeur(s) non traduite(s) dans qml_traduction_value.', mc, mp, mv) ;
     END IF ;
 
     RETURN message ;
@@ -951,3 +952,5 @@ END
 $_$ ;
 
 COMMENT ON FUNCTION s_cnig_docurba.qml_maj_traduction() IS '[Rétro-traduction des QML] Complète les tables de traduction qml_traduction_class, qml_traduction_prop et qml_traduction_value avec les valeurs enregistrées dans qml_detail qui ne seraient pas encore répertoriées.' ;
+
+
