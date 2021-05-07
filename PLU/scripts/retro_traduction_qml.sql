@@ -290,13 +290,13 @@ BEGIN
             e := 'plages d''échelles incompatibles' ;
         ELSIF e2 > e1
         THEN
-            e := format('1:%s > échelle ≥ 1:%s', e1, e2) ;
+            e := format('1:%s > échelle ≥ 1:%s', e1 - 1, e2 - 1) ;
         ELSIF e1 IS NOT NULL
         THEN
-            e := format('échelle < 1:%s', e1) ;
+            e := format('échelle < 1:%s', e1 - 1) ;
         ELSIF e2 IS NOT NULL
         THEN
-            e :=  format('échelle ≥ 1:%s', e2) ;
+            e :=  format('échelle ≥ 1:%s', e2 - 1) ;
         END IF ;
         
         r := coalesce('(' || parent_filter || ') AND (' || regle.filter || ')', parent_filter, regle.filter) ;
@@ -471,6 +471,7 @@ BEGIN
             OR prop.symbol_class = 'SimpleFill' AND prop.symbol_prop = 'style' AND prop.symbol_value = 'solid'
             OR prop.symbol_class IN ('LinePatternFill', 'PointPatternFill') AND prop.symbol_prop = 'outline_width_unit'
             OR prop.symbol_class = 'LinePatternFill' AND prop.symbol_prop IN ('color', 'line_width') -- définis sur la composante SimpleLine
+            OR prop.symbol_prop = 'font_style' AND nullif (prop.symbol_value, '') IS NULL
         THEN
             DELETE FROM s_cnig_docurba.qml_detail
             WHERE ref_table = prop.ref_table
