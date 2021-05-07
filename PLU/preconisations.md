@@ -23,8 +23,15 @@ Grande échelle (≥ 1:2500) :
 ```
 Ligne simple
 • couleur (RVB) : 255,240,0
+• décalage : 3 pt
 • largeur de trait : 7 pt
 • style de jointure : rond
+• style de trait : ligne continue
+
+Ligne simple
+• couleur (RVB) : 52,52,52
+• largeur de trait : 2.5 pt
+• style de jointure : angle droit
 • style de trait : ligne continue
 ```
 
@@ -34,9 +41,9 @@ Petite échelle (< 1:2500) :
 
 ```
 Remplissage simple
-• couleur de remplissage (RVB) : 255,255,0,102
-• couleur de trait (RVB) : 255,240,0
-• largeur de trait : 0.5 pt
+• couleur de remplissage (RVB) : 255,255,0,153
+• couleur de trait (RVB) : 52,52,52
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -55,8 +62,15 @@ Grande échelle (≥ 1:2500) :
 ```
 Ligne simple
 • couleur (RVB) : 212,0,6
+• décalage : 3 pt
 • largeur de trait : 7 pt
 • style de jointure : rond
+• style de trait : ligne continue
+
+Ligne simple
+• couleur (RVB) : 52,52,52
+• largeur de trait : 2.5 pt
+• style de jointure : angle droit
 • style de trait : ligne continue
 ```
 
@@ -66,9 +80,9 @@ Petite échelle (< 1:2500) :
 
 ```
 Remplissage simple
-• couleur de remplissage (RVB) : 255,101,101,102
-• couleur de trait (RVB) : 212,0,6
-• largeur de trait : 0.5 pt
+• couleur de remplissage (RVB) : 255,101,101,153
+• couleur de trait (RVB) : 52,52,52
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -87,8 +101,15 @@ Grande échelle (≥ 1:2500) :
 ```
 Ligne simple
 • couleur (RVB) : 232,135,102
+• décalage : 3 pt
 • largeur de trait : 7 pt
 • style de jointure : rond
+• style de trait : ligne continue
+
+Ligne simple
+• couleur (RVB) : 52,52,52
+• largeur de trait : 2.5 pt
+• style de jointure : angle droit
 • style de trait : ligne continue
 ```
 
@@ -98,9 +119,9 @@ Petite échelle (< 1:2500) :
 
 ```
 Remplissage simple
-• couleur de remplissage (RVB) : 254,204,190,102
-• couleur de trait (RVB) : 232,135,102
-• largeur de trait : 0.5 pt
+• couleur de remplissage (RVB) : 254,204,190,153
+• couleur de trait (RVB) : 52,52,52
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -119,8 +140,15 @@ Grande échelle (≥ 1:2500) :
 ```
 Ligne simple
 • couleur (RVB) : 35,166,0
+• décalage : 3 pt
 • largeur de trait : 7 pt
 • style de jointure : rond
+• style de trait : ligne continue
+
+Ligne simple
+• couleur (RVB) : 52,52,52
+• largeur de trait : 2.5 pt
+• style de jointure : angle droit
 • style de trait : ligne continue
 ```
 
@@ -130,9 +158,9 @@ Petite échelle (< 1:2500) :
 
 ```
 Remplissage simple
-• couleur de remplissage (RVB) : 86,170,2,102
-• couleur de trait (RVB) : 35,166,0
-• largeur de trait : 0.5 pt
+• couleur de remplissage (RVB) : 86,170,2,153
+• couleur de trait (RVB) : 52,52,52
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -151,8 +179,15 @@ Grande échelle (≥ 1:2500) :
 ```
 Ligne simple
 • couleur (RVB) : 176,0,6
+• décalage : 3 pt
 • largeur de trait : 7 pt
 • style de jointure : rond
+• style de trait : ligne continue
+
+Ligne simple
+• couleur (RVB) : 52,52,52
+• largeur de trait : 2.5 pt
+• style de jointure : angle droit
 • style de trait : ligne continue
 ```
 
@@ -162,9 +197,9 @@ Petite échelle (< 1:2500) :
 
 ```
 Remplissage simple
-• couleur de remplissage (RVB) : 230,0,0,102
-• couleur de trait (RVB) : 176,0,6
-• largeur de trait : 0.5 pt
+• couleur de remplissage (RVB) : 230,0,0,153
+• couleur de trait (RVB) : 52,52,52
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -200,14 +235,14 @@ Motif de points
     Symbole simple
     • couleur de remplissage (RVB) : 255,255,255
     • couleur de trait (RVB) : 86,170,2
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • nom du symbole : circle
     • style de trait : ligne continue
     • taille : 8 pt
 
 Ligne simple
 • couleur (RVB) : 86,170,2
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -294,7 +329,7 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 110,110,110
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • style de cap : plat
     • style de jointure : angle droit
     • style de trait : ligne continue
@@ -305,14 +340,14 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 110,110,110
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • style de cap : plat
     • style de jointure : angle droit
     • style de trait : ligne continue
 
 Ligne simple
 • couleur (RVB) : 110,110,110
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -355,7 +390,7 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 223,115,225
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • style de cap : plat
     • style de jointure : angle droit
     • style de trait : ligne continue
@@ -366,14 +401,14 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 223,115,225
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • style de cap : plat
     • style de jointure : angle droit
     • style de trait : ligne continue
 
 Ligne simple
 • couleur (RVB) : 223,115,225
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -416,7 +451,7 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 255,167,127
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • style de cap : plat
     • style de jointure : angle droit
     • style de trait : ligne continue
@@ -427,14 +462,14 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 255,167,127
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • style de cap : plat
     • style de jointure : angle droit
     • style de trait : ligne continue
 
 Ligne simple
 • couleur (RVB) : 255,167,127
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -552,7 +587,7 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 230,0,169
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • style de cap : plat
     • style de jointure : angle droit
     • style de trait : ligne continue
@@ -563,14 +598,14 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 230,0,169
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • style de cap : plat
     • style de jointure : angle droit
     • style de trait : ligne continue
 
 Ligne simple
 • couleur (RVB) : 230,0,169
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -582,7 +617,7 @@ Ligne de symboles
     Symbole simple
     • couleur de remplissage (RVB) : transparent
     • couleur de trait (RVB) : 230,0,169
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • nom du symbole : square
     • rotation : 45°
     • style de jointure : angle droit
@@ -595,7 +630,7 @@ Géométrie ponctuelle :
 Symbole simple
 • couleur de remplissage (RVB) : transparent
 • couleur de trait (RVB) : 230,0,169
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • nom du symbole : square
 • style de trait : ligne continue
 • taille : 5 pt
@@ -659,7 +694,7 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 143,33,170
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • style de cap : plat
     • style de jointure : angle droit
     • style de trait : ligne continue
@@ -670,14 +705,14 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 143,33,170
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • style de cap : plat
     • style de jointure : angle droit
     • style de trait : ligne continue
 
 Ligne simple
 • couleur (RVB) : 143,33,170
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -689,7 +724,7 @@ Ligne de symboles
     Symbole simple
     • couleur de remplissage (RVB) : transparent
     • couleur de trait (RVB) : 143,33,170
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • nom du symbole : square
     • rotation : 45°
     • style de jointure : angle droit
@@ -702,7 +737,7 @@ Géométrie ponctuelle :
 Symbole simple
 • couleur de remplissage (RVB) : transparent
 • couleur de trait (RVB) : 143,33,170
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • nom du symbole : square
 • style de trait : ligne continue
 • taille : 5 pt
@@ -726,7 +761,7 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 52,52,52
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • style de cap : plat
     • style de jointure : angle droit
     • style de trait : ligne continue
@@ -737,14 +772,14 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 52,52,52
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • style de cap : plat
     • style de jointure : angle droit
     • style de trait : ligne continue
 
 Ligne simple
 • couleur (RVB) : 52,52,52
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -756,7 +791,7 @@ Ligne de symboles
     Symbole simple
     • couleur de remplissage (RVB) : transparent
     • couleur de trait (RVB) : 52,52,52
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • nom du symbole : square
     • rotation : 45°
     • style de jointure : angle droit
@@ -769,7 +804,7 @@ Géométrie ponctuelle :
 Symbole simple
 • couleur de remplissage (RVB) : transparent
 • couleur de trait (RVB) : 52,52,52
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • nom du symbole : square
 • style de trait : ligne continue
 • taille : 5 pt
@@ -793,14 +828,14 @@ Motif de points
 
     Symbole simple
     • couleur de trait (RVB) : 255,85,0
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • nom du symbole : cross
     • style de trait : ligne continue
     • taille : 6 pt
 
 Ligne simple
 • couleur (RVB) : 255,85,0
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -840,7 +875,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 115,0,0
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -943,7 +978,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 56,168,0
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -1020,7 +1055,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 45,104,55
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -1053,7 +1088,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 178,178,178
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -1085,7 +1120,7 @@ Motif de lignes
 
 Ligne simple
 • couleur (RVB) : 0,0,0
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -1112,11 +1147,10 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 255,0,0
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • style de trait : ligne continue
 
 Motif de points
-• décalage vertical : -6 pt
 • distance horizontale : 17 pt
 • distance verticale : 17 pt
 
@@ -1129,7 +1163,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 255,0,0
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -1149,7 +1183,7 @@ Ligne de symboles
 
 Ligne simple
 • couleur (RVB) : 255,0,0
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -1214,13 +1248,13 @@ Motif de points
 
     Symbole de police
     • caractère(s) : unicode 158
-    • couleur de remplissage (RVB) : 230,230,0
+    • couleur de remplissage (RVB) : 230,195,0
     • famille de police : Wingdings 2
     • taille : 10 pt
 
 Ligne simple
-• couleur (RVB) : 230,230,0
-• largeur de trait : 0.5 pt
+• couleur (RVB) : 230,195,0
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -1231,7 +1265,7 @@ Géométrie ponctuelle :
 ```
 Symbole de police
 • caractère(s) : unicode 158
-• couleur de remplissage (RVB) : 230,230,0
+• couleur de remplissage (RVB) : 230,195,0
 • famille de police : Wingdings 2
 • taille : 10 pt
 ```
@@ -1280,7 +1314,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 245,122,122
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -1329,26 +1363,9 @@ Symbole de police
 Géométrie surfacique :  
 ```
 Motif de points
+• déplacement horizontal : 12 pt
 • distance horizontale : 24 pt
-• distance verticale : 24 pt
-
-    Symbole de police
-    • caractère(s) : z (unicode 122)
-    • couleur de remplissage (RVB) : 143,33,170
-    • famille de police : Wingdings 3
-    • taille : 8 pt
-
-    Symbole de police
-    • caractère(s) : c (unicode 99)
-    • couleur de remplissage (RVB) : 143,33,170
-    • famille de police : Webdings
-    • taille : 6 pt
-
-Motif de points
-• décalage horizontal : 12 pt
-• décalage vertical : 12 pt
-• distance horizontale : 24 pt
-• distance verticale : 24 pt
+• distance verticale : 12 pt
 
     Symbole de police
     • caractère(s) : z (unicode 122)
@@ -1364,7 +1381,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 143,33,170
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -1392,12 +1409,12 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 255,85,0
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • style de trait : ligne continue
 
 Ligne simple
 • couleur (RVB) : 255,85,0
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -1541,7 +1558,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 137,68,68
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -1570,14 +1587,14 @@ Motif de points
     Symbole simple
     • couleur de remplissage (RVB) : 38,140,0
     • couleur de trait (RVB) : 38,140,0
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • nom du symbole : circle
     • style de trait : ligne continue
     • taille : 2 pt
 
 Ligne simple
 • couleur (RVB) : 38,140,0
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -1605,14 +1622,14 @@ Motif de points
 
     Symbole simple
     • couleur de trait (RVB) : 130,130,130
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • nom du symbole : cross2
     • style de trait : ligne continue
     • taille : 4 pt
 
 Ligne simple
 • couleur (RVB) : 130,130,130
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -1623,7 +1640,7 @@ Ligne de symboles
 
     Symbole simple
     • couleur de trait (RVB) : 130,130,130
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • nom du symbole : cross2
     • style de jointure : angle droit
     • style de trait : ligne continue
@@ -1634,7 +1651,7 @@ Géométrie ponctuelle :
 ```
 Symbole simple
 • couleur de trait (RVB) : 130,130,130
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • nom du symbole : cross2
 • style de trait : ligne continue
 • taille : 6 pt
@@ -1703,7 +1720,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 255,170,0
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -1872,14 +1889,14 @@ Motif de points
 
     Symbole simple
     • couleur de trait (RVB) : 38,140,0
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • nom du symbole : cross
     • style de trait : ligne continue
     • taille : 5 pt
 
 Ligne simple
 • couleur (RVB) : 38,140,0
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -1946,7 +1963,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 223,153,255
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -2008,7 +2025,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 0,197,255
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -2053,7 +2070,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 230,0,0
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -2127,7 +2144,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 0,77,168
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -2256,7 +2273,8 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 0,0,255
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
+    • style de jointure : angle droit
     • style de trait : ligne continue
 
 Motif de lignes
@@ -2265,12 +2283,14 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 0,0,255
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
+    • style de cap : plat
+    • style de jointure : angle droit
     • style de trait : ligne continue
 
 Ligne simple
 • couleur (RVB) : 0,0,255
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -2304,7 +2324,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 0,138,140
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -2354,7 +2374,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 57,216,129
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -2410,7 +2430,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 57,216,119
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -2460,7 +2480,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 144,112,76
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -2494,7 +2514,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 255,101,101
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -2548,7 +2568,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 138,77,211
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -2623,7 +2643,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 138,77,211
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -2697,7 +2717,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 138,77,211
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -2771,14 +2791,13 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 253,191,111
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
 Géométrie linéaire :  
 ```
 Ligne de symboles
-• décalage de la ligne : 0.5 pt
 • décalage le long de la ligne : 9 pt
 • intervalle : 12 pt
 
@@ -2862,7 +2881,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 86,170,2
-• largeur de trait : 0.26 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -2890,7 +2909,7 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 255,127,0
-    • largeur de trait : 0.26 pt
+    • largeur de trait : 0.8 pt
     • style de trait : ligne continue
 
 Motif de lignes
@@ -2899,12 +2918,12 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 255,127,0
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • style de trait : ligne continue
 
 Ligne simple
 • couleur (RVB) : 255,127,0
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -2915,7 +2934,7 @@ Ligne de symboles
 
     Symbole simple
     • couleur de trait (RVB) : 255,127,0
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • nom du symbole : cross2
     • style de jointure : angle droit
     • style de trait : ligne continue
@@ -2978,7 +2997,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 128,128,128
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -3099,7 +3118,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 86,170,2
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -3133,7 +3152,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 115,38,0
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -3239,7 +3258,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 0,76,115
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -3305,7 +3324,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 255,101,100
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -3359,7 +3378,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 148,10,189
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -3414,7 +3433,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 148,10,189
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -3457,26 +3476,27 @@ Symbole de police
 
 Géométrie surfacique :  
 ```
-Remplissage simple
-• couleur de remplissage (RVB) : 255,255,255
-• style de trait : pas de ligne
-```
+Motif de points
+• distance horizontale : 25 pt
+• distance verticale : 25 pt
 
-Géométrie linéaire :  
-```
+    Symbole de police
+    • caractère(s) : q (unicode 113)
+    • couleur de remplissage (RVB) : 172,87,13
+    • famille de police : Webdings
+    • taille : 11 pt
+
 Ligne simple
-• couleur (RVB) : 255,255,255
-• largeur de trait : 1 pt
+• couleur (RVB) : 172,87,13
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
+Géométrie linéaire :  
+*Pas de spécification.*
+
 Géométrie ponctuelle :  
-```
-Symbole simple
-• couleur de remplissage (RVB) : 255,255,255
-• nom du symbole : circle
-• taille : 6 pt
-```
+*Pas de spécification.*
 
 [↑ haut de page](#préconisations-de-symbologie)
 
@@ -3709,6 +3729,7 @@ Ligne de symboles
     • couleur de remplissage (RVB) : 38,140,0
     • décalage (en x, en y) : 0,-2 pt
     • famille de police : Wingdings 3
+    • rotation : 180°
     • taille : 8 pt
 
 Remplissage simple
@@ -3741,6 +3762,7 @@ Ligne de symboles
     • couleur de remplissage (RVB) : 255,0,0
     • décalage (en x, en y) : 0,-2 pt
     • famille de police : Wingdings 3
+    • rotation : 180°
     • taille : 8 pt
 
 Remplissage simple
@@ -3773,6 +3795,7 @@ Ligne de symboles
     • couleur de remplissage (RVB) : 255,0,0
     • décalage (en x, en y) : 0,-2 pt
     • famille de police : Wingdings 3
+    • rotation : 180°
     • taille : 8 pt
 
 Motif de points
@@ -3788,24 +3811,12 @@ Motif de points
     • famille de police : Arial
     • taille : 7 pt
 
-Motif de points
-• décalage horizontal : 25 pt
-• décalage vertical : 25 pt
-• distance horizontale : 50 pt
-• distance verticale : 50 pt
-
     Symbole de police
     • caractère(s) : P (unicode 80)
     • couleur de remplissage (RVB) : 166,0,0
     • décalage (en x, en y) : 5,0 pt
     • famille de police : Arial
     • taille : 7 pt
-
-Motif de points
-• décalage horizontal : 25 pt
-• décalage vertical : 25 pt
-• distance horizontale : 50 pt
-• distance verticale : 50 pt
 
     Symbole de police
     • caractère(s) : D (unicode 68)
@@ -3870,18 +3881,20 @@ Géométrie ponctuelle :
 Géométrie surfacique :  
 ```
 Motif de points
-• distance horizontale : 20 pt
+• déplacement horizontal : 12 pt
+• distance horizontale : 24 pt
 • distance verticale : 20 pt
 
     Symbole de police
-    • caractère(s) : q (unicode 113)
+    • caractère(s) : unicode 8734
     • couleur de remplissage (RVB) : 132,0,168
-    • famille de police : Webdings
-    • taille : 12 pt
+    • famille de police : Arial Black
+    • style de jointure : rond
+    • taille : 14 pt
 
 Ligne simple
 • couleur (RVB) : 132,0,168
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -3917,7 +3930,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 38,140,0
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -3966,7 +3979,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 205,170,102
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -3995,7 +4008,7 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 168,112,0
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • style de trait : ligne continue
 
 Motif de lignes
@@ -4005,12 +4018,12 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 168,112,0
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • style de trait : ligne continue
 
 Ligne simple
 • couleur (RVB) : 168,112,0
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -4044,7 +4057,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 230,0,0
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -4097,12 +4110,12 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 255,211,127
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • style de trait : ligne continue
 
 Ligne simple
 • couleur (RVB) : 255,211,127
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -4136,7 +4149,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 255,115,223
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -4147,9 +4160,9 @@ Ligne de symboles
 
     Symbole de police
     • caractère(s) : l (unicode 108)
-    • couleur de remplissage (RVB) : 255,190,232
+    • couleur de remplissage (RVB) : 255,115,223
     • famille de police : Wingdings
-    • taille : 4 pt
+    • taille : 5 pt
 ```
 
 Géométrie ponctuelle :  
@@ -4191,7 +4204,7 @@ Ligne de symboles
 
 Ligne simple
 • couleur (RVB) : 215,176,158
-• largeur de trait : 1 pt
+• largeur de trait : 1.5 pt
 • modèle de tiret personnalisé (tiret ; espace) : 6;10 pt
 ```
 
@@ -4218,51 +4231,21 @@ Géométrie surfacique :
 ```
 Motif de points
 • décalage horizontal : 25 pt
-• décalage vertical : 25 pt
-• distance horizontale : 25 pt
-• distance verticale : 25 pt
-
-    Symbole de police
-    • caractère(s) : P (unicode 80)
-    • couleur de remplissage (RVB) : 52,52,52
-    • famille de police : Arial
-    • taille : 6 pt
-
-Motif de points
-• décalage horizontal : 25 pt
-• décalage vertical : 25 pt
-• distance horizontale : 25 pt
-• distance verticale : 25 pt
+• décalage vertical : 35 pt
+• déplacement vertical : 25 pt
+• distance horizontale : 50 pt
+• distance verticale : 50 pt
 
     Symbole de police
     • caractère(s) : b (unicode 98)
     • couleur de remplissage (RVB) : 52,52,52
-    • décalage (en x, en y) : 3.66000000000000014,0 pt
+    • décalage (en x, en y) : 4,0 pt
     • famille de police : Arial
     • taille : 6 pt
-
-Motif de points
-• décalage horizontal : -13 pt
-• décalage vertical : -13 pt
-• distance horizontale : 25 pt
-• distance verticale : 25 pt
 
     Symbole de police
     • caractère(s) : P (unicode 80)
     • couleur de remplissage (RVB) : 52,52,52
-    • famille de police : Arial
-    • taille : 6 pt
-
-Motif de points
-• décalage horizontal : -13 pt
-• décalage vertical : -13 pt
-• distance horizontale : 25 pt
-• distance verticale : 25 pt
-
-    Symbole de police
-    • caractère(s) : b (unicode 98)
-    • couleur de remplissage (RVB) : 52,52,52
-    • décalage (en x, en y) : 3.66000000000000014,0 pt
     • famille de police : Arial
     • taille : 6 pt
 
@@ -4302,7 +4285,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 0,115,76
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -4352,10 +4335,35 @@ Symbole de police
 
 Géométrie surfacique :  
 ```
-Remplissage simple
-• couleur de remplissage (RVB) : 255,85,0
-• couleur de trait (RVB) : 168,56,0
-• largeur de trait : 0.5 pt
+Motif de points
+• déplacement horizontal : 15 pt
+• distance horizontale : 30 pt
+• distance verticale : 30 pt
+
+    Symbole simple
+    • couleur de remplissage (RVB) : transparent
+    • couleur de trait (RVB) : 255,85,0
+    • largeur de trait : 0.8 pt
+    • nom du symbole : half_square
+    • style de trait : ligne continue
+    • taille : 8 pt
+
+Motif de points
+• déplacement horizontal : 15 pt
+• distance horizontale : 30 pt
+• distance verticale : 30 pt
+
+    Symbole simple
+    • couleur de trait (RVB) : 255,85,0
+    • décalage (en x, en y) : -2,0 pt
+    • largeur de trait : 0.8 pt
+    • nom du symbole : cross2
+    • style de trait : ligne continue
+    • taille : 10 pt
+
+Ligne simple
+• couleur (RVB) : 255,85,0
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -4523,7 +4531,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 0,0,0
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -4569,17 +4577,17 @@ Symbole de police
 Géométrie surfacique :  
 ```
 Motif de lignes
-• espacement : 1 pt
+• espacement : 1.3 pt
 • rotation : 45°
 
     Ligne simple
     • couleur (RVB) : 210,4,4
-    • largeur de trait : 0.5 pt
+    • largeur de trait : 0.8 pt
     • style de trait : ligne continue
 
 Ligne simple
 • couleur (RVB) : 210,4,4
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -4638,7 +4646,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 255,255,0
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -4666,8 +4674,9 @@ Ligne de symboles
     Symbole de police
     • caractère(s) : p (unicode 112)
     • couleur de remplissage (RVB) : 132,0,168
-    • décalage (en x, en y) : 0,-2 pt
+    • décalage (en x, en y) : 0,-3 pt
     • famille de police : Wingdings 3
+    • rotation : 180°
     • taille : 6 pt
 
 Remplissage simple
@@ -4707,7 +4716,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 168,0,132
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -4743,7 +4752,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 255,122,0
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -4779,7 +4788,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 204,206,59
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -4812,7 +4821,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 72,130,15
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -4848,7 +4857,7 @@ Motif de points
 
 Ligne simple
 • couleur (RVB) : 144,112,76
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -4876,12 +4885,12 @@ Motif de lignes
 
     Ligne simple
     • couleur (RVB) : 146,0,214
-    • largeur de trait : 0.4 pt
+    • largeur de trait : 0.8 pt
     • style de trait : ligne continue
 
 Ligne simple
 • couleur (RVB) : 146,0,214
-• largeur de trait : 0.5 pt
+• largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```
 
@@ -4927,10 +4936,7 @@ Géométrie ponctuelle :
 Géométrie surfacique :  
 ```
 Remplissage simple
-• couleur de remplissage (RVB) : 255,255,255
-• couleur de trait (RVB) : 255,255,255
-• largeur de trait : 1 pt
-• style de trait : ligne continue
+• couleur de remplissage (RVB) : 0,0,0
 ```
 
 Géométrie linéaire :  
