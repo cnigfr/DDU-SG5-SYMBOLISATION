@@ -67,8 +67,8 @@ BEGIN
                 format('LINESTRING(%s %s, %s %s, %s %s, %s %s, %1$s %2$s)',
                        x, y,
                        x, y + 40,
-                       x + 40, y + 40,
-                       x + 40, y
+                       x + 70, y + 40,
+                       x + 70, y
                       )
                 ), 2154))
             WHERE typezone = r.typezone ;
