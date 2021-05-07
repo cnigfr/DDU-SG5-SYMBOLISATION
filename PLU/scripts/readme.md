@@ -235,7 +235,7 @@ Le contenu du récapitulatif Markdown - fichier *[preconisations.md](/PLU/precon
 SELECT s_cnig_docurba.md_generateur_plu('/PLU/vignettes') ;
 ```
 
-Il sera également nécessaire d'ajouter des vignettes pour les sous-codes dont les spécifications ont été créées ou de remplacer les vignettes en cas de modification des spécifications (répertoire [vignettes](/PLU/vignettes)). Pour ce faire, on utilisera les composeurs du projet QGIS, **à ouvrir sous QGIS 3.16 ou supérieur** pour un meilleur rendu.
+Il sera également nécessaire d'ajouter des vignettes pour les sous-codes dont les spécifications ont été créées ou de remplacer les vignettes en cas de modification des spécifications (répertoire [vignettes](/PLU/vignettes)). Pour ce faire, on utilisera les composeurs du projet QGIS, **à ouvrir sous QGIS 3.16 ou supérieur** pour un meilleur rendu. Résolution d'export : 96dpi.
 
 [↑ haut de page](#maintenance-des-outils)
 
