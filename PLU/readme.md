@@ -9,4 +9,5 @@
 ## Outils internes pour la gestion des ressources
 
 - le répertoire [scripts](/PLU/scripts) contient les scripts qui permettent la mise à jour des outils susmentionnés lorsque le sous-groupe _Symbolisation_ valide de nouveaux symboles ;
-- le répertoire [vignettes](/PLU/vignettes) contient les images qui illustrent _preconisations.md_.
+- le répertoire [vignettes](/PLU/vignettes) contient les images qui illustrent _preconisations.md_ ;
+- le répertoire [planches](/PLU/planches) contient les planches des symboles qui illustrent le guide *Spécifications de symbolisation des documents d'urbanisme*, ainsi que le projet QGIS permettant de les élaborer.
