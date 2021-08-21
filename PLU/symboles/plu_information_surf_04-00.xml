@@ -1,0 +1,79 @@
+<!DOCTYPE qgis_style>
+<qgis_style version="2">
+  <symbols>
+    <symbol alpha="1" type="fill" name="PLU information 04-00 (surfacique)" clip_to_extent="1" force_rhr="0" tags="CNIG, Urbanisme">
+      <layer pass="0" class="SimpleFill" enabled="1" locked="0">
+        <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale" />
+        <prop v="255,101,101,255" k="color" />
+        <prop v="bevel" k="joinstyle" />
+        <prop v="0,0" k="offset" />
+        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale" />
+        <prop v="Point" k="offset_unit" />
+        <prop v="35,35,35,255" k="outline_color" />
+        <prop v="no" k="outline_style" />
+        <prop v="0" k="outline_width" />
+        <prop v="Point" k="outline_width_unit" />
+        <prop v="solid" k="style" />
+        <data_defined_properties>
+          <Option type="Map">
+            <Option type="QString" name="name" value="" />
+            <Option name="properties" />
+            <Option type="QString" name="type" value="collection" />
+          </Option>
+        </data_defined_properties>
+      </layer>
+      <layer pass="0" class="MarkerLine" enabled="1" locked="0">
+        <prop v="4" k="average_angle_length" />
+        <prop v="3x:0,0,0,0,0,0" k="average_angle_map_unit_scale" />
+        <prop v="Point" k="average_angle_unit" />
+        <prop v="13" k="interval" />
+        <prop v="3x:0,0,0,0,0,0" k="interval_map_unit_scale" />
+        <prop v="Point" k="interval_unit" />
+        <prop v="0" k="offset" />
+        <prop v="0" k="offset_along_line" />
+        <prop v="3x:0,0,0,0,0,0" k="offset_along_line_map_unit_scale" />
+        <prop v="Point" k="offset_along_line_unit" />
+        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale" />
+        <prop v="Point" k="offset_unit" />
+        <prop v="interval" k="placement" />
+        <prop v="0" k="ring_filter" />
+        <prop v="1" k="rotate" />
+        <data_defined_properties>
+          <Option type="Map">
+            <Option type="QString" name="name" value="" />
+            <Option name="properties" />
+            <Option type="QString" name="type" value="collection" />
+          </Option>
+        </data_defined_properties>
+        <symbol alpha="1" type="marker" name="@2@1" clip_to_extent="1" force_rhr="0">
+          <layer pass="0" class="FontMarker" enabled="1" locked="0">
+            <prop v="180" k="angle" />
+            <prop v="" k="chr" />
+            <prop v="255,0,0,255" k="color" />
+            <prop v="Wingdings 3" k="font" />
+            <prop v="1" k="horizontal_anchor_point" />
+            <prop v="bevel" k="joinstyle" />
+            <prop v="0,-2" k="offset" />
+            <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale" />
+            <prop v="Point" k="offset_unit" />
+            <prop v="35,35,35,255" k="outline_color" />
+            <prop v="0" k="outline_width" />
+            <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale" />
+            <prop v="Point" k="outline_width_unit" />
+            <prop v="8" k="size" />
+            <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale" />
+            <prop v="Point" k="size_unit" />
+            <prop v="1" k="vertical_anchor_point" />
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" name="name" value="" />
+                <Option name="properties" />
+                <Option type="QString" name="type" value="collection" />
+              </Option>
+            </data_defined_properties>
+          </layer>
+        </symbol>
+      </layer>
+    </symbol>
+  </symbols>
+</qgis_style>
