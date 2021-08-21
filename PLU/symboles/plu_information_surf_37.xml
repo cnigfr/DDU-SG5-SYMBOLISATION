@@ -1,8 +1,8 @@
 <!DOCTYPE qgis_style>
 <qgis_style version="2">
   <symbols>
-    <symbol alpha="1" type="fill" name="PLU information 37 (surfacique)" clip_to_extent="1" force_rhr="0" tags="CNIG, Urbanisme">
-      <layer pass="0" class="SimpleLine" enabled="1" locked="0">
+    <symbol name="PLU information 37 (surfacique)" type="fill" force_rhr="0" clip_to_extent="1" alpha="1" tags="CNIG, Urbanisme">
+      <layer pass="0" class="SimpleLine" locked="0" enabled="1">
         <prop v="square" k="capstyle" />
         <prop v="5;2" k="customdash" />
         <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale" />
@@ -21,13 +21,13 @@
         <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale" />
         <data_defined_properties>
           <Option type="Map">
-            <Option type="QString" name="name" value="" />
+            <Option name="name" type="QString" value="" />
             <Option name="properties" />
-            <Option type="QString" name="type" value="collection" />
+            <Option name="type" type="QString" value="collection" />
           </Option>
         </data_defined_properties>
       </layer>
-      <layer pass="0" class="PointPatternFill" enabled="1" locked="0">
+      <layer pass="0" class="PointPatternFill" locked="0" enabled="1">
         <prop v="0" k="displacement_x" />
         <prop v="3x:0,0,0,0,0,0" k="displacement_x_map_unit_scale" />
         <prop v="Point" k="displacement_x_unit" />
@@ -50,13 +50,13 @@
         <prop v="Point" k="outline_width_unit" />
         <data_defined_properties>
           <Option type="Map">
-            <Option type="QString" name="name" value="" />
+            <Option name="name" type="QString" value="" />
             <Option name="properties" />
-            <Option type="QString" name="type" value="collection" />
+            <Option name="type" type="QString" value="collection" />
           </Option>
         </data_defined_properties>
-        <symbol alpha="1" type="marker" name="@29@1" clip_to_extent="1" force_rhr="0">
-          <layer pass="0" class="SimpleMarker" enabled="1" locked="0">
+        <symbol name="@29@1" type="marker" force_rhr="0" clip_to_extent="1" alpha="1">
+          <layer pass="0" class="SimpleMarker" locked="0" enabled="1">
             <prop v="0" k="angle" />
             <prop v="72,130,15,255" k="color" />
             <prop v="1" k="horizontal_anchor_point" />
@@ -77,9 +77,9 @@
             <prop v="1" k="vertical_anchor_point" />
             <data_defined_properties>
               <Option type="Map">
-                <Option type="QString" name="name" value="" />
+                <Option name="name" type="QString" value="" />
                 <Option name="properties" />
-                <Option type="QString" name="type" value="collection" />
+                <Option name="type" type="QString" value="collection" />
               </Option>
             </data_defined_properties>
           </layer>

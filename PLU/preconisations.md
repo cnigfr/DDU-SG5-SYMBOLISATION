@@ -6,7 +6,7 @@ Standard CNIG PLU
 
 [Prescriptions](#prescriptions) • [01-00](#prescription-01-00) • [01-01](#prescription-01-01) • [01-02](#prescription-01-02) • [01-03](#prescription-01-03) • [02-00](#prescription-02-00) • [02-01](#prescription-02-01) • [02-02](#prescription-02-02) • [03-00](#prescription-03-00) • [03-01](#prescription-03-01) • [03-02](#prescription-03-02) • [04-00](#prescription-04-00) • [05-00](#prescription-05-00) • [05-01](#prescription-05-01) • [05-02](#prescription-05-02) • [05-03](#prescription-05-03) • [05-04](#prescription-05-04) • [05-05](#prescription-05-05) • [05-06](#prescription-05-06) • [05-07](#prescription-05-07) • [07-00](#prescription-07-00) • [07-01](#prescription-07-01) • [07-02](#prescription-07-02) • [07-03](#prescription-07-03) • [07-04](#prescription-07-04) • [07-05](#prescription-07-05) • [08-00](#prescription-08-00) • [13-00](#prescription-13-00) • [14-00](#prescription-14-00) • [15-00](#prescription-15-00) • [15-01](#prescription-15-01) • [15-02](#prescription-15-02) • [15-03](#prescription-15-03) • [15-98](#prescription-15-98) • [16-00](#prescription-16-00) • [16-01](#prescription-16-01) • [16-02](#prescription-16-02) • [16-03](#prescription-16-03) • [16-04](#prescription-16-04) • [16-05](#prescription-16-05) • [17-00](#prescription-17-00) • [18-00](#prescription-18-00) • [18-01](#prescription-18-01) • [18-02](#prescription-18-02) • [18-03](#prescription-18-03) • [18-04](#prescription-18-04) • [18-05](#prescription-18-05) • [18-06](#prescription-18-06) • [18-07](#prescription-18-07) • [18-08](#prescription-18-08) • [18-09](#prescription-18-09) • [18-10](#prescription-18-10) • [18-11](#prescription-18-11) • [19-00](#prescription-19-00) • [20-00](#prescription-20-00) • [22-00](#prescription-22-00) • [22-01](#prescription-22-01) • [22-02](#prescription-22-02) • [22-03](#prescription-22-03) • [22-04](#prescription-22-04) • [23-00](#prescription-23-00) • [24-00](#prescription-24-00) • [24-01](#prescription-24-01) • [24-02](#prescription-24-02) • [24-03](#prescription-24-03) • [24-04](#prescription-24-04) • [25-00](#prescription-25-00) • [26-00](#prescription-26-00) • [26-01](#prescription-26-01) • [27-00](#prescription-27-00) • [28-00](#prescription-28-00) • [28-01](#prescription-28-01) • [29-00](#prescription-29-00) • [29-01](#prescription-29-01) • [30-00](#prescription-30-00) • [30-01](#prescription-30-01) • [30-02](#prescription-30-02) • [30-03](#prescription-30-03) • [30-04](#prescription-30-04) • [31-00](#prescription-31-00) • [31-01](#prescription-31-01) • [31-02](#prescription-31-02) • [31-03](#prescription-31-03) • [31-04](#prescription-31-04) • [31-05](#prescription-31-05) • [31-06](#prescription-31-06) • [31-07](#prescription-31-07) • [31-08](#prescription-31-08) • [32-00](#prescription-32-00) • [33-00](#prescription-33-00) • [34-00](#prescription-34-00) • [35-00](#prescription-35-00) • [36-00](#prescription-36-00) • [37-00](#prescription-37-00) • [37-01](#prescription-37-01) • [37-02](#prescription-37-02) • [38-00](#prescription-38-00) • [38-01](#prescription-38-01) • [38-02](#prescription-38-02) • [38-97](#prescription-38-97) • [38-98](#prescription-38-98) • [39-00](#prescription-39-00) • [39-01](#prescription-39-01) • [39-02](#prescription-39-02) • [39-97](#prescription-39-97) • [39-98](#prescription-39-98) • [40-00](#prescription-40-00) • [40-01](#prescription-40-01) • [40-02](#prescription-40-02) • [40-97](#prescription-40-97) • [40-98](#prescription-40-98) • [41-00](#prescription-41-00) • [41-01](#prescription-41-01) • [41-02](#prescription-41-02) • [41-03](#prescription-41-03) • [41-98](#prescription-41-98) • [42-00](#prescription-42-00) • [43-00](#prescription-43-00) • [43-01](#prescription-43-01) • [43-02](#prescription-43-02) • [43-03](#prescription-43-03) • [44-00](#prescription-44-00) • [44-01](#prescription-44-01) • [44-02](#prescription-44-02) • [44-03](#prescription-44-03) • [44-04](#prescription-44-04) • [44-05](#prescription-44-05) • [44-98](#prescription-44-98) • [45-00](#prescription-45-00) • [46-00](#prescription-46-00) • [47-00](#prescription-47-00) • [47-01](#prescription-47-01) • [47-02](#prescription-47-02) • [47-03](#prescription-47-03) • [47-04](#prescription-47-04) • [47-05](#prescription-47-05) • [48-00](#prescription-48-00) • [48-01](#prescription-48-01) • [49-00](#prescription-49-00) • [49-01](#prescription-49-01) • [49-02](#prescription-49-02) • [50-00](#prescription-50-00) • [51-00](#prescription-51-00) • [52-00](#prescription-52-00) • [97-00](#prescription-97-00) • [97-01](#prescription-97-01) • [99-00](#prescription-99-00) • [99-01](#prescription-99-01) • [99-02](#prescription-99-02) • [99-03](#prescription-99-03) • [99-04](#prescription-99-04) • [99-05](#prescription-99-05) • [99-06](#prescription-99-06) • [99-07](#prescription-99-07) • [99-08](#prescription-99-08) • [99-09](#prescription-99-09) • [99-10](#prescription-99-10)
 
-[Informations](#informations) • [02-00](#information-02-00) • [03-00](#information-03-00) • [04-00](#information-04-00) • [04-01](#information-04-01) • [05-00](#information-05-00) • [07-00](#information-07-00) • [08-00](#information-08-00) • [09-00](#information-09-00) • [10-00](#information-10-00) • [11-00](#information-11-00) • [12-00](#information-12-00) • [13-00](#information-13-00) • [14-00](#information-14-00) • [16-00](#information-16-00) • [17-00](#information-17-00) • [19-01](#information-19-01) • [19-02](#information-19-02) • [20-00](#information-20-00) • [21-00](#information-21-00) • [22-00](#information-22-00) • [23-00](#information-23-00) • [25-00](#information-25-00) • [27-00](#information-27-00) • [30-00](#information-30-00) • [31-00](#information-31-00) • [32-00](#information-32-00) • [33-00](#information-33-00) • [34-00](#information-34-00) • [35-00](#information-35-00) • [36-00](#information-36-00) • [37-00](#information-37-00) • [38-00](#information-38-00) • [39-00](#information-39-00) • [97-00](#information-97-00) • [98-00](#information-98-00) • [99-00](#information-99-00) • [99-01](#information-99-01) • [99-02](#information-99-02)
+[Informations](#informations) • [02-00](#information-02-00) • [03-00](#information-03-00) • [04-00](#information-04-00) • [04-01](#information-04-01) • [05-00](#information-05-00) • [07-00](#information-07-00) • [08-00](#information-08-00) • [09-00](#information-09-00) • [10-00](#information-10-00) • [11-00](#information-11-00) • [12-00](#information-12-00) • [13-00](#information-13-00) • [14-00](#information-14-00) • [16-00](#information-16-00) • [17-00](#information-17-00) • [19-01](#information-19-01) • [19-02](#information-19-02) • [20-00](#information-20-00) • [21-00](#information-21-00) • [22-00](#information-22-00) • [23-00](#information-23-00) • [25-00](#information-25-00) • [27-00](#information-27-00) • [30-00](#information-30-00) • [31-00](#information-31-00) • [32-00](#information-32-00) • [33-00](#information-33-00) • [34-00](#information-34-00) • [35-00](#information-35-00) • [36-00](#information-36-00) • [37-00](#information-37-00) • [38-00](#information-38-00) • [39-00](#information-39-00) • [40-01](#information-40-01) • [40-02](#information-40-02) • [41-00](#information-41-00) • [97-00](#information-97-00) • [98-00](#information-98-00) • [99-00](#information-99-00) • [99-01](#information-99-01) • [99-02](#information-99-02)
 
 ## Zones
 
@@ -4890,6 +4890,111 @@ Motif de lignes
 
 Ligne simple
 • couleur (RVB) : 146,0,214
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+```
+
+Géométrie linéaire :  
+*Pas de spécification.*
+
+Géométrie ponctuelle :  
+*Pas de spécification.*
+
+[↑ haut de page](#préconisations-de-symbologie)
+
+---
+
+### Information 40-01
+
+**Périmètre d'un bien inscrit au patrimoine mondial**
+        
+![INFO-40-01](/PLU/vignettes/INFO-40-01.png)
+
+Géométrie surfacique :  
+```
+Motif de points
+• distance horizontale : 10 pt
+• distance verticale : 10 pt
+
+    Symbole simple
+    • couleur de remplissage (RVB) : transparent
+    • couleur de trait (RVB) : 255,196,118
+    • largeur de trait : 0.8 pt
+    • nom du symbole : circle
+    • style de trait : ligne continue
+    • taille : 20 pt
+
+Ligne simple
+• couleur (RVB) : 255,196,118
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+```
+
+Géométrie linéaire :  
+*Pas de spécification.*
+
+Géométrie ponctuelle :  
+*Pas de spécification.*
+
+[↑ haut de page](#préconisations-de-symbologie)
+
+---
+
+### Information 40-02
+
+**Zone tampon d'un bien inscrit au patrimoine mondial**
+        
+![INFO-40-02](/PLU/vignettes/INFO-40-02.png)
+
+Géométrie surfacique :  
+```
+Motif de points
+• distance horizontale : 20 pt
+• distance verticale : 20 pt
+
+    Symbole simple
+    • couleur de remplissage (RVB) : transparent
+    • couleur de trait (RVB) : 255,196,147
+    • largeur de trait : 0.8 pt
+    • nom du symbole : circle
+    • style de trait : ligne continue
+    • taille : 40 pt
+
+Ligne simple
+• couleur (RVB) : 255,196,147
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+```
+
+Géométrie linéaire :  
+*Pas de spécification.*
+
+Géométrie ponctuelle :  
+*Pas de spécification.*
+
+[↑ haut de page](#préconisations-de-symbologie)
+
+---
+
+### Information 41-00
+
+**Bande non constructible de part et d'autre de l'axe des voies (L111-6)**
+        
+![INFO-41-00](/PLU/vignettes/INFO-41-00.png)
+
+Géométrie surfacique :  
+```
+Motif de lignes
+• espacement : 12 pt
+• rotation : -45°
+
+    Ligne simple
+    • couleur (RVB) : 230,0,0
+    • largeur de trait : 0.8 pt
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur (RVB) : 230,0,0
 • largeur de trait : 0.8 pt
 • style de trait : ligne continue
 ```

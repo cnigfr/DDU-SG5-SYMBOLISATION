@@ -378,9 +378,12 @@ INSERT INTO s_cnig_docurba.plu_information (typeinf, stypeinf, lib_stype, stype_
     ('37', '00', 'Bois ou forêts relevant du régime forestier', NULL),
     ('38', '00', 'Secteurs d''informations sur les sols', NULL),
     ('39', '00', 'Périmètres de projets AFUP (dans lesquels les propriétaires fonciers sont incités à se regrouper en AFU de projet et les AFU de projet à mener leurs opérations de façon concertée)', NULL),
+    ('40', '01', 'Périmètre d''un bien inscrit au patrimoine mondial', NULL),
+    ('40', '02', 'Zone tampon d''un bien inscrit au patrimoine mondial', NULL),
+    ('41', '00', 'Bande non constructible de part et d''autre de l''axe des voies (L111-6)', NULL),
     ('97', '00', 'Périmètre d''application d''une pièce écrite territorialisée relative aux annexes (liste des annexes, liste des SUP, plan des SUP)', NULL),
     ('98', '00', 'Périmètre d''annulation partielle du document d''urbanisme (lorsqu''elle impacte le règlement graphique)', NULL),
     ('99', '00', 'Autre périmètre, secteur, plan, document, site, projet, espace.', NULL),
     ('99', '01', 'Autre relevant de la loi littoral', '00'),
-    ('99', '02', 'Autre relevant de la loi montagne', '00') ;
+    ('99', '02', 'Autre relevant de la loi montagne', '00') ; 
 
