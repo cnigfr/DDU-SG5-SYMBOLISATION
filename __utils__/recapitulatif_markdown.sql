@@ -275,7 +275,7 @@ BEGIN
 
     SELECT symb_surf INTO zonage FROM s_cnig_docurba.psmv_zone_urba ;
     
-    liste_zone := '(symbole unique)' ;
+    liste_zone := ' (symbole unique)' ;
     
     descr_zone := format('Symbole unique pour toutes les zones (géométrie surfacique).
 

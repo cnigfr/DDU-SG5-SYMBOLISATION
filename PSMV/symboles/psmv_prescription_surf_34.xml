@@ -1,8 +1,8 @@
 <!DOCTYPE qgis_style>
 <qgis_style version="2">
   <symbols>
-    <symbol alpha="1" clip_to_extent="1" name="PSMV prescription 34 (surfacique)" type="fill" force_rhr="0" tags="CNIG, Urbanisme">
-      <layer pass="1" class="PointPatternFill" enabled="1" locked="0">
+    <symbol alpha="1" name="PSMV prescription 34 (surfacique)" clip_to_extent="1" force_rhr="0" type="fill" tags="CNIG, Urbanisme">
+      <layer enabled="1" class="PointPatternFill" pass="1" locked="0">
         <prop k="displacement_x" v="0" />
         <prop k="displacement_x_map_unit_scale" v="3x:0,0,0,0,0,0" />
         <prop k="displacement_x_unit" v="Point" />
@@ -30,12 +30,13 @@
             <Option value="collection" name="type" type="QString" />
           </Option>
         </data_defined_properties>
-        <symbol alpha="1" clip_to_extent="1" name="@48@0" type="marker" force_rhr="0">
-          <layer pass="0" class="FontMarker" enabled="1" locked="0">
+        <symbol alpha="1" name="@48@0" clip_to_extent="1" force_rhr="0" type="marker">
+          <layer enabled="1" class="FontMarker" pass="0" locked="0">
             <prop k="angle" v="0" />
             <prop k="chr" v="ð" />
             <prop k="color" v="57,216,129,255" />
             <prop k="font" v="Wingdings 2" />
+            <prop k="font_style" v="" />
             <prop k="horizontal_anchor_point" v="1" />
             <prop k="joinstyle" v="bevel" />
             <prop k="offset" v="5,0" />
@@ -59,11 +60,15 @@
           </layer>
         </symbol>
       </layer>
-      <layer pass="1" class="SimpleLine" enabled="1" locked="0">
+      <layer enabled="1" class="SimpleLine" pass="1" locked="0">
+        <prop k="align_dash_pattern" v="0" />
         <prop k="capstyle" v="square" />
         <prop k="customdash" v="5;2" />
         <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0" />
         <prop k="customdash_unit" v="Point" />
+        <prop k="dash_pattern_offset" v="0" />
+        <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="dash_pattern_offset_unit" v="MM" />
         <prop k="draw_inside_polygon" v="0" />
         <prop k="joinstyle" v="bevel" />
         <prop k="line_color" v="57,216,129,255" />
@@ -74,6 +79,7 @@
         <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0" />
         <prop k="offset_unit" v="Point" />
         <prop k="ring_filter" v="0" />
+        <prop k="tweak_dash_pattern_on_corners" v="0" />
         <prop k="use_custom_dash" v="0" />
         <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0" />
         <data_defined_properties>

@@ -1,6 +1,7 @@
 
 # Maintenance des outils
-Mode d'emploi pour la mise à jour des fichiers QML, du projet QGIS de visualisation et du récapitulatif Markdown des préconisations.
+
+Mode d'emploi pour la mise à jour des fichiers QML, des projets QGIS de visualisation et récapitulatifs Markdown des préconisations.
 
 *Les utilitaires automatisant la mise à jour ont été écrits pour un usage sous PostgreSQL et ne fonctionneront pas nécessairement avec d'autres systèmes de gestion de données.*
 

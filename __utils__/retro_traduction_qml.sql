@@ -419,6 +419,15 @@ BEGIN
                     AND symbol_id = prop.symbol_id
                     AND symbol_prop = 'line_style' ;
         END IF ;
+        
+        -- suppression des intervalles quand le placement n'est pas "interval"
+        IF prop.symbol_prop = 'placement' AND NOT prop.symbol_value = 'interval'
+        THEN
+            DELETE FROM s_cnig_docurba.qml_detail
+                WHERE ref_table = prop.ref_table
+                    AND symbol_id = prop.symbol_id
+                    AND symbol_prop ~ '^interval' ;
+        END IF ;
     
         -- suppression des paramètres sans valeur :
         IF prop.symbol_value = ANY (ARRAY['0', '0,0', '3x:0,0,0,0,0,0'])
@@ -441,7 +450,7 @@ BEGIN
             OR prop.symbol_prop = 'joinstyle' AND prop.symbol_value = 'bevel'
             OR prop.symbol_prop = 'capstyle' AND prop.symbol_value = 'square'
             OR prop.symbol_prop = 'use_custom_dash'
-            OR prop.symbol_prop = 'placement'
+            OR prop.symbol_prop = 'placement' AND prop.symbol_value = 'interval'
             OR prop.symbol_prop = 'scale_method'
             OR prop.symbol_class = 'SimpleFill' AND prop.symbol_prop = 'style' AND prop.symbol_value = 'solid'
             OR prop.symbol_class IN ('LinePatternFill', 'PointPatternFill') AND prop.symbol_prop = 'outline_width_unit'

@@ -2,7 +2,7 @@ Standard CNIG PSMV
 
 # Préconisations de symbologie
 
-[Zones](#zones)(symbole unique)
+[Zones](#zones) (symbole unique)
 
 [Prescriptions](#prescriptions) • [01-00](#prescription-01-00) • [01-01](#prescription-01-01) • [01-02](#prescription-01-02) • [01-03](#prescription-01-03) • [02-00](#prescription-02-00) • [02-01](#prescription-02-01) • [02-02](#prescription-02-02) • [03-00](#prescription-03-00) • [03-01](#prescription-03-01) • [03-02](#prescription-03-02) • [03-50](#prescription-03-50) • [03-51](#prescription-03-51) • [04-00](#prescription-04-00) • [05-00](#prescription-05-00) • [05-01](#prescription-05-01) • [05-02](#prescription-05-02) • [05-03](#prescription-05-03) • [05-04](#prescription-05-04) • [05-05](#prescription-05-05) • [05-06](#prescription-05-06) • [05-07](#prescription-05-07) • [07-00](#prescription-07-00) • [07-01](#prescription-07-01) • [07-02](#prescription-07-02) • [07-03](#prescription-07-03) • [07-04](#prescription-07-04) • [07-05](#prescription-07-05) • [07-50](#prescription-07-50) • [07-51](#prescription-07-51) • [07-52](#prescription-07-52) • [07-53](#prescription-07-53) • [07-54](#prescription-07-54) • [07-55](#prescription-07-55) • [07-56](#prescription-07-56) • [07-57](#prescription-07-57) • [07-58](#prescription-07-58) • [07-59](#prescription-07-59) • [07-60](#prescription-07-60) • [07-61](#prescription-07-61) • [07-62](#prescription-07-62) • [07-63](#prescription-07-63) • [07-64](#prescription-07-64) • [07-65](#prescription-07-65) • [07-66](#prescription-07-66) • [07-67](#prescription-07-67) • [07-68](#prescription-07-68) • [07-69](#prescription-07-69) • [08-00](#prescription-08-00) • [13-00](#prescription-13-00) • [14-00](#prescription-14-00) • [15-00](#prescription-15-00) • [15-01](#prescription-15-01) • [15-02](#prescription-15-02) • [15-03](#prescription-15-03) • [15-50](#prescription-15-50) • [15-51](#prescription-15-51) • [15-98](#prescription-15-98) • [16-00](#prescription-16-00) • [16-01](#prescription-16-01) • [16-02](#prescription-16-02) • [16-03](#prescription-16-03) • [16-04](#prescription-16-04) • [16-05](#prescription-16-05) • [17-00](#prescription-17-00) • [18-00](#prescription-18-00) • [18-01](#prescription-18-01) • [18-02](#prescription-18-02) • [18-03](#prescription-18-03) • [18-04](#prescription-18-04) • [18-05](#prescription-18-05) • [18-06](#prescription-18-06) • [18-07](#prescription-18-07) • [18-08](#prescription-18-08) • [18-09](#prescription-18-09) • [18-10](#prescription-18-10) • [18-11](#prescription-18-11) • [19-00](#prescription-19-00) • [20-00](#prescription-20-00) • [22-00](#prescription-22-00) • [22-01](#prescription-22-01) • [22-02](#prescription-22-02) • [22-03](#prescription-22-03) • [22-04](#prescription-22-04) • [23-00](#prescription-23-00) • [24-00](#prescription-24-00) • [24-01](#prescription-24-01) • [24-02](#prescription-24-02) • [24-03](#prescription-24-03) • [24-04](#prescription-24-04) • [24-50](#prescription-24-50) • [25-00](#prescription-25-00) • [26-00](#prescription-26-00) • [26-01](#prescription-26-01) • [27-00](#prescription-27-00) • [28-00](#prescription-28-00) • [28-01](#prescription-28-01) • [29-00](#prescription-29-00) • [29-01](#prescription-29-01) • [30-00](#prescription-30-00) • [30-01](#prescription-30-01) • [30-02](#prescription-30-02) • [30-03](#prescription-30-03) • [30-04](#prescription-30-04) • [31-00](#prescription-31-00) • [31-01](#prescription-31-01) • [31-02](#prescription-31-02) • [31-03](#prescription-31-03) • [31-04](#prescription-31-04) • [31-05](#prescription-31-05) • [31-06](#prescription-31-06) • [31-07](#prescription-31-07) • [31-08](#prescription-31-08) • [32-00](#prescription-32-00) • [33-00](#prescription-33-00) • [34-00](#prescription-34-00) • [35-00](#prescription-35-00) • [36-00](#prescription-36-00) • [37-00](#prescription-37-00) • [37-01](#prescription-37-01) • [37-02](#prescription-37-02) • [38-00](#prescription-38-00) • [38-01](#prescription-38-01) • [38-02](#prescription-38-02) • [38-97](#prescription-38-97) • [38-98](#prescription-38-98) • [39-00](#prescription-39-00) • [39-01](#prescription-39-01) • [39-02](#prescription-39-02) • [39-50](#prescription-39-50) • [39-51](#prescription-39-51) • [39-52](#prescription-39-52) • [39-97](#prescription-39-97) • [39-98](#prescription-39-98) • [40-00](#prescription-40-00) • [40-01](#prescription-40-01) • [40-02](#prescription-40-02) • [40-50](#prescription-40-50) • [40-97](#prescription-40-97) • [40-98](#prescription-40-98) • [41-00](#prescription-41-00) • [41-01](#prescription-41-01) • [41-02](#prescription-41-02) • [41-03](#prescription-41-03) • [41-98](#prescription-41-98) • [42-00](#prescription-42-00) • [43-00](#prescription-43-00) • [43-01](#prescription-43-01) • [43-02](#prescription-43-02) • [43-03](#prescription-43-03) • [43-50](#prescription-43-50) • [43-51](#prescription-43-51) • [44-00](#prescription-44-00) • [44-01](#prescription-44-01) • [44-02](#prescription-44-02) • [44-03](#prescription-44-03) • [44-04](#prescription-44-04) • [44-05](#prescription-44-05) • [44-98](#prescription-44-98) • [45-00](#prescription-45-00) • [46-00](#prescription-46-00) • [47-00](#prescription-47-00) • [47-01](#prescription-47-01) • [47-02](#prescription-47-02) • [47-03](#prescription-47-03) • [47-04](#prescription-47-04) • [47-05](#prescription-47-05) • [48-00](#prescription-48-00) • [48-01](#prescription-48-01) • [49-00](#prescription-49-00) • [49-01](#prescription-49-01) • [49-02](#prescription-49-02) • [50-00](#prescription-50-00) • [51-00](#prescription-51-00) • [52-00](#prescription-52-00) • [97-00](#prescription-97-00) • [97-01](#prescription-97-01) • [99-00](#prescription-99-00) • [99-01](#prescription-99-01) • [99-02](#prescription-99-02) • [99-03](#prescription-99-03) • [99-04](#prescription-99-04) • [99-05](#prescription-99-05) • [99-06](#prescription-99-06) • [99-07](#prescription-99-07) • [99-08](#prescription-99-08) • [99-09](#prescription-99-09) • [99-10](#prescription-99-10)
 
@@ -46,8 +46,6 @@ Ligne simple
 Géométrie surfacique :  
 ```
 Motif de points
-• décalage horizontal : 6 mm
-• décalage vertical : 6 mm
 • distance horizontale : 10 pt
 • distance verticale : 10 pt
 
@@ -1066,8 +1064,6 @@ Géométrie ponctuelle :
 Géométrie surfacique :  
 ```
 Motif de points
-• décalage horizontal : 6 mm
-• décalage vertical : 6 mm
 • distance horizontale : 10 pt
 • distance verticale : 10 pt
 
@@ -1317,7 +1313,7 @@ Géométrie ponctuelle :
 Géométrie surfacique :  
 ```
 Motif de lignes
-• décalage : 3 mm
+• décalage : 2 pt
 • espacement : 5 pt
 • rotation : 45°
 
@@ -1363,7 +1359,7 @@ Géométrie ponctuelle :
 Géométrie surfacique :  
 ```
 Motif de lignes
-• décalage : 3 mm
+• décalage : 2 pt
 • espacement : 5 pt
 • rotation : 135°
 
@@ -3314,7 +3310,7 @@ Géométrie ponctuelle :
 Géométrie surfacique :  
 ```
 Ligne de symboles
-• intervalle : 3 mm
+• emplacement : sur le point central
 
     Symbole de police
     • caractère(s) : [txt] (unicode 91)
@@ -3340,7 +3336,7 @@ Ligne simple
 Géométrie linéaire :  
 ```
 Ligne de symboles
-• intervalle : 50 pt
+• emplacement : sur le point central
 
     Symbole de police
     • caractère(s) : [txt] (unicode 91)
@@ -3382,7 +3378,7 @@ Géométrie ponctuelle :
 Géométrie surfacique :  
 ```
 Ligne de symboles
-• intervalle : 500 pt
+• emplacement : sur le point central
 
     Symbole de police
     • caractère(s) : [txt] (unicode 91)
@@ -3395,7 +3391,7 @@ Ligne de symboles
     Symbole simple
     • couleur de remplissage (RVB) : 255,255,255
     • couleur de trait (RVB) : 255,0,0
-    • décalage (en x, en y) : 0,0.5 mm
+    • décalage (en x, en y) : 0,0.5 pt
     • largeur de trait : 0.8 pt
     • nom du symbole : triangle
     • point d'ancrage : en dessous
@@ -3411,7 +3407,7 @@ Ligne simple
 Géométrie linéaire :  
 ```
 Ligne de symboles
-• intervalle : 50 pt
+• emplacement : sur le point central
 
     Symbole de police
     • caractère(s) : [txt] (unicode 91)
@@ -3456,7 +3452,7 @@ Géométrie ponctuelle :
 Géométrie surfacique :  
 ```
 Ligne de symboles
-• intervalle : 3 mm
+• emplacement : sur le point central
 
     Symbole de police
     • caractère(s) : [txt] (unicode 91)
@@ -3482,7 +3478,7 @@ Ligne simple
 Géométrie linéaire :  
 ```
 Ligne de symboles
-• intervalle : 50 pt
+• emplacement : sur le point central
 
     Symbole de police
     • caractère(s) : [txt] (unicode 91)
@@ -3864,7 +3860,7 @@ Géométrie ponctuelle :
 Géométrie surfacique :  
 ```
 Motif de lignes
-• décalage : 3 mm
+• décalage : 2 pt
 • espacement : 5 pt
 • rotation : 45°
 
@@ -3910,7 +3906,7 @@ Géométrie ponctuelle :
 Géométrie surfacique :  
 ```
 Motif de lignes
-• décalage : 3 mm
+• décalage : 2 pt
 • espacement : 5 pt
 • rotation : 135°
 
