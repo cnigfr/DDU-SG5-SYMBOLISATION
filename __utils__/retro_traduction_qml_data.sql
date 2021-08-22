@@ -90,7 +90,7 @@ SELECT s_cnig_docurba.qml_maj_traduction() ;
 DELETE FROM s_cnig_docurba.qml_traduction_class ;
 
 INSERT INTO s_cnig_docurba.qml_traduction_class (symbol_class, traduction) VALUES
-    ('CentroidFill', 'remplissage de centroïde'),
+    ('CentroidFill', 'Remplissage de centroïde'),
     ('FontMarker', 'Symbole de police'),
     ('HashLine', 'Ligne hachurée'),
     ('LinePatternFill', 'Motif de lignes'),
@@ -98,7 +98,8 @@ INSERT INTO s_cnig_docurba.qml_traduction_class (symbol_class, traduction) VALUE
     ('PointPatternFill', 'Motif de points'),
     ('SimpleFill', 'Remplissage simple'),
     ('SimpleLine', 'Ligne simple'),
-    ('SimpleMarker', 'Symbole simple') ;
+    ('SimpleMarker', 'Symbole simple'),
+    ('SvgMarker', 'Symbole SVG') ;
 
 
 -- TABLE: s_cnig_docurba.qml_traduction_prop
@@ -140,6 +141,7 @@ DELETE FROM s_cnig_docurba.qml_traduction_prop ;
 
 INSERT INTO s_cnig_docurba.qml_traduction_prop (symbol_class, symbol_prop, traduction, unite_implicite, b_trad_value) VALUES
     ('CentroidFill', 'point_on_all_parts', 'dessiner le point sur toutes les parties d''une entité multi-parties', NULL, true),
+    ('CentroidFill', 'point_on_surface', 'forcer le point dans le polygone', NULL, true),
     ('FontMarker', 'angle', 'rotation', '°', false),
     ('FontMarker', 'chr', 'caractère(s)', NULL, false),
     ('FontMarker', 'color', 'couleur de remplissage (RVB)', NULL, false),
@@ -177,6 +179,7 @@ INSERT INTO s_cnig_docurba.qml_traduction_prop (symbol_class, symbol_prop, tradu
     ('SimpleLine', 'line_color', 'couleur (RVB)', NULL, false),
     ('SimpleLine', 'line_style', 'style de trait', NULL, true),
     ('SimpleLine', 'line_width', 'largeur de trait', NULL, false),
+    ('SimpleLine', 'offset', 'décalage', NULL, false),
     ('SimpleMarker', 'angle', 'rotation', '°', false),
     ('SimpleMarker', 'color', 'couleur de remplissage (RVB)', NULL, false),
     ('SimpleMarker', 'joinstyle', 'style de jointure', NULL, true),
@@ -185,7 +188,12 @@ INSERT INTO s_cnig_docurba.qml_traduction_prop (symbol_class, symbol_prop, tradu
     ('SimpleMarker', 'outline_color', 'couleur de trait (RVB)', NULL, false),
     ('SimpleMarker', 'outline_style', 'style de trait', NULL, true),
     ('SimpleMarker', 'outline_width', 'largeur de trait', NULL, false),
-    ('SimpleMarker', 'size', 'taille', NULL, false) ;
+    ('SimpleMarker', 'size', 'taille', NULL, false),
+    ('SimpleMarker', 'vertical_anchor_point', 'point d''ancrage', NULL, true),
+    ('SvgMarker', 'angle', 'rotation', '°', false),
+    ('SvgMarker', 'color', 'couleur', NULL, false),
+    ('SvgMarker', 'name', 'fichier', NULL, false),
+    ('SvgMarker', 'size', 'taille', NULL, false) ; 
 
 
 -- TABLE: s_cnig_docurba.qml_traduction_value
@@ -226,6 +234,7 @@ DELETE FROM s_cnig_docurba.qml_traduction_value ;
 INSERT INTO s_cnig_docurba.qml_traduction_value (symbol_class, symbol_prop, symbol_value, traduction) VALUES
     ('CentroidFill', 'point_on_all_parts', '0', 'non'),
     ('CentroidFill', 'point_on_all_parts', '1', 'oui'),
+    ('CentroidFill', 'point_on_surface', '1', 'oui'),
     ('FontMarker', 'joinstyle', 'miter', 'angle droit'),
     ('FontMarker', 'joinstyle', 'round', 'rond'),
     ('FontMarker', 'vertical_anchor_point', '2', 'en dessous'),
@@ -239,8 +248,11 @@ INSERT INTO s_cnig_docurba.qml_traduction_value (symbol_class, symbol_prop, symb
     ('SimpleLine', 'line_style', 'dash', 'ligne en tiret'),
     ('SimpleLine', 'line_style', 'dash dot', 'ligne tiret-point'),
     ('SimpleLine', 'line_style', 'dash dot dot', 'ligne tiret-point-point'),
+    ('SimpleLine', 'line_style', 'dot', 'ligne en pointillé'),
     ('SimpleLine', 'line_style', 'solid', 'ligne continue'),
     ('SimpleMarker', 'joinstyle', 'miter', 'angle droit'),
     ('SimpleMarker', 'joinstyle', 'round', 'rond'),
-    ('SimpleMarker', 'outline_style', 'solid', 'ligne continue') ;
+    ('SimpleMarker', 'outline_style', 'solid', 'ligne continue'),
+    ('SimpleMarker', 'vertical_anchor_point', '2', 'en dessous') ; 
+    
 

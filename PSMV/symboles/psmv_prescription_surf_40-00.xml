@@ -1,0 +1,89 @@
+<!DOCTYPE qgis_style>
+<qgis_style version="2">
+  <symbols>
+    <symbol alpha="1" clip_to_extent="1" name="PSMV prescription 40-00 (surfacique)" type="fill" force_rhr="0" tags="CNIG, Urbanisme">
+      <layer pass="1" class="PointPatternFill" enabled="1" locked="0">
+        <prop k="displacement_x" v="0" />
+        <prop k="displacement_x_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="displacement_x_unit" v="Point" />
+        <prop k="displacement_y" v="0" />
+        <prop k="displacement_y_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="displacement_y_unit" v="Point" />
+        <prop k="distance_x" v="27" />
+        <prop k="distance_x_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="distance_x_unit" v="Point" />
+        <prop k="distance_y" v="31" />
+        <prop k="distance_y_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="distance_y_unit" v="Point" />
+        <prop k="offset_x" v="0" />
+        <prop k="offset_x_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="offset_x_unit" v="Point" />
+        <prop k="offset_y" v="0" />
+        <prop k="offset_y_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="offset_y_unit" v="Point" />
+        <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="outline_width_unit" v="Point" />
+        <data_defined_properties>
+          <Option type="Map">
+            <Option value="" name="name" type="QString" />
+            <Option name="properties" />
+            <Option value="collection" name="type" type="QString" />
+          </Option>
+        </data_defined_properties>
+        <symbol alpha="1" clip_to_extent="1" name="@57@0" type="marker" force_rhr="0">
+          <layer pass="0" class="FontMarker" enabled="1" locked="0">
+            <prop k="angle" v="0" />
+            <prop k="chr" v="" />
+            <prop k="color" v="138,77,211,255" />
+            <prop k="font" v="Wingdings 3" />
+            <prop k="horizontal_anchor_point" v="1" />
+            <prop k="joinstyle" v="bevel" />
+            <prop k="offset" v="0,0" />
+            <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0" />
+            <prop k="offset_unit" v="Point" />
+            <prop k="outline_color" v="35,35,35,255" />
+            <prop k="outline_width" v="0" />
+            <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0" />
+            <prop k="outline_width_unit" v="Point" />
+            <prop k="size" v="15" />
+            <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0" />
+            <prop k="size_unit" v="Point" />
+            <prop k="vertical_anchor_point" v="1" />
+            <data_defined_properties>
+              <Option type="Map">
+                <Option value="" name="name" type="QString" />
+                <Option name="properties" />
+                <Option value="collection" name="type" type="QString" />
+              </Option>
+            </data_defined_properties>
+          </layer>
+        </symbol>
+      </layer>
+      <layer pass="1" class="SimpleLine" enabled="1" locked="0">
+        <prop k="capstyle" v="square" />
+        <prop k="customdash" v="5;2" />
+        <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="customdash_unit" v="Point" />
+        <prop k="draw_inside_polygon" v="0" />
+        <prop k="joinstyle" v="bevel" />
+        <prop k="line_color" v="138,77,211,255" />
+        <prop k="line_style" v="solid" />
+        <prop k="line_width" v="0.8" />
+        <prop k="line_width_unit" v="Point" />
+        <prop k="offset" v="0" />
+        <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="offset_unit" v="Point" />
+        <prop k="ring_filter" v="0" />
+        <prop k="use_custom_dash" v="0" />
+        <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <data_defined_properties>
+          <Option type="Map">
+            <Option value="" name="name" type="QString" />
+            <Option name="properties" />
+            <Option value="collection" name="type" type="QString" />
+          </Option>
+        </data_defined_properties>
+      </layer>
+    </symbol>
+  </symbols>
+</qgis_style>

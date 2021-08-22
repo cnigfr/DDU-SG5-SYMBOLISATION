@@ -15,7 +15,6 @@
 -- schéma cible : s_cnig_docurba
 --
 -- liste des objets créés ou remplacés :
--- FUNCTION: s_cnig_docurba.qml_data_defined(xml, text)
 -- FUNCTION: s_cnig_docurba.qml_exploration(text, xml, text, text, int)
 -- FUNCTION: s_cnig_docurba.qml_execute_exploration(text, xml, text)
 -- FUNCTION: s_cnig_docurba.qml_regles(text, xml, text, int, int, text)
@@ -24,87 +23,12 @@
 -- FUNCTION: s_cnig_docurba.qml_plu_prescription_maj_symb_qgis(boolean)
 -- FUNCTION: s_cnig_docurba.qml_plu_information_maj_symb_qgis(boolean)
 -- FUNCTION: s_cnig_docurba.qml_plu_zone_urba_maj_symb_qgis(boolean)
+-- FUNCTION: s_cnig_docurba.qml_psmv_prescription_maj_symb_qgis(boolean)
+-- FUNCTION: s_cnig_docurba.qml_psmv_information_maj_symb_qgis(boolean)
+-- FUNCTION: s_cnig_docurba.qml_psmv_zone_urba_maj_symb_qgis(boolean)
 -- FUNCTION: s_cnig_docurba.qml_maj_traduction()
 --
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-
--- FUNCTION: s_cnig_docurba.qml_data_defined(xml, text)
-
-CREATE OR REPLACE FUNCTION s_cnig_docurba.qml_data_defined(
-            extrait_qml xml,
-            parametre text
-            )
-    RETURNS text
-    LANGUAGE plpgsql
-    AS $_$
-/*
-OBJET : Récupère l''expression qui, le cas échéant, définit la valeur
-du paramètre donné en argument.
-
-Pour appel par la fonction qml_exploration.
-
-ARGUMENTS :
-- extrait_qml est un extrait de XML correspondant à un "layer" ;
-- parametre est une chaîne de caractères correspondant au nom du
-paramètre potentiellement défini par une expression dans extrait_qml.
-
-SORTIE : l'expression en question.
-*/
-DECLARE
-    racine text := '//dir/data_defined_properties/Option/Option' ;
-    valeur text ;
-BEGIN
-
-    WITH a1 AS (
-        SELECT xmltable.*
-            FROM XMLTABLE(
-                racine
-                PASSING (extrait_qml)
-                COLUMNS
-                    o_type text PATH '@type',
-                    o_name text PATH '@name',
-                    o_value text PATH '@value',
-                    o_xml xml PATH 'Option'
-                    )
-            WHERE o_type = 'Map' AND o_name = 'properties'
-        ),
-    a2 AS (
-        SELECT xmltable.*
-            FROM a1, XMLTABLE(
-                '//Option'
-                PASSING (a1.o_xml)
-                COLUMNS
-                    o_type text PATH '@type',
-                    o_name text PATH '@name',
-                    o_value text PATH '@value',
-                    o_xml xml PATH 'Option'
-                    )
-            WHERE xmltable.o_type = 'Map' AND xmltable.o_name = parametre
-        ),
-    a3 AS (
-        SELECT xmltable.*
-            FROM a2, XMLTABLE(
-                '//dir/Option'
-                PASSING (xmlelement(name dir, a2.o_xml))
-                COLUMNS
-                    o_type text PATH '@type',
-                    o_name text PATH '@name',
-                    o_value text PATH '@value'
-                    )
-        )
-    SELECT
-        trim(both '''' from string_agg(o_value, ', ') FILTER (WHERE o_name = 'expression'))
-        INTO valeur
-        FROM a3
-        HAVING bool_or(o_type='bool' AND o_name='active' AND o_value='true') ;
-
-    RETURN valeur ;
-END
-$_$ ;
-
-COMMENT ON FUNCTION s_cnig_docurba.qml_data_defined(xml, text) IS '[Rétro-traduction des QML] Récupère l''expression qui, le cas échéant, définit la valeur du paramètre donné en argument.' ;
-
 
 
 -- FUNCTION: s_cnig_docurba.qml_exploration(text, xml, text, text, int)
@@ -142,7 +66,7 @@ DECLARE
     layer record ;
     symbol record ;
     racine_0 text := '//' || racine || 'symbol' ;
-    expr text ;
+    expr record ;
 BEGIN
     
     FOR symbol IN (
@@ -194,20 +118,71 @@ BEGIN
                             )                    
                 ) ;
                 
-            -- tirets personnalisés définis par une expression
-            SELECT s_cnig_docurba.qml_data_defined(xmlelement(name dir, layer.data_defined_properties), 'customDash')
-                INTO expr ;
+            -- valeur définie par les données (champ ou expression)
+            FOR expr IN (
+                WITH a1 AS (
+                    SELECT
+                        xmltable.*
+                        FROM XMLTABLE(
+                            '//dir/data_defined_properties/Option/Option'
+                            PASSING (xmlelement(name dir, layer.data_defined_properties))
+                            COLUMNS
+                                o_type text PATH '@type',
+                                o_name text PATH '@name',
+                                o_value text PATH '@value',
+                                o_xml xml PATH 'Option'
+                                )
+                        WHERE o_type = 'Map' AND o_name = 'properties'
+                    ),
+                a2 AS (
+                    SELECT xmltable.*
+                        FROM a1, XMLTABLE(
+                            '//Option'
+                            PASSING (a1.o_xml)
+                            COLUMNS
+                                o_type text PATH '@type',
+                                o_name text PATH '@name',
+                                o_value text PATH '@value',
+                                o_xml xml PATH 'Option'
+                                )
+                        WHERE xmltable.o_type = 'Map'
+                ),
+                a3 AS (
+                    SELECT
+                        -- les noms de paramètres ne sont pas toujours écrits de la même
+                        -- façon ici que dans la liste des propriétés, étonnamment. Pour
+                        -- l'heure, gestion a minima à coup de regexp_replace et lower,
+                        -- mais il faudrait peut-être envisager une table de correspondance
+                        regexp_replace(lower(a2.o_name), '^char$', 'chr') AS parametre,
+                        xmltable.*
+                        FROM a2, XMLTABLE(
+                            '//dir/Option'
+                            PASSING (xmlelement(name dir, a2.o_xml))
+                            COLUMNS
+                                o_type text PATH '@type',
+                                o_name text PATH '@name',
+                                o_value text PATH '@value'
+                                )
+                    )
+                SELECT
+                    parametre,
+                    format('[%s]', trim(both '''' from string_agg(o_value, ', ') FILTER (WHERE o_name IN ('expression', 'field')))) AS valeur
+                    FROM a3
+                    GROUP BY parametre
+                    HAVING bool_or(o_type='bool' AND o_name='active' AND o_value='true')
+                )
+            LOOP
                 
-            IF expr IS NOT NULL
-            THEN
-            UPDATE s_cnig_docurba.qml_detail
-                SET symbol_value = expr
-                WHERE qml_detail.ref_table = $1
-                    AND qml_detail.regle_id = symbol.regle_id
-                    AND qml_detail.symbol_id = layer.symbol_id
-                    AND qml_detail.symbol_class = layer.symbol_class
-                    AND qml_detail.symbol_prop = 'customdash' ;
-            END IF ;
+                UPDATE s_cnig_docurba.qml_detail
+                    SET symbol_value = expr.valeur
+                    WHERE qml_detail.ref_table = $1
+                        AND qml_detail.regle_id = symbol.regle_id
+                        AND qml_detail.symbol_id = layer.symbol_id
+                        AND qml_detail.symbol_class = layer.symbol_class
+                        AND qml_detail.symbol_prop = expr.parametre ;
+                        
+            END LOOP ;
+
                 
             IF layer.symbol IS NOT NULL
             THEN
@@ -561,6 +536,24 @@ BEGIN
                     AND NOT (symbol_prop = 'outline_style' AND symbol_class = 'SimpleFill') ;      
         END IF ;
         
+        -- suppression des SVG encapsulés (remplacés par une balise,
+        -- qui servira à insérer un lien vers le symbole)
+        IF prop.symbol_class = 'SvgMarker' AND prop.symbol_prop = 'name' AND prop.symbol_value ~ '^base64'
+        THEN
+            UPDATE s_cnig_docurba.qml_detail
+                SET symbol_value = '[%svg_link%]'
+                WHERE id = prop.id ;        
+        END IF ; 
+        
+        -- suppression de la propriété color pour les marqueurs
+        -- SVG, considérant qu'à ce stade elle n'est pas modifiable
+        -- pour les symboles utilisés
+        IF prop.symbol_class = 'SvgMarker' AND prop.symbol_prop = 'color'
+        THEN
+            DELETE FROM s_cnig_docurba.qml_detail
+                WHERE id = prop.id ;      
+        END IF ;
+        
     END LOOP ;
     
     FOR prop IN (SELECT * FROM s_cnig_docurba.qml_detail WHERE ref_table = ANY (liste_styles))
@@ -649,6 +642,9 @@ END
 $_$ ;
 
 COMMENT ON FUNCTION s_cnig_docurba.qml_jolie_transcription(text, int) IS '[Rétro-traduction des QML] Exploite qml_detail et les tables de traduction (qml_traduction_class, qml_traduction_prop et qml_traduction_value) pour générer un joli descriptif pour le symbole associé à la table et la règle données en arguments.' ;
+
+
+-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 -- FUNCTION: s_cnig_docurba.qml_plu_prescription_maj_symb_qgis(boolean)
@@ -822,8 +818,8 @@ CREATE OR REPLACE FUNCTION s_cnig_docurba.qml_plu_zone_urba_maj_symb_qgis(regene
     AS $_$
 /*
 OBJET : Met à jour les descriptifs des symboles de la table plu_zone_urba
-à partir des QML stockés dans layer_styles pour les styles nommés
-plu_zone_urba_surf, plu_zone_urba_lin et plu_zone_urba_pct.
+à partir du QML stocké dans layer_styles pour le style nommé
+plu_zone_urba.
 
 Appelle les fonctions qml_retro_traduction_qml et qml_jolie_transcription
 pour mettre à jour plu_zone_urba.
@@ -871,8 +867,246 @@ BEGIN
 END
 $_$ ;
 
-COMMENT ON FUNCTION s_cnig_docurba.qml_plu_zone_urba_maj_symb_qgis(boolean) IS '[Rétro-traduction des QML] Met à jour les descriptifs des symboles QGIS la table plu_zone_urba à partir des QML stockés dans layer_styles pour les styles nommés plu_zone_urba_surf, plu_zone_urba_lin et plu_zone_urba_pct.' ;
+COMMENT ON FUNCTION s_cnig_docurba.qml_plu_zone_urba_maj_symb_qgis(boolean) IS '[Rétro-traduction des QML] Met à jour les descriptifs des symboles QGIS la table plu_zone_urba à partir du QML stocké dans layer_styles pour le style nommé plu_zone_urba.' ;
 
+
+-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+-- FUNCTION: s_cnig_docurba.qml_psmv_prescription_maj_symb_qgis(boolean)
+
+CREATE OR REPLACE FUNCTION s_cnig_docurba.qml_psmv_prescription_maj_symb_qgis(regenere boolean DEFAULT True)
+    RETURNS text
+    LANGUAGE plpgsql
+    AS $_$
+/*
+OBJET : Met à jour les descriptifs des symboles de la table psmv_prescription
+à partir des QML stockés dans layer_styles pour les styles nommés
+psmv_prescription_surf, psmv_prescription_lin et psmv_prescription_pct.
+
+Appelle les fonctions qml_retro_traduction_qml et qml_jolie_transcription
+pour mettre à jour psmv_prescription.
+
+ARGUMENTS : [optionnel] regenere est un booléen, qui indique si qml_detail
+doit être régénérée avant mise à jour de psmv_prescription ou utilisée telle quelle.
+Valeur par défaut True.
+
+SORTIE : 'FIN'.
+*/
+DECLARE
+    regle_id_surf int ;
+    regle_id_lin int ;
+    regle_id_pct int ;
+    r record ;
+BEGIN
+
+    IF regenere
+    THEN
+        PERFORM s_cnig_docurba.qml_retro_traduction_qml('^psmv_prescription_(surf|lin|pct)$') ;
+    END IF ;
+    
+    FOR r IN (SELECT * FROM s_cnig_docurba.psmv_prescription)
+    LOOP
+        IF r.stype_ref IS NOT NULL
+        THEN
+        
+            UPDATE s_cnig_docurba.psmv_prescription
+                SET symb_surf = NULL,
+                    symb_lin = NULL,
+                    symb_pct = NULL
+                WHERE psmv_prescription.typepsc = r.typepsc
+                    AND psmv_prescription.stypepsc = r.stypepsc ;
+                    
+        ELSE
+        
+            SELECT regle_id INTO regle_id_surf
+                FROM s_cnig_docurba.qml_detail
+                WHERE ref_table = 'psmv_prescription_surf'
+                    AND r.typepsc = substring(lower(regle), 'typepsc[^0-9]+([0-9]{2})')
+                    AND (NOT lower(regle) ~ 'stypepsc' OR r.stypepsc = substring(lower(regle), 'stypepsc[^0-9]+([0-9]{2})')) ;
+                    
+            SELECT regle_id INTO regle_id_lin
+                FROM s_cnig_docurba.qml_detail
+                WHERE ref_table = 'psmv_prescription_lin'
+                    AND r.typepsc = substring(lower(regle), 'typepsc[^0-9]+([0-9]{2})')
+                    AND (NOT lower(regle) ~ 'stypepsc' OR r.stypepsc = substring(lower(regle), 'stypepsc[^0-9]+([0-9]{2})')) ;
+                    
+            SELECT regle_id INTO regle_id_pct
+                FROM s_cnig_docurba.qml_detail
+                WHERE ref_table = 'psmv_prescription_pct'
+                    AND r.typepsc = substring(lower(regle), 'typepsc[^0-9]+([0-9]{2})')
+                    AND (NOT lower(regle) ~ 'stypepsc' OR r.stypepsc = substring(lower(regle), 'stypepsc[^0-9]+([0-9]{2})')) ;
+             
+            -- avec prise en charge des SVG, il faudrait ajouter un champ
+            -- svg_link aux autres tables et utiliser replace comme ci-après
+            -- pour obtenir un résultat équivalent
+            UPDATE s_cnig_docurba.psmv_prescription
+                SET symb_surf = replace(
+                            s_cnig_docurba.qml_jolie_transcription('psmv_prescription_surf', regle_id_surf),
+                            '[%svg_link%]',
+                            coalesce(format('[%s](%s)', substring(svg_link, '[/]([^/]+)$'), svg_link), '')
+                            ),
+                    symb_lin = replace(
+                            s_cnig_docurba.qml_jolie_transcription('psmv_prescription_lin', regle_id_lin),
+                            '[%svg_link%]',
+                            coalesce(format('[%s](%s)', substring(svg_link, '[/]([^/]+)$'), svg_link), '')
+                            ),
+                    symb_pct = replace(
+                            s_cnig_docurba.qml_jolie_transcription('psmv_prescription_pct', regle_id_pct),
+                            '[%svg_link%]',
+                            coalesce(format('[%s](%s)', substring(svg_link, '[/]([^/]+)$'), svg_link), '')
+                            )
+                WHERE psmv_prescription.typepsc = r.typepsc
+                    AND psmv_prescription.stypepsc = r.stypepsc ;
+        
+        END IF ;
+    END LOOP ;
+
+    RETURN 'FIN' ;
+END
+$_$ ;
+
+COMMENT ON FUNCTION s_cnig_docurba.qml_psmv_prescription_maj_symb_qgis(boolean) IS '[Rétro-traduction des QML] Met à jour les descriptifs des symboles QGIS la table psmv_prescription à partir des QML stockés dans layer_styles pour les styles nommés psmv_prescription_surf, psmv_prescription_lin et psmv_prescription_pct.' ;
+
+
+-- FUNCTION: s_cnig_docurba.qml_psmv_information_maj_symb_qgis(boolean)
+
+CREATE OR REPLACE FUNCTION s_cnig_docurba.qml_psmv_information_maj_symb_qgis(regenere boolean DEFAULT True)
+    RETURNS text
+    LANGUAGE plpgsql
+    AS $_$
+/*
+OBJET : Met à jour les descriptifs des symboles de la table psmv_information
+à partir des QML stockés dans layer_styles pour les styles nommés
+psmv_information_surf, psmv_information_lin et psmv_information_pct.
+
+Appelle les fonctions qml_retro_traduction_qml et qml_jolie_transcription
+pour mettre à jour psmv_information.
+
+ARGUMENTS : [optionnel] regenere est un booléen, qui indique si qml_detail
+doit être régénérée avant mise à jour de psmv_information ou utilisée telle quelle.
+Valeur par défaut True.
+
+SORTIE : 'FIN'.
+*/
+DECLARE
+    regle_id_surf int ;
+    regle_id_lin int ;
+    regle_id_pct int ;
+    r record ;
+BEGIN
+
+    IF regenere
+    THEN
+        PERFORM s_cnig_docurba.qml_retro_traduction_qml('^psmv_information_(surf|lin|pct)$') ;
+    END IF ;
+    
+    FOR r IN (SELECT * FROM s_cnig_docurba.psmv_information)
+    LOOP
+        IF r.stype_ref IS NOT NULL
+        THEN
+        
+            UPDATE s_cnig_docurba.psmv_information
+                SET symb_surf = NULL,
+                    symb_lin = NULL,
+                    symb_pct = NULL
+                WHERE psmv_information.typeinf = r.typeinf
+                    AND psmv_information.stypeinf = r.stypeinf ;
+                    
+        ELSE
+        
+            SELECT regle_id INTO regle_id_surf
+                FROM s_cnig_docurba.qml_detail
+                WHERE ref_table = 'psmv_information_surf'
+                    AND r.typeinf = substring(lower(regle), 'typeinf[^0-9]+([0-9]{2})')
+                    AND (NOT lower(regle) ~ 'stypeinf' OR r.stypeinf = substring(lower(regle), 'stypeinf[^0-9]+([0-9]{2})')) ;
+                    
+            SELECT regle_id INTO regle_id_lin
+                FROM s_cnig_docurba.qml_detail
+                WHERE ref_table = 'psmv_information_lin'
+                    AND r.typeinf = substring(lower(regle), 'typeinf[^0-9]+([0-9]{2})')
+                    AND (NOT lower(regle) ~ 'stypeinf' OR r.stypeinf = substring(lower(regle), 'stypeinf[^0-9]+([0-9]{2})')) ;
+                    
+            SELECT regle_id INTO regle_id_pct
+                FROM s_cnig_docurba.qml_detail
+                WHERE ref_table = 'psmv_information_pct'
+                    AND r.typeinf = substring(lower(regle), 'typeinf[^0-9]+([0-9]{2})')
+                    AND (NOT lower(regle) ~ 'stypeinf' OR r.stypeinf = substring(lower(regle), 'stypeinf[^0-9]+([0-9]{2})')) ;
+            
+            UPDATE s_cnig_docurba.psmv_information
+                SET symb_surf = replace(
+                            s_cnig_docurba.qml_jolie_transcription('psmv_information_surf', regle_id_surf),
+                            '[%svg_link%]',
+                            coalesce(format('[%s](%s)', substring(svg_link, '[/]([^/]+)$'), svg_link), '')
+                            ),
+                    symb_lin = replace(
+                            s_cnig_docurba.qml_jolie_transcription('psmv_information_lin', regle_id_lin),
+                            '[%svg_link%]',
+                            coalesce(format('[%s](%s)', substring(svg_link, '[/]([^/]+)$'), svg_link), '')
+                            ),
+                    symb_pct = replace(
+                            s_cnig_docurba.qml_jolie_transcription('psmv_information_pct', regle_id_pct),
+                            '[%svg_link%]',
+                            coalesce(format('[%s](%s)', substring(svg_link, '[/]([^/]+)$'), svg_link), '')
+                            )
+                WHERE psmv_information.typeinf = r.typeinf
+                    AND psmv_information.stypeinf = r.stypeinf ;
+        
+        END IF ;
+    END LOOP ;
+
+    RETURN 'FIN' ;
+END
+$_$ ;
+
+COMMENT ON FUNCTION s_cnig_docurba.qml_psmv_information_maj_symb_qgis(boolean) IS '[Rétro-traduction des QML] Met à jour les descriptifs des symboles QGIS la table psmv_information à partir des QML stockés dans layer_styles pour les styles nommés psmv_information_surf, psmv_information_lin et psmv_information_pct.' ;
+
+
+
+-- FUNCTION: s_cnig_docurba.qml_psmv_zone_urba_maj_symb_qgis(boolean)
+
+CREATE OR REPLACE FUNCTION s_cnig_docurba.qml_psmv_zone_urba_maj_symb_qgis(regenere boolean DEFAULT True)
+    RETURNS text
+    LANGUAGE plpgsql
+    AS $_$
+/*
+OBJET : Met à jour les descriptifs des symboles de la table psmv_zone_urba
+à partir du QML stocké dans layer_styles pour le style nommé
+psmv_zone_urba.
+
+Appelle les fonctions qml_retro_traduction_qml et qml_jolie_transcription
+pour mettre à jour psmv_zone_urba.
+
+ARGUMENTS : [optionnel] regenere est un booléen, qui indique si qml_detail
+doit être régénérée avant mise à jour de psmv_zone_urba ou utilisée telle quelle.
+Valeur par défaut True.
+
+SORTIE : 'FIN'.
+*/
+DECLARE
+    regle_id int ;
+BEGIN
+
+    IF regenere
+    THEN
+        PERFORM s_cnig_docurba.qml_retro_traduction_qml('^psmv_zone_urba$') ;
+    END IF ;
+        
+    SELECT qml_detail.regle_id INTO regle_id
+        FROM s_cnig_docurba.qml_detail
+        WHERE ref_table = 'psmv_zone_urba' ;
+                
+    UPDATE s_cnig_docurba.psmv_zone_urba
+        SET symb_surf = s_cnig_docurba.qml_jolie_transcription('psmv_zone_urba', regle_id) ;
+    
+    RETURN 'FIN' ;
+END
+$_$ ;
+
+COMMENT ON FUNCTION s_cnig_docurba.qml_psmv_zone_urba_maj_symb_qgis(boolean) IS '[Rétro-traduction des QML] Met à jour les descriptifs des symboles QGIS la table psmv_zone_urba à partir du QML stocké dans layer_styles pour le style nommé psmv_zone_urba.' ;
+
+
+-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 -- FUNCTION: s_cnig_docurba.qml_maj_traduction()

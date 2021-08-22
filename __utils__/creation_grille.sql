@@ -334,6 +334,9 @@ $_$ ;
 COMMENT ON FUNCTION s_cnig_docurba.visual_plu_information_creation_grille(int) IS '[Visualisation QGIS] Création des carreaux et géométries types utilisées par le projet QGIS de visualisation pour les informations du standard PLU.' ;
 
 
+-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
 -- FUNCTION: s_cnig_docurba.visual_psmv_zone_urba_creation_grille(int)
 
 CREATE OR REPLACE FUNCTION s_cnig_docurba.visual_psmv_zone_urba_creation_grille(
@@ -348,6 +351,8 @@ projet QGIS de visualisation pour les zonages du standard PSMV.
 
 Concrètement, la fonction régénère les champs de géométrie et de mise en forme
 de la table psmv_zone_urba (carreau, geom et blanc).
+
+À noter qu'à ce stade la fonction boucle assez trivialement sur une unique ligne.
 
 ARGUMENT :
 largeur est un entier correspondant à la largeur de la grille (en nombre de
@@ -365,18 +370,14 @@ DECLARE
     m int := largeur ;    
 BEGIN
     x := x0 ;
-    FOR r IN (SELECT * FROM s_cnig_docurba.psmv_zone_urba ORDER BY typezone)
+    FOR r IN (SELECT * FROM s_cnig_docurba.psmv_zone_urba ORDER BY libelle)
     LOOP
     
         UPDATE s_cnig_docurba.psmv_zone_urba
-           SET carreau = (SELECT ST_SetSRID(ST_MakePolygon(format('LINESTRING(%s %s, %s %s, %s %s, %s %s, %1$s %2$s)',
+            SET carreau = (SELECT ST_SetSRID(ST_MakePolygon(format('LINESTRING(%s %s, %s %s, %s %s, %s %s, %1$s %2$s)',
                                                                   x - 10, y - 10, x - 10, y + 80, x + 80, y + 80, x + 80, y - 10)), 2154)),
-               blanc = NOT (k % 2 = l),
-               libelle = typezone
-           WHERE typezone = r.typezone ;
-           
-        UPDATE s_cnig_docurba.psmv_zone_urba
-            SET geom = (SELECT ST_SetSRID(ST_MakePolygon(
+                blanc = NOT (k % 2 = l),
+                geom = (SELECT ST_SetSRID(ST_MakePolygon(
                 format('LINESTRING(%s %s, %s %s, %s %s, %s %s, %1$s %2$s)',
                        x, y,
                        x, y + 40,
@@ -384,7 +385,7 @@ BEGIN
                        x + 70, y
                       )
                 ), 2154))
-            WHERE typezone = r.typezone ;
+            WHERE etiquette = r.etiquette ;
         
         x := x0 + 90 * (k % m)::numeric ;
         y := y - 90 * (k % m = 0)::int ;

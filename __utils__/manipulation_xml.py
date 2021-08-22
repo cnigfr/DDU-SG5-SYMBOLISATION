@@ -8,6 +8,9 @@ contributeurs : Leslie Lemaire (MTE-MCTRCT-Mer, service du numérique).
 Découpage des QML PLU en fichiers de symboles :
 >>> decoupeur_qml_express()
 
+Découpage des QML PSMV en fichiers de symboles :
+>>> decoupeur_qml_express('PSMV')
+
 """
 
 import re, xml.etree.ElementTree as ET
