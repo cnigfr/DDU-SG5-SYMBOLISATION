@@ -9,10 +9,10 @@ Retrouvez notamment ici :
     - [préconisations](/PSMV/preconisations.md) associées au standard PSMV ;
 - les fichiers de style QML correspondants :
     - [QML](/PLU/QML) pour les données PLU,
-    - [QML](/PSMV/QML) pour les données PSMV.
+    - [QML](/PSMV/QML) pour les données PSMV ;
 - des projets QGIS qui en permettent la visualisation :
     - [projet QGIS](/PLU/projet_qgis_symbolisation_plu.zip) pour les préconisations PLU. L'archive contient le projet QGIS, conçu sous QGIS 3.10 mais compatible avec les versions supérieures, au format QGZ et un GeoPackage _data.gpkg_ avec les données afférentes,
-    - [projet QGIS](/PSMV/projet_qgis_symbolisation_psmv.zip) équivalent pour les préconisations PLU.
+    - [projet QGIS](/PSMV/projet_qgis_symbolisation_psmv.zip) équivalent pour les préconisations PSMV.
 
 
 Plus d'explications dans le guide *[Spécifications de symbolisation des documents d'urbanisme](https://drive.google.com/drive/folders/1YHCxmiWknRLXUREbOYq4CUpvqYGZaw2Z)*.
