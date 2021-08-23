@@ -1,0 +1,27 @@
+<!DOCTYPE qgis_style>
+<qgis_style version="2">
+  <symbols>
+    <symbol name="PLU information 12 (surfacique)" type="fill" force_rhr="0" clip_to_extent="1" alpha="1" tags="CNIG, Urbanisme">
+      <layer pass="2" class="SimpleFill" locked="0" enabled="1">
+        <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale" />
+        <prop v="255,255,255,255" k="color" />
+        <prop v="bevel" k="joinstyle" />
+        <prop v="0,0" k="offset" />
+        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale" />
+        <prop v="Point" k="offset_unit" />
+        <prop v="0,77,168,255" k="outline_color" />
+        <prop v="solid" k="outline_style" />
+        <prop v="2.5" k="outline_width" />
+        <prop v="Point" k="outline_width_unit" />
+        <prop v="no" k="style" />
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value="" />
+            <Option name="properties" />
+            <Option name="type" type="QString" value="collection" />
+          </Option>
+        </data_defined_properties>
+      </layer>
+    </symbol>
+  </symbols>
+</qgis_style>
