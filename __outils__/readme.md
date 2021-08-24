@@ -14,12 +14,12 @@ Sur le serveur PostgreSQL, créer un schéma `s_cnig_docurba`.
 
 Peupler ce schéma (table, données, fonctions) en exécutant les commandes contenues dans les fichiers :
 
-- *[creation_grille_data.sql](/__utils__/creation_grille_data.sql)* ;
-- *[creation_grille.sql](/__utils__/creation_grille.sql)* ;
-- *[retro_traduction_qml_data.sql](/__utils__/retro_traduction_qml_data.sql)* ;
-- *[retro_traduction_qml.sql](/__utils__/retro_traduction_qml.sql)* ;
-- *[outils_generiques.sql](/__utils__/outils_generiques.sql)* ;
-- *[recapitulatif_markdown.sql](/__utils__/recapitulatif_markdown.sql)*.
+- *[creation_grille_data.sql](/__outils__/creation_grille_data.sql)* ;
+- *[creation_grille.sql](/__outils__/creation_grille.sql)* ;
+- *[retro_traduction_qml_data.sql](/__outils__/retro_traduction_qml_data.sql)* ;
+- *[retro_traduction_qml.sql](/__outils__/retro_traduction_qml.sql)* ;
+- *[outils_generiques.sql](/__outils__/outils_generiques.sql)* ;
+- *[recapitulatif_markdown.sql](/__outils__/recapitulatif_markdown.sql)*.
 
 Les données portant sur la symbologie se trouvent dans les tables `plu_zone_urba`, `plu_prescription` et `plu_information` pour le standard PLU (ou les même avec le préfixe `psmv_` au lieu de `plu_` pour le standard PSMV). Tous les autres objets créés sont des utilitaires servant à accélérer les mises à jour.
 
@@ -186,7 +186,7 @@ SELECT * FROM s_cnig_docurba.qml_traduction_value WHERE traduction IS NULL ;
 
 On devra ensuite relancer les commandes qui calculent les descriptifs à partir des QML pour que les nouvelles traductions soient prises en compte.
 
-Si l'une des trois tables `qml_traduction_class`, `qml_traduction_prop` ou `qml_traduction_value` a été modifiée, il faudra reverser la nouvelle version dans *[retro_traduction_qml_data.sql](/__utils__/retro_traduction_qml_data.sql)*.
+Si l'une des trois tables `qml_traduction_class`, `qml_traduction_prop` ou `qml_traduction_value` a été modifiée, il faudra reverser la nouvelle version dans *[retro_traduction_qml_data.sql](/__outils__/retro_traduction_qml_data.sql)*.
 
 Pour `qml_traduction_class`, il s'agira de remplacer la commande `INSERT` par le résultat de la commande ci-après :
 
@@ -223,7 +223,7 @@ SELECT s_cnig_docurba.util_genere_commande_insert(
 
 ## Sauvegarde de la liste des sous-codes et descriptifs mise à jour
 
-Pour faciliter les mises à jour ultérieures, il est important de reverser la liste à jour dans *[creation_grille_data.sql](/__utils__/creation_grille_data.sql)*, et plus précisément de remplacer les commandes `INSERT` de chaque table modifiée par le résultat des commandes suivantes.
+Pour faciliter les mises à jour ultérieures, il est important de reverser la liste à jour dans *[creation_grille_data.sql](/__outils__/creation_grille_data.sql)*, et plus précisément de remplacer les commandes `INSERT` de chaque table modifiée par le résultat des commandes suivantes.
 
 Pour les PLU :
 
@@ -288,7 +288,7 @@ Les données des autres champs ne sont pas conservées, dans la mesure où elles
 
 ## Mise à jour du projet QGIS de visualisation
 
-Pour actualiser le projet QGIS de visualisation et les QML, on pourra exécuter le batch [maj_data_gpkg.bat](/__utils__/maj_data_gpkg.bat) pour les spécifications PLU et [maj_data_gpkg_psmv.bat](/__utils__/maj_data_gpkg_psmv.bat) pour les spécifications PSMV.
+Pour actualiser le projet QGIS de visualisation et les QML, on pourra exécuter le batch [maj_data_gpkg.bat](/__outils__/maj_data_gpkg.bat) pour les spécifications PLU et [maj_data_gpkg_psmv.bat](/__outils__/maj_data_gpkg_psmv.bat) pour les spécifications PSMV.
 
 Le batch :
 - régénère les tables du GeoPackage (*data.gpkg* pour les PLU, *data_psmv.gpkg* pour les PSMV) qui contient les données du projet QGIS de visualisation à partir des tables PostgreSQL `[plu/psmv]_zone_urba`,  `[plu/psmv]_prescription` et `[plu/psmv]_information` ;
@@ -523,7 +523,7 @@ DELETE FROM layer_styles WHERE stylename = 'nom_du_style' ;
 
 ## Génération des symboles unitaires
 
-Le découpage des fichiers QML en symboles unitaires (fichiers XML) peut être réalisé avec la fonction `decoupeur_qml_express()` de [manipulation_xml.py](/__utils__/manipulation_xml.py).
+Le découpage des fichiers QML en symboles unitaires (fichiers XML) peut être réalisé avec la fonction `decoupeur_qml_express()` de [manipulation_xml.py](/__outils__/manipulation_xml.py).
 
 Pour les PLU, on exécutera :
 
