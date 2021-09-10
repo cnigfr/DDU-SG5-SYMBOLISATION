@@ -1,19 +1,19 @@
 <!DOCTYPE qgis_style>
 <qgis_style version="2">
   <symbols>
-    <symbol alpha="1" clip_to_extent="1" name="PSMV information 70 (surfacique)" type="fill" force_rhr="0" tags="CNIG, Urbanisme">
-      <layer pass="0" class="CentroidFill" enabled="1" locked="0">
+    <symbol alpha="1" force_rhr="0" name="PSMV information 70 (surfacique)" type="fill" clip_to_extent="1" tags="CNIG, Urbanisme">
+      <layer enabled="1" locked="0" pass="0" class="CentroidFill">
         <prop k="point_on_all_parts" v="1" />
         <prop k="point_on_surface" v="1" />
         <data_defined_properties>
           <Option type="Map">
-            <Option value="" name="name" type="QString" />
+            <Option name="name" type="QString" value="" />
             <Option name="properties" />
-            <Option value="collection" name="type" type="QString" />
+            <Option name="type" type="QString" value="collection" />
           </Option>
         </data_defined_properties>
-        <symbol alpha="1" clip_to_extent="1" name="@36@0" type="marker" force_rhr="0">
-          <layer pass="0" class="SvgMarker" enabled="1" locked="0">
+        <symbol alpha="1" force_rhr="0" name="@36@0" type="marker" clip_to_extent="1">
+          <layer enabled="1" locked="0" pass="0" class="SvgMarker">
             <prop k="angle" v="0" />
             <prop k="color" v="255,0,0,255" />
             <prop k="fixedAspectRatio" v="0" />
@@ -33,9 +33,9 @@
             <prop k="vertical_anchor_point" v="1" />
             <data_defined_properties>
               <Option type="Map">
-                <Option value="" name="name" type="QString" />
+                <Option name="name" type="QString" value="" />
                 <Option name="properties" />
-                <Option value="collection" name="type" type="QString" />
+                <Option name="type" type="QString" value="collection" />
               </Option>
             </data_defined_properties>
           </layer>

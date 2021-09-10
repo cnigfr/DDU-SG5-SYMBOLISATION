@@ -1,24 +1,24 @@
 <!DOCTYPE qgis_style>
 <qgis_style version="2">
   <symbols>
-    <symbol name="PLU information 23 (surfacique)" type="fill" force_rhr="0" clip_to_extent="1" alpha="1" tags="CNIG, Urbanisme">
-      <layer pass="2" class="SimpleLine" locked="0" enabled="1">
-        <prop v="square" k="capstyle" />
-        <prop v="8;11" k="customdash" />
-        <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale" />
-        <prop v="Point" k="customdash_unit" />
-        <prop v="0" k="draw_inside_polygon" />
-        <prop v="bevel" k="joinstyle" />
-        <prop v="0,38,115,255" k="line_color" />
-        <prop v="solid" k="line_style" />
-        <prop v="1" k="line_width" />
-        <prop v="Point" k="line_width_unit" />
-        <prop v="0" k="offset" />
-        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale" />
-        <prop v="Point" k="offset_unit" />
-        <prop v="0" k="ring_filter" />
-        <prop v="1" k="use_custom_dash" />
-        <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale" />
+    <symbol alpha="1" force_rhr="0" name="PLU information 23 (surfacique)" type="fill" clip_to_extent="1" tags="CNIG, Urbanisme">
+      <layer enabled="1" locked="0" pass="2" class="SimpleLine">
+        <prop k="capstyle" v="square" />
+        <prop k="customdash" v="8;11" />
+        <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="customdash_unit" v="Point" />
+        <prop k="draw_inside_polygon" v="0" />
+        <prop k="joinstyle" v="bevel" />
+        <prop k="line_color" v="0,38,115,255" />
+        <prop k="line_style" v="solid" />
+        <prop k="line_width" v="1" />
+        <prop k="line_width_unit" v="Point" />
+        <prop k="offset" v="0" />
+        <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="offset_unit" v="Point" />
+        <prop k="ring_filter" v="0" />
+        <prop k="use_custom_dash" v="1" />
+        <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0" />
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value="" />
@@ -27,22 +27,22 @@
           </Option>
         </data_defined_properties>
       </layer>
-      <layer pass="2" class="MarkerLine" locked="0" enabled="1">
-        <prop v="4" k="average_angle_length" />
-        <prop v="3x:0,0,0,0,0,0" k="average_angle_map_unit_scale" />
-        <prop v="Point" k="average_angle_unit" />
-        <prop v="19" k="interval" />
-        <prop v="3x:0,0,0,0,0,0" k="interval_map_unit_scale" />
-        <prop v="Point" k="interval_unit" />
-        <prop v="0" k="offset" />
-        <prop v="4" k="offset_along_line" />
-        <prop v="3x:0,0,0,0,0,0" k="offset_along_line_map_unit_scale" />
-        <prop v="Point" k="offset_along_line_unit" />
-        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale" />
-        <prop v="Point" k="offset_unit" />
-        <prop v="interval" k="placement" />
-        <prop v="0" k="ring_filter" />
-        <prop v="1" k="rotate" />
+      <layer enabled="1" locked="0" pass="2" class="MarkerLine">
+        <prop k="average_angle_length" v="4" />
+        <prop k="average_angle_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="average_angle_unit" v="Point" />
+        <prop k="interval" v="19" />
+        <prop k="interval_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="interval_unit" v="Point" />
+        <prop k="offset" v="0" />
+        <prop k="offset_along_line" v="4" />
+        <prop k="offset_along_line_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="offset_along_line_unit" v="Point" />
+        <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="offset_unit" v="Point" />
+        <prop k="placement" v="interval" />
+        <prop k="ring_filter" v="0" />
+        <prop k="rotate" v="1" />
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value="" />
@@ -50,26 +50,26 @@
             <Option name="type" type="QString" value="collection" />
           </Option>
         </data_defined_properties>
-        <symbol name="@19@1" type="marker" force_rhr="0" clip_to_extent="1" alpha="1">
-          <layer pass="0" class="SimpleMarker" locked="0" enabled="1">
-            <prop v="0" k="angle" />
-            <prop v="0,38,115,255" k="color" />
-            <prop v="1" k="horizontal_anchor_point" />
-            <prop v="bevel" k="joinstyle" />
-            <prop v="circle" k="name" />
-            <prop v="0,0" k="offset" />
-            <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale" />
-            <prop v="Point" k="offset_unit" />
-            <prop v="35,35,35,255" k="outline_color" />
-            <prop v="no" k="outline_style" />
-            <prop v="0" k="outline_width" />
-            <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale" />
-            <prop v="Point" k="outline_width_unit" />
-            <prop v="diameter" k="scale_method" />
-            <prop v="4" k="size" />
-            <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale" />
-            <prop v="Point" k="size_unit" />
-            <prop v="1" k="vertical_anchor_point" />
+        <symbol alpha="1" force_rhr="0" name="@19@1" type="marker" clip_to_extent="1">
+          <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+            <prop k="angle" v="0" />
+            <prop k="color" v="0,38,115,255" />
+            <prop k="horizontal_anchor_point" v="1" />
+            <prop k="joinstyle" v="bevel" />
+            <prop k="name" v="circle" />
+            <prop k="offset" v="0,0" />
+            <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0" />
+            <prop k="offset_unit" v="Point" />
+            <prop k="outline_color" v="35,35,35,255" />
+            <prop k="outline_style" v="no" />
+            <prop k="outline_width" v="0" />
+            <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0" />
+            <prop k="outline_width_unit" v="Point" />
+            <prop k="scale_method" v="diameter" />
+            <prop k="size" v="4" />
+            <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0" />
+            <prop k="size_unit" v="Point" />
+            <prop k="vertical_anchor_point" v="1" />
             <data_defined_properties>
               <Option type="Map">
                 <Option name="name" type="QString" value="" />

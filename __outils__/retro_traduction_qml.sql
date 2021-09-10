@@ -953,17 +953,17 @@ BEGIN
                 SET symb_surf = replace(
                             s_cnig_docurba.qml_jolie_transcription('psmv_prescription_surf', regle_id_surf),
                             '[%svg_link%]',
-                            coalesce(format('[%s](%s)', substring(svg_link, '[/]([^/]+)$'), svg_link), '')
+                            coalesce(svg_link, '')
                             ),
                     symb_lin = replace(
                             s_cnig_docurba.qml_jolie_transcription('psmv_prescription_lin', regle_id_lin),
                             '[%svg_link%]',
-                            coalesce(format('[%s](%s)', substring(svg_link, '[/]([^/]+)$'), svg_link), '')
+                            coalesce(svg_link, '')
                             ),
                     symb_pct = replace(
                             s_cnig_docurba.qml_jolie_transcription('psmv_prescription_pct', regle_id_pct),
                             '[%svg_link%]',
-                            coalesce(format('[%s](%s)', substring(svg_link, '[/]([^/]+)$'), svg_link), '')
+                            coalesce(svg_link, '')
                             )
                 WHERE psmv_prescription.typepsc = r.typepsc
                     AND psmv_prescription.stypepsc = r.stypepsc ;
@@ -1046,17 +1046,17 @@ BEGIN
                 SET symb_surf = replace(
                             s_cnig_docurba.qml_jolie_transcription('psmv_information_surf', regle_id_surf),
                             '[%svg_link%]',
-                            coalesce(format('[%s](%s)', substring(svg_link, '[/]([^/]+)$'), svg_link), '')
+                            coalesce(svg_link, '')
                             ),
                     symb_lin = replace(
                             s_cnig_docurba.qml_jolie_transcription('psmv_information_lin', regle_id_lin),
                             '[%svg_link%]',
-                            coalesce(format('[%s](%s)', substring(svg_link, '[/]([^/]+)$'), svg_link), '')
+                            coalesce(svg_link, '')
                             ),
                     symb_pct = replace(
                             s_cnig_docurba.qml_jolie_transcription('psmv_information_pct', regle_id_pct),
                             '[%svg_link%]',
-                            coalesce(format('[%s](%s)', substring(svg_link, '[/]([^/]+)$'), svg_link), '')
+                            coalesce(svg_link, '')
                             )
                 WHERE psmv_information.typeinf = r.typeinf
                     AND psmv_information.stypeinf = r.stypeinf ;
