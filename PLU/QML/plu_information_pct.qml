@@ -1,128 +1,128 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis minScale="1e+08" simplifyAlgorithm="0" readOnly="0" labelsEnabled="0" simplifyLocal="1" maxScale="0" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1" version="3.10.3-A Coruña" styleCategories="AllStyleCategories" simplifyDrawingHints="0" simplifyDrawingTol="1">
+<qgis minScale="1e+08" maxScale="0" readOnly="0" simplifyMaxScale="1" version="3.10.3-A Coruña" simplifyDrawingTol="1" styleCategories="AllStyleCategories" simplifyDrawingHints="0" simplifyAlgorithm="0" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" labelsEnabled="0">
  <flags>
   <Identifiable>1</Identifiable>
   <Removable>1</Removable>
   <Searchable>1</Searchable>
  </flags>
- <renderer-v2 enableorderby="0" forceraster="0" symbollevels="0" type="RuleRenderer">
+ <renderer-v2 forceraster="0" type="RuleRenderer" enableorderby="0" symbollevels="0">
   <rules key="{af923991-cd38-44a1-ba09-c9f9ce4aec2b}">
-   <rule symbol="0" filter="TYPEINF = '16'" label="16 - Site archéologique" key="{736c2f9b-1223-43a1-90aa-7864c7ab1014}"/>
-   <rule symbol="1" filter="TYPEINF = '19'" scalemaxdenom="100000" label="19 - Assainissement et déchets" key="{07566196-9334-4a00-8e7b-c92869ea7451}" scalemindenom="1000"/>
-   <rule symbol="2" filter="TYPEINF = '27'" label="27 - Plan d'exposition au bruit des aérodromes" key="{7056c94c-8fc7-4448-8f64-67654dba72db}"/>
-   <rule symbol="3" filter="TYPEINF = '99'" label="99 - Autre" key="{9aef672a-fe5a-4dff-8335-56de2c4044a1}"/>
+   <rule symbol="0" filter="TYPEINF = '16'" key="{736c2f9b-1223-43a1-90aa-7864c7ab1014}" label="16 - Site archéologique"/>
+   <rule symbol="1" filter="TYPEINF = '19'" key="{07566196-9334-4a00-8e7b-c92869ea7451}" label="19 - Assainissement et déchets"/>
+   <rule symbol="2" filter="TYPEINF = '27'" key="{7056c94c-8fc7-4448-8f64-67654dba72db}" label="27 - Plan d'exposition au bruit des aérodromes"/>
+   <rule symbol="3" filter="TYPEINF = '99'" key="{9aef672a-fe5a-4dff-8335-56de2c4044a1}" label="99 - Autre"/>
    <rule filter="ELSE" key="{d1420df9-5a46-448d-8f85-09cadd78ee83}"/>
   </rules>
   <symbols>
-   <symbol clip_to_extent="1" name="0" alpha="1" type="marker" force_rhr="0">
-    <layer class="FontMarker" pass="0" locked="0" enabled="1">
-     <prop k="angle" v="0"/>
-     <prop k="chr" v="µ"/>
-     <prop k="color" v="215,176,158,255"/>
-     <prop k="font" v="Wingdings"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="joinstyle" v="bevel"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="Point"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="Point"/>
-     <prop k="size" v="10"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="Point"/>
-     <prop k="vertical_anchor_point" v="1"/>
+   <symbol name="0" type="marker" force_rhr="0" clip_to_extent="1" alpha="1">
+    <layer pass="0" class="FontMarker" locked="0" enabled="1">
+     <prop v="0" k="angle"/>
+     <prop v="µ" k="chr"/>
+     <prop v="215,176,158,255" k="color"/>
+     <prop v="Wingdings" k="font"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="Point" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="Point" k="outline_width_unit"/>
+     <prop v="10" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="Point" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" name="name" type="QString"/>
+       <Option name="name" type="QString" value=""/>
        <Option name="properties"/>
-       <Option value="collection" name="type" type="QString"/>
+       <Option name="type" type="QString" value="collection"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol clip_to_extent="1" name="1" alpha="1" type="marker" force_rhr="0">
-    <layer class="FontMarker" pass="0" locked="0" enabled="1">
-     <prop k="angle" v="0"/>
-     <prop k="chr" v="~"/>
-     <prop k="color" v="0,115,76,255"/>
-     <prop k="font" v="Arial"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="joinstyle" v="bevel"/>
-     <prop k="offset" v="0,-3"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="Point"/>
-     <prop k="outline_color" v="0,115,76,255"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="Point"/>
-     <prop k="size" v="22"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="Point"/>
-     <prop k="vertical_anchor_point" v="1"/>
+   <symbol name="1" type="marker" force_rhr="0" clip_to_extent="1" alpha="1">
+    <layer pass="0" class="FontMarker" locked="0" enabled="1">
+     <prop v="0" k="angle"/>
+     <prop v="~" k="chr"/>
+     <prop v="0,115,76,255" k="color"/>
+     <prop v="Arial" k="font"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,-3" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="Point" k="offset_unit"/>
+     <prop v="0,115,76,255" k="outline_color"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="Point" k="outline_width_unit"/>
+     <prop v="22" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="Point" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" name="name" type="QString"/>
+       <Option name="name" type="QString" value=""/>
        <Option name="properties"/>
-       <Option value="collection" name="type" type="QString"/>
+       <Option name="type" type="QString" value="collection"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol clip_to_extent="1" name="2" alpha="1" type="marker" force_rhr="0">
-    <layer class="FontMarker" pass="0" locked="0" enabled="1">
-     <prop k="angle" v="0"/>
-     <prop k="chr" v="j"/>
-     <prop k="color" v="0,0,0,255"/>
-     <prop k="font" v="Webdings"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="joinstyle" v="bevel"/>
-     <prop k="offset" v="0,-2"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="Point"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="Point"/>
-     <prop k="size" v="23"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="Point"/>
-     <prop k="vertical_anchor_point" v="1"/>
+   <symbol name="2" type="marker" force_rhr="0" clip_to_extent="1" alpha="1">
+    <layer pass="0" class="FontMarker" locked="0" enabled="1">
+     <prop v="0" k="angle"/>
+     <prop v="j" k="chr"/>
+     <prop v="0,0,0,255" k="color"/>
+     <prop v="Webdings" k="font"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,-2" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="Point" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="Point" k="outline_width_unit"/>
+     <prop v="23" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="Point" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" name="name" type="QString"/>
+       <Option name="name" type="QString" value=""/>
        <Option name="properties"/>
-       <Option value="collection" name="type" type="QString"/>
+       <Option name="type" type="QString" value="collection"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol clip_to_extent="1" name="3" alpha="1" type="marker" force_rhr="0">
-    <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="156,156,156,255"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="joinstyle" v="bevel"/>
-     <prop k="name" v="circle"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="Point"/>
-     <prop k="outline_color" v="156,156,156,255"/>
-     <prop k="outline_style" v="no"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="Point"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="6"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="Point"/>
-     <prop k="vertical_anchor_point" v="1"/>
+   <symbol name="3" type="marker" force_rhr="0" clip_to_extent="1" alpha="1">
+    <layer pass="0" class="SimpleMarker" locked="0" enabled="1">
+     <prop v="0" k="angle"/>
+     <prop v="156,156,156,255" k="color"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="circle" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="Point" k="offset_unit"/>
+     <prop v="156,156,156,255" k="outline_color"/>
+     <prop v="no" k="outline_style"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="Point" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="6" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="Point" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" name="name" type="QString"/>
+       <Option name="name" type="QString" value=""/>
        <Option name="properties"/>
-       <Option value="collection" name="type" type="QString"/>
+       <Option name="type" type="QString" value="collection"/>
       </Option>
      </data_defined_properties>
     </layer>
@@ -138,21 +138,21 @@
  <featureBlendMode>0</featureBlendMode>
  <layerOpacity>1</layerOpacity>
  <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-  <DiagramCategory opacity="1" scaleDependency="Area" penAlpha="255" labelPlacementMethod="XHeight" penWidth="0" sizeScale="3x:0,0,0,0,0,0" rotationOffset="270" penColor="#000000" backgroundColor="#ffffff" backgroundAlpha="255" height="15" minScaleDenominator="0" diagramOrientation="Up" scaleBasedVisibility="0" lineSizeScale="3x:0,0,0,0,0,0" enabled="0" lineSizeType="MM" minimumSize="0" maxScaleDenominator="1e+08" sizeType="MM" width="15" barWidth="5">
+  <DiagramCategory backgroundColor="#ffffff" enabled="0" lineSizeType="MM" backgroundAlpha="255" minScaleDenominator="0" sizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" width="15" sizeScale="3x:0,0,0,0,0,0" minimumSize="0" penWidth="0" scaleBasedVisibility="0" penAlpha="255" diagramOrientation="Up" penColor="#000000" height="15" opacity="1" maxScaleDenominator="1e+08" labelPlacementMethod="XHeight" barWidth="5" scaleDependency="Area">
    <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
-   <attribute color="#000000" label="" field=""/>
+   <attribute color="#000000" field="" label=""/>
   </DiagramCategory>
  </SingleCategoryDiagramRenderer>
- <DiagramLayerSettings linePlacementFlags="18" zIndex="0" obstacle="0" dist="0" showAll="1" priority="0" placement="0">
+ <DiagramLayerSettings dist="0" showAll="1" linePlacementFlags="18" placement="0" obstacle="0" zIndex="0" priority="0">
   <properties>
    <Option type="Map">
-    <Option value="" name="name" type="QString"/>
+    <Option name="name" type="QString" value=""/>
     <Option name="properties"/>
-    <Option value="collection" name="type" type="QString"/>
+    <Option name="type" type="QString" value="collection"/>
    </Option>
   </properties>
  </DiagramLayerSettings>
- <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+ <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
   <activeChecks/>
   <checkConfiguration/>
  </geometryOptions>
@@ -171,7 +171,7 @@
     </config>
    </editWidget>
   </field>
-  <field name="libelle">
+  <field name="lib_stype">
    <editWidget type="TextEdit">
     <config>
      <Option/>
@@ -243,82 +243,82 @@
   </field>
  </fieldConfiguration>
  <aliases>
-  <alias index="0" field="typeinf" name=""/>
-  <alias index="1" field="stypeinf" name=""/>
-  <alias index="2" field="libelle" name=""/>
-  <alias index="3" field="stype_ref" name=""/>
-  <alias index="4" field="symb_pct" name=""/>
-  <alias index="5" field="symb_lin" name=""/>
-  <alias index="6" field="symb_surf" name=""/>
-  <alias index="7" field="geom_lin" name=""/>
-  <alias index="8" field="geom_surf" name=""/>
-  <alias index="9" field="carreau" name=""/>
-  <alias index="10" field="blanc" name=""/>
-  <alias index="11" field="etiquette" name=""/>
+  <alias name="" field="typeinf" index="0"/>
+  <alias name="" field="stypeinf" index="1"/>
+  <alias name="" field="lib_stype" index="2"/>
+  <alias name="" field="stype_ref" index="3"/>
+  <alias name="" field="symb_pct" index="4"/>
+  <alias name="" field="symb_lin" index="5"/>
+  <alias name="" field="symb_surf" index="6"/>
+  <alias name="" field="geom_lin" index="7"/>
+  <alias name="" field="geom_surf" index="8"/>
+  <alias name="" field="carreau" index="9"/>
+  <alias name="" field="blanc" index="10"/>
+  <alias name="" field="etiquette" index="11"/>
  </aliases>
  <excludeAttributesWMS/>
  <excludeAttributesWFS/>
  <defaults>
-  <default field="typeinf" applyOnUpdate="0" expression=""/>
-  <default field="stypeinf" applyOnUpdate="0" expression=""/>
-  <default field="libelle" applyOnUpdate="0" expression=""/>
-  <default field="stype_ref" applyOnUpdate="0" expression=""/>
-  <default field="symb_pct" applyOnUpdate="0" expression=""/>
-  <default field="symb_lin" applyOnUpdate="0" expression=""/>
-  <default field="symb_surf" applyOnUpdate="0" expression=""/>
-  <default field="geom_lin" applyOnUpdate="0" expression=""/>
-  <default field="geom_surf" applyOnUpdate="0" expression=""/>
-  <default field="carreau" applyOnUpdate="0" expression=""/>
-  <default field="blanc" applyOnUpdate="0" expression=""/>
-  <default field="etiquette" applyOnUpdate="0" expression=""/>
+  <default applyOnUpdate="0" expression="" field="typeinf"/>
+  <default applyOnUpdate="0" expression="" field="stypeinf"/>
+  <default applyOnUpdate="0" expression="" field="lib_stype"/>
+  <default applyOnUpdate="0" expression="" field="stype_ref"/>
+  <default applyOnUpdate="0" expression="" field="symb_pct"/>
+  <default applyOnUpdate="0" expression="" field="symb_lin"/>
+  <default applyOnUpdate="0" expression="" field="symb_surf"/>
+  <default applyOnUpdate="0" expression="" field="geom_lin"/>
+  <default applyOnUpdate="0" expression="" field="geom_surf"/>
+  <default applyOnUpdate="0" expression="" field="carreau"/>
+  <default applyOnUpdate="0" expression="" field="blanc"/>
+  <default applyOnUpdate="0" expression="" field="etiquette"/>
  </defaults>
  <constraints>
-  <constraint constraints="1" unique_strength="0" notnull_strength="1" exp_strength="0" field="typeinf"/>
-  <constraint constraints="1" unique_strength="0" notnull_strength="1" exp_strength="0" field="stypeinf"/>
-  <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="libelle"/>
-  <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="stype_ref"/>
-  <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="symb_pct"/>
-  <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="symb_lin"/>
-  <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="symb_surf"/>
-  <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="geom_lin"/>
-  <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="geom_surf"/>
-  <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="carreau"/>
-  <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="blanc"/>
-  <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="etiquette"/>
+  <constraint constraints="1" field="typeinf" notnull_strength="1" unique_strength="0" exp_strength="0"/>
+  <constraint constraints="1" field="stypeinf" notnull_strength="1" unique_strength="0" exp_strength="0"/>
+  <constraint constraints="0" field="lib_stype" notnull_strength="0" unique_strength="0" exp_strength="0"/>
+  <constraint constraints="0" field="stype_ref" notnull_strength="0" unique_strength="0" exp_strength="0"/>
+  <constraint constraints="0" field="symb_pct" notnull_strength="0" unique_strength="0" exp_strength="0"/>
+  <constraint constraints="0" field="symb_lin" notnull_strength="0" unique_strength="0" exp_strength="0"/>
+  <constraint constraints="0" field="symb_surf" notnull_strength="0" unique_strength="0" exp_strength="0"/>
+  <constraint constraints="0" field="geom_lin" notnull_strength="0" unique_strength="0" exp_strength="0"/>
+  <constraint constraints="0" field="geom_surf" notnull_strength="0" unique_strength="0" exp_strength="0"/>
+  <constraint constraints="0" field="carreau" notnull_strength="0" unique_strength="0" exp_strength="0"/>
+  <constraint constraints="0" field="blanc" notnull_strength="0" unique_strength="0" exp_strength="0"/>
+  <constraint constraints="0" field="etiquette" notnull_strength="0" unique_strength="0" exp_strength="0"/>
  </constraints>
  <constraintExpressions>
-  <constraint exp="" desc="" field="typeinf"/>
-  <constraint exp="" desc="" field="stypeinf"/>
-  <constraint exp="" desc="" field="libelle"/>
-  <constraint exp="" desc="" field="stype_ref"/>
-  <constraint exp="" desc="" field="symb_pct"/>
-  <constraint exp="" desc="" field="symb_lin"/>
-  <constraint exp="" desc="" field="symb_surf"/>
-  <constraint exp="" desc="" field="geom_lin"/>
-  <constraint exp="" desc="" field="geom_surf"/>
-  <constraint exp="" desc="" field="carreau"/>
-  <constraint exp="" desc="" field="blanc"/>
-  <constraint exp="" desc="" field="etiquette"/>
+  <constraint field="typeinf" exp="" desc=""/>
+  <constraint field="stypeinf" exp="" desc=""/>
+  <constraint field="lib_stype" exp="" desc=""/>
+  <constraint field="stype_ref" exp="" desc=""/>
+  <constraint field="symb_pct" exp="" desc=""/>
+  <constraint field="symb_lin" exp="" desc=""/>
+  <constraint field="symb_surf" exp="" desc=""/>
+  <constraint field="geom_lin" exp="" desc=""/>
+  <constraint field="geom_surf" exp="" desc=""/>
+  <constraint field="carreau" exp="" desc=""/>
+  <constraint field="blanc" exp="" desc=""/>
+  <constraint field="etiquette" exp="" desc=""/>
  </constraintExpressions>
  <expressionfields/>
  <attributeactions>
   <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
  </attributeactions>
- <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+ <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
   <columns>
-   <column name="typeinf" type="field" width="-1" hidden="0"/>
-   <column name="stypeinf" type="field" width="-1" hidden="0"/>
-   <column name="libelle" type="field" width="-1" hidden="0"/>
-   <column name="stype_ref" type="field" width="-1" hidden="0"/>
-   <column name="symb_pct" type="field" width="-1" hidden="0"/>
-   <column name="symb_lin" type="field" width="-1" hidden="0"/>
-   <column name="symb_surf" type="field" width="-1" hidden="0"/>
-   <column name="geom_lin" type="field" width="-1" hidden="0"/>
-   <column name="geom_surf" type="field" width="-1" hidden="0"/>
-   <column name="carreau" type="field" width="-1" hidden="0"/>
-   <column name="blanc" type="field" width="-1" hidden="0"/>
-   <column name="etiquette" type="field" width="-1" hidden="0"/>
-   <column type="actions" width="-1" hidden="1"/>
+   <column name="typeinf" width="-1" type="field" hidden="0"/>
+   <column name="stypeinf" width="-1" type="field" hidden="0"/>
+   <column name="stype_ref" width="-1" type="field" hidden="0"/>
+   <column name="symb_pct" width="-1" type="field" hidden="0"/>
+   <column name="symb_lin" width="-1" type="field" hidden="0"/>
+   <column name="symb_surf" width="-1" type="field" hidden="0"/>
+   <column name="geom_lin" width="-1" type="field" hidden="0"/>
+   <column name="geom_surf" width="-1" type="field" hidden="0"/>
+   <column name="carreau" width="-1" type="field" hidden="0"/>
+   <column name="blanc" width="-1" type="field" hidden="0"/>
+   <column name="etiquette" width="-1" type="field" hidden="0"/>
+   <column width="-1" type="actions" hidden="1"/>
+   <column name="lib_stype" width="-1" type="field" hidden="0"/>
   </columns>
  </attributetableconfig>
  <conditionalstyles>
@@ -349,38 +349,40 @@ def my_form_open(dialog, layer, feature):
  <featformsuppress>0</featformsuppress>
  <editorlayout>generatedlayout</editorlayout>
  <editable>
-  <field editable="1" name="blanc"/>
-  <field editable="1" name="carreau"/>
-  <field editable="1" name="etiquette"/>
-  <field editable="1" name="geom_lin"/>
-  <field editable="1" name="geom_surf"/>
-  <field editable="1" name="libelle"/>
-  <field editable="1" name="stype_ref"/>
-  <field editable="1" name="stypeinf"/>
-  <field editable="1" name="symb_lin"/>
-  <field editable="1" name="symb_lin_qgis"/>
-  <field editable="1" name="symb_pct"/>
-  <field editable="1" name="symb_pct_qgis"/>
-  <field editable="1" name="symb_surf"/>
-  <field editable="1" name="symb_surf_qgis"/>
-  <field editable="1" name="typeinf"/>
+  <field name="blanc" editable="1"/>
+  <field name="carreau" editable="1"/>
+  <field name="etiquette" editable="1"/>
+  <field name="geom_lin" editable="1"/>
+  <field name="geom_surf" editable="1"/>
+  <field name="lib_stype" editable="1"/>
+  <field name="libelle" editable="1"/>
+  <field name="stype_ref" editable="1"/>
+  <field name="stypeinf" editable="1"/>
+  <field name="symb_lin" editable="1"/>
+  <field name="symb_lin_qgis" editable="1"/>
+  <field name="symb_pct" editable="1"/>
+  <field name="symb_pct_qgis" editable="1"/>
+  <field name="symb_surf" editable="1"/>
+  <field name="symb_surf_qgis" editable="1"/>
+  <field name="typeinf" editable="1"/>
  </editable>
  <labelOnTop>
-  <field labelOnTop="0" name="blanc"/>
-  <field labelOnTop="0" name="carreau"/>
-  <field labelOnTop="0" name="etiquette"/>
-  <field labelOnTop="0" name="geom_lin"/>
-  <field labelOnTop="0" name="geom_surf"/>
-  <field labelOnTop="0" name="libelle"/>
-  <field labelOnTop="0" name="stype_ref"/>
-  <field labelOnTop="0" name="stypeinf"/>
-  <field labelOnTop="0" name="symb_lin"/>
-  <field labelOnTop="0" name="symb_lin_qgis"/>
-  <field labelOnTop="0" name="symb_pct"/>
-  <field labelOnTop="0" name="symb_pct_qgis"/>
-  <field labelOnTop="0" name="symb_surf"/>
-  <field labelOnTop="0" name="symb_surf_qgis"/>
-  <field labelOnTop="0" name="typeinf"/>
+  <field name="blanc" labelOnTop="0"/>
+  <field name="carreau" labelOnTop="0"/>
+  <field name="etiquette" labelOnTop="0"/>
+  <field name="geom_lin" labelOnTop="0"/>
+  <field name="geom_surf" labelOnTop="0"/>
+  <field name="lib_stype" labelOnTop="0"/>
+  <field name="libelle" labelOnTop="0"/>
+  <field name="stype_ref" labelOnTop="0"/>
+  <field name="stypeinf" labelOnTop="0"/>
+  <field name="symb_lin" labelOnTop="0"/>
+  <field name="symb_lin_qgis" labelOnTop="0"/>
+  <field name="symb_pct" labelOnTop="0"/>
+  <field name="symb_pct_qgis" labelOnTop="0"/>
+  <field name="symb_surf" labelOnTop="0"/>
+  <field name="symb_surf_qgis" labelOnTop="0"/>
+  <field name="typeinf" labelOnTop="0"/>
  </labelOnTop>
  <widgets/>
  <previewExpression>typeinf</previewExpression>
