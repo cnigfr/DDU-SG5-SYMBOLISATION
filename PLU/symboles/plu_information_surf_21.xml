@@ -1,21 +1,21 @@
 <!DOCTYPE qgis_style>
 <qgis_style version="2">
   <symbols>
-    <symbol name="PLU information 21 (surfacique)" type="fill" force_rhr="0" clip_to_extent="1" alpha="1" tags="CNIG, Urbanisme">
-      <layer pass="1" class="LinePatternFill" locked="0" enabled="1">
-        <prop v="100" k="angle" />
-        <prop v="132,0,168,255" k="color" />
-        <prop v="10" k="distance" />
-        <prop v="3x:0,0,0,0,0,0" k="distance_map_unit_scale" />
-        <prop v="Point" k="distance_unit" />
-        <prop v="0.26" k="line_width" />
-        <prop v="3x:0,0,0,0,0,0" k="line_width_map_unit_scale" />
-        <prop v="Point" k="line_width_unit" />
-        <prop v="0" k="offset" />
-        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale" />
-        <prop v="Point" k="offset_unit" />
-        <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale" />
-        <prop v="Point" k="outline_width_unit" />
+    <symbol alpha="1" force_rhr="0" name="PLU information 21 (surfacique)" type="fill" clip_to_extent="1" tags="CNIG, Urbanisme">
+      <layer enabled="1" locked="0" pass="1" class="LinePatternFill">
+        <prop k="angle" v="100" />
+        <prop k="color" v="132,0,168,255" />
+        <prop k="distance" v="10" />
+        <prop k="distance_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="distance_unit" v="Point" />
+        <prop k="line_width" v="0.26" />
+        <prop k="line_width_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="line_width_unit" v="Point" />
+        <prop k="offset" v="0" />
+        <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="offset_unit" v="Point" />
+        <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="outline_width_unit" v="Point" />
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value="" />
@@ -23,24 +23,24 @@
             <Option name="type" type="QString" value="collection" />
           </Option>
         </data_defined_properties>
-        <symbol name="@17@0" type="line" force_rhr="0" clip_to_extent="1" alpha="1">
-          <layer pass="0" class="SimpleLine" locked="0" enabled="1">
-            <prop v="square" k="capstyle" />
-            <prop v="5;2" k="customdash" />
-            <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale" />
-            <prop v="Point" k="customdash_unit" />
-            <prop v="0" k="draw_inside_polygon" />
-            <prop v="bevel" k="joinstyle" />
-            <prop v="132,0,168,255" k="line_color" />
-            <prop v="solid" k="line_style" />
-            <prop v="1" k="line_width" />
-            <prop v="Point" k="line_width_unit" />
-            <prop v="0" k="offset" />
-            <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale" />
-            <prop v="Point" k="offset_unit" />
-            <prop v="0" k="ring_filter" />
-            <prop v="0" k="use_custom_dash" />
-            <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale" />
+        <symbol alpha="1" force_rhr="0" name="@17@0" type="line" clip_to_extent="1">
+          <layer enabled="1" locked="0" pass="0" class="SimpleLine">
+            <prop k="capstyle" v="square" />
+            <prop k="customdash" v="5;2" />
+            <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0" />
+            <prop k="customdash_unit" v="Point" />
+            <prop k="draw_inside_polygon" v="0" />
+            <prop k="joinstyle" v="bevel" />
+            <prop k="line_color" v="132,0,168,255" />
+            <prop k="line_style" v="solid" />
+            <prop k="line_width" v="1" />
+            <prop k="line_width_unit" v="Point" />
+            <prop k="offset" v="0" />
+            <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0" />
+            <prop k="offset_unit" v="Point" />
+            <prop k="ring_filter" v="0" />
+            <prop k="use_custom_dash" v="0" />
+            <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0" />
             <data_defined_properties>
               <Option type="Map">
                 <Option name="name" type="QString" value="" />
@@ -51,23 +51,23 @@
           </layer>
         </symbol>
       </layer>
-      <layer pass="1" class="SimpleLine" locked="0" enabled="1">
-        <prop v="square" k="capstyle" />
-        <prop v="3;3" k="customdash" />
-        <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale" />
-        <prop v="Point" k="customdash_unit" />
-        <prop v="0" k="draw_inside_polygon" />
-        <prop v="bevel" k="joinstyle" />
-        <prop v="132,0,168,255" k="line_color" />
-        <prop v="solid" k="line_style" />
-        <prop v="1" k="line_width" />
-        <prop v="Point" k="line_width_unit" />
-        <prop v="0" k="offset" />
-        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale" />
-        <prop v="Point" k="offset_unit" />
-        <prop v="0" k="ring_filter" />
-        <prop v="1" k="use_custom_dash" />
-        <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale" />
+      <layer enabled="1" locked="0" pass="1" class="SimpleLine">
+        <prop k="capstyle" v="square" />
+        <prop k="customdash" v="3;3" />
+        <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="customdash_unit" v="Point" />
+        <prop k="draw_inside_polygon" v="0" />
+        <prop k="joinstyle" v="bevel" />
+        <prop k="line_color" v="132,0,168,255" />
+        <prop k="line_style" v="solid" />
+        <prop k="line_width" v="1" />
+        <prop k="line_width_unit" v="Point" />
+        <prop k="offset" v="0" />
+        <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="offset_unit" v="Point" />
+        <prop k="ring_filter" v="0" />
+        <prop k="use_custom_dash" v="1" />
+        <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0" />
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value="" />

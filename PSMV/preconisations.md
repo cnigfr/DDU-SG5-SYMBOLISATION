@@ -946,6 +946,11 @@ Géométrie surfacique :
 Géométrie linéaire :  
 ```
 Ligne simple
+• couleur (RVB) : 0,0,0
+• largeur de trait : 4.6 pt
+• style de trait : ligne continue
+
+Ligne simple
 • couleur (RVB) : 102,102,102
 • largeur de trait : 3 pt
 • style de trait : ligne continue
@@ -3603,7 +3608,7 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 ```
 Symbole SVG
-• fichier : [psmv_psc_40_50.svg](/PSMV/SVG/psmv_psc_40_50.svg)
+• fichier : /PSMV/SVG/psmv_psc_40_50.svg
 • rotation : [angle]°
 • taille : 30 pt
 ```
@@ -6039,8 +6044,8 @@ Géométrie ponctuelle :
 Géométrie surfacique :  
 ```
 Motif de points
-• distance horizontale : 10 pt
-• distance verticale : 10 pt
+• distance horizontale : 15 pt
+• distance verticale : 15 pt
 
     Symbole simple
     • couleur de remplissage (RVB) : transparent
@@ -6048,7 +6053,7 @@ Motif de points
     • largeur de trait : 0.8 pt
     • nom du symbole : circle
     • style de trait : ligne continue
-    • taille : 20 pt
+    • taille : 30 pt
 
 Ligne simple
 • couleur (RVB) : 255,196,118
@@ -6078,8 +6083,8 @@ Géométrie ponctuelle :
 Géométrie surfacique :  
 ```
 Motif de points
-• distance horizontale : 20 pt
-• distance verticale : 20 pt
+• distance horizontale : 30 pt
+• distance verticale : 30 pt
 
     Symbole simple
     • couleur de remplissage (RVB) : transparent
@@ -6087,7 +6092,7 @@ Motif de points
     • largeur de trait : 0.8 pt
     • nom du symbole : circle
     • style de trait : ligne continue
-    • taille : 40 pt
+    • taille : 60 pt
 
 Ligne simple
 • couleur (RVB) : 255,196,147
@@ -6157,7 +6162,7 @@ Remplissage de centroïde
 • forcer le point dans le polygone : oui
 
     Symbole SVG
-    • fichier : [psmv_info_70_00.svg](/PSMV/SVG/psmv_info_70_00.svg)
+    • fichier : /PSMV/SVG/psmv_info_70_00.svg
     • taille : 20 pt
 ```
 
@@ -6167,7 +6172,7 @@ Géométrie linéaire :
 Géométrie ponctuelle :  
 ```
 Symbole SVG
-• fichier : [psmv_info_70_00.svg](/PSMV/SVG/psmv_info_70_00.svg)
+• fichier : /PSMV/SVG/psmv_info_70_00.svg
 • taille : 20 pt
 ```
 

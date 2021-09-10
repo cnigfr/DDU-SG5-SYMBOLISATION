@@ -1,8 +1,8 @@
 <!DOCTYPE qgis_style>
 <qgis_style version="2">
   <symbols>
-    <symbol alpha="1" clip_to_extent="1" name="PSMV information 04-01 (surfacique)" type="fill" force_rhr="0" tags="CNIG, Urbanisme">
-      <layer pass="0" class="SimpleFill" enabled="1" locked="0">
+    <symbol alpha="1" force_rhr="0" name="PSMV information 04-01 (surfacique)" type="fill" clip_to_extent="1" tags="CNIG, Urbanisme">
+      <layer enabled="1" locked="0" pass="0" class="SimpleFill">
         <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0" />
         <prop k="color" v="255,101,101,255" />
         <prop k="joinstyle" v="bevel" />
@@ -16,13 +16,13 @@
         <prop k="style" v="solid" />
         <data_defined_properties>
           <Option type="Map">
-            <Option value="" name="name" type="QString" />
+            <Option name="name" type="QString" value="" />
             <Option name="properties" />
-            <Option value="collection" name="type" type="QString" />
+            <Option name="type" type="QString" value="collection" />
           </Option>
         </data_defined_properties>
       </layer>
-      <layer pass="0" class="MarkerLine" enabled="1" locked="0">
+      <layer enabled="1" locked="0" pass="0" class="MarkerLine">
         <prop k="average_angle_length" v="4" />
         <prop k="average_angle_map_unit_scale" v="3x:0,0,0,0,0,0" />
         <prop k="average_angle_unit" v="Point" />
@@ -40,13 +40,13 @@
         <prop k="rotate" v="1" />
         <data_defined_properties>
           <Option type="Map">
-            <Option value="" name="name" type="QString" />
+            <Option name="name" type="QString" value="" />
             <Option name="properties" />
-            <Option value="collection" name="type" type="QString" />
+            <Option name="type" type="QString" value="collection" />
           </Option>
         </data_defined_properties>
-        <symbol alpha="1" clip_to_extent="1" name="@4@1" type="marker" force_rhr="0">
-          <layer pass="0" class="FontMarker" enabled="1" locked="0">
+        <symbol alpha="1" force_rhr="0" name="@4@1" type="marker" clip_to_extent="1">
+          <layer enabled="1" locked="0" pass="0" class="FontMarker">
             <prop k="angle" v="180" />
             <prop k="chr" v="" />
             <prop k="color" v="255,0,0,255" />
@@ -66,15 +66,15 @@
             <prop k="vertical_anchor_point" v="1" />
             <data_defined_properties>
               <Option type="Map">
-                <Option value="" name="name" type="QString" />
+                <Option name="name" type="QString" value="" />
                 <Option name="properties" />
-                <Option value="collection" name="type" type="QString" />
+                <Option name="type" type="QString" value="collection" />
               </Option>
             </data_defined_properties>
           </layer>
         </symbol>
       </layer>
-      <layer pass="0" class="PointPatternFill" enabled="1" locked="0">
+      <layer enabled="1" locked="0" pass="0" class="PointPatternFill">
         <prop k="displacement_x" v="0" />
         <prop k="displacement_x_map_unit_scale" v="3x:0,0,0,0,0,0" />
         <prop k="displacement_x_unit" v="Point" />
@@ -97,13 +97,13 @@
         <prop k="outline_width_unit" v="Point" />
         <data_defined_properties>
           <Option type="Map">
-            <Option value="" name="name" type="QString" />
+            <Option name="name" type="QString" value="" />
             <Option name="properties" />
-            <Option value="collection" name="type" type="QString" />
+            <Option name="type" type="QString" value="collection" />
           </Option>
         </data_defined_properties>
-        <symbol alpha="1" clip_to_extent="1" name="@4@2" type="marker" force_rhr="0">
-          <layer pass="0" class="FontMarker" enabled="1" locked="0">
+        <symbol alpha="1" force_rhr="0" name="@4@2" type="marker" clip_to_extent="1">
+          <layer enabled="1" locked="0" pass="0" class="FontMarker">
             <prop k="angle" v="0" />
             <prop k="chr" v="U" />
             <prop k="color" v="166,0,0,255" />
@@ -123,13 +123,13 @@
             <prop k="vertical_anchor_point" v="1" />
             <data_defined_properties>
               <Option type="Map">
-                <Option value="" name="name" type="QString" />
+                <Option name="name" type="QString" value="" />
                 <Option name="properties" />
-                <Option value="collection" name="type" type="QString" />
+                <Option name="type" type="QString" value="collection" />
               </Option>
             </data_defined_properties>
           </layer>
-          <layer pass="0" class="FontMarker" enabled="1" locked="0">
+          <layer enabled="1" locked="0" pass="0" class="FontMarker">
             <prop k="angle" v="0" />
             <prop k="chr" v="P" />
             <prop k="color" v="166,0,0,255" />
@@ -149,13 +149,13 @@
             <prop k="vertical_anchor_point" v="1" />
             <data_defined_properties>
               <Option type="Map">
-                <Option value="" name="name" type="QString" />
+                <Option name="name" type="QString" value="" />
                 <Option name="properties" />
-                <Option value="collection" name="type" type="QString" />
+                <Option name="type" type="QString" value="collection" />
               </Option>
             </data_defined_properties>
           </layer>
-          <layer pass="0" class="FontMarker" enabled="1" locked="0">
+          <layer enabled="1" locked="0" pass="0" class="FontMarker">
             <prop k="angle" v="0" />
             <prop k="chr" v="D" />
             <prop k="color" v="166,0,0,255" />
@@ -175,9 +175,9 @@
             <prop k="vertical_anchor_point" v="1" />
             <data_defined_properties>
               <Option type="Map">
-                <Option value="" name="name" type="QString" />
+                <Option name="name" type="QString" value="" />
                 <Option name="properties" />
-                <Option value="collection" name="type" type="QString" />
+                <Option name="type" type="QString" value="collection" />
               </Option>
             </data_defined_properties>
           </layer>

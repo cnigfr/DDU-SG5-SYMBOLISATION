@@ -4913,8 +4913,8 @@ Géométrie ponctuelle :
 Géométrie surfacique :  
 ```
 Motif de points
-• distance horizontale : 10 pt
-• distance verticale : 10 pt
+• distance horizontale : 15 pt
+• distance verticale : 15 pt
 
     Symbole simple
     • couleur de remplissage (RVB) : transparent
@@ -4922,7 +4922,7 @@ Motif de points
     • largeur de trait : 0.8 pt
     • nom du symbole : circle
     • style de trait : ligne continue
-    • taille : 20 pt
+    • taille : 30 pt
 
 Ligne simple
 • couleur (RVB) : 255,196,118
@@ -4949,8 +4949,8 @@ Géométrie ponctuelle :
 Géométrie surfacique :  
 ```
 Motif de points
-• distance horizontale : 20 pt
-• distance verticale : 20 pt
+• distance horizontale : 30 pt
+• distance verticale : 30 pt
 
     Symbole simple
     • couleur de remplissage (RVB) : transparent
@@ -4958,7 +4958,7 @@ Motif de points
     • largeur de trait : 0.8 pt
     • nom du symbole : circle
     • style de trait : ligne continue
-    • taille : 40 pt
+    • taille : 60 pt
 
 Ligne simple
 • couleur (RVB) : 255,196,147
