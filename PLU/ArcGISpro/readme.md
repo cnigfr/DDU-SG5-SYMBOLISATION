@@ -1,4 +1,4 @@
-Le fichier PLU.stylx contient toutes les symbolisations qu'elles soient ponctuelles, linéaires, surfaciques, de texte ou même de position du texte.
+Le fichier [PLU.stylx](/PLU/ArcGISpro/PLU.stylx) contient toutes les symbolisations qu'elles soient ponctuelles, linéaires, surfaciques, de texte ou même de position du texte.
 
 Certaines adaptations ont du être faite du fait de gestion différentes entre QGIS et ArcGIS pro.
 
