@@ -192,9 +192,9 @@ INSERT INTO s_cnig_docurba.qml_traduction_prop (symbol_class, symbol_prop, tradu
     ('SimpleMarker', 'size', 'taille', NULL, false),
     ('SimpleMarker', 'vertical_anchor_point', 'point d''ancrage', NULL, true),
     ('SvgMarker', 'angle', 'rotation', '°', false),
-    ('SvgMarker', 'color', 'couleur', NULL, false),
+    ('SvgMarker', 'color', 'couleur (RVB)', NULL, false),
     ('SvgMarker', 'name', 'fichier', NULL, false),
-    ('SvgMarker', 'size', 'taille', NULL, false) ; 
+    ('SvgMarker', 'size', 'taille', NULL, false) ;
 
 
 -- TABLE: s_cnig_docurba.qml_traduction_value
