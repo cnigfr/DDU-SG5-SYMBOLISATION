@@ -27,6 +27,7 @@
 -- FUNCTION: s_cnig_docurba.qml_psmv_information_maj_symb_qgis(boolean)
 -- FUNCTION: s_cnig_docurba.qml_psmv_zone_urba_maj_symb_qgis(boolean)
 -- FUNCTION: s_cnig_docurba.qml_maj_traduction()
+-- FUNCTION: s_cnig_docurba.rvb_to_hexa(text)
 --
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -377,6 +378,8 @@ DECLARE
     r record ;
     prop record ;
     liste_styles text[] := ARRAY[]::text[] ;
+    hexa_color text ;
+    rvb_color text ;
 BEGIN
         
     FOR  r IN (
@@ -508,20 +511,36 @@ BEGIN
                 WHERE id = prop.id ;       
         END IF ;     
 
-        -- remplissage transparent
-        IF prop.symbol_prop ~ 'color$' AND prop.symbol_value ~ '[,]0$'
-        THEN
-            UPDATE s_cnig_docurba.qml_detail
-                SET symbol_value = 'transparent'
-                WHERE id = prop.id ;        
-        END IF ;
-                
-        -- suppression des transparences dans les RVB si opacité à 100%
+        -- manipulations sur les couleurs
         IF prop.symbol_prop ~ 'color$'
         THEN
+            rvb_color = prop.symbol_value ;
+            
+            -- remplissage transparent
+            IF prop.symbol_value ~ '[,]0$'
+            THEN
+                rvb_color = 'transparent' ;
+                UPDATE s_cnig_docurba.qml_detail
+                    SET symbol_value = rvb_color
+                    WHERE id = prop.id ;        
+            END IF ;
+
+            -- suppression des transparences dans les RVB si opacité à 100%
+            rvb_color = regexp_replace(rvb_color, '[,]255$', '') ;
             UPDATE s_cnig_docurba.qml_detail
-                SET symbol_value = regexp_replace(symbol_value, '[,]255$', '')
-                WHERE id = prop.id ;        
+                SET symbol_value = rvb_color
+                WHERE id = prop.id ;
+
+            -- et ajout des représentations hexadécimales
+            hexa_color = s_cnig_docurba.rvb_to_hexa(rvb_color) ;
+            IF hexa_color IS NOT NULL
+            THEN
+            UPDATE s_cnig_docurba.qml_detail
+                SET symbol_value = format(
+                    '%s (%s)', symbol_value, hexa_color
+                    )
+                WHERE id = prop.id ;  
+            END IF ;
         END IF ;
         
         -- pas de couleur interne sur les symboles de croix etc.
@@ -1198,3 +1217,44 @@ $_$ ;
 COMMENT ON FUNCTION s_cnig_docurba.qml_maj_traduction() IS '[Rétro-traduction des QML] Complète les tables de traduction qml_traduction_class, qml_traduction_prop et qml_traduction_value avec les valeurs enregistrées dans qml_detail qui ne seraient pas encore répertoriées.' ;
 
 
+-- FUNCTION: s_cnig_docurba.rvb_to_hexa(text)
+
+CREATE OR REPLACE FUNCTION s_cnig_docurba.rvb_to_hexa(rvb_color text)
+    RETURNS text
+    LANGUAGE plpgsql
+    AS $_$
+/*
+OBJET : Renvoie la représentation hexadécimale des coordonnées
+RVB d'une couleur.
+
+ARGUMENTS :
+- rvb_color est une chaîne de caractères donnant les coordonnées
+RVB (ou RVBA, avec transparence) de la couleur. Les nombres doivent
+être séparés par des virgules, avec ou sans espaces.
+
+SORTIE : une chaîne de caractères correspondant à la représentation
+hexadécimale de la couleur, préfixée de "#".
+
+Si l'argument n'a pas la forme de coordonnées RVB, la fonction
+ne renvoie rien.
+*/
+DECLARE
+    hexa_color text := '#' ;
+    c record ;
+BEGIN
+
+    IF NOT rvb_color ~ '^([0-9]{1,3}[[:space:]]*[,][[:space:]]*){2,3}[0-9]{1,3}$'
+    THEN
+        RETURN NULL ;
+    END IF ;
+    
+    FOR c in (SELECT regexp_split_to_table(rvb_color, '[[:space:]]*[,][[:space:]]*') AS coord)
+    LOOP
+        hexa_color := hexa_color || lpad(to_hex(c.coord::int), 2, '0') ;
+    END LOOP ;
+
+    RETURN hexa_color ;
+END
+$_$ ;
+
+COMMENT ON FUNCTION s_cnig_docurba.rvb_to_hexa(text) IS 'Renvoie la représentation hexadécimale des coordonnées RVB d''une couleur.' ;
