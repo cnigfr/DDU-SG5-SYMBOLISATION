@@ -380,6 +380,8 @@ DECLARE
     liste_styles text[] := ARRAY[]::text[] ;
     hexa_color text ;
     rvb_color text ;
+    transparence int ;
+    color text ;
 BEGIN
         
     FOR  r IN (
@@ -514,32 +516,33 @@ BEGIN
         -- manipulations sur les couleurs
         IF prop.symbol_prop ~ 'color$'
         THEN
-            rvb_color = prop.symbol_value ;
+            rvb_color = regexp_replace(prop.symbol_value, '[,][0-9]{1,3}$', '') ;
+            transparence = (255 - substring(prop.symbol_value, '[,]([0-9]{1,3})$')::int) * 100 / 255 ;
             
             -- remplissage transparent
-            IF prop.symbol_value ~ '[,]0$'
+            -- on écrit "transparent" à la place de la couleur
+            IF transparence = 100
             THEN
                 rvb_color = 'transparent' ;
                 UPDATE s_cnig_docurba.qml_detail
                     SET symbol_value = rvb_color
                     WHERE id = prop.id ;        
-            END IF ;
-
-            -- suppression des transparences dans les RVB si opacité à 100%
-            rvb_color = regexp_replace(rvb_color, '[,]255$', '') ;
-            UPDATE s_cnig_docurba.qml_detail
-                SET symbol_value = rvb_color
-                WHERE id = prop.id ;
-
-            -- et ajout des représentations hexadécimales
-            hexa_color = s_cnig_docurba.rvb_to_hexa(rvb_color) ;
-            IF hexa_color IS NOT NULL
-            THEN
-            UPDATE s_cnig_docurba.qml_detail
-                SET symbol_value = format(
-                    '%s (%s)', symbol_value, hexa_color
-                    )
-                WHERE id = prop.id ;  
+            ELSE
+                -- ajout des représentations hexadécimales
+                hexa_color = s_cnig_docurba.rvb_to_hexa(rvb_color) ;
+                
+                IF transparence = 0
+                THEN
+                    -- suppression des transparences dans les RVB si opacité à 100%
+                    color = format('RVB %s (%s)', rvb_color, hexa_color) ;
+                ELSE
+                    color = format('RVB %s (%s), transparence %s%%', rvb_color, hexa_color, transparence::text) ;
+                END IF ;
+                
+                UPDATE s_cnig_docurba.qml_detail
+                    SET symbol_value = color
+                    WHERE id = prop.id ;
+                
             END IF ;
         END IF ;
         
@@ -1258,3 +1261,4 @@ END
 $_$ ;
 
 COMMENT ON FUNCTION s_cnig_docurba.rvb_to_hexa(text) IS 'Renvoie la représentation hexadécimale des coordonnées RVB d''une couleur.' ;
+
