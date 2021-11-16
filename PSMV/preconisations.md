@@ -4053,7 +4053,7 @@ Géométrie ponctuelle :
 Géométrie surfacique :  
 ```
 Remplissage simple
-• couleur de remplissage : RVB 255,127,127 (#ff7f7f)
+• couleur de remplissage : RVB 255,127,127 (#ff7f7f), transparence 40%
 • couleur de trait : RVB 255,0,0 (#ff0000)
 • largeur de trait : 1 pt
 • style de trait : ligne continue
@@ -4732,7 +4732,7 @@ Géométrie ponctuelle :
 Géométrie surfacique :  
 ```
 Remplissage simple
-• couleur de remplissage : RVB 255,127,127 (#ff7f7f)
+• couleur de remplissage : RVB 255,127,127 (#ff7f7f), transparence 60%
 • couleur de trait : RVB 255,0,0 (#ff0000)
 • largeur de trait : 1 pt
 • style de trait : ligne continue
@@ -4771,7 +4771,7 @@ Ligne de symboles
     • taille : 8 pt
 
 Remplissage simple
-• couleur de remplissage : RVB 134,213,47 (#86d52f)
+• couleur de remplissage : RVB 134,213,47 (#86d52f), transparence 40%
 ```
 
 Géométrie linéaire :  
@@ -4807,7 +4807,7 @@ Ligne de symboles
     • taille : 8 pt
 
 Remplissage simple
-• couleur de remplissage : RVB 255,101,101 (#ff6565)
+• couleur de remplissage : RVB 255,101,101 (#ff6565), transparence 40%
 ```
 
 Géométrie linéaire :  
@@ -4869,7 +4869,7 @@ Motif de points
     • taille : 7 pt
 
 Remplissage simple
-• couleur de remplissage : RVB 255,101,101 (#ff6565)
+• couleur de remplissage : RVB 255,101,101 (#ff6565), transparence 40%
 ```
 
 Géométrie linéaire :  
@@ -5255,7 +5255,7 @@ Géométrie ponctuelle :
 Géométrie surfacique :  
 ```
 Remplissage simple
-• couleur de remplissage : RVB 215,176,158 (#d7b09e)
+• couleur de remplissage : RVB 215,176,158 (#d7b09e), transparence 40%
 • style de trait : pas de ligne
 
 Ligne simple
@@ -5682,7 +5682,7 @@ Motif de lignes
 • rotation : 45°
 
     Ligne simple
-    • couleur : RVB 210,4,4 (#d20404)
+    • couleur : RVB 210,4,4 (#d20404), transparence 40%
     • largeur de trait : 0.8 pt
     • style de trait : ligne continue
 
@@ -5714,8 +5714,8 @@ Géométrie ponctuelle :
 Géométrie surfacique :  
 ```
 Remplissage simple
-• couleur de remplissage : RVB 255,255,255 (#ffffff)
-• couleur de trait : RVB 0,0,0 (#000000)
+• couleur de remplissage : RVB 255,255,255 (#ffffff), transparence 40%
+• couleur de trait : RVB 137,90,68 (#895a44)
 • largeur de trait : 2 pt
 • style de trait : ligne continue
 ```
@@ -5790,7 +5790,7 @@ Ligne de symboles
     • taille : 6 pt
 
 Remplissage simple
-• couleur de remplissage : RVB 194,158,215 (#c29ed7)
+• couleur de remplissage : RVB 194,158,215 (#c29ed7), transparence 40%
 • style de trait : pas de ligne
 ```
 
