@@ -1,10 +1,10 @@
 <!DOCTYPE qgis_style>
 <qgis_style version="2">
   <symbols>
-    <symbol alpha="1" force_rhr="0" name="PLU information 04-01 (surfacique)" type="fill" clip_to_extent="1" tags="CNIG, Urbanisme">
-      <layer enabled="1" locked="0" pass="0" class="SimpleFill">
+    <symbol name="PLU information 04-01 (surfacique)" type="fill" clip_to_extent="1" alpha="1" force_rhr="0" tags="CNIG, Urbanisme">
+      <layer enabled="1" pass="0" locked="0" class="SimpleFill">
         <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0" />
-        <prop k="color" v="255,101,101,255" />
+        <prop k="color" v="255,101,101,153" />
         <prop k="joinstyle" v="bevel" />
         <prop k="offset" v="0,0" />
         <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0" />
@@ -22,7 +22,7 @@
           </Option>
         </data_defined_properties>
       </layer>
-      <layer enabled="1" locked="0" pass="0" class="MarkerLine">
+      <layer enabled="1" pass="0" locked="0" class="MarkerLine">
         <prop k="average_angle_length" v="4" />
         <prop k="average_angle_map_unit_scale" v="3x:0,0,0,0,0,0" />
         <prop k="average_angle_unit" v="Point" />
@@ -45,8 +45,8 @@
             <Option name="type" type="QString" value="collection" />
           </Option>
         </data_defined_properties>
-        <symbol alpha="1" force_rhr="0" name="@3@1" type="marker" clip_to_extent="1">
-          <layer enabled="1" locked="0" pass="0" class="FontMarker">
+        <symbol name="@3@1" type="marker" clip_to_extent="1" alpha="1" force_rhr="0">
+          <layer enabled="1" pass="0" locked="0" class="FontMarker">
             <prop k="angle" v="180" />
             <prop k="chr" v="" />
             <prop k="color" v="255,0,0,255" />
@@ -74,7 +74,7 @@
           </layer>
         </symbol>
       </layer>
-      <layer enabled="1" locked="0" pass="0" class="PointPatternFill">
+      <layer enabled="1" pass="0" locked="0" class="PointPatternFill">
         <prop k="displacement_x" v="0" />
         <prop k="displacement_x_map_unit_scale" v="3x:0,0,0,0,0,0" />
         <prop k="displacement_x_unit" v="Point" />
@@ -102,8 +102,8 @@
             <Option name="type" type="QString" value="collection" />
           </Option>
         </data_defined_properties>
-        <symbol alpha="1" force_rhr="0" name="@3@2" type="marker" clip_to_extent="1">
-          <layer enabled="1" locked="0" pass="0" class="FontMarker">
+        <symbol name="@3@2" type="marker" clip_to_extent="1" alpha="1" force_rhr="0">
+          <layer enabled="1" pass="0" locked="0" class="FontMarker">
             <prop k="angle" v="0" />
             <prop k="chr" v="U" />
             <prop k="color" v="166,0,0,255" />
@@ -129,7 +129,7 @@
               </Option>
             </data_defined_properties>
           </layer>
-          <layer enabled="1" locked="0" pass="0" class="FontMarker">
+          <layer enabled="1" pass="0" locked="0" class="FontMarker">
             <prop k="angle" v="0" />
             <prop k="chr" v="P" />
             <prop k="color" v="166,0,0,255" />
@@ -155,7 +155,7 @@
               </Option>
             </data_defined_properties>
           </layer>
-          <layer enabled="1" locked="0" pass="0" class="FontMarker">
+          <layer enabled="1" pass="0" locked="0" class="FontMarker">
             <prop k="angle" v="0" />
             <prop k="chr" v="D" />
             <prop k="color" v="166,0,0,255" />

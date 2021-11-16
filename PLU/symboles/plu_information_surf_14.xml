@@ -1,8 +1,8 @@
 <!DOCTYPE qgis_style>
 <qgis_style version="2">
   <symbols>
-    <symbol alpha="1" force_rhr="0" name="PLU information 14 (surfacique)" type="fill" clip_to_extent="1" tags="CNIG, Urbanisme">
-      <layer enabled="1" locked="0" pass="1" class="PointPatternFill">
+    <symbol name="PLU information 14 (surfacique)" type="fill" clip_to_extent="1" alpha="1" force_rhr="0" tags="CNIG, Urbanisme">
+      <layer enabled="1" pass="1" locked="0" class="PointPatternFill">
         <prop k="displacement_x" v="0" />
         <prop k="displacement_x_map_unit_scale" v="3x:0,0,0,0,0,0" />
         <prop k="displacement_x_unit" v="Point" />
@@ -30,8 +30,8 @@
             <Option name="type" type="QString" value="collection" />
           </Option>
         </data_defined_properties>
-        <symbol alpha="1" force_rhr="0" name="@12@0" type="marker" clip_to_extent="1">
-          <layer enabled="1" locked="0" pass="0" class="FontMarker">
+        <symbol name="@12@0" type="marker" clip_to_extent="1" alpha="1" force_rhr="0">
+          <layer enabled="1" pass="0" locked="0" class="FontMarker">
             <prop k="angle" v="0" />
             <prop k="chr" v="l" />
             <prop k="color" v="255,115,223,255" />
@@ -59,7 +59,7 @@
           </layer>
         </symbol>
       </layer>
-      <layer enabled="1" locked="0" pass="1" class="SimpleLine">
+      <layer enabled="1" pass="1" locked="0" class="SimpleLine">
         <prop k="capstyle" v="square" />
         <prop k="customdash" v="5;2" />
         <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0" />
