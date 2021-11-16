@@ -1,10 +1,10 @@
 <!DOCTYPE qgis_style>
 <qgis_style version="2">
   <symbols>
-    <symbol alpha="1" force_rhr="0" name="PSMV information 16 (surfacique)" type="fill" clip_to_extent="1" tags="CNIG, Urbanisme">
-      <layer enabled="1" locked="0" pass="0" class="SimpleFill">
+    <symbol name="PSMV information 16 (surfacique)" type="fill" clip_to_extent="1" alpha="1" force_rhr="0" tags="CNIG, Urbanisme">
+      <layer enabled="1" pass="0" locked="0" class="SimpleFill">
         <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0" />
-        <prop k="color" v="215,176,158,255" />
+        <prop k="color" v="215,176,158,153" />
         <prop k="joinstyle" v="bevel" />
         <prop k="offset" v="0,0" />
         <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0" />
@@ -22,7 +22,7 @@
           </Option>
         </data_defined_properties>
       </layer>
-      <layer enabled="1" locked="0" pass="0" class="SimpleLine">
+      <layer enabled="1" pass="0" locked="0" class="SimpleLine">
         <prop k="capstyle" v="square" />
         <prop k="customdash" v="5;2" />
         <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0" />

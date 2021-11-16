@@ -1,24 +1,24 @@
 <!DOCTYPE qgis_style>
 <qgis_style version="2">
   <symbols>
-    <symbol alpha="1" type="fill" name="PLU prescription 04 (surfacique)" clip_to_extent="1" force_rhr="0" tags="CNIG, Urbanisme">
-      <layer pass="1" class="SimpleFill" enabled="1" locked="0">
-        <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale" />
-        <prop v="255,167,127,0" k="color" />
-        <prop v="bevel" k="joinstyle" />
-        <prop v="0,0" k="offset" />
-        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale" />
-        <prop v="Point" k="offset_unit" />
-        <prop v="255,85,0,255" k="outline_color" />
-        <prop v="solid" k="outline_style" />
-        <prop v="1.5" k="outline_width" />
-        <prop v="Point" k="outline_width_unit" />
-        <prop v="no" k="style" />
+    <symbol name="PLU prescription 04 (surfacique)" type="fill" clip_to_extent="1" alpha="1" force_rhr="0" tags="CNIG, Urbanisme">
+      <layer enabled="1" pass="1" locked="0" class="SimpleFill">
+        <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="color" v="255,167,127,0" />
+        <prop k="joinstyle" v="bevel" />
+        <prop k="offset" v="0,0" />
+        <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="offset_unit" v="Point" />
+        <prop k="outline_color" v="255,85,0,255" />
+        <prop k="outline_style" v="solid" />
+        <prop k="outline_width" v="1.5" />
+        <prop k="outline_width_unit" v="Point" />
+        <prop k="style" v="no" />
         <data_defined_properties>
           <Option type="Map">
-            <Option type="QString" name="name" value="" />
+            <Option name="name" type="QString" value="" />
             <Option name="properties" />
-            <Option type="QString" name="type" value="collection" />
+            <Option name="type" type="QString" value="collection" />
           </Option>
         </data_defined_properties>
       </layer>

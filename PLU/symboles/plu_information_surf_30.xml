@@ -1,8 +1,8 @@
 <!DOCTYPE qgis_style>
 <qgis_style version="2">
   <symbols>
-    <symbol alpha="1" force_rhr="0" name="PLU information 30 (surfacique)" type="fill" clip_to_extent="1" tags="CNIG, Urbanisme">
-      <layer enabled="1" locked="0" pass="0" class="LinePatternFill">
+    <symbol name="PLU information 30 (surfacique)" type="fill" clip_to_extent="1" alpha="1" force_rhr="0" tags="CNIG, Urbanisme">
+      <layer enabled="1" pass="0" locked="0" class="LinePatternFill">
         <prop k="angle" v="45" />
         <prop k="color" v="210,4,4,255" />
         <prop k="distance" v="1.3" />
@@ -23,15 +23,15 @@
             <Option name="type" type="QString" value="collection" />
           </Option>
         </data_defined_properties>
-        <symbol alpha="1" force_rhr="0" name="@22@0" type="line" clip_to_extent="1">
-          <layer enabled="1" locked="0" pass="0" class="SimpleLine">
+        <symbol name="@22@0" type="line" clip_to_extent="1" alpha="1" force_rhr="0">
+          <layer enabled="1" pass="0" locked="0" class="SimpleLine">
             <prop k="capstyle" v="square" />
             <prop k="customdash" v="5;2" />
             <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0" />
             <prop k="customdash_unit" v="Point" />
             <prop k="draw_inside_polygon" v="0" />
             <prop k="joinstyle" v="bevel" />
-            <prop k="line_color" v="210,4,4,255" />
+            <prop k="line_color" v="210,4,4,153" />
             <prop k="line_style" v="solid" />
             <prop k="line_width" v="0.8" />
             <prop k="line_width_unit" v="Point" />
@@ -51,7 +51,7 @@
           </layer>
         </symbol>
       </layer>
-      <layer enabled="1" locked="0" pass="0" class="SimpleLine">
+      <layer enabled="1" pass="0" locked="0" class="SimpleLine">
         <prop k="capstyle" v="square" />
         <prop k="customdash" v="5;2" />
         <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0" />
