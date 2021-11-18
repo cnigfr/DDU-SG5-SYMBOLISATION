@@ -2,8 +2,6 @@ Le fichier [PSMV.stylx](/PSMV/ArcGISpro/PSMV.stylx) contient toutes les symbolis
 
 Certaines adaptations ont dû être faites du fait de gestion différentes entre QGIS et ArcGIS pro.
 
-Tous les remplissages surfaciques de couleur unie se sont vu appliquer une transparence de la couleur de 30%.
-
 **Prescription 03-50 :**
 Une étiquette est utilisée pour le positionnement de l'écriture dans le surfacique.
 
