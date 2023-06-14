@@ -6,5 +6,5 @@ Plans locaux d'urbanisme
 
    plu/zones
    plu/prescriptions
-   plu/information
+   plu/informations
 
