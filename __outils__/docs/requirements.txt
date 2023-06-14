@@ -1,0 +1,6 @@
+furo
+myst-parser
+pydata-sphinx-theme
+numpydoc
+psycopg2
+rdflib
