@@ -1,4 +1,10 @@
 Plans locaux d'urbanisme
 ========================
 
-.. include:: ../../PLU/preconisations.md
+.. toctree::
+   :maxdepth: 4
+
+   plu/zones
+   plu/prescriptions
+   plu/information
+
