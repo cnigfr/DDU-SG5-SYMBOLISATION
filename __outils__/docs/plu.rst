@@ -1,4 +1,4 @@
 Plans locaux d'urbanisme
 ========================
 
-.. include:: ../../PLU/preconisations
+.. include:: ../../PLU/preconisations.md
