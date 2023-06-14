@@ -23,3 +23,6 @@ jobs:
     steps:
     - id: deployment
       uses: sphinx-notes/pages@v3
+      with:
+        documentation_path: ./__outils__/docs
+        requirements_path: ./__outils__/docs/requirements.txt
