@@ -1,7 +1,7 @@
 ---
-name: Proposition de symbole PLU(i)
-about: Proposez une nouvelle symbolisation PLU(i)
-title: Proposition nouveau symbole EBC
+name: Proposition de symbole
+about: Proposez une nouvelle symbolisation
+title: Proposition nouveau symbole
 labels: PLU, à valider SG5
 assignees: alhyss, GT-CNIG-DDU, nkulpinski
 
