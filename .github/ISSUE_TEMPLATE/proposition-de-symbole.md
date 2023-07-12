@@ -2,7 +2,7 @@
 name: Proposition de symbole
 about: Proposez une nouvelle symbolisation
 title: Proposition nouveau symbole
-labels: PLU, à valider SG5
+labels: Symbole |0| Nouvelle Proposition
 assignees: alhyss, GT-CNIG-DDU, nkulpinski
 
 ---
