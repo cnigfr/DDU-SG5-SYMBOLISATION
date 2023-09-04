@@ -2,8 +2,7 @@
 
 Symbole unique pour toutes les zones (géométrie surfacique).
 
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
 
 ![ZONE](../../../PSMV/vignettes/ZONE.png)
 
