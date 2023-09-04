@@ -6,25 +6,26 @@ labels: Symbole |0| Nouvelle Proposition
 assignees: alhyss, GT-CNIG-DDU, nkulpinski
 
 ---
+<!-- 4 Questions vous seront posées -->
 
-**Décrivez votre proposition**
+** 1/ Décrivez votre proposition**
 Quel est votre cas d'usage ?
 
 
 
 
-**Code SYMBOLE**
+** 2/ Code SYMBOLE**
 Code symbole concerné : 
 
 
 
 
-**Copie d’écran du symbole proposé**
+** 3/ Copie d’écran du symbole proposé**
 Collez ici la copie d'écran de votre proposition :
 
 
 
-**Description détaillée de la proposition**
+** 4/ Description détaillée de la proposition**
 Décrivez ici les particularité techniques de votre demande selon l’exemple ci dessous :
 
 
