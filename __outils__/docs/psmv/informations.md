@@ -6,8 +6,7 @@
 
 **Périmètre d'application du plan de sauvegarde et mise en valeur**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![INFO-01-01](../../../PSMV/vignettes/INFO-01-01.png)
 
@@ -32,8 +31,7 @@ Géométrie ponctuelle :
 
 **Zone d'aménagement concerté (R123-13 2)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-02-00](../../../PSMV/vignettes/INFO-02-00.png)
 
@@ -57,8 +55,7 @@ Géométrie ponctuelle :
 
 **Zone de préemption dans un espace naturel et sensible (R123-13 3)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-03-00](../../../PSMV/vignettes/INFO-03-00.png)
 
@@ -90,8 +87,7 @@ Géométrie ponctuelle :
 
 **Périmètre de droit de préemption urbain (R123-13 4)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-04-00](../../../PSMV/vignettes/INFO-04-00.png)
 
@@ -123,8 +119,7 @@ Géométrie ponctuelle :
 
 **Périmètre de droit de préemption urbain renforcé**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-04-01](../../../PSMV/vignettes/INFO-04-01.png)
 
@@ -182,8 +177,7 @@ Géométrie ponctuelle :
 
 **Zone d'aménagement différé (R123-13 4)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-05-00](../../../PSMV/vignettes/INFO-05-00.png)
 
@@ -216,8 +210,7 @@ Géométrie ponctuelle :
 
 **Périmètre de développement prioritaire économie d'énergie (R123-13 6)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-07-00](../../../PSMV/vignettes/INFO-07-00.png)
 
@@ -252,8 +245,7 @@ Géométrie ponctuelle :
 
 **Périmètre forestier: Interdiction ou réglementation des plantations (code rural et de la pêche maritime), plantations à réaliser (R123-13 7)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-08-00](../../../PSMV/vignettes/INFO-08-00.png)
 
@@ -303,8 +295,7 @@ Géométrie ponctuelle :
 
 **Périmètre minier de concession pour l'exploitation ou le stockage (R123-13 8)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-09-00](../../../PSMV/vignettes/INFO-09-00.png)
 
@@ -337,8 +328,7 @@ Géométrie ponctuelle :
 
 **Zone de recherche et d'exploitation de carrière (R123-13 9)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-10-00](../../../PSMV/vignettes/INFO-10-00.png)
 
@@ -381,8 +371,7 @@ Géométrie ponctuelle :
 
 **Périmètre des zones délimitées – divisions foncières soumises à déclaration préalable (R123-13 10)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-11-00](../../../PSMV/vignettes/INFO-11-00.png)
 
@@ -415,8 +404,7 @@ Géométrie ponctuelle :
 
 **Périmètre de sursis à statuer (R123-13 11)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-12-00](../../../PSMV/vignettes/INFO-12-00.png)
 
@@ -440,8 +428,7 @@ Géométrie ponctuelle :
 
 **Secteur de programme d'aménagement d'ensemble (R123-13 12)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-13-00](../../../PSMV/vignettes/INFO-13-00.png)
 
@@ -473,8 +460,7 @@ Géométrie ponctuelle :
 
 **Périmètre de voisinage d'infrastructure de transport terrestre (R123-13 12)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-14-00](../../../PSMV/vignettes/INFO-14-00.png)
 
@@ -516,8 +502,7 @@ Géométrie ponctuelle :
 
 **Site archéologique**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-16-00](../../../PSMV/vignettes/INFO-16-00.png)
 
@@ -565,8 +550,7 @@ Symbole de police
 
 **Zone à risque d'exposition au plomb (R123-13 14)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-17-00](../../../PSMV/vignettes/INFO-17-00.png)
 
@@ -609,8 +593,7 @@ Géométrie ponctuelle :
 
 **Zones d'assainissement collectif/non collectif / eaux usées/eaux pluviales, schéma de réseaux eau et assainissement, systèmes d'élimination des déchets (R 123-14 3)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-19-01](../../../PSMV/vignettes/INFO-19-01.png)
 
@@ -668,8 +651,7 @@ Symbole de police
 
 **Règlement local de publicité**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-20-00](../../../PSMV/vignettes/INFO-20-00.png)
 
@@ -718,8 +700,7 @@ Géométrie ponctuelle :
 
 **Projet PPRN et PPRM (R123-14 7)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-21-00](../../../PSMV/vignettes/INFO-21-00.png)
 
@@ -751,8 +732,7 @@ Géométrie ponctuelle :
 
 **Protection des rives des  plans d'eau en zone de montagne (L145-5 et R145-3)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-22-00](../../../PSMV/vignettes/INFO-22-00.png)
 
@@ -784,8 +764,7 @@ Géométrie ponctuelle :
 
 **Arrêté du préfet coordonnateur de massif (L145-5)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-23-00](../../../PSMV/vignettes/INFO-23-00.png)
 
@@ -817,8 +796,7 @@ Géométrie ponctuelle :
 
 **Périmètre de protection des espaces agricoles et naturels péri-urbains (L143-1 et R123-13 15)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-25-00](../../../PSMV/vignettes/INFO-25-00.png)
 
@@ -850,8 +828,7 @@ Géométrie ponctuelle :
 
 **Plan d'exposition au bruit des aérodromes (L147-1 à L147-6 et R123-13 4)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-27-00](../../../PSMV/vignettes/INFO-27-00.png)
 
@@ -909,8 +886,7 @@ Symbole de police
 
 **Périmètre PUP (L332-11-3 et R123-13 17)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-30-00](../../../PSMV/vignettes/INFO-30-00.png)
 
@@ -942,8 +918,7 @@ Géométrie ponctuelle :
 
 **Périmètre patrimonial d'exclusion des matériaux et énergies renouvelables pris par délibération**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-31-00](../../../PSMV/vignettes/INFO-31-00.png)
 
@@ -967,8 +942,7 @@ Géométrie ponctuelle :
 
 **Secteur à fiscalité particulière en application du L331-14 (taxe d'aménagement) R123-13 19**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-32-00](../../../PSMV/vignettes/INFO-32-00.png)
 
@@ -1001,8 +975,7 @@ Géométrie ponctuelle :
 
 **Droit de préemption commercial (L214-1, R214-1 et 2)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-33-00](../../../PSMV/vignettes/INFO-33-00.png)
 
@@ -1035,8 +1008,7 @@ Géométrie ponctuelle :
 
 **Périmètre d'opération d'intérêt national (L121-2 et L121-9-1, R121-4-1)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-34-00](../../../PSMV/vignettes/INFO-34-00.png)
 
@@ -1071,8 +1043,7 @@ Géométrie ponctuelle :
 
 **Périmètre de secteur affecté par un seuil minimal de densité (L331-36, R123-13 20)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-35-00](../../../PSMV/vignettes/INFO-35-00.png)
 
@@ -1107,8 +1078,7 @@ Géométrie ponctuelle :
 
 **Schémas d'aménagement de plage**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-36-00](../../../PSMV/vignettes/INFO-36-00.png)
 
@@ -1143,8 +1113,7 @@ Géométrie ponctuelle :
 
 **Bois ou forêts relevant du régime forestier**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-37-00](../../../PSMV/vignettes/INFO-37-00.png)
 
@@ -1176,8 +1145,7 @@ Géométrie ponctuelle :
 
 **Secteurs d'informations sur les sols**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-38-00](../../../PSMV/vignettes/INFO-38-00.png)
 
@@ -1212,8 +1180,7 @@ Géométrie ponctuelle :
 
 **Périmètres de projets AFUP (dans lesquels les propriétaires fonciers sont incités à se regrouper en AFU de projet et les AFU de projet à mener leurs opérations de façon concertée)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-39-00](../../../PSMV/vignettes/INFO-39-00.png)
 
@@ -1245,8 +1212,7 @@ Géométrie ponctuelle :
 
 **Périmètre d'un bien inscrit au patrimoine mondial**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-40-01](../../../PSMV/vignettes/INFO-40-01.png)
 
@@ -1281,8 +1247,7 @@ Géométrie ponctuelle :
 
 **Zone tampon d'un bien inscrit au patrimoine mondial**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-40-02](../../../PSMV/vignettes/INFO-40-02.png)
 
@@ -1317,8 +1282,7 @@ Géométrie ponctuelle :
 
 **Bande non constructible de part et d'autre de l'axe des voies (L111-6)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-41-00](../../../PSMV/vignettes/INFO-41-00.png)
 
@@ -1350,8 +1314,7 @@ Géométrie ponctuelle :
 
 **Emprise ou localisation des immeubles bâtis ou non bâtis classés ou inscrits au titre des monuments historiques**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![INFO-70-00](../../../PSMV/vignettes/INFO-70-00.png)
 
@@ -1381,8 +1344,7 @@ Symbole SVG
 
 **Périmètre d'application d'une pièce écrite territorialisée relative aux annexes (liste des annexes, liste des SUP, plan des SUP)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-97-00](../../../PSMV/vignettes/INFO-97-00.png)
 
@@ -1404,8 +1366,7 @@ Géométrie ponctuelle :
 
 **Périmètre d'annulation partielle du document d'urbanisme (lorsqu'elle impacte le règlement graphique)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-98-00](../../../PSMV/vignettes/INFO-98-00.png)
 
@@ -1426,8 +1387,7 @@ Géométrie ponctuelle :
 
 **Autre périmètre, secteur, plan, document, site, projet, espace.**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![INFO-99-00](../../../PSMV/vignettes/INFO-99-00.png)
 
