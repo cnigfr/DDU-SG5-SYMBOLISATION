@@ -6,8 +6,7 @@
 
 **Espace boisé classé**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-01-00](../../../PSMV/vignettes/PSC-01-00.png)
 
@@ -68,8 +67,7 @@ Géométrie ponctuelle :
 
 **Limitation de la constructibilité pour des raisons environnementales**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-02-00](../../../PSMV/vignettes/PSC-02-00.png)
 
@@ -129,8 +127,7 @@ Géométrie ponctuelle :
 
 **Secteur avec interdiction de constructibilité pour des raisons environnementales, de risques, d'intérêt général**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-02-01](../../../PSMV/vignettes/PSC-02-01.png)
 
@@ -190,8 +187,7 @@ Géométrie ponctuelle :
 
 **Secteur avec conditions spéciales de constructibilité pour des raisons environnementales, de risques, d'intérêt général**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-02-02](../../../PSMV/vignettes/PSC-02-02.png)
 
@@ -251,8 +247,7 @@ Géométrie ponctuelle :
 
 **Secteur avec disposition de reconstruction / démolition**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-03-00](../../../PSMV/vignettes/PSC-03-00.png)
 
@@ -310,8 +305,7 @@ Géométrie ponctuelle :
 
 **Immeuble ou partie d'immeuble dont la modification peut être imposée à l’occasion d'opérations d'aménagement publiques ou privées**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-03-50](../../../PSMV/vignettes/PSC-03-50.png)
 
@@ -363,8 +357,7 @@ Symbole simple
 
 **Immeuble ou partie d'immeuble dont la démolition peut être imposée à l'occasion d'opérations d'aménagement publiques ou privées**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-03-51](../../../PSMV/vignettes/PSC-03-51.png)
 
@@ -388,8 +381,7 @@ Géométrie ponctuelle :
 
 **Périmètre issu des PDU sur obligation de stationnement**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-04-00](../../../PSMV/vignettes/PSC-04-00.png)
 
@@ -413,8 +405,7 @@ Géométrie ponctuelle :
 
 **Emplacement réservé (remarque : sauf lot de données antérieur au standard v2017, utiliser impérativement les sous-codes suivants)**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-05-00](../../../PSMV/vignettes/PSC-05-00.png)
 
@@ -501,8 +492,7 @@ Géométrie ponctuelle :
 
 **Secteur de projet en attente d'un projet d'aménagement global**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-05-07](../../../PSMV/vignettes/PSC-05-07.png)
 
@@ -536,8 +526,7 @@ Géométrie ponctuelle :
 
 **Patrimoine bâti, paysager ou éléments de paysage à protéger pour des motifs d'ordre culturel, historique, architectural ou écologique**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-07-00](../../../PSMV/vignettes/PSC-07-00.png)
 
@@ -630,8 +619,7 @@ Symbole de police
 
 **Éléments de paysage, (sites et secteurs) à préserver pour des motifs d'ordre écologique**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-07-04](../../../PSMV/vignettes/PSC-07-04.png)
 
@@ -710,8 +698,7 @@ Symbole de police
 
 **Immeuble bâti dont les parties intérieures et extérieures sont protégées en totalité, à conserver, restaurer et mettre en valeur**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-07-50](../../../PSMV/vignettes/PSC-07-50.png)
 
@@ -735,8 +722,7 @@ Géométrie ponctuelle :
 
 **Élément intérieur particulier protégé, à conserver, restaurer et mettre en valeur**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-07-51](../../../PSMV/vignettes/PSC-07-51.png)
 
@@ -788,8 +774,7 @@ Symbole simple
 
 **Immeuble bâti dont les parties extérieures sont protégées (façades, toitures, etc.), à conserver, restaurer et mettre en valeur**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-07-52](../../../PSMV/vignettes/PSC-07-52.png)
 
@@ -813,8 +798,7 @@ Géométrie ponctuelle :
 
 **Mur de soutènement, rempart ou mur de clôture protégé, à conserver, restaurer et mettre en valeur**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-07-53](../../../PSMV/vignettes/PSC-07-53.png)
 
@@ -842,8 +826,7 @@ Géométrie ponctuelle :
 
 **Élément extérieur particulier protégé (portail, clôture, puits, fontaine, statue, décor, etc.), à conserver, restaurer et mettre en valeur**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-07-54](../../../PSMV/vignettes/PSC-07-54.png)
 
@@ -873,8 +856,7 @@ Symbole de police
 
 **Séquence, composition, ordonnance architecturale ou urbaine protégée, à conserver, restaurer et mettre en valeur**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-07-55](../../../PSMV/vignettes/PSC-07-55.png)
 
@@ -900,8 +882,7 @@ Géométrie ponctuelle :
 
 **Séquence naturelle protégée (front rocheux, falaise, etc.), à conserver, restaurer et mettre en valeur**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-07-56](../../../PSMV/vignettes/PSC-07-56.png)
 
@@ -927,8 +908,7 @@ Géométrie ponctuelle :
 
 **Parc ou jardin de pleine terre protégé, à conserver, restaurer et mettre en valeur**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-07-57](../../../PSMV/vignettes/PSC-07-57.png)
 
@@ -960,8 +940,7 @@ Géométrie ponctuelle :
 
 **Espace libre à dominante végétale protégé, à conserver, restaurer et mettre en valeur**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-07-58](../../../PSMV/vignettes/PSC-07-58.png)
 
@@ -994,8 +973,7 @@ Géométrie ponctuelle :
 
 **Séquence, composition ou ordonnance végétale d’ensemble protégée, à conserver, restaurer et mettre en valeur**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-07-59](../../../PSMV/vignettes/PSC-07-59.png)
 
@@ -1021,8 +999,7 @@ Géométrie ponctuelle :
 
 **Arbre remarquable ou autre élément naturel protégé (grotte, rocher, etc.), à conserver, restaurer et mettre en valeur**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-07-60](../../../PSMV/vignettes/PSC-07-60.png)
 
@@ -1045,8 +1022,7 @@ Symbole simple
 
 **Place, cour ou autre espace libre à dominante minérale protégé (pavés, calades, etc.), à conserver, restaurer et mettre en valeur**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-07-61](../../../PSMV/vignettes/PSC-07-61.png)
 
@@ -1081,8 +1057,7 @@ Géométrie ponctuelle :
 
 **Cours d'eau, réseau hydraulique ou étendue aquatique protégé, à conserver, restaurer et mettre en valeur**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-07-62](../../../PSMV/vignettes/PSC-07-62.png)
 
@@ -1104,8 +1079,7 @@ Géométrie ponctuelle :
 
 **Point d'eau ou source protégé, à conserver, restaurer et mettre en valeur**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-07-63](../../../PSMV/vignettes/PSC-07-63.png)
 
@@ -1128,8 +1102,7 @@ Symbole simple
 
 **Passage d'eau souterrain protégé, à conserver, restaurer et mettre en valeur**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-07-64](../../../PSMV/vignettes/PSC-07-64.png)
 
@@ -1152,8 +1125,7 @@ Géométrie ponctuelle :
 
 **Espace vert non protégé à requalifier**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-07-65](../../../PSMV/vignettes/PSC-07-65.png)
 
@@ -1195,8 +1167,7 @@ Géométrie ponctuelle :
 
 **Place, cour, ou autre espace libre à dominante minérale non protégé à requalifier**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-07-66](../../../PSMV/vignettes/PSC-07-66.png)
 
@@ -1238,8 +1209,7 @@ Géométrie ponctuelle :
 
 **Immeuble bâti non protégé soumis à des dispositions spécifiques ou des règles générales localisées**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-07-67](../../../PSMV/vignettes/PSC-07-67.png)
 
@@ -1263,8 +1233,7 @@ Géométrie ponctuelle :
 
 **Immeuble non bâti ou espace libre non protégé soumis à des dispositions spécifiques ou des règles générales localisées**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-07-68](../../../PSMV/vignettes/PSC-07-68.png)
 
@@ -1313,8 +1282,7 @@ Géométrie ponctuelle :
 
 **Terrain cultivé ou non bâti à protéger en zone urbaine**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-08-00](../../../PSMV/vignettes/PSC-08-00.png)
 
@@ -1347,8 +1315,7 @@ Géométrie ponctuelle :
 
 **Zone à aménager en vue de la pratique du ski**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-13-00](../../../PSMV/vignettes/PSC-13-00.png)
 
@@ -1380,8 +1347,7 @@ Géométrie ponctuelle :
 
 **Secteur de plan de masse**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-14-00](../../../PSMV/vignettes/PSC-14-00.png)
 
@@ -1412,8 +1378,7 @@ Géométrie ponctuelle :
 
 **Règles d'implantation des constructions**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-15-00](../../../PSMV/vignettes/PSC-15-00.png)
 
@@ -1493,8 +1458,7 @@ Géométrie ponctuelle :
 
 **Limite maximale d'implantation de construction**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-15-50](../../../PSMV/vignettes/PSC-15-50.png)
 
@@ -1522,8 +1486,7 @@ Géométrie ponctuelle :
 
 **Limite imposée d'implantation de construction**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-15-51](../../../PSMV/vignettes/PSC-15-51.png)
 
@@ -1558,8 +1521,7 @@ Géométrie ponctuelle :
 
 **Constructions et installations nécessaires à des équipements collectifs**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-16-00](../../../PSMV/vignettes/PSC-16-00.png)
 
@@ -1612,8 +1574,7 @@ Symbole de police
 
 **Secteur de taille et de capacité d'accueil limitées (STECAL)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-16-03](../../../PSMV/vignettes/PSC-16-03.png)
 
@@ -1666,8 +1627,7 @@ Symbole de police
 
 **Secteur à programme de logements mixité sociale en Zone U et AU**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-17-00](../../../PSMV/vignettes/PSC-17-00.png)
 
@@ -1707,8 +1667,7 @@ Géométrie ponctuelle :
 
 **Secteur comportant des orientations d'aménagement et de programmation (OAP)**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-18-00](../../../PSMV/vignettes/PSC-18-00.png)
 
@@ -1810,8 +1769,7 @@ Géométrie ponctuelle :
 
 **Secteur protégé en raison de la richesse du sol et du sous-sol**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-19-00](../../../PSMV/vignettes/PSC-19-00.png)
 
@@ -1844,8 +1802,7 @@ Géométrie ponctuelle :
 
 **Secteur à transfert de constructibilité en zone N**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-20-00](../../../PSMV/vignettes/PSC-20-00.png)
 
@@ -1880,8 +1837,7 @@ Géométrie ponctuelle :
 
 **Diversité commerciale à protéger ou à développer**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-22-00](../../../PSMV/vignettes/PSC-22-00.png)
 
@@ -1961,8 +1917,7 @@ Symbole simple
 
 **Secteur avec taille minimale des logements en zone U et AU**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-23-00](../../../PSMV/vignettes/PSC-23-00.png)
 
@@ -1994,8 +1949,7 @@ Géométrie ponctuelle :
 
 **Voies, chemins, transport public à conserver et à créer**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-24-00](../../../PSMV/vignettes/PSC-24-00.png)
 
@@ -2063,8 +2017,7 @@ Géométrie ponctuelle :
 
 **Passage ou liaison piétonne à maintenir ou à créer**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-24-50](../../../PSMV/vignettes/PSC-24-50.png)
 
@@ -2098,8 +2051,7 @@ Géométrie ponctuelle :
 
 **Éléments de continuité écologique et trame verte et bleue**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-25-00](../../../PSMV/vignettes/PSC-25-00.png)
 
@@ -2158,8 +2110,7 @@ Symbole de police
 
 **Secteur de performance énergétique**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-26-00](../../../PSMV/vignettes/PSC-26-00.png)
 
@@ -2200,8 +2151,7 @@ Géométrie ponctuelle :
 
 **Secteur d'aménagement numérique**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-27-00](../../../PSMV/vignettes/PSC-27-00.png)
 
@@ -2224,8 +2174,7 @@ Géométrie ponctuelle :
 
 **Conditions de desserte**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-28-00](../../../PSMV/vignettes/PSC-28-00.png)
 
@@ -2283,8 +2232,7 @@ Symbole simple
 
 **Secteur avec densité minimale de construction**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-29-00](../../../PSMV/vignettes/PSC-29-00.png)
 
@@ -2323,8 +2271,7 @@ Géométrie ponctuelle :
 
 **Majoration des volumes constructibles**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-30-00](../../../PSMV/vignettes/PSC-30-00.png)
 
@@ -2386,8 +2333,7 @@ Géométrie ponctuelle :
 
 **Espaces remarquables du littoral**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-31-00](../../../PSMV/vignettes/PSC-31-00.png)
 
@@ -2497,8 +2443,7 @@ Symbole de police
 
 **Exclusion protection de plans d'eau de faible importance**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-32-00](../../../PSMV/vignettes/PSC-32-00.png)
 
@@ -2542,8 +2487,7 @@ Géométrie ponctuelle :
 
 **Secteur de dérogation aux protections des rives des plans d'eau en zone de montagne**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-33-00](../../../PSMV/vignettes/PSC-33-00.png)
 
@@ -2591,8 +2535,7 @@ Géométrie ponctuelle :
 
 **Espaces, paysages et milieux caractéristiques du patrimoine naturel et culturel montagnard à préserver**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-34-00](../../../PSMV/vignettes/PSC-34-00.png)
 
@@ -2647,8 +2590,7 @@ Symbole de police
 
 **Terres nécessaires au maintien et au développement des activités agricoles, pastorales et forestières à préserver**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-35-00](../../../PSMV/vignettes/PSC-35-00.png)
 
@@ -2699,8 +2641,7 @@ Géométrie ponctuelle :
 
 **Mixité des destinations ou sous-destinations**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-36-00](../../../PSMV/vignettes/PSC-36-00.png)
 
@@ -2732,8 +2673,7 @@ Géométrie ponctuelle :
 
 **Règles différenciées entre le rez-de-chaussée et les étages supérieurs des constructions**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-37-00](../../../PSMV/vignettes/PSC-37-00.png)
 
@@ -2780,8 +2720,7 @@ Géométrie ponctuelle :
 
 **Emprise au sol**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-38-00](../../../PSMV/vignettes/PSC-38-00.png)
 
@@ -2842,8 +2781,7 @@ Géométrie ponctuelle :
 
 **Hauteur**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-39-00](../../../PSMV/vignettes/PSC-39-00.png)
 
@@ -2891,8 +2829,7 @@ Géométrie ponctuelle :
 
 **Hauteur maximale de façade**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-39-50](../../../PSMV/vignettes/PSC-39-50.png)
 
@@ -2956,8 +2893,7 @@ Géométrie ponctuelle :
 
 **Hauteur maximale de faîtage ou de construction**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-39-51](../../../PSMV/vignettes/PSC-39-51.png)
 
@@ -3027,8 +2963,7 @@ Géométrie ponctuelle :
 
 **Hauteur imposée de façade**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-39-52](../../../PSMV/vignettes/PSC-39-52.png)
 
@@ -3106,8 +3041,7 @@ Géométrie ponctuelle :
 
 **Volumétrie**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-40-00](../../../PSMV/vignettes/PSC-40-00.png)
 
@@ -3154,8 +3088,7 @@ Géométrie ponctuelle :
 
 **Point de vue, perspective à préserver et à mettre en valeur**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-40-50](../../../PSMV/vignettes/PSC-40-50.png)
 
@@ -3192,8 +3125,7 @@ Symbole SVG
 
 **Aspect extérieur**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-41-00](../../../PSMV/vignettes/PSC-41-00.png)
 
@@ -3270,8 +3202,7 @@ Géométrie ponctuelle :
 
 **Coefficient de biotope par surface**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-42-00](../../../PSMV/vignettes/PSC-42-00.png)
 
@@ -3304,8 +3235,7 @@ Géométrie ponctuelle :
 
 **Réalisation d'espaces libres, plantations, aires de jeux et de loisirs**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-43-00](../../../PSMV/vignettes/PSC-43-00.png)
 
@@ -3378,8 +3308,7 @@ Géométrie ponctuelle :
 
 **Espace vert à créer**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-43-50](../../../PSMV/vignettes/PSC-43-50.png)
 
@@ -3421,8 +3350,7 @@ Géométrie ponctuelle :
 
 **Place, cour, ou autre espace libre à dominante minérale à créer**
             
-- [ ] Même symbole que pour les PLU.
-- [x] Apparaît dans la légende nationale PSMV.
+*Apparaît dans la légende nationale PSMV.*
         
 ![PSC-43-51](../../../PSMV/vignettes/PSC-43-51.png)
 
@@ -3464,8 +3392,7 @@ Géométrie ponctuelle :
 
 **Stationnement**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-44-00](../../../PSMV/vignettes/PSC-44-00.png)
 
@@ -3539,8 +3466,7 @@ Géométrie ponctuelle :
 
 **Zone d'aménagement concerté (surface de plancher, destination)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-45-00](../../../PSMV/vignettes/PSC-45-00.png)
 
@@ -3564,8 +3490,7 @@ Géométrie ponctuelle :
 
 **Constructibilité espace boisé antérieur au 20e siècle**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-46-00](../../../PSMV/vignettes/PSC-46-00.png)
 
@@ -3600,8 +3525,7 @@ Géométrie ponctuelle :
 
 **Desserte par les réseaux**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-47-00](../../../PSMV/vignettes/PSC-47-00.png)
 
@@ -3691,8 +3615,7 @@ Symbole de police
 
 **Mesures pour limiter l'imperméabilité des sols**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-48-00](../../../PSMV/vignettes/PSC-48-00.png)
 
@@ -3754,8 +3677,7 @@ Symbole de police
 
 **Opération d'ensemble imposée en zone AU**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-49-00](../../../PSMV/vignettes/PSC-49-00.png)
 
@@ -3802,8 +3724,7 @@ Géométrie ponctuelle :
 
 **Interdiction types d'activités, destinations, sous-destinations**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-50-00](../../../PSMV/vignettes/PSC-50-00.png)
 
@@ -3857,8 +3778,7 @@ Symbole de police
 
 **Autorisation sous conditions types d'activités, destinations, sous-destinations**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-51-00](../../../PSMV/vignettes/PSC-51-00.png)
 
@@ -3912,8 +3832,7 @@ Symbole de police
 
 **Infrastructures et équipements logistiques à préserver ou à développer en zones U et AU**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-52-00](../../../PSMV/vignettes/PSC-52-00.png)
 
@@ -3946,8 +3865,7 @@ Géométrie ponctuelle :
 
 **Périmètre d'application d'une pièce écrite territorialisée (rapport de présentation, PADD, règlement, règlement graphique, POA)**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-97-00](../../../PSMV/vignettes/PSC-97-00.png)
 
@@ -3969,8 +3887,7 @@ Géométrie ponctuelle :
 
 **Périmètre couvert par un plan de secteur**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-97-01](../../../PSMV/vignettes/PSC-97-01.png)
 
@@ -3993,8 +3910,7 @@ Géométrie ponctuelle :
 
 **Autre**
             
-- [x] Même symbole que pour les PLU.
-- [ ] Apparaît dans la légende nationale PSMV.
+*Même symbole que pour les PLU.*
         
 ![PSC-99-00](../../../PSMV/vignettes/PSC-99-00.png)
 
