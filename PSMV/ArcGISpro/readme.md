@@ -3,16 +3,19 @@ Le fichier [PSMV.stylx](/PSMV/ArcGISpro/PSMV.stylx) contient toutes les symbolis
 Certaines adaptations ont dû être faites du fait de gestion différentes entre QGIS et ArcGIS pro.
 
 **Prescription 03-50 :**
-Une étiquette est utilisée pour le positionnement de l'écriture dans le surfacique.
+Une étiquette est utilisée pour le positionnement de l'écriture dans le surfacique et pour le ponctuel associé.
+
+**Prescription 07-51 :**
+Une étiquette est utilisée pour le positionnement de l'écriture dans le surfacique et pour le ponctuel associé.
 
 **Prescription 39-50 :**
-Une étiquette est utilisée pour le positionnement de l'écriture sur la limite du surfacique.
+Une étiquette est utilisée pour le positionnement de l'écriture sur la limite du surfacique et pour le linéaire associé.
 
 **Prescription 39-51 :**
-Une étiquette est utilisée pour le positionnement de l'écriture sur la limite du surfacique.
+Une étiquette est utilisée pour le positionnement de l'écriture sur la limite du surfacique et pour le linéaire associé.
 
 **Prescription 39-52 :**
-Une étiquette est utilisée pour le positionnement de l'écriture sur la limite du surfacique.
+Une étiquette est utilisée pour le positionnement de l'écriture sur la limite du surfacique et pour le linéaire associé.
 
 **Prescription 40-50 :**
 Une étiquette est utilisée pour la position du symbole et son orientation.
