@@ -1,32 +1,32 @@
 ---
 name: Proposition de symbole
-about: Proposez une nouvelle symbolisation
-title: Proposition de nouveau symbole pour le code PSC-SLP_xx-xx_00x / INF-SLP_xx-xx_00x
+about: Proposez une nouvelle symbolisation ou une symbolisation alternative
+title: Proposition de symbole pour le code PSC-SLP_xx-xx_00x / INF-SLP_xx-xx_00x
 labels: Symbole |0| Nouvelle Proposition
 assignees: alhyss, GT-CNIG-DDU, nkulpinski
 
 ---
 <!-- 
 Merci de modifier le titre en fonction de la proposition de symbole
-4 Questions vous seront posées 
+#################################################
+##LE CODE SYMBOLE EST OBLIGATOIRE DANS LE TITRE##
+#################################################
+Dans le cas de plusieurs symboles proposés, merci de créer une issue pour chaque proposition
+
+Merci de répondre aux 3 questions qui vous sont posées ci dessous afin que le SG5 puisse répondre au mieux à votre demande 
 -->
-
-** 1/ Code SYMBOLE**
-<!--Code symbole concerné :-->
-
-
-** 2/ Décrivez votre proposition**
+** 1/ Décrivez votre proposition**
 <!--Quel est votre cas d'usage ?-->
 
 
 
 
-** 3/ Copie d’écran du symbole proposé**
+** 2/ Copie d’écran du symbole proposé**
 <!--Collez ici la copie d'écran de votre proposition :-->
 
 
 
-** 4/ Description détaillée de la proposition**
+** 3/ Description détaillée de la proposition**
 <!--Décrivez ici les particularité techniques de votre demande selon l’exemple ci dessous :-->
 ```
 
