@@ -1,34 +1,33 @@
 ---
 name: Proposition de symbole
 about: Proposez une nouvelle symbolisation
-title: Proposition nouveau symbole
+title: Proposition de nouveau symbole pour le code PSC-SLP_xx-xx_00x / INF-SLP_xx-xx_00x
 labels: Symbole |0| Nouvelle Proposition
 assignees: alhyss, GT-CNIG-DDU, nkulpinski
 
 ---
-<!-- 4 Questions vous seront posées -->
+<!-- 
+Merci de modifier le titre en fonction de la proposition de symbole
+4 Questions vous seront posées 
+-->
 
-** 1/ Décrivez votre proposition**
-Quel est votre cas d'usage ?
+** 1/ Code SYMBOLE**
+<!--Code symbole concerné :-->
 
 
-
-
-** 2/ Code SYMBOLE**
-Code symbole concerné : 
+** 2/ Décrivez votre proposition**
+<!--Quel est votre cas d'usage ?-->
 
 
 
 
 ** 3/ Copie d’écran du symbole proposé**
-Collez ici la copie d'écran de votre proposition :
+<!--Collez ici la copie d'écran de votre proposition :-->
 
 
 
 ** 4/ Description détaillée de la proposition**
-Décrivez ici les particularité techniques de votre demande selon l’exemple ci dessous :
-
-
+<!--Décrivez ici les particularité techniques de votre demande selon l’exemple ci dessous :-->
 ```
 
 **Contour**
