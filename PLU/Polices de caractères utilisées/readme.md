@@ -6,9 +6,9 @@
 
 
 ### Police de caractères Mostly Waves
-utilisée pour PSC-S_54-01_001 et PSC-S_54-02_001
+- Utilisée pour PSC-S_54-01_001 et PSC-S_54-02_001, cf. issues [106](https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/issues/106) et [107](https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/issues/107).
+- Publiée sur https://www.dafont.com/fr/mostly-waves.font
 
-https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/issues/106
-https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/issues/107
 
-https://www.dafont.com/fr/mostly-waves.font
+
+
