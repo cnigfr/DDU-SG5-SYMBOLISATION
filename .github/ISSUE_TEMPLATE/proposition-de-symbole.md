@@ -3,7 +3,7 @@ name: Proposition de symbole
 about: Proposez une nouvelle symbolisation ou une symbolisation alternative
 title: Proposition de symbole pour le code PSC-SLP_xx-xx_00x / INF-SLP_xx-xx_00x
 labels: Symbole |0| Nouvelle Proposition
-assignees: alhyss, GT-CNIG-DDU, nkulpinski
+assignees: GT-CNIG-DDU, nkulpinski
 
 ---
 <!-- 
