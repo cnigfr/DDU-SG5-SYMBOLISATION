@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Préconisations de Symbologie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>Préconisations de Symbologie</header>
+
+<div class="container">
+
+    <nav class="navigation">
+        <a href="#zones">🌍 Zones</a>
+        <a href="#prescriptions">📜 Prescriptions</a>
+        <a href="#informations">ℹ️ Informations</a>
+    </nav>
+
+    <section id="zones" class="section">
+        <h2>🌍 Zones</h2>
+        <div class="symbol-card">
+            <img src="images/preconisation1.PNG" alt="Zone 1">
+            <div class="info">
+                <h3>Zone Constructible</h3>
+                <p>Délimitation des zones constructibles en jaune.</p>
+                <div class="code-block">
+                    🎨 Couleur : `#fff000`<br>
+                    📏 Largeur de trait : `7 pt`
+                </div>
+            </div>
+        </div>
+        <div class="symbol-card">
+            <img src="images/preconisation2.PNG" alt="Zone 2">
+            <div class="info">
+                <h3>Zone Non Constructible</h3>
+                <p>Délimitation des zones protégées en rouge.</p>
+                <div class="code-block">
+                    🎨 Couleur : `#ff0000`<br>
+                    📏 Largeur de trait : `5 pt`
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prescriptions" class="section">
+        <h2>📜 Prescriptions</h2>
+        <div class="symbol-card">
+            <img src="images/preconisation3.PNG" alt="Prescription 1">
+            <div class="info">
+                <h3>Servitude de Passage</h3>
+                <p>Marquage en pointillé bleu clair.</p>
+                <div class="code-block">
+                    🎨 Couleur : `#00aaff`<br>
+                    📏 Style : `pointillé`<br>
+                    📏 Largeur de trait : `3 pt`
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="informations" class="section">
+        <h2>ℹ️ Informations</h2>
+        <div class="symbol-card">
+            <img src="images/preconisation4.PNG" alt="Information 1">
+            <div class="info">
+                <h3>Zone à Risque</h3>
+                <p>Signalisation des zones dangereuses.</p>
+                <div class="code-block">
+                    🎨 Couleur : `#ff6600`<br>
+                    📏 Largeur de trait : `4 pt`
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<button class="back-to-top" onclick="scrollToTop()">⬆</button>
+
+<script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
