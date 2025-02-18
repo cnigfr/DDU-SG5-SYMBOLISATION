@@ -1,0 +1,4854 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Préconisations de symbologie - CNIG PLU STANDARD</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+		body {
+			font-family: 'Poppins', sans-serif;
+			background: linear-gradient(135deg, #eceff1, #f4f4f4);
+			color: #333;
+			line-height: 1.8;
+			margin: 0;
+			padding: 20px;
+		}
+
+		.container {
+			max-width: 1000px;
+			margin: auto;
+			background: white;
+			padding: 30px;
+			box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+			border-radius: 12px;
+			transition: transform 0.3s;
+		}
+
+		.container:hover {
+			transform: translateY(-3px);
+		}
+
+		h1, h2 {
+			text-align: center;
+			color: #222;
+			font-weight: 600;
+		}
+
+		h2 {
+			border-bottom: 3px solid #007bff;
+			padding-bottom: 10px;
+			margin-top: 50px;
+		}
+
+		.menu {
+			background: #007bff;
+			padding: 15px;
+			text-align: center;
+			border-radius: 8px;
+			margin-bottom: 25px;
+			box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.2);
+		}
+
+		.menu a {
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+			padding: 12px 20px;
+			margin: 5px;
+			display: inline-block;
+			border-radius: 5px;
+			transition: all 0.3s ease;
+		}
+
+		.menu a:hover {
+			background: white;
+			color: #007bff;
+			box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+		}
+
+		.section {
+			background: white;
+			padding: 25px;
+			margin: 25px 0;
+			border-radius: 10px;
+			box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s;
+		}
+		
+		/* Style des liens */
+.section ul li a {
+    position: relative;
+    color: #6a1b9a;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.section ul li a:hover {
+    color: #4a148c;
+}
+
+/* Création de la bulle d'information */
+.section ul li a::after {
+    content: attr(data-info); /* Affichage du texte défini dans l'attribut */
+    position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    white-space: nowrap;
+    transition: opacity 0.3s, visibility 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+/* Apparition fluide de la bulle au survol */
+.section ul li a:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ajout d'un petit triangle sous la bulle */
+.section ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 140%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.85) transparent transparent transparent;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.section ul li a:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+		.section:hover {
+			transform: scale(1.02);
+		}
+
+		.anchor {
+			display: block;
+			height: 90px;
+			margin-top: -90px;
+			visibility: hidden;
+		}
+		
+		.prescriptions-list {
+				display: flex;
+				flex-wrap: wrap;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+		}
+
+			.prescriptions-list li {
+				flex: 1 1 calc(15% - 10px); /* Ajuste la largeur pour avoir 6 colonnes */
+				margin: 5px;
+				text-align: center;
+			}
+
+			.prescriptions-list a {
+				display: inline-block;
+				padding: 8px 12px;
+				font-size: 14px;
+				font-weight: bold;
+				color: #007bff;
+				text-decoration: none;
+				background: #f4f4f4;
+				border-radius: 5px;
+				transition: all 0.3s ease;
+				position: relative;
+			}
+
+			.prescriptions-list a:hover {
+				background: #007bff;
+				color: white;
+				transform: scale(1.1);
+			}
+
+			/* Ajout des bulles au survol */
+			.prescriptions-list a::after {
+				content: attr(href); /* Affiche l'URL comme texte */
+				position: absolute;
+				left: 50%;
+				bottom: 150%;
+				transform: translateX(-50%);
+				background: rgba(0, 0, 0, 0.8);
+				color: white;
+				font-size: 12px;
+				padding: 5px 8px;
+				border-radius: 4px;
+				white-space: nowrap;
+				opacity: 0;
+				transition: opacity 0.3s ease-in-out;
+				pointer-events: none;
+			}
+
+			.prescriptions-list a:hover::after {
+				opacity: 1;
+			}
+
+		.zone-info {
+			font-weight: bold;
+			color: #555;
+			background: rgba(0, 123, 255, 0.1);
+			padding: 5px 10px;
+			border-radius: 5px;
+		}
+		
+				.compact-list {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+			list-style: none;
+			padding: 0;
+			justify-content: center;
+		}
+
+		/* Élément de liste */
+		.compact-list li {
+			padding: 5px 10px;
+			background: #f1f1f1;
+			border-radius: 5px;
+			transition: 0.3s;
+		}
+
+		/* Lien stylisé */
+		.compact-list li a {
+			color: #007bff;
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+		/* Effet au survol */
+		.compact-list li:hover {
+			background: #007bff;
+		}
+
+		.compact-list li:hover a {
+			color: white;
+		}
+
+		.image-container {
+			text-align: center;
+			margin: 20px 0;
+		}
+
+		.image-container img {
+			max-width: 100%;
+			height: auto;
+			border-radius: 8px;
+			box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s;
+		}
+
+		.image-container img:hover {
+			transform: scale(1.05);
+		}
+
+		.code-box {
+			background: #1e1e1e;
+			color: #fff;
+			padding: 15px;
+			border-radius: 8px;
+			font-family: 'Courier New', monospace;
+			white-space: pre-wrap;
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+			transition: transform 0.3s;
+		}
+
+		.code-box:hover {
+			transform: translateY(-2px);
+		}
+
+		.back-to-top {
+			display: block;
+			text-align: right;
+			margin-top: 15px;
+			font-size: 14px;
+		}
+
+		.back-to-top a {
+			color: #007bff;
+			text-decoration: none;
+			font-weight: bold;
+			transition: all 0.3s ease;
+		}
+
+		.back-to-top a:hover {
+			text-decoration: underline;
+			color: #0056b3;
+		}
+
+		@media (max-width: 768px) {
+			.container {
+				padding: 20px;
+			}
+			
+			.menu a {
+				display: block;
+				margin-bottom: 10px;
+			}
+		}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Préconisations de symbologie - CNIG PLU</h1>
+
+        <div class="menu">
+            <a href="#zones">Zones</a>
+            <a href="#prescriptions">Prescriptions</a>
+            <a href="#informations">Informations</a>
+        </div>
+		
+		<div class="section">
+			<span class="anchor" id="zones"></span>
+			<h2>Zones</h2>
+			<p>Les différentes zones sont définies selon le standard CNIG PLU.</p>
+			<ul>
+				<li><a href="#zone-a" data-info="Zone Agricole (A)">Zone A</a></li>
+				<li><a href="#zone-auc" data-info="Zone à Urbaniser conditionnelle (AUc)">Zone AUc</a></li>
+				<li><a href="#zone-aus" data-info="Zone à Urbaniser sectorisée (AUs)">Zone AUs</a></li>
+				<li><a href="#zone-n" data-info="Zone Naturelle (N)">Zone N</a></li>
+				<li><a href="#zone-u" data-info="Zone Urbaine (U)">Zone U</a></li>
+			</ul>
+		</div>
+
+        <div class="section">
+			<span class="anchor" id="prescriptions"></span>
+			<h2>Prescriptions</h2>
+			<p>Liste des prescriptions :</p>
+			<ul class="prescriptions-list">
+				<li><a href="#prescription-01-00">01-00</a></li>
+				<li><a href="#prescription-01-01">01-01</a></li>
+				<li><a href="#prescription-01-02">01-02</a></li>
+				<li><a href="#prescription-01-03">01-03</a></li>
+				<li><a href="#prescription-02-00">02-00</a></li>
+				<li><a href="#prescription-02-01">02-01</a></li>
+				<li><a href="#prescription-02-02">02-02</a></li>
+				<li><a href="#prescription-03-00">03-00</a></li>
+				<li><a href="#prescription-03-01">03-01</a></li>
+				<li><a href="#prescription-03-02">03-02</a></li>
+				<li><a href="#prescription-04-00">04-00</a></li>
+				<li><a href="#prescription-05-00">05-00</a></li>
+				<li><a href="#prescription-05-01">05-01</a></li>
+				<li><a href="#prescription-05-02">05-02</a></li>
+				<li><a href="#prescription-05-03">05-03</a></li>
+				<li><a href="#prescription-05-04">05-04</a></li>
+				<li><a href="#prescription-05-05">05-05</a></li>
+				<li><a href="#prescription-05-06">05-06</a></li>
+				<li><a href="#prescription-05-07">05-07</a></li>
+				<li><a href="#prescription-07-00">07-00</a></li>
+				<li><a href="#prescription-07-01">07-01</a></li>
+				<li><a href="#prescription-07-03">07-03</a></li>
+				<li><a href="#prescription-07-04">07-04</a></li>
+				<li><a href="#prescription-07-05">07-05</a></li>
+				<li><a href="#prescription-08-00">08-00</a></li>
+				<li><a href="#prescription-13-00">13-00</a></li>
+				<li><a href="#prescription-14-00">14-00</a></li>
+				<li><a href="#prescription-15-00">15-00</a></li>
+				<li><a href="#prescription-15-01">15-01</a></li>
+				<li><a href="#prescription-15-02">15-02</a></li>
+				<li><a href="#prescription-15-03">15-03</a></li>
+				<li><a href="#prescription-15-98">15-98</a></li>
+				<li><a href="#prescription-16-00">16-00</a></li>
+				<li><a href="#prescription-16-01">16-01</a></li>
+				<li><a href="#prescription-16-02">16-02</a></li>
+				<li><a href="#prescription-16-03">16-03</a></li>
+				<li><a href="#prescription-16-04">16-04</a></li>
+				<li><a href="#prescription-16-05">16-05</a></li>
+				<li><a href="#prescription-17-00">17-00</a></li>
+				<li><a href="#prescription-18-00">18-00</a></li>
+				<li><a href="#prescription-18-01">18-01</a></li>
+				<li><a href="#prescription-18-02">18-02</a></li>
+				<li><a href="#prescription-18-03">18-03</a></li>
+				<li><a href="#prescription-18-04">18-04</a></li>
+				<li><a href="#prescription-18-05">18-05</a></li>
+				<li><a href="#prescription-18-06">18-06</a></li>
+				<li><a href="#prescription-18-07">18-07</a></li>
+				<li><a href="#prescription-18-08">18-08</a></li>
+				<li><a href="#prescription-18-09">18-09</a></li>
+				<li><a href="#prescription-18-10">18-10</a></li>
+				<li><a href="#prescription-18-11">18-11</a></li>
+				<li><a href="#prescription-19-00">19-00</a></li>
+				<li><a href="#prescription-20-00">20-00</a></li>
+				<li><a href="#prescription-22-00">22-00</a></li>
+				<li><a href="#prescription-22-01">22-01</a></li>
+				<li><a href="#prescription-22-02">22-02</a></li>
+				<li><a href="#prescription-22-03">22-03</a></li>
+				<li><a href="#prescription-23-00">23-00</a></li>
+				<li><a href="#prescription-24-00">24-00</a></li>
+				<li><a href="#prescription-24-01">24-01</a></li>
+				<li><a href="#prescription-24-02">24-02</a></li>
+				<li><a href="#prescription-24-03">24-03</a></li>
+				<li><a href="#prescription-24-04">24-04</a></li>
+				<li><a href="#prescription-25-00">25-00</a></li>
+				<li><a href="#prescription-26-00">26-00</a></li>
+				<li><a href="#prescription-26-01">26-01</a></li>
+				<li><a href="#prescription-27-00">27-00</a></li>
+				<li><a href="#prescription-28-00">28-00</a></li>
+				<li><a href="#prescription-28-01">28-01</a></li>
+				<li><a href="#prescription-29-00">29-00</a></li>
+				<li><a href="#prescription-30-00">30-00</a></li>
+				<li><a href="#prescription-30-01">30-01</a></li>
+				<li><a href="#prescription-30-02">30-02</a></li>
+				<li><a href="#prescription-30-03">30-03</a></li>
+				<li><a href="#prescription-30-04">30-04</a></li>
+				<li><a href="#prescription-31-00">31-00</a></li>
+				<li><a href="#prescription-31-01">31-01</a></li>
+				<li><a href="#prescription-31-02">31-02</a></li>
+				<li><a href="#prescription-31-03">31-03</a></li>
+				<li><a href="#prescription-31-04">31-04</a></li>
+				<li><a href="#prescription-31-05">31-05</a></li>
+				<li><a href="#prescription-31-06">31-06</a></li>
+				<li><a href="#prescription-31-07">31-07</a></li>
+				<li><a href="#prescription-31-08">31-08</a></li>
+				<li><a href="#prescription-32-00">32-00</a></li>
+				<li><a href="#prescription-33-00">33-00</a></li>
+				<li><a href="#prescription-34-00">34-00</a></li>
+				<li><a href="#prescription-35-00">35-00</a></li>
+				<li><a href="#prescription-36-00">36-00</a></li>
+				<li><a href="#prescription-37-00">37-00</a></li>
+				<li><a href="#prescription-37-01">37-01</a></li>
+				<li><a href="#prescription-37-02">37-02</a></li>
+				<li><a href="#prescription-38-00">38-00</a></li>
+				<li><a href="#prescription-38-01">38-01</a></li>
+				<li><a href="#prescription-38-02">38-02</a></li>
+				<li><a href="#prescription-38-97">38-97</a></li>
+				<li><a href="#prescription-38-98">38-98</a></li>
+				<li><a href="#prescription-39-00">39-00</a></li>
+				<li><a href="#prescription-39-01">39-01</a></li>
+				<li><a href="#prescription-39-02">39-02</a></li>
+				<li><a href="#prescription-39-97">39-97</a></li>
+				<li><a href="#prescription-39-98">39-98</a></li>
+				<li><a href="#prescription-40-00">40-00</a></li>
+				<li><a href="#prescription-40-01">40-01</a></li>
+				<li><a href="#prescription-40-02">40-02</a></li>
+				<li><a href="#prescription-40-97">40-97</a></li>
+				<li><a href="#prescription-40-98">40-98</a></li>
+				<li><a href="#prescription-41-00">41-00</a></li>
+				<li><a href="#prescription-41-01">41-01</a></li>
+				<li><a href="#prescription-41-02">41-02</a></li>
+				<li><a href="#prescription-41-03">41-03</a></li>
+				<li><a href="#prescription-41-98">41-98</a></li>
+				<li><a href="#prescription-42-00">42-00</a></li>
+				<li><a href="#prescription-43-00">43-00</a></li>
+				<li><a href="#prescription-43-01">43-01</a></li>
+				<li><a href="#prescription-43-02">43-02</a></li>
+				<li><a href="#prescription-43-03">43-03</a></li>
+				<li><a href="#prescription-44-00">44-00</a></li>
+				<li><a href="#prescription-44-01">44-01</a></li>
+				<li><a href="#prescription-44-02">44-02</a></li>
+				<li><a href="#prescription-44-03">44-03</a></li>
+				<li><a href="#prescription-44-04">44-04</a></li>
+				<li><a href="#prescription-44-98">44-98</a></li>
+				<li><a href="#prescription-45-00">45-00</a></li>
+				<li><a href="#prescription-46-00">46-00</a></li>
+				<li><a href="#prescription-47-00">47-00</a></li>
+				<li><a href="#prescription-47-01">47-01</a></li>
+				<li><a href="#prescription-47-02">47-02</a></li>
+				<li><a href="#prescription-47-03">47-03</a></li>
+				<li><a href="#prescription-47-04">47-04</a></li>
+				<li><a href="#prescription-47-05">47-05</a></li>
+				<li><a href="#prescription-48-00">48-00</a></li>
+				<li><a href="#prescription-49-00">49-00</a></li>
+				<li><a href="#prescription-49-01">49-01</a></li>
+				<li><a href="#prescription-49-02">49-02</a></li>
+				<li><a href="#prescription-50-00">50-00</a></li>
+				<li><a href="#prescription-51-00">51-00</a></li>
+				<li><a href="#prescription-52-00">52-00</a></li>
+				<li><a href="#prescription-99-00">99-00</a></li>
+				<li><a href="#prescription-99-01">99-01</a></li>
+				<li><a href="#prescription-99-02">99-02</a></li>
+				<li><a href="#prescription-99-03">99-03</a></li>
+				<li><a href="#prescription-99-04">99-04</a></li>
+				<li><a href="#prescription-99-06">99-06</a></li>
+				<li><a href="#prescription-99-07">99-07</a></li>
+				<li><a href="#prescription-99-08">99-08</a></li>
+				<li><a href="#prescription-99-09">99-09</a></li>
+				<li><a href="#prescription-99-10">99-10</a></li>
+			</ul>
+		</div>
+
+        <div class="section">
+			<span class="anchor" id="informations"></span>
+			<h2>Informations</h2>
+			<p>Liste des informations :</p>
+			<ul class="compact-list">
+				<li><a href="#info-02-00">02h00</a></li>
+				<li><a href="#info-03-00">03h00</a></li>
+				<li><a href="#info-04-00">04h00</a></li>
+				<li><a href="#info-05-00">05h00</a></li>
+				<li><a href="#info-07-00">07h00</a></li>
+				<li><a href="#info-08-00">08h00</a></li>
+				<li><a href="#info-09-00">09h00</a></li>
+				<li><a href="#info-10-00">10h00</a></li>
+				<li><a href="#info-11-00">11h00</a></li>
+				<li><a href="#info-12-00">12h00</a></li>
+				<li><a href="#info-13-00">13h00</a></li>
+				<li><a href="#info-14-00">14h00</a></li>
+				<li><a href="#info-16-00">16h00</a></li>
+				<li><a href="#info-17-00">17h00</a></li>
+				<li><a href="#info-19h01">19h01</a></li>
+				<li><a href="#info-19-02">19-02</a></li>
+				<li><a href="#info-20-00">20-00</a></li>
+				<li><a href="#info-21-00">21-00</a></li>
+				<li><a href="#info-22-00">22-00</a></li>
+				<li><a href="#info-23-00">23-00</a></li>
+				<li><a href="#info-25-00">25-00</a></li>
+				<li><a href="#info-27-00">27-00</a></li>
+				<li><a href="#info-30-00">30-00</a></li>
+				<li><a href="#info-31-00">31-00</a></li>
+				<li><a href="#info-32-00">32-00</a></li>
+				<li><a href="#info-33-00">33-00</a></li>
+				<li><a href="#info-34-00">34-00</a></li>
+				<li><a href="#info-35-00">35-00</a></li>
+				<li><a href="#info-36-00">36-00</a></li>
+				<li><a href="#info-37-00">37-00</a></li>
+				<li><a href="#info-38-00">38-00</a></li>
+				<li><a href="#info-39-00">39-00</a></li>
+				<li><a href="#info-40-01">40-01</a></li>
+				<li><a href="#info-40-02">40-02</a></li>
+				<li><a href="#info-41-00">41-00</a></li>
+				<li><a href="#info-97-00">97-00</a></li>
+				<li><a href="#info-98-00">98-00</a></li>
+				<li><a href="#info-99-00">99-00</a></li>
+				<li><a href="#info-99-01">99-01</a></li>
+				<li><a href="#info-99-02">99-02</a></li>
+			</ul>
+		</div>
+
+        <div class="section">
+            <span class="anchor" id="zones"></span>
+            <h2>Zones</h2>
+        </div>
+
+        <!-- Zone A -->
+        <div class="section">
+            <span class="anchor" id="zone-a"></span>
+            <h2>Zone A</h2>
+            <p class="zone-info">Zone agricole</p>
+
+            <h3>Grande échelle (≥ 1:2500)</h3>
+            <div class="image-container">
+                <img src="/PLU/vignettes/ZONE-A_sup2500.png" alt="ZONE A Grande Échelle">
+            </div>
+            <div class="code-box">
+Ligne simple
+• couleur : RVB 255,240,0 (#fff000)
+• décalage : 3 pt
+• largeur de trait : 7 pt
+• style de jointure : rond
+• style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 52,52,52 (#343434)
+• largeur de trait : 2.5 pt
+• style de jointure : angle droit
+• style de trait : ligne continue
+            </div>
+
+            <h3>Petite échelle (< 1:2500)</h3>
+            <div class="image-container">
+                <img src="/PLU/vignettes/ZONE-A_inf2500.png" alt="ZONE A Petite Échelle">
+            </div>
+            <div class="code-box">
+Remplissage simple
+• couleur de remplissage : RVB 255,255,0 (#ffff00), transparence 40%
+• couleur de trait : RVB 52,52,52 (#343434)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+            </div>
+
+            <p class="back-to-top"><a href="#zones">↑ Retour en haut</a></p>
+        </div>
+
+        <!-- Zone AUc -->
+        <div class="section">
+            <span class="anchor" id="zone-auc"></span>
+            <h2>Zone AUc</h2>
+            <p class="zone-info">Zone à urbaniser</p>
+
+            <h3>Grande échelle (≥ 1:2500)</h3>
+            <div class="image-container">
+                <img src="/PLU/vignettes/ZONE-AUc_sup2500.png" alt="ZONE AUc Grande Échelle">
+            </div>
+            <div class="code-box">
+Ligne simple
+• couleur : RVB 212,0,6 (#d40006)
+• décalage : 3 pt
+• largeur de trait : 7 pt
+• style de jointure : rond
+• style de trait : ligne continue
+            </div>
+
+            <h3>Petite échelle (< 1:2500)</h3>
+            <div class="image-container">
+                <img src="/PLU/vignettes/ZONE-AUc_inf2500.png" alt="ZONE AUc Petite Échelle">
+            </div>
+            <div class="code-box">
+Remplissage simple
+• couleur de remplissage : RVB 255,101,101 (#ff6565), transparence 40%
+• couleur de trait : RVB 52,52,52 (#343434)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+            </div>
+
+            <p class="back-to-top"><a href="#zones">↑ Retour en haut</a></p>
+        </div>
+
+        <!-- Zone AUs -->
+        <div class="section">
+            <span class="anchor" id="zone-aus"></span>
+            <h2>Zone AUs</h2>
+            <p class="zone-info">Zone à urbaniser bloquée</p>
+
+            <h3>Grande échelle (≥ 1:2500)</h3>
+            <div class="image-container">
+                <img src="/PLU/vignettes/ZONE-AUs_sup2500.png" alt="ZONE AUs Grande Échelle">
+            </div>
+            <div class="code-box">
+Ligne simple
+• couleur : RVB 232,135,102 (#e88766)
+• décalage : 3 pt
+• largeur de trait : 7 pt
+• style de jointure : rond
+• style de trait : ligne continue
+            </div>
+
+            <h3>Petite échelle (< 1:2500)</h3>
+            <div class="image-container">
+                <img src="/PLU/vignettes/ZONE-AUs_inf2500.png" alt="ZONE AUs Petite Échelle">
+            </div>
+            <div class="code-box">
+Remplissage simple
+• couleur de remplissage : RVB 254,204,190 (#feccbe), transparence 40%
+• couleur de trait : RVB 52,52,52 (#343434)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+            </div>
+
+            <p class="back-to-top"><a href="#zones">↑ Retour en haut</a></p>
+        </div>
+		
+		<!-- Zone N -->
+<div class="section">
+    <span class="anchor" id="zone-n"></span>
+    <h2>Zone N</h2>
+    <p class="zone-info">Zone naturelle et forestière</p>
+
+    <h3>Grande échelle (≥ 1:2500)</h3>
+    <div class="image-container">
+        <img src="/PLU/vignettes/ZONE-N_sup2500.png" alt="ZONE N Grande Échelle">
+    </div>
+    <div class="code-box">
+Ligne simple
+• couleur : RVB 35,166,0 (#23a600)
+• décalage : 3 pt
+• largeur de trait : 7 pt
+• style de jointure : rond
+• style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 52,52,52 (#343434)
+• largeur de trait : 2.5 pt
+• style de jointure : angle droit
+• style de trait : ligne continue
+    </div>
+
+    <h3>Petite échelle (< 1:2500)</h3>
+    <div class="image-container">
+        <img src="/PLU/vignettes/ZONE-N_inf2500.png" alt="ZONE N Petite Échelle">
+    </div>
+    <div class="code-box">
+Remplissage simple
+• couleur de remplissage : RVB 86,170,2 (#56aa02), transparence 40%
+• couleur de trait : RVB 52,52,52 (#343434)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <p class="back-to-top"><a href="#zones">↑ Retour en haut</a></p>
+</div>
+
+<!-- Zone U -->
+<div class="section">
+    <span class="anchor" id="zone-u"></span>
+    <h2>Zone U</h2>
+    <p class="zone-info">Zone urbaine</p>
+
+    <h3>Grande échelle (≥ 1:2500)</h3>
+    <div class="image-container">
+        <img src="/PLU/vignettes/ZONE-U_sup2500.png" alt="ZONE U Grande Échelle">
+    </div>
+    <div class="code-box">
+Ligne simple
+• couleur : RVB 176,0,6 (#b00006)
+• décalage : 3 pt
+• largeur de trait : 7 pt
+• style de jointure : rond
+• style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 52,52,52 (#343434)
+• largeur de trait : 2.5 pt
+• style de jointure : angle droit
+• style de trait : ligne continue
+    </div>
+
+    <h3>Petite échelle (< 1:2500)</h3>
+    <div class="image-container">
+        <img src="/PLU/vignettes/ZONE-U_inf2500.png" alt="ZONE U Petite Échelle">
+    </div>
+    <div class="code-box">
+Remplissage simple
+• couleur de remplissage : RVB 230,0,0 (#e60000), transparence 40%
+• couleur de trait : RVB 52,52,52 (#343434)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <p class="back-to-top"><a href="#zones">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescriptions -->
+<div class="section">
+    <span class="anchor" id="prescriptions"></span>
+    <h2>Prescriptions</h2>
+</div>
+
+<!-- Prescription 01-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-01-00"></span>
+    <h3>Prescription 01-00</h3>
+    <p class="zone-info">Espace boisé classé</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-01-00.png" alt="PSC 01-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 5 pt
+• distance verticale : 5 pt
+
+    Symbole simple
+    • couleur de remplissage : RVB 38,140,0 (#268c00)
+    • nom du symbole : circle
+    • taille : 1.5 pt
+
+Motif de points
+• distance horizontale : 10 pt
+• distance verticale : 10 pt
+
+    Symbole simple
+    • couleur de remplissage : RVB 255,255,255 (#ffffff)
+    • couleur de trait : RVB 86,170,2 (#56aa02)
+    • largeur de trait : 0.8 pt
+    • nom du symbole : circle
+    • style de trait : ligne continue
+    • taille : 8 pt
+
+Ligne simple
+• couleur : RVB 86,170,2 (#56aa02)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne de symboles
+• intervalle : 6 pt
+
+    Symbole simple
+    • couleur de remplissage : RVB 38,140,0 (#268c00)
+    • nom du symbole : circle
+    • style de jointure : angle droit
+    • taille : 5 pt
+    </div>
+
+    <h4>Géométrie ponctuelle</h4>
+    <div class="code-box">
+Symbole simple
+• couleur de remplissage : RVB 38,140,0 (#268c00)
+• nom du symbole : circle
+• taille : 7 pt
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 01-01 à 01-03 -->
+<div class="section">
+    <span class="anchor" id="prescription-01-01"></span>
+    <h3>Prescription 01-01</h3>
+    <p class="zone-info">Espace boisé classé à protéger ou conserver</p>
+    <p><em>Mêmes figurés que le sous-code <a href="#prescription-01-00">01-00</a>.</em></p>
+</div>
+
+<div class="section">
+    <span class="anchor" id="prescription-01-02"></span>
+    <h3>Prescription 01-02</h3>
+    <p class="zone-info">Espace boisé classé à créer</p>
+    <p><em>Mêmes figurés que le sous-code <a href="#prescription-01-00">01-00</a>.</em></p>
+</div>
+
+<div class="section">
+    <span class="anchor" id="prescription-01-03"></span>
+    <h3>Prescription 01-03</h3>
+    <p class="zone-info">Espace boisé classé significatif au titre de la loi littoral</p>
+    <p><em>Mêmes figurés que le sous-code <a href="#prescription-01-00">01-00</a>.</em></p>
+</div>
+
+<!-- Prescription 02-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-02-00"></span>
+    <h3>Prescription 02-00</h3>
+    <p class="zone-info">Limitation de la constructibilité pour des raisons environnementales</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-02-00.png" alt="PSC 02-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• décalage : 4 pt
+• espacement : 13 pt
+• rotation : 45°
+
+    Ligne de symboles
+    • intervalle : 4 pt
+
+        Symbole simple
+        • couleur de remplissage : RVB 110,110,110 (#6e6e6e)
+        • nom du symbole : circle
+        • style de jointure : angle droit
+        • taille : 1 pt
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 02-01 -->
+<div class="section">
+    <span class="anchor" id="prescription-02-01"></span>
+    <h3>Prescription 02-01</h3>
+    <p class="zone-info">Secteur avec interdiction de constructibilité pour des raisons environnementales, de risques, d'intérêt général</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-02-01.png" alt="PSC 02-01">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• décalage : 4 pt
+• espacement : 13 pt
+• rotation : 45°
+
+    Ligne de symboles
+    • intervalle : 4 pt
+
+        Symbole simple
+        • couleur de remplissage : RVB 223,115,225 (#df73e1)
+        • nom du symbole : circle
+        • style de jointure : angle droit
+        • taille : 1 pt
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 02-02 -->
+<div class="section">
+    <span class="anchor" id="prescription-02-02"></span>
+    <h3>Prescription 02-02</h3>
+    <p class="zone-info">Secteur avec conditions spéciales de constructibilité pour des raisons environnementales, de risques, d'intérêt général</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-02-02.png" alt="PSC 02-02">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• décalage : 4 pt
+• espacement : 13 pt
+• rotation : 45°
+
+    Ligne de symboles
+    • intervalle : 4 pt
+
+        Symbole simple
+        • couleur de remplissage : RVB 255,167,127 (#ffa77f)
+        • nom du symbole : circle
+        • style de jointure : angle droit
+        • taille : 1 pt
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+<!-- Prescription 03-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-03-00"></span>
+    <h3>Prescription 03-00</h3>
+    <p class="zone-info">Secteur avec disposition de reconstruction / démolition</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-03-00.png" alt="PSC 03-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Ligne de symboles
+• décalage le long de la ligne : 1 pt
+• intervalle : 13 pt
+
+    Symbole de police
+    • caractère(s) : unicode 183
+    • couleur de remplissage : RVB 52,52,52 (#343434)
+    • décalage (en x, en y) : 0,3 pt
+    • famille de police : Wingdings 2
+    • taille : 10 pt
+
+Motif de points
+• distance horizontale : 4 pt
+• distance verticale : 4 pt
+
+    Symbole de police
+    • caractère(s) : = (unicode 61)
+    • couleur de remplissage : RVB 104,104,104 (#686868)
+    • famille de police : Webdings
+    • taille : 2 pt
+
+Ligne simple
+• couleur : RVB 52,52,52 (#343434)
+• largeur de trait : 1 pt
+• modèle de tiret personnalisé (tiret ; espace) : 2;11 pt
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 03-01 -->
+<div class="section">
+    <span class="anchor" id="prescription-03-01"></span>
+    <h3>Prescription 03-01</h3>
+    <p class="zone-info">[Réservé aux cartes communales] Secteur dans lequel la reconstruction à l'identique d'un bâtiment détruit par un sinistre n'est pas autorisée</p>
+    <p><em>Mêmes figurés que le sous-code <a href="#prescription-03-00">03-00</a>.</em></p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 03-02 -->
+<div class="section">
+    <span class="anchor" id="prescription-03-02"></span>
+    <h3>Prescription 03-02</h3>
+    <p class="zone-info">Secteur dans lequel la reconstruction à l'identique d'un bâtiment détruit par un sinistre n'est pas autorisée</p>
+    <p><em>Mêmes figurés que le sous-code <a href="#prescription-03-00">03-00</a>.</em></p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 04-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-04-00"></span>
+    <h3>Prescription 04-00</h3>
+    <p class="zone-info">Périmètre issu des PDU sur obligation de stationnement</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-04-00.png" alt="PSC 04-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Remplissage simple
+• couleur de trait : RVB 255,85,0 (#ff5500)
+• largeur de trait : 1.5 pt
+• style de remplissage : pas de remplissage
+• style de trait : ligne continue
+    </div>
+	
+	<!-- Prescription 05-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-05-00"></span>
+    <h3>Prescription 05-00</h3>
+    <p class="zone-info">Emplacement réservé (remarque : sauf lot de données antérieur au standard v2017, utiliser impérativement les sous-codes suivants)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-05-00.png" alt="PSC 05-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• espacement : 5 pt
+• rotation : 135°
+
+    Ligne simple
+    •couleur : RVB 230,0,169 (#e600a9)
+    • largeur de trait : 0.8 pt
+    • style de cap : plat
+    • style de jointure : angle droit
+    • style de trait : ligne continue
+
+Motif de lignes
+• espacement : 5 pt
+• rotation : 45°
+
+    Ligne simple
+    • couleur : RVB 230,0,169 (#e600a9)
+    • largeur de trait : 0.8 pt
+    • style de cap : plat
+    • style de jointure : angle droit
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 230,0,169 (#e600a9)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne de symboles
+• intervalle : 7 pt
+
+    Symbole simple
+    • couleur de remplissage : transparent
+    • couleur de trait : RVB 230,0,169 (#e600a9)
+    • largeur de trait : 0.8 pt
+    • nom du symbole : square
+    • rotation : 45°
+    • style de jointure : angle droit
+    • style de trait : ligne continue
+    • taille : 4 pt
+    </div>
+
+    <h4>Géométrie ponctuelle</h4>
+    <div class="code-box">
+Symbole simple
+• couleur de remplissage : transparent
+• couleur de trait : RVB 230,0,169 (#e600a9)
+• largeur de trait : 0.8 pt
+• nom du symbole : square
+• style de trait : ligne continue
+• taille : 5 pt
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 05-01 à 05-04 -->
+<div class="section">
+    <h3>Prescriptions 05-01 à 05-04</h3>
+    <p class="zone-info">Mêmes figurés que le sous-code <a href="#prescription-05-00">05-00</a>.</p>
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 05-05 -->
+<div class="section">
+    <span class="anchor" id="prescription-05-05"></span>
+    <h3>Prescription 05-05</h3>
+    <p class="zone-info">Emplacement réservé logement social / mixité sociale</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-05-05.png" alt="PSC 05-05">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• espacement : 5 pt
+• rotation : 135°
+
+    Ligne simple
+    • couleur : RVB 143,33,170 (#8f21aa)
+    • largeur de trait : 0.8 pt
+    • style de cap : plat
+    • style de jointure : angle droit
+    • style de trait : ligne continue
+
+Motif de lignes
+• espacement : 5 pt
+• rotation : 45°
+
+    Ligne simple
+    • couleur : RVB 143,33,170 (#8f21aa)
+    • largeur de trait : 0.8 pt
+    • style de cap : plat
+    • style de jointure : angle droit
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 143,33,170 (#8f21aa)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+  <h4>Géométrie ponctuelle</h4>
+    <div class="code-box">
+Symbole simple
+• couleur de remplissage : transparent
+• couleur de trait : RVB 143,33,170 (#8f21aa)
+• largeur de trait : 0.8 pt
+• nom du symbole : square
+• style de trait : ligne continue
+• taille : 5 pt
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 05-06 -->
+<div class="section">
+    <span class="anchor" id="prescription-05-06"></span>
+    <h3>Prescription 05-06</h3>
+    <p class="zone-info">Servitude de localisation des voies, ouvrages publics, installations d'intérêt général et espaces verts en zone U ou AU</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-05-06.png" alt="PSC 05-06">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• espacement : 5 pt
+• rotation : 135°
+
+    Ligne simple
+    • couleur : RVB 52,52,52 (#343434)
+    • largeur de trait : 0.8 pt
+    • style de cap : plat
+    • style de jointure : angle droit
+    • style de trait : ligne continue
+
+Motif de lignes
+• espacement : 5 pt
+• rotation : 45°
+
+    Ligne simple
+    • couleur : RVB 52,52,52 (#343434)
+    • largeur de trait : 0.8 pt
+    • style de cap : plat
+    • style de jointure : angle droit
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 52,52,52 (#343434)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+   <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne de symboles
+• intervalle : 7 pt
+
+    Symbole simple
+    • couleur de remplissage : transparent
+    • couleur de trait : RVB 52,52,52 (#343434)
+    • largeur de trait : 0.8 pt
+    • nom du symbole : square
+    • rotation : 45°
+    • style de jointure : angle droit
+    • style de trait : ligne continue
+    • taille : 4 pt
+    </div>
+
+  <h4>Géométrie ponctuelle</h4>
+    <div class="code-box">
+Symbole simple
+• couleur de remplissage : transparent
+• couleur de trait : RVB 52,52,52 (#343434)
+• largeur de trait : 0.8 pt
+• nom du symbole : square
+• style de trait : ligne continue
+• taille : 5 pt
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 05-07 -->
+<div class="section">
+    <span class="anchor" id="prescription-05-07"></span>
+    <h3>Prescription 05-07</h3>
+    <p class="zone-info">Secteur de projet en attente d'un projet d'aménagement global</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-05-07.png" alt="PSC 05-07">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 12 pt
+• distance verticale : 12 pt
+
+    Symbole simple
+    • couleur de trait : RVB 255,85,0 (#ff5500)
+    • largeur de trait : 0.8 pt
+    • nom du symbole : cross
+    • style de trait : ligne continue
+    • taille : 6 pt
+
+Ligne simple
+• couleur : RVB 255,85,0 (#ff5500)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 07-01 à 07-03 -->
+<div class="section">
+    <h3>Prescriptions 07-01 à 07-03</h3>
+    <p class="zone-info">Mêmes figurés que le sous-code <a href="#prescription-07-00">07-00</a>.</p>
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 07-04 -->
+<div class="section">
+    <span class="anchor" id="prescription-07-04"></span>
+    <h3>Prescription 07-04</h3>
+    <p class="zone-info">Éléments de paysage, (sites et secteurs) à préserver pour des motifs d'ordre écologique</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-07-04.png" alt="PSC 07-04">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 20 pt
+• distance verticale : 20 pt
+
+    Symbole de police
+    • caractère(s) : unicode 234
+    • couleur de remplissage : RVB 255,255,255 (#ffffff)
+    • famille de police : Wingdings 2
+    • taille : 18 pt
+
+    Symbole de police
+    • caractère(s) : unicode 234
+    • couleur de remplissage : RVB 56,168,0 (#38a800)
+    • famille de police : Wingdings 2
+    • taille : 12 pt
+
+Ligne simple
+• couleur : RVB 56,168,0 (#38a800)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne de symboles
+• décalage le long de la ligne : 13 pt
+• intervalle : 18 pt
+
+    Symbole de police
+    • caractère(s) : unicode 234
+    • couleur de remplissage : RVB 255,255,255 (#ffffff)
+    • famille de police : Wingdings 2
+    • taille : 16 pt
+
+    Symbole de police
+    • caractère(s) : unicode 234
+    • couleur de remplissage : RVB 56,168,0 (#38a800)
+    • famille de police : Wingdings 2
+    • taille : 10 pt
+
+Ligne simple
+• couleur : RVB 56,168,0 (#38a800)
+• largeur de trait : 1 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie ponctuelle</h4>
+    <div class="code-box">
+Symbole de police
+• caractère(s) : unicode 234
+• couleur de remplissage : RVB 255,255,255 (#ffffff)
+• famille de police : Wingdings 2
+• taille : 18 pt
+
+Symbole de police
+• caractère(s) : unicode 234
+• couleur de remplissage : RVB 56,168,0 (#38a800)
+• famille de police : Wingdings 2
+• taille : 12 pt
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 07-05 -->
+<div class="section">
+    <span class="anchor" id="prescription-07-05"></span>
+    <h3>Prescription 07-05</h3>
+    <p class="zone-info">Éléments de paysage correspondant à un espace boisé, (sites et secteurs) à préserver pour des motifs d'ordre écologique</p>
+
+    <p class="zone-info">Mêmes figurés que le sous-code <a href="#prescription-07-04">07-04</a>.</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 08-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-08-00"></span>
+    <h3>Prescription 08-00</h3>
+    <p class="zone-info">Terrain cultivé ou non bâti à protéger en zone urbaine</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-08-00.png" alt="PSC 08-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 17 pt
+• distance verticale : 17 pt
+
+    Symbole de police
+    • caractère(s) : unicode 252
+    • couleur de remplissage : RVB 45,104,55 (#2d6837)
+    • famille de police : Wingdings
+    • taille : 13 pt
+
+Ligne simple
+• couleur : RVB 45,104,55 (#2d6837)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 13-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-13-00"></span>
+    <h3>Prescription 13-00</h3>
+    <p class="zone-info">Zone à aménager en vue de la pratique du ski</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-13-00.png" alt="PSC 13-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 10 pt
+• distance verticale : 10 pt
+
+    Symbole simple
+    • couleur de remplissage : RVB 178,178,178 (#b2b2b2)
+    • nom du symbole : square
+    • taille : 5 pt
+
+Ligne simple
+• couleur : RVB 178,178,178 (#b2b2b2)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 14-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-14-00"></span>
+    <h3>Prescription 14-00</h3>
+    <p class="zone-info">Secteur de plan de masse</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-14-00.png" alt="PSC 14-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• espacement : 10 pt
+
+    Ligne simple
+    • couleur : RVB 0,0,0 (#000000)
+    • largeur de trait : 1 pt
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 0,0,0 (#000000)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 15-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-15-00"></span>
+    <h3>Prescription 15-00</h3>
+    <p class="zone-info">Règles d'implantation des constructions</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-15-00.png" alt="PSC 15-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• espacement : 17 pt
+
+    Ligne simple
+    • couleur : RVB 255,0,0 (#ff0000)
+    • largeur de trait : 0.8 pt
+    • style de trait : ligne continue
+
+Motif de points
+• distance horizontale : 17 pt
+• distance verticale : 17 pt
+
+    Symbole de police
+    • caractère(s) : V (unicode 86)
+    • couleur de remplissage : RVB 255,0,0 (#ff0000)
+    • famille de police : Arial
+    • point d'ancrage vertical : en dessous
+    • taille : 6 pt
+
+Ligne simple
+• couleur : RVB 255,0,0 (#ff0000)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne de symboles
+• décalage de la ligne : -2 pt
+• décalage le long de la ligne : 8 pt
+• intervalle : 11 pt
+
+    Symbole de police
+    • caractère(s) : V (unicode 86)
+    • couleur de remplissage : RVB 255,0,0 (#ff0000)
+    • famille de police : Arial
+    • style de jointure : angle droit
+    • taille : 6 pt
+
+Ligne simple
+• couleur : RVB 255,0,0 (#ff0000)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 15-01 -->
+<div class="section">
+    <span class="anchor" id="prescription-15-01"></span>
+    <h3>Prescription 15-01</h3>
+    <p class="zone-info">Implantation des constructions par rapport aux voies et aux emprises publiques</p>
+
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-15-00">15-00</a>.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 15-02 -->
+<div class="section">
+    <span class="anchor" id="prescription-15-02"></span>
+    <h3>Prescription 15-02</h3>
+    <p class="zone-info">Implantation des constructions par rapport aux limites séparatives latérales</p>
+
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-15-00">15-00</a>.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 15-03 -->
+<div class="section">
+    <span class="anchor" id="prescription-15-03"></span>
+    <h3>Prescription 15-03</h3>
+    <p class="zone-info">Implantation des constructions par rapport aux limites des fonds de parcelles</p>
+
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-15-00">15-00</a>.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 15-98 -->
+<div class="section">
+    <span class="anchor" id="prescription-15-98"></span>
+    <h3>Prescription 15-98</h3>
+    <p class="zone-info">Implantation alternative des constructions</p>
+
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-15-00">15-00</a>.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 16-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-16-00"></span>
+    <h3>Prescription 16-00</h3>
+    <p class="zone-info">Constructions et installations nécessaires à des équipements collectifs</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-16-00.png" alt="PSC 16-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 15 pt
+• distance verticale : 15 pt
+
+    Symbole de police
+    • caractère(s) : unicode 158
+    • couleur de remplissage : RVB 230,195,0 (#e6c300)
+    • famille de police : Wingdings 2
+    • taille : 10 pt
+
+Ligne simple
+• couleur : RVB 230,195,0 (#e6c300)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <div class="code-box">
+Symbole de police
+• caractère(s) : unicode 158
+• couleur de remplissage : RVB 230,195,0 (#e6c300)
+• famille de police : Wingdings 2
+• taille : 10 pt
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 16-01 -->
+<div class="section">
+    <span class="anchor" id="prescription-16-01"></span>
+    <h3>Prescription 16-01</h3>
+    <p class="zone-info">Bâtiment susceptible de changer de destination</p>
+
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-16-00">16-00</a>.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 16-02 -->
+<div class="section">
+    <span class="anchor" id="prescription-16-02"></span>
+    <h3>Prescription 16-02</h3>
+    <p class="zone-info">Bâtiments d'habitation existants pouvant faire l'objet d'extensions ou d'annexes</p>
+
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-16-00">16-00</a>.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 16-03 -->
+<div class="section">
+    <span class="anchor" id="prescription-16-03"></span>
+    <h3>Prescription 16-03</h3>
+    <p class="zone-info">Secteur de taille et de capacité d'accueil limitées (STECAL)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-16-03.png" alt="PSC 16-03">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 15 pt
+• distance verticale : 15 pt
+
+    Symbole de police
+    • caractère(s) : unicode 158
+    • couleur de remplissage : RVB 245,122,122 (#f57a7a)
+    • famille de police : Wingdings 2
+    • taille : 10 pt
+
+Ligne simple
+• couleur : RVB 245,122,122 (#f57a7a)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <div class="code-box">
+Symbole de police
+• caractère(s) : unicode 158
+• couleur de remplissage : RVB 245,122,122 (#f57a7a)
+• famille de police : Wingdings 2
+• taille : 10 pt
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 16-04 -->
+<div class="section">
+    <span class="anchor" id="prescription-16-04"></span>
+    <h3>Prescription 16-04</h3>
+    <p class="zone-info">Constructions et installations nécessaires à l'activité agricole en zone A ou N</p>
+
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-16-00">16-00</a>.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 16-05 -->
+<div class="section">
+    <span class="anchor" id="prescription-16-05"></span>
+    <h3>Prescription 16-05</h3>
+    <p class="zone-info">Diversification de l'activité agricole : transformation, conditionnement et ventes de produits agricoles (activités liées au tourisme exclues)</p>
+
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-16-00">16-00</a>.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 17-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-17-00"></span>
+    <h3>Prescription 17-00</h3>
+    <p class="zone-info">Secteur à programme de logements mixité sociale en Zone U et AU</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-17-00.png" alt="PSC 17-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• déplacement horizontal : 12 pt
+• distance horizontale : 24 pt
+• distance verticale : 12 pt
+
+    Symbole de police
+    • caractère(s) : z (unicode 122)
+    • couleur de remplissage : RVB 143,33,170 (#8f21aa)
+    • famille de police : Wingdings 3
+    • taille : 8 pt
+
+    Symbole de police
+    • caractère(s) : c (unicode 99)
+    • couleur de remplissage : RVB 143,33,170 (#8f21aa)
+    • famille de police : Webdings
+    • taille : 6 pt
+
+Ligne simple
+• couleur : RVB 143,33,170 (#8f21aa)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 18-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-18-00"></span>
+    <h3>Prescription 18-00</h3>
+    <p class="zone-info">Secteur comportant des orientations d'aménagement et de programmation (OAP)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-18-00.png" alt="PSC 18-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• espacement : 9 pt
+• rotation : 90°
+
+    Ligne simple
+    • couleur : RVB 255,85,0 (#ff5500)
+    • largeur de trait : 0.8 pt
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 255,85,0 (#ff5500)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 18-01 à 18-11 (Références à 18-00) -->
+<div class="section">
+    <span class="anchor" id="prescription-18-01"></span>
+    <h3>Prescription 18-01</h3>
+    <p class="zone-info">OAP de projet (sans règlement)</p>
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-18-00">18-00</a>.*</p>
+</div>
+
+<div class="section">
+    <span class="anchor" id="prescription-18-02"></span>
+    <h3>Prescription 18-02</h3>
+    <p class="zone-info">OAP entrées de ville</p>
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-18-00">18-00</a>.*</p>
+</div>
+
+<!-- Ajout des autres OAP avec référence à 18-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-18-03"></span>
+    <h3>Prescription 18-03</h3>
+    <p class="zone-info">OAP relatives à la réhabilitation, la restructuration, la mise en valeur ou l'aménagement</p>
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-18-00">18-00</a>.*</p>
+</div>
+
+<!-- Prescription 19-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-19-00"></span>
+    <h3>Prescription 19-00</h3>
+    <p class="zone-info">Secteur protégé en raison de la richesse du sol et du sous-sol</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-19-00.png" alt="PSC 19-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 19 pt
+• distance verticale : 19 pt
+
+    Symbole de police
+    • caractère(s) : unicode 176
+    • couleur de remplissage : RVB 137,68,68 (#894444)
+    • famille de police : Wingdings 2
+    • taille : 12 pt
+
+Ligne simple
+• couleur : RVB 137,68,68 (#894444)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 20-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-20-00"></span>
+    <h3>Prescription 20-00</h3>
+    <p class="zone-info">Secteur à transfert de constructibilité en zone N</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-20-00.png" alt="PSC 20-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 13 pt
+• distance verticale : 13 pt
+
+    Symbole simple
+    • couleur de remplissage : RVB 38,140,0 (#268c00)
+    • couleur de trait : RVB 38,140,0 (#268c00)
+    • largeur de trait : 0.8 pt
+    • nom du symbole : circle
+    • style de trait : ligne continue
+    • taille : 2 pt
+
+Ligne simple
+• couleur : RVB 38,140,0 (#268c00)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 22-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-22-00"></span>
+    <h3>Prescription 22-00</h3>
+    <p class="zone-info">Diversité commerciale à protéger ou à développer</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-22-00.png" alt="PSC 22-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 10 pt
+• distance verticale : 10 pt
+
+    Symbole simple
+    • couleur de trait : RVB 130,130,130 (#828282)
+    • largeur de trait : 0.8 pt
+    • nom du symbole : cross2
+    • style de trait : ligne continue
+    • taille : 4 pt
+
+Ligne simple
+• couleur : RVB 130,130,130 (#828282)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne de symboles
+• intervalle : 8 pt
+
+    Symbole simple
+    • couleur de trait : RVB 130,130,130 (#828282)
+    • largeur de trait : 0.8 pt
+    • nom du symbole : cross2
+    • style de jointure : angle droit
+    • style de trait : ligne continue
+    • taille : 4 pt
+    </div>
+
+    <h4>Géométrie ponctuelle</h4>
+    <div class="code-box">
+Symbole simple
+• couleur de trait : RVB 130,130,130 (#828282)
+• largeur de trait : 0.8 pt
+• nom du symbole : cross2
+• style de trait : ligne continue
+• taille : 6 pt
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 22-01 à 22-04 (Références à 22-00) -->
+<div class="section">
+    <span class="anchor" id="prescription-22-01"></span>
+    <h3>Prescription 22-01</h3>
+    <p class="zone-info">Diversité commerciale à protéger</p>
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-22-00">22-00</a>.*</p>
+</div>
+
+<div class="section">
+    <span class="anchor" id="prescription-22-02"></span>
+    <h3>Prescription 22-02</h3>
+    <p class="zone-info">Diversité commerciale à développer</p>
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-22-00">22-00</a>.*</p>
+</div>
+
+<!-- Prescription 23-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-23-00"></span>
+    <h3>Prescription 23-00</h3>
+    <p class="zone-info">Secteur avec taille minimale des logements en zone U et AU</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-23-00.png" alt="PSC 23-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 8 pt
+• distance verticale : 8 pt
+
+    Symbole simple
+    • couleur de remplissage : RVB 255,170,0 (#ffaa00)
+    • nom du symbole : circle
+    • taille : 1.5 pt
+
+Ligne simple
+• couleur : RVB 255,170,0 (#ffaa00)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 24-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-24-00"></span>
+    <h3>Prescription 24-00</h3>
+    <p class="zone-info">Voies, chemins, transport public à conserver et à créer</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-24-00.png" alt="PSC 24-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Ligne hachurée
+• intervalle : 5.5 pt
+• longueur de hachure : 2.5 pt
+
+    Ligne simple
+    • couleur : RVB 0,0,0 (#000000)
+    • largeur de trait : 1 pt
+    • style de cap : plat
+    • style de jointure : angle droit
+    • style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne hachurée
+• intervalle : 4 pt
+• longueur de hachure : 2.5 pt
+
+    Ligne simple
+    • couleur : RVB 0,0,0 (#000000)
+    • largeur de trait : 1 pt
+    • style de cap : plat
+    • style de jointure : angle droit
+    • style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 25-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-25-00"></span>
+    <h3>Prescription 25-00</h3>
+    <p class="zone-info">Éléments de continuité écologique et trame verte et bleue</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-25-00.png" alt="PSC 25-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Ligne hachurée
+• décalage de la ligne : 3 pt
+• intervalle : 13 pt
+• longueur de hachure : 6 pt
+
+    Ligne simple
+    • couleur : RVB 0,77,168 (#004da8)
+    • largeur de trait : 1 pt
+    • style de cap : plat
+    • style de jointure : angle droit
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 0,77,168 (#004da8)
+• largeur de trait : 1 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne hachurée
+• décalage de la ligne : 3 pt
+• décalage le long de la ligne : 12.5 pt
+• intervalle : 13 pt
+• longueur de hachure : 6 pt
+
+    Ligne simple
+    • couleur : RVB 0,77,168 (#004da8)
+    • largeur de trait : 1 pt
+    • style de cap : plat
+    • style de jointure : angle droit
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 0,77,168 (#004da8)
+• largeur de trait : 1 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie ponctuelle</h4>
+    <div class="code-box">
+Symbole de police
+• caractère(s) : R (unicode 82)
+• couleur de remplissage : RVB 0,77,168 (#004da8)
+• famille de police : Wingdings
+• taille : 18 pt
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 26-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-26-00"></span>
+    <h3>Prescription 26-00</h3>
+    <p class="zone-info">Secteur de performance énergétique</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-26-00.png" alt="PSC 26-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 11 pt
+• distance verticale : 11 pt
+
+    Symbole simple
+    • couleur de trait : RVB 38,140,0 (#268c00)
+    • largeur de trait : 0.8 pt
+    • nom du symbole : cross
+    • style de trait : ligne continue
+    • taille : 5 pt
+
+Ligne simple
+• couleur : RVB 38,140,0 (#268c00)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 26-01 -->
+<div class="section">
+    <span class="anchor" id="prescription-26-01"></span>
+    <h3>Prescription 26-01</h3>
+    <p class="zone-info">Secteur de performance énergétique renforcé</p>
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-26-00">26-00</a>.*</p>
+</div>
+
+<!-- Prescription 27-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-27-00"></span>
+    <h3>Prescription 27-00</h3>
+    <p class="zone-info">Secteur d'aménagement numérique</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-27-00.png" alt="PSC 27-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Ligne simple
+• couleur : RVB 137,90,68 (#895a44)
+• largeur de trait : 2 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 28-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-28-00"></span>
+    <h3>Prescription 28-00</h3>
+    <p class="zone-info">Conditions de desserte</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-28-00.png" alt="PSC 28-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 9 pt
+• distance verticale : 9 pt
+
+    Symbole simple
+    • couleur de remplissage : RVB 223,153,255 (#df99ff)
+    • nom du symbole : square
+    • taille : 3 pt
+
+Ligne simple
+• couleur : RVB 223,153,255 (#df99ff)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne de symboles
+• décalage le long de la ligne : 9 pt
+• intervalle : 12 pt
+
+    Symbole simple
+    • couleur de remplissage : RVB 223,153,255 (#df99ff)
+    • nom du symbole : square
+    • taille : 3 pt
+
+Ligne simple
+• couleur : RVB 223,153,255 (#df99ff)
+• largeur de trait : 1 pt
+• modèle de tiret personnalisé (tiret ; espace) : 6;6 pt
+    </div>
+
+    <h4>Géométrie ponctuelle</h4>
+    <div class="code-box">
+Symbole simple
+• couleur de remplissage : RVB 223,153,255 (#df99ff)
+• nom du symbole : square
+• taille : 5 pt
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 29-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-29-00"></span>
+    <h3>Prescription 29-00</h3>
+    <p class="zone-info">Secteur avec densité minimale de construction</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-29-00.png" alt="PSC 29-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 2 pt
+• distance verticale : 2 pt
+
+    Symbole simple
+    • couleur de remplissage : RVB 0,197,255 (#00c5ff)
+    • nom du symbole : circle
+    • taille : 1 pt
+
+Ligne simple
+• couleur : RVB 0,197,255 (#00c5ff)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 29-01 -->
+<div class="section">
+    <span class="anchor" id="prescription-29-01"></span>
+    <h3>Prescription 29-01</h3>
+    <p class="zone-info">Secteur avec densité minimale de construction à proximité des transports collectifs</p>
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-29-00">29-00</a>.*</p>
+</div>
+
+<!-- Prescription 30-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-30-00"></span>
+    <h3>Prescription 30-00</h3>
+    <p class="zone-info">Majoration des volumes constructibles</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-30-00.png" alt="PSC 30-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• décalage horizontal : 5 pt
+• décalage vertical : 5 pt
+• distance horizontale : 30 pt
+• distance verticale : 30 pt
+
+    Symbole simple
+    • couleur de remplissage : RVB 230,0,0 (#e60000)
+    • nom du symbole : square
+    • taille : 6 pt
+
+Ligne simple
+• couleur : RVB 230,0,0 (#e60000)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 30-01 -->
+<div class="section">
+    <span class="anchor" id="prescription-30-01"></span>
+    <h3>Prescription 30-01</h3>
+    <p class="zone-info">Majoration des volumes constructibles pour l'habitation</p>
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-30-00">30-00</a>.*</p>
+</div>
+
+<!-- Prescription 30-02 -->
+<div class="section">
+    <span class="anchor" id="prescription-30-02"></span>
+    <h3>Prescription 30-02</h3>
+    <p class="zone-info">Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux</p>
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-30-00">30-00</a>.*</p>
+</div>
+
+<!-- Prescription 30-03 -->
+<div class="section">
+    <span class="anchor" id="prescription-30-03"></span>
+    <h3>Prescription 30-03</h3>
+    <p class="zone-info">Majoration des volumes constructibles pour exemplarité énergétique ou environnementale</p>
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-30-00">30-00</a>.*</p>
+</div>
+
+<!-- Prescription 30-04 -->
+<div class="section">
+    <span class="anchor" id="prescription-30-04"></span>
+    <h3>Prescription 30-04</h3>
+    <p class="zone-info">Majoration des volumes constructibles pour les programmes comportant des logements intermédiaires</p>
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-30-00">30-00</a>.*</p>
+</div>
+
+<!-- Prescription 31-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-31-00"></span>
+    <h3>Prescription 31-00</h3>
+    <p class="zone-info">Espaces remarquables du littoral</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-31-00.png" alt="PSC 31-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 30 pt
+• distance verticale : 30 pt
+
+    Symbole de police
+    • caractère(s) : unicode 194
+    • couleur de remplissage : RVB 0,77,168 (#004da8)
+    • famille de police : Wingdings 2
+    • taille : 11 pt
+
+Ligne simple
+• couleur : RVB 0,77,168 (#004da8)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne de symboles
+• décalage le long de la ligne : 9 pt
+• intervalle : 12 pt
+
+    Symbole de police
+    • caractère(s) : unicode 194
+    • couleur de remplissage : RVB 0,77,168 (#004da8)
+    • famille de police : Wingdings 2
+    • taille : 9 pt
+
+Ligne simple
+• couleur : RVB 0,77,168 (#004da8)
+• largeur de trait : 1 pt
+• modèle de tiret personnalisé (tiret ; espace) : 6;6 pt
+    </div>
+
+    <h4>Géométrie ponctuelle</h4>
+    <div class="code-box">
+Symbole de police
+• caractère(s) : unicode 194
+• couleur de remplissage : RVB 0,77,168 (#004da8)
+• famille de police : Wingdings 2
+• taille : 9 pt
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 31-01 à 31-08 -->
+<div class="section">
+    <h3>Prescriptions 31-01 à 31-08</h3>
+    <p class="zone-info">Ces prescriptions reprennent les mêmes figurés que le sous-code <a href="#prescription-31-00">31-00</a>.</p>
+</div>
+
+<!-- Prescription 32-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-32-00"></span>
+    <h3>Prescription 32-00</h3>
+    <p class="zone-info">Exclusion protection de plans d'eau de faible importance</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-32-00.png" alt="PSC 32-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• espacement : 15 pt
+• rotation : 135°
+
+    Ligne simple
+    • couleur : RVB 0,0,255 (#0000ff)
+    • largeur de trait : 0.8 pt
+    • style de jointure : angle droit
+    • style de trait : ligne continue
+
+Motif de lignes
+• espacement : 15 pt
+• rotation : 45°
+
+    Ligne simple
+    • couleur : RVB 0,0,255 (#0000ff)
+    • largeur de trait : 0.8 pt
+    • style de cap : plat
+    • style de jointure : angle droit
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 0,0,255 (#0000ff)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 33-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-33-00"></span>
+    <h3>Prescription 33-00</h3>
+    <p class="zone-info">Secteur de dérogation aux protections des rives des plans d'eau en zone de montagne</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-33-00.png" alt="PSC 33-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 30 pt
+• distance verticale : 30 pt
+
+    Symbole de police
+    • caractère(s) : unicode 178
+    • couleur de remplissage : RVB 0,138,140 (#008a8c)
+    • famille de police : Wingdings 2
+    • taille : 11 pt
+
+Ligne simple
+• couleur : RVB 0,138,140 (#008a8c)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne de symboles
+• décalage le long de la ligne : 9 pt
+• intervalle : 12 pt
+
+    Symbole de police
+    • caractère(s) : unicode 178
+    • couleur de remplissage : RVB 0,138,140 (#008a8c)
+    • famille de police : Wingdings 2
+    • taille : 9 pt
+
+Ligne simple
+• couleur : RVB 0,138,140 (#008a8c)
+• largeur de trait : 1 pt
+• modèle de tiret personnalisé (tiret ; espace) : 6;6 pt
+    </div>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 34-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-34-00"></span>
+    <h3>Prescription 34-00</h3>
+    <p class="zone-info">Espaces, paysages et milieux caractéristiques du patrimoine naturel et culturel montagnard à préserver</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-34-00.png" alt="PSC 34-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 30 pt
+• distance verticale : 30 pt
+
+    Symbole de police
+    • caractère(s) : unicode 240
+    • couleur de remplissage : RVB 57,216,129 (#39d881)
+    • décalage (en x, en y) : 5,0 pt
+    • famille de police : Wingdings 2
+    • taille : 16 pt
+
+Ligne simple
+• couleur : RVB 57,216,129 (#39d881)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne de symboles
+• décalage le long de la ligne : 9 pt
+• intervalle : 12 pt
+
+    Symbole de police
+    • caractère(s) : unicode 240
+    • couleur de remplissage : RVB 57,216,129 (#39d881)
+    • famille de police : Wingdings 2
+    • taille : 11 pt
+
+Ligne simple
+• couleur : RVB 57,216,129 (#39d881)
+• largeur de trait : 1 pt
+• modèle de tiret personnalisé (tiret ; espace) : 6;6 pt
+    </div>
+
+    <h4>Géométrie ponctuelle</h4>
+    <div class="code-box">
+Symbole de police
+• caractère(s) : unicode 240
+• couleur de remplissage : RVB 57,216,129 (#39d881)
+• famille de police : Wingdings 2
+• taille : 16 pt
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 35-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-35-00"></span>
+    <h3>Prescription 35-00</h3>
+    <p class="zone-info">Terres nécessaires au maintien et au développement des activités agricoles, pastorales et forestières à préserver</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-35-00.png" alt="PSC 35-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• décalage horizontal : 5 pt
+• distance horizontale : 17 pt
+• distance verticale : 17 pt
+
+    Symbole de police
+    • caractère(s) : unicode 237
+    • couleur de remplissage : RVB 57,216,119 (#39d877)
+    • famille de police : Webdings
+    • taille : 10 pt
+
+Ligne simple
+• couleur : RVB 57,216,119 (#39d877)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne de symboles
+• décalage de la ligne : -2 pt
+• décalage le long de la ligne : 9 pt
+• intervalle : 12 pt
+
+    Symbole de police
+    • caractère(s) : unicode 237
+    • couleur de remplissage : RVB 57,216,129 (#39d881)
+    • famille de police : Webdings
+    • point d'ancrage vertical : en dessous
+    • taille : 10 pt
+
+Ligne simple
+• couleur : RVB 57,216,129 (#39d881)
+• largeur de trait : 1 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 36-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-36-00"></span>
+    <h3>Prescription 36-00</h3>
+    <p class="zone-info">Mixité des destinations ou sous-destinations</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-36-00.png" alt="PSC 36-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 10 pt
+• distance verticale : 10 pt
+
+    Symbole simple
+    • couleur de remplissage : RVB 144,112,76 (#90704c)
+    • nom du symbole : circle
+    • taille : 4.5 pt
+
+Ligne simple
+• couleur : RVB 144,112,76 (#90704c)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 37-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-37-00"></span>
+    <h3>Prescription 37-00</h3>
+    <p class="zone-info">Règles différenciées entre le rez-de-chaussée et les étages supérieurs des constructions</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-37-00.png" alt="PSC 37-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 15 pt
+• distance verticale : 27 pt
+
+    Symbole de police
+    • caractère(s) : H (unicode 72)
+    • couleur de remplissage : RVB 255,101,101 (#ff6565)
+    • famille de police : Webdings
+    • taille : 15 pt
+
+Ligne simple
+• couleur : RVB 255,101,101 (#ff6565)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 38-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-38-00"></span>
+    <h3>Prescription 38-00</h3>
+    <p class="zone-info">Emprise au sol</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-38-00.png" alt="PSC 38-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 13 pt
+• distance verticale : 13 pt
+
+    Symbole de police
+    • caractère(s) : unicode 191
+    • couleur de remplissage : RVB 138,77,211 (#8a4dd3)
+    • famille de police : Wingdings 2
+    • taille : 17 pt
+
+Ligne simple
+• couleur : RVB 138,77,211 (#8a4dd3)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 39-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-39-00"></span>
+    <h3>Prescription 39-00</h3>
+    <p class="zone-info">Hauteur</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-39-00.png" alt="PSC 39-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 21 pt
+• distance verticale : 26 pt
+
+    Symbole de police
+    • caractère(s) : unicode 177
+    • couleur de remplissage : RVB 138,77,211 (#8a4dd3)
+    • famille de police : Wingdings 3
+    • rotation : 90°
+    • taille : 18 pt
+
+Ligne simple
+• couleur : RVB 138,77,211 (#8a4dd3)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 40-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-40-00"></span>
+    <h3>Prescription 40-00</h3>
+    <p class="zone-info">Volumétrie</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-40-00.png" alt="PSC 40-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 27 pt
+• distance verticale : 31 pt
+
+    Symbole de police
+    • caractère(s) : unicode 135
+    • couleur de remplissage : RVB 138,77,211 (#8a4dd3)
+    • famille de police : Wingdings 3
+    • taille : 15 pt
+
+Ligne simple
+• couleur : RVB 138,77,211 (#8a4dd3)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 41-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-41-00"></span>
+    <h3>Prescription 41-00</h3>
+    <p class="zone-info">Aspect extérieur</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-41-00.png" alt="PSC 41-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 10 pt
+• distance verticale : 11 pt
+
+    Symbole de police
+    • caractère(s) : p (unicode 112)
+    • couleur de remplissage : RVB 253,191,111 (#fdbf6f)
+    • famille de police : Wingdings 3
+    • taille : 9 pt
+
+Ligne simple
+• couleur : RVB 253,191,111 (#fdbf6f)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne de symboles
+• décalage le long de la ligne : 9 pt
+• intervalle : 12 pt
+
+    Symbole de police
+    • caractère(s) : p (unicode 112)
+    • couleur de remplissage : RVB 253,191,111 (#fdbf6f)
+    • famille de police : Wingdings 3
+    • point d'ancrage vertical : en dessous
+    • taille : 9 pt
+
+Ligne simple
+• couleur : RVB 253,191,111 (#fdbf6f)
+• largeur de trait : 1 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 42-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-42-00"></span>
+    <h3>Prescription 42-00</h3>
+    <p class="zone-info">Coefficient de biotope par surface</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-42-00.png" alt="PSC 42-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 17 pt
+• distance verticale : 17 pt
+
+    Symbole de police
+    • caractère(s) : unicode 225
+    • couleur de remplissage : RVB 86,170,2 (#56aa02)
+    • famille de police : Wingdings 2
+    • taille : 16 pt
+
+Ligne simple
+• couleur : RVB 86,170,2 (#56aa02)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 43-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-43-00"></span>
+    <h3>Prescription 43-00</h3>
+    <p class="zone-info">Réalisation d'espaces libres, plantations, aires de jeux et de loisirs</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-43-00.png" alt="PSC 43-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• espacement : 11 pt
+• rotation : 135°
+
+    Ligne simple
+    • couleur : RVB 255,127,0 (#ff7f00)
+    • largeur de trait : 0.8 pt
+    • style de trait : ligne continue
+
+Motif de lignes
+• espacement : 11 pt
+• rotation : 45°
+
+    Ligne simple
+    • couleur : RVB 255,127,0 (#ff7f00)
+    • largeur de trait : 0.8 pt
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 255,127,0 (#ff7f00)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne de symboles
+• intervalle : 7 pt
+
+    Symbole simple
+    • couleur de trait : RVB 255,127,0 (#ff7f00)
+    • largeur de trait : 0.8 pt
+    • nom du symbole : cross2
+    • style de jointure : angle droit
+    • style de trait : ligne continue
+    • taille : 4 pt
+    </div>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 44-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-44-00"></span>
+    <h3>Prescription 44-00</h3>
+    <p class="zone-info">Stationnement</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-44-00.png" alt="PSC 44-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 13 pt
+• distance verticale : 13 pt
+
+    Symbole simple
+    • couleur de remplissage : RVB 143,143,143 (#8f8f8f)
+    • nom du symbole : equilateral_triangle
+    • taille : 9 pt
+
+Ligne simple
+• couleur : RVB 128,128,128 (#808080)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 45-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-45-00"></span>
+    <h3>Prescription 45-00</h3>
+    <p class="zone-info">Zone d'aménagement concerté (surface de plancher, destination)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-45-00.png" alt="PSC 45-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Remplissage simple
+• couleur de remplissage : RVB 255,127,127 (#ff7f7f), transparence 40%
+• couleur de trait : RVB 255,0,0 (#ff0000)
+• largeur de trait : 1 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 46-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-46-00"></span>
+    <h3>Prescription 46-00</h3>
+    <p class="zone-info">Constructibilité espace boisé antérieur au 20ème siècle</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-46-00.png" alt="PSC 46-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 8.45 pt
+• distance verticale : 8.45 pt
+
+    Symbole simple
+    • couleur de remplissage : RVB 204,204,204 (#cccccc)
+    • couleur de trait : RVB 86,170,2 (#56aa02)
+    • largeur de trait : 0.9 pt
+    • nom du symbole : circle
+    • style de trait : ligne continue
+    • taille : 8 pt
+
+Ligne simple
+• couleur : RVB 86,170,2 (#56aa02)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 47-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-47-00"></span>
+    <h3>Prescription 47-00</h3>
+    <p class="zone-info">Desserte par les réseaux</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-47-00.png" alt="PSC 47-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 25 pt
+• distance verticale : 25 pt
+
+    Symbole de police
+    • caractère(s) : ~ (unicode 126)
+    • couleur de remplissage : RVB 115,38,0 (#732600)
+    • famille de police : Webdings
+    • taille : 12 pt
+
+Ligne simple
+• couleur : RVB 115,38,0 (#732600)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne de symboles
+• décalage de la ligne : -2 pt
+• décalage le long de la ligne : 16.5 pt
+• intervalle : 22 pt
+
+    Symbole de police
+    • caractère(s) : ~ (unicode 126)
+    • couleur de remplissage : RVB 115,38,0 (#732600)
+    • famille de police : Webdings
+    • taille : 12 pt
+
+Ligne simple
+• couleur : RVB 115,38,0 (#732600)
+• largeur de trait : 1 pt
+• modèle de tiret personnalisé (tiret ; espace) : 11;11 pt
+    </div>
+
+    <h4>Géométrie ponctuelle</h4>
+    <div class="code-box">
+Symbole de police
+• caractère(s) : ~ (unicode 126)
+• couleur de remplissage : RVB 115,38,0 (#732600)
+• famille de police : Webdings
+• taille : 14 pt
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 48-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-48-00"></span>
+    <h3>Prescription 48-00</h3>
+    <p class="zone-info">Mesures pour limiter l'imperméabilité des sols</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-48-00.png" alt="PSC 48-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 22 pt
+• distance verticale : 22 pt
+
+    Symbole de police
+    • caractère(s) : S (unicode 83)
+    • couleur de remplissage : RVB 0,76,115 (#004c73)
+    • famille de police : Wingdings
+    • taille : 12 pt
+
+Ligne simple
+• couleur : RVB 0,76,115 (#004c73)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne de symboles
+• décalage de la ligne : -2 pt
+• décalage le long de la ligne : 16.5 pt
+• intervalle : 22 pt
+
+    Symbole de police
+    • caractère(s) : S (unicode 83)
+    • couleur de remplissage : RVB 0,76,115 (#004c73)
+    • famille de police : Wingdings
+    • taille : 14 pt
+
+Ligne simple
+• couleur : RVB 0,76,115 (#004c73)
+• largeur de trait : 1 pt
+• modèle de tiret personnalisé (tiret ; espace) : 11;11 pt
+    </div>
+
+    <h4>Géométrie ponctuelle</h4>
+    <div class="code-box">
+Symbole de police
+• caractère(s) : S (unicode 83)
+• couleur de remplissage : RVB 0,76,115 (#004c73)
+• famille de police : Wingdings
+• taille : 14 pt
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 48-01 -->
+<div class="section">
+    <span class="anchor" id="prescription-48-01"></span>
+    <h3>Prescription 48-01</h3>
+    <p class="zone-info">Installations nécessaires à la gestion des eaux pluviales et du ruissellement</p>
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-48-00">48-00</a>.*</p>
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 49-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-49-00"></span>
+    <h3>Prescription 49-00</h3>
+    <p class="zone-info">Opération d'ensemble imposée en zone AU</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-49-00.png" alt="PSC 49-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 26 pt
+• distance verticale : 26 pt
+
+    Symbole de police
+    • caractère(s) : unicode 249
+    • couleur de remplissage : RVB 255,101,100 (#ff6564)
+    • famille de police : Wingdings 2
+    • taille : 16 pt
+
+Ligne simple
+• couleur : RVB 255,101,100 (#ff6564)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 49-01 -->
+<div class="section">
+    <span class="anchor" id="prescription-49-01"></span>
+    <h3>Prescription 49-01</h3>
+    <p class="zone-info">Urbanisation par opération d'ensemble</p>
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-49-00">49-00</a>.*</p>
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 49-02 -->
+<div class="section">
+    <span class="anchor" id="prescription-49-02"></span>
+    <h3>Prescription 49-02</h3>
+    <p class="zone-info">Urbanisation conditionnée à la réalisation des équipements internes à la zone</p>
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-49-00">49-00</a>.*</p>
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 50-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-50-00"></span>
+    <h3>Prescription 50-00</h3>
+    <p class="zone-info">Interdiction types d'activités, destinations, sous-destinations</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-50-00.png" alt="PSC 50-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 20 pt
+• distance verticale : 20 pt
+
+    Symbole de police
+    • caractère(s) : X (unicode 88)
+    • couleur de remplissage : RVB 148,10,189 (#940abd)
+    • famille de police : Wingdings 2
+    • taille : 9 pt
+
+Ligne simple
+• couleur : RVB 148,10,189 (#940abd)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne de symboles
+• décalage le long de la ligne : 9 pt
+• intervalle : 12 pt
+
+    Symbole de police
+    • caractère(s) : X (unicode 88)
+    • couleur de remplissage : RVB 148,10,189 (#940abd)
+    • famille de police : Wingdings 2
+    • taille : 9 pt
+
+Ligne simple
+• couleur : RVB 148,10,189 (#940abd)
+• largeur de trait : 1 pt
+• modèle de tiret personnalisé (tiret ; espace) : 6;6 pt
+    </div>
+
+    <h4>Géométrie ponctuelle</h4>
+    <div class="code-box">
+Symbole de police
+• caractère(s) : X (unicode 88)
+• couleur de remplissage : RVB 148,10,189 (#940abd)
+• famille de police : Wingdings 2
+• taille : 14 pt
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 51-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-51-00"></span>
+    <h3>Prescription 51-00</h3>
+    <p class="zone-info">Autorisation sous conditions types d'activités, destinations, sous-destinations</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-51-00.png" alt="PSC 51-00">
+    </div>
+
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-50-00">50-00</a>.*</p>
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 52-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-52-00"></span>
+    <h3>Prescription 52-00</h3>
+    <p class="zone-info">Infrastructures et équipements logistiques à préserver ou à développer en zones U et AU</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-52-00.png" alt="PSC 52-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 25 pt
+• distance verticale : 25 pt
+
+    Symbole de police
+    • caractère(s) : q (unicode 113)
+    • couleur de remplissage : RVB 172,87,13 (#ac570d)
+    • famille de police : Webdings
+    • taille : 11 pt
+
+Ligne simple
+• couleur : RVB 172,87,13 (#ac570d)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 97-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-97-00"></span>
+    <h3>Prescription 97-00</h3>
+    <p class="zone-info">Périmètre d'application d'une pièce écrite territorialisée</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-97-00.png" alt="PSC 97-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Remplissage simple
+• style de remplissage : pas de remplissage
+• style de trait : pas de ligne
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 97-01 -->
+<div class="section">
+    <span class="anchor" id="prescription-97-01"></span>
+    <h3>Prescription 97-01</h3>
+    <p class="zone-info">Périmètre couvert par un plan de secteur</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-97-01.png" alt="PSC 97-01">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Ligne simple
+• couleur : RVB 0,0,0 (#000000)
+• largeur de trait : 2 pt
+• style de trait : ligne tiret-point-point
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p class="zone-info">*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 99-00 -->
+<div class="section">
+    <span class="anchor" id="prescription-99-00"></span>
+    <h3>Prescription 99-00</h3>
+    <p class="zone-info">Autre</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/PSC-99-00.png" alt="PSC 99-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Remplissage simple
+• couleur de trait : RVB 0,0,0 (#000000)
+• largeur de trait : 2 pt
+• style de remplissage : pas de remplissage
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne simple
+• couleur : RVB 0,0,0 (#000000)
+• largeur de trait : 2 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie ponctuelle</h4>
+    <div class="code-box">
+Symbole simple
+• couleur de remplissage : RVB 0,0,0 (#000000)
+• nom du symbole : circle
+• taille : 6 pt
+    </div>
+
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 99-01 -->
+<div class="section">
+    <span class="anchor" id="prescription-99-01"></span>
+    <h3>Prescription 99-01</h3>
+    <p class="zone-info">Autre : affectation des sols et destination des constructions</p>
+
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-99-00">99-00</a>.*</p>
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 99-02 -->
+<div class="section">
+    <span class="anchor" id="prescription-99-02"></span>
+    <h3>Prescription 99-02</h3>
+    <p class="zone-info">Autre : zones naturelles, agricoles ou forestières</p>
+
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-99-00">99-00</a>.*</p>
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 99-03 -->
+<div class="section">
+    <span class="anchor" id="prescription-99-03"></span>
+    <h3>Prescription 99-03</h3>
+    <p class="zone-info">Autre : mixité sociale et fonctionnelle en zones urbaines ou à urbaniser</p>
+
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-99-00">99-00</a>.*</p>
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 99-04 -->
+<div class="section">
+    <span class="anchor" id="prescription-99-04"></span>
+    <h3>Prescription 99-04</h3>
+    <p class="zone-info">Autre : qualité du cadre de vie</p>
+
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-99-00">99-00</a>.*</p>
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 99-05 -->
+<div class="section">
+    <span class="anchor" id="prescription-99-05"></span>
+    <h3>Prescription 99-05</h3>
+    <p class="zone-info">Autre : qualité urbaine, architecturale, environnementale et paysagère</p>
+
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-99-00">99-00</a>.*</p>
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 99-06 -->
+<div class="section">
+    <span class="anchor" id="prescription-99-06"></span>
+    <h3>Prescription 99-06</h3>
+    <p class="zone-info">Autre : traitement environnemental et paysager des espaces non bâtis et abords des constructions</p>
+
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-99-00">99-00</a>.*</p>
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 99-07 -->
+<div class="section">
+    <span class="anchor" id="prescription-99-07"></span>
+    <h3>Prescription 99-07</h3>
+    <p class="zone-info">Autre : densité</p>
+
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-99-00">99-00</a>.*</p>
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 99-08 -->
+<div class="section">
+    <span class="anchor" id="prescription-99-08"></span>
+    <h3>Prescription 99-08</h3>
+    <p class="zone-info">Autre : équipements, réseaux et emplacement réservés</p>
+
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-99-00">99-00</a>.*</p>
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 99-09 -->
+<div class="section">
+    <span class="anchor" id="prescription-99-09"></span>
+    <h3>Prescription 99-09</h3>
+    <p class="zone-info">Autre : plan local d'urbanisme tenant lieu de programme local de l'habitat et de plan de déplacements urbains</p>
+
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-99-00">99-00</a>.*</p>
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Prescription 99-10 -->
+<div class="section">
+    <span class="anchor" id="prescription-99-10"></span>
+    <h3>Prescription 99-10</h3>
+    <p class="zone-info">Autre : plan local d'urbanisme tenant lieu de programme de déplacements urbains</p>
+
+    <p class="zone-info">*Mêmes figurés que le sous-code <a href="#prescription-99-00">99-00</a>.*</p>
+    <p class="back-to-top"><a href="#prescriptions">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information -->
+<div class="section">
+    <span class="anchor" id="Information"></span>
+    <h2>Information</h2>
+</div>
+
+<!-- Information 02-00 -->
+<div class="section">
+    <span class="anchor" id="information-02-00"></span>
+    <h3>Information 02-00</h3>
+    <p class="zone-info">Zone d'aménagement concerté (R123-13 2)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-02-00.png" alt="INFO 02-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Remplissage simple
+• couleur de remplissage : RVB 255,127,127 (#ff7f7f), transparence 60%
+• couleur de trait : RVB 255,0,0 (#ff0000)
+• largeur de trait : 1 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 03-00 -->
+<div class="section">
+    <span class="anchor" id="information-03-00"></span>
+    <h3>Information 03-00</h3>
+    <p class="zone-info">Zone de préemption dans un espace naturel et sensible (R123-13 3)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-03-00.png" alt="INFO 03-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Ligne de symboles
+• intervalle : 13 pt
+
+    Symbole de police
+    • caractère(s) : unicode 129
+    • couleur de remplissage : RVB 38,140,0 (#268c00)
+    • décalage (en x, en y) : 0,-2 pt
+    • famille de police : Wingdings 3
+    • rotation : 180°
+    • taille : 8 pt
+
+Remplissage simple
+• couleur de remplissage : RVB 134,213,47 (#86d52f), transparence 40%
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 04-00 -->
+<div class="section">
+    <span class="anchor" id="information-04-00"></span>
+    <h3>Information 04-00</h3>
+    <p class="zone-info">Périmètre de droit de préemption urbain (R123-13 4)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-04-00.png" alt="INFO 04-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Ligne de symboles
+• intervalle : 13 pt
+
+    Symbole de police
+    • caractère(s) : unicode 129
+    • couleur de remplissage : RVB 255,0,0 (#ff0000)
+    • décalage (en x, en y) : 0,-2 pt
+    • famille de police : Wingdings 3
+    • rotation : 180°
+    • taille : 8 pt
+
+Remplissage simple
+• couleur de remplissage : RVB 255,101,101 (#ff6565), transparence 40%
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 04-01 -->
+<div class="section">
+    <span class="anchor" id="information-04-01"></span>
+    <h3>Information 04-01</h3>
+    <p class="zone-info">Périmètre de droit de préemption urbain renforcé</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-04-01.png" alt="INFO 04-01">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Ligne de symboles
+• intervalle : 13 pt
+
+    Symbole de police
+    • caractère(s) : unicode 129
+    • couleur de remplissage : RVB 255,0,0 (#ff0000)
+    • décalage (en x, en y) : 0,-2 pt
+    • famille de police : Wingdings 3
+    • rotation : 180°
+    • taille : 8 pt
+
+Motif de points
+• décalage horizontal : 25 pt
+• décalage vertical : 25 pt
+• distance horizontale : 50 pt
+• distance verticale : 50 pt
+
+    Symbole de police
+    • caractère(s) : U (unicode 85)
+    • couleur de remplissage : RVB 166,0,0 (#a60000)
+    • décalage (en x, en y) : 10,0 pt
+    • famille de police : Arial
+    • taille : 7 pt
+
+    Symbole de police
+    • caractère(s) : P (unicode 80)
+    • couleur de remplissage : RVB 166,0,0 (#a60000)
+    • décalage (en x, en y) : 5,0 pt
+    • famille de police : Arial
+    • taille : 7 pt
+
+    Symbole de police
+    • caractère(s) : D (unicode 68)
+    • couleur de remplissage : RVB 166,0,0 (#a60000)
+    • famille de police : Arial
+    • taille : 7 pt
+
+Remplissage simple
+• couleur de remplissage : RVB 255,101,101 (#ff6565), transparence 40%
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 05-00 -->
+<div class="section">
+    <span class="anchor" id="information-05-00"></span>
+    <h3>Information 05-00</h3>
+    <p class="zone-info">Zone d'aménagement différé (R123-13 4)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-05-00.png" alt="INFO 05-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 4 pt
+• distance verticale : 4 pt
+
+    Symbole de police
+    • caractère(s) : = (unicode 61)
+    • couleur de remplissage : RVB 90,112,255 (#5a70ff)
+    • famille de police : Webdings
+    • taille : 2 pt
+
+Ligne simple
+• couleur : RVB 90,112,255 (#5a70ff)
+• largeur de trait : 1.5 pt
+• style de trait : ligne tiret-point
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 07-00 -->
+<div class="section">
+    <span class="anchor" id="information-07-00"></span>
+    <h3>Information 07-00</h3>
+    <p class="zone-info">Périmètre de développement prioritaire économie d'énergie (R123-13 6)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-07-00.png" alt="INFO 07-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• déplacement horizontal : 12 pt
+• distance horizontale : 24 pt
+• distance verticale : 20 pt
+
+    Symbole de police
+    • caractère(s) : unicode 8734
+    • couleur de remplissage : RVB 132,0,168 (#8400a8)
+    • famille de police : Arial Black
+    • style de jointure : rond
+    • taille : 14 pt
+
+Ligne simple
+• couleur : RVB 132,0,168 (#8400a8)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 08-00 -->
+<div class="section">
+    <span class="anchor" id="information-08-00"></span>
+    <h3>Information 08-00</h3>
+    <p class="zone-info">Périmètre forestier: Interdiction ou réglementation des plantations (R123-13 7)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-08-00.png" alt="INFO 08-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• décalage horizontal : 12 pt
+• décalage vertical : -12 pt
+• distance horizontale : 25 pt
+• distance verticale : 25 pt
+
+    Symbole de police
+    • caractère(s) : unicode 9619
+    • couleur de remplissage : RVB 38,140,0 (#268c00)
+    • famille de police : Arial
+    • taille : 12 pt
+
+Ligne simple
+• couleur : RVB 38,140,0 (#268c00)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 09-00 -->
+<div class="section">
+    <span class="anchor" id="information-09-00"></span>
+    <h3>Information 09-00</h3>
+    <p class="zone-info">Périmètre minier de concession pour l'exploitation ou le stockage (R123-13 8)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-09-00.png" alt="INFO 09-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 15.95 pt
+• distance verticale : 25.5 pt
+
+    Symbole de police
+    • caractère(s) : unicode 9618
+    • couleur de remplissage : RVB 205,170,102 (#cdaa66)
+    • famille de police : Arial
+    • taille : 22 pt
+
+Ligne simple
+• couleur : RVB 205,170,102 (#cdaa66)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 10-00 -->
+<div class="section">
+    <span class="anchor" id="information-10-00"></span>
+    <h3>Information 10-00</h3>
+    <p class="zone-info">Zone de recherche et d'exploitation de carrière (R123-13 9)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-10-00.png" alt="INFO 10-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• décalage : 148 pt
+• espacement : 8.5 pt
+• rotation : 45°
+
+    Ligne simple
+    • couleur : RVB 168,112,0 (#a87000)
+    • largeur de trait : 0.8 pt
+    • style de trait : ligne continue
+
+Motif de lignes
+• décalage : 153 pt
+• espacement : 25 pt
+• rotation : 135°
+
+    Ligne simple
+    • couleur : RVB 168,112,0 (#a87000)
+    • largeur de trait : 0.8 pt
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 168,112,0 (#a87000)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 11-00 -->
+<div class="section">
+    <span class="anchor" id="information-11-00"></span>
+    <h3>Information 11-00</h3>
+    <p class="zone-info">Périmètre des zones délimitées – divisions foncières soumises à déclaration préalable (R123-13 10)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-11-00.png" alt="INFO 11-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 7 pt
+• distance verticale : 7 pt
+
+    Symbole de police
+    • caractère(s) : l (unicode 108)
+    • couleur de remplissage : RVB 230,0,0 (#e60000)
+    • famille de police : Wingdings
+    • taille : 2 pt
+
+Ligne simple
+• couleur : RVB 230,0,0 (#e60000)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 12-00 -->
+<div class="section">
+    <span class="anchor" id="information-12-00"></span>
+    <h3>Information 12-00</h3>
+    <p class="zone-info">Périmètre de sursis à statuer (R123-13 11)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-12-00.png" alt="INFO 12-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Remplissage simple
+• couleur de trait : RVB 0,77,168 (#004da8)
+• largeur de trait : 2.5 pt
+• style de remplissage : pas de remplissage
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 13-00 -->
+<div class="section">
+    <span class="anchor" id="information-13-00"></span>
+    <h3>Information 13-00</h3>
+    <p class="zone-info">Secteur de programme d'aménagement d'ensemble (R123-13 12)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-13-00.png" alt="INFO 13-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• espacement : 3 pt
+• rotation : 90°
+
+    Ligne simple
+    • couleur : RVB 255,211,127 (#ffd37f)
+    • largeur de trait : 0.8 pt
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 255,211,127 (#ffd37f)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 14-00 -->
+<div class="section">
+    <span class="anchor" id="information-14-00"></span>
+    <h3>Information 14-00</h3>
+    <p class="zone-info">Périmètre de voisinage d'infrastructure de transport terrestre (R123-13 12)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-14-00.png" alt="INFO 14-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 3 pt
+• distance verticale : 3 pt
+
+    Symbole de police
+    • caractère(s) : l (unicode 108)
+    • couleur de remplissage : RVB 255,115,223 (#ff73df)
+    • famille de police : Wingdings
+    • taille : 2 pt
+
+Ligne simple
+• couleur : RVB 255,115,223 (#ff73df)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne de symboles
+• intervalle : 7 pt
+
+    Symbole de police
+    • caractère(s) : l (unicode 108)
+    • couleur de remplissage : RVB 255,115,223 (#ff73df)
+    • famille de police : Wingdings
+    • taille : 5 pt
+    </div>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 21-00 -->
+<div class="section">
+    <span class="anchor" id="information-21-00"></span>
+    <h3>Information 21-00</h3>
+    <p class="zone-info">Projet PPRN et PPRM (R123-14 7)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-21-00.png" alt="INFO 21-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• espacement : 10 pt
+• rotation : 100°
+
+    Ligne simple
+    • couleur : RVB 132,0,168 (#8400a8)
+    • largeur de trait : 1 pt
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 132,0,168 (#8400a8)
+• largeur de trait : 1 pt
+• modèle de tiret personnalisé (tiret ; espace) : 3;3 pt
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 22-00 -->
+<div class="section">
+    <span class="anchor" id="information-22-00"></span>
+    <h3>Information 22-00</h3>
+    <p class="zone-info">Protection des rives des plans d'eau en zone de montagne (L145-5 et R145-3)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-22-00.png" alt="INFO 22-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• espacement : 10 pt
+• rotation : 100°
+
+    Ligne simple
+    • couleur : RVB 0,77,168 (#004da8)
+    • largeur de trait : 1 pt
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 0,77,168 (#004da8)
+• largeur de trait : 1 pt
+• modèle de tiret personnalisé (tiret ; espace) : 3;3 pt
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 23-00 -->
+<div class="section">
+    <span class="anchor" id="information-23-00"></span>
+    <h3>Information 23-00</h3>
+    <p class="zone-info">Arrêté du préfet coordonnateur de massif (L145-5)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-23-00.png" alt="INFO 23-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Ligne de symboles
+• décalage le long de la ligne : 4 pt
+• intervalle : 19 pt
+
+    Symbole simple
+    • couleur de remplissage : RVB 0,38,115 (#002673)
+    • nom du symbole : circle
+    • taille : 4 pt
+
+Ligne simple
+• couleur : RVB 0,38,115 (#002673)
+• largeur de trait : 1 pt
+• modèle de tiret personnalisé (tiret ; espace) : 8;11 pt
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 25-00 -->
+<div class="section">
+    <span class="anchor" id="information-25-00"></span>
+    <h3>Information 25-00</h3>
+    <p class="zone-info">Périmètre de protection des espaces agricoles et naturels péri-urbains (L143-1 et R123-13 15)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-25-00.png" alt="INFO 25-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• espacement : 10 pt
+• rotation : 100°
+
+    Ligne simple
+    • couleur : RVB 230,230,0 (#e6e600)
+    • largeur de trait : 1 pt
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 230,230,0 (#e6e600)
+• largeur de trait : 1 pt
+• modèle de tiret personnalisé (tiret ; espace) : 3;3 pt
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 27-00 -->
+<div class="section">
+    <span class="anchor" id="information-27-00"></span>
+    <h3>Information 27-00</h3>
+    <p class="zone-info">Plan d'exposition au bruit des aérodromes (L147-1 à L147-6 et R123-13 4)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-27-00.png" alt="INFO 27-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• décalage horizontal : -11 pt
+• décalage vertical : -11 pt
+• distance horizontale : 30 pt
+• distance verticale : 30 pt
+
+    Symbole de police
+    • caractère(s) : j (unicode 106)
+    • couleur de remplissage : RVB 0,0,0 (#000000)
+    • famille de police : Webdings
+    • taille : 23 pt
+
+Ligne simple
+• couleur : RVB 0,0,0 (#000000)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 21-00 -->
+<div class="section">
+    <span class="anchor" id="information-21-00"></span>
+    <h3>Information 21-00</h3>
+    <p class="zone-info">Projet PPRN et PPRM (R123-14 7)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-21-00.png" alt="INFO 21-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• espacement : 10 pt
+• rotation : 100°
+
+    Ligne simple
+    • couleur : RVB 132,0,168 (#8400a8)
+    • largeur de trait : 1 pt
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 132,0,168 (#8400a8)
+• largeur de trait : 1 pt
+• modèle de tiret personnalisé (tiret ; espace) : 3;3 pt
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 22-00 -->
+<div class="section">
+    <span class="anchor" id="information-22-00"></span>
+    <h3>Information 22-00</h3>
+    <p class="zone-info">Protection des rives des plans d'eau en zone de montagne (L145-5 et R145-3)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-22-00.png" alt="INFO 22-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• espacement : 10 pt
+• rotation : 100°
+
+    Ligne simple
+    • couleur : RVB 0,77,168 (#004da8)
+    • largeur de trait : 1 pt
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 0,77,168 (#004da8)
+• largeur de trait : 1 pt
+• modèle de tiret personnalisé (tiret ; espace) : 3;3 pt
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 23-00 -->
+<div class="section">
+    <span class="anchor" id="information-23-00"></span>
+    <h3>Information 23-00</h3>
+    <p class="zone-info">Arrêté du préfet coordonnateur de massif (L145-5)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-23-00.png" alt="INFO 23-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Ligne de symboles
+• décalage le long de la ligne : 4 pt
+• intervalle : 19 pt
+
+    Symbole simple
+    • couleur de remplissage : RVB 0,38,115 (#002673)
+    • nom du symbole : circle
+    • taille : 4 pt
+
+Ligne simple
+• couleur : RVB 0,38,115 (#002673)
+• largeur de trait : 1 pt
+• modèle de tiret personnalisé (tiret ; espace) : 8;11 pt
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 25-00 -->
+<div class="section">
+    <span class="anchor" id="information-25-00"></span>
+    <h3>Information 25-00</h3>
+    <p class="zone-info">Périmètre de protection des espaces agricoles et naturels péri-urbains (L143-1 et R123-13 15)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-25-00.png" alt="INFO 25-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• espacement : 10 pt
+• rotation : 100°
+
+    Ligne simple
+    • couleur : RVB 230,230,0 (#e6e600)
+    • largeur de trait : 1 pt
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 230,230,0 (#e6e600)
+• largeur de trait : 1 pt
+• modèle de tiret personnalisé (tiret ; espace) : 3;3 pt
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 27-00 -->
+<div class="section">
+    <span class="anchor" id="information-27-00"></span>
+    <h3>Information 27-00</h3>
+    <p class="zone-info">Plan d'exposition au bruit des aérodromes (L147-1 à L147-6 et R123-13 4)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-27-00.png" alt="INFO 27-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• décalage horizontal : -11 pt
+• décalage vertical : -11 pt
+• distance horizontale : 30 pt
+• distance verticale : 30 pt
+
+    Symbole de police
+    • caractère(s) : j (unicode 106)
+    • couleur de remplissage : RVB 0,0,0 (#000000)
+    • famille de police : Webdings
+    • taille : 23 pt
+
+Ligne simple
+• couleur : RVB 0,0,0 (#000000)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 30-00 -->
+<div class="section">
+    <span class="anchor" id="information-30-00"></span>
+    <h3>Information 30-00</h3>
+    <p class="zone-info">Périmètre PUP (L332-11-3 et R123-13 17)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-30-00.png" alt="INFO 30-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• espacement : 1.3 pt
+• rotation : 45°
+
+    Ligne simple
+    • couleur : RVB 210,4,4 (#d20404), transparence 40%
+    • largeur de trait : 0.8 pt
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 210,4,4 (#d20404)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 31-00 -->
+<div class="section">
+    <span class="anchor" id="information-31-00"></span>
+    <h3>Information 31-00</h3>
+    <p class="zone-info">Périmètre patrimonial d'exclusion des matériaux et énergies renouvelables pris par délibération</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-31-00.png" alt="INFO 31-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Remplissage simple
+• couleur de remplissage : RVB 255,255,255 (#ffffff), transparence 40%
+• couleur de trait : RVB 137,90,68 (#895a44)
+• largeur de trait : 2 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 32-00 -->
+<div class="section">
+    <span class="anchor" id="information-32-00"></span>
+    <h3>Information 32-00</h3>
+    <p class="zone-info">Secteur à fiscalité particulière en application du L331-14 (taxe d'aménagement) R123-13 19</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-32-00.png" alt="INFO 32-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 25 pt
+• distance verticale : 25 pt
+
+    Symbole de police
+    • caractère(s) : unicode 176
+    • couleur de remplissage : RVB 255,255,0 (#ffff00)
+    • famille de police : Wingdings 2
+    • taille : 14 pt
+
+Ligne simple
+• couleur : RVB 255,255,0 (#ffff00)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 33-00 -->
+<div class="section">
+    <span class="anchor" id="information-33-00"></span>
+    <h3>Information 33-00</h3>
+    <p class="zone-info">Droit de préemption commercial (L214-1, R214-1 et 2)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-33-00.png" alt="INFO 33-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Ligne de symboles
+• intervalle : 11 pt
+
+    Symbole de police
+    • caractère(s) : p (unicode 112)
+    • couleur de remplissage : RVB 132,0,168 (#8400a8)
+    • famille de police : Wingdings 3
+    • rotation : 180°
+    • taille : 6 pt
+
+Remplissage simple
+• couleur de remplissage : RVB 194,158,215 (#c29ed7), transparence 40%
+• style de trait : pas de ligne
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 34-00 -->
+<div class="section">
+    <span class="anchor" id="information-34-00"></span>
+    <h3>Information 34-00</h3>
+    <p class="zone-info">Périmètre d'opération d'intérêt national (L121-2 et L121-9-1, R121-4-1)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-34-00.png" alt="INFO 34-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• décalage horizontal : 9 pt
+• décalage vertical : 14 pt
+• distance horizontale : 30 pt
+• distance verticale : 30 pt
+
+    Symbole de police
+    • caractère(s) : unicode 164
+    • couleur de remplissage : RVB 168,0,132 (#a80084)
+    • famille de police : Wingdings 2
+    • taille : 12 pt
+
+Ligne simple
+• couleur : RVB 168,0,132 (#a80084)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 37-00 -->
+<div class="section">
+    <span class="anchor" id="information-37-00"></span>
+    <h3>Information 37-00</h3>
+    <p class="zone-info">Bois ou forêts relevant du régime forestier</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-37-00.png" alt="INFO 37-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 3 pt
+• distance verticale : 3 pt
+
+    Symbole simple
+    • couleur de remplissage : RVB 72,130,15 (#48820f)
+    • nom du symbole : circle
+    • taille : 1.5 pt
+
+Ligne simple
+• couleur : RVB 72,130,15 (#48820f)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 38-00 -->
+<div class="section">
+    <span class="anchor" id="information-38-00"></span>
+    <h3>Information 38-00</h3>
+    <p class="zone-info">Secteurs d'informations sur les sols</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-38-00.png" alt="INFO 38-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• déplacement horizontal : 1 pt
+• déplacement vertical : 1 pt
+• distance horizontale : 3 pt
+• distance verticale : 3 pt
+
+    Symbole de police
+    • caractère(s) : l (unicode 108)
+    • couleur de remplissage : RVB 144,112,76 (#90704c)
+    • famille de police : Wingdings
+    • taille : 2 pt
+
+Ligne simple
+• couleur : RVB 144,112,76 (#90704c)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 39-00 -->
+<div class="section">
+    <span class="anchor" id="information-39-00"></span>
+    <h3>Information 39-00</h3>
+    <p class="zone-info">Périmètres de projets AFUP</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-39-00.png" alt="INFO 39-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• espacement : 5 pt
+• rotation : 45°
+
+    Ligne simple
+    • couleur : RVB 146,0,214 (#9200d6)
+    • largeur de trait : 0.8 pt
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 146,0,214 (#9200d6)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 40-01 -->
+<div class="section">
+    <span class="anchor" id="information-40-01"></span>
+    <h3>Information 40-01</h3>
+    <p class="zone-info">Périmètre d'un bien inscrit au patrimoine mondial</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-40-01.png" alt="INFO 40-01">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de points
+• distance horizontale : 15 pt
+• distance verticale : 15 pt
+
+    Symbole simple
+    • couleur de remplissage : transparent
+    • couleur de trait : RVB 255,196,118 (#ffc476)
+    • largeur de trait : 0.8 pt
+    • nom du symbole : circle
+    • style de trait : ligne continue
+    • taille : 30 pt
+
+Ligne simple
+• couleur : RVB 255,196,118 (#ffc476)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 41-00 -->
+<div class="section">
+    <span class="anchor" id="information-41-00"></span>
+    <h3>Information 41-00</h3>
+    <p class="zone-info">Bande non constructible de part et d'autre de l'axe des voies (L111-6)</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-41-00.png" alt="INFO 41-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Motif de lignes
+• espacement : 12 pt
+• rotation : -45°
+
+    Ligne simple
+    • couleur : RVB 230,0,0 (#e60000)
+    • largeur de trait : 0.8 pt
+    • style de trait : ligne continue
+
+Ligne simple
+• couleur : RVB 230,0,0 (#e60000)
+• largeur de trait : 0.8 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 97-00 -->
+<div class="section">
+    <span class="anchor" id="information-97-00"></span>
+    <h3>Information 97-00</h3>
+    <p class="zone-info">Périmètre d'application d'une pièce écrite territorialisée relative aux annexes</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-97-00.png" alt="INFO 97-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Remplissage simple
+• style de remplissage : pas de remplissage
+• style de trait : pas de ligne
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 98-00 -->
+<div class="section">
+    <span class="anchor" id="information-98-00"></span>
+    <h3>Information 98-00</h3>
+    <p class="zone-info">Périmètre d'annulation partielle du document d'urbanisme</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-98-00.png" alt="INFO 98-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Remplissage simple
+• couleur de remplissage : RVB 0,0,0 (#000000)
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <p>*Pas de spécification.*</p>
+
+    <h4>Géométrie ponctuelle</h4>
+    <p>*Pas de spécification.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 99-00 -->
+<div class="section">
+    <span class="anchor" id="information-99-00"></span>
+    <h3>Information 99-00</h3>
+    <p class="zone-info">Autre périmètre, secteur, plan, document, site, projet, espace.</p>
+
+    <div class="image-container">
+        <img src="/PLU/vignettes/INFO-99-00.png" alt="INFO 99-00">
+    </div>
+
+    <h4>Géométrie surfacique</h4>
+    <div class="code-box">
+Remplissage simple
+• couleur de trait : RVB 156,156,156 (#9c9c9c)
+• largeur de trait : 2 pt
+• style de remplissage : pas de remplissage
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie linéaire</h4>
+    <div class="code-box">
+Ligne simple
+• couleur : RVB 156,156,156 (#9c9c9c)
+• largeur de trait : 2 pt
+• style de trait : ligne continue
+    </div>
+
+    <h4>Géométrie ponctuelle</h4>
+    <div class="code-box">
+Symbole simple
+• couleur de remplissage : RVB 156,156,156 (#9c9c9c)
+• nom du symbole : circle
+• taille : 6 pt
+    </div>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 99-01 -->
+<div class="section">
+    <span class="anchor" id="information-99-01"></span>
+    <h3>Information 99-01</h3>
+    <p class="zone-info">Autre relevant de la loi littoral</p>
+    <p class="reference">*Mêmes figurés que le sous-code <a href="#information-99-00">99-00</a>.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+<!-- Information 99-02 -->
+<div class="section">
+    <span class="anchor" id="information-99-02"></span>
+    <h3>Information 99-02</h3>
+    <p class="zone-info">Autre relevant de la loi montagne</p>
+    <p class="reference">*Mêmes figurés que le sous-code <a href="#information-99-00">99-00</a>.*</p>
+
+    <p class="back-to-top"><a href="#informations">↑ Retour en haut</a></p>
+</div>
+
+
+
+
+    </div>
+
+</body>
+</html>
+
