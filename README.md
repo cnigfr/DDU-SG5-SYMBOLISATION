@@ -16,7 +16,7 @@ Retrouvez notamment ici :
     - [projet QGIS](/PSMV/projet_qgis_symbolisation_psmv.zip) équivalent pour les préconisations PSMV.
     - [projet_arcgispro](/PSMV/projet_arcgispro_symbolisation_psmv.zip) équivalent pour les préconisations PSMV
 
-Un tableau de suivi des symbolisation est également consultable [ici](https://docs.google.com/spreadsheets/d/1_xl1gKXMqGnkKr7L2SuKzsmZaqNaMdzDudC-sjX1BQA/edit?usp=sharing).
+Un [tableau de suivi des symbolisation](https://docs.google.com/spreadsheets/d/1_xl1gKXMqGnkKr7L2SuKzsmZaqNaMdzDudC-sjX1BQA/edit?usp=sharing) est également consultable .
 
 Plus d'explications dans le guide *[Spécifications de symbolisation des documents d'urbanisme](https://drive.google.com/drive/folders/1YHCxmiWknRLXUREbOYq4CUpvqYGZaw2Z)*.
 
