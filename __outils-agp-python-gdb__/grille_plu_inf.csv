@@ -1,0 +1,47 @@
+typeinf;stypeinf;nnn;lib_stype;surf;symb_surf;lin;symb_lin;pt;symb_pct;etiquette;classement
+02;00;001;Zone d'aménagement concerté;S;INF-S_02-00_001;;;;;02-00_001;symbole
+03;00;001;Zone de préemption dans un espace naturel et sensible. [Attention : information facultative non exigée par la loi];S;INF-S_03-00_001;;;;;03-00_001;symbole
+04;00;001;Périmètre de droit de préemption urbain;S;INF-S_04-00_001;;;;;04-00_001;symbole
+04;01;001;Périmètre de droit de préemption urbain renforcé;S;INF-S_04-01_001;;;;;04-01_001;symbole
+05;00;001;Zone d'aménagement différé;S;INF-S_05-00_001;;;;;05-00_001;symbole
+07;00;001;Périmètre de développement prioritaire économie d'énergie;S;INF-S_07-00_001;;;;;07-00_001;symbole
+08;00;001;Périmètre forestier : interdiction ou réglementation des plantations (code rural et de la pêche maritime), plantations à réaliser et semis d'essence forestière;S;INF-S_08-00_001;;;;;08-00_001;symbole
+09;00;001;Périmètre minier de concession pour l'exploitation ou le stockage;S;INF-S_09-00_001;;;;;09-00_001;symbole
+10;00;001;Zone de recherche et d'exploitation de carrière;S;INF-S_10-00_001;;;;;10-00_001;symbole
+11;00;001;Périmètre des zones délimitées - divisions foncières soumises à déclaration préalable;S;INF-S_11-00_001;;;;;11-00_001;symbole
+12;00;001;Périmètre de sursis à statuer;S;INF-S_12-00_001;;;;;12-00_001;symbole
+13;00;001;Secteur de programme d'aménagement d'ensemble;S;INF-S_13-00_001;;;;;13-00_001;symbole
+14;00;001;Périmètre de voisinage d'infrastructure de transport terrestre (secteur affecté par le bruit);S;INF-S_14-00_001;;;;;14-00_001;symbole
+16;00;001;Site archéologique [Attention : information facultative non exigée par la loi];S;INF-S_16-00_001;L;INF-L_16-00_001;P;INF-P_16-00_001;16-00_001;symbole
+17;00;001;Zone à risque d'exposition au plomb;S;INF-S_17-00_001;;;;;17-00_001;symbole
+19;01;001;Zone d'assainissement collectif/non collectif, eaux usées/eaux pluviales, schéma de réseaux eau et assainissement, systèmes d'élimination des déchets;S;INF-S_19-01_001;L;INF-L_19-01_001;P;INF-P_19-01_001;19-01 à 02_001;symbole
+19;02;001;Emplacements traitement eaux et déchets;S;INF-S_19-02_001;L;INF-L_19-02_001;P;INF-P_19-02_001;19-02_001;sous-code
+20;00;001;Règlement local de publicité;S;INF-S_20-00_001;;;;;20-00_001;symbole
+21;00;001;Projet de plan de prévention des risques;S;INF-S_21-00_001;;;;;21-00_001;symbole
+22;00;001;Protection des rives des plans d'eau en zone de montagne;S;INF-S_22-00_001;L;INF-L_22-00_001;;;22-00_001;symbole
+23;00;001;Arrêté du préfet coordonnateur de massif;S;INF-S_23-00_001;;;;;23-00_001;symbole
+25;00;001;Périmètre de protection des espaces agricoles et naturels périurbain;S;INF-S_25-00_001;;;;;25-00_001;symbole
+27;00;001;Plan d'exposition au bruit des aérodromes;S;INF-S_27-00_001;;;;;27-00_001;symbole
+30;00;001;Périmètre projet urbain partenarial;S;INF-S_30-00_001;;;;;30-00_001;symbole
+31;00;001;Périmètres patrimoniaux d’exclusion des matériaux et énergies renouvelables pris par délibération;S;INF-S_31-00_001;;;;;31-00_001;symbole
+32;00;001;Secteur de taxe d'aménagement;S;INF-S_32-00_001;;;;;32-00_001;symbole
+33;00;001;Droit de préemption commercial. [Attention : information facultative non exigée par la loi];S;INF-S_33-00_001;;;;;33-00_001;symbole
+34;00;001;Périmètre d'opération d'intérêt national. [Attention : information facultative non exigée par la loi];S;INF-S_34-00_001;;;;;34-00_001;symbole
+35;00;001;Périmètre de secteur affecté par un seuil minimal de densité;S;INF-S_35-00_001;;;;;35-00_001;symbole
+36;00;001;Schémas d'aménagement de plage;S;INF-S_36-00_001;;;;;36-00_001;symbole
+37;00;001;Bois ou forêts relevant du régime forestier;S;INF-S_37-00_001;;;;;37-00_001;symbole
+38;00;001;Secteurs d'information sur les sols;S;INF-S_38-00_001;;;;;38-00_001;symbole
+39;00;001;Périmètres de projets AFUP;S;INF-S_39-00_001;;;;;39-00_001;symbole
+40;01;001;Périmètre d’un bien inscrit au patrimoine mondial;S;INF-S_40-01_001;;;;;40-01_001;symbole
+40;02;001;Zone tampon d’un bien inscrit au patrimoine mondial;S;INF-S_40-02_001;;;;;40-02_001;symbole
+41;00;001;Bande de recul le long des axes à grande circulation;S;INF-S_41-00_001;;;;;41-00_001;symbole
+42;00;001;Secteurs délimités par délibération de l'autorité compétente en matière d'urbanisme, dans lesquels certaines opérations sont soumises à autorisation d'urbanisme;S;INF-S_42-00_001;;;;;42-00_001;symbole
+42;01;001;secteur dans lequel les travaux de démolition sont soumis à permis de démolir;S;INF-S_42-01_001;;;;;42-01_001;symbole
+42;02;001;Secteur dans lequel l'édification d'une clôture doit être précédée d'une déclaration préalable;S;INF-S_42-02_001;;;;;42-02_001;symbole
+42;03;001;secteur dans lequel les travaux de ravalement sont soumis à déclaration préalable;S;INF-S_42-03_001;;;;;42-03_001;symbole
+43;00;001;Obligation légale de débroussaillement;S;INF-S_43-00_001;;;;;43-00_001;symbole
+97;00;001;Périmètre d’application d’une pièce écrite territorialisée relative aux annexes (liste des annexes, liste des SUP, plan des SUP);S;INF-S_97-00_001;;;;;97-00_001;symbole
+98;00;001;Périmètre d’annulation partielle du document d’urbanisme (lorsqu’elle impacte le règlement graphique);S;INF-S_98-00_001;;;;;98-00_001;symbole
+99;00;001;Autre périmètre, secteur, plan, document, site, projet, espace.;S;INF-S_99-00_001;L;INF-L_99-00_001;P;INF-P_99-00_001;99-00 à 02_001;symbole
+99;01;001;autre relevant de la loi littoral;S;INF-S_99-01_001;L;INF-L_99-01_001;P;INF-P_99-01_001;99-01_001;sous-code
+99;02;001;autre relevant de la loi montagne;S;INF-S_99-02_001;L;INF-L_99-02_001;P;INF-P_99-02_001;99-02_001;sous-code

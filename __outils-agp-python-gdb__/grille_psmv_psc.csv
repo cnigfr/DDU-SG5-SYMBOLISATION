@@ -1,0 +1,217 @@
+typepsc;stypepsc;nnn;lib_stype;surf;symb_surf;lin;symb_lin;pt;symb_pct;etiquette;plu_psmv;classement
+01;00;001;Espace boisé classé;S;PSC-S_01-00_001;L;PSC-L_01-00_001;P;PSC-P_01-00_001;01-00 à 02_001;psmv;symbole
+01;01;001;Espace boisé classé à protéger ou conserver;S;PSC-S_01-01_001;L;PSC-L_01-01_001;P;PSC-P_01-01_001;01-01_001;psmv;sous-code
+01;02;001;Espace boisé classé à créer;S;PSC-S_01-02_001;L;PSC-L_01-02_001;P;PSC-P_01-02_001;01-02_001;psmv;sous-code
+01;03;001;Espace boisé classé significatif au titre de la loi littoral;S;PSC-S_01-03_001;L;PSC-L_01-03_001;P;PSC-P_01-03_001;01-03_001;psmv;symbole
+02;00;001;Limitations de la constructibilité pour des raisons environnementales, de risques, d’intérêt général;S;PSC-S_02-00_001;L;PSC-L_02-00_001;P;PSC-P_02-00_001;02-00_001;plu;symbole
+02;00;110;Limitations de la constructibilité pour des raisons environnementales, de risques, d’intérêt général : INONDATION;S;PSC-S_02-00_110;L;PSC-L_02-00_110;P;PSC-P_02-00_110;02-00_110;plu;alternatif
+02;00;120;Limitations de la constructibilité pour des raisons environnementales, de risques, d’intérêt général : MOUVEMENT TERRAIN;S;PSC-S_02-00_120;L;PSC-L_02-00_120;P;PSC-P_02-00_120;02-00_120;plu;alternatif
+02;00;140;Limitations de la constructibilité pour des raisons environnementales, de risques, d’intérêt général : AVALANCHE;S;PSC-S_02-00_140;L;PSC-L_02-00_140;P;PSC-P_02-00_140;02-00_140;plu;alternatif
+02;00;160;Limitations de la constructibilité pour des raisons environnementales, de risques, d’intérêt général : FEU;S;PSC-S_02-00_160;L;PSC-L_02-00_160;P;PSC-P_02-00_160;02-00_160;plu;alternatif
+02;00;200;Limitations de la constructibilité pour des raisons environnementales, de risques, d’intérêt général : TECHNOLOGIQUE;S;PSC-S_02-00_200;L;PSC-L_02-00_200;P;PSC-P_02-00_200;02-00_200;plu;alternatif
+02;01;001;Secteur avec interdiction de constructibilité pour des raisons environnementales, de risques, d’intérêt général;S;PSC-S_02-01_001;L;PSC-L_02-01_001;P;PSC-P_02-01_001;02-01_001;plu;symbole
+02;01;110;Secteur avec interdiction de constructibilité pour des raisons environnementales, de risques, d’intérêt général : INONDATION;S;PSC-S_02-01_110;L;PSC-L_02-01_110;P;PSC-P_02-01_110;02-01_110;plu;alternatif
+02;01;120;Secteur avec interdiction de constructibilité pour des raisons environnementales, de risques, d’intérêt général : MOUVEMENT TERRAIN;S;PSC-S_02-01_120;L;PSC-L_02-01_120;P;PSC-P_02-01_120;02-01_120;plu;alternatif
+02;01;140;Secteur avec interdiction de constructibilité pour des raisons environnementales, de risques, d’intérêt général : AVALANCHE;S;PSC-S_02-01_140;L;PSC-L_02-01_140;P;PSC-P_02-01_140;02-01_140;plu;alternatif
+02;01;160;Secteur avec interdiction de constructibilité pour des raisons environnementales, de risques, d’intérêt général : FEU;S;PSC-S_02-01_160;L;PSC-L_02-01_160;P;PSC-P_02-01_160;02-01_160;plu;alternatif
+02;01;200;Secteur avec interdiction de constructibilité pour des raisons environnementales, de risques, d’intérêt général : TECHNOLOGIQUE;S;PSC-S_02-01_200;L;PSC-L_02-01_200;P;PSC-P_02-01_200;02-01_200;plu;alternatif
+02;02;001;Secteur avec conditions spéciales de constructibilité pour des raisons environnementales, de risques, d’intérêt général;S;PSC-S_02-02_001;L;PSC-L_02-02_001;P;PSC-P_02-02_001;02-02_001;plu;symbole
+02;02;110;Secteur avec conditions spéciales de constructibilité pour des raisons environnementales, de risques, d’intérêt général : INONDATION;S;PSC-S_02-02_110;L;PSC-L_02-02_110;P;PSC-P_02-02_110;02-02_110;plu;alternatif
+02;02;120;Secteur avec conditions spéciales de constructibilité pour des raisons environnementales, de risques, d’intérêt général : MOUVEMENT TERRAIN;S;PSC-S_02-02_120;L;PSC-L_02-02_120;P;PSC-P_02-02_120;02-02_120;plu;alternatif
+02;02;140;Secteur avec conditions spéciales de constructibilité pour des raisons environnementales, de risques, d’intérêt général : AVALANCHE;S;PSC-S_02-02_140;L;PSC-L_02-02_140;P;PSC-P_02-02_140;02-02_140;plu;alternatif
+02;02;160;Secteur avec conditions spéciales de constructibilité pour des raisons environnementales, de risques, d’intérêt général : FEU;S;PSC-S_02-02_160;L;PSC-L_02-02_160;P;PSC-P_02-02_160;02-02_160;plu;alternatif
+02;02;200;Secteur avec conditions spéciales de constructibilité pour des raisons environnementales, de risques, d’intérêt général : TECHNOLOGIQUE;S;PSC-S_02-02_200;L;PSC-L_02-02_200;P;PSC-P_02-02_200;02-02_200;plu;alternatif
+03;00;001;Secteur avec disposition de reconstruction / démolition;S;PSC-S_03-00_001;;;P;PSC-P_03-00_001;03-00 à 02_001;plu;symbole
+03;01;001;[réservé aux cartes communales] Secteur dans lequel la reconstruction à l'identique d'un bâtiment détruit par un sinistre n'est pas autorisée;S;PSC-S_03-01_001;;;P;PSC-P_03-01_001;03-01_001;plu;sous-code
+03;02;001;Interdiction de restauration de bâtiment dont il reste l’essentiel des murs porteurs;S;PSC-S_03-02_001;;;P;PSC-P_03-02_001;03-02_001;plu;sous-code
+03;03;001;Interdiction de reconstruction à l'identique;S;PSC-S_03-03_001;;;P;PSC-P_03-03_001;03-03_001;plu;symbole
+03;50;001;Immeuble ou partie d’immeuble dont la modification peut être imposée à l’occasion d’opérations d’aménagement publiques ou privées;S;PSC-S_03-50_001;;;P;PSC-P_03-50_001;03-50_001;psmv;symbole
+03;51;001;Immeuble ou partie d’immeuble dont la démolition peut être imposée à l’occasion d’opérations d’aménagement publiques ou privées;S;PSC-S_03-51_001;;;;;03-51_001;psmv;symbole
+04;00;001;Périmètre issu des PDU sur obligation de stationnement;S;PSC-S_04-00_001;;;;;04-00_001;plu;symbole
+05;00;001;Emplacement réservé : Remarque : sauf lot de données antérieurs au standard v2017, utiliser impérativement les sous-codes suivants;S;PSC-S_05-00_001;L;PSC-L_05-00_001;P;PSC-P_05-00_001;05-00 à 06_001 & 08_001;psmv;symbole
+05;01;001;Emplacement réservé aux voies publiques;S;PSC-S_05-01_001;L;PSC-L_05-01_001;P;PSC-P_05-01_001;05-01_001;plu;sous-code
+05;02;001;Emplacement réservé aux ouvrages publics;S;PSC-S_05-02_001;L;PSC-L_05-02_001;P;PSC-P_05-02_001;05-02_001;plu;sous-code
+05;03;001;Emplacement réservé aux installations d’intérêt général;S;PSC-S_05-03_001;L;PSC-L_05-03_001;P;PSC-P_05-03_001;05-03_001;plu;sous-code
+05;04;001;Emplacement réservé aux espaces verts/continuités écologiques;S;PSC-S_05-04_001;L;PSC-L_05-04_001;P;PSC-P_05-04_001;05-04_001;plu;sous-code
+05;05;001;Emplacement réservé logement social/mixité sociale;S;PSC-S_05-05_001;L;PSC-L_05-05_001;P;PSC-P_05-05_001;05-05_001;plu;sous-code
+05;06;001;Servitude de localisation des voies, ouvrages publics, installations d’intérêt général et espaces verts en zone U ou AU;S;PSC-S_05-06_001;L;PSC-L_05-06_001;P;PSC-P_05-06_001;05-06_001;plu;sous-code
+05;07;001;Secteur de projet en attente d’un projet d’aménagement global;S;PSC-S_05-07_001;;;;;05-07_001;plu;symbole
+05;08;001;Emplacements réservés à la relocalisation d’équipements, de constructions et d’installations exposés au recul du trait de côte;S;PSC-S_05-08_001;L;PSC-L_05-08_001;P;PSC-P_05-08_001;05-08_001;plu;sous-code
+07;00;001;Patrimoine bâti, paysager ou éléments de paysages à protéger pour des motifs d'ordre culturel, historique, architectural ou écologique;S;PSC-S_07-00_001;L;PSC-L_07-00_001;P;PSC-P_07-00_001;07-00_001;plu;symbole
+07;01;001;Patrimoine bâti à protéger pour des motifs d'ordre culturel, historique, architectural;S;PSC-S_07-01_001;L;PSC-L_07-01_001;P;PSC-P_07-01_001;07-01_001;plu;symbole
+07;02;001;Patrimoine paysager à protéger pour des motifs d'ordre culturel, historique, architectural;S;PSC-S_07-02_001;L;PSC-L_07-02_001;P;PSC-P_07-02_001;07-02_001;plu;symbole
+07;03;001;Patrimoine paysager correspondant à un espace boisé à protéger pour des motifs d'ordre culturel, historique, architectural;S;PSC-S_07-03_001;L;PSC-L_07-03_001;P;PSC-P_07-03_001;07-03_001;plu;symbole
+07;04;001;Éléments de paysage, (sites et secteurs) à préserver pour des motifs d'ordre écologique;S;PSC-S_07-04_001;L;PSC-L_07-04_001;P;PSC-P_07-04_001;07-04_001;plu;symbole
+07;05;001;Éléments de paysage correspondant à un espace boisé, (sites et secteurs) à préserver pour des motifs d'ordre écologique;S;PSC-S_07-05_001;L;PSC-L_07-05_001;P;PSC-P_07-05_001;07-05_001;plu;symbole
+07;50;001;Immeuble bâti dont les parties intérieures et extérieures sont protégées en totalité, à conserver, restaurer et mettre en valeur;S;PSC-S_07-50_001;;;;;07-50_001;psmv;symbole
+07;51;001;Élément intérieur particulier protégé, à conserver, restaurer et mettre en valeur;S;PSC-S_07-51_001;;;P;PSC-P_07-51_001;07-51_001;psmv;symbole
+07;52;001;Immeuble bâti dont les parties extérieures sont protégées (façades, toitures, etc.), à conserver, restaurer et mettre en valeur;S;PSC-S_07-52_001;;;;;07-52_001;psmv;symbole
+07;53;001;Mur de soutènement, rempart ou mur de clôture protégé, à conserver, restaurer et mettre en valeur;;;L;PSC-L_07-53_001;;;07-53_001;psmv;symbole
+07;54;001;Élément extérieur particulier protégé (portail, clôture, puits, fontaine, statue, décor, etc.), à conserver, restaurer et mettre en valeur;;;;;P;PSC-P_07-54_001;07-54_001;psmv;symbole
+07;55;001;Séquence, composition, ordonnance architecturale ou urbaine protégée, à conserver, restaurer et mettre en valeur;;;L;PSC-L_07-55_001;;;07-55_001;psmv;symbole
+07;56;001;Séquence naturelle protégée (front rocheux, falaise, etc.), à conserver, restaurer et mettre en valeur;;;L;PSC-L_07-56_001;;;07-56_001;psmv;symbole
+07;57;001;Parc ou jardin de pleine terre protégé, à conserver, restaurer et mettre en valeur;S;PSC-S_07-57_001;;;;;07-57_001;psmv;symbole
+07;58;001;Espace libre à dominante végétale protégé, à conserver, restaurer et mettre en valeur;S;PSC-S_07-58_001;;;;;07-58_001;psmv;symbole
+07;59;001;Séquence, composition ou ordonnance végétale d’ensemble protégée, à conserver, restaurer et mettre en valeur;;;L;PSC-L_07-59_001;;;07-59_001;psmv;symbole
+07;60;001;Arbre remarquable ou autre élément naturel protégé (grotte, rocher, etc.), à conserver, restaurer et mettre en valeur;S;PSC-S_07-60_001;;;P;PSC-P_07-60_001;07-60_001;psmv;symbole
+07;61;001;Place, cour ou autre espace libre à dominante minérale protégé (pavés, calades, etc.), à conserver, restaurer et mettre en valeur;S;PSC-S_07-61_001;;;;;07-61_001;psmv;symbole
+07;62;001;Cours d’eau, réseau hydraulique ou étendue aquatique protégé, à conserver, restaurer et mettre en valeur;S;PSC-S_07-62_001;;;;;07-62_001;psmv;symbole
+07;63;001;Point d’eau ou source protégé, à conserver, restaurer et mettre en valeur ;;;;;P;PSC-P_07-63_001;07-63_001;psmv;symbole
+07;64;001;Passage d’eau souterrain protégé, à conserver, restaurer et mettre en valeur;;;L;PSC-L_07-64_001;;;07-64_001;psmv;symbole
+07;65;001;Espace vert non protégé à requalifier;S;PSC-S_07-65_001;;;;;07-65_001;psmv;symbole
+07;66;001;Place, cour, ou autre espace libre à dominante minérale non protégé à requalifier;S;PSC-S_07-66_001;;;;;07-66_001;psmv;symbole
+07;67;001;Immeuble bâti non protégé soumis à des dispositions spécifiques ou des règles générales localisées;S;PSC-S_07-67_001;;;;;07-67_001;psmv;symbole
+07;68;001;Immeuble non bâti ou espace libre non protégé soumis à des dispositions spécifiques ou des règles générales localisées;S;PSC-S_07-68_001;;;;;07-68_001;psmv;symbole
+07;69;001;Unité urbanistique ou paysagère (secteur, quartier...) soumise à des dispositions spécifiques;S;PSC-S_07-69_001;;;;;07-69_001;psmv;symbole
+08;00;001;Terrain cultivé ou non bâti à protéger en zone urbaine;S;PSC-S_08-00_001;;;;;08-00_001;plu;symbole
+13;00;001;Zone à aménager en vue de la pratique du ski;S;PSC-S_13-00_001;;;;;13-00_001;plu;symbole
+14;00;001;Secteur de plan de masse;S;PSC-S_14-00_001;;;;;14-00_001;plu;symbole
+15;00;001;Règles d’implantation des constructions;S;PSC-S_15-00_001;L;PSC-L_15-00_001;;;15-00 à 03_001 & 98_001;plu;sous-code
+15;01;001;Implantation des constructions par rapport aux voies et aux emprises publiques;S;PSC-S_15-01_001;L;PSC-L_15-01_001;;;15-01_001;plu;sous-code
+15;02;001;Implantation des constructions par rapport aux limites séparatives latérales;S;PSC-S_15-02_001;L;PSC-L_15-02_001;;;15-02_001;plu;sous-code
+15;03;001;Implantation des constructions par rapport aux limites des fonds de parcelles;S;PSC-S_15-03_001;L;PSC-L_15-03_001;;;15-03_001;plu;sous-code
+15;50;001;Limite maximale d’implantation de construction;S;PSC-S_15-50_001;L;PSC-L_15-50_001;;;15-50_001;psmv;symbole
+15;51;001;Limite imposée d’implantation de construction;S;PSC-S_15-51_001;L;PSC-L_15-51_001;;;15-51_001;psmv;symbole
+15;98;001;Implantation alternative des constructions;S;PSC-S_15-98_001;L;PSC-L_15-98_001;;;15-98_001;plu;sous-code
+16;00;001;Constructions et installations nécessaires à des équipements collectifs en zone A ou N;S;PSC-S_16-00_001;;;P;PSC-P_16-00_001;16-00_001;plu;symbole
+16;01;001;Bâtiment susceptible de changer de destination en zone A ou N;S;PSC-S_16-01_001;;;P;PSC-P_16-01_001;16-01 à 05_001;plu;sous-code
+16;02;001;Bâtiments d’habitation existants pouvant faire l’objet d’extensions ou d’annexes en zone A ou N;S;PSC-S_16-02_001;;;P;PSC-P_16-02_001;16-02_001;plu;sous-code
+16;03;001;Secteur de taille et de capacité d’accueil limitées (STECAL) en zone A ou N;S;PSC-S_16-03_001;;;P;PSC-P_16-03_001;16-03_001;plu;symbole
+16;04;001;Constructions et installations nécessaires à l’activité agricole en zone A ou N;S;PSC-S_16-04_001;;;P;PSC-P_16-04_001;16-04_001;plu;sous-code
+16;05;001;Diversification de l'activité agricole : transformation, conditionnement et ventes de produits agricoles (activités liées au tourisme exclues);S;PSC-S_16-05_001;;;P;PSC-P_16-05_001;16-05_001;plu;sous-code
+17;00;001;Secteur à programme de logements mixité sociale en zone U et AU;S;PSC-S_17-00_001;;;;;17-00_001;plu;symbole
+18;00;001;Périmètre comportant des orientations d’aménagement et de programmation (OAP);S;PSC-S_18-00_001;;;;;18-00 à 16_001;psmv;symbole
+18;01;001;OAP de projet (sans règlement);S;PSC-S_18-01_001;;;;;18-01_001;psmv;sous-code
+18;02;001;OAP entrées de ville;S;PSC-S_18-02_001;;;;;18-02_001;psmv;sous-code
+18;03;001;OAP relatives à la réhabilitation, la restructuration, la mise en valeur ou l’aménagement;S;PSC-S_18-03_001;;;;;18-03_001;psmv;sous-code
+18;04;001;OAP d’adaptation des périmètres de transports collectifs;S;PSC-S_18-04_001;;;;;18-04_001;psmv;sous-code
+18;05;001;OAP patrimoniales, architecturales et écologiques;S;PSC-S_18-05_001;;;;;18-05_001;psmv;sous-code
+18;06;001;OAP relatives à l’habitat;S;PSC-S_18-06_001;;;;;18-06_001;psmv;sous-code
+18;07;001;OAP comprenant des dispositions relatives à l'équipement commercial et artisanal;S;PSC-S_18-07_001;;;;;18-07_001;psmv;sous-code
+18;08;001;OAP relatives aux transports et aux déplacements;S;PSC-S_18-08_001;;;;;18-08_001;psmv;sous-code
+18;09;001;OAP relatives aux espaces publics en zone d’aménagement concerté;S;PSC-S_18-09_001;;;;;18-09_001;psmv;sous-code
+18;10;001;OAP relatives aux ouvrages publics, installations d’intérêt général et espaces verts en zone d’aménagement concerté;S;PSC-S_18-10_001;;;;;18-10_001;psmv;sous-code
+18;11;001;OAP valant création de zone d’aménagement concerté;S;PSC-S_18-11_001;;;;;18-11_001;psmv;sous-code
+18;12;001;OAP secteurs de renaturation;S;PSC-S_18-12_001;;;;;18-12_001;psmv;sous-code
+18;13;001;OAP relatives à la protection des franges urbaines et rurales;S;PSC-S_18-13_001;;;;;18-13_001;psmv;sous-code
+18;14;001;OAP recul du trait de côte;S;PSC-S_18-14_001;;;;;18-14_001;psmv;sous-code
+18;15;001;OAP trames vertes et bleues;S;PSC-S_18-15_001;;;;;18-15_001;psmv;sous-code
+18;16;001;OAP zone d’accélération de la production d’énergies renouvelables;S;PSC-S_18-16_001;;;;;18-16_001;psmv;sous-code
+19;00;001;Secteur protégé en raison de la richesse du sol et du sous-sol;S;PSC-S_19-00_001;;;;;19-00_001;plu;symbole
+20;00;001;Secteur à transfert de constructibilité en zone N;S;PSC-S_20-00_001;;;;;20-00_001;plu;symbole
+22;00;001;Diversité commerciale à protéger ou à développer;S;PSC-S_22-00_001;L;PSC-L_22-00_001;P;PSC-P_22-00_001;22-00 à 04_001;plu;symbole
+22;01;001;Diversité commerciale à protéger;S;PSC-S_22-01_001;L;PSC-L_22-01_001;P;PSC-P_22-01_001;22-01_001;plu;sous-code
+22;02;001;Diversité commerciale à développer;S;PSC-S_22-02_001;L;PSC-L_22-02_001;P;PSC-P_22-02_001;22-02_001;plu;sous-code
+22;03;001;Linéaire commercial protégé;S;PSC-S_22-03_001;L;PSC-L_22-03_001;P;PSC-P_22-03_001;22-03_001;plu;sous-code
+22;04;001;Linéaire commercial protégé renforcé;S;PSC-S_22-04_001;L;PSC-L_22-04_001;P;PSC-P_22-04_001;22-04_001;plu;sous-code
+23;00;001;Secteur avec taille minimale des logements en zone U et AU;S;PSC-S_23-00_001;;;;;23-00_001;plu;symbole
+24;00;001;Voies, chemins, transport public à conserver et à créer;S;PSC-S_24-00_001;L;PSC-L_24-00_001;;;24-00 à 04_001;plu;symbole
+24;01;001;Voies de circulation à créer, modifier ou conserver;S;PSC-S_24-01_001;L;PSC-L_24-01_001;;;24-01_001;plu;sous-code
+24;02;001;Voies de circulation à modifier;S;PSC-S_24-02_001;L;PSC-L_24-02_001;;;24-02_001;plu;sous-code
+24;03;001;Voies de circulation à créer;S;PSC-S_24-03_001;L;PSC-L_24-03_001;;;24-03_001;plu;sous-code
+24;04;001;Voies de circulation à conserver;S;PSC-S_24-04_001;L;PSC-L_24-04_001;;;24-04_001;plu;sous-code
+24;50;001;Passage ou liaison piétonne à maintenir ou à créer;;;;;P;PSC-P_24-50_001;24-50_001;psmv;symbole
+25;00;001;Eléments de continuité écologique et trame verte et bleue;S;PSC-S_25-00_001;L;PSC-L_25-00_001;P;PSC-P_25-00_001;25-00_001;plu;symbole
+26;00;001;Secteur de performance énergétique;S;PSC-S_26-00_001;;;;;26-00 à 01_001;plu;symbole
+26;01;001;Secteur de performance énergétique renforcé;S;PSC-S_26-01_001;;;;;26-01_001;plu;sous-code
+27;00;001;Secteur d’aménagement numérique;S;PSC-S_27-00_001;;;;;27-00_001;plu;symbole
+28;00;001;Conditions de desserte;S;PSC-S_28-00_001;L;PSC-L_28-00_001;P;PSC-P_28-00_001;28-00 à 01_001;plu;symbole
+28;01;001;Conditions permettant une bonne desserte des terrains par les services publics de collecte des déchets;S;PSC-S_28-01_001;L;PSC-L_28-01_001;P;PSC-P_28-01_001;28-01_001;plu;sous-code
+29;00;001;Secteur avec densité minimale de construction;S;PSC-S_29-00_001;;;;;29-00 à 02_001;plu;symbole
+29;01;001;Secteur avec densité minimale de construction à proximité des transports collectifs;S;PSC-S_29-01_001;;;;;29-01_001;plu;sous-code
+29;02;001;Secteur de ZAC avec densité minimale de construction;S;PSC-S_29-02_001;;;;;29-02_001;plu;sous-code
+30;00;001;Majoration des volumes constructibles;S;PSC-S_30-00_001;;;;;30-00 à 04_001;plu;symbole
+30;01;001;Majoration des volumes constructibles pour l’habitation;S;PSC-S_30-01_001;;;;;30-01_001;plu;sous-code
+30;02;001;Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux;S;PSC-S_30-02_001;;;;;30-02_001;plu;sous-code
+30;03;001;Majoration des volumes constructibles pour exemplarité énergétique ou environnementale;S;PSC-S_30-03_001;;;;;30-03_001;plu;sous-code
+30;04;001;Majoration des volumes constructibles pour les programmes comportant des logements intermédiaires;S;PSC-S_30-04_001;;;;;30-04_001;plu;sous-code
+31;00;001;Espaces remarquables du littoral;S;PSC-S_31-00_001;L;PSC-L_31-00_001;P;PSC-P_31-00_001;31-00 à 08_001;plu;symbole
+31;01;001;Dunes, landes côtières, plages et lidos, estrans, falaises et abords;S;PSC-S_31-01_001;L;PSC-L_31-01_001;P;PSC-P_31-01_001;31-01_001;plu;sous-code
+31;02;001;Forêts et zones boisées proches du rivage de la mer et des plans d’eau intérieurs d’une superficie supérieure à 1 000 hectares;S;PSC-S_31-02_001;L;PSC-L_31-02_001;P;PSC-P_31-02_001;31-02_001;plu;sous-code
+31;03;001;Ilots inhabités;S;PSC-S_31-03_001;L;PSC-L_31-03_001;P;PSC-P_31-03_001;31-03_001;plu;sous-code
+31;04;001;Parties naturelles des estuaires, des rias ou abers et des caps;S;PSC-S_31-04_001;L;PSC-L_31-04_001;P;PSC-P_31-04_001;31-04_001;plu;sous-code
+31;05;001;Marais, vasières, tourbières, plans d'eau, les zones humides et milieux temporairement immergés;S;PSC-S_31-05_001;L;PSC-L_31-05_001;P;PSC-P_31-05_001;31-05_001;plu;sous-code
+31;06;001;Milieux abritant des concentrations naturelles d'espèces animales ou végétales;S;PSC-S_31-06_001;L;PSC-L_31-06_001;P;PSC-P_31-06_001;31-06_001;plu;sous-code
+31;07;001;Parties naturelles des sites inscrits ou classés;S;PSC-S_31-07_001;L;PSC-L_31-07_001;P;PSC-P_31-07_001;31-07_001;plu;sous-code
+31;08;001;Formations géologiques;S;PSC-S_31-08_001;L;PSC-L_31-08_001;P;PSC-P_31-08_001;31-08_001;plu;sous-code
+32;00;001;Exclusion protection de plans d’eau de faible importance;S;PSC-S_32-00_001;;;;;32-00_001;plu;symbole
+33;00;001;Secteur de dérogation aux protections des rives des plans d'eau en zone de montagne;S;PSC-S_33-00_001;L;PSC-L_33-00_001;;;33-00_001;plu;symbole
+34;00;001;Espaces, paysage et milieux caractéristiques du patrimoine naturel et culturel montagnard à préserver;S;PSC-S_34-00_001;L;PSC-L_34-00_001;P;PSC-P_34-00_001;34-00_001;plu;symbole
+35;00;001;Terres nécessaires au maintien et au développement des activités agricoles, pastorales et forestières à préserver;S;PSC-S_35-00_001;L;PSC-L_35-00_001;;;35-00_001;plu;symbole
+36;00;001;Mixité des destinations ou sous-destinations;S;PSC-S_36-00_001;;;;;36-00_001;plu;symbole
+37;00;001;Règles différenciées entre le rez-de-chaussée et les étages supérieurs des constructions;S;PSC-S_37-00_001;L;PSC-L_37-00_001;;;37-00 à 02_001;plu;symbole
+37;01;001;Règles différenciées pour le rez-de-chaussée en raison des risques inondations;S;PSC-S_37-01_001;L;PSC-L_37-01_001;;;37-01_001;plu;sous-code
+37;02;001;Règles différenciées pour mixité sociale et fonctionnelle;S;PSC-S_37-02_001;L;PSC-L_37-02_001;;;37-02_001;plu;sous-code
+38;00;001;Emprise au sol;S;PSC-S_38-00_001;;;;;38-00 à 98_001;plu;symbole
+38;01;001;Emprise au sol minimale;S;PSC-S_38-01_001;;;;;38-01_001;plu;sous-code
+38;02;001;Emprise au sol maximale;S;PSC-S_38-02_001;;;P;PSC-P_38-02_001;38-02_001;plu;sous-code
+38;97;001;Emprise au sol règles qualitatives;S;PSC-S_38-97_001;;;;;38-97_001;plu;sous-code
+38;98;001;Emprise au sol règles alternatives;S;PSC-S_38-98_001;;;;;38-98_001;plu;sous-code
+39;00;001;Hauteur;S;PSC-S_39-00_001;L;PSC-L_39-00_001;P;PSC-P_39-00_001;39-00 à 02_001 & 97 à 98_001;plu;symbole
+39;01;001;Hauteur minimale;S;PSC-S_39-01_001;L;PSC-L_39-01_001;P;PSC-P_39-01_001;39-01_001;plu;sous-code
+39;02;001;Hauteur maximale;S;PSC-S_39-02_001;L;PSC-L_39-02_001;P;PSC-P_39-02_001;39-02_001;plu;sous-code
+39;50;001;Hauteur maximale de façade;S;PSC-S_39-50_001;L;PSC-L_39-50_001;;;39-50_001;psmv;symbole
+39;51;001;Hauteur maximale de faîtage ou de construction;S;PSC-S_39-51_001;L;PSC-L_39-51_001;;;39-51_001;psmv;symbole
+39;52;001;Hauteur imposée de façade;S;PSC-S_39-52_001;L;PSC-L_39-52_001;;;39-52_001;psmv;symbole
+39;97;001;Hauteur règles qualitatives;S;PSC-S_39-97_001;L;PSC-L_39-97_001;P;PSC-P_39-97_001;39-97_001;plu;sous-code
+39;98;001;Hauteur règles alternatives;S;PSC-S_39-98_001;L;PSC-L_39-98_001;P;PSC-P_39-98_001;39-98_001;plu;sous-code
+40;00;001;Volumétrie;S;PSC-S_40-00_001;L;PSC-L_40-00_001;P;PSC-P_40-00_001;40-00 à 02_001 & 97 à 98_001;plu;symbole
+40;01;001;Volumétrie minimale;S;PSC-S_40-01_001;L;PSC-L_40-01_001;P;PSC-P_40-01_001;40-01_001;plu;sous-code
+40;02;001;Volumétrie maximale;S;PSC-S_40-02_001;L;PSC-L_40-02_001;P;PSC-P_40-02_001;40-02_001;plu;sous-code
+40;50;001;Point de vue, perspective à préserver et à mettre en valeur;;;;;P;PSC-P_40-50_001;40-50_001;psmv;symbole
+40;97;001;Règles volumétriques qualitatives;S;PSC-S_40-97_001;L;PSC-L_40-97_001;P;PSC-P_40-97_001;40-97_001;plu;sous-code
+40;98;001;Règles volumétriques alternatives;S;PSC-S_40-98_001;L;PSC-L_40-98_001;P;PSC-P_40-98_001;40-98_001;plu;sous-code
+41;00;001;Aspect extérieur;S;PSC-S_41-00_001;L;PSC-L_41-00_001;P;PSC-P_41-00_001;41-00 à 98_001;plu;symbole
+41;01;001;Aspect extérieur façades;S;PSC-S_41-01_001;L;PSC-L_41-01_001;P;PSC-P_41-01_001;41-01_001;plu;sous-code
+41;02;001;Aspect extérieur toitures;S;PSC-S_41-02_001;L;PSC-L_41-02_001;P;PSC-P_41-02_001;41-02_001;plu;sous-code
+41;03;001;Aspect extérieur clôtures;S;PSC-S_41-03_001;L;PSC-L_41-03_001;P;PSC-P_41-03_001;41-03_001;plu;sous-code
+41;98;001;Aspect extérieur règles alternatives;S;PSC-S_41-98_001;L;PSC-L_41-98_001;P;PSC-P_41-98_001;41-98_001;plu;sous-code
+42;00;001;Coefficient de biotope par surface;S;PSC-S_42-00_001;;;;;42-00_001;plu;symbole
+43;00;001;Réalisation d’espaces libres, plantations, aires de jeux et de loisir;S;PSC-S_43-00_001;L;PSC-L_43-00_001;P;PSC-P_43-00_001;43-00 à 03_001;plu;symbole
+43;01;001;Réalisation d’espaces libres,;S;PSC-S_43-01_001;L;PSC-L_43-01_001;P;PSC-P_43-01_001;43-01_001;plu;sous-code
+43;02;001;Réalisation d’aires de jeux et de loisirs;S;PSC-S_43-02_001;L;PSC-L_43-02_001;P;PSC-P_43-02_001;43-02_001;plu;sous-code
+43;03;001;Réglementation des plantations;S;PSC-S_43-03_001;L;PSC-L_43-03_001;P;PSC-P_43-03_001;43-03_001;plu;sous-code
+43;50;001;Espace vert à créer;S;PSC-S_43-50_001;;;;;43-50_001;psmv;symbole
+43;51;001;Place, cour, ou autre espace libre à dominante minérale à créer;S;PSC-S_43-51_001;;;;;43-51_001;psmv;symbole
+44;00;001;Stationnement;S;PSC-S_44-00_001;L;PSC-L_44-00_001;;;44-00 à 98_001;plu;symbole
+44;01;001;Stationnement minimal;S;PSC-S_44-01_001;L;PSC-L_44-01_001;;;44-01_001;plu;sous-code
+44;02;001;Stationnement maximal;S;PSC-S_44-02_001;L;PSC-L_44-02_001;;;44-02_001;plu;sous-code
+44;03;001;Caractéristiques et type de stationnement;S;PSC-S_44-03_001;L;PSC-L_44-03_001;;;44-03_001;plu;sous-code
+44;04;001;Minoration des règles de stationnement;S;PSC-S_44-04_001;L;PSC-L_44-04_001;;;44-04_001;plu;sous-code
+44;05;001;Réalisation d’aires de livraisons imposée;S;PSC-S_44-05_001;L;PSC-L_44-05_001;;;44-05_001;plu;sous-code
+44;98;001;Stationnement règles alternatives;S;PSC-S_44-98_001;L;PSC-L_44-98_001;;;44-98_001;plu;sous-code
+45;00;001;Secteur de ZAC avec surfaces de plancher déterminées;S;PSC-S_45-00_001;;;;;45-00_001;plu;symbole
+46;00;001;Constructibilité espace boisé antérieur au 20ème siècle;S;PSC-S_46-00_001;;;;;46-00_001;plu;symbole
+47;00;001;Desserte par les réseaux;S;PSC-S_47-00_001;L;PSC-L_47-00_001;P;PSC-P_47-00_001;47-00 à 05_001;plu;symbole
+47;01;001;Réseaux publics d'eau;S;PSC-S_47-01_001;L;PSC-L_47-01_001;P;PSC-P_47-01_001;47-01_001;plu;sous-code
+47;02;001;Réseaux publics d'électricité;S;PSC-S_47-02_001;L;PSC-L_47-02_001;P;PSC-P_47-02_001;47-02_001;plu;sous-code
+47;03;001;Réseaux publics d'assainissement;S;PSC-S_47-03_001;L;PSC-L_47-03_001;P;PSC-P_47-03_001;47-03_001;plu;sous-code
+47;04;001;Conditions de réalisation d'un assainissement non collectif;S;PSC-S_47-04_001;L;PSC-L_47-04_001;P;PSC-P_47-04_001;47-04_001;plu;sous-code
+47;05;001;Infrastructures et réseaux de communications électroniques;S;PSC-S_47-05_001;L;PSC-L_47-05_001;P;PSC-P_47-05_001;47-05_001;plu;sous-code
+48;00;001;Mesures pour limiter l'imperméabilisation des sols;S;PSC-S_48-00_001;L;PSC-L_48-00_001;P;PSC-P_48-00_001;48-00 à 01_001;plu;symbole
+48;01;001;Installations nécessaires à la gestion des eaux pluviales et du ruissellement;S;PSC-S_48-01_001;L;PSC-L_48-01_001;P;PSC-P_48-01_001;48-01_001;plu;sous-code
+49;00;001;Opération d'ensemble imposée en zone AU;S;PSC-S_49-00_001;;;;;49-00 à 02_001;plu;symbole
+49;01;001;Urbanisation par opération d'ensemble;S;PSC-S_49-01_001;;;;;49-01_001;plu;sous-code
+49;02;001;Urbanisation conditionnée à la réalisation des équipements internes à la zone;S;PSC-S_49-02_001;;;;;49-02_001;plu;sous-code
+50;00;001;Interdiction types d’activités, destinations, sous-destinations;S;PSC-S_50-00_001;L;PSC-L_50-00_001;P;PSC-P_50-00_001;50-00_001;plu;symbole
+51;00;001;Autorisation sous conditions types d’activités, destinations, sous-destinations;S;PSC-S_51-00_001;L;PSC-L_51-00_001;P;PSC-P_51-00_001;51-00_001;plu;symbole
+52;00;001;Infrastructures et équipements logistiques à préserver ou à développer en zones U et AU;S;PSC-S_52-00_001;L;PSC-L_52-00_001;P;PSC-P_52-00_001;52-00_001;plu;symbole
+53;00;001;dérogation à l’article L.111-6 pour l’implantation des constructions le long des grands axes routiers;S;PSC-S_53-00_001;L;PSC-L_53-00_001;;;53-00_001;plu;symbole
+54;01;001;Zone exposée au recul du trait de côte à l'horizon de trente ans;S;PSC-S_54-01_001;;;;;54-01_001;plu;symbole
+54;02;001;Zone exposée au recul du trait de côte à un horizon compris entre trente et cent ans;S;PSC-S_54-02_001;;;;;54-02_001;plu;symbole
+55;01;001;Secteur d’implantation d’installations de production d'énergies renouvelables, et leurs ouvrages de raccordement, soumises à conditions;S;PSC-S_55-01_001;;;;;55-01_001;plu;symbole
+55;02;001;Secteur d'exclusion d'installations de prod. d'énergies renouvelables;S;PSC-S_55-02_001;;;;;55-02_001;plu;symbole
+56;00;001;Secteur dans lequel toutes les constructions nouvelles de logements sont à usage exclusif de résidence principale;S;PSC-S_56-00_001;;;;;56-00_001;plu;symbole
+97;00;001;Périmètre d’application d’une pièce écrite territorialisée (rapport de présentation, PADD, règlement, règlement graphique, POA);S;PSC-S_97-00_001;L;PSC-L_97-00_001;P;PSC-P_97-00_001;97-00 à 01_001;plu;symbole
+97;01;001;Périmètre couvert par un Plan de secteurs;S;PSC-S_97-01_001;L;PSC-L_97-01_001;P;PSC-P_97-01_001;97-01_001;plu;sous-code
+99;00;001;Autre;S;PSC-S_99-00_001;L;PSC-L_99-00_001;P;PSC-P_99-00_001;99-00 à 10_001;plu;symbole
+99;01;001;Autre : affectation des sols et destination des constructions;S;PSC-S_99-01_001;L;PSC-L_99-01_001;P;PSC-P_99-01_001;99-01_001;plu;sous-code
+99;02;001;Autre : zones naturelles, agricoles ou forestières;S;PSC-S_99-02_001;L;PSC-L_99-02_001;P;PSC-P_99-02_001;99-02_001;plu;sous-code
+99;03;001;Autre : mixité sociale et fonctionnelle en zones urbaines ou à urbaniser;S;PSC-S_99-03_001;L;PSC-L_99-03_001;P;PSC-P_99-03_001;99-03_001;plu;sous-code
+99;04;001;Autre : qualité du cadre de vie;S;PSC-S_99-04_001;L;PSC-L_99-04_001;P;PSC-P_99-04_001;99-04_001;plu;sous-code
+99;05;001;Autre : Qualité urbaine, architecturale, environnementale et paysagère;S;PSC-S_99-05_001;L;PSC-L_99-05_001;P;PSC-P_99-05_001;99-05_001;plu;sous-code
+99;06;001;Autre : Traitement environnemental et paysager des espaces non bâtis et abords des constructions;S;PSC-S_99-06_001;L;PSC-L_99-06_001;P;PSC-P_99-06_001;99-06_001;plu;sous-code
+99;07;001;Autre : densité;S;PSC-S_99-07_001;L;PSC-L_99-07_001;P;PSC-P_99-07_001;99-07_001;plu;sous-code
+99;08;001;Autre : équipements, réseaux et emplacements réservés;S;PSC-S_99-08_001;L;PSC-L_99-08_001;P;PSC-P_99-08_001;99-08_001;plu;sous-code
+99;09;001;Autre : plan local d’urbanisme tenant lieu de programme local de l’habitat et de plan de déplacements urbains;S;PSC-S_99-09_001;L;PSC-L_99-09_001;P;PSC-P_99-09_001;99-09_001;plu;sous-code
+99;10;001;Autre : plan local d’urbanisme tenant lieu de plan de déplacements urbains;S;PSC-S_99-10_001;L;PSC-L_99-10_001;P;PSC-P_99-10_001;99-10_001;plu;sous-code

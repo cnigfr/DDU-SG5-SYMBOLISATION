@@ -1,0 +1,6 @@
+typezone;lib_type;symb_sup2500;symb_inf2500
+U;Zone urbaine;ZONE_U_001_ge;ZONE_U_001_pe
+AUc;Zone à  urbaniser;ZONE_AUc_001_ge;ZONE_AUc_001_pe
+AUs;Zone à  urbaniser bloquée;ZONE_AUs_001_ge;ZONE_AUs_001_pe
+A;Zone Agricole;ZONE_A_001_ge;ZONE_A_001_pe
+N;Zone naturelle et forestière;ZONE_N_001_ge;ZONE_N_001_pe
