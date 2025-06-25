@@ -5,8 +5,8 @@ Créé pour faciliter l'élaboration et l'échange de dictionnaires de symboles 
 
 Retrouvez notamment ici :
 - les préconisations de symbolisation produites par le SG5 pour harmoniser la représentation cartographique des données standardisées :
-    - [préconisations](/PLU/preconisations.md) associées au standard PLU, synthétisées dans la [Planche Symbolisation des PLU](/PLU/planches/Planche_Symbolisation_CNIG_PLU.pdf)
-    - [préconisations](/PSMV/preconisations.md) associées au standard PSMV ;synthétisées dans la [Planche Symbolisation des PSMV](/PSMV/planches/Planche_Symbolisation_CNIG_PSMV.pdf)
+    - [préconisations](/PLU/preconisations.md) associées au standard PLU, synthétisées dans la [Planche Symbolisation des PLU](/PLU/Planche_Symbolisation_CNIG_PLU.pdf)
+    - [préconisations](/PSMV/preconisations.md) associées au standard PSMV ;synthétisées dans la [Planche Symbolisation des PSMV](/PSMV/Planche_Symbolisation_CNIG_PSMV.pdf)
 - les fichiers de style QML et STYLX correspondants :
     - [QML](/PLU/QML) et [STYLX](/PLU/ArcGISpro) pour les données PLU,
     - [QML](/PSMV/QML) et [STYLX](/PSMV/ArcGISpro) pour les données PSMV,
