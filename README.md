@@ -8,9 +8,9 @@ Retrouvez notamment ici :
     - [préconisations](/PLU/preconisations.md) associées au standard PLU ([au format pdf](/PLU/Catalogue_Symbolisation_CNIG_PLU.pdf)), synthétisées dans la [Planche Symbolisation des PLU](/PLU/Planche_Symbolisation_CNIG_PLU.pdf)
     - [préconisations](/PSMV/preconisations.md) associées au standard PSMV ;synthétisées dans la [Planche Symbolisation des PSMV](/PSMV/Planche_Symbolisation_CNIG_PSMV.pdf)
 - les fichiers de style QML et STYLX correspondants :
-    - [QML](/PLU/QML) et [STYLX](/PLU/ArcGISpro) pour les données PLU,
-    - [QML](/PSMV/QML) et [STYLX](/PSMV/ArcGISpro) pour les données PSMV,
-    - [QML](/SUP/QML) et [STYLX](/SUP/ArcGISpro) pour les données SUP ;
+    - [QML](/PLU/QML), [STYLX](/PLU/ArcGISpro) et [SLD](https://www.geoportail-urbanisme.gouv.fr/services/?subcategory=services_resources) pour les données PLU,
+    - [QML](/PSMV/QML), [STYLX](/PSMV/ArcGISpro) et [SLD](https://www.geoportail-urbanisme.gouv.fr/services/?subcategory=services_resources) pour les données PSMV,
+    - [QML](/SUP/QML), [STYLX](/SUP/ArcGISpro) et [SLD](https://www.geoportail-urbanisme.gouv.fr/services/?subcategory=services_resources) pour les données SUP ;
 - des projets QGIS et ArcGIS pro qui en permettent la visualisation :
     - [projet QGIS](/PLU/projet_qgis_symbolisation_plu.zip) pour les préconisations PLU. L'archive contient le projet QGIS, conçu sous QGIS 3.10 mais compatible avec les versions supérieures, au format QGZ et un GeoPackage _data.gpkg_ avec les données afférentes,
     - [projet_arcgispro](PLU/projet_arcgispro_symbolisation_plu.zip) pour les préconisations PLU. L'archive contient le projet ArcGIS pro, conçu en version 2.8, au format APRX accompgné d'un GeoPackage _data.gpkg_ avec les données afférentes.
