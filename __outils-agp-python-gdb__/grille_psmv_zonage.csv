@@ -1,2 +1,2 @@
-typezone;lib_type;symbole;plu_psmv
-UV;Zonage PSMV;ZONE_U_001;psmv
+typezone;lib_type;symbole;d_symb;plu_psmv
+UV;Zonage PSMV;ZONE_U_001;Ligne simple\n• couleur : RVB 205,100,255 (#cd64ff)\n• largeur de trait : 3 pt\n• modèle de tiret personnalisé (tiret | espace) : [3-2-3-2-3-2] pt\n• style de cap : plat\n• style de jointure : angle droit;psmv
