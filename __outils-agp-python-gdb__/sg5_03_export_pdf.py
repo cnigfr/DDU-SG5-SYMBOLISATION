@@ -5,7 +5,7 @@
 # Author:      nicolas.kulpinski omiplu.mikkrogeo.com
 #
 # Created:     06/08/2025
-# Modified:    06/08/2025
+# Modified:    07/08/2025
 # Copyright:   (c) n.kulpinski 2025
 # Licence:     GPL
 #-------------------------------------------------------------------------------
@@ -15,10 +15,10 @@ import arcpy, os, datetime, sys
 from arcpy import env
 from datetime import timedelta
 
-#aprx_path = input('Chemin complet du fichier .aprx : ')
-aprx_path = r"C:\Users\n.kulpinski\OneDrive - Aix Marseille Provence Métropole\Projet\CNIG_DDU\SG5-SYMBOLISATION-SYMBOLISATION\PLU\AGP\SG5_Symbolisation.aprx"
-#out_folder_path = input('Saisir le chemin complet du dossier de sortie : ')
-out_folder_path = r"C:\Users\n.kulpinski\OneDrive - Aix Marseille Provence Métropole\Projet\CNIG_DDU\SG5-SYMBOLISATION-SYMBOLISATION\__outils-agp-python-gdb__"
+aprx_path = input('Chemin complet du fichier .aprx : ')
+#aprx_path = r"...\SG5_Symbolisation.aprx"
+out_folder_path = input('Saisir le chemin complet du dossier de sortie : ')
+#out_folder_path = r"C:\..."
 
 aprx = arcpy.mp.ArcGISProject(aprx_path)
 for lyt in aprx.listLayouts() : 
