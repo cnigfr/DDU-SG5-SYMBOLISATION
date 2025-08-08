@@ -15,9 +15,11 @@ import arcpy, os, datetime, sys
 from arcpy import env
 from datetime import timedelta
 
-aprx_path = input('Chemin complet du fichier .aprx : ')
+#aprx_path = input('Chemin complet du fichier .aprx : ')
+aprx_path = fr"{sys.argv[2]}"
 #aprx_path = r"...\SG5_Symbolisation.aprx"
-out_folder_path = input('Saisir le chemin complet du dossier de sortie : ')
+#out_folder_path = input('Saisir le chemin complet du dossier de sortie : ')
+out_folder_path = fr"{sys.argv[1]}"
 #out_folder_path = r"C:\..."
 
 aprx = arcpy.mp.ArcGISProject(aprx_path)

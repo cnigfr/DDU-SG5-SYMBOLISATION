@@ -29,7 +29,9 @@ prj = spatial_reference
 m = 13 #Nombre de carreaux par lignes
 #-------------------------------------------------------------------------------
 # Creation gdb
-out_folder_path = input('Saisir le chemin complet du dossier de sortie : ')
+#out_folder_path = input('Saisir le chemin complet du dossier de sortie : ')
+out_folder_path = fr"{sys.argv[1]}"
+#out_folder_path = r"..."
 out_name = f"data_SG5_{today_short}.gdb"
 arcpy.management.CreateFileGDB(out_folder_path, out_name)
 gdb = out_folder_path + os.sep + out_name
@@ -37,7 +39,8 @@ env.workspace = gdb
 #-------------------------------------------------------------------------------
 # chemin du projet APRX contenant les cartes à mettre à jour
 #-------------------------------------------------------------------------------
-aprx_path = input('Chemin complet du fichier .aprx contenant les cartes à mettre à jour : ')
+#aprx_path = input('Chemin complet du fichier .aprx contenant les cartes à mettre à jour : ')
+aprx_path = fr"{sys.argv[2]}"
 #aprx_path = r"...\SG5_Symbolisation.aprx"
 #-------------------------------------------------------------------------------
 # ZONE URBA PLU

@@ -15,11 +15,14 @@ import arcpy, os, datetime, sys
 from arcpy import env
 from datetime import timedelta
 
-aprx_path = input('Chemin complet du fichier .aprx : ')
+#aprx_path = input('Chemin complet du fichier .aprx : ')
+aprx_path = fr"{sys.argv[1]}"
 #aprx_path = r"...\SG5_Symbolisation.aprx"
-plu_stylx = input('Chemin complet du fichier PLU_CNIG.stylx : ')
+#plu_stylx = input('Chemin complet du fichier PLU_CNIG.stylx : ')
+plu_stylx = fr"{sys.argv[2]}"
 #plu_stylx = r"...\PLU_CNIG.stylx"
-psmv_stylx = input('Chemin complet du fichier PSMV_CNIG.stylx : ')
+#psmv_stylx = input('Chemin complet du fichier PSMV_CNIG.stylx : ')
+psmv_stylx = fr"{sys.argv[3]}"
 #psmv_stylx = r"...\PSMV_CNIG.stylx"
 
 aprx = arcpy.mp.ArcGISProject(aprx_path)  
