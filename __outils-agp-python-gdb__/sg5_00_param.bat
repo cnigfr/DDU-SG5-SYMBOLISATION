@@ -37,18 +37,18 @@ set psmvstylx=C:\KULPINSKI\SG5\SG5_Symbolisation\PSMV_CNIG.stylx
 
 :: LANCEMENT DU PREMIER SCRIPT --> sg5_01_data_gen_maj_aprx.py
 ::-------------------------------------------------------------------------------
-echo("LANCEMENT DU PREMIER SCRIPT --> sg5_01_data_gen_maj_aprx.py")
+echo LANCEMENT DU PREMIER SCRIPT --> sg5_01_data_gen_maj_aprx.py
 call "C:\Program Files\ArcGIS\Pro\bin\Python\Scripts\propy" sg5_01_data_gen_maj_aprx.py "%dossier_sortie%" "%aprx%"
 ::###############################################################################
 
 :: LANCEMENT DU DEUXIEME SCRIPT --> sg5_02_maj_symbo_aprx.py
 ::-------------------------------------------------------------------------------
-echo("LANCEMENT DU DEUXIEME SCRIPT --> sg5_02_maj_symbo_aprx.py")
+echo LANCEMENT DU DEUXIEME SCRIPT --> sg5_02_maj_symbo_aprx.py
 call "C:\Program Files\ArcGIS\Pro\bin\Python\Scripts\propy" sg5_02_maj_symbo_aprx.py "%aprx%" "%plustylx%" "%psmvstylx%"
 ::###############################################################################
 
 :: LANCEMENT DU TROISIEME SCRIPT --> sg5_03_export_pdf.py
 ::-------------------------------------------------------------------------------
-echo("LANCEMENT DU TROISIEME SCRIPT --> sg5_03_export_pdf.py")
+echo LANCEMENT DU TROISIEME SCRIPT --> sg5_03_export_pdf.py
 call "C:\Program Files\ArcGIS\Pro\bin\Python\Scripts\propy" sg5_03_export_pdf.py "%dossier_sortie%" "%aprx%"
 ::###############################################################################
