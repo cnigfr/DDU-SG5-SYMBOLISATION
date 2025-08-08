@@ -1,4 +1,4 @@
-
+# Cet outils est actuellement obsolète
 # Maintenance des outils
 
 Mode d'emploi pour la mise à jour des fichiers QML, des projets QGIS de visualisation et récapitulatifs Markdown des préconisations.
