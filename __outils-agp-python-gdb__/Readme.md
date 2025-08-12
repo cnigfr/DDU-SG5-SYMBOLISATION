@@ -2,18 +2,50 @@
 ## CSV
 Les fichiers .csv sont le coeur du système puisqu'ils reprennent l'ensemble des informations necessaires à l'edition des Planches et Catalogues.
 ce sont ces fichiers qu'il faudra mettre à jour le cas échéant, lors d'une évolution de symbologie décidée en scéance du SG5
+
+### PLU
 - grille_plu_inf.csv
 > Contient tous les détails concernant les symbolisations des INFORMATIONS des PLU
+
+|   typeinf   |   stypeinf   |   nnn   |   lib_stype   |   surf   |   symb_surf   |   d_symb_surf   |   lin   |   symb_lin   |   d_symb_lin   |   pt   |   symb_pct   |   d_symb_pct   |   etiquette   |   classement |
+|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|
+|   type information   |   sous-type information   |   indice de symbole par défaut ou alternatif   |   libellé complet du sous-type d'information   |   indice de présence de symbolisation surfacique   |   code symbole surfacique   |   description technique du symbole surfacique   |   indice de présence de symbolisation linéaire   |   code symbole linéaire   |   description techinque du symbole linéaire   |   indice de présence de symbolisation ponctuelle   |   code symbole ponctuel   |   description technique du symbole ponctuel   |   etiquette générique du code symbole (ex : 19-00 à 02_001)   |   classement en (symbole) ou (sous-code) permettant de n'afficher que (symbole) sur la planche générique |
+
 - grille_plu_psc.csv
 > Contient tous les détails concernant les symbolisations des PRESCRIPTIONS des PLU
+
+|   typepsc   |   stypepsc   |   nnn   |   lib_stype   |   surf   |   symb_surf   |   d_symb_surf   |   lin   |   symb_lin   |   d_symb_lin   |   pt   |   symb_pct   |   d_symb_pct   |   etiquette   |   classement |
+|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|
+|   type prescription   |   sous-type prescription   |   indice de symbole par défaut ou alternatif   |   libellé complet du sous-type de prescription   |   indice de présence de symbolisation surfacique   |   code symbole surfacique   |   description technique du symbole surfacique   |   indice de présence de symbolisation linéaire   |   code symbole linéaire   |   description techinque du symbole linéaire   |   indice de présence de symbolisation ponctuelle   |   code symbole ponctuel   |   description technique du symbole ponctuel   |   etiquette générique du code symbole (ex : 19-00 à 02_001)   |   classement en (symbole) ou (sous-code) permettant de n'afficher que (symbole) sur la planche générique |
+
 - grille_plu_zonage.csv
 > Contient tous les détails concernant les symbolisations des ZONAGES des PLU
+
+| typezone | lib_type | symb_sup2500 | d_symb_sup2500 | symb_inf2500 | d_symb_inf2500 |
+|:--|:--|:--|:--|:--|:--|
+| type de zonage | libellé du type de zonage | code symbole zonage grande échelle (ex : zone_U_001_ge)  | description technique du symbole surfacique | code symbole zonage petite échelle (ex : zone_U_001_pe) | description technique du symbole surfacique |
+
+### PSMV
 - grille_psmv_inf.csv
 > Contient tous les détails concernant les symbolisations des INFORMATIONS des PSMV
+
+|   typeinf   |   stypeinf   |   nnn   |   lib_stype   |   surf   |   symb_surf   |   d_symb_surf   |   lin   |   symb_lin   |   d_symb_lin   |   pt   |   symb_pct   |   d_symb_pct   |   etiquette   |   plu_psmv |   classement |
+|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|
+|   type information   |   sous-type information   |   indice de symbole par défaut ou alternatif   |   libellé complet du sous-type d'information   |   indice de présence de symbolisation surfacique   |   code symbole surfacique   |   description technique du symbole surfacique   |   indice de présence de symbolisation linéaire   |   code symbole linéaire   |   description techinque du symbole linéaire   |   indice de présence de symbolisation ponctuelle   |   code symbole ponctuel   |   description technique du symbole ponctuel   |   etiquette générique du code symbole (ex : 19-00 à 02_001)   | classement (plu) ou (psmv) afin de distinguer une symbolisation spécifique au PSMV |   classement en (symbole) ou (sous-code) permettant de n'afficher que (symbole) sur la planche générique |
+
 - grille_psmv_psc.csv
 > Contient tous les détails concernant les symbolisations des PRESCRIPTIONS des PSMV
+
+|   typepsc   |   stypepsc   |   nnn   |   lib_stype   |   surf   |   symb_surf   |   d_symb_surf   |   lin   |   symb_lin   |   d_symb_lin   |   pt   |   symb_pct   |   d_symb_pct   |   etiquette   |   plu_psmv |   classement |
+|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|
+|   type prescription   |   sous-type prescription   |   indice de symbole par défaut ou alternatif   |   libellé complet du sous-type de prescription   |   indice de présence de symbolisation surfacique   |   code symbole surfacique   |   description technique du symbole surfacique   |   indice de présence de symbolisation linéaire   |   code symbole linéaire   |   description techinque du symbole linéaire   |   indice de présence de symbolisation ponctuelle   |   code symbole ponctuel   |   description technique du symbole ponctuel   |   etiquette générique du code symbole (ex : 19-00 à 02_001)   | classement (plu) ou (psmv) afin de distinguer une symbolisation spécifique au PSMV |   classement en (symbole) ou (sous-code) permettant de n'afficher que (symbole) sur la planche générique |
+
 - grille_psmv_zonage.csv
 > Contient tous les détails concernant les symbolisations des ZONAGES des PSMV
+
+| typezone | lib_type | symbole | d_symb | plu_psmv | 
+|:--|:--|:--|:--|:--|
+| type de zonage | libellé du zonage | code symbole zonage (ex : ZONE_U_001) | description technique du symbole surfacique | classement (plu) ou (psmv) afin de distinguer une symbolisation spécifique au PSMV |
 
 ## PYTHON
 - sg5_01_data_gen_maj_aprx.py
