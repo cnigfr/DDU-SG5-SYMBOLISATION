@@ -15,11 +15,6 @@
     },
     {
       "type" : "CIMBinaryReference",
-      "uRI" : "CIMPATH=Metadata/55b122611dd5585a4b05c39c6905bf8d.xml",
-      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"fr\"><Esri><CreaDate>20210917</CreaDate><CreaTime>08405300</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>Nouveau groupe de couches</resTitle></idCitation></dataIdInfo></metadata>\r\n"
-    },
-    {
-      "type" : "CIMBinaryReference",
       "uRI" : "CIMPATH=Metadata/8b3c0400273568898ff2dfaea7fffa6c.xml",
       "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"fr\"><Esri><CreaDate>20210917</CreaDate><CreaTime>08220600</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>Carte</resTitle></idCitation></dataIdInfo><Binary><Thumbnail><Data EsriPropertyType=\"PictureX\">/9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a\r\nHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy\r\nMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCADIASwDAREA\r\nAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA\r\nAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3\r\nODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm\r\np6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA\r\nAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx\r\nBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK\r\nU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3\r\nuLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+gAo\r\nAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgA\r\noAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACg\r\nAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKAC\r\ngAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKA\r\nCgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKAIZbqCF9kkqq2M4NADft1\r\n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\r\naOUA8m6/vQ/kaOUA8m6/vQ/kaOUA8m6/vQ/kaOUA8m6/vQ/kaOUBDBdEEbofyNHKBVj0u6SNV82E\r\n4GPumjlHcd/Z11/z1h/75NLlC4f2ddf89Yf++TRyhcP7Ouv+esP/AHyaOULh/Z11/wA9Yf8Avk0c\r\noXD+zrr/AJ6w/wDfJo5QuH9nXX/PWH/vk0coXD+zrr/nrD/3yaOULh/Z11/z1h/75NHKFw/s66/5\r\n6w/98mjlC4DTboTRSebD8jFsbTzwR/WnyiZZ8m6/vQ/kaOUA8m6/vQ/kaOUA8m6/vQ/kaOUA8m6/\r\nvQ/kaOUA8m6/vQ/kaOUA8m6/vQ/kaOUA8m6/vQ/kaOUA8m6/vQ/kaOUA8m6/vQ/kaOUA8m6/vQ/k\r\naOUCs2nXTTSSebD8+ONp7DFHKAf2ddf89Yf++TS5R3NWrEFABQAUAFABQAUAFABQAUAFABQAUAFA\r\nBQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAF\r\nABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUA\r\nFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAU\r\nAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQA\r\nUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQ\r\nAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFAB\r\nQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFA\r\nBQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAF\r\nABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUA\r\nFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAU\r\nAFABQB//2Q==</Data></Thumbnail></Binary></metadata>\r\n"
     },
@@ -67,88 +62,15 @@
         "fieldDescriptions" : [
           {
             "type" : "CIMFieldDescription",
-            "alias" : "OBJECTID",
-            "fieldName" : "OBJECTID",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "readOnly" : true,
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Shape",
-            "fieldName" : "Shape",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Shape_Length",
-            "fieldName" : "Shape_Length",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "readOnly" : true,
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Shape_Area",
-            "fieldName" : "Shape_Area",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "readOnly" : true,
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Type de la zone",
-            "fieldName" : "typzone",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Libelle du type de la zone",
-            "fieldName" : "lib_type",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "code symbole sup2500",
-            "fieldName" : "symb_sup2500",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "code symbole inf2500",
-            "fieldName" : "symb_inf2500",
+            "alias" : "Etiquette",
+            "fieldName" : "etiquette",
             "visible" : true,
             "searchMode" : "Exact"
           }
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\data_SG5_250624_140437.gdb",
+          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_250808_152439.gdb",
           "workspaceFactory" : "FileGDB",
           "dataset" : "plu_zone_urba",
           "datasetType" : "esriDTFeatureClass"
@@ -843,88 +765,15 @@
         "fieldDescriptions" : [
           {
             "type" : "CIMFieldDescription",
-            "alias" : "OBJECTID",
-            "fieldName" : "OBJECTID",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "readOnly" : true,
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Shape",
-            "fieldName" : "Shape",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Shape_Length",
-            "fieldName" : "Shape_Length",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "readOnly" : true,
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Shape_Area",
-            "fieldName" : "Shape_Area",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "readOnly" : true,
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Type de la zone",
-            "fieldName" : "typzone",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Libelle du type de la zone",
-            "fieldName" : "lib_type",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "code symbole sup2500",
-            "fieldName" : "symb_sup2500",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "code symbole inf2500",
-            "fieldName" : "symb_inf2500",
+            "alias" : "Etiquette",
+            "fieldName" : "etiquette",
             "visible" : true,
             "searchMode" : "Exact"
           }
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\data_SG5_250624_140437.gdb",
+          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_250808_152439.gdb",
           "workspaceFactory" : "FileGDB",
           "dataset" : "plu_zone_urba",
           "datasetType" : "esriDTFeatureClass"
@@ -2888,81 +2737,43 @@
         "fieldDescriptions" : [
           {
             "type" : "CIMFieldDescription",
-            "alias" : "OBJECTID",
-            "fieldName" : "OBJECTID",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "readOnly" : true,
+            "alias" : "Libelle du type de la zone",
+            "fieldName" : "lib_type",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "Shape",
-            "fieldName" : "Shape",
+            "alias" : "code symbole sup2500",
+            "fieldName" : "symb_sup2500",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "Shape_Length",
-            "fieldName" : "Shape_Length",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "readOnly" : true,
+            "alias" : "descriptif symbole sup2500",
+            "fieldName" : "d_symb_sup2500",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "Shape_Area",
-            "fieldName" : "Shape_Area",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "readOnly" : true,
+            "alias" : "code symbole inf2500",
+            "fieldName" : "symb_inf2500",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "Type de la zone",
-            "fieldName" : "typzone",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Carreau blanc ou pas",
-            "fieldName" : "blanc",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Etiquette",
-            "fieldName" : "etiquette",
+            "alias" : "descriptif symbole inf2500",
+            "fieldName" : "d_symb_inf2500",
             "visible" : true,
             "searchMode" : "Exact"
           }
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\data_SG5_250624_140437.gdb",
+          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_250808_152439.gdb",
           "workspaceFactory" : "FileGDB",
           "dataset" : "plu_zone_urba_carreau",
           "datasetType" : "esriDTFeatureClass"
@@ -3440,34 +3251,6 @@
       },
       "scaleSymbols" : true,
       "snappable" : true
-    },
-    {
-      "type" : "CIMGroupLayer",
-      "name" : "ZONAGE",
-      "uRI" : "CIMPATH=plu_zonage_pe1/zonage.xml",
-      "sourceModifiedTime" : {
-        "type" : "TimeInstant"
-      },
-      "metadataURI" : "CIMPATH=Metadata/55b122611dd5585a4b05c39c6905bf8d.xml",
-      "useSourceMetadata" : true,
-      "description" : "Nouveau groupe de couches",
-      "expanded" : true,
-      "layerType" : "Operational",
-      "showLegends" : true,
-      "visibility" : true,
-      "displayCacheType" : "Permanent",
-      "maxDisplayCacheAge" : 5,
-      "showPopups" : true,
-      "serviceLayerID" : -1,
-      "refreshRate" : -1,
-      "refreshRateUnit" : "esriTimeUnitsSeconds",
-      "blendingMode" : "Alpha",
-      "allowDrapingOnIntegratedMesh" : true,
-      "layers" : [
-        "CIMPATH=plu_zonage_pe1/plu_zone_urba_pe.xml",
-        "CIMPATH=plu_zonage_pe1/plu_zone_urba_ge.xml",
-        "CIMPATH=plu_zonage_pe1/plu_zone_urba_carreau.xml"
-      ]
     }
   ],
   "mapDefinitions" : [
@@ -3495,7 +3278,9 @@
         "enableEyeDomeLighting" : true
       },
       "layers" : [
-        "CIMPATH=plu_zonage_pe1/zonage.xml"
+        "CIMPATH=plu_zonage_pe1/plu_zone_urba_pe.xml",
+        "CIMPATH=plu_zonage_pe1/plu_zone_urba_ge.xml",
+        "CIMPATH=plu_zonage_pe1/plu_zone_urba_carreau.xml"
       ],
       "defaultViewingMode" : "Map",
       "mapType" : "Map",
