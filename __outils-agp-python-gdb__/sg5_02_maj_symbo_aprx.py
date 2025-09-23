@@ -37,44 +37,44 @@ for m in aprx.listMaps():
             print("appariement de la symbologie avec le champ symb_inf2500")
             arcpy.management.MatchLayerSymbologyToAStyle(lyr, "symb_inf2500", plu_stylx)
         if lyr.name == "plu_psc_p" :
-            print("appariement de la symbologie avec le champ symb_pct")
-            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "symb_pct", plu_stylx)
+            print("appariement de la symbologie avec le champ SYMBOLE")
+            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "SYMBOLE", plu_stylx)
         if lyr.name == "plu_psc_l" :
-            print("appariement de la symbologie avec le champ symb_lin")
-            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "symb_lin", plu_stylx)
+            print("appariement de la symbologie avec le champ SYMBOLE")
+            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "SYMBOLE", plu_stylx)
         if lyr.name == "plu_psc_s" :
-            print("appariement de la symbologie avec le champ symb_surf")
-            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "symb_surf", plu_stylx)
+            print("appariement de la symbologie avec le champ SYMBOLE")
+            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "SYMBOLE", plu_stylx)
         if lyr.name == "plu_inf_p" :
-            print("appariement de la symbologie avec le champ symb_pct")
-            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "symb_pct", plu_stylx)
+            print("appariement de la symbologie avec le champ SYMBOLE")
+            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "SYMBOLE", plu_stylx)
         if lyr.name == "plu_inf_l" :
-            print("appariement de la symbologie avec le champ symb_lin")
-            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "symb_lin", plu_stylx)
+            print("appariement de la symbologie avec le champ SYMBOLE")
+            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "SYMBOLE", plu_stylx)
         if lyr.name == "plu_inf_s" :
-            print("appariement de la symbologie avec le champ symb_surf")
-            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "symb_surf", plu_stylx)
+            print("appariement de la symbologie avec le champ SYMBOLE")
+            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "SYMBOLE", plu_stylx)
         if lyr.name == "psmv_zone_urba" :
-            print("appariement de la symbologie avec le champ symbole")
-            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "symbole", psmv_stylx)
+            print("appariement de la symbologie avec le champ SYMBOLE")
+            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "SYMBOLE", psmv_stylx)
         if lyr.name == "psmv_psc_p" :
-            print("appariement de la symbologie avec le champ symb_pct")
-            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "symb_pct", psmv_stylx)
+            print("appariement de la symbologie avec le champ SYMBOLE")
+            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "SYMBOLE", psmv_stylx)
         if lyr.name == "psmv_psc_l" :
-            print("appariement de la symbologie avec le champ symb_lin")
-            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "symb_lin", psmv_stylx)
+            print("appariement de la symbologie avec le champ SYMBOLE")
+            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "SYMBOLE", psmv_stylx)
         if lyr.name == "psmv_psc_s" :
-            print("appariement de la symbologie avec le champ symb_surf")
-            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "symb_surf", psmv_stylx)
+            print("appariement de la symbologie avec le champ SYMBOLE")
+            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "SYMBOLE", psmv_stylx)
         if lyr.name == "psmv_inf_p" :
-            print("appariement de la symbologie avec le champ symb_pct")
-            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "symb_pct", psmv_stylx)
+            print("appariement de la symbologie avec le champ SYMBOLE")
+            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "SYMBOLE", psmv_stylx)
         if lyr.name == "psmv_inf_l" :
-            print("appariement de la symbologie avec le champ symb_lin")
-            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "symb_lin", psmv_stylx)
+            print("appariement de la symbologie avec le champ SYMBOLE")
+            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "SYMBOLE", psmv_stylx)
         if lyr.name == "psmv_inf_s" :
-            print("appariement de la symbologie avec le champ symb_surf")
-            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "symb_surf", psmv_stylx)
+            print("appariement de la symbologie avec le champ SYMBOLE")
+            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "SYMBOLE", psmv_stylx)
 
 aprx.save()
 

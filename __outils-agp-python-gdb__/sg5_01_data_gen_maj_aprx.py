@@ -153,7 +153,7 @@ fields = [["typepsc", "TEXT", "Type de la prescription", 2],
 ["stypepsc", "TEXT", "Sous-Type de la prescription", 2],
 ["nnn", "TEXT", "code nnn", 3],
 ["lib_stype", "TEXT", "Libellé de la prescription", 250],
-["symb_surf", "TEXT", "code symbole surfacique", 20],
+["SYMBOLE", "TEXT", "code symbole surfacique", 20],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(plu_psc_s,fields)
 
@@ -164,7 +164,7 @@ fields = [["typepsc", "TEXT", "Type de la prescription", 2],
 ["stypepsc", "TEXT", "Sous-Type de la prescription", 2],
 ["nnn", "TEXT", "code nnn", 3],
 ["lib_stype", "TEXT", "Libellé de la prescription", 250],
-["symb_lin", "TEXT", "code symbole linéaire", 20],
+["SYMBOLE", "TEXT", "code symbole linéaire", 20],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(plu_psc_l,fields)
 
@@ -175,7 +175,7 @@ fields = [["typepsc", "TEXT", "Type de la prescription", 2],
 ["stypepsc", "TEXT", "Sous-Type de la prescription", 2],
 ["nnn", "TEXT", "code nnn", 3],
 ["lib_stype", "TEXT", "Libellé de la prescription", 250],
-["symb_pct", "TEXT", "code symbole ponctuel", 20],
+["SYMBOLE", "TEXT", "code symbole ponctuel", 20],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(plu_psc_p,fields)
 ######### initialisation des coordonnées
@@ -224,17 +224,17 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
         polygon = arcpy.Polygon(carreau, spatial_reference)
         cursor.insertRow([polygon,typepsc,stypepsc,nnn,lib_stype,symb_surf,d_symb_surf,symb_lin,d_symb_lin,symb_pct,d_symb_pct,blanc,etiquette])
         if surf == "S" :
-            cursor = arcpy.da.InsertCursor(plu_psc_s,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","symb_surf","etiquette"])
+            cursor = arcpy.da.InsertCursor(plu_psc_s,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","SYMBOLE","etiquette"])
             carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 40, y + 40),arcpy.Point(x + 40, y)])
             polygon = arcpy.Polygon(carreau, spatial_reference)
             cursor.insertRow([polygon,typepsc,stypepsc,nnn,lib_stype,symb_surf,etiquette])   
         if lin == "L" :
-            cursor = arcpy.da.InsertCursor(plu_psc_l,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","symb_lin","etiquette"])
+            cursor = arcpy.da.InsertCursor(plu_psc_l,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","SYMBOLE","etiquette"])
             carreau = arcpy.Array([arcpy.Point(x + 50, y + 40),arcpy.Point(x + 70, y)])
             polyline = arcpy.Polyline(carreau, spatial_reference)
             cursor.insertRow([polyline,typepsc,stypepsc,nnn,lib_stype,symb_lin,etiquette]) 
         if pt == "P" :
-            cursor = arcpy.da.InsertCursor(plu_psc_p,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","symb_pct","etiquette"])
+            cursor = arcpy.da.InsertCursor(plu_psc_p,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","SYMBOLE","etiquette"])
             carreau = arcpy.Point(x + 55, y + 60)
             point = arcpy.PointGeometry(carreau, spatial_reference)
             cursor.insertRow([point,typepsc,stypepsc,nnn,lib_stype,symb_pct,etiquette])  
@@ -283,7 +283,7 @@ fields = [["typeinf", "TEXT", "Type de l' information", 2],
 ["stypeinf", "TEXT", "Sous-Type de l' information", 2],
 ["nnn", "TEXT", "code nnn", 3],
 ["lib_stype", "TEXT", "Libellé de l' information", 250],
-["symb_surf", "TEXT", "code symbole surfacique", 20],
+["SYMBOLE", "TEXT", "code symbole surfacique", 20],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(plu_inf_s,fields)
 
@@ -294,7 +294,7 @@ fields = [["typeinf", "TEXT", "Type de l' information", 2],
 ["stypeinf", "TEXT", "Sous-Type de l' information", 2],
 ["nnn", "TEXT", "code nnn", 3],
 ["lib_stype", "TEXT", "Libellé de l' information", 250],
-["symb_lin", "TEXT", "code symbole linéaire", 20],
+["SYMBOLE", "TEXT", "code symbole linéaire", 20],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(plu_inf_l,fields)
 
@@ -305,7 +305,7 @@ fields = [["typeinf", "TEXT", "Type de l' information", 2],
 ["stypeinf", "TEXT", "Sous-Type de l' information", 2],
 ["nnn", "TEXT", "code nnn", 3],
 ["lib_stype", "TEXT", "Libellé de l' information", 250],
-["symb_pct", "TEXT", "code symbole ponctuel", 20],
+["SYMBOLE", "TEXT", "code symbole ponctuel", 20],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(plu_inf_p,fields)
 ######### initialisation des coordonnées
@@ -354,17 +354,17 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
         polygon = arcpy.Polygon(carreau, spatial_reference)
         cursor.insertRow([polygon,typeinf,stypeinf,nnn,lib_stype,symb_surf,d_symb_surf,symb_lin,d_symb_lin,symb_pct,d_symb_pct,blanc,etiquette])
         if surf == "S" :
-            cursor = arcpy.da.InsertCursor(plu_inf_s,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","symb_surf","etiquette"])
+            cursor = arcpy.da.InsertCursor(plu_inf_s,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","SYMBOLE","etiquette"])
             carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 40, y + 40),arcpy.Point(x + 40, y)])
             polygon = arcpy.Polygon(carreau, spatial_reference)
             cursor.insertRow([polygon,typeinf,stypeinf,nnn,lib_stype,symb_surf,etiquette])   
         if lin == "L" :
-            cursor = arcpy.da.InsertCursor(plu_inf_l,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","symb_lin","etiquette"])
+            cursor = arcpy.da.InsertCursor(plu_inf_l,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","SYMBOLE","etiquette"])
             carreau = arcpy.Array([arcpy.Point(x + 50, y + 40),arcpy.Point(x + 70, y)])
             polyline = arcpy.Polyline(carreau, spatial_reference)
             cursor.insertRow([polyline,typeinf,stypeinf,nnn,lib_stype,symb_lin,etiquette]) 
         if pt == "P" :    
-            cursor = arcpy.da.InsertCursor(plu_inf_p,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","symb_pct","etiquette"])
+            cursor = arcpy.da.InsertCursor(plu_inf_p,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","SYMBOLE","etiquette"])
             carreau = arcpy.Point(x + 55, y + 60)
             point = arcpy.PointGeometry(carreau, spatial_reference)
             cursor.insertRow([point,typeinf,stypeinf,nnn,lib_stype,symb_pct,etiquette])  
@@ -406,7 +406,7 @@ print(f"Creation de la couche {psmv_zone_urba} en cours")
 arcpy.management.CreateFeatureclass(gdb, psmv_zone_urba, "POLYGON", "", "DISABLED", "DISABLED", prj)
 fields = [["typzone", "TEXT", "Type de la zone", 10],
 ["lib_type", "TEXT", "Libelle du type de la zone", 250],
-["symbole", "TEXT", "code symbole zonage", 80],
+["SYMBOLE", "TEXT", "code symbole zonage", 80],
 ["plu_psmv", "TEXT", "Spécifique PSMV", 10],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(psmv_zone_urba,fields)
@@ -445,7 +445,7 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
     polygon = arcpy.Polygon(carreau, spatial_reference)
     cursor.insertRow([polygon,typzone,lib_type,symbole,d_symb,plu_psmv,blanc,typzone])
 
-    cursor = arcpy.da.InsertCursor(psmv_zone_urba,["SHAPE@","typzone","lib_type","symbole","plu_psmv","etiquette"])
+    cursor = arcpy.da.InsertCursor(psmv_zone_urba,["SHAPE@","typzone","lib_type","SYMBOLE","plu_psmv","etiquette"])
     carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 70, y + 40),arcpy.Point(x + 70, y)])
     polygon = arcpy.Polygon(carreau, spatial_reference)
     cursor.insertRow([polygon,typzone,lib_type,symbole,plu_psmv,typzone])    
@@ -494,7 +494,7 @@ fields = [["typepsc", "TEXT", "Type de la prescription", 2],
 ["stypepsc", "TEXT", "Sous-Type de la prescription", 2],
 ["nnn", "TEXT", "code nnn", 3],
 ["lib_stype", "TEXT", "Libellé de la prescription", 250],
-["symb_surf", "TEXT", "code symbole surfacique", 20],
+["SYMBOLE", "TEXT", "code symbole surfacique", 20],
 ["plu_psmv", "TEXT", "Spécifique PSMV", 10],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(psmv_psc_s,fields)
@@ -506,7 +506,7 @@ fields = [["typepsc", "TEXT", "Type de la prescription", 2],
 ["stypepsc", "TEXT", "Sous-Type de la prescription", 2],
 ["nnn", "TEXT", "code nnn", 3],
 ["lib_stype", "TEXT", "Libellé de la prescription", 250],
-["symb_lin", "TEXT", "code symbole linéaire", 20],
+["SYMBOLE", "TEXT", "code symbole linéaire", 20],
 ["plu_psmv", "TEXT", "Spécifique PSMV", 10],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(psmv_psc_l,fields)
@@ -518,7 +518,7 @@ fields = [["typepsc", "TEXT", "Type de la prescription", 2],
 ["stypepsc", "TEXT", "Sous-Type de la prescription", 2],
 ["nnn", "TEXT", "code nnn", 3],
 ["lib_stype", "TEXT", "Libellé de la prescription", 250],
-["symb_pct", "TEXT", "code symbole ponctuel", 20],
+["SYMBOLE", "TEXT", "code symbole ponctuel", 20],
 ["plu_psmv", "TEXT", "Spécifique PSMV", 10],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(psmv_psc_p,fields)
@@ -569,17 +569,17 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
         polygon = arcpy.Polygon(carreau, spatial_reference)
         cursor.insertRow([polygon,typepsc,stypepsc,nnn,lib_stype,symb_surf,d_symb_surf,symb_lin,d_symb_lin,symb_pct,d_symb_pct,plu_psmv,blanc,etiquette])
         if surf == "S" :
-            cursor = arcpy.da.InsertCursor(psmv_psc_s,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","symb_surf","plu_psmv","etiquette"])
+            cursor = arcpy.da.InsertCursor(psmv_psc_s,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","SYMBOLE","plu_psmv","etiquette"])
             carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 40, y + 40),arcpy.Point(x + 40, y)])
             polygon = arcpy.Polygon(carreau, spatial_reference)
             cursor.insertRow([polygon,typepsc,stypepsc,nnn,lib_stype,symb_surf,plu_psmv,etiquette])   
         if lin == "L" :
-            cursor = arcpy.da.InsertCursor(psmv_psc_l,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","symb_lin","plu_psmv","etiquette"])
+            cursor = arcpy.da.InsertCursor(psmv_psc_l,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","SYMBOLE","plu_psmv","etiquette"])
             carreau = arcpy.Array([arcpy.Point(x + 50, y + 40),arcpy.Point(x + 70, y)])
             polyline = arcpy.Polyline(carreau, spatial_reference)
             cursor.insertRow([polyline,typepsc,stypepsc,nnn,lib_stype,symb_lin,plu_psmv,etiquette]) 
         if pt == "P" :
-            cursor = arcpy.da.InsertCursor(psmv_psc_p,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","symb_pct","plu_psmv","etiquette"])
+            cursor = arcpy.da.InsertCursor(psmv_psc_p,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","SYMBOLE","plu_psmv","etiquette"])
             carreau = arcpy.Point(x + 55, y + 60)
             point = arcpy.PointGeometry(carreau, spatial_reference)
             cursor.insertRow([point,typepsc,stypepsc,nnn,lib_stype,symb_pct,plu_psmv,etiquette])  
@@ -630,7 +630,7 @@ fields = [["typeinf", "TEXT", "Type de l' information", 2],
 ["stypeinf", "TEXT", "Sous-Type de l' information", 2],
 ["nnn", "TEXT", "code nnn", 3],
 ["lib_stype", "TEXT", "Libellé de l' information", 250],
-["symb_surf", "TEXT", "code symbole surfacique", 20],
+["SYMBOLE", "TEXT", "code symbole surfacique", 20],
 ["plu_psmv", "TEXT", "Spécifique PSMV", 10],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(psmv_inf_s,fields)
@@ -642,7 +642,7 @@ fields = [["typeinf", "TEXT", "Type de l' information", 2],
 ["stypeinf", "TEXT", "Sous-Type de l' information", 2],
 ["nnn", "TEXT", "code nnn", 3],
 ["lib_stype", "TEXT", "Libellé de l' information", 250],
-["symb_lin", "TEXT", "code symbole linéaire", 20],
+["SYMBOLE", "TEXT", "code symbole linéaire", 20],
 ["plu_psmv", "TEXT", "Spécifique PSMV", 10],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(psmv_inf_l,fields)
@@ -654,7 +654,7 @@ fields = [["typeinf", "TEXT", "Type de l' information", 2],
 ["stypeinf", "TEXT", "Sous-Type de l' information", 2],
 ["nnn", "TEXT", "code nnn", 3],
 ["lib_stype", "TEXT", "Libellé de l' information", 250],
-["symb_pct", "TEXT", "code symbole ponctuel", 20],
+["SYMBOLE", "TEXT", "code symbole ponctuel", 20],
 ["plu_psmv", "TEXT", "Spécifique PSMV", 10],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(psmv_inf_p,fields)
@@ -705,17 +705,17 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
         polygon = arcpy.Polygon(carreau, spatial_reference)
         cursor.insertRow([polygon,typeinf,stypeinf,nnn,lib_stype,symb_surf,d_symb_surf,symb_lin,d_symb_lin,symb_pct,d_symb_pct,plu_psmv,blanc,etiquette])
         if surf == "S" :
-            cursor = arcpy.da.InsertCursor(psmv_inf_s,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","symb_surf","plu_psmv","etiquette"])
+            cursor = arcpy.da.InsertCursor(psmv_inf_s,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","SYMBOLE","plu_psmv","etiquette"])
             carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 40, y + 40),arcpy.Point(x + 40, y)])
             polygon = arcpy.Polygon(carreau, spatial_reference)
             cursor.insertRow([polygon,typeinf,stypeinf,nnn,lib_stype,symb_surf,plu_psmv,etiquette])   
         if lin == "L" :
-            cursor = arcpy.da.InsertCursor(psmv_inf_l,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","symb_lin","plu_psmv","etiquette"])
+            cursor = arcpy.da.InsertCursor(psmv_inf_l,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","SYMBOLE","plu_psmv","etiquette"])
             carreau = arcpy.Array([arcpy.Point(x + 50, y + 40),arcpy.Point(x + 70, y)])
             polyline = arcpy.Polyline(carreau, spatial_reference)
             cursor.insertRow([polyline,typeinf,stypeinf,nnn,lib_stype,symb_lin,plu_psmv,etiquette]) 
         if pt == "P" :
-            cursor = arcpy.da.InsertCursor(psmv_inf_p,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","symb_pct","plu_psmv","etiquette"])
+            cursor = arcpy.da.InsertCursor(psmv_inf_p,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","SYMBOLE","plu_psmv","etiquette"])
             carreau = arcpy.Point(x + 55, y + 60)
             point = arcpy.PointGeometry(carreau, spatial_reference)
             cursor.insertRow([point,typeinf,stypeinf,nnn,lib_stype,symb_pct,plu_psmv,etiquette])  
@@ -737,7 +737,7 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
 f.close()
 #pas du tout correct mais c'est pour contrer le bug de la dernière ligne de code qui ne s'effectue pas et je ne sias pas pourquoi ???
 #mais comme ca ca marche
-cursor = arcpy.da.InsertCursor(psmv_inf_p,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","symb_pct","plu_psmv","etiquette"])
+cursor = arcpy.da.InsertCursor(psmv_inf_p,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","SYMBOLE","plu_psmv","etiquette"])
 carreau = arcpy.Point(x + 55, y + 60)
 point = arcpy.PointGeometry(carreau, spatial_reference)
 cursor.insertRow([point,typeinf,stypeinf,nnn,lib_stype,symb_pct,plu_psmv,etiquette])  
