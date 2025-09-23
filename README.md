@@ -5,8 +5,8 @@ Créé pour faciliter l'élaboration et l'échange de dictionnaires de symboles 
 
 Retrouvez notamment ici :
 - les préconisations de symbolisation produites par le SG5 pour harmoniser la représentation cartographique des données standardisées :
-    - [préconisations](/PLU/preconisations.md) associées au standard PLU ([au format pdf](/PLU/Catalogue_Symbolisation_CNIG_PLU.pdf)), synthétisées dans la [Planche Symbolisation des PLU](/PLU/Planche_Symbolisation_CNIG_PLU.pdf)
-    - [préconisations](/PSMV/preconisations.md) associées au standard PSMV ([au format pdf](/PSMV/Catalogue_Symbolisation_CNIG_PSMV.pdf)),synthétisées dans la [Planche Symbolisation des PSMV](/PSMV/Planche_Symbolisation_CNIG_PSMV.pdf)
+    - [préconisations](/PLU/Catalogue_Symbolisation_CNIG_PLU.pdf) associées au standard PLU, synthétisées dans la [Planche Symbolisation des PLU](/PLU/Planche_Symbolisation_CNIG_PLU.pdf)
+    - [préconisations](/PSMV/Catalogue_Symbolisation_CNIG_PSMV.pdf) associées au standard PSMV,synthétisées dans la [Planche Symbolisation des PSMV](/PSMV/Planche_Symbolisation_CNIG_PSMV.pdf)
 - les fichiers de style QML, STYLX et SLD correspondants :
     - [QML](/PLU/QML), [STYLX](/PLU/ArcGISpro) et [SLD](https://www.geoportail-urbanisme.gouv.fr/services/?subcategory=services_resources) pour les données PLU,
     - [QML](/PSMV/QML), [STYLX](/PSMV/ArcGISpro) et [SLD](https://www.geoportail-urbanisme.gouv.fr/services/?subcategory=services_resources) pour les données PSMV,
