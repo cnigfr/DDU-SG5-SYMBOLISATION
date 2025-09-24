@@ -5,7 +5,7 @@
 # Author:      nicolas.kulpinski omiplu.mikkrogeo.com
 #
 # Created:     13/06/2025
-# Modified:    23/09/2025
+# Modified:    24/09/2025
 # Copyright:   (c) n.kulpinski 2025
 # Licence:     GPL
 #-------------------------------------------------------------------------------
@@ -106,7 +106,19 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
     cursor.insertRow([polygon,typzone,lib_type,symb_sup2500,d_symb_sup2500,symb_inf2500,d_symb_inf2500,blanc,typzone])
 
     cursor = arcpy.da.InsertCursor(plu_zone_urba,["SHAPE@","typzone","lib_type","symb_sup2500","symb_inf2500","etiquette"])
-    carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 70, y + 40),arcpy.Point(x + 70, y)])
+    #carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 70, y + 40),arcpy.Point(x + 70, y)])
+    carreau = arcpy.Array([arcpy.Point(x, y+12),
+    arcpy.Point(x, y+37),
+    arcpy.Point(x+12, y+37),
+    arcpy.Point(x+12, y+48),
+    arcpy.Point(x+35, y+48),
+    arcpy.Point(x+35, y+60),
+    arcpy.Point(x+70, y+60),
+    arcpy.Point(x+70, y+25),
+    arcpy.Point(x+47, y+25),
+    arcpy.Point(x+47, y),
+    arcpy.Point(x+23, y),
+    arcpy.Point(x+23, y+12)])
     polygon = arcpy.Polygon(carreau, spatial_reference)
     cursor.insertRow([polygon,typzone,lib_type,symb_sup2500,symb_inf2500,typzone])    
     
@@ -225,17 +237,49 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
         cursor.insertRow([polygon,typepsc,stypepsc,nnn,lib_stype,symb_surf,d_symb_surf,symb_lin,d_symb_lin,symb_pct,d_symb_pct,blanc,etiquette])
         if surf == "S" :
             cursor = arcpy.da.InsertCursor(plu_psc_s,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","SYMBOLE","etiquette"])
-            carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 40, y + 40),arcpy.Point(x + 40, y)])
+            #carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 40, y + 40),arcpy.Point(x + 40, y)])
+            carreau = arcpy.Array([arcpy.Point(x+17, y),
+            arcpy.Point(x+9, y+1),
+            arcpy.Point(x+1, y+11),
+            arcpy.Point(x, y+43),
+            arcpy.Point(x+7, y+45),
+            arcpy.Point(x+9, y+44),
+            arcpy.Point(x+13, y+38),
+            arcpy.Point(x+18, y+36),
+            arcpy.Point(x+22, y+35),
+            arcpy.Point(x+24, y+36),
+            arcpy.Point(x+26, y+38),
+            arcpy.Point(x+27, y+40),
+            arcpy.Point(x+25, y+45),
+            arcpy.Point(x+22, y+49),
+            arcpy.Point(x+21, y+55),
+            arcpy.Point(x+23, y+57),
+            arcpy.Point(x+27, y+56),
+            arcpy.Point(x+37, y+55),
+            arcpy.Point(x+46, y+52),
+            arcpy.Point(x+51, y+46),
+            arcpy.Point(x+53, y+40),
+            arcpy.Point(x+52, y+35),
+            arcpy.Point(x+54, y+25),
+            arcpy.Point(x+57, y+22),
+            arcpy.Point(x+59, y+12),
+            arcpy.Point(x+56, y+9),
+            arcpy.Point(x+47, y+7),
+            arcpy.Point(x+42, y+8),
+            arcpy.Point(x+29, y+12),
+            arcpy.Point(x+26, y+10),
+            arcpy.Point(x+24, y+4),
+            arcpy.Point(x+20, y+1)])
             polygon = arcpy.Polygon(carreau, spatial_reference)
             cursor.insertRow([polygon,typepsc,stypepsc,nnn,lib_stype,symb_surf,etiquette])   
         if lin == "L" :
             cursor = arcpy.da.InsertCursor(plu_psc_l,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","SYMBOLE","etiquette"])
-            carreau = arcpy.Array([arcpy.Point(x + 50, y + 40),arcpy.Point(x + 70, y)])
+            carreau = arcpy.Array([arcpy.Point(x + 60, y + 50),arcpy.Point(x + 70, y + 30),arcpy.Point(x + 68, y)])         
             polyline = arcpy.Polyline(carreau, spatial_reference)
             cursor.insertRow([polyline,typepsc,stypepsc,nnn,lib_stype,symb_lin,etiquette]) 
         if pt == "P" :
             cursor = arcpy.da.InsertCursor(plu_psc_p,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","SYMBOLE","etiquette"])
-            carreau = arcpy.Point(x + 55, y + 60)
+            carreau = arcpy.Point(x + 60, y + 65)
             point = arcpy.PointGeometry(carreau, spatial_reference)
             cursor.insertRow([point,typepsc,stypepsc,nnn,lib_stype,symb_pct,etiquette])  
         
@@ -355,17 +399,49 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
         cursor.insertRow([polygon,typeinf,stypeinf,nnn,lib_stype,symb_surf,d_symb_surf,symb_lin,d_symb_lin,symb_pct,d_symb_pct,blanc,etiquette])
         if surf == "S" :
             cursor = arcpy.da.InsertCursor(plu_inf_s,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","SYMBOLE","etiquette"])
-            carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 40, y + 40),arcpy.Point(x + 40, y)])
+            #carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 40, y + 40),arcpy.Point(x + 40, y)])
+            carreau = arcpy.Array([arcpy.Point(x+17, y),
+            arcpy.Point(x+9, y+1),
+            arcpy.Point(x+1, y+11),
+            arcpy.Point(x, y+43),
+            arcpy.Point(x+7, y+45),
+            arcpy.Point(x+9, y+44),
+            arcpy.Point(x+13, y+38),
+            arcpy.Point(x+18, y+36),
+            arcpy.Point(x+22, y+35),
+            arcpy.Point(x+24, y+36),
+            arcpy.Point(x+26, y+38),
+            arcpy.Point(x+27, y+40),
+            arcpy.Point(x+25, y+45),
+            arcpy.Point(x+22, y+49),
+            arcpy.Point(x+21, y+55),
+            arcpy.Point(x+23, y+57),
+            arcpy.Point(x+27, y+56),
+            arcpy.Point(x+37, y+55),
+            arcpy.Point(x+46, y+52),
+            arcpy.Point(x+51, y+46),
+            arcpy.Point(x+53, y+40),
+            arcpy.Point(x+52, y+35),
+            arcpy.Point(x+54, y+25),
+            arcpy.Point(x+57, y+22),
+            arcpy.Point(x+59, y+12),
+            arcpy.Point(x+56, y+9),
+            arcpy.Point(x+47, y+7),
+            arcpy.Point(x+42, y+8),
+            arcpy.Point(x+29, y+12),
+            arcpy.Point(x+26, y+10),
+            arcpy.Point(x+24, y+4),
+            arcpy.Point(x+20, y+1)])
             polygon = arcpy.Polygon(carreau, spatial_reference)
             cursor.insertRow([polygon,typeinf,stypeinf,nnn,lib_stype,symb_surf,etiquette])   
         if lin == "L" :
             cursor = arcpy.da.InsertCursor(plu_inf_l,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","SYMBOLE","etiquette"])
-            carreau = arcpy.Array([arcpy.Point(x + 50, y + 40),arcpy.Point(x + 70, y)])
+            carreau = arcpy.Array([arcpy.Point(x + 60, y + 50),arcpy.Point(x + 70, y + 30),arcpy.Point(x + 68, y)])   
             polyline = arcpy.Polyline(carreau, spatial_reference)
             cursor.insertRow([polyline,typeinf,stypeinf,nnn,lib_stype,symb_lin,etiquette]) 
         if pt == "P" :    
             cursor = arcpy.da.InsertCursor(plu_inf_p,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","SYMBOLE","etiquette"])
-            carreau = arcpy.Point(x + 55, y + 60)
+            carreau = arcpy.Point(x + 60, y + 65)
             point = arcpy.PointGeometry(carreau, spatial_reference)
             cursor.insertRow([point,typeinf,stypeinf,nnn,lib_stype,symb_pct,etiquette])  
         
@@ -446,7 +522,19 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
     cursor.insertRow([polygon,typzone,lib_type,symbole,d_symb,plu_psmv,blanc,typzone])
 
     cursor = arcpy.da.InsertCursor(psmv_zone_urba,["SHAPE@","typzone","lib_type","SYMBOLE","plu_psmv","etiquette"])
-    carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 70, y + 40),arcpy.Point(x + 70, y)])
+    #carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 70, y + 40),arcpy.Point(x + 70, y)])
+    carreau = arcpy.Array([arcpy.Point(x, y+12),
+    arcpy.Point(x, y+37),
+    arcpy.Point(x+12, y+37),
+    arcpy.Point(x+12, y+48),
+    arcpy.Point(x+35, y+48),
+    arcpy.Point(x+35, y+60),
+    arcpy.Point(x+70, y+60),
+    arcpy.Point(x+70, y+25),
+    arcpy.Point(x+47, y+25),
+    arcpy.Point(x+47, y),
+    arcpy.Point(x+23, y),
+    arcpy.Point(x+23, y+12)])
     polygon = arcpy.Polygon(carreau, spatial_reference)
     cursor.insertRow([polygon,typzone,lib_type,symbole,plu_psmv,typzone])    
     
@@ -570,17 +658,49 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
         cursor.insertRow([polygon,typepsc,stypepsc,nnn,lib_stype,symb_surf,d_symb_surf,symb_lin,d_symb_lin,symb_pct,d_symb_pct,plu_psmv,blanc,etiquette])
         if surf == "S" :
             cursor = arcpy.da.InsertCursor(psmv_psc_s,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","SYMBOLE","plu_psmv","etiquette"])
-            carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 40, y + 40),arcpy.Point(x + 40, y)])
+            #carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 40, y + 40),arcpy.Point(x + 40, y)])
+            carreau = arcpy.Array([arcpy.Point(x+17, y),
+            arcpy.Point(x+9, y+1),
+            arcpy.Point(x+1, y+11),
+            arcpy.Point(x, y+43),
+            arcpy.Point(x+7, y+45),
+            arcpy.Point(x+9, y+44),
+            arcpy.Point(x+13, y+38),
+            arcpy.Point(x+18, y+36),
+            arcpy.Point(x+22, y+35),
+            arcpy.Point(x+24, y+36),
+            arcpy.Point(x+26, y+38),
+            arcpy.Point(x+27, y+40),
+            arcpy.Point(x+25, y+45),
+            arcpy.Point(x+22, y+49),
+            arcpy.Point(x+21, y+55),
+            arcpy.Point(x+23, y+57),
+            arcpy.Point(x+27, y+56),
+            arcpy.Point(x+37, y+55),
+            arcpy.Point(x+46, y+52),
+            arcpy.Point(x+51, y+46),
+            arcpy.Point(x+53, y+40),
+            arcpy.Point(x+52, y+35),
+            arcpy.Point(x+54, y+25),
+            arcpy.Point(x+57, y+22),
+            arcpy.Point(x+59, y+12),
+            arcpy.Point(x+56, y+9),
+            arcpy.Point(x+47, y+7),
+            arcpy.Point(x+42, y+8),
+            arcpy.Point(x+29, y+12),
+            arcpy.Point(x+26, y+10),
+            arcpy.Point(x+24, y+4),
+            arcpy.Point(x+20, y+1)])
             polygon = arcpy.Polygon(carreau, spatial_reference)
             cursor.insertRow([polygon,typepsc,stypepsc,nnn,lib_stype,symb_surf,plu_psmv,etiquette])   
         if lin == "L" :
             cursor = arcpy.da.InsertCursor(psmv_psc_l,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","SYMBOLE","plu_psmv","etiquette"])
-            carreau = arcpy.Array([arcpy.Point(x + 50, y + 40),arcpy.Point(x + 70, y)])
+            carreau = arcpy.Array([arcpy.Point(x + 60, y + 50),arcpy.Point(x + 70, y + 30),arcpy.Point(x + 68, y)])   
             polyline = arcpy.Polyline(carreau, spatial_reference)
             cursor.insertRow([polyline,typepsc,stypepsc,nnn,lib_stype,symb_lin,plu_psmv,etiquette]) 
         if pt == "P" :
             cursor = arcpy.da.InsertCursor(psmv_psc_p,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","SYMBOLE","plu_psmv","etiquette"])
-            carreau = arcpy.Point(x + 55, y + 60)
+            carreau = arcpy.Point(x + 60, y + 65)
             point = arcpy.PointGeometry(carreau, spatial_reference)
             cursor.insertRow([point,typepsc,stypepsc,nnn,lib_stype,symb_pct,plu_psmv,etiquette])  
         
@@ -706,17 +826,49 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
         cursor.insertRow([polygon,typeinf,stypeinf,nnn,lib_stype,symb_surf,d_symb_surf,symb_lin,d_symb_lin,symb_pct,d_symb_pct,plu_psmv,blanc,etiquette])
         if surf == "S" :
             cursor = arcpy.da.InsertCursor(psmv_inf_s,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","SYMBOLE","plu_psmv","etiquette"])
-            carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 40, y + 40),arcpy.Point(x + 40, y)])
+            #carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 40, y + 40),arcpy.Point(x + 40, y)])
+            carreau = arcpy.Array([arcpy.Point(x+17, y),
+            arcpy.Point(x+9, y+1),
+            arcpy.Point(x+1, y+11),
+            arcpy.Point(x, y+43),
+            arcpy.Point(x+7, y+45),
+            arcpy.Point(x+9, y+44),
+            arcpy.Point(x+13, y+38),
+            arcpy.Point(x+18, y+36),
+            arcpy.Point(x+22, y+35),
+            arcpy.Point(x+24, y+36),
+            arcpy.Point(x+26, y+38),
+            arcpy.Point(x+27, y+40),
+            arcpy.Point(x+25, y+45),
+            arcpy.Point(x+22, y+49),
+            arcpy.Point(x+21, y+55),
+            arcpy.Point(x+23, y+57),
+            arcpy.Point(x+27, y+56),
+            arcpy.Point(x+37, y+55),
+            arcpy.Point(x+46, y+52),
+            arcpy.Point(x+51, y+46),
+            arcpy.Point(x+53, y+40),
+            arcpy.Point(x+52, y+35),
+            arcpy.Point(x+54, y+25),
+            arcpy.Point(x+57, y+22),
+            arcpy.Point(x+59, y+12),
+            arcpy.Point(x+56, y+9),
+            arcpy.Point(x+47, y+7),
+            arcpy.Point(x+42, y+8),
+            arcpy.Point(x+29, y+12),
+            arcpy.Point(x+26, y+10),
+            arcpy.Point(x+24, y+4),
+            arcpy.Point(x+20, y+1)])
             polygon = arcpy.Polygon(carreau, spatial_reference)
             cursor.insertRow([polygon,typeinf,stypeinf,nnn,lib_stype,symb_surf,plu_psmv,etiquette])   
         if lin == "L" :
             cursor = arcpy.da.InsertCursor(psmv_inf_l,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","SYMBOLE","plu_psmv","etiquette"])
-            carreau = arcpy.Array([arcpy.Point(x + 50, y + 40),arcpy.Point(x + 70, y)])
+            carreau = arcpy.Array([arcpy.Point(x + 60, y + 50),arcpy.Point(x + 70, y + 30),arcpy.Point(x + 68, y)]) 
             polyline = arcpy.Polyline(carreau, spatial_reference)
             cursor.insertRow([polyline,typeinf,stypeinf,nnn,lib_stype,symb_lin,plu_psmv,etiquette]) 
         if pt == "P" :
             cursor = arcpy.da.InsertCursor(psmv_inf_p,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","SYMBOLE","plu_psmv","etiquette"])
-            carreau = arcpy.Point(x + 55, y + 60)
+            carreau = arcpy.Point(x + 60, y + 65)
             point = arcpy.PointGeometry(carreau, spatial_reference)
             cursor.insertRow([point,typeinf,stypeinf,nnn,lib_stype,symb_pct,plu_psmv,etiquette])  
 
