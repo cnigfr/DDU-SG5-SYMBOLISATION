@@ -1,0 +1,57 @@
+<!DOCTYPE qgis_style>
+<qgis_style version="2">
+  <symbols>
+    <symbol alpha="1" type="fill" name="PLU zone U, sup 1:2500" clip_to_extent="1" force_rhr="0" tags="CNIG, Urbanisme">
+      <layer pass="0" class="SimpleLine" enabled="1" locked="0">
+        <prop v="square" k="capstyle" />
+        <prop v="5;2" k="customdash" />
+        <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale" />
+        <prop v="MM" k="customdash_unit" />
+        <prop v="0" k="draw_inside_polygon" />
+        <prop v="round" k="joinstyle" />
+        <prop v="176,0,6,255" k="line_color" />
+        <prop v="solid" k="line_style" />
+        <prop v="7" k="line_width" />
+        <prop v="Point" k="line_width_unit" />
+        <prop v="3" k="offset" />
+        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale" />
+        <prop v="Point" k="offset_unit" />
+        <prop v="0" k="ring_filter" />
+        <prop v="0" k="use_custom_dash" />
+        <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale" />
+        <data_defined_properties>
+          <Option type="Map">
+            <Option type="QString" name="name" value="" />
+            <Option name="properties" />
+            <Option type="QString" name="type" value="collection" />
+          </Option>
+        </data_defined_properties>
+      </layer>
+      <layer pass="0" class="SimpleLine" enabled="1" locked="0">
+        <prop v="square" k="capstyle" />
+        <prop v="5;2" k="customdash" />
+        <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale" />
+        <prop v="MM" k="customdash_unit" />
+        <prop v="0" k="draw_inside_polygon" />
+        <prop v="miter" k="joinstyle" />
+        <prop v="52,52,52,255" k="line_color" />
+        <prop v="solid" k="line_style" />
+        <prop v="2.5" k="line_width" />
+        <prop v="Point" k="line_width_unit" />
+        <prop v="0" k="offset" />
+        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale" />
+        <prop v="MM" k="offset_unit" />
+        <prop v="0" k="ring_filter" />
+        <prop v="0" k="use_custom_dash" />
+        <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale" />
+        <data_defined_properties>
+          <Option type="Map">
+            <Option type="QString" name="name" value="" />
+            <Option name="properties" />
+            <Option type="QString" name="type" value="collection" />
+          </Option>
+        </data_defined_properties>
+      </layer>
+    </symbol>
+  </symbols>
+</qgis_style>

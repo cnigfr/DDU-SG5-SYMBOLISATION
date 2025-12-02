@@ -1,0 +1,34 @@
+<!DOCTYPE qgis_style>
+<qgis_style version="2">
+  <symbols>
+    <symbol name="PLU information 99 (ponctuel)" type="marker" force_rhr="0" clip_to_extent="1" alpha="1" tags="CNIG, Urbanisme">
+      <layer pass="0" class="SimpleMarker" locked="0" enabled="1">
+        <prop v="0" k="angle" />
+        <prop v="156,156,156,255" k="color" />
+        <prop v="1" k="horizontal_anchor_point" />
+        <prop v="bevel" k="joinstyle" />
+        <prop v="circle" k="name" />
+        <prop v="0,0" k="offset" />
+        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale" />
+        <prop v="Point" k="offset_unit" />
+        <prop v="156,156,156,255" k="outline_color" />
+        <prop v="no" k="outline_style" />
+        <prop v="0" k="outline_width" />
+        <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale" />
+        <prop v="Point" k="outline_width_unit" />
+        <prop v="diameter" k="scale_method" />
+        <prop v="6" k="size" />
+        <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale" />
+        <prop v="Point" k="size_unit" />
+        <prop v="1" k="vertical_anchor_point" />
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value="" />
+            <Option name="properties" />
+            <Option name="type" type="QString" value="collection" />
+          </Option>
+        </data_defined_properties>
+      </layer>
+    </symbol>
+  </symbols>
+</qgis_style>

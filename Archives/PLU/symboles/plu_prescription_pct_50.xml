@@ -1,0 +1,33 @@
+<!DOCTYPE qgis_style>
+<qgis_style version="2">
+  <symbols>
+    <symbol type="marker" clip_to_extent="1" name="PLU prescription 50 (ponctuel)" force_rhr="0" alpha="1" tags="CNIG, Urbanisme">
+      <layer enabled="1" class="FontMarker" pass="0" locked="0">
+        <prop k="angle" v="0" />
+        <prop k="chr" v="X" />
+        <prop k="color" v="148,10,189,255" />
+        <prop k="font" v="Wingdings 2" />
+        <prop k="horizontal_anchor_point" v="1" />
+        <prop k="joinstyle" v="bevel" />
+        <prop k="offset" v="0,0" />
+        <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="offset_unit" v="Point" />
+        <prop k="outline_color" v="148,10,189,255" />
+        <prop k="outline_width" v="0" />
+        <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="outline_width_unit" v="Point" />
+        <prop k="size" v="14" />
+        <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0" />
+        <prop k="size_unit" v="Point" />
+        <prop k="vertical_anchor_point" v="1" />
+        <data_defined_properties>
+          <Option type="Map">
+            <Option type="QString" value="" name="name" />
+            <Option name="properties" />
+            <Option type="QString" value="collection" name="type" />
+          </Option>
+        </data_defined_properties>
+      </layer>
+    </symbol>
+  </symbols>
+</qgis_style>
