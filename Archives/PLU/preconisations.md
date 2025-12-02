@@ -18,7 +18,7 @@ Standard CNIG PLU
         
 Grande échelle (≥ 1:2500) :
 
-![ZONE-A](/PLU/vignettes/ZONE-A_sup2500.png)
+![ZONE-A](/Archives/PLU/vignettes/ZONE-A_sup2500.png)
 
 ```
 Ligne simple
@@ -37,7 +37,7 @@ Ligne simple
 
 Petite échelle (< 1:2500) :
 
-![ZONE-A](/PLU/vignettes/ZONE-A_inf2500.png)
+![ZONE-A](/Archives/PLU/vignettes/ZONE-A_inf2500.png)
 
 ```
 Remplissage simple
@@ -57,7 +57,7 @@ Remplissage simple
         
 Grande échelle (≥ 1:2500) :
 
-![ZONE-AUc](/PLU/vignettes/ZONE-AUc_sup2500.png)
+![ZONE-AUc](/Archives/PLU/vignettes/ZONE-AUc_sup2500.png)
 
 ```
 Ligne simple
@@ -76,7 +76,7 @@ Ligne simple
 
 Petite échelle (< 1:2500) :
 
-![ZONE-AUc](/PLU/vignettes/ZONE-AUc_inf2500.png)
+![ZONE-AUc](/Archives/PLU/vignettes/ZONE-AUc_inf2500.png)
 
 ```
 Remplissage simple
@@ -96,7 +96,7 @@ Remplissage simple
         
 Grande échelle (≥ 1:2500) :
 
-![ZONE-AUs](/PLU/vignettes/ZONE-AUs_sup2500.png)
+![ZONE-AUs](/Archives/PLU/vignettes/ZONE-AUs_sup2500.png)
 
 ```
 Ligne simple
@@ -115,7 +115,7 @@ Ligne simple
 
 Petite échelle (< 1:2500) :
 
-![ZONE-AUs](/PLU/vignettes/ZONE-AUs_inf2500.png)
+![ZONE-AUs](/Archives/PLU/vignettes/ZONE-AUs_inf2500.png)
 
 ```
 Remplissage simple
@@ -135,7 +135,7 @@ Remplissage simple
         
 Grande échelle (≥ 1:2500) :
 
-![ZONE-N](/PLU/vignettes/ZONE-N_sup2500.png)
+![ZONE-N](/Archives/PLU/vignettes/ZONE-N_sup2500.png)
 
 ```
 Ligne simple
@@ -154,7 +154,7 @@ Ligne simple
 
 Petite échelle (< 1:2500) :
 
-![ZONE-N](/PLU/vignettes/ZONE-N_inf2500.png)
+![ZONE-N](/Archives/PLU/vignettes/ZONE-N_inf2500.png)
 
 ```
 Remplissage simple
@@ -174,7 +174,7 @@ Remplissage simple
         
 Grande échelle (≥ 1:2500) :
 
-![ZONE-U](/PLU/vignettes/ZONE-U_sup2500.png)
+![ZONE-U](/Archives/PLU/vignettes/ZONE-U_sup2500.png)
 
 ```
 Ligne simple
@@ -193,7 +193,7 @@ Ligne simple
 
 Petite échelle (< 1:2500) :
 
-![ZONE-U](/PLU/vignettes/ZONE-U_inf2500.png)
+![ZONE-U](/Archives/PLU/vignettes/ZONE-U_inf2500.png)
 
 ```
 Remplissage simple
@@ -215,7 +215,7 @@ Remplissage simple
 
 **Espace boisé classé**
         
-![PSC-01-00](/PLU/vignettes/PSC-01-00.png)
+![PSC-01-00](/Archives/PLU/vignettes/PSC-01-00.png)
 
 Géométrie surfacique :  
 ```
@@ -304,7 +304,7 @@ Symbole simple
 
 **Limitation de la constructibilité pour des raisons environnementales**
         
-![PSC-02-00](/PLU/vignettes/PSC-02-00.png)
+![PSC-02-00](/Archives/PLU/vignettes/PSC-02-00.png)
 
 Géométrie surfacique :  
 ```
@@ -365,7 +365,7 @@ Géométrie ponctuelle :
 
 **Secteur avec interdiction de constructibilité pour des raisons environnementales, de risques, d'intérêt général**
         
-![PSC-02-01](/PLU/vignettes/PSC-02-01.png)
+![PSC-02-01](/Archives/PLU/vignettes/PSC-02-01.png)
 
 Géométrie surfacique :  
 ```
@@ -426,7 +426,7 @@ Géométrie ponctuelle :
 
 **Secteur avec conditions spéciales de constructibilité pour des raisons environnementales, de risques, d'intérêt général**
         
-![PSC-02-02](/PLU/vignettes/PSC-02-02.png)
+![PSC-02-02](/Archives/PLU/vignettes/PSC-02-02.png)
 
 Géométrie surfacique :  
 ```
@@ -487,7 +487,7 @@ Géométrie ponctuelle :
 
 **Secteur avec disposition de reconstruction / démolition**
         
-![PSC-03-00](/PLU/vignettes/PSC-03-00.png)
+![PSC-03-00](/Archives/PLU/vignettes/PSC-03-00.png)
 
 Géométrie surfacique :  
 ```
@@ -552,7 +552,7 @@ Géométrie ponctuelle :
 
 **Périmètre issu des PDU sur obligation de stationnement**
         
-![PSC-04-00](/PLU/vignettes/PSC-04-00.png)
+![PSC-04-00](/Archives/PLU/vignettes/PSC-04-00.png)
 
 Géométrie surfacique :  
 ```
@@ -577,7 +577,7 @@ Géométrie ponctuelle :
 
 **Emplacement réservé (remarque : sauf lot de données antérieur au standard v2017, utiliser impérativement les sous-codes suivants)**
         
-![PSC-05-00](/PLU/vignettes/PSC-05-00.png)
+![PSC-05-00](/Archives/PLU/vignettes/PSC-05-00.png)
 
 Géométrie surfacique :  
 ```
@@ -684,7 +684,7 @@ Symbole simple
 
 **Emplacement réservé logement social / mixité sociale**
         
-![PSC-05-05](/PLU/vignettes/PSC-05-05.png)
+![PSC-05-05](/Archives/PLU/vignettes/PSC-05-05.png)
 
 Géométrie surfacique :  
 ```
@@ -751,7 +751,7 @@ Symbole simple
 
 **Servitude de localisation des voies, ouvrages publics, installations d'intérêt général et espaces verts en zone U ou AU**
         
-![PSC-05-06](/PLU/vignettes/PSC-05-06.png)
+![PSC-05-06](/Archives/PLU/vignettes/PSC-05-06.png)
 
 Géométrie surfacique :  
 ```
@@ -818,7 +818,7 @@ Symbole simple
 
 **Secteur de projet en attente d'un projet d'aménagement global**
         
-![PSC-05-07](/PLU/vignettes/PSC-05-07.png)
+![PSC-05-07](/Archives/PLU/vignettes/PSC-05-07.png)
 
 Géométrie surfacique :  
 ```
@@ -853,7 +853,7 @@ Géométrie ponctuelle :
 
 **Patrimoine bâti, paysager ou éléments de paysage à protéger pour des motifs d'ordre culturel, historique, architectural ou écologique**
         
-![PSC-07-00](/PLU/vignettes/PSC-07-00.png)
+![PSC-07-00](/Archives/PLU/vignettes/PSC-07-00.png)
 
 Géométrie surfacique :  
 ```
@@ -956,7 +956,7 @@ Symbole de police
 
 **Éléments de paysage, (sites et secteurs) à préserver pour des motifs d'ordre écologique**
         
-![PSC-07-04](/PLU/vignettes/PSC-07-04.png)
+![PSC-07-04](/Archives/PLU/vignettes/PSC-07-04.png)
 
 Géométrie surfacique :  
 ```
@@ -1039,7 +1039,7 @@ Symbole de police
 
 **Terrain cultivé ou non bâti à protéger en zone urbaine**
         
-![PSC-08-00](/PLU/vignettes/PSC-08-00.png)
+![PSC-08-00](/Archives/PLU/vignettes/PSC-08-00.png)
 
 Géométrie surfacique :  
 ```
@@ -1073,7 +1073,7 @@ Géométrie ponctuelle :
 
 **Zone à aménager en vue de la pratique du ski**
         
-![PSC-13-00](/PLU/vignettes/PSC-13-00.png)
+![PSC-13-00](/Archives/PLU/vignettes/PSC-13-00.png)
 
 Géométrie surfacique :  
 ```
@@ -1106,7 +1106,7 @@ Géométrie ponctuelle :
 
 **Secteur de plan de masse**
         
-![PSC-14-00](/PLU/vignettes/PSC-14-00.png)
+![PSC-14-00](/Archives/PLU/vignettes/PSC-14-00.png)
 
 Géométrie surfacique :  
 ```
@@ -1138,7 +1138,7 @@ Géométrie ponctuelle :
 
 **Règles d'implantation des constructions**
         
-![PSC-15-00](/PLU/vignettes/PSC-15-00.png)
+![PSC-15-00](/Archives/PLU/vignettes/PSC-15-00.png)
 
 Géométrie surfacique :  
 ```
@@ -1238,7 +1238,7 @@ Géométrie ponctuelle :
 
 **Constructions et installations nécessaires à des équipements collectifs**
         
-![PSC-16-00](/PLU/vignettes/PSC-16-00.png)
+![PSC-16-00](/Archives/PLU/vignettes/PSC-16-00.png)
 
 Géométrie surfacique :  
 ```
@@ -1298,7 +1298,7 @@ Symbole de police
 
 **Secteur de taille et de capacité d'accueil limitées (STECAL)**
         
-![PSC-16-03](/PLU/vignettes/PSC-16-03.png)
+![PSC-16-03](/Archives/PLU/vignettes/PSC-16-03.png)
 
 Géométrie surfacique :  
 ```
@@ -1358,7 +1358,7 @@ Symbole de police
 
 **Secteur à programme de logements mixité sociale en Zone U et AU**
         
-![PSC-17-00](/PLU/vignettes/PSC-17-00.png)
+![PSC-17-00](/Archives/PLU/vignettes/PSC-17-00.png)
 
 Géométrie surfacique :  
 ```
@@ -1399,7 +1399,7 @@ Géométrie ponctuelle :
 
 **Secteur comportant des orientations d'aménagement et de programmation (OAP)**
         
-![PSC-18-00](/PLU/vignettes/PSC-18-00.png)
+![PSC-18-00](/Archives/PLU/vignettes/PSC-18-00.png)
 
 Géométrie surfacique :  
 ```
@@ -1542,7 +1542,7 @@ Géométrie ponctuelle :
 
 **Secteur protégé en raison de la richesse du sol et du sous-sol**
         
-![PSC-19-00](/PLU/vignettes/PSC-19-00.png)
+![PSC-19-00](/Archives/PLU/vignettes/PSC-19-00.png)
 
 Géométrie surfacique :  
 ```
@@ -1576,7 +1576,7 @@ Géométrie ponctuelle :
 
 **Secteur à transfert de constructibilité en zone N**
         
-![PSC-20-00](/PLU/vignettes/PSC-20-00.png)
+![PSC-20-00](/Archives/PLU/vignettes/PSC-20-00.png)
 
 Géométrie surfacique :  
 ```
@@ -1612,7 +1612,7 @@ Géométrie ponctuelle :
 
 **Diversité commerciale à protéger ou à développer**
         
-![PSC-22-00](/PLU/vignettes/PSC-22-00.png)
+![PSC-22-00](/Archives/PLU/vignettes/PSC-22-00.png)
 
 Géométrie surfacique :  
 ```
@@ -1705,7 +1705,7 @@ Symbole simple
 
 **Secteur avec taille minimale des logements en zone U et AU**
         
-![PSC-23-00](/PLU/vignettes/PSC-23-00.png)
+![PSC-23-00](/Archives/PLU/vignettes/PSC-23-00.png)
 
 Géométrie surfacique :  
 ```
@@ -1738,7 +1738,7 @@ Géométrie ponctuelle :
 
 **Voies, chemins, transport public à conserver et à créer**
         
-![PSC-24-00](/PLU/vignettes/PSC-24-00.png)
+![PSC-24-00](/Archives/PLU/vignettes/PSC-24-00.png)
 
 Géométrie surfacique :  
 ```
@@ -1819,7 +1819,7 @@ Géométrie ponctuelle :
 
 **Éléments de continuité écologique et trame verte et bleue**
         
-![PSC-25-00](/PLU/vignettes/PSC-25-00.png)
+![PSC-25-00](/Archives/PLU/vignettes/PSC-25-00.png)
 
 Géométrie surfacique :  
 ```
@@ -1879,7 +1879,7 @@ Symbole de police
 
 **Secteur de performance énergétique**
         
-![PSC-26-00](/PLU/vignettes/PSC-26-00.png)
+![PSC-26-00](/Archives/PLU/vignettes/PSC-26-00.png)
 
 Géométrie surfacique :  
 ```
@@ -1924,7 +1924,7 @@ Géométrie ponctuelle :
 
 **Secteur d'aménagement numérique**
         
-![PSC-27-00](/PLU/vignettes/PSC-27-00.png)
+![PSC-27-00](/Archives/PLU/vignettes/PSC-27-00.png)
 
 Géométrie surfacique :  
 ```
@@ -1948,7 +1948,7 @@ Géométrie ponctuelle :
 
 **Conditions de desserte**
         
-![PSC-28-00](/PLU/vignettes/PSC-28-00.png)
+![PSC-28-00](/Archives/PLU/vignettes/PSC-28-00.png)
 
 Géométrie surfacique :  
 ```
@@ -2010,7 +2010,7 @@ Symbole simple
 
 **Secteur avec densité minimale de construction**
         
-![PSC-29-00](/PLU/vignettes/PSC-29-00.png)
+![PSC-29-00](/Archives/PLU/vignettes/PSC-29-00.png)
 
 Géométrie surfacique :  
 ```
@@ -2053,7 +2053,7 @@ Géométrie ponctuelle :
 
 **Majoration des volumes constructibles**
         
-![PSC-30-00](/PLU/vignettes/PSC-30-00.png)
+![PSC-30-00](/Archives/PLU/vignettes/PSC-30-00.png)
 
 Géométrie surfacique :  
 ```
@@ -2128,7 +2128,7 @@ Géométrie ponctuelle :
 
 **Espaces remarquables du littoral**
         
-![PSC-31-00](/PLU/vignettes/PSC-31-00.png)
+![PSC-31-00](/Archives/PLU/vignettes/PSC-31-00.png)
 
 Géométrie surfacique :  
 ```
@@ -2263,7 +2263,7 @@ Symbole de police
 
 **Exclusion protection de plans d'eau de faible importance**
         
-![PSC-32-00](/PLU/vignettes/PSC-32-00.png)
+![PSC-32-00](/Archives/PLU/vignettes/PSC-32-00.png)
 
 Géométrie surfacique :  
 ```
@@ -2308,7 +2308,7 @@ Géométrie ponctuelle :
 
 **Secteur de dérogation aux protections des rives des plans d'eau en zone de montagne**
         
-![PSC-33-00](/PLU/vignettes/PSC-33-00.png)
+![PSC-33-00](/Archives/PLU/vignettes/PSC-33-00.png)
 
 Géométrie surfacique :  
 ```
@@ -2357,7 +2357,7 @@ Géométrie ponctuelle :
 
 **Espaces, paysages et milieux caractéristiques du patrimoine naturel et culturel montagnard à préserver**
         
-![PSC-34-00](/PLU/vignettes/PSC-34-00.png)
+![PSC-34-00](/Archives/PLU/vignettes/PSC-34-00.png)
 
 Géométrie surfacique :  
 ```
@@ -2413,7 +2413,7 @@ Symbole de police
 
 **Terres nécessaires au maintien et au développement des activités agricoles, pastorales et forestières à préserver**
         
-![PSC-35-00](/PLU/vignettes/PSC-35-00.png)
+![PSC-35-00](/Archives/PLU/vignettes/PSC-35-00.png)
 
 Géométrie surfacique :  
 ```
@@ -2465,7 +2465,7 @@ Géométrie ponctuelle :
 
 **Mixité des destinations ou sous-destinations**
         
-![PSC-36-00](/PLU/vignettes/PSC-36-00.png)
+![PSC-36-00](/Archives/PLU/vignettes/PSC-36-00.png)
 
 Géométrie surfacique :  
 ```
@@ -2498,7 +2498,7 @@ Géométrie ponctuelle :
 
 **Règles différenciées entre le rez-de-chaussée et les étages supérieurs des constructions**
         
-![PSC-37-00](/PLU/vignettes/PSC-37-00.png)
+![PSC-37-00](/Archives/PLU/vignettes/PSC-37-00.png)
 
 Géométrie surfacique :  
 ```
@@ -2552,7 +2552,7 @@ Géométrie ponctuelle :
 
 **Emprise au sol**
         
-![PSC-38-00](/PLU/vignettes/PSC-38-00.png)
+![PSC-38-00](/Archives/PLU/vignettes/PSC-38-00.png)
 
 Géométrie surfacique :  
 ```
@@ -2626,7 +2626,7 @@ Géométrie ponctuelle :
 
 **Hauteur**
         
-![PSC-39-00](/PLU/vignettes/PSC-39-00.png)
+![PSC-39-00](/Archives/PLU/vignettes/PSC-39-00.png)
 
 Géométrie surfacique :  
 ```
@@ -2701,7 +2701,7 @@ Géométrie ponctuelle :
 
 **Volumétrie**
         
-![PSC-40-00](/PLU/vignettes/PSC-40-00.png)
+![PSC-40-00](/Archives/PLU/vignettes/PSC-40-00.png)
 
 Géométrie surfacique :  
 ```
@@ -2775,7 +2775,7 @@ Géométrie ponctuelle :
 
 **Aspect extérieur**
         
-![PSC-41-00](/PLU/vignettes/PSC-41-00.png)
+![PSC-41-00](/Archives/PLU/vignettes/PSC-41-00.png)
 
 Géométrie surfacique :  
 ```
@@ -2865,7 +2865,7 @@ Géométrie ponctuelle :
 
 **Coefficient de biotope par surface**
         
-![PSC-42-00](/PLU/vignettes/PSC-42-00.png)
+![PSC-42-00](/Archives/PLU/vignettes/PSC-42-00.png)
 
 Géométrie surfacique :  
 ```
@@ -2899,7 +2899,7 @@ Géométrie ponctuelle :
 
 **Réalisation d'espaces libres, plantations, aires de jeux et de loisirs**
         
-![PSC-43-00](/PLU/vignettes/PSC-43-00.png)
+![PSC-43-00](/Archives/PLU/vignettes/PSC-43-00.png)
 
 Géométrie surfacique :  
 ```
@@ -2982,7 +2982,7 @@ Géométrie ponctuelle :
 
 **Stationnement**
         
-![PSC-44-00](/PLU/vignettes/PSC-44-00.png)
+![PSC-44-00](/Archives/PLU/vignettes/PSC-44-00.png)
 
 Géométrie surfacique :  
 ```
@@ -3075,7 +3075,7 @@ Géométrie ponctuelle :
 
 **Zone d'aménagement concerté (surface de plancher, destination)**
         
-![PSC-45-00](/PLU/vignettes/PSC-45-00.png)
+![PSC-45-00](/Archives/PLU/vignettes/PSC-45-00.png)
 
 Géométrie surfacique :  
 ```
@@ -3100,7 +3100,7 @@ Géométrie ponctuelle :
 
 **Constructibilité espace boisé antérieur au 20ème siècle**
         
-![PSC-46-00](/PLU/vignettes/PSC-46-00.png)
+![PSC-46-00](/Archives/PLU/vignettes/PSC-46-00.png)
 
 Géométrie surfacique :  
 ```
@@ -3136,7 +3136,7 @@ Géométrie ponctuelle :
 
 **Desserte par les réseaux**
         
-![PSC-47-00](/PLU/vignettes/PSC-47-00.png)
+![PSC-47-00](/Archives/PLU/vignettes/PSC-47-00.png)
 
 Géométrie surfacique :  
 ```
@@ -3242,7 +3242,7 @@ Symbole de police
 
 **Mesures pour limiter l'imperméabilité des sols**
         
-![PSC-48-00](/PLU/vignettes/PSC-48-00.png)
+![PSC-48-00](/Archives/PLU/vignettes/PSC-48-00.png)
 
 Géométrie surfacique :  
 ```
@@ -3308,7 +3308,7 @@ Symbole de police
 
 **Opération d'ensemble imposée en zone AU**
         
-![PSC-49-00](/PLU/vignettes/PSC-49-00.png)
+![PSC-49-00](/Archives/PLU/vignettes/PSC-49-00.png)
 
 Géométrie surfacique :  
 ```
@@ -3362,7 +3362,7 @@ Géométrie ponctuelle :
 
 **Interdiction types d'activités, destinations, sous-destinations**
         
-![PSC-50-00](/PLU/vignettes/PSC-50-00.png)
+![PSC-50-00](/Archives/PLU/vignettes/PSC-50-00.png)
 
 Géométrie surfacique :  
 ```
@@ -3417,7 +3417,7 @@ Symbole de police
 
 **Autorisation sous conditions types d'activités, destinations, sous-destinations**
         
-![PSC-51-00](/PLU/vignettes/PSC-51-00.png)
+![PSC-51-00](/Archives/PLU/vignettes/PSC-51-00.png)
 
 Géométrie surfacique :  
 ```
@@ -3472,7 +3472,7 @@ Symbole de police
 
 **Infrastructures et équipements logistiques à préserver ou à développer en zones U et AU**
         
-![PSC-52-00](/PLU/vignettes/PSC-52-00.png)
+![PSC-52-00](/Archives/PLU/vignettes/PSC-52-00.png)
 
 Géométrie surfacique :  
 ```
@@ -3506,7 +3506,7 @@ Géométrie ponctuelle :
 
 **Périmètre d'application d'une pièce écrite territorialisée (rapport de présentation, PADD, règlement, règlement graphique, POA)**
         
-![PSC-97-00](/PLU/vignettes/PSC-97-00.png)
+![PSC-97-00](/Archives/PLU/vignettes/PSC-97-00.png)
 
 Géométrie surfacique :  
 ```
@@ -3529,7 +3529,7 @@ Géométrie ponctuelle :
 
 **Périmètre couvert par un plan de secteur**
         
-![PSC-97-01](/PLU/vignettes/PSC-97-01.png)
+![PSC-97-01](/Archives/PLU/vignettes/PSC-97-01.png)
 
 Géométrie surfacique :  
 ```
@@ -3553,7 +3553,7 @@ Géométrie ponctuelle :
 
 **Autre**
         
-![PSC-99-00](/PLU/vignettes/PSC-99-00.png)
+![PSC-99-00](/Archives/PLU/vignettes/PSC-99-00.png)
 
 Géométrie surfacique :  
 ```
@@ -3692,7 +3692,7 @@ Symbole simple
 
 **Zone d'aménagement concerté (R123-13 2)**
         
-![INFO-02-00](/PLU/vignettes/INFO-02-00.png)
+![INFO-02-00](/Archives/PLU/vignettes/INFO-02-00.png)
 
 Géométrie surfacique :  
 ```
@@ -3717,7 +3717,7 @@ Géométrie ponctuelle :
 
 **Zone de préemption dans un espace naturel et sensible (R123-13 3)**
         
-![INFO-03-00](/PLU/vignettes/INFO-03-00.png)
+![INFO-03-00](/Archives/PLU/vignettes/INFO-03-00.png)
 
 Géométrie surfacique :  
 ```
@@ -3750,7 +3750,7 @@ Géométrie ponctuelle :
 
 **Périmètre de droit de préemption urbain (R123-13 4)**
         
-![INFO-04-00](/PLU/vignettes/INFO-04-00.png)
+![INFO-04-00](/Archives/PLU/vignettes/INFO-04-00.png)
 
 Géométrie surfacique :  
 ```
@@ -3783,7 +3783,7 @@ Géométrie ponctuelle :
 
 **Périmètre de droit de préemption urbain renforcé**
         
-![INFO-04-01](/PLU/vignettes/INFO-04-01.png)
+![INFO-04-01](/Archives/PLU/vignettes/INFO-04-01.png)
 
 Géométrie surfacique :  
 ```
@@ -3842,7 +3842,7 @@ Géométrie ponctuelle :
 
 **Zone d'aménagement différé (R123-13 4)**
         
-![INFO-05-00](/PLU/vignettes/INFO-05-00.png)
+![INFO-05-00](/Archives/PLU/vignettes/INFO-05-00.png)
 
 Géométrie surfacique :  
 ```
@@ -3876,7 +3876,7 @@ Géométrie ponctuelle :
 
 **Périmètre de développement prioritaire économie d'énergie (R123-13 6)**
         
-![INFO-07-00](/PLU/vignettes/INFO-07-00.png)
+![INFO-07-00](/Archives/PLU/vignettes/INFO-07-00.png)
 
 Géométrie surfacique :  
 ```
@@ -3912,7 +3912,7 @@ Géométrie ponctuelle :
 
 **Périmètre forestier: Interdiction ou réglementation des plantations (code rural et de la pêche maritime), plantations à réaliser (R123-13 7)**
         
-![INFO-08-00](/PLU/vignettes/INFO-08-00.png)
+![INFO-08-00](/Archives/PLU/vignettes/INFO-08-00.png)
 
 Géométrie surfacique :  
 ```
@@ -3963,7 +3963,7 @@ Géométrie ponctuelle :
 
 **Périmètre minier de concession pour l'exploitation ou le stockage (R123-13 8)**
         
-![INFO-09-00](/PLU/vignettes/INFO-09-00.png)
+![INFO-09-00](/Archives/PLU/vignettes/INFO-09-00.png)
 
 Géométrie surfacique :  
 ```
@@ -3997,7 +3997,7 @@ Géométrie ponctuelle :
 
 **Zone de recherche et d'exploitation de carrière (R123-13 9)**
         
-![INFO-10-00](/PLU/vignettes/INFO-10-00.png)
+![INFO-10-00](/Archives/PLU/vignettes/INFO-10-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4041,7 +4041,7 @@ Géométrie ponctuelle :
 
 **Périmètre des zones délimitées – divisions foncières soumises à déclaration préalable (R123-13 10)**
         
-![INFO-11-00](/PLU/vignettes/INFO-11-00.png)
+![INFO-11-00](/Archives/PLU/vignettes/INFO-11-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4075,7 +4075,7 @@ Géométrie ponctuelle :
 
 **Périmètre de sursis à statuer (R123-13 11)**
         
-![INFO-12-00](/PLU/vignettes/INFO-12-00.png)
+![INFO-12-00](/Archives/PLU/vignettes/INFO-12-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4100,7 +4100,7 @@ Géométrie ponctuelle :
 
 **Secteur de programme d'aménagement d'ensemble (R123-13 12)**
         
-![INFO-13-00](/PLU/vignettes/INFO-13-00.png)
+![INFO-13-00](/Archives/PLU/vignettes/INFO-13-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4133,7 +4133,7 @@ Géométrie ponctuelle :
 
 **Périmètre de voisinage d'infrastructure de transport terrestre (R123-13 12)**
         
-![INFO-14-00](/PLU/vignettes/INFO-14-00.png)
+![INFO-14-00](/Archives/PLU/vignettes/INFO-14-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4176,7 +4176,7 @@ Géométrie ponctuelle :
 
 **Site archéologique**
         
-![INFO-16-00](/PLU/vignettes/INFO-16-00.png)
+![INFO-16-00](/Archives/PLU/vignettes/INFO-16-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4225,7 +4225,7 @@ Symbole de police
 
 **Zone à risque d'exposition au plomb (R123-13 14)**
         
-![INFO-17-00](/PLU/vignettes/INFO-17-00.png)
+![INFO-17-00](/Archives/PLU/vignettes/INFO-17-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4269,7 +4269,7 @@ Géométrie ponctuelle :
 
 **Zones d'assainissement collectif/non collectif / eaux usées/eaux pluviales, schéma de réseaux eau et assainissement, systèmes d'élimination des déchets (R 123-14 3)**
         
-![INFO-19-01](/PLU/vignettes/INFO-19-01.png)
+![INFO-19-01](/Archives/PLU/vignettes/INFO-19-01.png)
 
 Géométrie surfacique :  
 ```
@@ -4331,7 +4331,7 @@ Symbole de police
 
 **Règlement local de publicité**
         
-![INFO-20-00](/PLU/vignettes/INFO-20-00.png)
+![INFO-20-00](/Archives/PLU/vignettes/INFO-20-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4381,7 +4381,7 @@ Géométrie ponctuelle :
 
 **Projet PPRN et PPRM (R123-14 7)**
         
-![INFO-21-00](/PLU/vignettes/INFO-21-00.png)
+![INFO-21-00](/Archives/PLU/vignettes/INFO-21-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4414,7 +4414,7 @@ Géométrie ponctuelle :
 
 **Protection des rives des  plans d'eau en zone de montagne (L145-5 et R145-3)**
         
-![INFO-22-00](/PLU/vignettes/INFO-22-00.png)
+![INFO-22-00](/Archives/PLU/vignettes/INFO-22-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4447,7 +4447,7 @@ Géométrie ponctuelle :
 
 **Arrêté du préfet coordonnateur de massif (L145-5)**
         
-![INFO-23-00](/PLU/vignettes/INFO-23-00.png)
+![INFO-23-00](/Archives/PLU/vignettes/INFO-23-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4480,7 +4480,7 @@ Géométrie ponctuelle :
 
 **Périmètre de protection des espaces agricoles et naturels péri-urbains (L143-1 et R123-13 15)**
         
-![INFO-25-00](/PLU/vignettes/INFO-25-00.png)
+![INFO-25-00](/Archives/PLU/vignettes/INFO-25-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4513,7 +4513,7 @@ Géométrie ponctuelle :
 
 **Plan d'exposition au bruit des aérodromes (L147-1 à L147-6 et R123-13 4)**
         
-![INFO-27-00](/PLU/vignettes/INFO-27-00.png)
+![INFO-27-00](/Archives/PLU/vignettes/INFO-27-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4572,7 +4572,7 @@ Symbole de police
 
 **Périmètre PUP (L332-11-3 et R123-13 17)**
         
-![INFO-30-00](/PLU/vignettes/INFO-30-00.png)
+![INFO-30-00](/Archives/PLU/vignettes/INFO-30-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4605,7 +4605,7 @@ Géométrie ponctuelle :
 
 **Périmètre patrimonial d'exclusion des matériaux et énergies renouvelables pris par délibération**
         
-![INFO-31-00](/PLU/vignettes/INFO-31-00.png)
+![INFO-31-00](/Archives/PLU/vignettes/INFO-31-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4630,7 +4630,7 @@ Géométrie ponctuelle :
 
 **Secteur à fiscalité particulière en application du L331-14 (taxe d'aménagement) R123-13 19**
         
-![INFO-32-00](/PLU/vignettes/INFO-32-00.png)
+![INFO-32-00](/Archives/PLU/vignettes/INFO-32-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4664,7 +4664,7 @@ Géométrie ponctuelle :
 
 **Droit de préemption commercial (L214-1, R214-1 et 2)**
         
-![INFO-33-00](/PLU/vignettes/INFO-33-00.png)
+![INFO-33-00](/Archives/PLU/vignettes/INFO-33-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4698,7 +4698,7 @@ Géométrie ponctuelle :
 
 **Périmètre d'opération d'intérêt national (L121-2 et L121-9-1, R121-4-1)**
         
-![INFO-34-00](/PLU/vignettes/INFO-34-00.png)
+![INFO-34-00](/Archives/PLU/vignettes/INFO-34-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4734,7 +4734,7 @@ Géométrie ponctuelle :
 
 **Périmètre de secteur affecté par un seuil minimal de densité (L331-36, R123-13 20)**
         
-![INFO-35-00](/PLU/vignettes/INFO-35-00.png)
+![INFO-35-00](/Archives/PLU/vignettes/INFO-35-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4770,7 +4770,7 @@ Géométrie ponctuelle :
 
 **Schémas d'aménagement de plage**
         
-![INFO-36-00](/PLU/vignettes/INFO-36-00.png)
+![INFO-36-00](/Archives/PLU/vignettes/INFO-36-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4806,7 +4806,7 @@ Géométrie ponctuelle :
 
 **Bois ou forêts relevant du régime forestier**
         
-![INFO-37-00](/PLU/vignettes/INFO-37-00.png)
+![INFO-37-00](/Archives/PLU/vignettes/INFO-37-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4839,7 +4839,7 @@ Géométrie ponctuelle :
 
 **Secteurs d'informations sur les sols**
         
-![INFO-38-00](/PLU/vignettes/INFO-38-00.png)
+![INFO-38-00](/Archives/PLU/vignettes/INFO-38-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4875,7 +4875,7 @@ Géométrie ponctuelle :
 
 **Périmètres de projets AFUP (dans lesquels les propriétaires fonciers sont incités à se regrouper en AFU de projet et les AFU de projet à mener leurs opérations de façon concertée)**
         
-![INFO-39-00](/PLU/vignettes/INFO-39-00.png)
+![INFO-39-00](/Archives/PLU/vignettes/INFO-39-00.png)
 
 Géométrie surfacique :  
 ```
@@ -4908,7 +4908,7 @@ Géométrie ponctuelle :
 
 **Périmètre d'un bien inscrit au patrimoine mondial**
         
-![INFO-40-01](/PLU/vignettes/INFO-40-01.png)
+![INFO-40-01](/Archives/PLU/vignettes/INFO-40-01.png)
 
 Géométrie surfacique :  
 ```
@@ -4944,7 +4944,7 @@ Géométrie ponctuelle :
 
 **Zone tampon d'un bien inscrit au patrimoine mondial**
         
-![INFO-40-02](/PLU/vignettes/INFO-40-02.png)
+![INFO-40-02](/Archives/PLU/vignettes/INFO-40-02.png)
 
 Géométrie surfacique :  
 ```
@@ -4980,7 +4980,7 @@ Géométrie ponctuelle :
 
 **Bande non constructible de part et d'autre de l'axe des voies (L111-6)**
         
-![INFO-41-00](/PLU/vignettes/INFO-41-00.png)
+![INFO-41-00](/Archives/PLU/vignettes/INFO-41-00.png)
 
 Géométrie surfacique :  
 ```
@@ -5013,7 +5013,7 @@ Géométrie ponctuelle :
 
 **Périmètre d'application d'une pièce écrite territorialisée relative aux annexes (liste des annexes, liste des SUP, plan des SUP)**
         
-![INFO-97-00](/PLU/vignettes/INFO-97-00.png)
+![INFO-97-00](/Archives/PLU/vignettes/INFO-97-00.png)
 
 Géométrie surfacique :  
 ```
@@ -5036,7 +5036,7 @@ Géométrie ponctuelle :
 
 **Périmètre d'annulation partielle du document d'urbanisme (lorsqu'elle impacte le règlement graphique)**
         
-![INFO-98-00](/PLU/vignettes/INFO-98-00.png)
+![INFO-98-00](/Archives/PLU/vignettes/INFO-98-00.png)
 
 Géométrie surfacique :  
 ```
@@ -5058,7 +5058,7 @@ Géométrie ponctuelle :
 
 **Autre périmètre, secteur, plan, document, site, projet, espace.**
         
-![INFO-99-00](/PLU/vignettes/INFO-99-00.png)
+![INFO-99-00](/Archives/PLU/vignettes/INFO-99-00.png)
 
 Géométrie surfacique :  
 ```
