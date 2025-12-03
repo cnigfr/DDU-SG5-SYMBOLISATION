@@ -1,4 +1,4 @@
-Le fichier [PLU_CNIG.stylx](/PLU/ArcGISpro/PLU.stylx) contient toutes les symbolisations qu'elles soient ponctuelles, linéaires, surfaciques, de texte ou même de position du texte.
+Le fichier [PLU_CNIG.stylx](/PLU/ArcGISpro/PLU_CNIG.stylx) contient toutes les symbolisations qu'elles soient ponctuelles, linéaires, surfaciques, de texte ou même de position du texte.
 
 Le dossier [LYRX](/PLU/ArcGISpro/LYRX) contient les symbolisations sous forme de fichiers lyrx.
 
