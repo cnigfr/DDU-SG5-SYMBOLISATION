@@ -12,7 +12,7 @@ Les déplacements horizontaux et verticaux tels que possibles dans QGIS sont rem
 - **Information 38-00 :**
 Les déplacements horizontaux et verticaux tels que possibles dans QGIS sont remplacés par une distribution aléatoire à 85%.
 
-# Utilisation du fichier de style ArcGISpro
+# Utilisation du fichier [PLU_CNIG.stylx](/PLU/ArcGISpro/PLU_CNIG.stylx) avec ArcGISpro
 
 ### Chargez les symbologies en fonction du champ SYMBOLE
 <img width="1083" height="780" alt="image" src="https://github.com/user-attachments/assets/5243002d-750b-4662-92b7-45326338abbf" />
