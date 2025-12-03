@@ -1,3 +1,3 @@
 Le fichier [PLU_CNIG.xml](/PLU/QGIS/PLU_CNIG.xml) contient toutes les symbolisations qu'elles soient ponctuelles, linéaires, surfaciques ou même de texte.
 
-Le dossier [LYRX](/PLU/QGIS/QML) contient les symbolisations sous forme de fichiers qml.
+Le dossier [QML](/PLU/QGIS/QML) contient les symbolisations sous forme de fichiers qml.
