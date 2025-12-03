@@ -4,6 +4,15 @@
 
 - Le dossier [LYRX](/PLU/ArcGISpro/LYRX) contient les symbolisations sous forme de fichiers lyrx.
 
+#### Certaines adaptations ont dû être faites du fait de gestion différentes entre QGIS et ArcGIS pro.
+
+- **Information 36-00 :**
+Les déplacements horizontaux et verticaux tels que possibles dans QGIS sont remplacés par une distribution aléatoire à 85%.
+
+- **Information 38-00 :**
+Les déplacements horizontaux et verticaux tels que possibles dans QGIS sont remplacés par une distribution aléatoire à 85%.
+
+
 # Utilisation du fichier [PLU_CNIG.stylx](/PLU/ArcGISpro/PLU_CNIG.stylx) avec ArcGISpro
 
 ### Chargez les symbologies en fonction du champ SYMBOLE
