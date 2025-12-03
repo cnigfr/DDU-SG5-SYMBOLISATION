@@ -4,4 +4,3 @@
 - [La Planche de symbolisation](/PLU/Planche_Symbolisation_CNIG_PLU.pdf) est une synthèse des symbolisations sous forme d'une affiche PDF au format A1 imprimable.
 - le répertoire [ArcGISpro](/PLU/ArcGISpro) contient le fichier STYLX qui met en oeuvre les spécifications. Il peut être directement appliqué sur les tables des prescriptions, informations et zones des PLU au standard CNIG. Ce fichier a été créé avec ArcGIS pro 3.3 et est compatible avec les versions supérieures.
 - le répertoire [QGIS](/PLU/QGIS) contient le fichier XML qui met en oeuvre les spécifications. Ils peut être directement appliqués sur les tables des prescriptions, informations et zones des PLU au standard CNIG. Ce fichier a été créé automatiquement avec l'outil SLYR.
-- le répertoire [Polices de caractères utilisées](/PLU/Polices de caractères utilisées) contient les fichiers FONT de bibliothèque de caractères utilisés dans la symbolisation des PLU.
