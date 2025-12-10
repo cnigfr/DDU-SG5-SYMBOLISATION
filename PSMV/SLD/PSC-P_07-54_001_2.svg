@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="2.44922 -17.3438 16.4766 15.6797"
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny">
+<title>Qt SVG Document</title>
+<desc>Generated with Qt</desc>
+<defs>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+
+<g fill="param(fill)" fill-opacity="param(fill-opacity)" stroke="param(outline)" stroke-opacity="param(outline-opacity) 1" stroke-width="param(outline-width) 0" transform="matrix(1,0,0,1,0,0)"
+font-family="MS Shell Dlg 2" font-size="8.3" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="nonzero" d="M2.44922,-11.3555 L8.14453,-12.1758 L10.6875,-17.3438 L13.2305,-12.1758 L18.9258,-11.3555 L14.8008,-7.33594 L15.7852,-1.66406 L10.6875,-4.34766 L5.58984,-1.66406 L6.5625,-7.33594 L2.44922,-11.3555"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:se="http://www.opengis.net/se" version="1.1.0">
+  <NamedLayer>
+    <se:Name>INF-P_70-00_001</se:Name>
+    <UserStyle>
+      <se:Name>INF-P_70-00_001</se:Name>
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>Single symbol</se:Name>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:\SOG\SG5\PSMV\INF-P_70-00_001_11.svg?fill=%23c31a38&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:/SOG/SG5/PSMV/INF-P_70-00_001_11.svg" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#c31a38</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>25</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:\SOG\SG5\PSMV\INF-P_70-00_001_12.svg?fill=%23ffffff&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:/SOG/SG5/PSMV/INF-P_70-00_001_12.svg" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>25</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:\SOG\SG5\PSMV\INF-P_70-00_001_13.svg?fill=%23ffffff&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:/SOG/SG5/PSMV/INF-P_70-00_001_13.svg" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>25</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:\SOG\SG5\PSMV\INF-P_70-00_001_14.svg?fill=%23c31a38&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:/SOG/SG5/PSMV/INF-P_70-00_001_14.svg" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#c31a38</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>25</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:\SOG\SG5\PSMV\INF-P_70-00_001_15.svg?fill=%23c31a38&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:/SOG/SG5/PSMV/INF-P_70-00_001_15.svg" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#c31a38</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>25</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:\SOG\SG5\PSMV\INF-P_70-00_001_16.svg?fill=%23ffffff&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:/SOG/SG5/PSMV/INF-P_70-00_001_16.svg" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>25</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:\SOG\SG5\PSMV\INF-P_70-00_001_17.svg?fill=%23c31a38&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:/SOG/SG5/PSMV/INF-P_70-00_001_17.svg" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#c31a38</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>25</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:\SOG\SG5\PSMV\INF-P_70-00_001_18.svg?fill=%23ffffff&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:/SOG/SG5/PSMV/INF-P_70-00_001_18.svg" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>25</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:\SOG\SG5\PSMV\INF-P_70-00_001_19.svg?fill=%23c31a38&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:/SOG/SG5/PSMV/INF-P_70-00_001_19.svg" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#c31a38</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>25</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:\SOG\SG5\PSMV\INF-P_70-00_001_20.svg?fill=%23ffffff&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:/SOG/SG5/PSMV/INF-P_70-00_001_20.svg" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>25</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:\SOG\SG5\PSMV\INF-P_70-00_001_21.svg?fill=%23c31a38&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:href="D:/SOG/SG5/PSMV/INF-P_70-00_001_21.svg" xlink:type="simple"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#c31a38</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>25</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>
+</StyledLayerDescriptor>
