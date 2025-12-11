@@ -9,7 +9,7 @@
 ### Chargez les symbologies en fonction du champ SYMBOLE
 <img width="1284" height="749" alt="image" src="https://github.com/user-attachments/assets/2a5aac51-263e-417f-90f3-e3e465c786a7" />
 
-### Cliquez sur Avancépuis sur Appariez au symboles à parti du fichier
+### Cliquez sur Avancé puis sur Apparier aux symboles à partir du fichier
 <img width="738" height="288" alt="image" src="https://github.com/user-attachments/assets/c4424c97-43de-4143-b05d-55acb47e564d" />
 
 ### Choisissez le fichier .xml et cliquez sur ouvrir
