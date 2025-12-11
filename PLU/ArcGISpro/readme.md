@@ -18,7 +18,7 @@ Les déplacements horizontaux et verticaux tels que possibles dans QGIS sont rem
 ### Chargez les symbologies en fonction du champ SYMBOLE
 <img width="1083" height="780" alt="image" src="https://github.com/user-attachments/assets/5243002d-750b-4662-92b7-45326338abbf" />
 
-### Cliquez sur Appariez la symbologie d'une couche à un style
+### Cliquez sur Apparier la symbologie d'une couche à un style
 <img width="602" height="230" alt="image" src="https://github.com/user-attachments/assets/7eba3768-d2c4-4ed1-b866-8bc6864e6bbd" />
 
 ### Sélectionnez le CHAMP, le STYLE et exécutez
