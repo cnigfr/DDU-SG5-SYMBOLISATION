@@ -5,7 +5,7 @@
 :: Author:      nicolas.kulpinski omiplu.mikkrogeo.com
 ::
 :: Created:     08/08/2025
-:: Modified:    08/08/2025
+:: Modified:    17/12/2025
 :: Copyright:   (c) n.kulpinski 2025
 :: Licence:     GPL
 ::-------------------------------------------------------------------------------
@@ -13,24 +13,23 @@
 :: ATTENTION ESPACES ET AUX CARACTERES SPECIAUX DANS LES CHEMINS DOSSIER ET FICHIER !!!!!
 
 ::Adresse du fichier .aprx 
-::-------------------------------------------------------------------------------
-::###############################################################################
 set aprx=C:\KULPINSKI\SG5\SG5_Symbolisation\SG5_Symbolisation.aprx
 ::###############################################################################
+
 ::Adresse du dossier en sortie 
-::-------------------------------------------------------------------------------
-::###############################################################################
 set dossier_sortie=C:\KULPINSKI\SG5\SG5_Symbolisation
 ::###############################################################################
+
 ::Adresse du fichier PLU_CNIG.stylx
-::-------------------------------------------------------------------------------
-::###############################################################################
 set plustylx=C:\KULPINSKI\SG5\SG5_Symbolisation\PLU_CNIG.stylx
 ::###############################################################################
+
 ::Adresse du fichier PSMV_CNIG.stylx
-::-------------------------------------------------------------------------------
-::###############################################################################
 set psmvstylx=C:\KULPINSKI\SG5\SG5_Symbolisation\PSMV_CNIG.stylx
+::###############################################################################
+
+::Adresse du fichier SUP_CNIG.stylx
+set supstylx=C:\KULPINSKI\SG5\SG5_Symbolisation\SUP_CNIG.stylx
 ::###############################################################################
 
 ::===============================================================================
@@ -44,7 +43,7 @@ call "C:\Program Files\ArcGIS\Pro\bin\Python\Scripts\propy" sg5_01_data_gen_maj_
 :: LANCEMENT DU DEUXIEME SCRIPT --> sg5_02_maj_symbo_aprx.py
 ::-------------------------------------------------------------------------------
 echo LANCEMENT DU DEUXIEME SCRIPT sg5_02_maj_symbo_aprx.py
-call "C:\Program Files\ArcGIS\Pro\bin\Python\Scripts\propy" sg5_02_maj_symbo_aprx.py "%aprx%" "%plustylx%" "%psmvstylx%"
+call "C:\Program Files\ArcGIS\Pro\bin\Python\Scripts\propy" sg5_02_maj_symbo_aprx.py "%aprx%" "%plustylx%" "%psmvstylx%" "%supstylx%"
 ::###############################################################################
 
 :: LANCEMENT DU TROISIEME SCRIPT --> sg5_03_export_pdf.py
@@ -52,3 +51,5 @@ call "C:\Program Files\ArcGIS\Pro\bin\Python\Scripts\propy" sg5_02_maj_symbo_apr
 echo LANCEMENT DU TROISIEME SCRIPT sg5_03_export_pdf.py
 call "C:\Program Files\ArcGIS\Pro\bin\Python\Scripts\propy" sg5_03_export_pdf.py "%dossier_sortie%" "%aprx%"
 ::###############################################################################
+
+::pause

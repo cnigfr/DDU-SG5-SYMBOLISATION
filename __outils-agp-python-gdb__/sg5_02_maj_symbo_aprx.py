@@ -5,7 +5,7 @@
 # Author:      nicolas.kulpinski omiplu.mikkrogeo.com
 #
 # Created:     06/08/2025
-# Modified:    23/09/2025
+# Modified:    17/12/2025
 # Copyright:   (c) n.kulpinski 2025
 # Licence:     GPL
 #-------------------------------------------------------------------------------
@@ -24,6 +24,9 @@ plu_stylx = fr"{sys.argv[2]}"
 #psmv_stylx = input('Chemin complet du fichier PSMV_CNIG.stylx : ')
 psmv_stylx = fr"{sys.argv[3]}"
 #psmv_stylx = r"...\PSMV_CNIG.stylx"
+#psmv_stylx = input('Chemin complet du fichier SUP_CNIG.stylx : ')
+sup_stylx = fr"{sys.argv[4]}"
+#psmv_stylx = r"...\SUP_CNIG.stylx"
 
 aprx = arcpy.mp.ArcGISProject(aprx_path)  
 for m in aprx.listMaps():
@@ -75,6 +78,9 @@ for m in aprx.listMaps():
         if lyr.name == "psmv_inf_s" :
             print("appariement de la symbologie avec le champ SYMBOLE")
             arcpy.management.MatchLayerSymbologyToAStyle(lyr, "SYMBOLE", psmv_stylx)
+        if lyr.name == "sup_ass" :
+            print("appariement de la symbologie avec le champ SYMBOLE")
+            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "SYMBOLE", sup_stylx)
 
 aprx.save()
 

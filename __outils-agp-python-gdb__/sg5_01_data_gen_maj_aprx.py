@@ -5,7 +5,7 @@
 # Author:      nicolas.kulpinski omiplu.mikkrogeo.com
 #
 # Created:     13/06/2025
-# Modified:    24/09/2025
+# Modified:    17/12/2025
 # Copyright:   (c) n.kulpinski 2025
 # Licence:     GPL
 #-------------------------------------------------------------------------------
@@ -23,6 +23,7 @@ grille_plu_inf_csv = dir_path + os.sep + "grille_plu_inf.csv"
 grille_psmv_zonage_csv = dir_path + os.sep + "grille_psmv_zonage.csv"
 grille_psmv_psc_csv = dir_path + os.sep + "grille_psmv_psc.csv"
 grille_psmv_inf_csv = dir_path + os.sep + "grille_psmv_inf.csv"
+grille_sup_csv = dir_path + os.sep + "grille_sup.csv"
 spatial_reference = arcpy.SpatialReference(2154)
 prj = spatial_reference
 #-------------------------------------------------------------------------------
@@ -887,16 +888,165 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
     ligne= f.readline()  #valeur de la ligne suivante
 
 f.close()
-#pas du tout correct mais c'est pour contrer le bug de la dernière ligne de code qui ne s'effectue pas et je ne sias pas pourquoi ???
+
+#-------------------------------------------------------------------------------
+m = 9 #Nombre de carreaux par lignes
+#-------------------------------------------------------------------------------
+
+#-------------------------------------------------------------------------------
+# SUP
+# Creation couches
+print(f"/////////////CREATION DES COUCHES/////////")
+sup_carreau = "sup_carreau"
+print(f"Creation de la couche {sup_carreau} en cours")
+arcpy.management.CreateFeatureclass(gdb, sup_carreau, "POLYGON", "", "DISABLED", "DISABLED", prj)
+fields = [["typesup", "TEXT", "Type de la SUP", 10],
+["lib_sup", "TEXT", "Libellé de la SUP", 250],
+["symb_sup", "TEXT", "code symbole surfacique", 40],
+["d_symb_sup", "TEXT", "description symbole surfacique", 1500],
+["blanc", "TEXT", "Carreau blanc ou pas", 10],
+["etiquette", "TEXT", "Etiquette", 80]]
+arcpy.management.AddFields(sup_carreau,fields)
+
+sup_ass = "sup_ass"
+print(f"Creation de la couche {sup_ass} en cours")
+arcpy.management.CreateFeatureclass(gdb, sup_ass, "POLYGON", "", "DISABLED", "DISABLED", prj)
+fields = [["typesup", "TEXT", "Type de la SUP", 10],
+["lib_sup", "TEXT", "Libellé de la SUP", 250],
+["SYMBOLE", "TEXT", "code symbole surfacique", 40],
+["etiquette", "TEXT", "Etiquette", 80]]
+arcpy.management.AddFields(sup_ass,fields)
+
+######### initialisation des coordonnées
+
+x0 = 620000
+x = x0
+y = 6600000
+k = 1
+l = 0
+
+######### ouverture et lecture du fichier          
+f=open(grille_sup_csv,'r')  
+entete = f.readline().rstrip('\n\r')# Lit l'en-tete
+entete_separee = entete.split(";")
+ligne= f.readline()  #soit f le pointeur vers votre fichier csv,
+while ligne!='' : # soit tant que la ligne n'est pas vide
+    ligne = ligne.replace("\n","")
+    ligne_separee = ligne.split(";") # entre guillemet le separateur ici un ;
+    #couche de base    
+    typesup = ligne_separee [0]
+    lib_sup = ligne_separee [1] 
+    symb_sup = ligne_separee [2] 
+    d_symb_sup = ligne_separee [3]  
+    etiquette = ligne_separee [4]
+    classement = ligne_separee [5]
+    if classement != "sous-code" :
+        print(f"#"*20)
+        print(f"SUP --> {etiquette}") 
+        w = k + l
+        if w % 2 == 0 :
+            blanc = "blanc"
+        else :
+            blanc = "gris"
+            
+        cursor = arcpy.da.InsertCursor(sup_carreau,["SHAPE@","typesup","lib_sup","symb_sup","d_symb_sup","blanc","etiquette"])
+        carreau = arcpy.Array([arcpy.Point(x - 10, y - 10),arcpy.Point(x - 10, y + 80),arcpy.Point(x + 80, y + 80),arcpy.Point(x + 80, y - 10)])
+        polygon = arcpy.Polygon(carreau, spatial_reference)
+        cursor.insertRow([polygon,typesup,lib_sup,symb_sup,d_symb_sup,blanc,etiquette])
+
+        cursor = arcpy.da.InsertCursor(sup_ass,["SHAPE@","typesup","lib_sup","SYMBOLE","etiquette"])
+        #carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 40, y + 40),arcpy.Point(x + 40, y)])
+        carreau = arcpy.Array([arcpy.Point(x+17, y),
+        arcpy.Point(x+9, y+1),
+        arcpy.Point(x+1, y+11),
+        arcpy.Point(x, y+43),
+        arcpy.Point(x+7, y+45),
+        arcpy.Point(x+9, y+44),
+        arcpy.Point(x+13, y+38),
+        arcpy.Point(x+18, y+36),
+        arcpy.Point(x+22, y+35),
+        arcpy.Point(x+24, y+36),
+        arcpy.Point(x+26, y+38),
+        arcpy.Point(x+27, y+40),
+        arcpy.Point(x+25, y+45),
+        arcpy.Point(x+22, y+49),
+        arcpy.Point(x+21, y+55),
+        arcpy.Point(x+23, y+57),
+        arcpy.Point(x+27, y+56),
+        arcpy.Point(x+37, y+55),
+        arcpy.Point(x+46, y+52),
+        arcpy.Point(x+51, y+46),
+        arcpy.Point(x+53, y+40),
+        arcpy.Point(x+52, y+35),
+        arcpy.Point(x+54, y+25),
+        arcpy.Point(x+57, y+22),
+        arcpy.Point(x+59, y+12),
+        arcpy.Point(x+56, y+9),
+        arcpy.Point(x+47, y+7),
+        arcpy.Point(x+42, y+8),
+        arcpy.Point(x+29, y+12),
+        arcpy.Point(x+26, y+10),
+        arcpy.Point(x+24, y+4),
+        arcpy.Point(x+20, y+1)])
+        polygon = arcpy.Polygon(carreau, spatial_reference)
+        cursor.insertRow([polygon,typesup,lib_sup,symb_sup,etiquette])   
+ 
+        
+        x = x0 + 90 * (k % m)
+        if k % m == 0:
+            print(f"/////////////SAUT DE LIGNE/////////")
+            y = y - 90 #* (k % m)
+            l = l + 1
+        k = (k + 1) % m
+        
+        if k == 0 :
+            k = m
+            
+        
+    ligne= f.readline()  #valeur de la ligne suivante
+
+f.close()
+#pas du tout correct mais c'est pour contrer le bug de la dernière ligne de code qui ne s'effectue pas et je ne sais pas pourquoi ???
 #mais comme ca ca marche
-cursor = arcpy.da.InsertCursor(psmv_inf_p,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","SYMBOLE","plu_psmv","etiquette"])
-carreau = arcpy.Point(x + 55, y + 60)
-point = arcpy.PointGeometry(carreau, spatial_reference)
-cursor.insertRow([point,typeinf,stypeinf,nnn,lib_stype,symb_pct,plu_psmv,etiquette])  
+cursor = arcpy.da.InsertCursor(sup_ass,["SHAPE@","typesup","lib_sup","SYMBOLE","etiquette"])
+carreau = arcpy.Array([arcpy.Point(x+17, y),
+arcpy.Point(x+9, y+1),
+arcpy.Point(x+1, y+11),
+arcpy.Point(x, y+43),
+arcpy.Point(x+7, y+45),
+arcpy.Point(x+9, y+44),
+arcpy.Point(x+13, y+38),
+arcpy.Point(x+18, y+36),
+arcpy.Point(x+22, y+35),
+arcpy.Point(x+24, y+36),
+arcpy.Point(x+26, y+38),
+arcpy.Point(x+27, y+40),
+arcpy.Point(x+25, y+45),
+arcpy.Point(x+22, y+49),
+arcpy.Point(x+21, y+55),
+arcpy.Point(x+23, y+57),
+arcpy.Point(x+27, y+56),
+arcpy.Point(x+37, y+55),
+arcpy.Point(x+46, y+52),
+arcpy.Point(x+51, y+46),
+arcpy.Point(x+53, y+40),
+arcpy.Point(x+52, y+35),
+arcpy.Point(x+54, y+25),
+arcpy.Point(x+57, y+22),
+arcpy.Point(x+59, y+12),
+arcpy.Point(x+56, y+9),
+arcpy.Point(x+47, y+7),
+arcpy.Point(x+42, y+8),
+arcpy.Point(x+29, y+12),
+arcpy.Point(x+26, y+10),
+arcpy.Point(x+24, y+4),
+arcpy.Point(x+20, y+1)])
+polygon = arcpy.Polygon(carreau, spatial_reference)
+cursor.insertRow([polygon,typesup,lib_sup,symb_sup,etiquette])  
 
 
 aprx = arcpy.mp.ArcGISProject(aprx_path)
-print(f"Mise à jour de la source du projet ArcGISpro")
+print(f"Mise à jour de la source du projet ArcGISpro en cours")
 aprx.updateConnectionProperties(None, gdb)    
 aprx.updateConnectionProperties(gdb, gdb)
 print(f"Mise à jour de la source du projet ArcGISpro effectuée")
