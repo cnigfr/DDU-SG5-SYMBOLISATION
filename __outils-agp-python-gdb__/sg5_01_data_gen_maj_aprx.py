@@ -5,7 +5,7 @@
 # Author:      nicolas.kulpinski omiplu.mikkrogeo.com
 #
 # Created:     13/06/2025
-# Modified:    17/12/2025
+# Modified:    19/12/2025
 # Copyright:   (c) n.kulpinski 2025
 # Licence:     GPL
 #-------------------------------------------------------------------------------
@@ -61,15 +61,23 @@ fields = [["typzone", "TEXT", "Type de la zone", 10],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(plu_zone_urba_carreau,fields)
 
-plu_zone_urba = "plu_zone_urba"
-print(f"Creation de la couche {plu_zone_urba} en cours")
-arcpy.management.CreateFeatureclass(gdb, plu_zone_urba, "POLYGON", "", "DISABLED", "DISABLED", prj)
+plu_zone_urba_ge = "plu_zone_urba_ge"
+print(f"Creation de la couche {plu_zone_urba_ge} en cours")
+arcpy.management.CreateFeatureclass(gdb, plu_zone_urba_ge, "POLYGON", "", "DISABLED", "DISABLED", prj)
 fields = [["typzone", "TEXT", "Type de la zone", 10],
 ["lib_type", "TEXT", "Libelle du type de la zone", 250],
-["symb_sup2500", "TEXT", "code symbole sup2500", 80],
-["symb_inf2500", "TEXT", "code symbole inf2500", 80],
+["SYMBOLE", "TEXT", "code symbole", 80],
 ["etiquette", "TEXT", "Etiquette", 80]]
-arcpy.management.AddFields(plu_zone_urba,fields)
+arcpy.management.AddFields(plu_zone_urba_ge,fields)
+
+plu_zone_urba_pe = "plu_zone_urba_pe"
+print(f"Creation de la couche {plu_zone_urba_pe} en cours")
+arcpy.management.CreateFeatureclass(gdb, plu_zone_urba_pe, "POLYGON", "", "DISABLED", "DISABLED", prj)
+fields = [["typzone", "TEXT", "Type de la zone", 10],
+["lib_type", "TEXT", "Libelle du type de la zone", 250],
+["SYMBOLE", "TEXT", "code symbole", 80],
+["etiquette", "TEXT", "Etiquette", 80]]
+arcpy.management.AddFields(plu_zone_urba_pe,fields)
 ######### initialisation des coordonnées
 
 x0 = 620000
@@ -106,7 +114,7 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
     polygon = arcpy.Polygon(carreau, spatial_reference)
     cursor.insertRow([polygon,typzone,lib_type,symb_sup2500,d_symb_sup2500,symb_inf2500,d_symb_inf2500,blanc,typzone])
 
-    cursor = arcpy.da.InsertCursor(plu_zone_urba,["SHAPE@","typzone","lib_type","symb_sup2500","symb_inf2500","etiquette"])
+    cursor = arcpy.da.InsertCursor(plu_zone_urba_ge,["SHAPE@","typzone","lib_type","SYMBOLE","etiquette"])
     #carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 70, y + 40),arcpy.Point(x + 70, y)])
     carreau = arcpy.Array([arcpy.Point(x, y+12),
     arcpy.Point(x, y+37),
@@ -121,7 +129,24 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
     arcpy.Point(x+23, y),
     arcpy.Point(x+23, y+12)])
     polygon = arcpy.Polygon(carreau, spatial_reference)
-    cursor.insertRow([polygon,typzone,lib_type,symb_sup2500,symb_inf2500,typzone])    
+    cursor.insertRow([polygon,typzone,lib_type,symb_sup2500,typzone])  
+    
+    cursor = arcpy.da.InsertCursor(plu_zone_urba_pe,["SHAPE@","typzone","lib_type","SYMBOLE","etiquette"])
+    #carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 70, y + 40),arcpy.Point(x + 70, y)])
+    carreau = arcpy.Array([arcpy.Point(x, y+12),
+    arcpy.Point(x, y+37),
+    arcpy.Point(x+12, y+37),
+    arcpy.Point(x+12, y+48),
+    arcpy.Point(x+35, y+48),
+    arcpy.Point(x+35, y+60),
+    arcpy.Point(x+70, y+60),
+    arcpy.Point(x+70, y+25),
+    arcpy.Point(x+47, y+25),
+    arcpy.Point(x+47, y),
+    arcpy.Point(x+23, y),
+    arcpy.Point(x+23, y+12)])
+    polygon = arcpy.Polygon(carreau, spatial_reference)
+    cursor.insertRow([polygon,typzone,lib_type,symb_inf2500,typzone])   
     
     x = x0 + 90 * (k % m)
     if k % m == 0:

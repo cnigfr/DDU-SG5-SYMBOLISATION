@@ -34,11 +34,11 @@ for m in aprx.listMaps():
     for lyr in m.listLayers() : 
         print(f"==={lyr}===")      
         if lyr.name == "plu_zone_urba_ge" :
-            print("appariement de la symbologie avec le champ symb_sup2500")
-            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "symb_sup2500", plu_stylx)
+            print("appariement de la symbologie avec le champ SYMBOLE")
+            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "SYMBOLE", plu_stylx)
         if lyr.name == "plu_zone_urba_pe" :
-            print("appariement de la symbologie avec le champ symb_inf2500")
-            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "symb_inf2500", plu_stylx)
+            print("appariement de la symbologie avec le champ SYMBOLE")
+            arcpy.management.MatchLayerSymbologyToAStyle(lyr, "SYMBOLE", plu_stylx)
         if lyr.name == "plu_psc_p" :
             print("appariement de la symbologie avec le champ SYMBOLE")
             arcpy.management.MatchLayerSymbologyToAStyle(lyr, "SYMBOLE", plu_stylx)

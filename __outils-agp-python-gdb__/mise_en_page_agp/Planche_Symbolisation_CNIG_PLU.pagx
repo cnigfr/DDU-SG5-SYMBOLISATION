@@ -5,6 +5,11 @@
   "binaryReferences" : [
     {
       "type" : "CIMBinaryReference",
+      "uRI" : "CIMPATH=Metadata/262539f4585c7d0c9bf56fbd7b4b5552.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"fr\">\r\n\t<Esri>\r\n\t\t<CreaDate>20251219</CreaDate>\r\n\t\t<CreaTime>10272300</CreaTime>\r\n\t\t<ArcGISFormat>1.0</ArcGISFormat>\r\n\t\t<SyncOnce>TRUE</SyncOnce>\r\n\t</Esri>\r\n</metadata>\r\n"
+    },
+    {
+      "type" : "CIMBinaryReference",
       "uRI" : "CIMPATH=Metadata/28381c7f52355378a4ad7ebd2e607657.xml",
       "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"fr\"><Esri><CreaDate>20250617</CreaDate><CreaTime>08454200</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>plu_psc_carreau</resTitle></idCitation><idAbs>plu_psc_carreau</idAbs><idCredit></idCredit><idPurp></idPurp><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
     },
@@ -35,13 +40,18 @@
     },
     {
       "type" : "CIMBinaryReference",
-      "uRI" : "CIMPATH=Metadata/9d975d7d5ef6cf8de38d87e39510f2e6.xml",
-      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"fr\"><Esri><CreaDate>20250617</CreaDate><CreaTime>08560000</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>plu_zone_urba</resTitle></idCitation><idAbs>plu_zone_urba</idAbs><idCredit></idCredit><idPurp></idPurp><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
+      "uRI" : "CIMPATH=Metadata/9c4bf891621deea2e207fe85d568ca29.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"fr\">\r\n\t<Esri>\r\n\t\t<CreaDate>20250617</CreaDate>\r\n\t\t<CreaTime>08583900</CreaTime>\r\n\t\t<ArcGISFormat>1.0</ArcGISFormat>\r\n\t\t<SyncOnce>TRUE</SyncOnce>\r\n\t</Esri>\r\n\t<dataIdInfo>\r\n\t\t<idCitation>\r\n\t\t\t<resTitle>plu_zone_urba_ge</resTitle>\r\n\t\t</idCitation>\r\n\t\t<idAbs>plu_zone_urba</idAbs>\r\n\t\t<idCredit>\r\n\t\t</idCredit>\r\n\t\t<idPurp>\r\n\t\t</idPurp>\r\n\t\t<resConst>\r\n\t\t\t<Consts>\r\n\t\t\t\t<useLimit>\r\n\t\t\t\t</useLimit>\r\n\t\t\t</Consts>\r\n\t\t</resConst>\r\n\t</dataIdInfo>\r\n</metadata>\r\n"
     },
     {
       "type" : "CIMBinaryReference",
-      "uRI" : "CIMPATH=Metadata/a4f3b4d878ed16e6b4356a5d974b44dd.xml",
-      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"fr\"><Esri><CreaDate>20250617</CreaDate><CreaTime>08583900</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>plu_zone_urba_ge</resTitle></idCitation><idAbs>plu_zone_urba</idAbs><idCredit></idCredit><idPurp></idPurp><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
+      "uRI" : "CIMPATH=Metadata/9cf302699228a316d539be3f53df0e63.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"fr\">\r\n\t<Esri>\r\n\t\t<CreaDate>20250617</CreaDate>\r\n\t\t<CreaTime>08560000</CreaTime>\r\n\t\t<ArcGISFormat>1.0</ArcGISFormat>\r\n\t\t<SyncOnce>TRUE</SyncOnce>\r\n\t</Esri>\r\n\t<dataIdInfo>\r\n\t\t<idCitation>\r\n\t\t\t<resTitle>plu_zone_urba</resTitle>\r\n\t\t</idCitation>\r\n\t\t<idAbs>plu_zone_urba</idAbs>\r\n\t\t<idCredit>\r\n\t\t</idCredit>\r\n\t\t<idPurp>\r\n\t\t</idPurp>\r\n\t\t<resConst>\r\n\t\t\t<Consts>\r\n\t\t\t\t<useLimit>\r\n\t\t\t\t</useLimit>\r\n\t\t\t</Consts>\r\n\t\t</resConst>\r\n\t</dataIdInfo>\r\n</metadata>\r\n"
+    },
+    {
+      "type" : "CIMBinaryReference",
+      "uRI" : "CIMPATH=Metadata/d8a09e4c10e10419ce58454163166131.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"fr\">\r\n\t<Esri>\r\n\t\t<CreaDate>20251219</CreaDate>\r\n\t\t<CreaTime>10273400</CreaTime>\r\n\t\t<ArcGISFormat>1.0</ArcGISFormat>\r\n\t\t<SyncOnce>TRUE</SyncOnce>\r\n\t</Esri>\r\n</metadata>\r\n"
     },
     {
       "type" : "CIMBinaryReference",
@@ -97,7 +107,7 @@
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251217_151520.gdb",
+          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251219_102203.gdb",
           "workspaceFactory" : "FileGDB",
           "dataset" : "plu_inf_p",
           "datasetType" : "esriDTFeatureClass"
@@ -807,7 +817,7 @@
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251217_151520.gdb",
+          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251219_102203.gdb",
           "workspaceFactory" : "FileGDB",
           "dataset" : "plu_inf_l",
           "datasetType" : "esriDTFeatureClass"
@@ -1513,7 +1523,7 @@
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251217_151520.gdb",
+          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251219_102203.gdb",
           "workspaceFactory" : "FileGDB",
           "dataset" : "plu_inf_s",
           "datasetType" : "esriDTFeatureClass"
@@ -6685,7 +6695,7 @@
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251217_151520.gdb",
+          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251219_102203.gdb",
           "workspaceFactory" : "FileGDB",
           "dataset" : "plu_inf_carreau",
           "datasetType" : "esriDTFeatureClass"
@@ -7271,7 +7281,7 @@
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251217_151520.gdb",
+          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251219_102203.gdb",
           "workspaceFactory" : "FileGDB",
           "dataset" : "plu_psc_p",
           "datasetType" : "esriDTFeatureClass"
@@ -14489,7 +14499,7 @@
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251217_151520.gdb",
+          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251219_102203.gdb",
           "workspaceFactory" : "FileGDB",
           "dataset" : "plu_psc_l",
           "datasetType" : "esriDTFeatureClass"
@@ -22947,7 +22957,7 @@
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251217_151520.gdb",
+          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251219_102203.gdb",
           "workspaceFactory" : "FileGDB",
           "dataset" : "plu_psc_s",
           "datasetType" : "esriDTFeatureClass"
@@ -36358,7 +36368,7 @@
         "editable" : true,
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251217_151520.gdb",
+          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251219_102203.gdb",
           "workspaceFactory" : "FileGDB",
           "dataset" : "plu_psc_carreau",
           "datasetType" : "esriDTFeatureClass"
@@ -36857,15 +36867,17 @@
       "name" : "plu_zone_urba_pe",
       "uRI" : "CIMPATH=zonage_2/plu_zone_urba_pe.xml",
       "sourceModifiedTime" : {
-        "type" : "TimeInstant"
+        "type" : "TimeInstant",
+        "start" : -62135596800000
       },
-      "metadataURI" : "CIMPATH=Metadata/9d975d7d5ef6cf8de38d87e39510f2e6.xml",
+      "metadataURI" : "CIMPATH=Metadata/9cf302699228a316d539be3f53df0e63.xml",
       "useSourceMetadata" : true,
       "description" : "plu_zone_urba",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
         "elevationSurfaceLayerURI" : "CIMPATH=carte2/sol.json"
       },
+      "expanded" : true,
       "layerType" : "Operational",
       "maxScale" : 2500,
       "showLegends" : true,
@@ -36885,6 +36897,13 @@
         "displayField" : "Shape_Length",
         "editable" : true,
         "fieldDescriptions" : [
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "code symbole",
+            "fieldName" : "SYMBOLE",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
           {
             "type" : "CIMFieldDescription",
             "alias" : "OBJECTID",
@@ -36953,20 +36972,6 @@
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "code symbole sup2500",
-            "fieldName" : "symb_sup2500",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "code symbole inf2500",
-            "fieldName" : "symb_inf2500",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
             "alias" : "Etiquette",
             "fieldName" : "etiquette",
             "visible" : true,
@@ -36975,9 +36980,9 @@
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251217_151520.gdb",
+          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251219_102203.gdb",
           "workspaceFactory" : "FileGDB",
-          "dataset" : "plu_zone_urba",
+          "dataset" : "plu_zone_urba_pe",
           "datasetType" : "esriDTFeatureClass"
         },
         "studyAreaSpatialRel" : "esriSpatialRelUndefined",
@@ -37360,7 +37365,7 @@
         },
         "defaultSymbolPatch" : "Default",
         "fields" : [
-          "symb_inf2500"
+          "SYMBOLE"
         ],
         "groups" : [
           {
@@ -37659,9 +37664,10 @@
       "name" : "plu_zone_urba_ge",
       "uRI" : "CIMPATH=zonage_2/plu_zone_urba_ge.xml",
       "sourceModifiedTime" : {
-        "type" : "TimeInstant"
+        "type" : "TimeInstant",
+        "start" : -62135596800000
       },
-      "metadataURI" : "CIMPATH=Metadata/a4f3b4d878ed16e6b4356a5d974b44dd.xml",
+      "metadataURI" : "CIMPATH=Metadata/9c4bf891621deea2e207fe85d568ca29.xml",
       "useSourceMetadata" : true,
       "description" : "plu_zone_urba",
       "layerElevation" : {
@@ -37687,6 +37693,13 @@
         "displayField" : "Shape_Length",
         "editable" : true,
         "fieldDescriptions" : [
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "code symbole",
+            "fieldName" : "SYMBOLE",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
           {
             "type" : "CIMFieldDescription",
             "alias" : "OBJECTID",
@@ -37755,20 +37768,6 @@
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "code symbole sup2500",
-            "fieldName" : "symb_sup2500",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "code symbole inf2500",
-            "fieldName" : "symb_inf2500",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
             "alias" : "Etiquette",
             "fieldName" : "etiquette",
             "visible" : true,
@@ -37777,9 +37776,9 @@
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251217_151520.gdb",
+          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251219_102203.gdb",
           "workspaceFactory" : "FileGDB",
-          "dataset" : "plu_zone_urba",
+          "dataset" : "plu_zone_urba_ge",
           "datasetType" : "esriDTFeatureClass"
         },
         "studyAreaSpatialRel" : "esriSpatialRelUndefined",
@@ -39392,7 +39391,7 @@
         },
         "defaultSymbolPatch" : "Default",
         "fields" : [
-          "symb_sup2500"
+          "SYMBOLE"
         ],
         "groups" : [
           {
@@ -39831,7 +39830,7 @@
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251217_151520.gdb",
+          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251219_102203.gdb",
           "workspaceFactory" : "FileGDB",
           "dataset" : "plu_zone_urba_carreau",
           "datasetType" : "esriDTFeatureClass"
@@ -40330,7 +40329,7 @@
         "type" : "TimeInstant",
         "start" : 978307200000
       },
-      "metadataURI" : "CIMPATH=Metadata/9d975d7d5ef6cf8de38d87e39510f2e6.xml",
+      "metadataURI" : "CIMPATH=Metadata/262539f4585c7d0c9bf56fbd7b4b5552.xml",
       "useSourceMetadata" : true,
       "description" : "plu_zone_urba",
       "layerElevation" : {
@@ -40356,6 +40355,13 @@
         "displayField" : "Shape_Length",
         "editable" : true,
         "fieldDescriptions" : [
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "code symbole",
+            "fieldName" : "SYMBOLE",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
           {
             "type" : "CIMFieldDescription",
             "alias" : "OBJECTID",
@@ -40424,20 +40430,6 @@
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "code symbole sup2500",
-            "fieldName" : "symb_sup2500",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "code symbole inf2500",
-            "fieldName" : "symb_inf2500",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
             "alias" : "Etiquette",
             "fieldName" : "etiquette",
             "visible" : true,
@@ -40446,9 +40438,9 @@
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251217_151520.gdb",
+          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251219_102203.gdb",
           "workspaceFactory" : "FileGDB",
-          "dataset" : "plu_zone_urba",
+          "dataset" : "plu_zone_urba_pe",
           "datasetType" : "esriDTFeatureClass"
         },
         "studyAreaSpatialRel" : "esriSpatialRelUndefined",
@@ -40831,7 +40823,7 @@
         },
         "defaultSymbolPatch" : "Default",
         "fields" : [
-          "symb_inf2500"
+          "SYMBOLE"
         ],
         "groups" : [
           {
@@ -41133,6 +41125,7 @@
         "type" : "TimeInstant",
         "start" : 978307200000
       },
+      "metadataURI" : "CIMPATH=Metadata/d8a09e4c10e10419ce58454163166131.xml",
       "useSourceMetadata" : true,
       "description" : "plu_zone_urba",
       "layerElevation" : {
@@ -41158,6 +41151,13 @@
         "displayField" : "Shape_Length",
         "editable" : true,
         "fieldDescriptions" : [
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "code symbole",
+            "fieldName" : "SYMBOLE",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
           {
             "type" : "CIMFieldDescription",
             "alias" : "OBJECTID",
@@ -41226,20 +41226,6 @@
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "code symbole sup2500",
-            "fieldName" : "symb_sup2500",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "code symbole inf2500",
-            "fieldName" : "symb_inf2500",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
             "alias" : "Etiquette",
             "fieldName" : "etiquette",
             "visible" : true,
@@ -41248,9 +41234,9 @@
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251217_151520.gdb",
+          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251219_102203.gdb",
           "workspaceFactory" : "FileGDB",
-          "dataset" : "plu_zone_urba",
+          "dataset" : "plu_zone_urba_ge",
           "datasetType" : "esriDTFeatureClass"
         },
         "studyAreaSpatialRel" : "esriSpatialRelUndefined",
@@ -41633,7 +41619,7 @@
         },
         "defaultSymbolPatch" : "Default",
         "fields" : [
-          "symb_sup2500"
+          "SYMBOLE"
         ],
         "groups" : [
           {
@@ -42072,7 +42058,7 @@
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251217_151520.gdb",
+          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_251219_102203.gdb",
           "workspaceFactory" : "FileGDB",
           "dataset" : "plu_zone_urba_carreau",
           "datasetType" : "esriDTFeatureClass"

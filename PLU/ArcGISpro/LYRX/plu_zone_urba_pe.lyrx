@@ -14,7 +14,7 @@
         "type" : "TimeInstant",
         "start" : 978307200000
       },
-      "metadataURI" : "CIMPATH=Metadata/9d975d7d5ef6cf8de38d87e39510f2e6.xml",
+      "metadataURI" : "CIMPATH=Metadata/d3ba0d0cd1b9f702bd6e92cd75c724fe.xml",
       "useSourceMetadata" : true,
       "description" : "plu_zone_urba",
       "layerElevation" : {
@@ -43,6 +43,79 @@
         "fieldDescriptions" : [
           {
             "type" : "CIMFieldDescription",
+            "alias" : "OBJECTID",
+            "fieldName" : "OBJECTID",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "readOnly" : true,
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape",
+            "fieldName" : "Shape",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape_Length",
+            "fieldName" : "Shape_Length",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "readOnly" : true,
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape_Area",
+            "fieldName" : "Shape_Area",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "readOnly" : true,
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Type de la zone",
+            "fieldName" : "typzone",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Libelle du type de la zone",
+            "fieldName" : "lib_type",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "code symbole",
+            "fieldName" : "SYMBOLE",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
             "alias" : "Etiquette",
             "fieldName" : "etiquette",
             "visible" : true,
@@ -51,9 +124,9 @@
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=.\\data_SG5_250924_133300.gdb",
+          "workspaceConnectionString" : "DATABASE=..\\..\\..\\data_SG5_251219_102203.gdb",
           "workspaceFactory" : "FileGDB",
-          "dataset" : "plu_zone_urba",
+          "dataset" : "plu_zone_urba_pe",
           "datasetType" : "esriDTFeatureClass"
         },
         "studyAreaSpatialRel" : "esriSpatialRelUndefined",
@@ -440,7 +513,7 @@
         },
         "defaultSymbolPatch" : "Default",
         "fields" : [
-          "symb_inf2500"
+          "SYMBOLE"
         ],
         "groups" : [
           {
@@ -738,8 +811,8 @@
   "binaryReferences" : [
     {
       "type" : "CIMBinaryReference",
-      "uRI" : "CIMPATH=Metadata/9d975d7d5ef6cf8de38d87e39510f2e6.xml",
-      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"fr\"><Esri><CreaDate>20250617</CreaDate><CreaTime>08560000</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>plu_zone_urba</resTitle></idCitation><idAbs>plu_zone_urba</idAbs><idCredit></idCredit><idPurp></idPurp><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
+      "uRI" : "CIMPATH=Metadata/d3ba0d0cd1b9f702bd6e92cd75c724fe.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"fr\">\r\n\t<Esri>\r\n\t\t<CreaDate>20251219</CreaDate>\r\n\t\t<CreaTime>10283400</CreaTime>\r\n\t\t<ArcGISFormat>1.0</ArcGISFormat>\r\n\t\t<SyncOnce>TRUE</SyncOnce>\r\n\t</Esri>\r\n</metadata>\r\n"
     }
   ],
   "rGBColorProfile" : "sRGB IEC61966-2.1",
