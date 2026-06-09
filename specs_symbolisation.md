@@ -298,7 +298,7 @@ Pour cela, créer un paquetage de tuiles puis le charger sur Portal pour le publ
 Depuis Geoserver : le principe consiste à récupérer des fichiers SLD sous forme de flux. Pour cela :
 
 * soit utiliser un symbole svg stocké sur une url stable et Geoserver (ou QGIS) l'appelle depuis un SLD structuré comme suit :
-
+'''
 <PointSymbolizer>
 <Graphic>
 <ExternalGraphic>
@@ -314,4 +314,4 @@ Depuis Geoserver : le principe consiste à récupérer des fichiers SLD sous for
 <CssParameter name="fill">#31972a</CssParameter>
 </Fill>
 </Mark>
-
+'''
