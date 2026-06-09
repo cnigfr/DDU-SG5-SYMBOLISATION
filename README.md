@@ -12,7 +12,7 @@ Retrouvez notamment ici :
     - [XML et QML pour QGIS](/PSMV/QGIS), [STYLX et LYRX pour ArcGISpro](/PSMV/ArcGISpro) et [SLD](https://www.geoportail-urbanisme.gouv.fr/services/?subcategory=services_resources) pour les données PSMV,
     - [QML pour QGIS](/SUP/QML), [STYLX pour ArcGISpro](/SUP/ArcGISpro) et [SLD](https://www.geoportail-urbanisme.gouv.fr/services/?subcategory=services_resources) pour les données SUP ;
 
-Plus d'explications dans le guide *[Spécifications de symbolisation des documents d'urbanisme](https://drive.google.com/drive/folders/1YHCxmiWknRLXUREbOYq4CUpvqYGZaw2Z)*.
+Plus d'explications dans le guide *[Spécifications de symbolisation des documents d'urbanisme](Specifications_symbolisation.md)*.
 
 ## [tableau de suivi des symbolisation](https://docs.google.com/spreadsheets/d/1_xl1gKXMqGnkKr7L2SuKzsmZaqNaMdzDudC-sjX1BQA/edit?usp=sharing) pour suivre les évolutions des symbolisations !!!
 
