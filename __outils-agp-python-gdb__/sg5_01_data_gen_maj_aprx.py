@@ -5,7 +5,7 @@
 # Author:      nicolas.kulpinski omiplu.mikkrogeo.com
 #
 # Created:     13/06/2025
-# Modified:    19/12/2025
+# Modified:    11/03/2026
 # Copyright:   (c) n.kulpinski 2025
 # Licence:     GPL
 #-------------------------------------------------------------------------------
@@ -930,6 +930,7 @@ fields = [["typesup", "TEXT", "Type de la SUP", 10],
 ["symb_sup", "TEXT", "code symbole surfacique", 40],
 ["d_symb_sup", "TEXT", "description symbole surfacique", 1500],
 ["blanc", "TEXT", "Carreau blanc ou pas", 10],
+["application", "TEXT", "liste des symboles communs", 350],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(sup_carreau,fields)
 
@@ -965,6 +966,7 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
     d_symb_sup = ligne_separee [3]  
     etiquette = ligne_separee [4]
     classement = ligne_separee [5]
+    application = ligne_separee [6]
     if classement != "sous-code" :
         print(f"#"*20)
         print(f"SUP --> {etiquette}") 
@@ -974,10 +976,10 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
         else :
             blanc = "gris"
             
-        cursor = arcpy.da.InsertCursor(sup_carreau,["SHAPE@","typesup","lib_sup","symb_sup","d_symb_sup","blanc","etiquette"])
+        cursor = arcpy.da.InsertCursor(sup_carreau,["SHAPE@","typesup","lib_sup","symb_sup","d_symb_sup","blanc","application","etiquette"])
         carreau = arcpy.Array([arcpy.Point(x - 10, y - 10),arcpy.Point(x - 10, y + 80),arcpy.Point(x + 80, y + 80),arcpy.Point(x + 80, y - 10)])
         polygon = arcpy.Polygon(carreau, spatial_reference)
-        cursor.insertRow([polygon,typesup,lib_sup,symb_sup,d_symb_sup,blanc,etiquette])
+        cursor.insertRow([polygon,typesup,lib_sup,symb_sup,d_symb_sup,blanc,application,etiquette])
 
         cursor = arcpy.da.InsertCursor(sup_ass,["SHAPE@","typesup","lib_sup","SYMBOLE","etiquette"])
         #carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 40, y + 40),arcpy.Point(x + 40, y)])
