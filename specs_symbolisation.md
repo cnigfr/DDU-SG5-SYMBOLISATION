@@ -125,7 +125,7 @@ Cartographie dynamique développée dans le cadre du programme arcOpole (Esri Fr
 
 <p align="center">
   <a href="https://esrifrance.maps.arcgis.com/apps/webappviewer/index.html?id=8563c522029b46e0b6221847d7aca94c">
-    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/__Ressources/illustrations/exemple_symbo.png" alt="Exemple de symbolisation PLU">
+    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/blob/SYMBOLISATION/__Ressources/illustrations/exemple_symbo.png" alt="Exemple de symbolisation PLU">
   </a>
 </p>
 <p align="center"><em>Cliquez sur l’image pour accéder à la cartographie dynamique</em></p>
@@ -139,7 +139,7 @@ Les symbolisations sont réparties suivant quatre plages d’échelles : « Vue 
 « Vue d’ensemble » correspond à l'emprise départementale, régionale ou nationale.
 
 <p align="center">
-    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/__Ressources/illustrations/vue_ensemble.png" alt="Exemple de symbolisation du PLU à l’échelle vue d’ensemble">
+    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/blob/SYMBOLISATION/__Ressources/illustrations/vue_ensemble.png" alt="Exemple de symbolisation du PLU à l’échelle vue d’ensemble">
 </p>
 
 #### Echelle « Commune »
@@ -147,7 +147,7 @@ Les symbolisations sont réparties suivant quatre plages d’échelles : « Vue 
 Échelle inférieure au 1/10000 (ou 1/50000) faisant apparaître uniquement le zonage du PLU en fonction du type de zone (U, AUc, AUs, A, N), et la sectorisation des cartes communales.
 
 <p align="center">
-    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/__Ressources/illustrations/vue_commune.png" alt="Exemple de symbolisation du PLU à l’échelle communale">
+    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/blob/SYMBOLISATION/__Ressources/illustrations/vue_commune.png" alt="Exemple de symbolisation du PLU à l’échelle communale">
 </p>
 
 #### Echelle « Quartier »
@@ -155,7 +155,7 @@ Les symbolisations sont réparties suivant quatre plages d’échelles : « Vue 
 Échelle comprise entre 1/2500 et 1/10000 (ou 1/50000) faisant apparaître la destination dominante de zonage (habitat, activité, loisirs, équipements, etc.) si elle est présente dans le jeu de données sous forme d’un attribut complémentaire optionnel LIB\_DESTDOMI :
 
 <p align="center">
-    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/__Ressources/illustrations/vue_quartier.png" alt="Exemple de symbolisation du PLU à l’échelle quartier">
+    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/blob/SYMBOLISATION/__Ressources/illustrations/vue_quartier.png" alt="Exemple de symbolisation du PLU à l’échelle quartier">
 </p>
 
 #### Echelle « Parcelles »
@@ -163,7 +163,7 @@ Les symbolisations sont réparties suivant quatre plages d’échelles : « Vue 
 Échelle supérieure au 1/2500, faisant apparaître les prescriptions d’urbanisme et les périmètres d’information :
 
 <p align="center">
-    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/__Ressources/illustrations/vue_parcelles.png" alt="Exemple de symbolisation du PLU à l’échelle parcellaire">
+    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/blob/SYMBOLISATION/__Ressources/illustrations/vue_parcelles.png" alt="Exemple de symbolisation du PLU à l’échelle parcellaire">
 </p>
 
 ### Apparences
@@ -173,8 +173,8 @@ Les symbolisations sont réparties suivant quatre plages d’échelles : « Vue 
 Aux échelles « Commune » et « Quartier » les zonages apparaissent en aplat avec un contour gris. Une opacité à 60 % est ajoutée à l'ensemble de la couche.
 
 <p align="center">
-    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/__Ressources/illustrations/apparence_typezone.png" alt="Apparence du zonage PLU par type de zone">
-    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/__Ressources/illustrations/apparence_types.png" alt="Variation de symbolisation du zonage selon les types">
+    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/blob/SYMBOLISATION/__Ressources/illustrations/apparence_typezone.png" alt="Apparence du zonage PLU par type de zone">
+    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/blob/SYMBOLISATION/__Ressources/illustrations/apparence_types.png" alt="Variation de symbolisation du zonage selon les types">
 </p>
 
 
@@ -186,7 +186,7 @@ A l'échelle « Quartier » la couleur de l'aplat peut être déclinée en fonct
 Aux échelles « Commune » et « Quartier » les secteurs des cartes communales apparaissent en aplat avec un contour gris. Une opacité à 60 % est ajoutée à l'ensemble de la couche.
 
 <p align="center">
-    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/__Ressources/illustrations/cc_quartier.png" alt="Exemple de symbolisation des cartes communales à l’échelle quartier">
+    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/blob/SYMBOLISATION/__Ressources/illustrations/cc_quartier.png" alt="Exemple de symbolisation des cartes communales à l’échelle quartier">
 </p>
 
 
@@ -195,7 +195,7 @@ A l'échelle « Parcelles » : les zonages apparaissent uniquement en contour d�
 Aux échelles "Quartier" et "Parcelle", le libellé de zone est inscrit en étiquette dans un halo de la couleur du zonage sauf les zones A en noir dans un halo jaune.
 
 <p align="center">
-    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/__Ressources/illustrations/cc_parcelles.png" alt="Exemple de symbolisation des cartes communales à l’échelle parcellaire">
+    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/blob/SYMBOLISATION/__Ressources/illustrations/cc_parcelles.png" alt="Exemple de symbolisation des cartes communales à l’échelle parcellaire">
 </p>
 
 #### Apparences des prescriptions et périmètres d’informations
@@ -238,7 +238,7 @@ Tout comme pour le PLU, différentes ressources sont disponibles depuis le Githu
 ### Exemple de symbolisation d’un PSMV
 
 <p align="center">
-    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/__Ressources/illustrations/PSMV.jpeg" alt="Exemple de symbolisation PSMV">
+    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/blob/SYMBOLISATION/__Ressources/illustrations/PSMV.jpeg" alt="Exemple de symbolisation PSMV">
 </p>
 
 1- Les points de vue à préserver peuvent être dotés d’un indice qui renvoie à une liste intégrée au règlement.
@@ -261,7 +261,7 @@ A son ouverture, il est normalement proposé de l'installer. Dans le cas contrai
 Depuis QGIS, la nouvelle police sera proposée depuis le type « symbole de police ».
 
 <p align="center">
-    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/__Ressources/illustrations/police.png" alt="Interface d’installation et utilisation d’une police de symboles dans QGIS">
+    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/blob/SYMBOLISATION/__Ressources/illustrations/police.png" alt="Interface d’installation et utilisation d’une police de symboles dans QGIS">
 </p>
 
 ## 3.2. Traduction des codes « unicodes »
@@ -283,7 +283,7 @@ Par exemple, depuis QGIS, l’unité par défaut est le millimètre. Pour appliq
 
 
 <p align="center">
-    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/__Ressources/illustrations/unites_symboles.png" alt="Paramétrage des unités de symboles">
+    <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/blob/SYMBOLISATION/__Ressources/illustrations/unites_symboles.png" alt="Paramétrage des unités de symboles">
 </p>
 
 
