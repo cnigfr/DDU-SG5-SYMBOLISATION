@@ -56,8 +56,6 @@ Son élaboration a été initiée suite à la révision du géostandard CNIG PLU
 
 ## 1.2 Objectifs
 
-Le groupe de travail sur la dématérialisation des documents d’urbanisme (GT CNIG DDU) a travaillé sur le sujet de la symbolisation afin d’aboutir à une proposition pensée pour le format numérique des PLU.
-
 L’homogénéisation de la présentation des PLU numériques à l’échelle nationale est le principal objectif de ce document. En effet, une symbolisation commune permet de faciliter la lecture et ainsi la compréhension des PLU, avec des rendus homogènes d’un territoire à l’autre.
 
 Ce document vise également à faciliter la mise en œuvre par les autorités compétentes de la présentation des PLU grâce à des spécifications complètes, assorties de bibliothèques de symboles utilisables avec les outils SIG.
@@ -66,9 +64,11 @@ Ce document présente des propositions de symbolisation **sans valeur prescripti
 
 ## 1.3 Ressources du Github
 
-Les spécifications de symbolisation font l’objet d’améliorations continues par le sous-groupe symbolisation SG5, en coordination avec le GT CNIG DDU et le projet GPU.
+Les spécifications de symbolisation sont améliorées et complétées en continu par le SG5 Symbolisation, en coordination avec le GT CNIG DDU et le projet GPU.
 
-Elles étaient initialement présentées sous forme littérale. Elles sont désormais présentées dans ce dépôt GitHub du sous-groupe Symbolisation du GT CNIG DDU. Celui-ci a été créé pour faciliter l'élaboration et l'échange de dictionnaires de symboles pour les documents d'urbanisme. On y retrouve :
+Initialement présentées sous forme littérale, elles sont désormais présentées dans ce dépôt GitHub créé pour faciliter l'élaboration et l'échange de dictionnaires de symboles pour les documents d'urbanisme.
+
+On y retrouve :
 
 * les préconisations de symbolisation produites par le SG5, disponibles pour les PLU et les PSMV au sein d'un catalogue au format pdf.
 * des planches de symbolisation synthétisant ces informations.
@@ -77,7 +77,7 @@ Elles étaient initialement présentées sous forme littérale. Elles sont déso
   * XML et QML pour QGIS.
   * STYLX et LYRX pour ArcGIS Pro.
   * SLD, notamment pour GeoServer.
-* les remarques et demandes d’évolutions des utilisateurs, visibles depuis la partie "Issues" du Github.
+* les remarques et demandes d’évolutions des utilisateurs, visibles dans la partie [Issues](https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/issues) du Github.
 
 ## 1.4 Ressources complémentaires
 
@@ -90,7 +90,7 @@ L'utilisateur pourra se référer aux ressources suivantes :
 
 ### Contact CNIG
 
-* cnig@cnig.gouv.fr
+* https://cnig.gouv.fr/spip.php?page=contact
 
 
 
@@ -100,7 +100,7 @@ L'utilisateur pourra se référer aux ressources suivantes :
 
 ### Généralités
 
-Le groupe de travail « Dématérialisation des documents d’urbanisme » du CNIG a élaboré des spécifications de symbolisation adaptées à la diffusion cartographique via internet des documents d’urbanisme numérisés, suivant le géostandard CNIG PLU/CC v2025-06.
+Le GT CNIG DDU a élaboré des spécifications de symbolisation adaptées à la diffusion cartographique via internet des documents d’urbanisme numérisés, suivant le géostandard CNIG PLU/CC v2025-06 et versions ultérieures
 
 Ces spécifications sont adaptées à :
 
@@ -152,7 +152,7 @@ Les symbolisations sont réparties suivant quatre plages d’échelles : « Vue 
 
 #### Echelle « Quartier »
 
-Échelle comprise entre 1/2500 et 1/10000 (ou 1/50000) faisant apparaître la destination dominante de zonage (habitat, activité, loisirs, équipements, etc.) si elle est présente dans le jeu de données sous forme d’un attribut complémentaire optionnel LIB\_DESTDOMI :
+Échelle comprise entre 1/2500 et 1/10000 (ou 1/50000) faisant apparaître la forme d'aménagement dominante souhaitée pour la zone (habitat, activité, loisirs, équipements, etc.) présente dans l'attribut FORMDOMI :
 
 <p align="center">
     <img src="https://github.com/cnigfr/DDU-SG5-SYMBOLISATION/blob/SYMBOLISATION/__Ressources/illustrations/vue_quartier.png" alt="Exemple de symbolisation du PLU à l’échelle quartier">
@@ -179,7 +179,7 @@ Aux échelles « Commune » et « Quartier » les zonages apparaissent en aplat 
 
 
 
-A l'échelle « Quartier » la couleur de l'aplat peut être déclinée en fonction de la combinaison entre le type de zone et la destination dominante si l'information est présente dans le jeu de données sous forme d’un attribut complémentaire optionnel LIB\_DESTDOMI.
+A l'échelle « Quartier » la couleur de l'aplat peut être déclinée en fonction de la combinaison entre le type de zone et la forme d'aménagement dominante 
 
 #### Apparence de la sectorisation des cartes communales
 
@@ -204,7 +204,7 @@ Les prescriptions et périmètres d’informations apparaissent uniquement à l'
 La sous-codification liée aux attributs STYPEPSC et STYPEINF n'est pas constamment utilisée pour la symbolisation, mais elle l'est en particulier pour les objets PRESCRIPTION :
 
 * 02-00à02 (limitations de la constructibilité)
-* 05-05à07 (emplacements réservés)
+* 05-00à08 (emplacements réservés)
 * 07-04à05 (éléments de paysage)
 * 16-03 (STECAL)
 et INFORMATION 04-01 (Périmètre de DPU renforcé)
