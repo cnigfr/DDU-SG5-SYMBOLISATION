@@ -14,7 +14,7 @@ Retrouvez notamment ici :
 
   * [XML et QML pour QGIS](/PLU/QGIS), [STYLX et LYRX pour ArcGISpro](/PLU/ArcGISpro) et [SLD](https://www.geoportail-urbanisme.gouv.fr/services/?subcategory=services_resources) pour les données **PLU**,
   * [XML et QML pour QGIS](/PSMV/QGIS), [STYLX et LYRX pour ArcGISpro](/PSMV/ArcGISpro) et [SLD](https://www.geoportail-urbanisme.gouv.fr/services/?subcategory=services_resources) pour les données **PSMV**,
-  * [QML pour QGIS](/SUP/QML), [STYLX pour ArcGISpro](/SUP/ArcGISpro) et [SLD](https://www.geoportail-urbanisme.gouv.fr/services/?subcategory=services_resources) pour les données **SUP**,
+  * [XML et QML pour QGIS](/SUP/QML), [STYLX et LYRX pour ArcGISpro](/SUP/ArcGISpro) et [SLD](https://www.geoportail-urbanisme.gouv.fr/services/?subcategory=services_resources) pour les données **SUP**,
 
 Plus d'explications dans le guide [*Spécifications de symbolisation des documents d'urbanisme*](Specifications_symbolisation.md).
 
