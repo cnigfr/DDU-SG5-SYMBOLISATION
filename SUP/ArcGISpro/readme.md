@@ -1,3 +1,38 @@
-Vous trouverez dans ce dossier les fichiers de style STYLX pour ArcGISpro pour la symbolisation des SUP
-Actuellement uniquement en version 3.x
-Ce fichier est fourni par ESRI France
+\# Ressources ArcGISpro
+
+
+
+\- Le fichier \[SUP\_CNIG.stylx](/SUP/ArcGISpro/SUP\_CNIG.stylx) contient toutes les symbolisations qu'elles soient ponctuelles, linéaires, surfaciques, de texte ou même de position du texte.
+
+
+
+\- Le dossier \[LYRX](/SUP/ArcGISpro/LYRX) contient les symbolisations sous forme de fichiers lyrx.
+
+
+
+\# Utilisation du fichier \[SUP\_CNIG.stylx](/SUP/ArcGISpro/SUP\_CNIG.stylx) avec ArcGISpro
+
+
+
+\### Chargez les symbologies en fonction du champ SYMBOLE
+
+<img width="1083" height="780" alt="image" src="https://github.com/user-attachments/assets/5243002d-750b-4662-92b7-45326338abbf" />
+
+
+
+\### Cliquez sur Apparier la symbologie d'une couche à un style
+
+<img width="602" height="230" alt="image" src="https://github.com/user-attachments/assets/7eba3768-d2c4-4ed1-b866-8bc6864e6bbd" />
+
+
+
+\### Sélectionnez le CHAMP, le STYLE et exécutez
+
+<img width="585" height="244" alt="image" src="https://github.com/user-attachments/assets/3eb4dfef-55c1-49b0-8d9a-c151c11a8bbb" />
+
+
+
+\### Et voilà !!!
+
+<img width="927" height="731" alt="image" src="https://github.com/user-attachments/assets/52bd1b15-630c-4112-b3cd-6e7e2a86a831" />
+

@@ -1,10 +1,10 @@
 # Ressources QGIS
 
-- Le fichier [PLU_CNIG.xml](/PLU/QGIS/PLU_CNIG.xml) contient toutes les symbolisations qu'elles soient ponctuelles, linéaires, surfaciques ou même de texte.
+- Le fichier [PSMV_CNIG.xml](/PSMV/QGIS/PSMV_CNIG.xml) contient toutes les symbolisations qu'elles soient ponctuelles, linéaires, surfaciques ou même de texte.
 
-- Le dossier [QML](/PLU/QGIS/QML) contient les symbolisations sous forme de fichiers qml.
+- Le dossier [QML](/PSMV/QGIS/QML) contient les symbolisations sous forme de fichiers qml.
 
-# Utilisation du fichier [PLU_CNIG.xml](/PLU/QGIS/PLU_CNIG.xml) avec QGIS
+# Utilisation du fichier [PSMV_CNIG.xml](/PSMV/QGIS/PSMV_CNIG.xml) avec QGIS
 
 ### Chargez les symbologies en fonction du champ SYMBOLE
 <img width="1284" height="749" alt="image" src="https://github.com/user-attachments/assets/2a5aac51-263e-417f-90f3-e3e465c786a7" />
