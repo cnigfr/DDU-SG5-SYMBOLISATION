@@ -44,7 +44,7 @@
 
 ## 1.1 Généalogie
 
-Ces spécifications de symbolisation des PLU et PSMV sont le résultat d'un travail continu du groupe de travail du CNIG sur la numérisation des documents d'urbanisme, et notamment du sous-groupe dédié **"Symbolisation - GT DDU / SG5"**, animé successivement par :
+Ces spécifications générales de symbolisation des PLU et PSMV sont le résultat d'un travail continu du groupe de travail du CNIG sur la numérisation des documents d'urbanisme, et notamment du sous-groupe dédié **SG5 Symbolisation**, animé successivement par :
 
 * M. Tanneau (Esri France)
 * S. Gabalda (Rambouillet Territoires)
