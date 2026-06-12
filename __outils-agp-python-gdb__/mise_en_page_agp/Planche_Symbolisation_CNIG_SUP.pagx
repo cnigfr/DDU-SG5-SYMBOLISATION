@@ -134,7 +134,7 @@
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_260310_140846.gdb",
+          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_260609_152959.gdb",
           "workspaceFactory" : "FileGDB",
           "dataset" : "sup_ass",
           "datasetType" : "esriDTFeatureClass"
@@ -763,9 +763,9 @@
                           "clipping" : "ClipAtBoundary"
                         },
                         "characterIndex" : 94,
-                        "fontFamilyName" : "Garamond",
+                        "fontFamilyName" : "Times New Roman",
                         "fontStyleName" : "Regular",
-                        "fontType" : "TTOpenType",
+                        "fontType" : "TrueType",
                         "scaleX" : 1,
                         "symbol" : {
                           "type" : "CIMPolygonSymbol",
@@ -905,93 +905,6 @@
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
                       "A7|gen|ass"
-                    ]
-                  }
-                ],
-                "visible" : true
-              },
-              {
-                "type" : "CIMUniqueValueClass",
-                "label" : "A8|gen|ass",
-                "patch" : "Default",
-                "symbol" : {
-                  "type" : "CIMSymbolReference",
-                  "symbol" : {
-                    "type" : "CIMPolygonSymbol",
-                    "symbolLayers" : [
-                      {
-                        "type" : "CIMCharacterMarker",
-                        "enable" : true,
-                        "anchorPointUnits" : "Relative",
-                        "dominantSizeAxis3D" : "Y",
-                        "rotation" : -90,
-                        "size" : 10,
-                        "billboardMode3D" : "FaceNearPlane",
-                        "markerPlacement" : {
-                          "type" : "CIMMarkerPlacementInsidePolygon",
-                          "gridType" : "Fixed",
-                          "randomness" : 100,
-                          "seed" : 13,
-                          "stepX" : 15,
-                          "stepY" : 15,
-                          "clipping" : "ClipAtBoundary"
-                        },
-                        "characterIndex" : 92,
-                        "fontFamilyName" : "Wingdings 3",
-                        "fontStyleName" : "Regular",
-                        "fontType" : "TTOpenType",
-                        "scaleX" : 1,
-                        "symbol" : {
-                          "type" : "CIMPolygonSymbol",
-                          "symbolLayers" : [
-                            {
-                              "type" : "CIMSolidFill",
-                              "enable" : true,
-                              "color" : {
-                                "type" : "CIMRGBColor",
-                                "values" : [
-                                  167,
-                                  193,
-                                  53,
-                                  100
-                                ]
-                              }
-                            }
-                          ],
-                          "angleAlignment" : "Map"
-                        },
-                        "scaleSymbolsProportionally" : true,
-                        "respectFrame" : true
-                      },
-                      {
-                        "type" : "CIMSolidStroke",
-                        "enable" : true,
-                        "capStyle" : "Round",
-                        "joinStyle" : "Round",
-                        "lineStyle3D" : "Strip",
-                        "miterLimit" : 4,
-                        "width" : 0.5,
-                        "height3D" : 1,
-                        "anchor3D" : "Center",
-                        "color" : {
-                          "type" : "CIMRGBColor",
-                          "values" : [
-                            0,
-                            255,
-                            0,
-                            100
-                          ]
-                        }
-                      }
-                    ],
-                    "angleAlignment" : "Map"
-                  }
-                },
-                "values" : [
-                  {
-                    "type" : "CIMUniqueValue",
-                    "fieldValues" : [
-                      "A8|gen|ass"
                     ]
                   }
                 ],
@@ -1375,6 +1288,92 @@
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
                       "AC2|gen_inscrit|ass"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "AC3|gen_reservenatnationale|ass",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMCharacterMarker",
+                        "enable" : true,
+                        "anchorPointUnits" : "Relative",
+                        "dominantSizeAxis3D" : "Y",
+                        "size" : 12,
+                        "billboardMode3D" : "FaceNearPlane",
+                        "markerPlacement" : {
+                          "type" : "CIMMarkerPlacementInsidePolygon",
+                          "gridType" : "Fixed",
+                          "randomness" : 100,
+                          "seed" : 13,
+                          "stepX" : 5,
+                          "stepY" : 5,
+                          "clipping" : "ClipAtBoundary"
+                        },
+                        "characterIndex" : 94,
+                        "fontFamilyName" : "Times New Roman",
+                        "fontStyleName" : "Regular",
+                        "fontType" : "TrueType",
+                        "scaleX" : 1,
+                        "symbol" : {
+                          "type" : "CIMPolygonSymbol",
+                          "symbolLayers" : [
+                            {
+                              "type" : "CIMSolidFill",
+                              "enable" : true,
+                              "color" : {
+                                "type" : "CIMRGBColor",
+                                "values" : [
+                                  255,
+                                  128,
+                                  0,
+                                  100
+                                ]
+                              }
+                            }
+                          ],
+                          "angleAlignment" : "Map"
+                        },
+                        "scaleSymbolsProportionally" : true,
+                        "respectFrame" : true
+                      },
+                      {
+                        "type" : "CIMSolidStroke",
+                        "enable" : true,
+                        "capStyle" : "Round",
+                        "joinStyle" : "Round",
+                        "lineStyle3D" : "Strip",
+                        "miterLimit" : 4,
+                        "width" : 0.5,
+                        "height3D" : 1,
+                        "anchor3D" : "Center",
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            255,
+                            128,
+                            0,
+                            100
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment" : "Map"
+                  }
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "AC3|gen_reservenatnationale|ass"
                     ]
                   }
                 ],
@@ -1788,80 +1787,6 @@
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
                       "AR6|gen|ass"
-                    ]
-                  }
-                ],
-                "visible" : true
-              },
-              {
-                "type" : "CIMUniqueValueClass",
-                "label" : "AS1|gen_eaupotable|ass_immediat",
-                "patch" : "Default",
-                "symbol" : {
-                  "type" : "CIMSymbolReference",
-                  "symbol" : {
-                    "type" : "CIMPolygonSymbol",
-                    "symbolLayers" : [
-                      {
-                        "type" : "CIMSolidStroke",
-                        "enable" : true,
-                        "capStyle" : "Round",
-                        "joinStyle" : "Round",
-                        "lineStyle3D" : "Strip",
-                        "miterLimit" : 4,
-                        "width" : 1.5,
-                        "height3D" : 1,
-                        "anchor3D" : "Center",
-                        "color" : {
-                          "type" : "CIMRGBColor",
-                          "values" : [
-                            0,
-                            170,
-                            255,
-                            100
-                          ]
-                        }
-                      },
-                      {
-                        "type" : "CIMHatchFill",
-                        "enable" : true,
-                        "lineSymbol" : {
-                          "type" : "CIMLineSymbol",
-                          "symbolLayers" : [
-                            {
-                              "type" : "CIMSolidStroke",
-                              "enable" : true,
-                              "capStyle" : "Round",
-                              "joinStyle" : "Round",
-                              "lineStyle3D" : "Strip",
-                              "miterLimit" : 4,
-                              "width" : 0.80000000000000004,
-                              "height3D" : 1,
-                              "anchor3D" : "Center",
-                              "color" : {
-                                "type" : "CIMRGBColor",
-                                "values" : [
-                                  0,
-                                  170,
-                                  255,
-                                  100
-                                ]
-                              }
-                            }
-                          ]
-                        },
-                        "rotation" : 45,
-                        "separation" : 5
-                      }
-                    ],
-                    "angleAlignment" : "Map"
-                  }
-                },
-                "values" : [
-                  {
-                    "type" : "CIMUniqueValue",
-                    "fieldValues" : [
-                      "AS1|gen_eaupotable|ass_immediat"
                     ]
                   }
                 ],
@@ -2826,9 +2751,9 @@
                           "clipping" : "ClipAtBoundary"
                         },
                         "characterIndex" : 94,
-                        "fontFamilyName" : "Garamond",
+                        "fontFamilyName" : "Times New Roman",
                         "fontStyleName" : "Regular",
-                        "fontType" : "TTOpenType",
+                        "fontType" : "TrueType",
                         "scaleX" : 1,
                         "symbol" : {
                           "type" : "CIMPolygonSymbol",
@@ -3564,9 +3489,9 @@
                           "clipping" : "ClipAtBoundary"
                         },
                         "characterIndex" : 94,
-                        "fontFamilyName" : "Garamond",
+                        "fontFamilyName" : "Times New Roman",
                         "fontStyleName" : "Regular",
-                        "fontType" : "TTOpenType",
+                        "fontType" : "TrueType",
                         "scaleX" : 1,
                         "symbol" : {
                           "type" : "CIMPolygonSymbol",
@@ -3809,9 +3734,9 @@
                           "clipping" : "ClipAtBoundary"
                         },
                         "characterIndex" : 94,
-                        "fontFamilyName" : "Garamond",
+                        "fontFamilyName" : "Times New Roman",
                         "fontStyleName" : "Regular",
-                        "fontType" : "TTOpenType",
+                        "fontType" : "TrueType",
                         "scaleX" : 1,
                         "symbol" : {
                           "type" : "CIMPolygonSymbol",
@@ -3892,7 +3817,7 @@
               },
               {
                 "type" : "CIMUniqueValueClass",
-                "label" : "PT1|gen_niveau_1|ass_garde",
+                "label" : "PT1|gen_niveau1|ass_garde",
                 "patch" : "Default",
                 "symbol" : {
                   "type" : "CIMSymbolReference",
@@ -3958,7 +3883,7 @@
                   {
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
-                      "PT1|gen_niveau_1|ass_garde"
+                      "PT1|gen_niveau1|ass_garde"
                     ]
                   }
                 ],
@@ -4009,7 +3934,7 @@
               },
               {
                 "type" : "CIMUniqueValueClass",
-                "label" : "T2|gen|ass_sol§xx",
+                "label" : "T2|gen|ass_sol",
                 "patch" : "Default",
                 "symbol" : {
                   "type" : "CIMSymbolReference",
@@ -4044,7 +3969,7 @@
                   {
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
-                      "T2|gen|ass_sol§xx"
+                      "T2|gen|ass_sol"
                     ]
                   }
                 ],
@@ -4126,7 +4051,7 @@
               },
               {
                 "type" : "CIMUniqueValueClass",
-                "label" : "T4|gen|ass_sol§xx",
+                "label" : "T4|gen|ass_sol",
                 "patch" : "Default",
                 "symbol" : {
                   "type" : "CIMSymbolReference",
@@ -4161,7 +4086,7 @@
                   {
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
-                      "T4|gen|ass_sol§xx"
+                      "T4|gen|ass_sol"
                     ]
                   }
                 ],
@@ -4169,7 +4094,7 @@
               },
               {
                 "type" : "CIMUniqueValueClass",
-                "label" : "T5|gen|ass_sol§xx",
+                "label" : "T5|gen|ass_sol",
                 "patch" : "Default",
                 "symbol" : {
                   "type" : "CIMSymbolReference",
@@ -4193,9 +4118,9 @@
                           "clipping" : "ClipAtBoundary"
                         },
                         "characterIndex" : 124,
-                        "fontFamilyName" : "Garamond",
+                        "fontFamilyName" : "Times New Roman",
                         "fontStyleName" : "Regular",
-                        "fontType" : "TTOpenType",
+                        "fontType" : "TrueType",
                         "scaleX" : 1,
                         "symbol" : {
                           "type" : "CIMPolygonSymbol",
@@ -4247,7 +4172,7 @@
                   {
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
-                      "T5|gen|ass_sol§xx"
+                      "T5|gen|ass_sol"
                     ]
                   }
                 ],
@@ -4544,93 +4469,7 @@
               },
               {
                 "type" : "CIMUniqueValueClass",
-                "label" : "AC3|gen_rnn|ass",
-                "patch" : "Default",
-                "symbol" : {
-                  "type" : "CIMSymbolReference",
-                  "symbol" : {
-                    "type" : "CIMPolygonSymbol",
-                    "symbolLayers" : [
-                      {
-                        "type" : "CIMCharacterMarker",
-                        "enable" : true,
-                        "anchorPointUnits" : "Relative",
-                        "dominantSizeAxis3D" : "Y",
-                        "size" : 12,
-                        "billboardMode3D" : "FaceNearPlane",
-                        "markerPlacement" : {
-                          "type" : "CIMMarkerPlacementInsidePolygon",
-                          "gridType" : "Fixed",
-                          "randomness" : 100,
-                          "seed" : 13,
-                          "stepX" : 5,
-                          "stepY" : 5,
-                          "clipping" : "ClipAtBoundary"
-                        },
-                        "characterIndex" : 94,
-                        "fontFamilyName" : "Garamond",
-                        "fontStyleName" : "Regular",
-                        "fontType" : "TTOpenType",
-                        "scaleX" : 1,
-                        "symbol" : {
-                          "type" : "CIMPolygonSymbol",
-                          "symbolLayers" : [
-                            {
-                              "type" : "CIMSolidFill",
-                              "enable" : true,
-                              "color" : {
-                                "type" : "CIMRGBColor",
-                                "values" : [
-                                  255,
-                                  128,
-                                  0,
-                                  100
-                                ]
-                              }
-                            }
-                          ],
-                          "angleAlignment" : "Map"
-                        },
-                        "scaleSymbolsProportionally" : true,
-                        "respectFrame" : true
-                      },
-                      {
-                        "type" : "CIMSolidStroke",
-                        "enable" : true,
-                        "capStyle" : "Round",
-                        "joinStyle" : "Round",
-                        "lineStyle3D" : "Strip",
-                        "miterLimit" : 4,
-                        "width" : 0.5,
-                        "height3D" : 1,
-                        "anchor3D" : "Center",
-                        "color" : {
-                          "type" : "CIMRGBColor",
-                          "values" : [
-                            255,
-                            128,
-                            0,
-                            100
-                          ]
-                        }
-                      }
-                    ],
-                    "angleAlignment" : "Map"
-                  }
-                },
-                "values" : [
-                  {
-                    "type" : "CIMUniqueValue",
-                    "fieldValues" : [
-                      "AC3|gen_rnn|ass"
-                    ]
-                  }
-                ],
-                "visible" : true
-              },
-              {
-                "type" : "CIMUniqueValueClass",
-                "label" : "AR3|gen|ass_prohibition_1",
+                "label" : "AR3|gen|ass_prohibition1",
                 "patch" : "Default",
                 "symbol" : {
                   "type" : "CIMSymbolReference",
@@ -4696,7 +4535,7 @@
                   {
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
-                      "AR3|gen|ass_prohibition_1"
+                      "AR3|gen|ass_prohibition1"
                     ]
                   }
                 ],
@@ -4778,7 +4617,7 @@
               },
               {
                 "type" : "CIMUniqueValueClass",
-                "label" : "PT1|gen_niveau_1|ass_protection",
+                "label" : "PT1|gen_niveau1|ass_protection",
                 "patch" : "Default",
                 "symbol" : {
                   "type" : "CIMSymbolReference",
@@ -4844,7 +4683,7 @@
                   {
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
-                      "PT1|gen_niveau_1|ass_protection"
+                      "PT1|gen_niveau1|ass_protection"
                     ]
                   }
                 ],
@@ -4926,7 +4765,7 @@
               },
               {
                 "type" : "CIMUniqueValueClass",
-                "label" : "EL9|gen_dpm|ass",
+                "label" : "EL9|gen_limdompubmaritim|ass",
                 "patch" : "Default",
                 "symbol" : {
                   "type" : "CIMSymbolReference",
@@ -4981,7 +4820,7 @@
                   {
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
-                      "EL9|gen_dpm|ass"
+                      "EL9|gen_limdompubmaritim|ass"
                     ]
                   }
                 ],
@@ -5143,9 +4982,9 @@
                           "clipping" : "ClipAtBoundary"
                         },
                         "characterIndex" : 94,
-                        "fontFamilyName" : "Garamond",
+                        "fontFamilyName" : "Times New Roman",
                         "fontStyleName" : "Regular",
-                        "fontType" : "TTOpenType",
+                        "fontType" : "TrueType",
                         "scaleX" : 1,
                         "symbol" : {
                           "type" : "CIMPolygonSymbol",
@@ -5378,7 +5217,7 @@
               },
               {
                 "type" : "CIMUniqueValueClass",
-                "label" : "PM8|gen_pointeau|ass",
+                "label" : "PM8|gen_pointdeau|ass",
                 "patch" : "Default",
                 "symbol" : {
                   "type" : "CIMSymbolReference",
@@ -5456,7 +5295,7 @@
                   {
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
-                      "PM8|gen_pointeau|ass"
+                      "PM8|gen_pointdeau|ass"
                     ]
                   }
                 ],
@@ -5464,7 +5303,7 @@
               },
               {
                 "type" : "CIMUniqueValueClass",
-                "label" : "AR1|gen|ass_sol§xx",
+                "label" : "AR1|gen|ass_sol",
                 "patch" : "Default",
                 "symbol" : {
                   "type" : "CIMSymbolReference",
@@ -5530,7 +5369,7 @@
                   {
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
-                      "AR1|gen|ass_sol§xx"
+                      "AR1|gen|ass_sol"
                     ]
                   }
                 ],
@@ -5538,7 +5377,7 @@
               },
               {
                 "type" : "CIMUniqueValueClass",
-                "label" : "AR2|gen|ass_sol§xx",
+                "label" : "AR2|gen|ass_sol",
                 "patch" : "Default",
                 "symbol" : {
                   "type" : "CIMSymbolReference",
@@ -5604,7 +5443,7 @@
                   {
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
-                      "AR2|gen|ass_sol§xx"
+                      "AR2|gen|ass_sol"
                     ]
                   }
                 ],
@@ -5612,7 +5451,7 @@
               },
               {
                 "type" : "CIMUniqueValueClass",
-                "label" : "EL4|gen|ass_sol§xx",
+                "label" : "EL4|gen|ass_sol",
                 "patch" : "Default",
                 "symbol" : {
                   "type" : "CIMSymbolReference",
@@ -5690,7 +5529,7 @@
                   {
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
-                      "EL4|gen|ass_sol§xx"
+                      "EL4|gen|ass_sol"
                     ]
                   }
                 ],
@@ -5698,7 +5537,7 @@
               },
               {
                 "type" : "CIMUniqueValueClass",
-                "label" : "EL8|gen|ass_sol§xx",
+                "label" : "EL8|gen|ass_sol",
                 "patch" : "Default",
                 "symbol" : {
                   "type" : "CIMSymbolReference",
@@ -5764,7 +5603,7 @@
                   {
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
-                      "EL8|gen|ass_sol§xx"
+                      "EL8|gen|ass_sol"
                     ]
                   }
                 ],
@@ -5772,7 +5611,7 @@
               },
               {
                 "type" : "CIMUniqueValueClass",
-                "label" : "T7|gen|ass_sol§xx",
+                "label" : "T7|gen|ass_sol",
                 "patch" : "Default",
                 "symbol" : {
                   "type" : "CIMSymbolReference",
@@ -5807,7 +5646,94 @@
                   {
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
-                      "T7|gen|ass_sol§xx"
+                      "T7|gen|ass_sol"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "A8|gen_montagne|ass",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMCharacterMarker",
+                        "enable" : true,
+                        "anchorPointUnits" : "Relative",
+                        "dominantSizeAxis3D" : "Y",
+                        "rotation" : -90,
+                        "size" : 10,
+                        "billboardMode3D" : "FaceNearPlane",
+                        "markerPlacement" : {
+                          "type" : "CIMMarkerPlacementInsidePolygon",
+                          "gridType" : "Fixed",
+                          "randomness" : 100,
+                          "seed" : 13,
+                          "stepX" : 15,
+                          "stepY" : 15,
+                          "clipping" : "ClipAtBoundary"
+                        },
+                        "characterIndex" : 92,
+                        "fontFamilyName" : "Wingdings 3",
+                        "fontStyleName" : "Regular",
+                        "fontType" : "TTOpenType",
+                        "scaleX" : 1,
+                        "symbol" : {
+                          "type" : "CIMPolygonSymbol",
+                          "symbolLayers" : [
+                            {
+                              "type" : "CIMSolidFill",
+                              "enable" : true,
+                              "color" : {
+                                "type" : "CIMRGBColor",
+                                "values" : [
+                                  167,
+                                  193,
+                                  53,
+                                  100
+                                ]
+                              }
+                            }
+                          ],
+                          "angleAlignment" : "Map"
+                        },
+                        "scaleSymbolsProportionally" : true,
+                        "respectFrame" : true
+                      },
+                      {
+                        "type" : "CIMSolidStroke",
+                        "enable" : true,
+                        "capStyle" : "Round",
+                        "joinStyle" : "Round",
+                        "lineStyle3D" : "Strip",
+                        "miterLimit" : 4,
+                        "width" : 0.5,
+                        "height3D" : 1,
+                        "anchor3D" : "Center",
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            0,
+                            255,
+                            0,
+                            100
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment" : "Map"
+                  }
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "A8|gen_montagne|ass"
                     ]
                   }
                 ],
@@ -5950,7 +5876,7 @@
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_260310_140846.gdb",
+          "workspaceConnectionString" : "DATABASE=..\\..\\SG5_Symbolisation\\data_SG5_260609_152959.gdb",
           "workspaceFactory" : "FileGDB",
           "dataset" : "sup_carreau",
           "datasetType" : "esriDTFeatureClass"
@@ -6964,7 +6890,7 @@
             ]
           },
           "placement" : "Unspecified",
-          "text" : "ASSIETTES des Servitudes d'Utilités Publiques ",
+          "text" : "ASSIETTES des Servitudes d'Utilité Publique",
           "shape" : {
             "rings" : [
               [
@@ -7068,7 +6994,7 @@
     },
     "dateExported" : {
       "type" : "TimeInstant",
-      "start" : 1773153041570
+      "start" : 1781080861372
     },
     "datePrinted" : {
       "type" : "TimeInstant"

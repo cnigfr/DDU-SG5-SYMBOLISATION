@@ -83,10 +83,10 @@ typepsc;stypepsc;nnn;lib_stype;surf;symb_surf;d_symb_surf;lin;symb_lin;d_symb_li
 18;00;001;Périmètre comportant des orientations d’aménagement et de programmation (OAP);S;PSC-S_18-00_001;Ligne simple\n• couleur : RVB 205,100,255 (#cd64ff)\n• largeur de trait : 3 pt\n• modèle de tiret personnalisé (tiret | espace) : [3-2-3-2-3-2] pt\n• style de cap : plat\n• style de jointure : angle droit;;;;;;;18-00 à 16_001;psmv;symbole
 18;01;001;OAP de projet (sans règlement);S;PSC-S_18-01_001;;;;;;;;18-01_001;psmv;sous-code
 18;02;001;OAP entrées de ville;S;PSC-S_18-02_001;;;;;;;;18-02_001;psmv;sous-code
-18;03;001;OAP relatives à la réhabilitation, la restructuration, la mise en valeur ou l’aménagement;S;PSC-S_18-03_001;;;;;;;;18-03_001;psmv;sous-code
-18;04;001;OAP d’adaptation des périmètres de transports collectifs;S;PSC-S_18-04_001;;;;;;;;18-04_001;psmv;sous-code
-18;05;001;OAP patrimoniales, architecturales et écologiques;S;PSC-S_18-05_001;;;;;;;;18-05_001;psmv;sous-code
-18;06;001;OAP relatives à l’habitat;S;PSC-S_18-06_001;;;;;;;;18-06_001;psmv;sous-code
+18;03;001;OAP comprenant des dispositions relatives à l'équipement commercial et artisanal;S;PSC-S_18-03_001;;;;;;;;18-03_001;psmv;sous-code
+18;04;001;OAP comprenant des dispositions relatives à l'équipement commercial et artisanal;S;PSC-S_18-04_001;;;;;;;;18-04_001;psmv;sous-code
+18;05;001;OAP comprenant des dispositions relatives à l'équipement commercial et artisanal;S;PSC-S_18-05_001;;;;;;;;18-05_001;psmv;sous-code
+18;06;001;OAP comprenant des dispositions relatives à l'équipement commercial et artisanal;S;PSC-S_18-06_001;;;;;;;;18-06_001;psmv;sous-code
 18;07;001;OAP comprenant des dispositions relatives à l'équipement commercial et artisanal;S;PSC-S_18-07_001;;;;;;;;18-07_001;psmv;sous-code
 18;08;001;OAP relatives aux transports et aux déplacements;S;PSC-S_18-08_001;;;;;;;;18-08_001;psmv;sous-code
 18;09;001;OAP relatives aux espaces publics en zone d’aménagement concerté;S;PSC-S_18-09_001;;;;;;;;18-09_001;psmv;sous-code

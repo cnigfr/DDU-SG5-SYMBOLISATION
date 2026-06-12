@@ -967,7 +967,7 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
     etiquette = ligne_separee [4]
     classement = ligne_separee [5]
     application = ligne_separee [6]
-    if classement != "sous-code" :
+    if classement == "symbole" :
         print(f"#"*20)
         print(f"SUP --> {etiquette}") 
         w = k + l
