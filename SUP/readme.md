@@ -1,8 +1,12 @@
 # Ressources pour les SUP
 
+## Dictionnaires de symboles
+
 - le répertoire [QML](/SUP/QML) contient les fichiers QML qui mettent en oeuvre les spécifications. Ils peuvent être directement appliqués sur les tables des SUP au standard CNIG. Ces fichiers ont été créés avec QGIS 3.10 et sont compatibles avec les versions supérieures.
 
 - le répertoire [ArcGISpro](/PLU/ArcGISpro) contient le fichier STYLX qui met en oeuvre les spécifications. Il peut être directement appliqué sur les tables des SUP au standard CNIG. Ce fichier a été créé avec ArcGIS pro 2.9 et est compatible avec les versions supérieures.
+
+## Spécifications et rendu graphique des symboles
 
 - le fichier "Planche_Symbolisation_CNIG_SUP.pdf" offre un aperçu global des symbolisations sous forme de planche contact :
 
