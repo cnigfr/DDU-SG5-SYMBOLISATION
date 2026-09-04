@@ -8,9 +8,14 @@
 
 <img width="1728" height="518" alt="image" src="https://github.com/user-attachments/assets/a64818a2-113b-4c73-ae64-8175ff191dfb" />
 
-- le fichier "Catalogue_Symbolisation_CNIG_SUP.pdf" détaille chaque symbolisation sous forme graphique et littérale, de façon à ce qu'elle puisse être réalisée dans tout SIG :
 
-<img width="777" height="763" alt="image" src="https://github.com/user-attachments/assets/47149d68-f52a-4973-ba79-96439fe1dedb" />
+- le fichier "Catalogue_Symbolisation_CNIG_SUP.pdf" spécifie chaque symbolisation sous forme graphique et littérale, de façon à ce qu'elle puisse être réalisée dans n'importe quel SIG :
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/47149d68-f52a-4973-ba79-96439fe1dedb" width="500" alt="Spécification de ">
+</p
+
+
 
 
 
