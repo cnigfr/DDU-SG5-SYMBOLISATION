@@ -15,6 +15,15 @@
   <img src="https://github.com/user-attachments/assets/47149d68-f52a-4973-ba79-96439fe1dedb" width="500" alt="Spécification de ">
 </p
 
+.
+> [!TIP]
+> Si les pdf ne sont pas interprétés par Github, téléchargez-les en cliquant sur l'icône "download raw file" à droite : 
+
+<p align="center">
+<img width="41" height="39" alt="image" src="https://github.com/user-attachments/assets/ccd0a9af-b153-4bd4-a2d2-1896207942c5" />
+</p
+
+
 
 
 
