@@ -18,7 +18,7 @@ Retrouvez notamment ici :
 
 Plus d'explications dans le guide [*Spécifications de symbolisation des documents d'urbanisme*](Specifications_symbolisation.md).
 
-## [tableau de suivi des symbolisation](https://docs.google.com/spreadsheets/d/1_xl1gKXMqGnkKr7L2SuKzsmZaqNaMdzDudC-sjX1BQA/edit?usp=sharing) pour suivre les évolutions des symbolisations !!!
+## [tableau de suivi des symbolisations](https://docs.google.com/spreadsheets/d/1_xl1gKXMqGnkKr7L2SuKzsmZaqNaMdzDudC-sjX1BQA/edit?usp=sharing) pour suivre les évolutions des symbolisations !!!
 
 ## Standards et recommandations
 
