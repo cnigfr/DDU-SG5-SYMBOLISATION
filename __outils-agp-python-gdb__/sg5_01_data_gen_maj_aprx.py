@@ -5,7 +5,7 @@
 # Author:      nicolas.kulpinski omiplu.mikkrogeo.com
 #
 # Created:     13/06/2025
-# Modified:    20/11/2026
+# Modified:    27/11/2026
 # Copyright:   (c) n.kulpinski 2025
 # Licence:     GPL
 #-------------------------------------------------------------------------------
@@ -882,6 +882,18 @@ fields = [["typepsc", "TEXT", "Type de la prescription", 2],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(psmv_psc_s,fields)
 
+PSMV_PRESCRIPTION_SURF = "PSMV_PRESCRIPTION_SURF"
+print(f"Creation de la couche {PSMV_PRESCRIPTION_SURF} en cours")
+arcpy.management.CreateFeatureclass(gdb, PSMV_PRESCRIPTION_SURF, "POLYGON", "", "DISABLED", "DISABLED", prj)
+fields = [["typepsc", "TEXT", "Type de la prescription", 2],
+["stypepsc", "TEXT", "Sous-Type de la prescription", 2],
+["nnn", "TEXT", "code nnn", 3],
+["lib_stype", "TEXT", "Libellé de la prescription", 250],
+["SYMBOLE", "TEXT", "code symbole surfacique", 20],
+["plu_psmv", "TEXT", "Spécifique PSMV", 10],
+["etiquette", "TEXT", "Etiquette", 80]]
+arcpy.management.AddFields(PSMV_PRESCRIPTION_SURF,fields)
+
 psmv_psc_l = "psmv_psc_l"
 print(f"Creation de la couche {psmv_psc_l} en cours")
 arcpy.management.CreateFeatureclass(gdb, psmv_psc_l, "POLYLINE", "", "DISABLED", "DISABLED", prj)
@@ -894,6 +906,18 @@ fields = [["typepsc", "TEXT", "Type de la prescription", 2],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(psmv_psc_l,fields)
 
+PSMV_PRESCRIPTION_LIN = "PSMV_PRESCRIPTION_LIN"
+print(f"Creation de la couche {PSMV_PRESCRIPTION_LIN} en cours")
+arcpy.management.CreateFeatureclass(gdb, PSMV_PRESCRIPTION_LIN, "POLYLINE", "", "DISABLED", "DISABLED", prj)
+fields = [["typepsc", "TEXT", "Type de la prescription", 2],
+["stypepsc", "TEXT", "Sous-Type de la prescription", 2],
+["nnn", "TEXT", "code nnn", 3],
+["lib_stype", "TEXT", "Libellé de la prescription", 250],
+["SYMBOLE", "TEXT", "code symbole linéaire", 20],
+["plu_psmv", "TEXT", "Spécifique PSMV", 10],
+["etiquette", "TEXT", "Etiquette", 80]]
+arcpy.management.AddFields(PSMV_PRESCRIPTION_LIN,fields)
+
 psmv_psc_p = "psmv_psc_p"
 print(f"Creation de la couche {psmv_psc_p} en cours")
 arcpy.management.CreateFeatureclass(gdb, psmv_psc_p, "POINT", "", "DISABLED", "DISABLED", prj)
@@ -905,6 +929,18 @@ fields = [["typepsc", "TEXT", "Type de la prescription", 2],
 ["plu_psmv", "TEXT", "Spécifique PSMV", 10],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(psmv_psc_p,fields)
+
+PSMV_PRESCRIPTION_PCT = "PSMV_PRESCRIPTION_PCT"
+print(f"Creation de la couche {PSMV_PRESCRIPTION_PCT} en cours")
+arcpy.management.CreateFeatureclass(gdb, PSMV_PRESCRIPTION_PCT, "POINT", "", "DISABLED", "DISABLED", prj)
+fields = [["typepsc", "TEXT", "Type de la prescription", 2],
+["stypepsc", "TEXT", "Sous-Type de la prescription", 2],
+["nnn", "TEXT", "code nnn", 3],
+["lib_stype", "TEXT", "Libellé de la prescription", 250],
+["SYMBOLE", "TEXT", "code symbole ponctuel", 20],
+["plu_psmv", "TEXT", "Spécifique PSMV", 10],
+["etiquette", "TEXT", "Etiquette", 80]]
+arcpy.management.AddFields(PSMV_PRESCRIPTION_PCT,fields)
 ######### initialisation des coordonnées
 
 x0 = 620000
@@ -936,8 +972,9 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
     symb_pct = ligne_separee [11] 
     d_symb_pct = ligne_separee [12] 
     etiquette = f"{ligne_separee [13]} ({surf}{lin}{pt})"
-    plu_psmv = ligne_separee [14]
-    classement = ligne_separee [15]
+    etiquette_total = f"{ligne_separee [14]} ({surf}{lin}{pt})"
+    plu_psmv = ligne_separee [15]
+    classement = ligne_separee [16]
     if classement == "symbole" or classement == "alternatif" :
         print(f"#"*20)
         print(f"PSMV Prescription --> {etiquette}") 
@@ -1013,6 +1050,106 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
     ligne= f.readline()  #valeur de la ligne suivante
 
 f.close()
+######### initialisation des coordonnées
+
+x0 = 620000
+x = x0
+y = 6600000
+k = 1
+l = 0
+
+######### ouverture et lecture du fichier          
+f=open(grille_psmv_psc_csv,'r')  
+entete = f.readline().rstrip('\n\r')# Lit l'en-tete
+entete_separee = entete.split(";")
+ligne= f.readline()  #soit f le pointeur vers votre fichier csv,
+while ligne!='' : # soit tant que la ligne n'est pas vide
+    ligne = ligne.replace("\n","")
+    ligne_separee = ligne.split(";") # entre guillemet le separateur ici un ;
+    #couche de base    
+    typepsc = ligne_separee [0]    
+    stypepsc = ligne_separee [1]
+    nnn = ligne_separee [2]
+    lib_stype = ligne_separee [3] 
+    surf = ligne_separee [4] 
+    symb_surf = ligne_separee [5] 
+    d_symb_surf = ligne_separee [6] 
+    lin = ligne_separee [7] 
+    symb_lin = ligne_separee [8] 
+    d_symb_lin = ligne_separee [9] 
+    pt = ligne_separee [10] 
+    symb_pct = ligne_separee [11] 
+    d_symb_pct = ligne_separee [12] 
+    etiquette = f"{ligne_separee [13]} ({surf}{lin}{pt})"
+    etiquette_total = f"{ligne_separee [14]} ({surf}{lin}{pt})"
+    plu_psmv = ligne_separee [15]
+    classement = ligne_separee [16]
+    print(f"#"*20)
+    print(f"PSMV Prescription TOTAL --> {etiquette}") 
+    w = k + l
+
+    if surf == "S" :
+        cursor = arcpy.da.InsertCursor(PSMV_PRESCRIPTION_SURF,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","SYMBOLE","plu_psmv","etiquette"])
+        #carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 40, y + 40),arcpy.Point(x + 40, y)])
+        carreau = arcpy.Array([arcpy.Point(x+17, y),
+        arcpy.Point(x+9, y+1),
+        arcpy.Point(x+1, y+11),
+        arcpy.Point(x, y+43),
+        arcpy.Point(x+7, y+45),
+        arcpy.Point(x+9, y+44),
+        arcpy.Point(x+13, y+38),
+        arcpy.Point(x+18, y+36),
+        arcpy.Point(x+22, y+35),
+        arcpy.Point(x+24, y+36),
+        arcpy.Point(x+26, y+38),
+        arcpy.Point(x+27, y+40),
+        arcpy.Point(x+25, y+45),
+        arcpy.Point(x+22, y+49),
+        arcpy.Point(x+21, y+55),
+        arcpy.Point(x+23, y+57),
+        arcpy.Point(x+27, y+56),
+        arcpy.Point(x+37, y+55),
+        arcpy.Point(x+46, y+52),
+        arcpy.Point(x+51, y+46),
+        arcpy.Point(x+53, y+40),
+        arcpy.Point(x+52, y+35),
+        arcpy.Point(x+54, y+25),
+        arcpy.Point(x+57, y+22),
+        arcpy.Point(x+59, y+12),
+        arcpy.Point(x+56, y+9),
+        arcpy.Point(x+47, y+7),
+        arcpy.Point(x+42, y+8),
+        arcpy.Point(x+29, y+12),
+        arcpy.Point(x+26, y+10),
+        arcpy.Point(x+24, y+4),
+        arcpy.Point(x+20, y+1)])
+        polygon = arcpy.Polygon(carreau, spatial_reference)
+        cursor.insertRow([polygon,typepsc,stypepsc,nnn,lib_stype,symb_surf,plu_psmv,etiquette_total])   
+    if lin == "L" :
+        cursor = arcpy.da.InsertCursor(PSMV_PRESCRIPTION_LIN,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","SYMBOLE","plu_psmv","etiquette"])
+        carreau = arcpy.Array([arcpy.Point(x + 60, y + 50),arcpy.Point(x + 70, y + 30),arcpy.Point(x + 68, y)])   
+        polyline = arcpy.Polyline(carreau, spatial_reference)
+        cursor.insertRow([polyline,typepsc,stypepsc,nnn,lib_stype,symb_lin,plu_psmv,etiquette_total]) 
+    if pt == "P" :
+        cursor = arcpy.da.InsertCursor(PSMV_PRESCRIPTION_PCT,["SHAPE@","typepsc","stypepsc","nnn","lib_stype","SYMBOLE","plu_psmv","etiquette"])
+        carreau = arcpy.Point(x + 60, y + 65)
+        point = arcpy.PointGeometry(carreau, spatial_reference)
+        cursor.insertRow([point,typepsc,stypepsc,nnn,lib_stype,symb_pct,plu_psmv,etiquette_total])  
+    
+    x = x0 + 90 * (k % m)
+    if k % m == 0:
+        print(f"/////////////SAUT DE LIGNE/////////")
+        y = y - 90 #* (k % m)
+        l = l + 1
+    k = (k + 1) % m
+    
+    if k == 0 :
+        k = m
+            
+        
+    ligne= f.readline()  #valeur de la ligne suivante
+
+f.close()
 
 
 
@@ -1050,6 +1187,18 @@ fields = [["typeinf", "TEXT", "Type de l' information", 2],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(psmv_inf_s,fields)
 
+PSMV_INFO_SURF = "PSMV_INFO_SURF"
+print(f"Creation de la couche {PSMV_INFO_SURF} en cours")
+arcpy.management.CreateFeatureclass(gdb, PSMV_INFO_SURF, "POLYGON", "", "DISABLED", "DISABLED", prj)
+fields = [["typeinf", "TEXT", "Type de l' information", 2],
+["stypeinf", "TEXT", "Sous-Type de l' information", 2],
+["nnn", "TEXT", "code nnn", 3],
+["lib_stype", "TEXT", "Libellé de l' information", 250],
+["SYMBOLE", "TEXT", "code symbole surfacique", 20],
+["plu_psmv", "TEXT", "Spécifique PSMV", 10],
+["etiquette", "TEXT", "Etiquette", 80]]
+arcpy.management.AddFields(PSMV_INFO_SURF,fields)
+
 psmv_inf_l = "psmv_inf_l"
 print(f"Creation de la couche {psmv_inf_l} en cours")
 arcpy.management.CreateFeatureclass(gdb, psmv_inf_l, "POLYLINE", "", "DISABLED", "DISABLED", prj)
@@ -1062,6 +1211,18 @@ fields = [["typeinf", "TEXT", "Type de l' information", 2],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(psmv_inf_l,fields)
 
+PSMV_INFO_LIN = "PSMV_INFO_LIN"
+print(f"Creation de la couche {PSMV_INFO_LIN} en cours")
+arcpy.management.CreateFeatureclass(gdb, PSMV_INFO_LIN, "POLYLINE", "", "DISABLED", "DISABLED", prj)
+fields = [["typeinf", "TEXT", "Type de l' information", 2],
+["stypeinf", "TEXT", "Sous-Type de l' information", 2],
+["nnn", "TEXT", "code nnn", 3],
+["lib_stype", "TEXT", "Libellé de l' information", 250],
+["SYMBOLE", "TEXT", "code symbole linéaire", 20],
+["plu_psmv", "TEXT", "Spécifique PSMV", 10],
+["etiquette", "TEXT", "Etiquette", 80]]
+arcpy.management.AddFields(PSMV_INFO_LIN,fields)
+
 psmv_inf_p = "psmv_inf_p"
 print(f"Creation de la couche {psmv_inf_p} en cours")
 arcpy.management.CreateFeatureclass(gdb, psmv_inf_p, "POINT", "", "DISABLED", "DISABLED", prj)
@@ -1073,6 +1234,18 @@ fields = [["typeinf", "TEXT", "Type de l' information", 2],
 ["plu_psmv", "TEXT", "Spécifique PSMV", 10],
 ["etiquette", "TEXT", "Etiquette", 80]]
 arcpy.management.AddFields(psmv_inf_p,fields)
+
+PSMV_INFO_PCT = "PSMV_INFO_PCT"
+print(f"Creation de la couche {PSMV_INFO_PCT} en cours")
+arcpy.management.CreateFeatureclass(gdb, PSMV_INFO_PCT, "POINT", "", "DISABLED", "DISABLED", prj)
+fields = [["typeinf", "TEXT", "Type de l' information", 2],
+["stypeinf", "TEXT", "Sous-Type de l' information", 2],
+["nnn", "TEXT", "code nnn", 3],
+["lib_stype", "TEXT", "Libellé de l' information", 250],
+["SYMBOLE", "TEXT", "code symbole ponctuel", 20],
+["plu_psmv", "TEXT", "Spécifique PSMV", 10],
+["etiquette", "TEXT", "Etiquette", 80]]
+arcpy.management.AddFields(PSMV_INFO_PCT,fields)
 ######### initialisation des coordonnées
 
 x0 = 620000
@@ -1104,8 +1277,9 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
     symb_pct = ligne_separee [11] 
     d_symb_pct = ligne_separee [12] 
     etiquette = f"{ligne_separee [13]} ({surf}{lin}{pt})"
-    plu_psmv = ligne_separee [14]
-    classement = ligne_separee [15]
+    etiquette_total = f"{ligne_separee [14]} ({surf}{lin}{pt})"
+    plu_psmv = ligne_separee [15]
+    classement = ligne_separee [16]
     if classement == "symbole" or classement == "alternatif" :
         print(f"#"*20)
         print(f"PSMV Information --> {etiquette}") 
@@ -1177,6 +1351,107 @@ while ligne!='' : # soit tant que la ligne n'est pas vide
         
         if k == 0 :
             k = m
+            
+        
+    ligne= f.readline()  #valeur de la ligne suivante
+
+f.close()
+######### initialisation des coordonnées
+
+x0 = 620000
+x = x0
+y = 6600000
+k = 1
+l = 0
+
+######### ouverture et lecture du fichier          
+f=open(grille_psmv_inf_csv,'r')  
+entete = f.readline().rstrip('\n\r')# Lit l'en-tete
+entete_separee = entete.split(";")
+ligne= f.readline()  #soit f le pointeur vers votre fichier csv,
+while ligne!='' : # soit tant que la ligne n'est pas vide
+    ligne = ligne.replace("\n","")
+    ligne_separee = ligne.split(";") # entre guillemet le separateur ici un ;
+    #couche de base    
+    typeinf = ligne_separee [0]    
+    stypeinf = ligne_separee [1]
+    nnn = ligne_separee [2]
+    lib_stype = ligne_separee [3]  
+    surf = ligne_separee [4] 
+    symb_surf = ligne_separee [5] 
+    d_symb_surf = ligne_separee [6] 
+    lin = ligne_separee [7] 
+    symb_lin = ligne_separee [8] 
+    d_symb_lin = ligne_separee [9] 
+    pt = ligne_separee [10] 
+    symb_pct = ligne_separee [11] 
+    d_symb_pct = ligne_separee [12] 
+    etiquette = f"{ligne_separee [13]} ({surf}{lin}{pt})"
+    etiquette_total = f"{ligne_separee [14]} ({surf}{lin}{pt})"
+    plu_psmv = ligne_separee [15]
+    classement = ligne_separee [16]
+    print(f"#"*20)
+    print(f"PSMV Information TOTAL --> {etiquette}") 
+    w = k + l
+
+    if surf == "S" :
+        cursor = arcpy.da.InsertCursor(PSMV_INFO_SURF,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","SYMBOLE","plu_psmv","etiquette"])
+        #carreau = arcpy.Array([arcpy.Point(x, y),arcpy.Point(x, y + 40),arcpy.Point(x + 40, y + 40),arcpy.Point(x + 40, y)])
+        carreau = arcpy.Array([arcpy.Point(x+17, y),
+        arcpy.Point(x+9, y+1),
+        arcpy.Point(x+1, y+11),
+        arcpy.Point(x, y+43),
+        arcpy.Point(x+7, y+45),
+        arcpy.Point(x+9, y+44),
+        arcpy.Point(x+13, y+38),
+        arcpy.Point(x+18, y+36),
+        arcpy.Point(x+22, y+35),
+        arcpy.Point(x+24, y+36),
+        arcpy.Point(x+26, y+38),
+        arcpy.Point(x+27, y+40),
+        arcpy.Point(x+25, y+45),
+        arcpy.Point(x+22, y+49),
+        arcpy.Point(x+21, y+55),
+        arcpy.Point(x+23, y+57),
+        arcpy.Point(x+27, y+56),
+        arcpy.Point(x+37, y+55),
+        arcpy.Point(x+46, y+52),
+        arcpy.Point(x+51, y+46),
+        arcpy.Point(x+53, y+40),
+        arcpy.Point(x+52, y+35),
+        arcpy.Point(x+54, y+25),
+        arcpy.Point(x+57, y+22),
+        arcpy.Point(x+59, y+12),
+        arcpy.Point(x+56, y+9),
+        arcpy.Point(x+47, y+7),
+        arcpy.Point(x+42, y+8),
+        arcpy.Point(x+29, y+12),
+        arcpy.Point(x+26, y+10),
+        arcpy.Point(x+24, y+4),
+        arcpy.Point(x+20, y+1)])
+        polygon = arcpy.Polygon(carreau, spatial_reference)
+        cursor.insertRow([polygon,typeinf,stypeinf,nnn,lib_stype,symb_surf,plu_psmv,etiquette_total])   
+    if lin == "L" :
+        cursor = arcpy.da.InsertCursor(PSMV_INFO_LIN,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","SYMBOLE","plu_psmv","etiquette"])
+        carreau = arcpy.Array([arcpy.Point(x + 60, y + 50),arcpy.Point(x + 70, y + 30),arcpy.Point(x + 68, y)]) 
+        polyline = arcpy.Polyline(carreau, spatial_reference)
+        cursor.insertRow([polyline,typeinf,stypeinf,nnn,lib_stype,symb_lin,plu_psmv,etiquette_total]) 
+    if pt == "P" :
+        cursor = arcpy.da.InsertCursor(PSMV_INFO_PCT,["SHAPE@","typeinf","stypeinf","nnn","lib_stype","SYMBOLE","plu_psmv","etiquette"])
+        carreau = arcpy.Point(x + 60, y + 65)
+        point = arcpy.PointGeometry(carreau, spatial_reference)
+        cursor.insertRow([point,typeinf,stypeinf,nnn,lib_stype,symb_pct,plu_psmv,etiquette_total])  
+
+    
+    x = x0 + 90 * (k % m)
+    if k % m == 0:
+        print(f"/////////////SAUT DE LIGNE/////////")
+        y = y - 90 #* (k % m)
+        l = l + 1
+    k = (k + 1) % m
+    
+    if k == 0 :
+        k = m                                                                                                       
             
         
     ligne= f.readline()  #valeur de la ligne suivante
